@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 阿明 - 收集生活的感悟</title>
+    <link>https://hanyudeye.github.io/post/</link>
+    <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://hanyudeye.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>人与哲学</title>
+      <link>https://hanyudeye.github.io/post/zhexue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hanyudeye.github.io/post/zhexue/</guid>
+      <description>哲学 物质简介 东西就是物质，这里用更 口语化 的“ 东西 ”替换。 东西的表象很多，有肉眼看到与看不到的（细菌），还有我们未知的东西（银河系外） 关联 东西</description>
+    </item>
+    
+  </channel>
+</rss>
