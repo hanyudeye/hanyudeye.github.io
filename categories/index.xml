@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 阿明 - 收集生活的感悟</title>
-    <link>https://hanyudeye.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Fri, 22 Nov 2019 06:55:56 +0800</lastBuildDate>
     
-	<atom:link href="https://hanyudeye.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>人</title>
-      <link>https://hanyudeye.github.io/categories/%E4%BA%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/categories/%E4%BA%BA/</link>
+      <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       
-      <guid>https://hanyudeye.github.io/categories/%E4%BA%BA/</guid>
+      <guid>http://localhost:1313/categories/%E4%BA%BA/</guid>
       <description></description>
     </item>
     
