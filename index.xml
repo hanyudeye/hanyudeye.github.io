@@ -38,5 +38,14 @@
       <description>所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。 设计 简介 人类 在生存繁衍的过程中，创造了许多 人造</description>
     </item>
     
+    <item>
+      <title>emacs 简介</title>
+      <link>http://localhost:1313/post/emacs/</link>
+      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/emacs/</guid>
+      <description>emacs 简介 文本编辑器，功能很强大哦！ 初学者帮助，（help-with-tutorial）,快捷键为 @@html:&amp;lt;kbd&amp;gt;@@ C-h t @@html:&amp;lt;/kbd&amp;gt;@@ 抽象概念 在 emacs 中，存在着以下对象 buffer : 文件</description>
+    </item>
+    
   </channel>
 </rss>

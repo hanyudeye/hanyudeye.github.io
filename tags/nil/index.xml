@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nil, on 阿明 - 收集生活的感悟</title>
+    <link>http://localhost:1313/tags/nil/</link>
+    <description>Recent content in nil, on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Nov 2019 06:43:38 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/nil/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Sun, 24 Nov 2019 06:43:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Sun, 24 Nov 2019 06:43:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
