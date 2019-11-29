@@ -6,10 +6,32 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Nov 2019 20:07:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 21:57:09 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python 简介</title>
+      <link>http://localhost:1313/post/python/</link>
+      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/python/</guid>
+      <description>&lt;p&gt;
+一门抽象程度高的语言。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gnu/Linux 简介</title>
+      <link>http://localhost:1313/post/linux/</link>
+      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/linux/</guid>
+      <description>&lt;p&gt;
+计算机的能力是由软件决定的。有一种软件设计的哲学叫 &lt;strong&gt;UNIX&lt;/strong&gt; 哲学，提倡的是设计软件要注重 &lt;strong&gt;KISS&lt;/strong&gt; （keep it simple, stupid）原则 。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>心理障碍</title>
@@ -17,7 +39,7 @@
       <pubDate>Fri, 29 Nov 2019 20:07:50 +0800</pubDate>
       
       <guid>http://localhost:1313/post/psychologicalobstacle/</guid>
-      <description>&lt;p&gt;最近在看 &amp;lt;&amp;lt;&lt;strong&gt;少有人走的路&lt;/strong&gt;&amp;gt;&amp;gt; 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
+      <description>&lt;p&gt;最近在看 《少有人走的路》 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,7 +76,11 @@
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
       <guid>http://localhost:1313/post/emacs/</guid>
-      <description>emacs 简介 文本编辑器，功能很强大哦！ 初学者帮助，（help-with-tutorial）,快捷键为 @@html:&amp;lt;kbd&amp;gt;@@ C-h t @@html:&amp;lt;/kbd&amp;gt;@@ 抽象概念 在 emacs 中，存在着以下对象 buffer : 文件</description>
+      <description>&lt;blockquote&gt;
+&lt;div class=&#34;verse-block&#34;&gt;
+&lt;p&gt;
+它是一款文本编辑器，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
+&lt;/p&gt;</description>
     </item>
     
   </channel>

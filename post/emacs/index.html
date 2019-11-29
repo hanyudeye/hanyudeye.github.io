@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2019-06-04T22:41:32&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-04T22:41:32&#43;08:00" />
-<meta itemprop="wordCount" content="972">
+<meta itemprop="wordCount" content="995">
 
 
 
@@ -142,71 +142,65 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">emacs </a>
+<li><a href="#headline-1">抽象概念</a>
+</li>
+<li><a href="#headline-2">基本功能</a>
 <ul>
-<li><a href="#headline-2">简介 </a>
+<li><a href="#headline-3">插入文字</a>
 </li>
-<li><a href="#headline-3">抽象概念</a>
+<li><a href="#headline-4">移动光标 (point)</a>
 </li>
-<li><a href="#headline-4">基本功能</a>
-<ul>
-<li><a href="#headline-5">插入文字</a>
+<li><a href="#headline-5">删除文字</a>
 </li>
-<li><a href="#headline-6">移动光标 (point)</a>
+<li><a href="#headline-6">撤消与恢复</a>
 </li>
-<li><a href="#headline-7">删除文字</a>
+<li><a href="#headline-7">文件操作</a>
 </li>
-<li><a href="#headline-8">撤消与恢复</a>
+<li><a href="#headline-8">长行</a>
 </li>
-<li><a href="#headline-9">文件操作</a>
+<li><a href="#headline-9">文本信息</a>
 </li>
-<li><a href="#headline-10">长行</a>
+<li><a href="#headline-10">数字参数</a>
 </li>
-<li><a href="#headline-11">文本信息</a>
-</li>
-<li><a href="#headline-12">数字参数</a>
-</li>
-<li><a href="#headline-13">输入法</a>
+<li><a href="#headline-11">输入法</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-14">高级一点的功能</a>
+<li><a href="#headline-12">高级一点的功能</a>
 <ul>
-<li><a href="#headline-15">Mark (标记) </a>
+<li><a href="#headline-13">Mark (标记) </a>
 </li>
-<li><a href="#headline-16">kill</a>
+<li><a href="#headline-14">kill</a>
 </li>
-<li><a href="#headline-17">rectangle (矩形标记)</a>
+<li><a href="#headline-15">rectangle (矩形标记)</a>
 </li>
-<li><a href="#headline-18">暂存器  ( 临时存储 ) </a>
+<li><a href="#headline-16">暂存器  ( 临时存储 ) </a>
 </li>
-<li><a href="#headline-19">搜索和替换 </a>
+<li><a href="#headline-17">搜索和替换 </a>
 </li>
-<li><a href="#headline-20">大小转化  ( upcase, lowcase ) </a>
+<li><a href="#headline-18">大小转化  ( upcase, lowcase ) </a>
 </li>
-<li><a href="#headline-21">键盘宏  </a>
+<li><a href="#headline-19">键盘宏  </a>
 </li>
-<li><a href="#headline-22">目录</a>
+<li><a href="#headline-20">目录</a>
 </li>
-<li><a href="#headline-23">十六进制</a>
+<li><a href="#headline-21">十六进制</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-24">编码</a>
+<li><a href="#headline-22">编码</a>
 </li>
-<li><a href="#headline-25">服务 </a>
+<li><a href="#headline-23">服务 </a>
 </li>
-<li><a href="#headline-26">扩展</a>
+<li><a href="#headline-24">扩展</a>
 </li>
-<li><a href="#headline-27">排错</a>
+<li><a href="#headline-25">排错</a>
 </li>
-<li><a href="#headline-28">帮助</a>
+<li><a href="#headline-26">帮助</a>
 </li>
-</ul>
-</li>
-<li><a href="#headline-29">插件</a>
+<li><a href="#headline-27">插件</a>
 <ul>
-<li><a href="#headline-30">ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标签。</a>
+<li><a href="#headline-28">ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标签。</a>
 </li>
 </ul>
 </li>
@@ -215,55 +209,95 @@
   </div>
 </div>
     <div class="post-content">
-      
-<h1 id="headline-1">
-emacs 
-</h1>
-<h2 id="headline-2">
-简介 
-</h2>
-<p>
-文本编辑器，功能很强大哦！
-</p>
-<!-- more -->
+      <blockquote>
 <div class="verse-block">
 <p>
-初学者帮助，（help-with-tutorial）,快捷键为  @@html:&lt;kbd&gt;@@ C-h t @@html:&lt;/kbd&gt;@@ 
+它是一款文本编辑器，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
+</p>
+<p>
+有些特定功能还是用行业专门软件比较好，它毕竟擅长的是编辑文本。
 </p>
 </div>
-<h2 id="headline-3">
+</blockquote>
+<h2 id="headline-1">
 抽象概念
 </h2>
 <p>
 在 <strong>emacs</strong> 中，存在着以下对象
 </p>
-<div class="verse-block">
+<ul>
+<li>
 <p>
 <strong>buffer</strong> : 文件映射，保存 <strong>buffer</strong> 后文件就修改了。
+</p>
+</li>
+<li>
+<p>
 <strong>Point</strong> (光标) : 指示文本修改的位置
+</p>
+</li>
+<li>
+<p>
 <strong>echo area</strong> : 命令输入区，也用来提示消息的一小块区域。  
+</p>
+</li>
+<li>
+<p>
 <strong>mode line</strong> : 相当于 <strong>buffer</strong> 对应的 <strong>状态栏</strong>
+</p>
+</li>
+<li>
+<p>
 <strong>menu bar</strong>: 菜单，一般把它关掉，如果你不记得某条命令，可以打开参考一下。
+</p>
+</li>
+<li>
+<p>
 <strong>mark</strong> : 一块选区 
+</p>
+</li>
+<li>
+<p>
 <strong>rectangle</strong> : 矩形选区
+</p>
+</li>
+<li>
+<p>
 <strong>kill-ring</strong> : (一块存取区)kill(切除)长一点的文本，emacs 会自动保存文本片段到  <strong>kill-ring</strong> 列表
 </p>
-</div>
-<h2 id="headline-4">
+</li>
+</ul>
+<h2 id="headline-2">
 基本功能
 </h2>
-<h3 id="headline-5">
+<h3 id="headline-3">
 插入文字
 </h3>
 <div class="verse-block">
+<ul>
+<li>
 <p>
 键盘字母区的文字可以直接输入 <strong>(insert ?a)</strong>  或 <strong>insert-char</strong>
-不可见字符 <strong>quoted-insert</strong>
-键盘控制键 : 如  @@html:&lt;kbd&gt;@@ C-q  DEL @@html:&lt;/kbd&gt;@@ , @@html:&lt;kbd&gt;@@  C-q RET @@html:&lt;/kbd&gt;@@ 
-八进制数字 : @@html:&lt;kbd&gt;@@ C-q  1 0 1 @@html:&lt;/kbd&gt;@@ 插入 <code>A</code> 
 </p>
+</li>
+<li>
+<p>
+不可见字符 <strong>quoted-insert</strong>
+</p>
+</li>
+<li>
+<p>
+键盘控制键 : 如  <code>C-q  DEL</code> ,  <code>C-q RET</code>
+</p>
+</li>
+<li>
+<p>
+八进制数字 : <code>C-q  1 0 1</code>  插入 <code>A</code> 
+</p>
+</li>
+</ul>
 </div>
-<h3 id="headline-6">
+<h3 id="headline-4">
 移动光标 (point)
 </h3>
 <table>
@@ -302,7 +336,7 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-7">
+<h3 id="headline-5">
 删除文字
 </h3>
 <table>
@@ -325,7 +359,7 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-8">
+<h3 id="headline-6">
 撤消与恢复
 </h3>
 <table>
@@ -344,7 +378,7 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-9">
+<h3 id="headline-7">
 文件操作
 </h3>
 <table>
@@ -359,7 +393,7 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-10">
+<h3 id="headline-8">
 长行
 </h3>
 <table>
@@ -390,7 +424,7 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-11">
+<h3 id="headline-9">
 文本信息
 </h3>
 <table>
@@ -429,14 +463,14 @@ emacs
 </tr>
 </tbody>
 </table>
-<h3 id="headline-12">
+<h3 id="headline-10">
 数字参数
 </h3>
 <p>
 有些命令要执行多次，可以加一个数字参数 
-@@html:&lt;kbd&gt;@@ M @@html:&lt;/kbd&gt;@@ 键加一个数字 N 就能执行 N 次命令
+<code>M</code> 键加一个数字 N 就能执行 N 次命令
 </p>
-<h3 id="headline-13">
+<h3 id="headline-11">
 输入法
 </h3>
 <table>
@@ -457,10 +491,10 @@ M-x set-input-method RET TeX will allow you to write e.g. β to get β,
 ∑ or Σ to get Σ etc.
 </p>
 </blockquote>
-<h2 id="headline-14">
+<h2 id="headline-12">
 高级一点的功能
 </h2>
-<h3 id="headline-15">
+<h3 id="headline-13">
 Mark (标记) 
 </h3>
 <table>
@@ -483,7 +517,7 @@ Mark (标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-16">
+<h3 id="headline-14">
 kill
 </h3>
 <table>
@@ -518,7 +552,7 @@ kill
 </p>
 </div>
 </blockquote>
-<h3 id="headline-17">
+<h3 id="headline-15">
 rectangle (矩形标记)
 </h3>
 <table>
@@ -529,7 +563,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-18">
+<h3 id="headline-16">
 暂存器  ( 临时存储 ) 
 </h3>
 <table>
@@ -564,7 +598,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-19">
+<h3 id="headline-17">
 搜索和替换 
 </h3>
 <table>
@@ -583,10 +617,10 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-20">
+<h3 id="headline-18">
 大小转化  ( upcase, lowcase ) 
 </h3>
-<h3 id="headline-21">
+<h3 id="headline-19">
 键盘宏  
 </h3>
 <table>
@@ -601,7 +635,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-22">
+<h3 id="headline-20">
 目录
 </h3>
 <table>
@@ -620,7 +654,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-23">
+<h3 id="headline-21">
 十六进制
 </h3>
 <table>
@@ -631,7 +665,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-24">
+<h2 id="headline-22">
 编码
 </h2>
 <table>
@@ -651,7 +685,7 @@ rectangle (矩形标记)
 网上查看编码信息， <a href="https://www.qqxiuzi.cn/bianma/zifuji.php">https://www.qqxiuzi.cn/bianma/zifuji.php</a> ,可能会失效，网上搜个。
 </p>
 </blockquote>
-<h2 id="headline-25">
+<h2 id="headline-23">
 服务 
 </h2>
 <table>
@@ -666,7 +700,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-26">
+<h2 id="headline-24">
 扩展
 </h2>
 <table>
@@ -693,7 +727,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-27">
+<h2 id="headline-25">
 排错
 </h2>
 <table>
@@ -704,7 +738,7 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-28">
+<h2 id="headline-26">
 帮助
 </h2>
 <table>
@@ -731,13 +765,12 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h1 id="headline-29">
+<h1 id="headline-27">
 插件
 </h1>
-<h2 id="headline-30">
+<h2 id="headline-28">
 ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标签。
 </h2>
-
     </div>
 
     <div class="post-copyright">
@@ -852,7 +885,6 @@ ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标
 
 
 
-<script src="/js/hello.js"></script>
 <script src="/js/snow.js"></script>
 
 

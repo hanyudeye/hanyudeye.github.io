@@ -17,7 +17,11 @@
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
       <guid>http://localhost:1313/post/emacs/</guid>
-      <description>emacs 简介 文本编辑器，功能很强大哦！ 初学者帮助，（help-with-tutorial）,快捷键为 @@html:&amp;lt;kbd&amp;gt;@@ C-h t @@html:&amp;lt;/kbd&amp;gt;@@ 抽象概念 在 emacs 中，存在着以下对象 buffer : 文件</description>
+      <description>&lt;blockquote&gt;
+&lt;div class=&#34;verse-block&#34;&gt;
+&lt;p&gt;
+它是一款文本编辑器，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
+&lt;/p&gt;</description>
     </item>
     
   </channel>
