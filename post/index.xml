@@ -6,10 +6,29 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Nov 2019 06:55:56 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 20:07:50 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>心理障碍</title>
+      <link>http://localhost:1313/post/psychologicalobstacle/</link>
+      <pubDate>Fri, 29 Nov 2019 20:07:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/psychologicalobstacle/</guid>
+      <description>&lt;p&gt;最近在看 &amp;lt;&amp;lt;&lt;strong&gt;少有人走的路&lt;/strong&gt;&amp;gt;&amp;gt; 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>冬天</title>
+      <link>http://localhost:1313/post/snow/</link>
+      <pubDate>Fri, 29 Nov 2019 07:09:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/snow/</guid>
+      <description>&lt;p&gt;冬天来了！&lt;br /&gt;
+雪花飞啊飞！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>人与哲学</title>
