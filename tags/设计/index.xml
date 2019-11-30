@@ -2,22 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>设计 on 阿明 - 收集生活的感悟</title>
-    <link>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</link>
+    <link>https://aming.xyz/tags/%E8%AE%BE%E8%AE%A1/</link>
     <description>Recent content in 设计 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jul 2019 19:57:04 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aming.xyz/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>设计简介</title>
-      <link>http://localhost:1313/post/%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Thu, 18 Jul 2019 19:57:04 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E8%AE%BE%E8%AE%A1/</guid>
-      <description>所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。 设计 简介 人类 在生存繁衍的过程中，创造了许多 人造</description>
+      <guid>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;
+所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
+&lt;/p&gt;</description>
     </item>
     
   </channel>

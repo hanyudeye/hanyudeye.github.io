@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>阿明 - 收集生活的感悟</title>
-    <link>http://localhost:1313/</link>
+    <link>https://aming.xyz/</link>
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 Nov 2019 21:57:09 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python 简介</title>
-      <link>http://localhost:1313/post/python/</link>
+      <link>https://aming.xyz/post/python/</link>
       <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/python/</guid>
+      <guid>https://aming.xyz/post/python/</guid>
       <description>&lt;p&gt;
 一门抽象程度高的语言。
 &lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Gnu/Linux 简介</title>
-      <link>http://localhost:1313/post/linux/</link>
+      <link>https://aming.xyz/post/linux/</link>
       <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/linux/</guid>
+      <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
 计算机的能力是由软件决定的。有一种软件设计的哲学叫 &lt;strong&gt;UNIX&lt;/strong&gt; 哲学，提倡的是设计软件要注重 &lt;strong&gt;KISS&lt;/strong&gt; （keep it simple, stupid）原则 。
 &lt;/p&gt;</description>
@@ -35,59 +35,61 @@
     
     <item>
       <title>心理障碍</title>
-      <link>http://localhost:1313/post/psychologicalobstacle/</link>
+      <link>https://aming.xyz/post/psychologicalobstacle/</link>
       <pubDate>Fri, 29 Nov 2019 20:07:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/psychologicalobstacle/</guid>
+      <guid>https://aming.xyz/post/psychologicalobstacle/</guid>
       <description>&lt;p&gt;最近在看 《少有人走的路》 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>冬天</title>
-      <link>http://localhost:1313/post/snow/</link>
+      <link>https://aming.xyz/post/snow/</link>
       <pubDate>Fri, 29 Nov 2019 07:09:50 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/snow/</guid>
+      <guid>https://aming.xyz/post/snow/</guid>
       <description>&lt;p&gt;冬天来了！&lt;br /&gt;
 雪花飞啊飞！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>人与哲学</title>
-      <link>http://localhost:1313/post/zhexue/</link>
+      <link>https://aming.xyz/post/zhexue/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/zhexue/</guid>
-      <description>东西就是物质，这里用更 口语化 的“ 东西 ”替换。 哲学 物质简介 东西就是物质，这里用更 口语化 的“ 东西 ”替换。 东西的表象很多，有肉眼看到与看不到的（细</description>
+      <guid>https://aming.xyz/post/zhexue/</guid>
+      <description>&lt;p&gt;
+哲学，有智慧的学问，理解起来有道理。
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://aming.xyz/about/</link>
       <pubDate>Fri, 22 Nov 2019 04:03:41 +0800</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 文章的排序决定按照修改时间排序了，因为不想写更多新文章，而是想完善旧文</description>
     </item>
     
     <item>
       <title>设计简介</title>
-      <link>http://localhost:1313/post/%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Thu, 18 Jul 2019 19:57:04 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E8%AE%BE%E8%AE%A1/</guid>
-      <description>所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。 设计 简介 人类 在生存繁衍的过程中，创造了许多 人造</description>
+      <guid>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;
+所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>emacs 简介</title>
-      <link>http://localhost:1313/post/emacs/</link>
+      <link>https://aming.xyz/post/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/emacs/</guid>
-      <description>&lt;blockquote&gt;
-&lt;div class=&#34;verse-block&#34;&gt;
-&lt;p&gt;
+      <guid>https://aming.xyz/post/emacs/</guid>
+      <description>&lt;p&gt;
 它是一款文本编辑器，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
 &lt;/p&gt;</description>
     </item>

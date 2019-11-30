@@ -2,24 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emacs on 阿明 - 收集生活的感悟</title>
-    <link>http://localhost:1313/tags/emacs/</link>
+    <link>https://aming.xyz/tags/emacs/</link>
     <description>Recent content in emacs on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 04 Jun 2019 22:41:32 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aming.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>emacs 简介</title>
-      <link>http://localhost:1313/post/emacs/</link>
+      <link>https://aming.xyz/post/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/emacs/</guid>
-      <description>&lt;blockquote&gt;
-&lt;div class=&#34;verse-block&#34;&gt;
-&lt;p&gt;
+      <guid>https://aming.xyz/post/emacs/</guid>
+      <description>&lt;p&gt;
 它是一款文本编辑器，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
 &lt;/p&gt;</description>
     </item>

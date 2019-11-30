@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 阿明 - 收集生活的感悟</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://aming.xyz/tags/</link>
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 Nov 2019 21:57:09 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://aming.xyz/tags/python/</link>
       <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://aming.xyz/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://aming.xyz/tags/linux/</link>
       <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://aming.xyz/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>os</title>
-      <link>http://localhost:1313/tags/os/</link>
+      <link>https://aming.xyz/tags/os/</link>
       <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/os/</guid>
+      <guid>https://aming.xyz/tags/os/</guid>
       <description></description>
     </item>
     
     <item>
       <title>人,哲学</title>
-      <link>http://localhost:1313/tags/%E4%BA%BA%E5%93%B2%E5%AD%A6/</link>
+      <link>https://aming.xyz/tags/%E4%BA%BA%E5%93%B2%E5%AD%A6/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/%E4%BA%BA%E5%93%B2%E5%AD%A6/</guid>
+      <guid>https://aming.xyz/tags/%E4%BA%BA%E5%93%B2%E5%AD%A6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>设计</title>
-      <link>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://aming.xyz/tags/%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Thu, 18 Jul 2019 19:57:04 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>https://aming.xyz/tags/%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>http://localhost:1313/tags/emacs/</link>
+      <link>https://aming.xyz/tags/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>http://localhost:1313/tags/emacs/</guid>
+      <guid>https://aming.xyz/tags/emacs/</guid>
       <description></description>
     </item>
     
