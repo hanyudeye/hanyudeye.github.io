@@ -3,28 +3,56 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2019-12-01T07:26:19+08:00</lastmod>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2019-12-01T07:26:19+08:00</lastmod>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2019-12-01T07:26:19+08:00</lastmod>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/categories/%E4%BA%BA/</loc>
-    <lastmod>2019-12-01T07:26:19+08:00</lastmod>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E7%9C%8B%E5%9B%BE%E8%AF%B4%E8%AF%9D/</loc>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/kui/</loc>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2019-12-03T05:46:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/zicao/</loc>
+    <lastmod>2019-12-03T04:03:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,13 +66,6 @@
   
   <url>
     <loc>https://aming.xyz/post/readbook/</loc>
-    <lastmod>2019-12-01T07:26:19+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2019-12-01T07:26:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
