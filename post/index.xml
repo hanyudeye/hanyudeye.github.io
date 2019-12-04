@@ -6,10 +6,20 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2019 18:54:01 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2019 06:11:25 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>空灵</title>
+      <link>https://aming.xyz/post/none/</link>
+      <pubDate>Thu, 05 Dec 2019 06:11:25 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/none/</guid>
+      <description>&lt;p&gt;人最重要的是大义，然后就是活着。&lt;br&gt;
+病理学告诉我们，保持健康不容易。整个人体就像一套软件系统，一旦出现重大 &lt;em&gt;BUG&lt;/em&gt; 人体就会瘫痪。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>超级英雄</title>
@@ -28,18 +38,8 @@
       <pubDate>Tue, 03 Dec 2019 05:46:55 +0800</pubDate>
       
       <guid>https://aming.xyz/post/kui/</guid>
-      <description>&lt;p&gt;&lt;iframe style=&#34;max-width: 100%&#34;
-      class=&#34;music163&#34;
-      frameborder=&#34;no&#34;
-      border=&#34;0&#34;
-      marginwidth=&#34;0&#34;
-      marginheight=&#34;0&#34;
-      width=&#34;330&#34;
-      height=&#34;86&#34;
-      src=&#34;//music.163.com/outchain/player?type=2&amp;id=28196554&amp;auto=0&amp;height=66&#34;&gt;
-    &lt;/iframe&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://aming.xyz/pic/13641780.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://aming.xyz/pic/13641780.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +48,8 @@
       <pubDate>Tue, 03 Dec 2019 04:03:12 +0800</pubDate>
       
       <guid>https://aming.xyz/post/zicao/</guid>
-      <description>&lt;p&gt;江南美&lt;br /&gt;
-三蓄碧绿宁心炫&lt;br /&gt;
+      <description>&lt;p&gt;江南美&lt;br&gt;
+三蓄碧绿宁心炫&lt;br&gt;
 牙静昼闹雨叮咚&lt;/p&gt;</description>
     </item>
     
@@ -101,7 +101,7 @@
       <pubDate>Fri, 29 Nov 2019 07:09:50 +0800</pubDate>
       
       <guid>https://aming.xyz/post/snow/</guid>
-      <description>&lt;p&gt;冬天来了！&lt;br /&gt;
+      <description>&lt;p&gt;冬天来了！&lt;br&gt;
 雪花飞啊飞！&lt;/p&gt;</description>
     </item>
     
