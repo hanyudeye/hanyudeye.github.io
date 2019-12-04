@@ -56,7 +56,7 @@
 
 <meta itemprop="datePublished" content="2019-12-04T18:54:01&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-04T18:54:01&#43;08:00" />
-<meta itemprop="wordCount" content="168">
+<meta itemprop="wordCount" content="222">
 
 
 
@@ -230,7 +230,7 @@ left: 40%;
 <div class="row">
 <div class="col-md-12">
 <button type="button" class="btn btn-danger">
-清扫路边的垃圾 😢 
+清扫路边的垃圾  <icon>😢</icon> 
 </button>
 </div>
 </div>
@@ -242,7 +242,7 @@ left: 40%;
 <div class="row">
 <div class="col-md-12">
 <button type="button" class="btn btn-danger">
-勇敢做某件事 😢 
+勇敢做某件事  <icon>😢</icon> 
 </button>
 </div>
 </div>
@@ -254,7 +254,7 @@ left: 40%;
 <div class="row">
 <div class="col-md-12">
 <button type="button" class="btn btn-danger">
-做家庭晚餐 😢 
+做家庭晚餐  <icon>😢</icon> 
 </button>
 </div>
 </div>
@@ -266,7 +266,7 @@ left: 40%;
 <div class="row">
 <div class="col-md-12">
 <button type="button" class="btn btn-danger">
-唱动听的歌 😢 
+唱动听的歌 <icon>😢</icon> 
 </button>
 </div>
 </div>
@@ -278,12 +278,13 @@ left: 40%;
 
 <script>
 $('button').click(function(){
+alert("你是我们的超级英雄！！！");
 <!-- alert("你是我们的超级英雄！！！"); -->
-<!-- alert("你是我们的超级英雄！！！"); -->
-     $("#messageBox").slideDown("fast",function(){
-          $(this).delay(3000).slideUp("fast");
-       });
+<!--      $("#messageBox").slideDown("fast",function(){ -->
+<!--           $(this).delay(3000).slideUp("fast"); -->
+<!--        }); -->
 $(this).removeClass("btn-danger").addClass("btn-success");
+$(this).children('icon').text("🙂");
 });
 
 </script>
