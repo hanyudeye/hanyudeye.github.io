@@ -15,7 +15,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
 <meta name="author" content="阿明" /><meta name="description" content=" 如果每个人都做点自己觉得正义的事，那么(他/她) 就是我们的超级英雄。
 " /><meta name="keywords" content="阿明博客, 记录生活" />
@@ -36,7 +36,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.f21dfe1d.min.css" rel="stylesheet">
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -54,7 +54,7 @@
 ">
 <meta itemprop="datePublished" content="2019-12-04T18:54:01&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-04T18:54:01&#43;08:00" />
-<meta itemprop="wordCount" content="34">
+<meta itemprop="wordCount" content="222">
 
 
 
@@ -72,8 +72,6 @@
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
-
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -154,23 +152,118 @@
       <blockquote>
 <p>如果每个人都做点自己觉得正义的事，那么(他/她) 就是我们的超级英雄。</p>
 </blockquote>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<style>
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    }
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+#messageBox {
+display:none;
+border: 0px ;
+position: fixed;
+top:0;
+left: 40%;
+}
+</style>
+ <div class='align-center'>
+<div id="messageBox">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<button type="button" class="btn btn-warning">
+你是我们的超级英雄 !!!
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<button type="button" class="btn btn-danger">
+清扫路边的垃圾  <icon>😢</icon> 
+</button>
+</div>
+</div>
+</div>
 <hr>
-<!-- raw HTML omitted -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<button type="button" class="btn btn-danger">
+勇敢做某件事  <icon>😢</icon> 
+</button>
+</div>
+</div>
+</div>
 <hr>
-<!-- raw HTML omitted -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<button type="button" class="btn btn-danger">
+做家庭晚餐  <icon>😢</icon> 
+</button>
+</div>
+</div>
+</div>
 <hr>
-<!-- raw HTML omitted -->
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<button type="button" class="btn btn-danger">
+唱动听的歌 <icon>😢</icon> 
+</button>
+</div>
+</div>
+</div>
 <hr>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</div>
+<script>
+$('button').click(function(){
+alert("你是我们的超级英雄！！！");
+$(this).removeClass("btn-danger").addClass("btn-success");
+$(this).children('icon').text("🙂");
+});
+
+</script>
     </div>
 
     <div class="post-copyright">
@@ -247,8 +340,9 @@
   </span>
 
   <div class="busuanzi-footer">
-    
-    
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
   </div>
 
   <span class="copyright-year">
@@ -268,8 +362,8 @@
     </div>
   </div>
   
-  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
   <script type="text/javascript">
