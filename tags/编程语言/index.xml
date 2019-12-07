@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程语言 on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in 编程语言 on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Dec 2019 19:41:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>编程语言简介</title>
+      <link>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Sat, 07 Dec 2019 19:41:03 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
+      <description>&lt;p&gt;
+前文我们讲过，世界是由 &lt;strong&gt;东西&lt;/strong&gt; 组成的，东西分为两种，一种是会动的东西，另一种是静止的东西。
+会动的东西影响不动的东西，或会动的东西相互影响，构成了我们运动的世界。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
