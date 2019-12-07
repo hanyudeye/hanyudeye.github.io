@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 08 Dec 2019 05:32:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>算法简介</title>
+      <link>https://aming.xyz/post/algorithm/</link>
+      <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/algorithm/</guid>
+      <description>&lt;p&gt;
+简单举个例子，给你一个废铁，我要打造一枚铁戒，不管你用什么方法。这种对解题方法的
+研究，就是算法研究。
+如果要想打造一枚金戒，以现有的技术，很难实现，所以称为不可解决算法。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+在面向现实中，可能会有很多约束条件，解题方法会苛刻的多。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
