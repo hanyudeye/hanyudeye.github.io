@@ -6,10 +6,20 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2019 06:11:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Dec 2019 05:31:36 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>画画</title>
+      <link>https://aming.xyz/post/huahua/</link>
+      <pubDate>Sat, 07 Dec 2019 05:31:36 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/huahua/</guid>
+      <description>&lt;p&gt;献丑了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://aming.xyz/pic/self.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>空灵</title>
@@ -101,7 +111,8 @@
       
       <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
-计算机的能力是由软件决定的。有一种软件设计的哲学叫 &lt;strong&gt;UNIX&lt;/strong&gt; 哲学，提倡的是设计软件要注重 &lt;strong&gt;KISS&lt;/strong&gt; （keep it simple, stupid）原则 。
+计算机的能力是由软件决定的。有一种软件设计的哲学叫 &lt;strong&gt;UNIX&lt;/strong&gt; 哲学，提倡的是设计软件
+要注重 &lt;strong&gt;KISS&lt;/strong&gt; （keep it simple, stupid）原则 。
 &lt;/p&gt;</description>
     </item>
     
