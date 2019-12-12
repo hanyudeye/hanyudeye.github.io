@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2019-12-13T06:59:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/music/</loc>
+    <lastmod>2019-12-13T06:59:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://aming.xyz/categories/</loc>
     <lastmod>2019-12-12T19:40:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,13 +52,6 @@
   
   <url>
     <loc>https://aming.xyz/post/%E8%90%A5%E9%94%80/</loc>
-    <lastmod>2019-12-12T19:40:05+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2019-12-12T19:40:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -242,6 +249,13 @@
   <url>
     <loc>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2019-07-18T19:57:04+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/math/</loc>
+    <lastmod>2019-06-29T06:01:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
