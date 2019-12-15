@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2019 19:40:05 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 10:23:53 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>f</title>
+      <link>https://aming.xyz/post/f/</link>
+      <pubDate>Sun, 15 Dec 2019 10:23:53 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/f/</guid>
+      <description> h </description>
+    </item>
     
     <item>
       <title>营销</title>
@@ -196,15 +205,6 @@
       <description>&lt;p&gt;
 所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>数学简介</title>
-      <link>https://aming.xyz/post/math/</link>
-      <pubDate>Sat, 29 Jun 2019 06:01:54 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/math/</guid>
-      <description>数学是关于客观东西的一种符号推导系统,关于数符的学问。 数学表现的规律比较稳定 算术 东西的量的运算，数学的最简单的形式。 平面几何 曲面几何 立体几何</description>
     </item>
     
     <item>

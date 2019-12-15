@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Dec 2019 06:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 10:23:53 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,25 @@
       <pubDate>Fri, 13 Dec 2019 06:59:31 +0800</pubDate>
       
       <guid>https://aming.xyz/music/</guid>
-      <description>你哪是一只麻雀，你是一只雄鹰啊。你应比其他人作出更大的责任 ! --</description>
+      <description>你哪是一只麻雀，你是一只雄鹰啊。你应比其他人作出更大的责任 !</description>
+    </item>
+    
+    <item>
+      <title>日记</title>
+      <link>https://aming.xyz/notes/</link>
+      <pubDate>Sat, 23 Nov 2019 04:03:41 +0800</pubDate>
+      
+      <guid>https://aming.xyz/notes/</guid>
+      <description>2019年 6月24日 缺乏理性是我这辈子做的最悲哀的事。后果就是悲剧的人生 ！！！ 要谨记这惨痛的教训 ，不然人生就是一具活着的尸体，毫无灵魂，毫无</description>
+    </item>
+    
+    <item>
+      <title>f</title>
+      <link>https://aming.xyz/post/f/</link>
+      <pubDate>Sun, 15 Dec 2019 10:23:53 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/f/</guid>
+      <description> h </description>
     </item>
     
     <item>
@@ -186,15 +204,6 @@
     </item>
     
     <item>
-      <title>日记</title>
-      <link>https://aming.xyz/notes/</link>
-      <pubDate>Sat, 23 Nov 2019 04:03:41 +0800</pubDate>
-      
-      <guid>https://aming.xyz/notes/</guid>
-      <description>2019年 6月24日 缺乏理性是我这辈子做的最悲哀的事。后果就是悲剧的人生 ！！！ 要谨记这惨痛的教训 ，不然人生就是一具活着的尸体，毫无灵魂，毫无</description>
-    </item>
-    
-    <item>
       <title>人与哲学</title>
       <link>https://aming.xyz/post/zhexue/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
@@ -223,15 +232,6 @@
       <description>&lt;p&gt;
 所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>数学简介</title>
-      <link>https://aming.xyz/post/math/</link>
-      <pubDate>Sat, 29 Jun 2019 06:01:54 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/math/</guid>
-      <description>数学是关于客观东西的一种符号推导系统,关于数符的学问。 数学表现的规律比较稳定 算术 东西的量的运算，数学的最简单的形式。 平面几何 曲面几何 立体几何</description>
     </item>
     
     <item>

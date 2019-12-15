@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/emacs/" />
 <meta property="article:published_time" content="2019-06-04T22:41:32+08:00" />
-<meta property="article:modified_time" content="2019-06-04T22:41:32+08:00" />
+<meta property="article:modified_time" content="2019-12-15T10:23:53+08:00" />
 <meta itemprop="name" content="emacs 简介">
 <meta itemprop="description" content="emacs 编辑器">
 <meta itemprop="datePublished" content="2019-06-04T22:41:32&#43;08:00" />
-<meta itemprop="dateModified" content="2019-06-04T22:41:32&#43;08:00" />
-<meta itemprop="wordCount" content="979">
+<meta itemprop="dateModified" content="2019-12-15T10:23:53&#43;08:00" />
+<meta itemprop="wordCount" content="1018">
 
 
 
@@ -88,12 +88,12 @@
         <li class="mobile-menu-item">标签</li>
       </a><a href="/categories/">
         <li class="mobile-menu-item">分类</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
       </a><a href="/notes/">
         <li class="mobile-menu-item">日记</li>
       </a><a href="/music/">
         <li class="mobile-menu-item">音乐</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
       </a>
   </ul>
 </nav>
@@ -114,11 +114,11 @@
       </li><li class="menu-item">
         <a class="menu-item-link" href="/categories/">分类</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/notes/">日记</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
       </li>
   </ul>
 </nav>
@@ -688,6 +688,11 @@ rectangle (矩形标记)
 <h2 id="headline-23">
 服务 
 </h2>
+<blockquote>
+<p>
+开启服务后，就能共享 <strong>emacs</strong> 环境了。还可以设置多个不同服务
+</p>
+</blockquote>
 <table>
 <tbody>
 <tr>
@@ -695,8 +700,16 @@ rectangle (矩形标记)
 <td>server-start</td>
 </tr>
 <tr>
+<td>连接服务</td>
+<td>emacsclient</td>
+</tr>
+<tr>
 <td>设置客户端编辑器</td>
 <td>EDITOR=emacsclient -c</td>
+</tr>
+<tr>
+<td>关闭服务文件</td>
+<td><code>C-x #</code></td>
 </tr>
 </tbody>
 </table>
@@ -781,7 +794,7 @@ ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2019-06-04
+        2019-12-15
         
     </span>
   </p>
@@ -793,9 +806,9 @@ ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标
           <a href="/tags/emacs/">emacs</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/math/">
+        <a class="prev" href="/post/%E8%AE%BE%E8%AE%A1/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">数学简介</span>
+            <span class="prev-text nav-default">设计简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
