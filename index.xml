@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Dec 2019 06:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 07:11:28 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -36,6 +36,15 @@
       
       <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 文章的排序决定按照修改时间排序了，因为不想写更多新文章，而是想完善旧文</description>
+    </item>
+    
+    <item>
+      <title>文字工作者的办公选择</title>
+      <link>https://aming.xyz/post/official/</link>
+      <pubDate>Mon, 16 Dec 2019 07:11:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/official/</guid>
+      <description>&lt;p&gt;基于这样一个事实，人长时间使用某种姿势，会劳累。&lt;/p&gt;</description>
     </item>
     
     <item>
