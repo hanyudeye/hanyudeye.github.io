@@ -6,10 +6,21 @@
     <description>Recent content in 软件使用 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2019 05:32:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Dec 2019 05:32:47 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>latex简介</title>
+      <link>https://aming.xyz/post/latex/</link>
+      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/latex/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;书写数学书籍等印刷作品的标记&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>算法简介</title>
