@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>数学简介 - 阿明 - 收集生活的感悟</title>
+  <title>Hugo and the  General Data Protection Regulation (GDPR) - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,9 +17,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
-<meta name="author" content="阿明" /><meta name="description" content="数学是关于客观东西的一种符号推导系统,关于数符的学问。
-数学表现的规律比较稳定。
-" /><meta name="keywords" content="阿明博客, 记录生活" />
+<meta name="author" content="阿明" /><meta name="description" content="About how to configure your Hugo site to meet the new regulations." /><meta name="keywords" content="GDPR, Privacy, Data Protection" />
 
 
 
@@ -29,7 +27,7 @@
 <meta name="generator" content="Hugo 0.61.0 with theme even" />
 
 
-<link rel="canonical" href="https://aming.xyz/post/math/" />
+<link rel="canonical" href="https://aming.xyz/temp/gdpr/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,26 +39,23 @@
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="数学简介" />
-<meta property="og:description" content="数学是关于客观东西的一种符号推导系统,关于数符的学问。
-数学表现的规律比较稳定。" />
+<meta property="og:title" content="Hugo and the  General Data Protection Regulation (GDPR)" />
+<meta property="og:description" content="About how to configure your Hugo site to meet the new regulations." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/post/math/" />
-<meta property="article:published_time" content="2019-12-22T05:32:47+08:00" />
-<meta property="article:modified_time" content="2019-12-22T05:32:47+08:00" />
-<meta itemprop="name" content="数学简介">
-<meta itemprop="description" content="数学是关于客观东西的一种符号推导系统,关于数符的学问。
-数学表现的规律比较稳定。">
-<meta itemprop="datePublished" content="2019-12-22T05:32:47&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-22T05:32:47&#43;08:00" />
-<meta itemprop="wordCount" content="730">
+<meta property="og:url" content="https://aming.xyz/temp/gdpr/" />
+<meta property="article:published_time" content="2018-05-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-05-25T00:00:00+00:00" />
+<meta itemprop="name" content="Hugo and the  General Data Protection Regulation (GDPR)">
+<meta itemprop="description" content="About how to configure your Hugo site to meet the new regulations.">
+<meta itemprop="datePublished" content="2018-05-25T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-25T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="516">
 
 
 
-<meta itemprop="keywords" content="数学," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="数学简介"/>
-<meta name="twitter:description" content="数学是关于客观东西的一种符号推导系统,关于数符的学问。
-数学表现的规律比较稳定。"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo and the  General Data Protection Regulation (GDPR)"/>
+<meta name="twitter:description" content="About how to configure your Hugo site to meet the new regulations."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,75 +128,97 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">数学简介</h1>
+  <div class="post-content">
+    <h2 id="fuc">fuc</h2>
+<p><strong>Hugo is a static site generator. By using Hugo you are already standing on very solid ground. Static HTML files on disk are much easier to reason about compared to server and database driven web sites.</strong></p>
+<p>But even static websites can integrate with external services, so from version <code>0.41</code>, Hugo provides a <strong>Privacy Config</strong> that covers the relevant built-in templates.</p>
+<p>Note that:</p>
+<ul>
+<li>These settings have their defaults setting set to <em>off</em>, i.e. how it worked before Hugo <code>0.41</code>. You must do your own evaluation of your site and apply the appropriate settings.</li>
+<li>These settings work with the <a href="/templates/internal/">internal templates</a>. Some theme may contain custom templates for embedding services like Google Analytics. In that case these options have no effect.</li>
+<li>We will continue this work and improve this further in future Hugo versions.</li>
+</ul>
+<h2 id="all-privacy-settings">All Privacy Settings</h2>
+<p>Below are all privacy settings and their default value. These settings need to be put in your site config (e.g. <code>config.toml</code>).</p>
+<p>[privacy]
+[privacy.disqus]
+disable = false
+[privacy.googleAnalytics]
+disable = false
+respectDoNotTrack = false
+anonymizeIP = false
+useSessionStorage = false
+[privacy.instagram]
+disable = false
+simple = false
+[privacy.twitter]
+disable = false
+enableDNT = false
+simple = false
+[privacy.vimeo]
+disable = false
+simple = false
+[privacy.youtube]
+disable = false
+privacyEnhanced = false</p>
+<h2 id="disable-all-services">Disable All Services</h2>
+<p>An example Privacy Config that disables all the relevant services in Hugo. With this configuration, the other settings will not matter.</p>
+<p>[privacy]
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true</p>
+<h2 id="the-privacy-settings-explained">The Privacy Settings Explained</h2>
+<h3 id="googleanalytics">GoogleAnalytics</h3>
+<dl>
+<dt>anonymizeIP</dt>
+<dd>Enabling this will make it so the users&rsquo; IP addresses are anonymized within Google Analytics.</dd>
+<dt>respectDoNotTrack</dt>
+<dd>Enabling this will make the GA templates respect the &ldquo;Do Not Track&rdquo; HTTP header.</dd>
+<dt>useSessionStorage</dt>
+<dd>Enabling this will disable the use of Cookies and use Session Storage to Store the GA Client ID.</dd>
+</dl>
+<h3 id="instagram">Instagram</h3>
+<dl>
+<dt>simple</dt>
+<dd>If simple mode is enabled, a static and no-JS version of the Instagram image card will be built. Note that this only supports image cards and the image itself will be fetched from Instagram's servers.</dd>
+</dl>
+<p><strong>Note:</strong> If you use the <em>simple mode</em> for Instagram and a site styled with Bootstrap 4, you may want to disable the inlines styles provided by Hugo:</p>
+<p>[services]
+[services.instagram]
+disableInlineCSS = true</p>
+<h3 id="twitter">Twitter</h3>
+<dl>
+<dt>enableDNT</dt>
+<dd>Enabling this for the twitter/tweet shortcode, the tweet and its embedded page on your site are not used for purposes that include personalized suggestions and personalized ads.</dd>
+<dt>simple</dt>
+<dd>If simple mode is enabled, a static and no-JS version of a tweet will be built.</dd>
+</dl>
+<p><strong>Note:</strong> If you use the <em>simple mode</em> for Twitter, you may want to disable the inlines styles provided by Hugo:</p>
+<p>[services]
+[services.twitter]
+disableInlineCSS = true</p>
+<h3 id="youtube">YouTube</h3>
+<dl>
+<dt>privacyEnhanced</dt>
+<dd>When you turn on privacy-enhanced mode, YouTube won’t store information about visitors on your website unless the user plays the embedded video.</dd>
+</dl>
+<h3 id="vimeo">Vimeo</h3>
+<dl>
+<dt>simple</dt>
+<dd>If simple mode is enabled, the video thumbnail is fetched from Vimeo's servers and it is overlayed with a play button. If the user clicks to play the video, it will open in a new tab directly on Vimeo's website.</dd>
+</dl>
 
-      <div class="post-meta">
-        <span class="post-time"> 2019-12-22 </span>
-        <div class="post-category">
-            <a href="/categories/%E6%95%B0%E5%AD%A6/"> 数学 </a>
-            </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
-      </div>
-    </header>
-
-    
-    <div class="post-content">
-      <p>数学是关于客观东西的一种符号推导系统,关于<strong>数符</strong>的学问。<br>
-数学表现的规律比较稳定。</p>
-<p>我们学习某样东西，先要知道它是用在什么地方的，这样比较接地气。要不来只学习理论本身，感觉高高在上，不太能理解东西的本质。</p>
-<p>万物皆东西。</p>
-<p>很久以前，有那么一群猿人，他们抓了一堆东西(鱼)。今天抓了一小堆，明天抓了一堆多那么几条。他们想啊，这一堆一堆的表示，有点不合宜，是否可以用一个个的东西表示不同堆的大小。然后，数产生了。</p>
-<p>假设这些是印度人，他们想到的是用 数 (1,2,3,4 ) 这种形式表示鱼的多少。他们发现，用一堆3个的鱼，与一堆4个的鱼放在一起，会产生一堆7个的鱼，然后，他们用数来进行算术了。算术就产生了。</p>
-<p>印度人碰到了喜欢到处跑的阿拉伯人，阿拉伯人学会了这种技术。然后阿拉伯人把这种技术带到了欧洲，欧洲人也会用了。</p>
-<p>欧洲人用数数鱼数的得心应手，想想用来算长度，是否也可以。当他们计算边长为1的等腰直角三角形时，死也量不出来。量边长为2 ,3 的直角三角形，得到的另一边确实5。然后他们创造了一种不按常理出牌的数(无理数)<br>
-后来一些人估算一下，无理数是远远多于有理数的。</p>
-<p>古希腊人，比较繁荣吧，有一些学者不用种地，就开始研究三角形的东西，把一个圆分成了360°。然后在圆里画三角形，这样糊弄糊弄，弄出了一些弧度和正弦余弦的概念。好，处理三角形的角度关系时就用他们的那种方法了。</p>
-<p>基本代数: 古人今天打了7个鱼，每个人吃两个鱼，然后古人所在的部落共有10个人，那么还需要几个鱼？ 古人面对这种难题的时候想到了一个解决办法，就是用变量的形式来代表要求值的结果 (XYZ ..)</p>
-<p>$7+ X=10 \cdot 2$</p>
-<blockquote>
-<p>然后把要算的东西放在等号左边，就可以得出结果了。</p>
-</blockquote>
-<p>随着数学内容往外延展，数学包含的东西越来越多，已形成了好多个分支。</p>
-<blockquote>
-<p>人们吃饱了撑得没事干，想出了各种文化。</p>
-</blockquote>
-    </div>
-
-    <div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">文章作者</span>
-    <span class="item-content">阿明</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">上次更新</span>
-    <span class="item-content">
-        2019-12-22
-        
-    </span>
-  </p>
-  
-  
-</div>
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/%E6%95%B0%E5%AD%A6/">数学</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/post/latex/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">latex简介</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/official/">
-            <span class="next-text nav-default">文字工作者的办公选择</span>
-            <span class="next-text nav-mobile">下一篇</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
+  </div>
+</article>
         </div>
         
 

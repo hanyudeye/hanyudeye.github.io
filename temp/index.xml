@@ -6,18 +6,21 @@
     <description>Recent content in Temps on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Dec 2019 18:54:01 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/temp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>超级英雄</title>
-      <link>https://aming.xyz/temp/superhero/</link>
-      <pubDate>Wed, 04 Dec 2019 18:54:01 +0800</pubDate>
+      <title>Hugo and the  General Data Protection Regulation (GDPR)</title>
+      <link>https://aming.xyz/temp/gdpr/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://aming.xyz/temp/superhero/</guid>
-      <description>ff 如果每个人都做点自己觉得正义的事，那么(他/她) 就是我们的超级英雄。 你好K金方式</description>
+      <guid>https://aming.xyz/temp/gdpr/</guid>
+      <description>fuc Hugo is a static site generator. By using Hugo you are already standing on very solid ground. Static HTML files on disk are much easier to reason about compared to server and database driven web sites.
+But even static websites can integrate with external services, so from version 0.41, Hugo provides a Privacy Config that covers the relevant built-in templates.
+Note that:
+ These settings have their defaults setting set to off, i.</description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2019 05:32:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Dec 2019 19:40:49 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -36,6 +36,16 @@
       
       <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 文章的排序决定按照修改时间排序了，因为不想写更多新文章，而是想完善旧文</description>
+    </item>
+    
+    <item>
+      <title>hh</title>
+      <link>https://aming.xyz/post/f/</link>
+      <pubDate>Mon, 23 Dec 2019 19:40:49 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/f/</guid>
+      <description>{{ upper &amp;ldquo;BatMan&amp;rdquo; }} → &amp;ldquo;BATMAN&amp;rdquo;
+ fuck hihao The main content file. Fill in required front matter metadata and write your story. I does not have to be a novel. It can even be self-promotional, but it should include Hugo in some form. hfa fasdf  </description>
     </item>
     
     <item>
