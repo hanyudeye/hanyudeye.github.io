@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>版本控制简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="版本控制" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.61.0 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/vc/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="版本控制简介" />
+<meta property="og:description" content="版本控制" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/vc/" />
+<meta property="article:published_time" content="2019-12-25T06:23:31+08:00" />
+<meta property="article:modified_time" content="2019-12-25T06:23:31+08:00" />
+<meta itemprop="name" content="版本控制简介">
+<meta itemprop="description" content="版本控制">
+<meta itemprop="datePublished" content="2019-12-25T06:23:31&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-25T06:23:31&#43;08:00" />
+<meta itemprop="wordCount" content="1838">
+
+
+
+<meta itemprop="keywords" content="git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="版本控制简介"/>
+<meta name="twitter:description" content="版本控制"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">版本控制简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-12-25 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"> 软件使用 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">git </a>
+<ul>
+<li><a href="#headline-2">初始配置</a>
+<ul>
+<li><a href="#headline-3">配置 SSH 远程传输</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-4">用法</a>
+<ul>
+<li><a href="#headline-5">初始化版本系统 </a>
+</li>
+<li><a href="#headline-6">暂存区管理</a>
+<ul>
+<li><a href="#headline-7">把文件加入暂存区 </a>
+</li>
+<li><a href="#headline-8">删除暂存区里的文件,如需纳入版本库，需要重新添加   </a>
+</li>
+<li><a href="#headline-9">重置暂存,就是恢复成未暂存的状态</a>
+</li>
+<li><a href="#headline-10">改名文件</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-11">本地库管理</a>
+<ul>
+<li><a href="#headline-12">保存到本地库   </a>
+</li>
+<li><a href="#headline-13">撤销 [ 恢复到修改前] </a>
+</li>
+<li><a href="#headline-14">反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)</a>
+</li>
+<li><a href="#headline-15">分支管理</a>
+<ul>
+<li><a href="#headline-16">创建分支 </a>
+</li>
+<li><a href="#headline-17">切换分支 </a>
+</li>
+<li><a href="#headline-18">合并分支</a>
+<ul>
+<li><a href="#headline-19">直接合并 把两条分支上的历史轨迹合并 </a>
+</li>
+<li><a href="#headline-20">压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。</a>
+</li>
+<li><a href="#headline-21">拣选合并 只需合并某个提交，而不是全部改动.</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-22">修改分支名称</a>
+</li>
+<li><a href="#headline-23">删除分支 </a>
+</li>
+<li><a href="#headline-24">stash(储藏) </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-25">分支的变基 rebase</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-26">远程仓库管理</a>
+<ul>
+<li><a href="#headline-27">克隆远程到本地仓库</a>
+</li>
+<li><a href="#headline-28">添加远程源 </a>
+</li>
+<li><a href="#headline-29">远程同步</a>
+</li>
+<li><a href="#headline-30">更新本地</a>
+</li>
+<li><a href="#headline-31">查看远程分支情况</a>
+</li>
+<li><a href="#headline-32">修改远程仓库 </a>
+<ul>
+<li><a href="#headline-33">修改</a>
+</li>
+<li><a href="#headline-34">先删后加</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-35">强制覆盖本地</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-36">日志查看</a>
+<ul>
+<li><a href="#headline-37">仓库状态 </a>
+</li>
+<li><a href="#headline-38">查看提交历史</a>
+</li>
+<li><a href="#headline-39">查看某次提交的内容   </a>
+</li>
+<li><a href="#headline-40">更详细的信息 </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-41">比较区别</a>
+</li>
+<li><a href="#headline-42">TAG  </a>
+<ul>
+<li><a href="#headline-43">某个分支创建标签</a>
+</li>
+<li><a href="#headline-44">查看可发布版本 </a>
+</li>
+<li><a href="#headline-45">签出标签</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-46">使用 Git 子模块跟踪外部版本库</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-47">gitignore 忽略文件</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-48">github</a>
+<ul>
+<li><a href="#headline-49">主要功能</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+记录任何工程项目内各个模块的改动历程，并为每次改动编上序号
+</p>
+<p>
+这玩意就像你的年纪一样，过了一年，给你的年纪加个一岁，不过这里加一个岁月的标签是看作者的任性的   
+</p>
+<blockquote>
+<p>
+加了岁月的标签后(软件里叫版本号)，你可以返老还童了，想到哪个年纪就到哪个年纪，就像给你照个片，存个档一样，哪段日子过的痛苦了，回头重新过。
+</p>
+</blockquote>
+<p>
+基本概念
+</p>
+<ul>
+<li>
+<p>
+仓库 (存放&#34;你&#34;和&#34;你的历史&#34;的地方)
+</p>
+</li>
+<li>
+<p>
+基线 (主线，稳定的东西，基本能用的东西版本)
+</p>
+</li>
+<li>
+<p>
+分支 (比如你是一个男的，你过的是男人的生活，哪天你想体验一下女人的生活，那么你可以在某个年纪去创建一个分支，然后做下手术，体验一把女人的生活) [这里是一个比喻，切勿当真，就是与主线相关的东西]
+</p>
+</li>
+<li>
+<p>
+冲突 (多人合作中，创建的不同时间线，产生的警告)
+</p>
+</li>
+</ul>
+<p>
+下面以比较流行的 <code>git</code> 为例说明吧
+</p>
+<h1 id="headline-1">
+git 
+</h1>
+<h2 id="headline-2">
+初始配置
+</h2>
+<p>
+设置一下仓库作者的个人信息什么的 
+</p>
+<div class="src src-text">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">git config [--system,--global, --list]
+
+用户名 user.name = &#34;用户名&#34;
+邮箱 user.email = &#34;邮箱&#34;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-3">
+配置 SSH 远程传输
+</h3>
+<p>
+创建 SSH Key：
+</p>
+<div class="src src-shell">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">  $ ssh-keygen -t rsa -C <span class="s2">&#34;youremail@example.com&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+然后把公钥 id_rsa.pub 的内容复制到 Github &#34;Account settings&#34; 的 SSH Keys 中。
+</p>
+<pre class="example">
+可以使用 ssh -v git@github.com 命令来测试链接是否畅通
+</pre>
+<h2 id="headline-4">
+用法
+</h2>
+<h3 id="headline-5">
+初始化版本系统 
+</h3>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git init &lt;DIR&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-6">
+暂存区管理
+</h3>
+<blockquote>
+<p>
+暂存区保存你历史记录的一个缓存区，为的就是让你&#34;多此一举&#34;，进行下一步确认是否保存快照
+</p>
+</blockquote>
+<h4 id="headline-7">
+把文件加入暂存区 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git add &lt;modified files&gt;
+  git add .</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-8">
+删除暂存区里的文件,如需纳入版本库，需要重新添加   
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git rm --cached &lt;file&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-9">
+重置暂存,就是恢复成未暂存的状态
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git reset HEAD &lt;file&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-10">
+改名文件
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git mv <span class="o">[</span>file-original<span class="o">]</span> <span class="o">[</span>file-renamed<span class="o">]</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-11">
+本地库管理
+</h3>
+<h4 id="headline-12">
+保存到本地库   
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git commit -m <span class="s2">&#34;msg&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-13">
+撤销 [ 恢复到修改前] 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git checkout &lt;file&gt;
+  <span class="c1"># 从另一个分支恢复修改</span> 
+  git checkout &lt;branch&gt;  &lt;file&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-14">
+反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git revert HEAD                  撤销前一次 commit
+  git revert HEAD^               撤销前前一次 commit
+  git revert commit-id（比如：fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff）撤销指定的版本，撤销也会作为一次提交进行保存。
+  git revert 是提交一个新的版本，将需要 revert 的版本的内容再反向修改回去，版本会递增，不影响之前提交的内容。</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-15">
+分支管理
+</h4>
+<h5 id="headline-16">
+创建分支 
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git branch &lt;BRANCHNAME&gt; 
+  <span class="c1"># 从某分支创建分支</span> 
+  git checkout -b &lt;ALTERNATE&gt; &lt;BRANCHNAME&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-17">
+切换分支 
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git checkout &lt;BRANCHNAME&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-18">
+合并分支
+</h5>
+<h6 id="headline-19">
+直接合并 把两条分支上的历史轨迹合并 
+</h6>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git merge</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-20">
+压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。
+</h6>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git merge --squash &lt;BRANCH&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-21">
+拣选合并 只需合并某个提交，而不是全部改动.
+</h6>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git cherry-pick &lt;ID&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-22">
+修改分支名称
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git branch -m &lt;BRANCHNAME&gt; &lt;NEWBRANCHNAME&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-23">
+删除分支 
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git branch -d &lt;BRANCHNAME&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-24">
+stash(储藏) 
+</h5>
+<p>
+可以先用 git stash save xxx 来保存工作区的内容，然后新建 一个分支并调用 git stash pop
+</p>
+<h4 id="headline-25">
+分支的变基 rebase
+</h4>
+<div class="src src-shell">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">  git checkout experiment
+  git rebase master</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-26">
+远程仓库管理
+</h3>
+<h4 id="headline-27">
+克隆远程到本地仓库
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git clone RESP
+git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆最新的</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-28">
+添加远程源 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git remote add origin https://github.com/hanyudeye/test.git</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-29">
+远程同步
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git push -u origin master
+  <span class="c1"># 将本地分支上的提交推送到远程某分支</span> 
+  git push origin &lt;BRANCH&gt;:&lt;REMOTEBRANCH&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-30">
+更新本地
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git pull
+git pull git://github.com/tom/test.git</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-31">
+查看远程分支情况
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git branch -r <span class="c1"># 查看远程 branch</span>
+git checkout -b bug_fix_local bug_fix_remote <span class="c1">#把本地端切换为远程的 bug_fix_remote branch 并命名为 bug_fix_local</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-32">
+修改远程仓库 
+</h4>
+<h5 id="headline-33">
+修改
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git remote  set-url origin <span class="o">[</span>url<span class="o">]</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-34">
+先删后加
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git remote rm origin
+git remote add origin <span class="o">[</span>url<span class="o">]</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-35">
+强制覆盖本地
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git fetch --all
+git reset --hard origin/master
+git pull</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-36">
+日志查看
+</h3>
+<h4 id="headline-37">
+仓库状态 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git status
+git status -s 简短信息
+git remote -v 列出服务器地址</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-38">
+查看提交历史
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git log
+  git log --oneline 简洁--graph 拓扑图 <span class="s1">&#39;--reverse&#39;</span>逆向显示</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+–author 指定用户日志
+如果你要指定日期，可以执行几个选项：–since 和 –before，但是你也可以用 –until 和 –after。
+</p>
+<h4 id="headline-39">
+查看某次提交的内容   
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">git show &lt;id&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-40">
+更详细的信息 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git blame &lt;FILE&gt;
+  <span class="c1"># 具体行的细节</span>
+  git blame -L 12,13 &lt;FILE&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-41">
+比较区别
+</h3>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  比较修改文件与暂存区的区别  git diff &lt;FILE&gt;
+  比较暂存区和版本库的区别 git diff --cached &lt;FILE&gt;   
+  比较不同版本区别 git diff &lt;HEAD&gt;
+
+  git diff branch1 branch2 --stat   //显示出所有有差异的文件列表
+  git diff branch1 branch2 文件名<span class="o">(</span>带路径<span class="o">)</span>   //显示指定文件的详细差异
+  git diff branch1 branch2                   //显示出所有有差异的文件的详细差异</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-42">
+TAG  
+</h3>
+<blockquote>
+<p>
+这是版本信息
+</p>
+</blockquote>
+<h4 id="headline-43">
+某个分支创建标签
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git tag  <span class="o">[</span> TAG <span class="o">]</span> <span class="o">[</span>BRANCH<span class="o">]</span> 
+  git tag 1.0  <span class="o">[</span>branch<span class="o">]</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-44">
+查看可发布版本 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git tag</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-45">
+签出标签
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git checkout 1.0</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-46">
+使用 Git 子模块跟踪外部版本库
+</h3>
+<div class="src src-text">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">添加子模块 git submodule add &lt;RESP&gt; &lt;MODULENAME&gt;
+显示子模块 git submodule
+
+克隆含子模块的版本库
+还要初始化子模块  git submodule init &lt;MODULENAME&gt;
+然后更细 git submodule update &lt;MODULENAME&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h2 id="headline-47">
+gitignore 忽略文件
+</h2>
+<div class="src src-text">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">以斜杠“/”开头表示目录； 
+以星号“*”通配多个字符；
+以问号“?”通配单个字符
+以方括号“[]”包含单个字符的匹配列表；
+以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；
+规则：/fd1/*
+说明：忽略根目录下的 /fd1/ 目录的全部内容；根目录指项目的的根目录</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h1 id="headline-48">
+github
+</h1>
+<p>
+免费给你放照片的地方，如果想要隐私，就要付费了啊
+</p>
+<h2 id="headline-49">
+主要功能
+</h2>
+<div class="src src-text">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">Git 仓库
+Issue
+Wiki
+Pull Request
+社交功能，follow(关注), star(赞)，Organization (组织)</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-12-25
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/git/">git</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/latex/">
+            <span class="next-text nav-default">latex简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/snow.js"></script>
+
+
+</body>
+</html>

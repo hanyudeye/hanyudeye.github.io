@@ -24,7 +24,49 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2019-12-22T05:32:47+08:00</lastmod>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/git/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/vc/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2019-12-25T06:23:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,20 +80,6 @@
   
   <url>
     <loc>https://aming.xyz/post/latex/</loc>
-    <lastmod>2019-12-22T05:32:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/</loc>
-    <lastmod>2019-12-22T05:32:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/tags/</loc>
     <lastmod>2019-12-22T05:32:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,20 +101,6 @@
   
   <url>
     <loc>https://aming.xyz/post/math/</loc>
-    <lastmod>2019-12-22T05:32:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2019-12-22T05:32:47+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2019-12-22T05:32:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

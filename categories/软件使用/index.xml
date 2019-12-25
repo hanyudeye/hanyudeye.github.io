@@ -6,10 +6,29 @@
     <description>Recent content in 软件使用 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2019 05:32:47 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 06:23:31 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>版本控制简介</title>
+      <link>https://aming.xyz/post/vc/</link>
+      <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/vc/</guid>
+      <description>&lt;p&gt;
+记录任何工程项目内各个模块的改动历程，并为每次改动编上序号
+&lt;/p&gt;
+&lt;p&gt;
+这玩意就像你的年纪一样，过了一年，给你的年纪加个一岁，不过这里加一个岁月的标签是看作者的任性的   
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+加了岁月的标签后(软件里叫版本号)，你可以返老还童了，想到哪个年纪就到哪个年纪，就像给你照个片，存个档一样，哪段日子过的痛苦了，回头重新过。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>latex简介</title>
