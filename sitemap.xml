@@ -24,20 +24,34 @@
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2019-12-28T10:46:41+08:00</lastmod>
+    <lastmod>2019-12-28T16:32:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/time/</loc>
-    <lastmod>2019-12-28T10:46:41+08:00</lastmod>
+    <loc>https://aming.xyz/post/danxiangli/</loc>
+    <lastmod>2019-12-28T16:32:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
+    <lastmod>2019-12-28T16:32:12+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E4%BF%9D%E6%8A%A4%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2019-12-28T16:03:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/time/</loc>
     <lastmod>2019-12-28T10:46:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
