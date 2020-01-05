@@ -49,7 +49,7 @@
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="wordCount" content="1581">
+<meta itemprop="wordCount" content="1914">
 
 
 
@@ -148,77 +148,67 @@
 <ul>
 <li><a href="#headline-1">Gnu/Linux</a>
 <ul>
-<li><a href="#headline-2">基本概念</a>
+<li><a href="#headline-2">机器组成  </a>
 </li>
-<li><a href="#headline-3">登录   </a>
+<li><a href="#headline-3">基本概念</a>
 </li>
-<li><a href="#headline-4">机器软硬信息</a>
+<li><a href="#headline-4">登录   </a>
 </li>
-<li><a href="#headline-5">进程管理和调度</a>
+<li><a href="#headline-5">软硬信息</a>
+</li>
+<li><a href="#headline-6">进程管理和调度</a>
 <ul>
-<li><a href="#headline-6">进程属性</a>
+<li><a href="#headline-7">进程属性</a>
 </li>
-<li><a href="#headline-7">进程状态</a>
+<li><a href="#headline-8">进程状态</a>
 </li>
-<li><a href="#headline-8">进程间通信和同步</a>
+<li><a href="#headline-9">进程间通信和同步</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-9">内存管理</a>
+<li><a href="#headline-10">内存管理</a>
 </li>
-<li><a href="#headline-10">磁盘和分区</a>
+<li><a href="#headline-11">磁盘和分区</a>
 </li>
-<li><a href="#headline-11">文件系统</a>
+<li><a href="#headline-12">文件系统</a>
 </li>
-<li><a href="#headline-12">交换分区文件系统</a>
+<li><a href="#headline-13">交换分区文件系统</a>
 </li>
-<li><a href="#headline-13">模块</a>
+<li><a href="#headline-14">模块</a>
 </li>
-<li><a href="#headline-14">设备</a>
+<li><a href="#headline-15">设备</a>
+</li>
+<li><a href="#headline-16">网络管理</a>
+</li>
+<li><a href="#headline-17">任务 </a>
+</li>
+<li><a href="#headline-18">压缩解压</a>
 <ul>
-<li><a href="#headline-15">字符设备  </a>
-</li>
-<li><a href="#headline-16">块设备</a>
-</li>
-<li><a href="#headline-17">网络设备</a>
+<li><a href="#headline-19">unar</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-18">网络管理</a>
+<li><a href="#headline-20">帮助文档    </a>
 </li>
-<li><a href="#headline-19">系统调用 </a>
-</li>
-<li><a href="#headline-20">数据同步</a>
-</li>
-<li><a href="#headline-21">任务 </a>
-</li>
-<li><a href="#headline-22">压缩解压</a>
+<li><a href="#headline-21">pdf</a>
 <ul>
-<li><a href="#headline-23">unar</a>
+<li><a href="#headline-22">合并 pdf  </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-24">帮助文档    </a>
-</li>
-<li><a href="#headline-25">pdf</a>
+<li><a href="#headline-23">查找</a>
 <ul>
-<li><a href="#headline-26">合并 pdf  </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-27">查找</a>
-<ul>
-<li><a href="#headline-28">查找文件 </a>
+<li><a href="#headline-24">查找文件 </a>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#headline-29">发行版</a>
+<li><a href="#headline-25">发行版</a>
 <ul>
-<li><a href="#headline-30">字体</a>
+<li><a href="#headline-26">字体</a>
 </li>
-<li><a href="#headline-31">用户目录配置</a>
+<li><a href="#headline-27">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -229,45 +219,85 @@
     <div class="post-content">
       <p>
 计算机的能力是由软件决定的。有一种软件设计的哲学叫 <strong>UNIX</strong> 哲学，提倡的是设计软件
-要注重 <strong>KISS</strong> （keep it simple, stupid）原则 。
+要注重 <strong>KISS</strong> （keep it simple, stupid，节俭）原则 。
 </p>
 <p>
 <strong>Gnu/Linux</strong> 是 <strong>UNIX</strong> 的免费实现，开启了开源时代。
 </p>
+<blockquote>
+<p>
+因为计算机是对真实世界的一个仿真，所以理应你用的任何工具都能用计算机仿真出来。比如形，什么外形都能用显示器显示，还彩色的呢。
+</p>
+</blockquote>
 <h1 id="headline-1">
 Gnu/Linux
 </h1>
 <h2 id="headline-2">
-基本概念
+机器组成  
 </h2>
 <ul>
 <li>
 <p>
-<strong>文件</strong>: 日常术语&#34;东西&#34;，一般有静止的东西和会动的东西。
+执行指令的 <strong>CPU</strong>
 </p>
 </li>
 <li>
 <p>
-<strong>进程</strong>:  <strong>&#34;会动&#34;</strong> 的东西，工具。
+存放指令的 <strong>内存</strong>
 </p>
 </li>
 <li>
 <p>
-<strong>设备</strong> : 特殊东西，一般指硬件。
+对外展示的 <strong>显示器</strong>
 </p>
 </li>
 <li>
 <p>
-<strong>基本输入输出</strong> : 基本输入就是 <strong>键盘</strong>, 基本输出是 <strong>显示屏</strong> ，特指这俩东西。
+对内接收的 *键鼠*
+</p>
+</li>
+<li>
+<p>
+保存文件的 <strong>硬盘</strong>
 </p>
 </li>
 </ul>
 <h2 id="headline-3">
+基本概念
+</h2>
+<blockquote>
+<p>
+Gnu/linux 会把杂乱的硬件做一个抽象
+</p>
+</blockquote>
+<ul>
+<li>
+<p>
+<strong>文件</strong>: &#34;东西&#34;的存储形式，一般有静止的东西和会动的东西。
+</p>
+</li>
+<li>
+<p>
+<strong>进程</strong>:  <strong>&#34;会动&#34;</strong> 的东西，软件指令。
+</p>
+</li>
+<li>
+<p>
+<strong>设备</strong> : 机器组成的硬件，上面的几个。
+</p>
+</li>
+<li>
+<p>
+<strong>基本输入输出</strong> : 基本输入就是 <strong>键盘</strong>, 基本输出是 <strong>显示屏</strong> ，特指这俩硬件。
+</p>
+</li>
+</ul>
+<h2 id="headline-4">
 登录   
 </h2>
 <blockquote>
 <p>
-登录是对电脑使用的一种权限保护，就像家里的门一样，要使用电脑，首先面对的就是这个东西。
+登录是对电脑使用的一种权限保护，就像家里的门一样，要使用电脑，首先面对的就是这个东西。Linux 会先叫你做一下登录认证，认证后你做什么它就不大管了，相对就自由了。
 </p>
 </blockquote>
 <ul>
@@ -297,9 +327,14 @@ Gnu/Linux
 </p>
 </li>
 </ul>
-<h2 id="headline-4">
-机器软硬信息
+<h2 id="headline-5">
+软硬信息
 </h2>
+<blockquote>
+<p>
+你想看看你用的电脑是什么配置，还有一些系统属性吧，就用这些指令。
+</p>
+</blockquote>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -334,9 +369,14 @@ Gnu/Linux
 </div>
 </div>
 </div>
-<h2 id="headline-5">
+<h2 id="headline-6">
 进程管理和调度
 </h2>
+<blockquote>
+<p>
+显示软件的运行情况，现在电脑都同时运行好多程序的。 
+</p>
+</blockquote>
 <ul>
 <li>
 <p>
@@ -364,7 +404,7 @@ pkill   通过 <strong>进程名</strong> 给进程发信号
 </p>
 </li>
 </ul>
-<h3 id="headline-6">
+<h3 id="headline-7">
 进程属性
 </h3>
 <table>
@@ -427,7 +467,7 @@ pkill   通过 <strong>进程名</strong> 给进程发信号
 </tr>
 </tbody>
 </table>
-<h3 id="headline-7">
+<h3 id="headline-8">
 进程状态
 </h3>
 <ul>
@@ -447,7 +487,7 @@ D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态
 </p>
 </li>
 </ul>
-<h3 id="headline-8">
+<h3 id="headline-9">
 进程间通信和同步
 </h3>
 <ul>
@@ -487,13 +527,18 @@ shared memory
 </p>
 </li>
 </ul>
-<h2 id="headline-9">
+<h2 id="headline-10">
 内存管理
 </h2>
 <p>
-进程要用到内存，资源也要用到内存，如何处理?硬件提供了分段分页的支持。
+内存里放了软件，也放了资源文件，如何处理?硬件提供了分段分页的支持。那么在注销软件的时候就可以合理的回收内存，节约空间了。
 </p>
-<h2 id="headline-10">
+<blockquote>
+<p>
+自动的，不用人管
+</p>
+</blockquote>
+<h2 id="headline-11">
 磁盘和分区
 </h2>
 <div class="src src-sh">
@@ -512,9 +557,14 @@ shared memory
 </div>
 </div>
 </div>
-<h2 id="headline-11">
+<h2 id="headline-12">
 文件系统
 </h2>
+<blockquote>
+<p>
+对硬盘进行格式化，以便储存文件
+</p>
+</blockquote>
 <table>
 <tbody>
 <tr>
@@ -551,7 +601,7 @@ shared memory
 </tr>
 </tbody>
 </table>
-<h2 id="headline-12">
+<h2 id="headline-13">
 交换分区文件系统
 </h2>
 <ul>
@@ -581,9 +631,14 @@ shared memory
 </p>
 </li>
 </ul>
-<h2 id="headline-13">
+<h2 id="headline-14">
 模块
 </h2>
+<blockquote>
+<p>
+不用的东西就不用加载到内核了
+</p>
+</blockquote>
 <ul>
 <li>
 <p>
@@ -601,7 +656,7 @@ lsmod 显示已载入系统的模块
 </p>
 </li>
 </ul>
-<h2 id="headline-14">
+<h2 id="headline-15">
 设备
 </h2>
 <blockquote>
@@ -614,51 +669,23 @@ lsmod 显示已载入系统的模块
 </li>
 <li>
 <p>
-块设备和字符设备因为其区别，操作应该是不一样的，操作系统抽象成同样的使用方法了 open()、close()、read()、write()
-</p>
-</li>
-<li>
-<p>
 网络设备面向数据包的接收和发送而设计，它并不对应于文件系统的节点，内核与网络设备的通信和内核与字符设备、块设备的通行方式完全不同
 </p>
 </li>
 </ul>
 </div>
 </blockquote>
-<h3 id="headline-15">
-字符设备  
-</h3>
-<div class="verse-block">
-<ul>
-<li>
-<p>
-/dev/zero
-</p>
-</li>
-<li>
-<p>
-/dev/random  随机数,慢，精确
-</p>
-</li>
-<li>
-<p>
-/dev/urandom 系统随机，块，随机少
-</p>
-</li>
-</ul>
-</div>
-<h3 id="headline-16">
-块设备
-</h3>
-<h3 id="headline-17">
-网络设备
-</h3>
-<h2 id="headline-18">
+<h2 id="headline-16">
 网络管理
 </h2>
 <blockquote>
 <p>
-路由，相当于你对外联络的快递公司，有些公司不到某个地方的
+世界上只有你一个人，就不用身份证，如果有好多人，就要给自己起个名字了。在网络上的计算机也一样。
+</p>
+</blockquote>
+<blockquote>
+<p>
+路由：找名字叫“小李”，不是到处找的，要按照国籍，省，市这种表格一级一级找，计算机也是有一张表的，叫路由表。
 </p>
 </blockquote>
 <div class="verse-block">
@@ -690,18 +717,14 @@ iptables -L 查看 iptables 防火墙
 </li>
 </ul>
 </div>
-<h2 id="headline-19">
-系统调用 
-</h2>
-<h2 id="headline-20">
-数据同步
-</h2>
-<h2 id="headline-21">
+<h2 id="headline-17">
 任务 
 </h2>
 <blockquote>
 <p>
-这是 <strong>shell</strong> 里的概念，因为前端一次只能操作一个程序
+这是 <strong>shell</strong> 里的概念，因为黑白文字界面的终端一次只能操作一个程序，等程序结束
+后才能在文字输入处重新输入指令，这时可以把当前未完成的程序先挂起来，优先执行
+马上要做的事情，如果是图形界面下，就不用管了，想执行哪一个用鼠标随便点。
 </p>
 </blockquote>
 <p>
@@ -728,16 +751,16 @@ iptables -L 查看 iptables 防火墙
 </div>
 </div>
 </div>
-<h2 id="headline-22">
+<h2 id="headline-18">
 压缩解压
 </h2>
-<h3 id="headline-23">
+<h3 id="headline-19">
 unar
 </h3>
 <p>
 解压缩，中文不会乱码
 </p>
-<h2 id="headline-24">
+<h2 id="headline-20">
 帮助文档    
 </h2>
 <div class="verse-block">
@@ -754,10 +777,10 @@ info 详细文档
 </li>
 </ul>
 </div>
-<h2 id="headline-25">
+<h2 id="headline-21">
 pdf
 </h2>
-<h3 id="headline-26">
+<h3 id="headline-22">
 合并 pdf  
 </h3>
 <div class="src src-sh">
@@ -770,10 +793,10 @@ pdf
 </div>
 </div>
 </div>
-<h2 id="headline-27">
+<h2 id="headline-23">
 查找
 </h2>
-<h3 id="headline-28">
+<h3 id="headline-24">
 查找文件 
 </h3>
 <div class="src src-sh">
@@ -786,10 +809,10 @@ pdf
 </div>
 </div>
 </div>
-<h1 id="headline-29">
+<h1 id="headline-25">
 发行版
 </h1>
-<h2 id="headline-30">
+<h2 id="headline-26">
 字体
 </h2>
 <p>
@@ -828,7 +851,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h2 id="headline-31">
+<h2 id="headline-27">
 用户目录配置
 </h2>
 <p>
