@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.61.0 with theme even" />
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/emacs/" />
@@ -221,9 +221,9 @@
 有些特定功能还是用专门软件比较好，它毕竟擅长的是处理文字。
 </p>
 </blockquote>
-<h2 id="headline-1">
+<h3 id="headline-1">
 抽象概念 (可略过)
-</h2>
+</h3>
 <p>
 在 <strong>emacs</strong> 中，存在着以下东西
 </p>
@@ -269,12 +269,12 @@
 </p>
 </li>
 </ul>
-<h2 id="headline-2">
+<h3 id="headline-2">
 基本功能
-</h2>
-<h3 id="headline-3">
-插入文字
 </h3>
+<h4 id="headline-3">
+插入文字
+</h4>
 <ul>
 <li>
 <p>
@@ -297,9 +297,9 @@
 </p>
 </li>
 </ul>
-<h3 id="headline-4">
+<h4 id="headline-4">
 移动光标 (point)
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -336,9 +336,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-5">
+<h4 id="headline-5">
 删除文字
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -359,9 +359,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-6">
+<h4 id="headline-6">
 撤消与恢复
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -378,9 +378,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-7">
+<h4 id="headline-7">
 文件操作
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -393,9 +393,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-8">
+<h4 id="headline-8">
 长行
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -424,9 +424,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-9">
+<h4 id="headline-9">
 文本信息
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -463,16 +463,16 @@
 </tr>
 </tbody>
 </table>
-<h3 id="headline-10">
+<h4 id="headline-10">
 数字参数
-</h3>
+</h4>
 <p>
 有些命令要执行多次，可以加一个数字参数 
-<code>M</code> 键加一个数字 N 就能执行 N 次命令
+    <code>M</code> 键加一个数字 N 就能执行 N 次命令
 </p>
-<h3 id="headline-11">
+<h4 id="headline-11">
 输入法
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -488,15 +488,15 @@
 <blockquote>
 <p>
 M-x set-input-method RET TeX will allow you to write e.g. β to get β,
-∑ or Σ to get Σ etc.
+    ∑ or Σ to get Σ etc.
 </p>
 </blockquote>
-<h2 id="headline-12">
+<h3 id="headline-12">
 高级一点的功能
-</h2>
-<h3 id="headline-13">
-Mark (标记) 
 </h3>
+<h4 id="headline-13">
+Mark (标记) 
+</h4>
 <table>
 <tbody>
 <tr>
@@ -517,9 +517,9 @@ Mark (标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-14">
+<h4 id="headline-14">
 kill
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -548,13 +548,13 @@ kill
 <div class="verse-block">
 <p>
 不保存在 <code>kill-ring</code>   的命令叫 <code>delete</code> 命令，通常删除字，词这些删的少的。 
-如果要执行 <code>yank-pop</code> , 上一次命令 必须是 <code>yank</code> 命令哦
+    如果要执行 <code>yank-pop</code> , 上一次命令 必须是 <code>yank</code> 命令哦
 </p>
 </div>
 </blockquote>
-<h3 id="headline-15">
+<h4 id="headline-15">
 rectangle (矩形标记)
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -563,9 +563,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-16">
+<h4 id="headline-16">
 暂存器  ( 临时存储 ) 
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -598,9 +598,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-17">
+<h4 id="headline-17">
 搜索和替换 
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -617,12 +617,12 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-18">
+<h4 id="headline-18">
 大小转化  ( upcase, lowcase ) 
-</h3>
-<h3 id="headline-19">
+</h4>
+<h4 id="headline-19">
 键盘宏  
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -635,9 +635,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-20">
+<h4 id="headline-20">
 目录
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -654,9 +654,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h3 id="headline-21">
+<h4 id="headline-21">
 十六进制
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -665,9 +665,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-22">
+<h3 id="headline-22">
 编码
-</h2>
+</h3>
 <table>
 <tbody>
 <tr>
@@ -685,9 +685,9 @@ rectangle (矩形标记)
 网上查看编码信息， <a href="https://www.qqxiuzi.cn/bianma/zifuji.php">https://www.qqxiuzi.cn/bianma/zifuji.php</a> ,可能会失效，网上搜个。
 </p>
 </blockquote>
-<h2 id="headline-23">
+<h3 id="headline-23">
 服务 
-</h2>
+</h3>
 <blockquote>
 <p>
 开启服务后，就能共享 <strong>emacs</strong> 环境了。还可以设置多个不同服务
@@ -713,9 +713,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-24">
+<h3 id="headline-24">
 扩展
-</h2>
+</h3>
 <table>
 <tbody>
 <tr>
@@ -740,9 +740,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-25">
+<h3 id="headline-25">
 排错
-</h2>
+</h3>
 <table>
 <tbody>
 <tr>
@@ -751,9 +751,9 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h2 id="headline-26">
+<h3 id="headline-26">
 帮助
-</h2>
+</h3>
 <table>
 <tbody>
 <tr>
@@ -778,12 +778,12 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
-<h1 id="headline-27">
+<h2 id="headline-27">
 插件
-</h1>
-<h2 id="headline-28">
-ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标签。
 </h2>
+<h3 id="headline-28">
+ranger 文件浏览器， <strong>vim</strong> 式的快捷方式，还能多标签。
+</h3>
     </div>
 
     <div class="post-copyright">

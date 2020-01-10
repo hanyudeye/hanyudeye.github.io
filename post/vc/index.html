@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.61.0 with theme even" />
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/vc/" />
@@ -304,12 +304,12 @@
 <p>
 下面以比较流行的 <code>git</code> 为例说明吧
 </p>
-<h1 id="headline-1">
+<h2 id="headline-1">
 git 
-</h1>
-<h2 id="headline-2">
-初始配置
 </h2>
+<h3 id="headline-2">
+初始配置
+</h3>
 <p>
 设置一下仓库作者的个人信息什么的 
 </p>
@@ -329,9 +329,9 @@ git
 </div>
 </div>
 </div>
-<h3 id="headline-3">
+<h4 id="headline-3">
 配置 SSH 远程传输
-</h3>
+</h4>
 <p>
 创建 SSH Key：
 </p>
@@ -351,12 +351,12 @@ git
 <pre class="example">
 可以使用 ssh -v git@github.com 命令来测试链接是否畅通
 </pre>
-<h2 id="headline-4">
+<h3 id="headline-4">
 用法
-</h2>
-<h3 id="headline-5">
-初始化版本系统 
 </h3>
+<h4 id="headline-5">
+初始化版本系统 
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -367,17 +367,17 @@ git
 </div>
 </div>
 </div>
-<h3 id="headline-6">
+<h4 id="headline-6">
 暂存区管理
-</h3>
+</h4>
 <blockquote>
 <p>
 暂存区保存你历史记录的一个缓存区，为的就是让你&#34;多此一举&#34;，进行下一步确认是否保存快照
 </p>
 </blockquote>
-<h4 id="headline-7">
+<h5 id="headline-7">
 把文件加入暂存区 
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -390,9 +390,9 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-8">
+<h5 id="headline-8">
 删除暂存区里的文件,如需纳入版本库，需要重新添加   
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -403,9 +403,9 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-9">
+<h5 id="headline-9">
 重置暂存,就是恢复成未暂存的状态
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -416,9 +416,9 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-10">
+<h5 id="headline-10">
 改名文件
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -429,12 +429,12 @@ git
 </div>
 </div>
 </div>
-<h3 id="headline-11">
+<h4 id="headline-11">
 本地库管理
-</h3>
-<h4 id="headline-12">
-保存到本地库   
 </h4>
+<h5 id="headline-12">
+保存到本地库   
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -445,9 +445,9 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-13">
+<h5 id="headline-13">
 撤销 [ 恢复到修改前] 
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -462,9 +462,9 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-14">
+<h5 id="headline-14">
 反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -481,12 +481,12 @@ git
 </div>
 </div>
 </div>
-<h4 id="headline-15">
+<h5 id="headline-15">
 分支管理
-</h4>
-<h5 id="headline-16">
-创建分支 
 </h5>
+<h6 id="headline-16">
+创建分支 
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -501,9 +501,9 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-17">
+<h6 id="headline-17">
 切换分支 
-</h5>
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -514,12 +514,12 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-18">
+<h6 id="headline-18">
 合并分支
-</h5>
-<h6 id="headline-19">
-直接合并 把两条分支上的历史轨迹合并 
 </h6>
+<h7 id="headline-19">
+直接合并 把两条分支上的历史轨迹合并 
+</h7>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -530,9 +530,9 @@ git
 </div>
 </div>
 </div>
-<h6 id="headline-20">
+<h7 id="headline-20">
 压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。
-</h6>
+</h7>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -543,9 +543,9 @@ git
 </div>
 </div>
 </div>
-<h6 id="headline-21">
+<h7 id="headline-21">
 拣选合并 只需合并某个提交，而不是全部改动.
-</h6>
+</h7>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -556,9 +556,9 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-22">
+<h6 id="headline-22">
 修改分支名称
-</h5>
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -569,9 +569,9 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-23">
+<h6 id="headline-23">
 删除分支 
-</h5>
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -582,15 +582,15 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-24">
+<h6 id="headline-24">
 stash(储藏) 
-</h5>
+</h6>
 <p>
 可以先用 git stash save xxx 来保存工作区的内容，然后新建 一个分支并调用 git stash pop
 </p>
-<h4 id="headline-25">
+<h5 id="headline-25">
 分支的变基 rebase
-</h4>
+</h5>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -603,12 +603,12 @@ stash(储藏)
 </div>
 </div>
 </div>
-<h3 id="headline-26">
+<h4 id="headline-26">
 远程仓库管理
-</h3>
-<h4 id="headline-27">
-克隆远程到本地仓库
 </h4>
+<h5 id="headline-27">
+克隆远程到本地仓库
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -621,9 +621,9 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h4 id="headline-28">
+<h5 id="headline-28">
 添加远程源 
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -634,9 +634,9 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h4 id="headline-29">
+<h5 id="headline-29">
 远程同步
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -651,9 +651,9 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h4 id="headline-30">
+<h5 id="headline-30">
 更新本地
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -666,9 +666,9 @@ git pull git://github.com/tom/test.git</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-31">
+<h5 id="headline-31">
 查看远程分支情况
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -681,12 +681,12 @@ git checkout -b bug_fix_local bug_fix_remote <span class="c1">#把本地端切�
 </div>
 </div>
 </div>
-<h4 id="headline-32">
+<h5 id="headline-32">
 修改远程仓库 
-</h4>
-<h5 id="headline-33">
-修改
 </h5>
+<h6 id="headline-33">
+修改
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -697,9 +697,9 @@ git checkout -b bug_fix_local bug_fix_remote <span class="c1">#把本地端切�
 </div>
 </div>
 </div>
-<h5 id="headline-34">
+<h6 id="headline-34">
 先删后加
-</h5>
+</h6>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -712,9 +712,9 @@ git remote add origin <span class="o">[</span>url<span class="o">]</span></code>
 </div>
 </div>
 </div>
-<h4 id="headline-35">
+<h5 id="headline-35">
 强制覆盖本地
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -729,12 +729,12 @@ git pull</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-36">
+<h4 id="headline-36">
 日志查看
-</h3>
-<h4 id="headline-37">
-仓库状态 
 </h4>
+<h5 id="headline-37">
+仓库状态 
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -749,9 +749,9 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-38">
+<h5 id="headline-38">
 查看提交历史
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -766,11 +766,11 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 <p>
 –author 指定用户日志
-如果你要指定日期，可以执行几个选项：–since 和 –before，但是你也可以用 –until 和 –after。
+     如果你要指定日期，可以执行几个选项：–since 和 –before，但是你也可以用 –until 和 –after。
 </p>
-<h4 id="headline-39">
+<h5 id="headline-39">
 查看某次提交的内容   
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -781,9 +781,9 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-40">
+<h5 id="headline-40">
 更详细的信息 
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -798,9 +798,9 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-41">
+<h4 id="headline-41">
 比较区别
-</h3>
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -823,17 +823,17 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-42">
+<h4 id="headline-42">
 TAG  
-</h3>
+</h4>
 <blockquote>
 <p>
 这是版本信息
 </p>
 </blockquote>
-<h4 id="headline-43">
+<h5 id="headline-43">
 某个分支创建标签
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -846,9 +846,9 @@ TAG
 </div>
 </div>
 </div>
-<h4 id="headline-44">
+<h5 id="headline-44">
 查看可发布版本 
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -859,9 +859,9 @@ TAG
 </div>
 </div>
 </div>
-<h4 id="headline-45">
+<h5 id="headline-45">
 签出标签
-</h4>
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -872,9 +872,9 @@ TAG
 </div>
 </div>
 </div>
-<h3 id="headline-46">
+<h4 id="headline-46">
 使用 Git 子模块跟踪外部版本库
-</h3>
+</h4>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -895,9 +895,9 @@ TAG
 </div>
 </div>
 </div>
-<h2 id="headline-47">
+<h3 id="headline-47">
 gitignore 忽略文件
-</h2>
+</h3>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -920,15 +920,15 @@ gitignore 忽略文件
 </div>
 </div>
 </div>
-<h1 id="headline-48">
+<h2 id="headline-48">
 github
-</h1>
+</h2>
 <p>
 免费给你放照片的地方，如果想要隐私，就要付费了啊
 </p>
-<h2 id="headline-49">
+<h3 id="headline-49">
 主要功能
-</h2>
+</h3>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

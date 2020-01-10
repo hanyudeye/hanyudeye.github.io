@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.61.0 with theme even" />
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/python/" />
@@ -242,15 +242,15 @@
       <p>
 一门抽象程度高的语言。
 </p>
-<h2 id="headline-1">
+<h3 id="headline-1">
 环境管理
-</h2>
+</h3>
 <p>
 因为 <strong>python</strong> 最大的问题是各版本不兼容，所以要管理版本问题。  
 </p>
-<h3 id="headline-2">
+<h4 id="headline-2">
 pipenv 
-</h3>
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -301,14 +301,14 @@ pipenv
 </div>
 </div>
 </div>
-<h2 id="headline-3">
+<h3 id="headline-3">
 编码
-</h2>
+</h3>
 <p>
 默认是认不得 <code>Unicode</code> 的，只认得英文
 </p>
 <p>
-识别 <strong>Unicode</strong> 
+   识别 <strong>Unicode</strong> 
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -320,15 +320,15 @@ pipenv
 </div>
 </div>
 </div>
-<h2 id="headline-4">
+<h3 id="headline-4">
 数据类型
-</h2>
+</h3>
 <p>
 数字，字符串这些数据类型都有,用来做做计算，显示显示消息的软件就能做了
 </p>
-<h3 id="headline-5">
+<h4 id="headline-5">
 列表 (list)
-</h3>
+</h4>
 <p>
 就这东西
 </p>
@@ -358,7 +358,7 @@ pipenv
 </div>
 </div>
 <p>
-列表里的东西可以修改，增减。 
+    列表里的东西可以修改，增减。 
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -381,7 +381,7 @@ pipenv
 </div>
 </div>
 <p>
-一些方法: 
+    一些方法: 
 </p>
 <table>
 <tbody>
@@ -439,9 +439,9 @@ pipenv
 </tr>
 </tbody>
 </table>
-<h3 id="headline-6">
+<h4 id="headline-6">
 元组 (tuple)  
-</h3>
+</h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -460,13 +460,13 @@ pipenv
 <blockquote>
 <p>
 创建元组 x=[ (person.name,person.age) for person in people ]
-有条件地创建元组    x=[ (person.name,person.age) for person in people if person.age&lt;34]
-表达式化数组 xx=[(person.age**2 if person.age&lt;34 else person.age) for person in people]
+    有条件地创建元组    x=[ (person.name,person.age) for person in people if person.age&lt;34]
+    表达式化数组 xx=[(person.age**2 if person.age&lt;34 else person.age) for person in people]
 </p>
 </blockquote>
-<h3 id="headline-7">
+<h4 id="headline-7">
 字典 (dictionary) 
-</h3>
+</h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -522,9 +522,9 @@ pipenv
 </tr>
 </tbody>
 </table>
-<h3 id="headline-8">
+<h4 id="headline-8">
 集合 
-</h3>
+</h4>
 <p>
 set([1,3,4])
 </p>
@@ -563,12 +563,12 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h3 id="headline-9">
+<h4 id="headline-9">
 空值 None
-</h3>
-<h3 id="headline-10">
+</h4>
+<h4 id="headline-10">
 类型转换
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -630,9 +630,9 @@ set([1,3,4])
 要能转才给转，能不能转看你要转化的东西 
 </p>
 </blockquote>
-<h3 id="headline-11">
+<h4 id="headline-11">
 自定义类型  
-</h3>
+</h4>
 <p>
 基本类型还不能表达我要创建的东西，那么你就可以自己定义自己的东西是什么样的结构。
 </p>
@@ -641,9 +641,9 @@ set([1,3,4])
 就是用那些基本类型拼装起来更复杂的结构
 </p>
 </blockquote>
-<h4 id="headline-12">
+<h5 id="headline-12">
 定义类 
-</h4>
+</h5>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -667,7 +667,7 @@ set([1,3,4])
 </div>
 </div>
 <p>
-实例 
+    实例 
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -703,9 +703,9 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-13">
+<h5 id="headline-13">
 专有方法
-</h4>
+</h5>
 <table>
 <tbody>
 <tr>
@@ -790,12 +790,12 @@ set([1,3,4])
 </tr>
 </tbody>
 </table>
-<h4 id="headline-14">
+<h5 id="headline-14">
 类的继承
-</h4>
-<h5 id="headline-15">
-继承已经定义的类
 </h5>
+<h6 id="headline-15">
+继承已经定义的类
+</h6>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -807,11 +807,11 @@ set([1,3,4])
 </div>
 </div>
 <p>
-在定义类的时候，可以在括号里写继承的类，一开始也提到过，如果不用继承类的时
-候，也要写继承 object 类，因为在 Python 中 object 类是一切类的父类。
+      在定义类的时候，可以在括号里写继承的类，一开始也提到过，如果不用继承类的时
+      候，也要写继承 object 类，因为在 Python 中 object 类是一切类的父类。
 </p>
 <p>
-当然上面的是单继承，Python 也是支持多继承的，具体的语法如下：
+      当然上面的是单继承，Python 也是支持多继承的，具体的语法如下：
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -823,12 +823,12 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h5 id="headline-16">
+<h6 id="headline-16">
 调用父类的方法
-</h5>
+</h6>
 <p>
 一个类继承了父类后，可以直接调用父类的方法的，比如下面的例子，`UserInfo2`
-继承自父类 `UserInfo` ，可以直接调用父类的 `get_account` 方法。
+      继承自父类 `UserInfo` ，可以直接调用父类的 `get_account` 方法。
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -882,9 +882,9 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h5 id="headline-17">
+<h6 id="headline-17">
 父类方法的重写 
-</h5>
+</h6>
 <p>
 当然，也可以重写父类的方法。
 </p>
@@ -968,39 +968,39 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h5 id="headline-18">
+<h6 id="headline-18">
 子类的类型判断 
-</h5>
+</h6>
 <p>
-可以使用 isinstance() 函数,
+      可以使用 isinstance() 函数,
 </p>
 <p>
-一个例子就能看懂 isinstance() 函数的用法了。
+      一个例子就能看懂 isinstance() 函数的用法了。
 </p>
-<h4 id="headline-19">
+<h5 id="headline-19">
 类属性与方法
-</h4>
+</h5>
 <div class="verse-block">
 <p>
 类的私有属性
-__private_attrs：两个下划线开头，声明该属性为私有，不能在类地外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs 类的方法
+      __private_attrs：两个下划线开头，声明该属性为私有，不能在类地外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs 类的方法
 </p>
 </div>
 <div class="verse-block">
 <p>
 类的私有方法
-__private_method：两个下划线开头，声明该方法为私有方法，不能在类地外部调用。在类的内部调用 self.__private_methods 
+      __private_method：两个下划线开头，声明该方法为私有方法，不能在类地外部调用。在类的内部调用 self.__private_methods 
 </p>
 </div>
-<h4 id="headline-20">
+<h5 id="headline-20">
 类的多态
-</h4>
+</h5>
 <p>
 多态的概念其实不难理解，它是指对不同类型的变量进行相同的操作，它会根据对象
-（或类）类型的不同而表现出不同的行为。
+     （或类）类型的不同而表现出不同的行为。
 </p>
 <p>
-事实上，我们经常用到多态的性质，比如：
+     事实上，我们经常用到多态的性质，比如：
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1019,16 +1019,16 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 <p>
-可以看到，我们对两个整数进行 + 操作，会返回它们的和，对两个字符进行相同的 +
-操作，会返回拼接后的字符串。也就是说，不同类型的对象对同一消息会作出不同的
-响应。
+     可以看到，我们对两个整数进行 + 操作，会返回它们的和，对两个字符进行相同的 +
+     操作，会返回拼接后的字符串。也就是说，不同类型的对象对同一消息会作出不同的
+     响应。
 </p>
-<h2 id="headline-21">
+<h3 id="headline-21">
 自定义操作 
-</h2>
-<h3 id="headline-22">
-定义函数
 </h3>
+<h4 id="headline-22">
+定义函数
+</h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1045,15 +1045,15 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-23">
+<h4 id="headline-23">
 返回多个值 return b , a
-</h3>
+</h4>
 <p>
 其实返回了一个元组
 </p>
-<h3 id="headline-24">
+<h4 id="headline-24">
 不定长参数
-</h3>
+</h4>
 <p>
 你指望多
 </p>
@@ -1079,9 +1079,9 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-25">
+<h4 id="headline-25">
 关键字参数 
-</h3>
+</h4>
 <p>
 不用关心参数列表定义时的顺序
 </p>
@@ -1107,9 +1107,9 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-26">
+<h4 id="headline-26">
 匿名函数 lambda 
-</h3>
+</h4>
 <p>
 这种函数不用给名字，就用一次，因为下次不用了
 </p>
@@ -1139,9 +1139,9 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-27">
+<h4 id="headline-27">
 入口函数
-</h3>
+</h4>
 <p>
 相当于其他语言中的 <code>main</code> 函数，这不是一个函数，暂且这么叫吧，这表达式一定成立
 </p>
@@ -1155,32 +1155,32 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h2 id="headline-28">
+<h3 id="headline-28">
 控制流程(决定了操作的走向)
-</h2>
+</h3>
 <div class="verse-block">
 <p>
 判断条件的 if else
-多次操作的 for while
+    多次操作的 for while
 </p>
 </div>
-<h2 id="headline-29">
+<h3 id="headline-29">
 模块
-</h2>
+</h3>
 <div class="verse-block">
 <p>
 数据类型扩展了好多，天南海北的，有操作硬件的，有控制界面的，有控制数字处理的，有控制音乐什么的，好多呢
-怎么处理，就想文件夹一样，给分个级，再加一层，就想到了用模块的方法。
+   怎么处理，就想文件夹一样，给分个级，再加一层，就想到了用模块的方法。
 </p>
 </div>
-<h3 id="headline-30">
+<h4 id="headline-30">
 定义模块   
-</h3>
+</h4>
 <p>
 一个 <code>python</code> 代码文件就是模块了，用文件名表示模块名 (后缀不需要的啊) 
 </p>
 <p>
-这个文件名叫 <code>pymodule.py</code> ,模块名就叫 <code>pymodule</code>
+   这个文件名叫 <code>pymodule.py</code> ,模块名就叫 <code>pymodule</code>
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1212,9 +1212,9 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-31">
+<h4 id="headline-31">
 使用模块 
-</h3>
+</h4>
 <p>
 使用模块中的一个东西 ,使用全部用通配符 <code>*</code>
 </p>
@@ -1229,7 +1229,7 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 <p>
-使用模块中的所有东西
+    使用模块中的所有东西
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1242,7 +1242,7 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 <p>
-用法 
+   用法 
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1273,30 +1273,30 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 区别在使用时名字的约束
 </p>
 </blockquote>
-<h3 id="headline-32">
+<h4 id="headline-32">
 模块属性
-</h3>
+</h4>
 <p>
 <span style="text-decoration: underline;"><span style="text-decoration: underline;">name</span></span> 
 </p>
-<h3 id="headline-33">
+<h4 id="headline-33">
 作用域
-</h3>
+</h4>
 <p>
 正常的函数和变量名是公开的（public），可以被直接引用，比如：abc，ni12，PI 等
-`__xxx__`这样的变量是特殊变量，可以被直接引用，但是有特殊用途
-`_xxx` 和 `__xxx` 这样的函数或变量就是非公开的（private），不应该被直接引用
-这是约定吧 !
+    `__xxx__`这样的变量是特殊变量，可以被直接引用，但是有特殊用途
+    `_xxx` 和 `__xxx` 这样的函数或变量就是非公开的（private），不应该被直接引用
+    这是约定吧 !
 </p>
-<h2 id="headline-34">
+<h3 id="headline-34">
 包
-</h2>
+</h3>
 <p>
 光模块不够啊，一个文件放不了什么东西啊，可以用包，包里有很多模块，这样的层次，
-包是一个目录
+   包是一个目录
 </p>
 <p>
-包的使用
+  包的使用
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1311,9 +1311,9 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 <p>
 模块名前加一个目录名和一个 点就可以了 
 </p>
-<h2 id="headline-35">
+<h3 id="headline-35">
 测试
-</h2>
+</h3>
 <p>
 有时，有些操作我们会筛选掉，这时用报错的方法挺好的。用来测试
 </p>
@@ -1333,18 +1333,18 @@ __private_method：两个下划线开头，声明该方法为私有方法，不�
 </div>
 </div>
 </div>
-<h3 id="headline-36">
+<h4 id="headline-36">
 触发异常
-</h3>
+</h4>
 <pre class="example">
 raise [Exception [, args [, traceback]]]
 </pre>
-<h2 id="headline-37">
+<h3 id="headline-37">
 帮助
-</h2>
+</h3>
 <p>
 help()  函数或类文档字串说明
-dir() 函数或类的属性
+   dir() 函数或类的属性
 </p>
     </div>
 

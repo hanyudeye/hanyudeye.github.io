@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.61.0 with theme even" />
+<meta name="generator" content="Hugo 0.62.2 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="wordCount" content="1914">
+<meta itemprop="wordCount" content="1923">
 
 
 
@@ -202,13 +202,19 @@
 </li>
 </ul>
 </li>
+<li><a href="#headline-25">图片处理</a>
+<ul>
+<li><a href="#headline-26">压缩转换 convert</a>
+</li>
 </ul>
 </li>
-<li><a href="#headline-25">发行版</a>
-<ul>
-<li><a href="#headline-26">字体</a>
+</ul>
 </li>
-<li><a href="#headline-27">用户目录配置</a>
+<li><a href="#headline-27">发行版</a>
+<ul>
+<li><a href="#headline-28">字体</a>
+</li>
+<li><a href="#headline-29">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -229,12 +235,12 @@
 因为计算机是对真实世界的一个仿真，所以理应你用的任何工具都能用计算机仿真出来。比如形，什么外形都能用显示器显示，还彩色的呢。
 </p>
 </blockquote>
-<h1 id="headline-1">
+<h2 id="headline-1">
 Gnu/Linux
-</h1>
-<h2 id="headline-2">
-机器组成  
 </h2>
+<h3 id="headline-2">
+机器组成  
+</h3>
 <ul>
 <li>
 <p>
@@ -262,9 +268,9 @@ Gnu/Linux
 </p>
 </li>
 </ul>
-<h2 id="headline-3">
+<h3 id="headline-3">
 基本概念
-</h2>
+</h3>
 <blockquote>
 <p>
 Gnu/linux 会把杂乱的硬件做一个抽象
@@ -292,9 +298,9 @@ Gnu/linux 会把杂乱的硬件做一个抽象
 </p>
 </li>
 </ul>
-<h2 id="headline-4">
+<h3 id="headline-4">
 登录   
-</h2>
+</h3>
 <blockquote>
 <p>
 登录是对电脑使用的一种权限保护，就像家里的门一样，要使用电脑，首先面对的就是这个东西。Linux 会先叫你做一下登录认证，认证后你做什么它就不大管了，相对就自由了。
@@ -327,9 +333,9 @@ Gnu/linux 会把杂乱的硬件做一个抽象
 </p>
 </li>
 </ul>
-<h2 id="headline-5">
+<h3 id="headline-5">
 软硬信息
-</h2>
+</h3>
 <blockquote>
 <p>
 你想看看你用的电脑是什么配置，还有一些系统属性吧，就用这些指令。
@@ -369,9 +375,9 @@ Gnu/linux 会把杂乱的硬件做一个抽象
 </div>
 </div>
 </div>
-<h2 id="headline-6">
+<h3 id="headline-6">
 进程管理和调度
-</h2>
+</h3>
 <blockquote>
 <p>
 显示软件的运行情况，现在电脑都同时运行好多程序的。 
@@ -404,9 +410,9 @@ pkill   通过 <strong>进程名</strong> 给进程发信号
 </p>
 </li>
 </ul>
-<h3 id="headline-7">
+<h4 id="headline-7">
 进程属性
-</h3>
+</h4>
 <table>
 <tbody>
 <tr>
@@ -467,9 +473,9 @@ pkill   通过 <strong>进程名</strong> 给进程发信号
 </tr>
 </tbody>
 </table>
-<h3 id="headline-8">
+<h4 id="headline-8">
 进程状态
-</h3>
+</h4>
 <ul>
 <li>
 <p>
@@ -487,9 +493,9 @@ D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态
 </p>
 </li>
 </ul>
-<h3 id="headline-9">
+<h4 id="headline-9">
 进程间通信和同步
-</h3>
+</h4>
 <ul>
 <li>
 <p>
@@ -527,9 +533,9 @@ shared memory
 </p>
 </li>
 </ul>
-<h2 id="headline-10">
+<h3 id="headline-10">
 内存管理
-</h2>
+</h3>
 <p>
 内存里放了软件，也放了资源文件，如何处理?硬件提供了分段分页的支持。那么在注销软件的时候就可以合理的回收内存，节约空间了。
 </p>
@@ -538,9 +544,9 @@ shared memory
 自动的，不用人管
 </p>
 </blockquote>
-<h2 id="headline-11">
+<h3 id="headline-11">
 磁盘和分区
-</h2>
+</h3>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -557,9 +563,9 @@ shared memory
 </div>
 </div>
 </div>
-<h2 id="headline-12">
+<h3 id="headline-12">
 文件系统
-</h2>
+</h3>
 <blockquote>
 <p>
 对硬盘进行格式化，以便储存文件
@@ -601,9 +607,9 @@ shared memory
 </tr>
 </tbody>
 </table>
-<h2 id="headline-13">
+<h3 id="headline-13">
 交换分区文件系统
-</h2>
+</h3>
 <ul>
 <li>
 <p>
@@ -631,9 +637,9 @@ shared memory
 </p>
 </li>
 </ul>
-<h2 id="headline-14">
+<h3 id="headline-14">
 模块
-</h2>
+</h3>
 <blockquote>
 <p>
 不用的东西就不用加载到内核了
@@ -656,9 +662,9 @@ lsmod 显示已载入系统的模块
 </p>
 </li>
 </ul>
-<h2 id="headline-15">
+<h3 id="headline-15">
 设备
-</h2>
+</h3>
 <blockquote>
 <div class="verse-block">
 <ul>
@@ -675,9 +681,9 @@ lsmod 显示已载入系统的模块
 </ul>
 </div>
 </blockquote>
-<h2 id="headline-16">
+<h3 id="headline-16">
 网络管理
-</h2>
+</h3>
 <blockquote>
 <p>
 世界上只有你一个人，就不用身份证，如果有好多人，就要给自己起个名字了。在网络上的计算机也一样。
@@ -717,21 +723,21 @@ iptables -L 查看 iptables 防火墙
 </li>
 </ul>
 </div>
-<h2 id="headline-17">
+<h3 id="headline-17">
 任务 
-</h2>
+</h3>
 <blockquote>
 <p>
 这是 <strong>shell</strong> 里的概念，因为黑白文字界面的终端一次只能操作一个程序，等程序结束
-后才能在文字输入处重新输入指令，这时可以把当前未完成的程序先挂起来，优先执行
-马上要做的事情，如果是图形界面下，就不用管了，想执行哪一个用鼠标随便点。
+   后才能在文字输入处重新输入指令，这时可以把当前未完成的程序先挂起来，优先执行
+   马上要做的事情，如果是图形界面下，就不用管了，想执行哪一个用鼠标随便点。
 </p>
 </blockquote>
 <p>
 任务放在前、后台 fg bg jobs 
 </p>
 <p>
-周期任务 crontab
+   周期任务 crontab
 </p>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
@@ -751,18 +757,18 @@ iptables -L 查看 iptables 防火墙
 </div>
 </div>
 </div>
-<h2 id="headline-18">
+<h3 id="headline-18">
 压缩解压
-</h2>
-<h3 id="headline-19">
-unar
 </h3>
+<h4 id="headline-19">
+unar
+</h4>
 <p>
 解压缩，中文不会乱码
 </p>
-<h2 id="headline-20">
+<h3 id="headline-20">
 帮助文档    
-</h2>
+</h3>
 <div class="verse-block">
 <ul>
 <li>
@@ -777,12 +783,12 @@ info 详细文档
 </li>
 </ul>
 </div>
-<h2 id="headline-21">
+<h3 id="headline-21">
 pdf
-</h2>
-<h3 id="headline-22">
-合并 pdf  
 </h3>
+<h4 id="headline-22">
+合并 pdf  
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -793,12 +799,12 @@ pdf
 </div>
 </div>
 </div>
-<h2 id="headline-23">
+<h3 id="headline-23">
 查找
-</h2>
-<h3 id="headline-24">
-查找文件 
 </h3>
+<h4 id="headline-24">
+查找文件 
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -809,12 +815,18 @@ pdf
 </div>
 </div>
 </div>
-<h1 id="headline-25">
+<h3 id="headline-25">
+图片处理
+</h3>
+<h4 id="headline-26">
+压缩转换 convert
+</h4>
+<h2 id="headline-27">
 发行版
-</h1>
-<h2 id="headline-26">
-字体
 </h2>
+<h3 id="headline-28">
+字体
+</h3>
 <p>
 安装
 </p>
@@ -839,7 +851,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 <p>
-显示已安装的字体
+    显示已安装的字体
 </p>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
@@ -851,9 +863,9 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h2 id="headline-27">
+<h3 id="headline-29">
 用户目录配置
-</h2>
+</h3>
 <p>
 ~/.config/user-dirs.dirs
 </p>
