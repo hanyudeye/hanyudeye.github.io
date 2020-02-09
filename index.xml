@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Feb 2020 10:41:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 06:33:05 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -36,6 +36,15 @@
       
       <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 文章的排序决定按照修改时间排序了，因为不想写更多新文章，而是想完善旧文</description>
+    </item>
+    
+    <item>
+      <title>文章更新</title>
+      <link>https://aming.xyz/post/update/</link>
+      <pubDate>Mon, 10 Feb 2020 06:33:05 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/update/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -182,9 +191,8 @@
       <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
       
       <guid>https://aming.xyz/post/math/</guid>
-      <description>&lt;p&gt;数学是关于客观东西的一种符号推导系统,关于&lt;strong&gt;数符&lt;/strong&gt;的学问。&lt;br&gt;
-数学表现的规律比较稳定。&lt;br&gt;
-数学为“科学的皇后”，就是说数学是很科学的&lt;/p&gt;</description>
+      <description>&lt;p&gt;数学是一套规则，这套规则是稳定的，不像有些规则需要常常变更，数学这套是稳定的，不大变更的。&lt;br&gt;
+数学就是把东西用数的一套规则处理后，会变成另一种形式的东西。&lt;/p&gt;</description>
     </item>
     
     <item>
