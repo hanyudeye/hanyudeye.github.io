@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jan 2020 11:34:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 10:41:57 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>言论自由</title>
+      <link>https://aming.xyz/post/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</link>
+      <pubDate>Sun, 09 Feb 2020 10:41:57 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
+      <description>&lt;p&gt;我们人，从出生就长着一张嘴，然后用嘴可以说话，用来沟通。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>病毒</title>
@@ -147,7 +156,8 @@
       
       <guid>https://aming.xyz/post/math/</guid>
       <description>&lt;p&gt;数学是关于客观东西的一种符号推导系统,关于&lt;strong&gt;数符&lt;/strong&gt;的学问。&lt;br&gt;
-数学表现的规律比较稳定。&lt;/p&gt;</description>
+数学表现的规律比较稳定。&lt;br&gt;
+数学为“科学的皇后”，就是说数学是很科学的&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -342,7 +352,8 @@
       
       <guid>https://aming.xyz/post/emacs/</guid>
       <description>&lt;p&gt;
-修改文字的东西，但它的理想很丰满，就是想在此软件里完成尽可能多的事情，所以可配置性很高，功能很多。    
+文字处理软件，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，学起来比较复杂。    
+但是所有命令可以用 &lt;strong&gt;TAB&lt;/strong&gt; 补全，所以记住命令的关键词就可以调用了，所以它不光是文字输入，还包含文字处理的功能。
 &lt;/p&gt;</description>
     </item>
     
