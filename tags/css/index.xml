@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/tags/css/</link>
+    <description>Recent content in css on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Feb 2020 18:20:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>css 简介</title>
+      <link>https://aming.xyz/post/css/</link>
+      <pubDate>Tue, 11 Feb 2020 18:20:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/css/</guid>
+      <description>&lt;p&gt;
+设定网页外观的技术。你看一张报纸，或者图书的封面，花花绿绿的颜色还有排版，把这些
+效果用在网页里的技术叫做样式技术 ( &lt;strong&gt;CSS&lt;/strong&gt; )。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

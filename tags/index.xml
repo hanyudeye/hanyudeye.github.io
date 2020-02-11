@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Feb 2020 14:27:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 18:47:24 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://aming.xyz/tags/javascript/</link>
+      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://aming.xyz/tags/css/</link>
+      <pubDate>Tue, 11 Feb 2020 18:20:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/css/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>html</title>

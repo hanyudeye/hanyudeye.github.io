@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>css 简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="css 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.64.1 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/css/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="css 简介" />
+<meta property="og:description" content="css 简介" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/css/" />
+<meta property="article:published_time" content="2020-02-11T18:20:43+08:00" />
+<meta property="article:modified_time" content="2020-02-11T18:20:43+08:00" />
+<meta itemprop="name" content="css 简介">
+<meta itemprop="description" content="css 简介">
+<meta itemprop="datePublished" content="2020-02-11T18:20:43&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-11T18:20:43&#43;08:00" />
+<meta itemprop="wordCount" content="1818">
+
+
+
+<meta itemprop="keywords" content="css," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="css 简介"/>
+<meta name="twitter:description" content="css 简介"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/update/">
+        <li class="mobile-menu-item">最近修改</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/update/">最近修改</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">css 简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-11 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8/"> 语言使用 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">css</a>
+<ul>
+<li><a href="#headline-2">安装  </a>
+</li>
+<li><a href="#headline-3">用法</a>
+<ul>
+<li><a href="#headline-4">HTML 文件 </a>
+</li>
+<li><a href="#headline-5">样式文件样例  </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-6">选择器</a>
+<ul>
+<li><a href="#headline-7">用标签定位</a>
+</li>
+<li><a href="#headline-8">用 id名定位</a>
+</li>
+<li><a href="#headline-9">用class名定位</a>
+</li>
+<li><a href="#headline-10">用属性名定位 </a>
+</li>
+<li><a href="#headline-11">用函数 (伪元素)</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-12">样式设计     </a>
+<ul>
+<li><a href="#headline-13">元素外观 </a>
+<ul>
+<li><a href="#headline-14">背景 </a>
+</li>
+<li><a href="#headline-15">轮廓</a>
+</li>
+<li><a href="#headline-16">内边距</a>
+</li>
+<li><a href="#headline-17">边框</a>
+</li>
+<li><a href="#headline-18">外边距</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-19">文本外观    </a>
+<ul>
+<li><a href="#headline-20">文本属性</a>
+</li>
+<li><a href="#headline-21">字体</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-22">链接外观</a>
+</li>
+<li><a href="#headline-23">列表外观</a>
+</li>
+<li><a href="#headline-24">定位</a>
+</li>
+<li><a href="#headline-25">简单特效</a>
+<ul>
+<li><a href="#headline-26">变换</a>
+</li>
+<li><a href="#headline-27">过渡效果 </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-28">初始化样式</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+设定网页外观的技术。你看一张报纸，或者图书的封面，花花绿绿的颜色还有排版，把这些
+效果用在网页里的技术叫做样式技术 ( <strong>CSS</strong> )。
+</p>
+<h2 id="headline-1">
+css
+</h2>
+<h3 id="headline-2">
+安装  
+</h3>
+<p>
+需要浏览器和代码编辑器。 
+</p>
+<h3 id="headline-3">
+用法
+</h3>
+<h4 id="headline-4">
+HTML 文件 
+</h4>
+<p>
+在 头部(head)标签中  嵌入样式文件的路径  
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-5">
+样式文件样例  
+</h4>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">#</span><span class="nn">para1</span>
+  <span class="p">{</span>
+      <span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
+      <span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="p">.</span><span class="nc">center</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<blockquote>
+<p>
+基本结构就是选择器 + 大括号括起来的具体样式
+</p>
+</blockquote>
+<h3 id="headline-6">
+选择器
+</h3>
+<p>
+对页面内容进行定位的技术 ，定位到内容后，就可以设置内容的外观了。
+</p>
+<h4 id="headline-7">
+用标签定位
+</h4>
+<p>
+根据标签在网页中的层次位置来定位
+</p>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span> <span class="nt">p</span>  <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-8">
+用 id名定位
+</h4>
+<p>
+含有 id属性的元素，一个网页中不能有相同id名的元素
+</p>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">#</span><span class="nn">red</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-9">
+用class名定位
+</h4>
+<p>
+含有 class 属性的元素，可以有多个同class名的元素
+</p>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">center</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-10">
+用属性名定位 
+</h4>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="o">/</span><span class="o">/</span><span class="nt">也可以不要</span> <span class="nt">value</span> <span class="nt">修饰</span>
+  <span class="nt">input</span> <span class="o">[</span><span class="nt">title</span><span class="o">=</span><span class="s2">&#34;value&#34;</span><span class="o">]</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-11">
+用函数 (伪元素)
+</h4>
+<ul>
+<li>
+<p>
+:first-line                   向文本的首行设置特殊样式                  
+</p>
+</li>
+<li>
+<p>
+:first-letter                 向文本的首字母设置特殊样式                  
+</p>
+</li>
+<li>
+<p>
+:before                       在元素的内容前面插入新内容                
+</p>
+</li>
+<li>
+<p>
+:link	               选择所有未访问链接                           
+</p>
+</li>
+<li>
+<p>
+:visited	a:visited           选择所有访问过的链接                        
+</p>
+</li>
+<li>
+<p>
+:active	a:active             选择正在活动链接                             
+</p>
+</li>
+<li>
+<p>
+:hover	a:hover               把鼠标放在链接上的状态                      
+</p>
+</li>
+<li>
+<p>
+:focus	input:focus           选择元素输入后具有焦点                      
+</p>
+</li>
+<li>
+<p>
+:first-letter 元素的第一个字母                 
+</p>
+</li>
+<li>
+<p>
+:first-line	元素的第一行                     
+</p>
+</li>
+<li>
+<p>
+:first-child	  选择器匹配属于元素的第一个子元素
+</p>
+</li>
+<li>
+<p>
+:before	在元素之前插入内容                    
+</p>
+</li>
+<li>
+<p>
+:after	在元素之后插入内容                   
+</p>
+</li>
+<li>
+<p>
+:lang(language) 为元素的 lang 属性选择一个开始值          
+</p>
+</li>
+</ul>
+<h3 id="headline-12">
+样式设计     
+</h3>
+<h4 id="headline-13">
+元素外观 
+</h4>
+<h5 id="headline-14">
+背景 
+</h5>
+<ul>
+<li>
+<p>
+background-color: 默认 transparent 透明
+</p>
+</li>
+<li>
+<p>
+background-image:默认 none,url(path 可以放两张背景)
+</p>
+</li>
+<li>
+<p>
+background-repeat:默认 padding 左上角开始 repeat-x repeat-y no-repeat(重复图像) 
+</p>
+</li>
+<li>
+<p>
+background-position: 
+</p>
+</li>
+<li>
+<p>
+background-attachment:fixed/scroll/local 背景关联
+</p>
+</li>
+<li>
+<p>
+background-size: 长宽 px 或 %,相对于父元素而不是图形
+</p>
+</li>
+<li>
+<p>
+background-origin 背景图片相对于(content-box、padding-box 或 border-box )的定位
+</p>
+</li>
+<li>
+<p>
+background-clip:content-box; 规定背景的绘制区域
+</p>
+</li>
+<li>
+</li>
+</ul>
+<h5 id="headline-15">
+轮廓
+</h5>
+<ul>
+<li>
+<p>
+outline-color: 轮廓色
+</p>
+</li>
+<li>
+<p>
+outline-style: 轮廓样式,点 dotted ,实线 solid ，双实线 double 
+</p>
+</li>
+<li>
+<p>
+outline-width: 轮廓大小
+</p>
+</li>
+</ul>
+<h5 id="headline-16">
+内边距
+</h5>
+<ul>
+<li>
+<p>
+padding
+</p>
+</li>
+</ul>
+<h5 id="headline-17">
+边框
+</h5>
+<ul>
+<li>
+<p>
+border-style
+</p>
+</li>
+<li>
+<p>
+border-width
+</p>
+</li>
+<li>
+<p>
+border-color:transparent 有宽度的不可见边框
+</p>
+</li>
+<li>
+<p>
+border-radius: 边框圆角 四个角顺序是 top right bottom left
+</p>
+</li>
+<li>
+<p>
+box-shadow:边框阴影 
+</p>
+</li>
+<li>
+<p>
+border-image-source 	用在边框的图片的路径。
+</p>
+</li>
+<li>
+<p>
+border-image-slice 	图片边框向内偏移。 	
+</p>
+</li>
+<li>
+<p>
+border-image-width 	图片边框的宽度。 	
+</p>
+</li>
+<li>
+<p>
+border-image-outset 	边框图像区域超出边框的量。 	
+</p>
+</li>
+<li>
+<p>
+border-image-repeat 	图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。
+</p>
+</li>
+</ul>
+<h5 id="headline-18">
+外边距
+</h5>
+<ul>
+<li>
+<p>
+margin
+</p>
+</li>
+</ul>
+<h4 id="headline-19">
+文本外观    
+</h4>
+<h5 id="headline-20">
+文本属性
+</h5>
+<ul>
+<li>
+<p>
+text-indent: -5em 2% 2px 用于块元素,行元素可以用 padding,可以继承
+</p>
+</li>
+<li>
+<p>
+text-align: left,center,right 行内元素
+</p>
+</li>
+<li>
+<p>
+word-spacing: 单词之间距离
+</p>
+</li>
+<li>
+<p>
+letter-spacing:字间距离
+</p>
+</li>
+<li>
+<p>
+text-transform:capitalize uppercase lowercase 
+</p>
+</li>
+<li>
+<p>
+text-decoration:underline overline(上划线) line-through(穿透线) blink(闪烁)文本装饰
+</p>
+</li>
+<li>
+<p>
+direction：ltr 和 rtl 文本方向
+</p>
+</li>
+<li>
+<p>
+text-shadow:5px 5px 5px #FF0000;
+</p>
+</li>
+<li>
+<p>
+word-wrap: 长单词,(超过一行)允许截断到下一行 break-word /normal
+</p>
+</li>
+<li>
+<p>
+text-outline: 文本轮廓
+</p>
+</li>
+</ul>
+<h5 id="headline-21">
+字体
+</h5>
+<ul>
+<li>
+<p>
+font-family: 使用字体系列,字体名中有空格时 要用引号
+</p>
+</li>
+<li>
+<p>
+font-style:字体风格 normal italic(normal 版本的倾斜改动) oblique(字体的倾斜版本)
+</p>
+</li>
+<li>
+<p>
+font-variant:字体变形 small-caps (另一种格式的大写英文)
+</p>
+</li>
+<li>
+<p>
+font-weigth: bold  normal
+</p>
+</li>
+<li>
+<p>
+font-size:默认大小是 16 像素 (16px=1em(当前尺寸,当前是 16px))
+</p>
+<p>
+自定义字体
+</p>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">@</span><span class="k">font-face</span>
+  <span class="p">{</span>
+      <span class="nt">font-family</span><span class="o">:</span> <span class="nt">myFirstFont</span><span class="o">;</span>
+      <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.ttf&#39;</span><span class="o">)</span><span class="o">,</span>
+           <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.eot&#39;</span><span class="o">)</span><span class="o">;</span> <span class="c">/* IE9+ */</span>
+  <span class="p">}</span>
+
+  <span class="nt">div</span>
+  <span class="p">{</span>
+      <span class="k">font-family</span><span class="p">:</span><span class="n">myFirstFont</span><span class="p">;</span>
+  <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<h4 id="headline-22">
+链接外观
+</h4>
+<ul>
+<li>
+<p>
+a:link  普通的、未被访问的链接
+</p>
+</li>
+<li>
+<p>
+a:visited  用户已访问的链接
+</p>
+</li>
+<li>
+<p>
+a:hover -鼠标指针位于链接的上方
+</p>
+</li>
+<li>
+<p>
+a:active  链接被点击的时刻
+</p>
+</li>
+</ul>
+<h4 id="headline-23">
+列表外观
+</h4>
+<ul>
+<li>
+<p>
+list-style-type: square(方块)circle,decimal
+</p>
+</li>
+<li>
+<p>
+list-style-image: url(xxx.gif) 点,用图像替代
+</p>
+</li>
+<li>
+<p>
+list-style-position: [ outside ,inside ]
+</p>
+</li>
+</ul>
+<h4 id="headline-24">
+定位
+</h4>
+<ul>
+<li>
+<p>
+position 定位relative,absolute
+</p>
+</li>
+<li>
+<p>
+float 浮动 
+</p>
+</li>
+<li>
+<p>
+z-index 堆叠顺序，正数,接近用户,负数,远离用户
+</p>
+</li>
+</ul>
+<h4 id="headline-25">
+简单特效
+</h4>
+<h5 id="headline-26">
+变换
+</h5>
+<ul>
+<li>
+<p>
+transform:
+</p>
+<ul>
+<li>
+<p>
+translate(X,Y) 平移多少位置 
+</p>
+</li>
+<li>
+<p>
+rotate() 旋转多少角度 ( 30deg )  多少圈 (0.5turn半圈)
+</p>
+</li>
+<li>
+<p>
+scale(2,4) 缩放
+</p>
+</li>
+<li>
+<p>
+skew(30deg,20deg) 倾斜
+</p>
+</li>
+<li>
+<p>
+matrix() 需要六个参数，包含数学函数，旋转、缩放、移动以及倾斜
+</p>
+</li>
+<li>
+<p>
+transform-origin 	允许你改变被转换元素的位置
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="headline-27">
+过渡效果 
+</h5>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span><span class="p">{</span><span class="k">transition</span><span class="p">:</span><span class="k">width</span> <span class="mi">2</span><span class="kt">s</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">div</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<ul>
+<li>
+<p>
+transition-property 	规定应用过渡的 CSS 属性的名称 
+</p>
+</li>
+<li>
+<p>
+transition-duration 	定义过渡效果花费的时间
+</p>
+</li>
+<li>
+<p>
+transition-timing-function 	规定过渡效果的时间曲线
+</p>
+</li>
+<li>
+<p>
+transition-delay 	规定过渡效果何时开始
+</p>
+</li>
+</ul>
+<h3 id="headline-28">
+初始化样式
+</h3>
+<div class="src src-css">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">body</span><span class="o">,</span><span class="nt">div</span><span class="o">,</span><span class="nt">dl</span><span class="o">,</span><span class="nt">dt</span><span class="o">,</span><span class="nt">dd</span><span class="o">,</span><span class="nt">ul</span><span class="o">,</span><span class="nt">ol</span><span class="o">,</span><span class="nt">li</span><span class="o">,</span><span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span><span class="o">,</span><span class="nt">h5</span><span class="o">,</span><span class="nt">h6</span><span class="o">,</span><span class="nt">pre</span><span class="o">,</span><span class="nt">code</span><span class="o">,</span><span class="nt">legend</span><span class="o">,</span><span class="nt">button</span><span class="o">,</span><span class="nt">form</span><span class="o">,</span><span class="nt">fieldset</span><span class="o">,</span><span class="nt">input</span><span class="o">,</span><span class="nt">textarea</span><span class="o">,</span><span class="nt">p</span><span class="o">,</span><span class="nt">blockquote</span><span class="o">,</span><span class="nt">th</span><span class="o">,</span><span class="nt">td</span> <span class="p">{</span>   
+      　　<span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>   
+      　　<span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>   
+  <span class="p">}</span>
+  <span class="c">/* 酌情修改 */</span>
+  <span class="nt">body</span> <span class="p">{</span>
+      <span class="k">background</span><span class="p">:</span><span class="mh">#fff</span><span class="p">;</span><span class="k">color</span><span class="p">:</span><span class="mh">#333</span><span class="p">;</span><span class="k">font-size</span><span class="p">:</span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span> <span class="k">margin-top</span><span class="p">:</span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span><span class="k">font-family</span><span class="p">:</span><span class="s2">&#34;SimSun&#34;</span><span class="p">,</span><span class="s2">&#34;宋体&#34;</span><span class="p">,</span><span class="s2">&#34;Arial Narrow&#34;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c">/* 短引用的内容可取值：&#39;&#39;或&#34;&#34; */</span>
+  <span class="nt">q</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="nt">q</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span><span class="k">content</span><span class="p">:</span><span class="err">”</span><span class="p">;</span><span class="p">}</span>  
+
+  <span class="c">/* 缩写，图片等无边框 */</span>
+  <span class="nt">fieldset</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">none</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">font-variant</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">legend</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#000</span><span class="p">;</span><span class="p">}</span>
+
+  <span class="c">/* 清除特殊标记的字体和字号 */</span>
+  <span class="nt">address</span><span class="o">,</span><span class="nt">caption</span><span class="o">,</span><span class="nt">cite</span><span class="o">,</span><span class="nt">code</span><span class="o">,</span><span class="nt">dfn</span><span class="o">,</span><span class="nt">em</span><span class="o">,</span><span class="nt">strong</span><span class="o">,</span><span class="nt">th</span><span class="o">,</span><span class="nt">var</span> <span class="p">{</span>   
+      　　<span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>   
+      　　<span class="k">font-style</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>   
+  <span class="p">}</span>
+
+  <span class="c">/* 上下标 */</span>
+  <span class="nt">sup</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">top</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">sub</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">bottom</span><span class="p">;</span><span class="p">}</span>
+
+  <span class="c">/* 设置表格的边框被合并为一个单一的边框, 指定分隔边框模型中单元格边界之间的距离为 0*/</span>
+  <span class="nt">table</span> <span class="p">{</span>   
+      　　<span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span>   
+      　　<span class="k">border-spacing</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>   
+  <span class="p">}</span>   
+
+  <span class="c">/* 表格标题及内容居左显示 */</span>
+  <span class="nt">caption</span><span class="o">,</span><span class="nt">th</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">input</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">select</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span><span class="kc">middle</span><span class="p">;</span><span class="p">}</span>
+
+  <span class="c">/* 清除列表样式 */</span>
+  <span class="nt">ol</span><span class="o">,</span><span class="nt">ul</span> <span class="p">{</span><span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span><span class="p">}</span>  
+
+  <span class="c">/* 输入控件字体 */</span>
+  <span class="nt">input</span><span class="o">,</span><span class="nt">button</span><span class="o">,</span><span class="nt">textarea</span><span class="o">,</span><span class="nt">select</span><span class="o">,</span><span class="nt">optgroup</span><span class="o">,</span><span class="nt">option</span> <span class="p">{</span>
+      <span class="k">font-family</span><span class="p">:</span><span class="kc">inherit</span><span class="p">;</span>
+      <span class="k">font-size</span><span class="p">:</span><span class="kc">inherit</span><span class="p">;</span>
+      <span class="k">font-style</span><span class="p">:</span><span class="kc">inherit</span><span class="p">;</span>
+      <span class="k">font-weight</span><span class="p">:</span><span class="kc">inherit</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c">/* 标题元素样式清除 */</span> 
+  <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span><span class="o">,</span><span class="nt">h4</span><span class="o">,</span><span class="nt">h5</span><span class="o">,</span><span class="nt">h6</span> <span class="p">{</span>   
+      　　<span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>   
+      　　<span class="k">font-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>   
+  <span class="p">}</span>   
+
+  <span class="c">/* 链接样式，颜色可酌情修改 */</span>
+  <span class="nt">del</span><span class="o">,</span><span class="nt">ins</span><span class="o">,</span><span class="nt">a</span> <span class="p">{</span><span class="k">text-decoration</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">link</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#009</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#800080</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">active</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#c00</span><span class="p">;</span> <span class="k">text-decoration</span><span class="p">:</span><span class="kc">underline</span><span class="p">;</span><span class="p">}</span> 
+
+  <span class="c">/* 鼠标样式 */</span>
+  <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&#34;submit&#34;</span><span class="o">]</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">button</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">input</span><span class="p">::</span><span class="nd">-moz-focus-inner</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span><span class="p">}</span>
+
+  <span class="p">.</span><span class="nc">clear</span> <span class="p">{</span><span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-11
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/css/">css</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/javascript/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">JavaScript 与 DOM简介</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/html/">
+            <span class="next-text nav-default">html 简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/snow.js"></script>
+
+
+</body>
+</html>
