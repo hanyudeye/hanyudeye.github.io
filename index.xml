@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2020 06:33:05 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 15:20:52 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,12 +41,24 @@
     <item>
       <title>文章更新</title>
       <link>https://aming.xyz/post/update/</link>
-      <pubDate>Mon, 10 Feb 2020 06:33:05 +0800</pubDate>
+      <pubDate>Tue, 11 Feb 2020 15:20:52 +0800</pubDate>
       
       <guid>https://aming.xyz/post/update/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;br&gt;
 &lt;a href=&#34;https://aming.xyz/post/linux/&#34;&gt;Gnu/Linux 简介&lt;/a&gt; 作了修改&lt;br&gt;
 &lt;a href=&#34;https://aming.xyz/post/python/&#34;&gt;Python 简介&lt;/a&gt; 作了修改&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>html 简介</title>
+      <link>https://aming.xyz/post/html/</link>
+      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/html/</guid>
+      <description>&lt;p&gt;
+HTML技术主要用来给网页用的，就像我们看过的书或者报纸页一样，它不仅可以展示文字，还能格式化文字，还能播放多媒体，
+联合 javascript 技术还能制作网游，使得界面感觉都不像一页报纸了。
+&lt;/p&gt;</description>
     </item>
     
     <item>

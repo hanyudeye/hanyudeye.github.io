@@ -24,21 +24,56 @@
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-02-11T07:26:07+08:00</lastmod>
+    <lastmod>2020-02-11T15:20:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/update/</loc>
-    <lastmod>2020-02-10T06:33:05+08:00</lastmod>
+    <lastmod>2020-02-11T15:20:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
-    <lastmod>2020-02-11T07:26:07+08:00</lastmod>
+    <lastmod>2020-02-11T15:20:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/</loc>
+    <lastmod>2020-02-11T14:27:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/html/</loc>
+    <lastmod>2020-02-11T14:27:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/html/</loc>
+    <lastmod>2020-02-11T14:27:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/</loc>
+    <lastmod>2020-02-11T14:27:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2020-02-11T14:27:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -58,22 +93,8 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-02-11T07:26:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/tags/gimp/</loc>
     <lastmod>2020-01-25T06:56:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-02-11T07:26:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -114,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/tags/%E4%BA%BA/</loc>
+    <loc>https://aming.xyz/categories/%E4%BA%BA/</loc>
     <lastmod>2020-01-14T07:14:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/%E4%BA%BA/</loc>
+    <loc>https://aming.xyz/tags/%E4%BA%BA/</loc>
     <lastmod>2020-01-14T07:14:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -269,13 +290,6 @@
   
   <url>
     <loc>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2019-12-07T19:41:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2019-12-07T19:41:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/tags/html/</link>
+    <description>Recent content in html on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Feb 2020 14:27:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>html 简介</title>
+      <link>https://aming.xyz/post/html/</link>
+      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/html/</guid>
+      <description>&lt;p&gt;
+HTML技术主要用来给网页用的，就像我们看过的书或者报纸页一样，它不仅可以展示文字，还能格式化文字，还能播放多媒体，
+联合 javascript 技术还能制作网游，使得界面感觉都不像一页报纸了。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
