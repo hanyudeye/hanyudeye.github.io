@@ -18,7 +18,8 @@
       
       <guid>https://aming.xyz/post/update/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;br&gt;
-&lt;a href=&#34;https://aming.xyz/post/linux/&#34;&gt;Gnu/Linux 简介&lt;/a&gt; 作了修改&lt;/p&gt;</description>
+&lt;a href=&#34;https://aming.xyz/post/linux/&#34;&gt;Gnu/Linux 简介&lt;/a&gt; 作了修改
+&lt;a href=&#34;https://aming.xyz/post/python/&#34;&gt;Python 简介&lt;/a&gt; 作了修改&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -297,7 +298,7 @@
       
       <guid>https://aming.xyz/post/python/</guid>
       <description>&lt;p&gt;
-一门抽象程度高的语言。
+一门抽象程度高的语言，语言技术是给那些喜欢折腾计算机的或者计算机软件开发人员用的。
 &lt;/p&gt;</description>
     </item>
     

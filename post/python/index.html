@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Python 语言学习笔记">
 <meta itemprop="datePublished" content="2019-11-29T21:57:09&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-29T21:57:09&#43;08:00" />
-<meta itemprop="wordCount" content="3379">
+<meta itemprop="wordCount" content="2024">
 
 
 
@@ -146,93 +146,71 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">环境管理</a>
+<li><a href="#headline-1">安装</a>
+</li>
+<li><a href="#headline-2">编码问题</a>
+</li>
+<li><a href="#headline-3">计算机可以处理的东西 ( 数据类型 )</a>
 <ul>
-<li><a href="#headline-2">pipenv </a>
+<li><a href="#headline-4">列表类型 (list)</a>
 </li>
-</ul>
+<li><a href="#headline-5">元组 (tuple)  </a>
 </li>
-<li><a href="#headline-3">编码</a>
+<li><a href="#headline-6">字典 (dictionary) </a>
 </li>
-<li><a href="#headline-4">数据类型</a>
+<li><a href="#headline-7">集合 </a>
+</li>
+<li><a href="#headline-8">空值 None</a>
+</li>
+<li><a href="#headline-9">类型转换</a>
+</li>
+<li><a href="#headline-10">自定义类型  </a>
 <ul>
-<li><a href="#headline-5">列表 (list)</a>
+<li><a href="#headline-11">定义类 </a>
 </li>
-<li><a href="#headline-6">元组 (tuple)  </a>
+<li><a href="#headline-12">专有方法</a>
 </li>
-<li><a href="#headline-7">字典 (dictionary) </a>
+<li><a href="#headline-13">类的继承</a>
 </li>
-<li><a href="#headline-8">集合 </a>
-</li>
-<li><a href="#headline-9">空值 None</a>
-</li>
-<li><a href="#headline-10">类型转换</a>
-</li>
-<li><a href="#headline-11">自定义类型  </a>
-<ul>
-<li><a href="#headline-12">定义类 </a>
-</li>
-<li><a href="#headline-13">专有方法</a>
-</li>
-<li><a href="#headline-14">类的继承</a>
-<ul>
-<li><a href="#headline-15">继承已经定义的类</a>
-</li>
-<li><a href="#headline-16">调用父类的方法</a>
-</li>
-<li><a href="#headline-17">父类方法的重写 </a>
-</li>
-<li><a href="#headline-18">子类的类型判断 </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-19">类属性与方法</a>
-</li>
-<li><a href="#headline-20">类的多态</a>
+<li><a href="#headline-14">类的私有属性与私有方法</a>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#headline-21">自定义操作 </a>
+<li><a href="#headline-15">定义处理事情的方式 (函数)</a>
 <ul>
-<li><a href="#headline-22">定义函数</a>
+<li><a href="#headline-16">定义函数</a>
 </li>
-<li><a href="#headline-23">返回多个值 return b , a</a>
+<li><a href="#headline-17">不定长参数函数</a>
 </li>
-<li><a href="#headline-24">不定长参数</a>
+<li><a href="#headline-18">关键字参数 ( 给参数命名)</a>
 </li>
-<li><a href="#headline-25">关键字参数 </a>
+<li><a href="#headline-19">匿名函数 lambda (不要重复使用的函数，就不给名字了)</a>
 </li>
-<li><a href="#headline-26">匿名函数 lambda </a>
-</li>
-<li><a href="#headline-27">入口函数</a>
+<li><a href="#headline-20">入口函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-28">控制流程(决定了操作的走向)</a>
+<li><a href="#headline-21">控制处理流程</a>
 </li>
-<li><a href="#headline-29">模块</a>
+<li><a href="#headline-22">模块</a>
 <ul>
-<li><a href="#headline-30">定义模块   </a>
-</li>
-<li><a href="#headline-31">使用模块 </a>
-</li>
-<li><a href="#headline-32">模块属性</a>
-</li>
-<li><a href="#headline-33">作用域</a>
+<li><a href="#headline-23">使用模块 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-34">包</a>
+<li><a href="#headline-24">包</a>
 </li>
-<li><a href="#headline-35">测试</a>
+<li><a href="#headline-25">测试</a>
+</li>
+<li><a href="#headline-26">帮助</a>
+</li>
+<li><a href="#headline-27">环境管理</a>
 <ul>
-<li><a href="#headline-36">触发异常</a>
+<li><a href="#headline-28">pipenv </a>
 </li>
 </ul>
-</li>
-<li><a href="#headline-37">帮助</a>
 </li>
 </ul>
 </nav>
@@ -240,97 +218,43 @@
 </div>
     <div class="post-content">
       <p>
-一门抽象程度高的语言。
+一门抽象程度高的语言，语言技术是给那些喜欢折腾计算机的或者计算机软件开发人员用的。
 </p>
 <h3 id="headline-1">
-环境管理
+安装
 </h3>
 <p>
-因为 <strong>python</strong> 最大的问题是各版本不兼容，所以要管理版本问题。  
+折腾环境的安装就不说了。
 </p>
-<h4 id="headline-2">
-pipenv 
-</h4>
-<div class="src src-sh">
+<h3 id="headline-2">
+编码问题
+</h3>
+<p>
+<strong>python2</strong> 默认是认不得中文等世界语的，只认得英文， <strong>python3</strong> 改掉了，这点注意看下版本。
+</p>
+<div class="src src-py">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">  <span class="c1"># 创建 Python 2/3 版本的项目</span>
-  $ pipenv --two/--three
-
-  <span class="c1"># 安装项目依赖，会在当前目录下生成 .venv 目录，包含 python 解释器</span>
-  $ pipenv install
-  $ pipenv install --dev
-
-  <span class="c1"># 弹出 Virtual Env 对应的脚本环境</span>
-  $ pipenv shell
-
-  <span class="c1"># 执行文件</span>
-  $ pipenv run python
-
-  <span class="c1"># 定位项目路径</span>
-  $ pipenv --where
-
-  <span class="c1"># 定位虚拟环境路径</span>
-  $ pipenv --venv
-
-  <span class="c1"># 定位 Python 解释器路径</span>
-  $ pipenv --py</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-py" data-lang="py">  <span class="c1"># python2 中加上一句说明。</span>
+  <span class="c1">#-*-coding:utf-8-*-</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
 <h3 id="headline-3">
-编码
+计算机可以处理的东西 ( 数据类型 )
 </h3>
 <p>
-默认是认不得 <code>Unicode</code> 的，只认得英文
+每个东西有一种类型的属性.
 </p>
-<p>
-   识别 <strong>Unicode</strong> 
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1">#-*-coding:utf-8-*-</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-4">
-数据类型
-</h3>
-<p>
-数字，字符串这些数据类型都有,用来做做计算，显示显示消息的软件就能做了
-</p>
-<h4 id="headline-5">
-列表 (list)
+<h4 id="headline-4">
+列表类型 (list)
 </h4>
 <p>
-就这东西
+    列表表示一串东西，一般一个包含子项目的东西，用列表表示比较好。
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -338,28 +262,10 @@ pipenv
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="p">[</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">runoob</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">john</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mf">70.2</span> <span class="p">]</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="p">[</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">name</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">john</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mf">70.2</span> <span class="p">]</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<blockquote>
-<p>
-对于相关的东西 ,  可以放在列表里 , 比如欠我钱的人的名单。 <code>我还欠别人钱</code> ，可怜
-</p>
-</blockquote>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="n">myMoney</span> <span class="o">=</span> <span class="p">[</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">张三</span><span class="s2">&#34;</span><span class="p">,</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">李四</span><span class="s2">&#34;</span><span class="p">,</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">王八</span><span class="s2">&#34;</span><span class="p">]</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-    列表里的东西可以修改，增减。 
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -369,26 +275,24 @@ pipenv
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 增加</span>
-  <span class="n">myMoney</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">老九</span><span class="s2">&#34;</span><span class="p">]</span>
-  <span class="c1"># 是否含有 </span>
-  <span class="sa"></span><span class="s2">&#34;</span><span class="s2">老九</span><span class="s2">&#34;</span> <span class="ow">in</span> <span class="n">myMoney</span>
-  <span class="c1"># 删除</span>
-  <span class="k">del</span> <span class="n">myMoney</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 列表里的东西可以修改，增减。 </span>
+  <span class="c1"># 增加</span>
+    <span class="n">myMoney</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="sa"></span><span class="s2">&#34;</span><span class="s2">老九</span><span class="s2">&#34;</span><span class="p">]</span>
+    <span class="c1"># 是否含有 </span>
+    <span class="sa"></span><span class="s2">&#34;</span><span class="s2">老九</span><span class="s2">&#34;</span> <span class="ow">in</span> <span class="n">myMoney</span>
+    <span class="c1"># 删除</span>
+    <span class="k">del</span> <span class="n">myMoney</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
 <p>
-    一些方法: 
+    一些方法 
 </p>
 <table>
 <tbody>
-<tr>
-<td>cmp(list1, list2)</td>
-<td>比较两个列表的元素</td>
-</tr>
 <tr>
 <td>len(list)</td>
 <td>列表元素个数</td>
@@ -439,9 +343,12 @@ pipenv
 </tr>
 </tbody>
 </table>
-<h4 id="headline-6">
+<h4 id="headline-5">
 元组 (tuple)  
 </h4>
+<p>
+    子项目不能修改的列表
+</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -452,21 +359,29 @@ pipenv
 </div>
 </div>
 </div>
-<blockquote>
-<p>
-东西不能修改的列表, 但元组包含的是列表字典什么的变量的话，变量一修改，元组也就改了
-</p>
-</blockquote>
-<blockquote>
+<ul>
+<li>
 <p>
 创建元组 x=[ (person.name,person.age) for person in people ]
-    有条件地创建元组    x=[ (person.name,person.age) for person in people if person.age&lt;34]
-    表达式化数组 xx=[(person.age**2 if person.age&lt;34 else person.age) for person in people]
 </p>
-</blockquote>
-<h4 id="headline-7">
+</li>
+<li>
+<p>
+有条件地创建元组    x=[ (person.name,person.age) for person in people if person.age&lt;34]
+</p>
+</li>
+<li>
+<p>
+表达式化数组 xx=[(person.age**2 if person.age&lt;34 else person.age) for person in people]
+</p>
+</li>
+</ul>
+<h4 id="headline-6">
 字典 (dictionary) 
 </h4>
+<p>
+    子项目可以另外命名的列表
+</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -477,96 +392,26 @@ pipenv
 </div>
 </div>
 </div>
-<blockquote>
-<p>
-能够自定义索引的列表,就能表达层次化的东西 
-</p>
-</blockquote>
-<table>
-<tbody>
-<tr>
-<td>cmp(dict1, dict2)</td>
-<td>比较两个字典元素</td>
-</tr>
-<tr>
-<td>len(dict)</td>
-<td>计算字典元素个数</td>
-</tr>
-<tr>
-<td>str(dict)</td>
-<td>输出字典可打印的字符串表示</td>
-</tr>
-<tr>
-<td>type(variable)</td>
-<td>返回输入的变量类型，如果变量是字典就返回字典类型</td>
-</tr>
-<tr>
-<td>dict.clear()</td>
-<td>删除字典内所有元素</td>
-</tr>
-<tr>
-<td>dict.copy()</td>
-<td>返回一个字典的浅复制</td>
-</tr>
-<tr>
-<td>dict.values()</td>
-<td>以列表返回字典中的所有值</td>
-</tr>
-<tr>
-<td>popitem()</td>
-<td>随机返回并删除字典中的一对键和值</td>
-</tr>
-<tr>
-<td>dict.items()</td>
-<td>以列表返回可遍历的(键, 值) 元组数组</td>
-</tr>
-</tbody>
-</table>
-<h4 id="headline-8">
+<h4 id="headline-7">
 集合 
 </h4>
 <p>
-set([1,3,4])
+无序不重复的列表
 </p>
-<blockquote>
-<p>
-无序不重复元素集,也是列表啦,就是列表要去重。返回的是一个没有值的字典,不能用索引操作了  
-</p>
-</blockquote>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
+<pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 添加</span>
-  <span class="n">set1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-  <span class="c1"># 删除</span>
-  <span class="n">set1</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">456</span><span class="p">)</span>
-
-  <span class="c1"># 交集 (求两个 set 集合中相同的元素)</span>
-  <span class="n">set3</span><span class="o">=</span><span class="n">set1</span> <span class="o">&amp;</span> <span class="n">set2</span>
-  <span class="c1"># 并集 （合并两个 set 集合的元素并去除重复的值）</span>
-  <span class="n">set4</span><span class="o">=</span><span class="n">set1</span> <span class="o">|</span> <span class="n">set2</span>
-  <span class="c1"># 差集</span>
-  <span class="n">set5</span><span class="o">=</span><span class="n">set1</span> <span class="o">-</span> <span class="n">set2</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="nb">set</span><span class="p">(</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span><span class="p">)</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-9">
+<h4 id="headline-8">
 空值 None
 </h4>
-<h4 id="headline-10">
+<h4 id="headline-9">
 类型转换
 </h4>
 <table>
@@ -625,23 +470,13 @@ set([1,3,4])
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>
-要能转才给转，能不能转看你要转化的东西 
-</p>
-</blockquote>
-<h4 id="headline-11">
+<h4 id="headline-10">
 自定义类型  
 </h4>
 <p>
-基本类型还不能表达我要创建的东西，那么你就可以自己定义自己的东西是什么样的结构。
+系统提供的东西不满足你要处理的东西的复杂性，就可以自定义
 </p>
-<blockquote>
-<p>
-就是用那些基本类型拼装起来更复杂的结构
-</p>
-</blockquote>
-<h5 id="headline-12">
+<h5 id="headline-11">
 定义类 
 </h5>
 <div class="src src-python">
@@ -667,7 +502,7 @@ set([1,3,4])
 </div>
 </div>
 <p>
-    实例 
+     实例 
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -703,7 +538,7 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h5 id="headline-13">
+<h5 id="headline-12">
 专有方法
 </h5>
 <table>
@@ -731,10 +566,6 @@ set([1,3,4])
 <tr>
 <td><span style="text-decoration: underline;"><span style="text-decoration: underline;">len</span></span></td>
 <td>获得长度</td>
-</tr>
-<tr>
-<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">cmp</span></span></td>
-<td>比较运算</td>
 </tr>
 <tr>
 <td><span style="text-decoration: underline;"><span style="text-decoration: underline;">call</span></span></td>
@@ -790,217 +621,11 @@ set([1,3,4])
 </tr>
 </tbody>
 </table>
-<h5 id="headline-14">
+<h5 id="headline-13">
 类的继承
 </h5>
-<h6 id="headline-15">
-继承已经定义的类
-</h6>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">BaseClassName</span><span class="p">)</span><span class="p">:</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
 <p>
-      在定义类的时候，可以在括号里写继承的类，一开始也提到过，如果不用继承类的时
-      候，也要写继承 object 类，因为在 Python 中 object 类是一切类的父类。
-</p>
-<p>
-      当然上面的是单继承，Python 也是支持多继承的，具体的语法如下：
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">Base1</span><span class="p">,</span><span class="n">Base2</span><span class="p">,</span><span class="n">Base3</span><span class="p">)</span><span class="p">:</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h6 id="headline-16">
-调用父类的方法
-</h6>
-<p>
-一个类继承了父类后，可以直接调用父类的方法的，比如下面的例子，`UserInfo2`
-      继承自父类 `UserInfo` ，可以直接调用父类的 `get_account` 方法。
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python</span>
-<span class="c1"># -*- coding: UTF-8 -*-</span>
-
-<span class="k">class</span> <span class="nc">UserInfo</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span><span class="p">:</span>
-<span class="n">lv</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">account</span><span class="p">)</span><span class="p">:</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">__account</span> <span class="o">=</span> <span class="n">account</span>
-
-<span class="k">def</span> <span class="nf">get_account</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="p">:</span>
-<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__account</span>
-
-
-<span class="k">class</span> <span class="nc">UserInfo2</span><span class="p">(</span><span class="n">UserInfo</span><span class="p">)</span><span class="p">:</span>
-<span class="k">pass</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">__main__</span><span class="s1">&#39;</span><span class="p">:</span>
-<span class="n">userInfo2</span> <span class="o">=</span> <span class="n">UserInfo2</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">两点水</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">347073565</span><span class="p">)</span><span class="p">;</span>
-<span class="k">print</span><span class="p">(</span><span class="n">userInfo2</span><span class="o">.</span><span class="n">get_account</span><span class="p">(</span><span class="p">)</span><span class="p">)</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h6 id="headline-17">
-父类方法的重写 
-</h6>
-<p>
-当然，也可以重写父类的方法。
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="ch">#!/usr/bin/env python3</span>
- <span class="c1"># -*- coding: UTF-8 -*-</span>
-
- <span class="k">class</span> <span class="nc">UserInfo</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span><span class="p">:</span>
- <span class="n">lv</span> <span class="o">=</span> <span class="mi">5</span>
-
- <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">account</span><span class="p">)</span><span class="p">:</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">__account</span> <span class="o">=</span> <span class="n">account</span>
-
- <span class="k">def</span> <span class="nf">get_account</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="p">:</span>
- <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__account</span>
-
- <span class="nd">@classmethod</span>
- <span class="k">def</span> <span class="nf">get_name</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span><span class="p">:</span>
- <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">lv</span>
-
- <span class="nd">@property</span>
- <span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="p">:</span>
- <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
-
-
- <span class="k">class</span> <span class="nc">UserInfo2</span><span class="p">(</span><span class="n">UserInfo</span><span class="p">)</span><span class="p">:</span>
- <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">account</span><span class="p">,</span> <span class="n">sex</span><span class="p">)</span><span class="p">:</span>
- <span class="nb">super</span><span class="p">(</span><span class="n">UserInfo2</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">account</span><span class="p">)</span>
- <span class="bp">self</span><span class="o">.</span><span class="n">sex</span> <span class="o">=</span> <span class="n">sex</span><span class="p">;</span>
-
-
- <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">__main__</span><span class="s1">&#39;</span><span class="p">:</span>
- <span class="n">userInfo2</span> <span class="o">=</span> <span class="n">UserInfo2</span><span class="p">(</span><span class="sa"></span><span class="s1">&#39;</span><span class="s1">两点水</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">347073565</span><span class="p">,</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">男</span><span class="s1">&#39;</span><span class="p">)</span><span class="p">;</span>
- <span class="c1"># 打印所有属性</span>
- <span class="k">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">userInfo2</span><span class="p">)</span><span class="p">)</span>
- <span class="c1"># 打印构造函数中的属性</span>
- <span class="k">print</span><span class="p">(</span><span class="n">userInfo2</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">)</span>
- <span class="k">print</span><span class="p">(</span><span class="n">UserInfo2</span><span class="o">.</span><span class="n">get_name</span><span class="p">(</span><span class="p">)</span><span class="p">)</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h6 id="headline-18">
-子类的类型判断 
-</h6>
-<p>
-      可以使用 isinstance() 函数,
-</p>
-<p>
-      一个例子就能看懂 isinstance() 函数的用法了。
-</p>
-<h5 id="headline-19">
-类属性与方法
-</h5>
-<div class="verse-block">
-<p>
-类的私有属性
-      __private_attrs：两个下划线开头，声明该属性为私有，不能在类地外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs 类的方法
-</p>
-</div>
-<div class="verse-block">
-<p>
-类的私有方法
-      __private_method：两个下划线开头，声明该方法为私有方法，不能在类地外部调用。在类的内部调用 self.__private_methods 
-</p>
-</div>
-<h5 id="headline-20">
-类的多态
-</h5>
-<p>
-多态的概念其实不难理解，它是指对不同类型的变量进行相同的操作，它会根据对象
-     （或类）类型的不同而表现出不同的行为。
-</p>
-<p>
-     事实上，我们经常用到多态的性质，比如：
+类是面向对象中的技术，为了东西和方法方便扩展
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1011,22 +636,35 @@ set([1,3,4])
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;</span><span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="mi">3</span>
-<span class="o">&gt;&gt;</span><span class="o">&gt;</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">a</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">b</span><span class="s1">&#39;</span>
-<span class="sa"></span><span class="s1">&#39;</span><span class="s1">ab</span><span class="s1">&#39;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 单继承</span>
+  <span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">BaseClassName</span><span class="p">)</span><span class="p">:</span>
+   <span class="c1"># 多继承</span>
+   <span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">Base1</span><span class="p">,</span><span class="n">Base2</span><span class="p">,</span><span class="n">Base3</span><span class="p">)</span><span class="p">:</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
+<h5 id="headline-14">
+类的私有属性与私有方法
+</h5>
+<ul>
+<li>
 <p>
-     可以看到，我们对两个整数进行 + 操作，会返回它们的和，对两个字符进行相同的 +
-     操作，会返回拼接后的字符串。也就是说，不同类型的对象对同一消息会作出不同的
-     响应。
+私有属性 __private_attrs：两个下划线开头，声明该属性为私有，不能在类地外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs 类的方法
 </p>
-<h3 id="headline-21">
-自定义操作 
+</li>
+<li>
+<p>
+私有方法 __private_method：两个下划线开头，声明该方法为私有方法，不能在类地外部调用。在类的内部调用 self.__private_methods 
+</p>
+</li>
+</ul>
+<h3 id="headline-15">
+定义处理事情的方式 (函数)
 </h3>
-<h4 id="headline-22">
+<p>
+怎么处理事情，除了计算机自带的，还能自己手动编写
+</p>
+<h4 id="headline-16">
 定义函数
 </h4>
 <div class="src src-python">
@@ -1045,17 +683,11 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-23">
-返回多个值 return b , a
+<h4 id="headline-17">
+不定长参数函数
 </h4>
 <p>
-其实返回了一个元组
-</p>
-<h4 id="headline-24">
-不定长参数
-</h4>
-<p>
-你指望多
+就是函数的参数长度不定
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1079,12 +711,9 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-25">
-关键字参数 
+<h4 id="headline-18">
+关键字参数 ( 给参数命名)
 </h4>
-<p>
-不用关心参数列表定义时的顺序
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1107,12 +736,9 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-26">
-匿名函数 lambda 
+<h4 id="headline-19">
+匿名函数 lambda (不要重复使用的函数，就不给名字了)
 </h4>
-<p>
-这种函数不用给名字，就用一次，因为下次不用了
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1139,24 +765,21 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-27">
+<h4 id="headline-20">
 入口函数
 </h4>
-<p>
-相当于其他语言中的 <code>main</code> 函数，这不是一个函数，暂且这么叫吧，这表达式一定成立
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">__main__</span><span class="s1">&#39;</span><span class="p">:</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="sa"></span><span class="s1">&#39;</span><span class="s1">__main__</span><span class="s1">&#39;</span><span class="p">:</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-28">
-控制流程(决定了操作的走向)
+<h3 id="headline-21">
+控制处理流程
 </h3>
 <div class="verse-block">
 <p>
@@ -1164,140 +787,42 @@ set([1,3,4])
     多次操作的 for while
 </p>
 </div>
-<h3 id="headline-29">
+<h3 id="headline-22">
 模块
 </h3>
-<div class="verse-block">
+<blockquote>
 <p>
-数据类型扩展了好多，天南海北的，有操作硬件的，有控制界面的，有控制数字处理的，有控制音乐什么的，好多呢
-   怎么处理，就想文件夹一样，给分个级，再加一层，就想到了用模块的方法。
+模块是为了合理组织东西，便于重用
 </p>
+</blockquote>
+<div class="export-block">
 </div>
-<h4 id="headline-30">
-定义模块   
-</h4>
 <p>
-一个 <code>python</code> 代码文件就是模块了，用文件名表示模块名 (后缀不需要的啊) 
+一个文件就是一个模块了，文件名表示模块名
 </p>
-<p>
-   这个文件名叫 <code>pymodule.py</code> ,模块名就叫 <code>pymodule</code>
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 这个是一个杂乱的模块</span>
-  <span class="k">class</span> <span class="nc">animal</span><span class="p">:</span>
-      <span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
-          <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">i am animal</span><span class="s2">&#34;</span><span class="p">)</span>
-
-  <span class="n">name</span><span class="o">=</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">aming</span><span class="s2">&#34;</span>
-  <span class="n">__myname__</span><span class="o">=</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">aming</span><span class="s2">&#34;</span>
-  <span class="n">_myname</span><span class="o">=</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">aming</span><span class="s2">&#34;</span>
-
-  <span class="k">def</span> <span class="nf">wel</span><span class="p">(</span><span class="p">)</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="sa"></span><span class="s2">&#34;</span><span class="s2">i am wel function</span><span class="s2">&#34;</span><span class="p">)</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h4 id="headline-31">
+<h4 id="headline-23">
 使用模块 
 </h4>
-<p>
-使用模块中的一个东西 ,使用全部用通配符 <code>*</code>
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="kn">from</span> <span class="nn">person_start</span> <span class="kn">import</span> <span class="n">Person</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-    使用模块中的所有东西
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">module1</span><span class="p">[</span><span class="p">,</span> <span class="n">module2</span><span class="p">[</span><span class="p">,</span><span class="o">.</span><span class="o">.</span><span class="o">.</span> <span class="n">moduleN</span><span class="p">]</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-   用法 
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1">#!/usr/bin/env python3</span>
-  <span class="c1"># -*- coding: utf-8 -*-</span>
-
-  <span class="kn">from</span> <span class="nn">pymodule</span> <span class="kn">import</span> <span class="n">name</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-
-  <span class="kn">import</span> <span class="nn">pymodule</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">pymodule</span><span class="o">.</span><span class="n">__myname__</span><span class="p">)</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="kn">from</span> <span class="nn">person_start</span> <span class="kn">import</span> <span class="n">Person</span>
+  <span class="kn">from</span> <span class="nn">pymodule</span> <span class="kn">import</span> <span class="n">name</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<blockquote>
-<p>
-区别在使用时名字的约束
-</p>
-</blockquote>
-<h4 id="headline-32">
-模块属性
-</h4>
-<p>
-<span style="text-decoration: underline;"><span style="text-decoration: underline;">name</span></span> 
-</p>
-<h4 id="headline-33">
-作用域
-</h4>
-<p>
-正常的函数和变量名是公开的（public），可以被直接引用，比如：abc，ni12，PI 等
-    `__xxx__`这样的变量是特殊变量，可以被直接引用，但是有特殊用途
-    `_xxx` 和 `__xxx` 这样的函数或变量就是非公开的（private），不应该被直接引用
-    这是约定吧 !
-</p>
-<h3 id="headline-34">
+<h3 id="headline-24">
 包
 </h3>
+<blockquote>
 <p>
-光模块不够啊，一个文件放不了什么东西啊，可以用包，包里有很多模块，这样的层次，
-   包是一个目录
+包和模块是一样的目的，就是包是由模块组成的，模块是包的一部分。
 </p>
-<p>
-  包的使用
-</p>
+</blockquote>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1308,14 +833,11 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<p>
-模块名前加一个目录名和一个 点就可以了 
-</p>
-<h3 id="headline-35">
+<h3 id="headline-25">
 测试
 </h3>
 <p>
-有时，有些操作我们会筛选掉，这时用报错的方法挺好的。用来测试
+预防性编程的一种方式
 </p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -1333,19 +855,80 @@ set([1,3,4])
 </div>
 </div>
 </div>
-<h4 id="headline-36">
-触发异常
-</h4>
-<pre class="example">
-raise [Exception [, args [, traceback]]]
-</pre>
-<h3 id="headline-37">
+<h3 id="headline-26">
 帮助
 </h3>
+<ul>
+<li>
 <p>
-help()  函数或类文档字串说明
-   dir() 函数或类的属性
+help()  函数或类的详细说明
 </p>
+</li>
+<li>
+<p>
+dir() 函数或类的简单说明
+</p>
+</li>
+</ul>
+<h3 id="headline-27">
+环境管理
+</h3>
+<p>
+因为 <strong>Python</strong> 最大的问题是各版本不兼容，所以还要要管理版本问题。  
+</p>
+<h4 id="headline-28">
+pipenv 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  <span class="c1"># 创建 Python 2/3 版本的项目</span>
+  $ pipenv --two/--three
+
+  <span class="c1"># 安装项目依赖，会在当前目录下生成 .venv 目录，包含 python 解释器</span>
+  $ pipenv install
+  $ pipenv install --dev
+
+  <span class="c1"># 弹出 Virtual Env 对应的脚本环境</span>
+  $ pipenv shell
+
+  <span class="c1"># 执行文件</span>
+  $ pipenv run python
+
+  <span class="c1"># 定位项目路径</span>
+  $ pipenv --where
+
+  <span class="c1"># 定位虚拟环境路径</span>
+  $ pipenv --venv
+
+  <span class="c1"># 定位 Python 解释器路径</span>
+  $ pipenv --py</code></pre></td></tr></table>
+</div>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
