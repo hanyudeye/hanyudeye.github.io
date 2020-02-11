@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.0 with theme even" />
+<meta name="generator" content="Hugo 0.64.1 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/linux/" />
 <meta property="article:published_time" content="2019-11-29T21:49:26+08:00" />
-<meta property="article:modified_time" content="2019-11-29T21:49:26+08:00" />
+<meta property="article:modified_time" content="2020-02-11T07:26:07+08:00" />
 <meta itemprop="name" content="Gnu/Linux 简介">
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="dateModified" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="wordCount" content="1923">
+<meta itemprop="dateModified" content="2020-02-11T07:26:07&#43;08:00" />
+<meta itemprop="wordCount" content="2355">
 
 
 
@@ -152,9 +152,9 @@
 </li>
 <li><a href="#headline-3">基本概念</a>
 </li>
-<li><a href="#headline-4">登录   </a>
+<li><a href="#headline-4">用户</a>
 </li>
-<li><a href="#headline-5">软硬信息</a>
+<li><a href="#headline-5">基本信息</a>
 </li>
 <li><a href="#headline-6">进程管理和调度</a>
 <ul>
@@ -182,39 +182,49 @@
 </li>
 <li><a href="#headline-17">任务 </a>
 </li>
-<li><a href="#headline-18">压缩解压</a>
+<li><a href="#headline-18">帮助文档    </a>
+</li>
+<li><a href="#headline-19">工具软件    </a>
 <ul>
-<li><a href="#headline-19">unar</a>
+<li><a href="#headline-20">压缩解压</a>
+<ul>
+<li><a href="#headline-21">unar</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-20">帮助文档    </a>
-</li>
-<li><a href="#headline-21">pdf</a>
+<li><a href="#headline-22">pdf</a>
 <ul>
-<li><a href="#headline-22">合并 pdf  </a>
+<li><a href="#headline-23">合并 pdf  </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-23">查找</a>
+<li><a href="#headline-24">查找</a>
 <ul>
-<li><a href="#headline-24">查找文件 </a>
+<li><a href="#headline-25">查找文件 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-25">图片处理</a>
+<li><a href="#headline-26">图片处理</a>
 <ul>
-<li><a href="#headline-26">压缩转换 convert</a>
+<li><a href="#headline-27">压缩转换 convert</a>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#headline-27">发行版</a>
-<ul>
-<li><a href="#headline-28">字体</a>
+</ul>
 </li>
-<li><a href="#headline-29">用户目录配置</a>
+<li><a href="#headline-28">发行版</a>
+<ul>
+<li><a href="#headline-29">字体</a>
+<ul>
+<li><a href="#headline-30">安装字体</a>
+</li>
+<li><a href="#headline-31">显示已安装的字体</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-32">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -224,17 +234,12 @@
 </div>
     <div class="post-content">
       <p>
-计算机的能力是由软件决定的。有一种软件设计的哲学叫 <strong>UNIX</strong> 哲学，提倡的是设计软件
-要注重 <strong>KISS</strong> （keep it simple, stupid，节俭）原则 。
+计算机现在做的事情越来越多，似乎比人都要全能了。
 </p>
+
 <p>
-<strong>Gnu/Linux</strong> 是 <strong>UNIX</strong> 的免费实现，开启了开源时代。
+<strong>Gnu/Linux</strong> 是计算机的一种操作方式，跟我们常用的 <strong>Windows</strong> 操作方式相比，它比较注重自主动手，用来学习计算机底层或者折腾用的，但用在生产领域也是胜任的，就是有些小众。
 </p>
-<blockquote>
-<p>
-因为计算机是对真实世界的一个仿真，所以理应你用的任何工具都能用计算机仿真出来。比如形，什么外形都能用显示器显示，还彩色的呢。
-</p>
-</blockquote>
 <h2 id="headline-1">
 Gnu/Linux
 </h2>
@@ -254,56 +259,55 @@ Gnu/Linux
 </li>
 <li>
 <p>
-对外展示的 <strong>显示器</strong>
+对外展示的 <strong>显示器</strong>  
 </p>
 </li>
 <li>
 <p>
-对内接收的 *键鼠*
+对内接收的 *键鼠*  
 </p>
 </li>
 <li>
 <p>
-保存文件的 <strong>硬盘</strong>
+保存文件的 <strong>硬盘</strong> 
 </p>
 </li>
 </ul>
+<p>
+计算机的处理方式是参照人处理事情的方式设计出来的，有一个大脑（磁盘）存储处理方法（程序），遇到事情就用对应的方法（程序）去处理它。
+   日常我们处理完就结束了，但计算机的显示器还需给出结果呈现(或其他输出设备)
+</p>
 <h3 id="headline-3">
 基本概念
 </h3>
-<blockquote>
-<p>
-Gnu/linux 会把杂乱的硬件做一个抽象
-</p>
-</blockquote>
 <ul>
 <li>
 <p>
-<strong>文件</strong>: &#34;东西&#34;的存储形式，一般有静止的东西和会动的东西。
+<strong>文件</strong>: 我们大脑只保存解题思路，但计算机还需保存具体的&#34;东西&#34;，它们都用文件方式保存，组成一个树的结构
 </p>
 </li>
 <li>
 <p>
-<strong>进程</strong>:  <strong>&#34;会动&#34;</strong> 的东西，软件指令。
+<strong>进程</strong>:  正在解题的程序
 </p>
 </li>
 <li>
 <p>
-<strong>设备</strong> : 机器组成的硬件，上面的几个。
+<strong>设备</strong> : 组成计算机的东西
 </p>
 </li>
 <li>
 <p>
-<strong>基本输入输出</strong> : 基本输入就是 <strong>键盘</strong>, 基本输出是 <strong>显示屏</strong> ，特指这俩硬件。
+<strong>基本输入输出</strong> : 最常用的输入输出设备给的名字，基本输入就是 <strong>键盘</strong>, 基本输出是 <strong>显示屏</strong> 。
 </p>
 </li>
 </ul>
 <h3 id="headline-4">
-登录   
+用户
 </h3>
 <blockquote>
 <p>
-登录是对电脑使用的一种权限保护，就像家里的门一样，要使用电脑，首先面对的就是这个东西。Linux 会先叫你做一下登录认证，认证后你做什么它就不大管了，相对就自由了。
+计算机给计算机的资源一个拥有者的概念，每个拥有者拥有自己私有的财产，所以要登录计算机，当然你的计算机要共享的话就不要创建用户了。
 </p>
 </blockquote>
 <ul>
@@ -334,11 +338,11 @@ Gnu/linux 会把杂乱的硬件做一个抽象
 </li>
 </ul>
 <h3 id="headline-5">
-软硬信息
+基本信息
 </h3>
 <blockquote>
 <p>
-你想看看你用的电脑是什么配置，还有一些系统属性吧，就用这些指令。
+你想看看你用的电脑是什么配置，还有一些系统属性，就用这些指令。
 </p>
 </blockquote>
 <div class="src src-shell">
@@ -380,23 +384,22 @@ Gnu/linux 会把杂乱的硬件做一个抽象
 </h3>
 <blockquote>
 <p>
-显示软件的运行情况，现在电脑都同时运行好多程序的。 
+计算机比人强的一件事就是它一次能做好几件事，不像人，做另一件事的同时要停下手边的事。计算机要做或正在做的事情用进程表示。  
+</p>
+
+<p>
+为什么进程有这种区分呢？因为计算机的速度很快，它的同时只是人不停切换的一种假象，因为时间太短所以看起来像同时了(但现在 <strong>CPU多核</strong> 出现，有些事情是同时处理的)。
 </p>
 </blockquote>
 <ul>
 <li>
 <p>
-ps   显示进程列表 
+ps   显示进程信息
 </p>
 </li>
 <li>
 <p>
-kill   通过 <strong>PID</strong> 给进程发信号 
-</p>
-</li>
-<li>
-<p>
-kill -l  显示 <strong>信号</strong> 列表
+kill   给进程发信号 
 </p>
 </li>
 <li>
@@ -406,7 +409,7 @@ pgrep  通过 <strong>进程名</strong> 查找进程
 </li>
 <li>
 <p>
-pkill   通过 <strong>进程名</strong> 给进程发信号 
+pkill   通过 <strong>进程名</strong> 给进程发信号
 </p>
 </li>
 </ul>
@@ -537,16 +540,21 @@ shared memory
 内存管理
 </h3>
 <p>
-内存里放了软件，也放了资源文件，如何处理?硬件提供了分段分页的支持。那么在注销软件的时候就可以合理的回收内存，节约空间了。
+我们专注于做某件事的时候，脑子里的东西是与处理事情相关的东西，不会想到其它东
+   西。计算机内存虽然很大了，但现在的软件也是很大，所以提供了按需载入软件一部分
+   和内存分段分页的技术。
 </p>
 <blockquote>
 <p>
-自动的，不用人管
+这里 <strong>Linux</strong> 内核给我们摆平了，不用自己动手了。
 </p>
 </blockquote>
 <h3 id="headline-11">
 磁盘和分区
 </h3>
+<p>
+这里有自主性的，但要注意 <strong>/home</strong> 分区要给大点，最好买大点的磁盘自己折腾，不想折腾就多看看教程怎么分配。
+</p>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -568,7 +576,7 @@ shared memory
 </h3>
 <blockquote>
 <p>
-对硬盘进行格式化，以便储存文件
+折腾永无止境，不如说是技术多样性. 文件系统有好几种，一般尽量用新的。
 </p>
 </blockquote>
 <table>
@@ -642,7 +650,7 @@ shared memory
 </h3>
 <blockquote>
 <p>
-不用的东西就不用加载到内核了
+不用的东西就不用放到内核了，就不用加载到内存造成浪费了。这里是 <strong>Linux</strong> 内核提供的技术。
 </p>
 </blockquote>
 <ul>
@@ -686,15 +694,16 @@ lsmod 显示已载入系统的模块
 </h3>
 <blockquote>
 <p>
-世界上只有你一个人，就不用身份证，如果有好多人，就要给自己起个名字了。在网络上的计算机也一样。
+在网络中的计算机怎么扮演自己的角色，就像在人群中，你怎么扮演自己的角色。计算机在这里不如人，没有脚，不能到处跑。但它们可以用它们专有的交流方式（电线或无
+   线电）来沟通，我们用话通过空气传播来沟通。为了指明给谁沟通，自己需要一个代号
+   (IP编号)，就像人需要一个名字一样（不能重名）。
 </p>
 </blockquote>
-<blockquote>
 <p>
-路由：找名字叫“小李”，不是到处找的，要按照国籍，省，市这种表格一级一级找，计算机也是有一张表的，叫路由表。
+   根据交流范围，网络分为小网络（局域网）和大网络（广域网），你想在小网络交流，那起
+   个简单的名字就好了，比如小张小王（网卡编号），如果要在大网络交流，就需要复杂点的
+   名字，比如某国某省某市的张三丰（IP网络编号）。
 </p>
-</blockquote>
-<div class="verse-block">
 <ul>
 <li>
 <p>
@@ -713,7 +722,7 @@ netstat -antp 查看所有已建立的连接
 </li>
 <li>
 <p>
-ifconfig 查看所有网络接口的属性 
+ifconfig 查看网络接口的属性 
 </p>
 </li>
 <li>
@@ -722,7 +731,6 @@ iptables -L 查看 iptables 防火墙
 </p>
 </li>
 </ul>
-</div>
 <h3 id="headline-17">
 任务 
 </h3>
@@ -733,11 +741,15 @@ iptables -L 查看 iptables 防火墙
    马上要做的事情，如果是图形界面下，就不用管了，想执行哪一个用鼠标随便点。
 </p>
 </blockquote>
+<ul>
+<li>
 <p>
 任务放在前、后台 fg bg jobs 
 </p>
+</li>
+<li>
 <p>
-   周期任务 crontab
+周期任务 crontab
 </p>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
@@ -757,19 +769,11 @@ iptables -L 查看 iptables 防火墙
 </div>
 </div>
 </div>
+</li>
+</ul>
 <h3 id="headline-18">
-压缩解压
-</h3>
-<h4 id="headline-19">
-unar
-</h4>
-<p>
-解压缩，中文不会乱码
-</p>
-<h3 id="headline-20">
 帮助文档    
 </h3>
-<div class="verse-block">
 <ul>
 <li>
 <p>
@@ -782,13 +786,27 @@ info 详细文档
 </p>
 </li>
 </ul>
-</div>
-<h3 id="headline-21">
-pdf
+<h3 id="headline-19">
+工具软件    
 </h3>
-<h4 id="headline-22">
-合并 pdf  
+<p>
+下面是处理特定事情的软件。
+</p>
+<h4 id="headline-20">
+压缩解压
 </h4>
+<h5 id="headline-21">
+unar
+</h5>
+<p>
+解压缩，中文不会乱码
+</p>
+<h4 id="headline-22">
+pdf
+</h4>
+<h5 id="headline-23">
+合并 pdf  
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -799,12 +817,12 @@ pdf
 </div>
 </div>
 </div>
-<h3 id="headline-23">
-查找
-</h3>
 <h4 id="headline-24">
-查找文件 
+查找
 </h4>
+<h5 id="headline-25">
+查找文件 
+</h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -815,21 +833,21 @@ pdf
 </div>
 </div>
 </div>
-<h3 id="headline-25">
-图片处理
-</h3>
 <h4 id="headline-26">
-压缩转换 convert
+图片处理
 </h4>
-<h2 id="headline-27">
+<h5 id="headline-27">
+压缩转换 convert
+</h5>
+<h2 id="headline-28">
 发行版
 </h2>
-<h3 id="headline-28">
+<h3 id="headline-29">
 字体
 </h3>
-<p>
-安装
-</p>
+<h4 id="headline-30">
+安装字体
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -850,9 +868,9 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<p>
-    显示已安装的字体
-</p>
+<h4 id="headline-31">
+显示已安装的字体
+</h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -863,12 +881,19 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-29">
+<h3 id="headline-32">
 用户目录配置
 </h3>
-<p>
-~/.config/user-dirs.dirs
-</p>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  ~/.config/user-dirs.dirs</code></pre></td></tr></table>
+</div>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -879,7 +904,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2019-11-29
+        2020-02-11
         
     </span>
   </p>

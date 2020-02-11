@@ -17,7 +17,8 @@
       <pubDate>Mon, 10 Feb 2020 06:33:05 +0800</pubDate>
       
       <guid>https://aming.xyz/post/update/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;br&gt;
+&lt;a href=&#34;https://aming.xyz/post/linux/&#34;&gt;Gnu/Linux 简介&lt;/a&gt; 作了修改&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -307,8 +308,11 @@
       
       <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
-计算机的能力是由软件决定的。有一种软件设计的哲学叫 &lt;strong&gt;UNIX&lt;/strong&gt; 哲学，提倡的是设计软件
-要注重 &lt;strong&gt;KISS&lt;/strong&gt; （keep it simple, stupid，节俭）原则 。
+计算机现在做的事情越来越多，似乎比人都要全能了。
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;strong&gt;Gnu/Linux&lt;/strong&gt; 是计算机的一种操作方式，跟我们常用的 &lt;strong&gt;Windows&lt;/strong&gt; 操作方式相比，它比较注重自主动手，用来学习计算机底层或者折腾用的，但用在生产领域也是胜任的，就是有些小众。
 &lt;/p&gt;</description>
     </item>
     
