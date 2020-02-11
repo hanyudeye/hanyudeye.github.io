@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vue.js 简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="Vue 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.64.1 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/vuejs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Vue.js 简介" />
+<meta property="og:description" content="Vue 简介" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/vuejs/" />
+<meta property="article:published_time" content="2020-02-12T05:44:50+08:00" />
+<meta property="article:modified_time" content="2020-02-12T05:44:50+08:00" />
+<meta itemprop="name" content="Vue.js 简介">
+<meta itemprop="description" content="Vue 简介">
+<meta itemprop="datePublished" content="2020-02-12T05:44:50&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-12T05:44:50&#43;08:00" />
+<meta itemprop="wordCount" content="824">
+
+
+
+<meta itemprop="keywords" content="vuejs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vue.js 简介"/>
+<meta name="twitter:description" content="Vue 简介"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/update/">
+        <li class="mobile-menu-item">最近修改</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/update/">最近修改</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vue.js 简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-12 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/"> 框架使用 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">前端历史</a>
+</li>
+<li><a href="#headline-2">安装与初始化   </a>
+</li>
+<li><a href="#headline-3">特性    </a>
+<ul>
+<li><a href="#headline-4">组件</a>
+<ul>
+<li><a href="#headline-5">复杂</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-6">模板</a>
+<ul>
+<li><a href="#headline-7">变量模板 </a>
+</li>
+<li><a href="#headline-8">绑定变量</a>
+</li>
+<li><a href="#headline-9">分支(  v-if )</a>
+</li>
+<li><a href="#headline-10">循环 </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-11">响应式设计</a>
+</li>
+<li><a href="#headline-12">过渡效果</a>
+</li>
+<li><a href="#headline-13">单文件组件</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+我们看一张 <strong>报纸</strong> ，然后版面栏目不是很多嘛，比如这块是实事新闻，那块是娱乐新闻，东西很多放在一起管理就麻烦，分块各人管一小块就清晰点。   
+vue 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
+</p>
+<h3 id="headline-1">
+前端历史
+</h3>
+<ul>
+<li>
+<p>
+<strong>html</strong> ， <strong>javascript</strong> , <strong>css</strong> 技术相继出来以后，一张 <strong>报纸</strong> 基本满足用户的需求了，且还有少量互动，但程序员处理浏览器兼容性还是非常麻烦。
+</p>
+</li>
+<li>
+<p>
+<strong>ajax</strong> 技术的出现，使 <strong>报纸</strong> 可以局部更新,体验更好，也节省了带宽。
+</p>
+</li>
+<li>
+<p>
+<strong>jQuery</strong> 大大简化语法，提高了生产力。
+</p>
+</li>
+<li>
+<p>
+<strong>angularjs</strong> <strong>vuejs</strong>  等前端框架出现，改变着传统网页单页无法重用的设计模式
+</p>
+</li>
+<li>
+<p>
+<strong>nodejs</strong> 的出现，使得前端工程师都要把后端工程师消灭了。
+</p>
+</li>
+</ul>
+<h3 id="headline-2">
+安装与初始化   
+</h3>
+<p>
+安装
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/vue/2.6.10/vue.min.js&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+   初始化
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    {{ message }}
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">(</span><span class="p">{</span>
+      <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+      <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Hello Vue!&#39;</span>
+      <span class="p">}</span>
+  <span class="p">}</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-3">
+特性    
+</h3>
+<h4 id="headline-4">
+组件
+</h4>
+<h5 id="headline-5">
+复杂
+</h5>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">Vue</span><span class="p">.</span><span class="nx">component</span><span class="p">(</span><span class="s1">&#39;buttonclicked&#39;</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">props</span><span class="o">:</span> <span class="p">[</span>
+          <span class="s1">&#39;initial_count&#39;</span>
+      <span class="p">]</span><span class="p">,</span>
+      <span class="nx">data</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="p">{</span>
+              <span class="nx">count</span><span class="o">:</span> <span class="mi">0</span>
+          <span class="p">}</span>
+      <span class="p">}</span><span class="p">,</span>
+      <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;button v-on:click=&#34;onclick&#34;&gt;Clicked {{ count }} times&lt;/button&gt;&#39;</span><span class="p">,</span>
+      <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+          <span class="nx">onclick</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+              <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+          <span class="p">}</span>
+      <span class="p">}</span><span class="p">,</span>
+      <span class="nx">mounted</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">initial_count</span><span class="p">;</span>
+      <span class="p">}</span>
+  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-6">
+模板
+</h4>
+<p>
+Vue 使用基于 HTML 的模板语法，允许开发者将 DOM 元素与底层 Vue 实例中的数据相绑定。
+</p>
+<blockquote>
+<p>
+定义变量的设计方式，因为变量的属性是一处修改，其他使用的地方都会改变。
+    还设计了条件与循环来判断变量，进入分支
+</p>
+</blockquote>
+<h5 id="headline-7">
+变量模板 
+</h5>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    {{ message }}
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="src src-javascript">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="err">（</span><span class="p">{</span> 
+      <span class="nx">el</span><span class="o">:</span><span class="s1">&#39;＃app&#39;</span><span class="err">，</span>
+      <span class="nx">data</span><span class="o">:</span><span class="p">{</span> 
+          <span class="nx">message</span><span class="o">:</span><span class="s1">&#39;Hello Vue！&#39;</span>
+      <span class="p">}</span> 
+  <span class="p">}</span><span class="err">）</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-8">
+绑定变量
+</h5>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">v</span><span class="o">-</span><span class="nx">bind</span><span class="o">:</span><span class="nx">title</span><span class="o">=</span><span class="s2">&#34;message&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-9">
+分支(  v-if )
+</h5>
+<h5 id="headline-10">
+循环 
+</h5>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">v</span><span class="o">-</span><span class="k">for</span><span class="o">=</span><span class="s2">&#34;todo in todos&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-11">
+响应式设计
+</h4>
+<p>
+响应式是指 MVC 模型中的视图随着模型变化而变化。在 Vue 中，开发者只需将视图与对应
+    的模型进行绑定，Vue 便能自动观测模型的变动，并重绘视图。这一特性使得 Vue 的状态
+    管理变得相当简单直观。
+</p>
+<h4 id="headline-12">
+过渡效果
+</h4>
+<p>
+Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用过渡效果。 包括以下工具：
+</p>
+<div class="verse-block">
+<p>
+在 CSS 过渡和动画中自动应用 class
+    可以配合使用第三方 CSS 动画库，如 Animate.css
+    在过渡钩子函数中使用 JavaScript 直接操作 DOM
+    可以配合使用第三方 JavaScript 动画库，如 Velocity.js.
+</p>
+</div>
+<h4 id="headline-13">
+单文件组件
+</h4>
+<p>
+为了更好地适应复杂的项目，Vue 支持以.vue 为扩展名的文件来定义一个完整组件，
+    用以替代使用 Vue.component 注册组件的方式。开发者可以使用 Webpack 或
+    Browserify 等构建工具来打包单文件组件。
+</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-12
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/vuejs/">vuejs</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/jquery/">
+            <span class="next-text nav-default">jQuery简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/js/snow.js"></script>
+
+
+</body>
+</html>
