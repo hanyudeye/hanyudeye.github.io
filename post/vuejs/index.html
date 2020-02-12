@@ -781,26 +781,26 @@ v-model
 </span><span class="lnt">27
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">                                         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;edit me&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;edit me&#34;</span><span class="p"></span><span class="p">&gt;</span>
 
-                                         <span class="c">&lt;!--</span><span class="c"> 多行文本 </span><span class="c">--&gt;</span>
-                                         <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;add multiple lines&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+  <span class="c">&lt;!--</span><span class="c"> 多行文本 </span><span class="c">--&gt;</span>
+  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;add multiple lines&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">textarea</span><span class="p">&gt;</span>
 
-                                         <span class="c">&lt;!--</span><span class="c"> 复选框 </span><span class="c">--&gt;</span>
-                                         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;jack&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Jack&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p"></span><span class="p">&gt;</span>
-                                         <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;john&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;John&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="c">&lt;!--</span><span class="c"> 复选框 </span><span class="c">--&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;jack&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Jack&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;john&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;John&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p"></span><span class="p">&gt;</span>
 
-                              <span class="c">&lt;!--</span><span class="c"> 单选按钮 </span><span class="c">--&gt;</span>
-                      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;one&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;One&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p"></span><span class="p">&gt;</span>
-                                 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;two&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Two&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="c">&lt;!--</span><span class="c"> 单选按钮 </span><span class="c">--&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;one&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;One&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p"></span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;two&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Two&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p"></span><span class="p">&gt;</span>
 
-                      <span class="c">&lt;!--</span><span class="c"> 选择框 </span><span class="c">--&gt;</span>
-             <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;selected&#34;</span><span class="p"></span><span class="p">&gt;</span>
-               <span class="p">&lt;</span><span class="nt">option</span> <span class="na">disabled</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>请选择<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
-               <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>A<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
-               <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>B<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
-               <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>C<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
-             <span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="c">&lt;!--</span><span class="c"> 选择框 </span><span class="c">--&gt;</span>
+  <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;selected&#34;</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">disabled</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>请选择<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>A<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>B<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span><span class="p"></span><span class="p">&gt;</span>C<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span>
 
   <span class="c">&lt;!--</span><span class="c"> 渲染的动态选项 </span><span class="c">--&gt;</span>
   <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;selected&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -1205,7 +1205,11 @@ destroyed
           <a href="/tags/vuejs/">vuejs</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/chrome/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">chrome 插件</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/post/jquery/">
             <span class="next-text nav-default">jQuery简介</span>
             <span class="next-text nav-mobile">下一篇</span>

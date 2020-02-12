@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Feb 2020 05:44:50 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 20:54:47 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chrome</title>
+      <link>https://aming.xyz/tags/chrome/</link>
+      <pubDate>Wed, 12 Feb 2020 20:54:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/chrome/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>vuejs</title>
