@@ -19,8 +19,13 @@
       <guid>https://aming.xyz/post/vuejs/</guid>
       <description>&lt;p&gt;
 我们看一张 &lt;strong&gt;报纸&lt;/strong&gt; ，然后版面栏目不是很多嘛，比如这块是实事新闻，那块是娱乐新闻，东西很多放在一起管理就麻烦，分块各人管一小块就清晰点。   
-vue 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
-&lt;/p&gt;</description>
+vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+就是把报纸的 &lt;strong&gt;版面结构&lt;/strong&gt; 和 &lt;strong&gt;版面内容&lt;/strong&gt; 分离开来，使 &lt;strong&gt;版面结构&lt;/strong&gt;  不动的情况下  &lt;strong&gt;版面内容&lt;/strong&gt;  可以随意变化。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
