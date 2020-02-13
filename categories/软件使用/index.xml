@@ -81,9 +81,9 @@
       <description>&lt;p&gt;
 计算机现在做的事情越来越多，似乎比人都要全能了。
 &lt;/p&gt;
-
 &lt;p&gt;
-&lt;strong&gt;Gnu/Linux&lt;/strong&gt; 是计算机的一种操作方式，跟我们常用的 &lt;strong&gt;Windows&lt;/strong&gt; 操作方式相比，它比较注重自主动手，用来学习计算机底层或者折腾用的，但用在生产领域也是胜任的，就是有些小众。
+ &lt;strong&gt;Gnu/Linux&lt;/strong&gt; 以前最为人诟病的估计是它的命令行的操作方式，做某件事都要手工输入命令，而且软件界面都没有的，一点都不直观，这对于刚刚接触那种操作方式的人可能不习惯，觉的难用。
+ 不过现在也很好了，也是图形的操作，对初学者也能上手了，可以去学学，跟 &lt;strong&gt;windows&lt;/strong&gt; 用法一样的了。
 &lt;/p&gt;</description>
     </item>
     
@@ -94,8 +94,8 @@
       
       <guid>https://aming.xyz/post/emacs/</guid>
       <description>&lt;p&gt;
-文字处理软件，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，学起来比较复杂。    
-但是所有命令可以用 &lt;strong&gt;TAB&lt;/strong&gt; 补全，所以记住命令的关键词就可以调用了，所以它不光是文字输入，还包含文字处理的功能。
+写字的，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，全部学
+完很难，但可以学一部分，以后要用到复杂功能再学。
 &lt;/p&gt;</description>
     </item>
     
