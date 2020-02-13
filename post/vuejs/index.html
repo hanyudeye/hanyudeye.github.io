@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Vue 简介">
 <meta itemprop="datePublished" content="2020-02-12T05:44:50&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-12T05:44:50&#43;08:00" />
-<meta itemprop="wordCount" content="2242">
+<meta itemprop="wordCount" content="2422">
 
 
 
@@ -212,15 +212,19 @@
 </li>
 <li><a href="#headline-26">使用组件</a>
 </li>
-<li><a href="#headline-27">构建复杂组件</a>
+<li><a href="#headline-27">定义局部组件</a>
+</li>
+<li><a href="#headline-28">模板解析注意事项</a>
+</li>
+<li><a href="#headline-29">data 必须是函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-28">过渡效果</a>
+<li><a href="#headline-30">过渡效果</a>
 </li>
-<li><a href="#headline-29">单文件组件</a>
+<li><a href="#headline-31">单文件组件</a>
 </li>
-<li><a href="#headline-30">生命周期</a>
+<li><a href="#headline-32">生命周期</a>
 </li>
 </ul>
 </li>
@@ -1042,6 +1046,11 @@ style
 <h5 id="headline-25">
 定义组件 
 </h5>
+<ul>
+<li>
+<p>
+Vue.component(tagName, options)
+</p>
 <div class="src src-js">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1059,6 +1068,8 @@ style
 </div>
 </div>
 </div>
+</li>
+</ul>
 <h5 id="headline-26">
 使用组件
 </h5>
@@ -1082,7 +1093,99 @@ style
 </div>
 </div>
 <h5 id="headline-27">
-构建复杂组件
+定义局部组件
+</h5>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">Child</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;div&gt;A custom component!&lt;/div&gt;&#39;</span>
+  <span class="p">}</span>
+
+  <span class="k">new</span> <span class="nx">Vue</span><span class="p">(</span><span class="p">{</span>
+      <span class="c1">// ...
+</span><span class="c1"></span>      <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+          <span class="c1">// &lt;my-component&gt; 将只在父组件模板中可用
+</span><span class="c1"></span>          <span class="s1">&#39;my-component&#39;</span><span class="o">:</span> <span class="nx">Child</span>
+      <span class="p">}</span>
+  <span class="p">}</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-28">
+模板解析注意事项
+</h5>
+<p>
+因为 Vue 的解析在 <strong>DOM</strong> 之后，所以对于像 `&lt;ul&gt;`、`&lt;ol&gt;`、`&lt;table&gt;`、
+     `&lt;select&gt;` 这样的元素会有限制，这时要用到 <strong>is</strong> 特性
+</p>
+<p>
+     错误的方法
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">table</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">my-row</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">my-row</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+正确的方法
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">table</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">is</span><span class="o">=</span><span class="s">&#34;my-row&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<ul>
+<li>
+<p>
+JavaScript 内联模板字符串
+</p>
+<ul>
+<li>
+<p>
+`.vue` 组件
+</p>
+</li>
+</ul>
+<p>
+这两种方式就没有限制
+</p>
+</li>
+</ul>
+<h5 id="headline-29">
+data 必须是函数
 </h5>
 <div class="src src-js">
 <div class="highlight"><div class="chroma">
@@ -1131,7 +1234,7 @@ style
 </div>
 </div>
 </div>
-<h4 id="headline-28">
+<h4 id="headline-30">
 过渡效果
 </h4>
 <p>
@@ -1145,7 +1248,7 @@ Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用�
     可以配合使用第三方 JavaScript 动画库，如 Velocity.js.
 </p>
 </div>
-<h4 id="headline-29">
+<h4 id="headline-31">
 单文件组件
 </h4>
 <p>
@@ -1153,7 +1256,7 @@ Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用�
     用以替代使用 Vue.component 注册组件的方式。开发者可以使用 Webpack 或
     Browserify 等构建工具来打包单文件组件。
 </p>
-<h4 id="headline-30">
+<h4 id="headline-32">
 生命周期
 </h4>
 <p>
