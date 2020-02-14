@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Feb 2020 20:58:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>laravel 简介</title>
+      <link>https://aming.xyz/post/laravel/</link>
+      <pubDate>Fri, 14 Feb 2020 20:58:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/laravel/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;php&lt;/strong&gt; 用来处理动态性的网页的， &lt;strong&gt;laravel&lt;/strong&gt; 是 &lt;strong&gt;php&lt;/strong&gt; 的工具集，扩展了功能。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+特点： 所有的 &lt;strong&gt;URL&lt;/strong&gt; 访问必须先定义路由规则。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>php 简介</title>
+      <link>https://aming.xyz/post/php/</link>
+      <pubDate>Thu, 13 Feb 2020 19:01:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/php/</guid>
+      <description>&lt;p&gt;
+一种简单的语言，一般用在 &lt;strong&gt;web&lt;/strong&gt; 开发里，给网页生成动态内容用的。当然，如果你喜欢的话，用来编写其它程序也可以的。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计算机网络简介</title>
+      <link>https://aming.xyz/post/network/</link>
+      <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/network/</guid>
+      <description>&lt;p&gt;
+一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
+&lt;/p&gt;
+&lt;p&gt;
+计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome 插件</title>
+      <link>https://aming.xyz/post/chrome/</link>
+      <pubDate>Wed, 12 Feb 2020 20:54:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/chrome/</guid>
+      <description>&lt;p&gt;最近又淘到两个 &lt;strong&gt;chrome&lt;/strong&gt; 插件，把以前的插件拼一拼，凑个一篇文字。用的少的就不写
+了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vue.js 简介</title>
+      <link>https://aming.xyz/post/vuejs/</link>
+      <pubDate>Wed, 12 Feb 2020 05:44:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/vuejs/</guid>
+      <description>&lt;p&gt;
+我们看一张 &lt;strong&gt;报纸&lt;/strong&gt; ，然后版面栏目不是很多嘛，比如这块是实事新闻，那块是娱乐新闻，东西很多放在一起管理就麻烦，分块各人管一小块就清晰点。   
+vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+就是把报纸的 &lt;strong&gt;版面结构&lt;/strong&gt; 和 &lt;strong&gt;版面内容&lt;/strong&gt; 分离开来，使 &lt;strong&gt;版面结构&lt;/strong&gt;  不动的情况下  &lt;strong&gt;版面内容&lt;/strong&gt;  可以随意变化。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery简介</title>
+      <link>https://aming.xyz/post/jquery/</link>
+      <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/jquery/</guid>
+      <description>&lt;p&gt;
+jQuery是一个JavaScript库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，事件
+处理，动画和Ajax等，使得操作起来极为简化，当然自己也扩展了一些功能。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+相当与原来用 &lt;strong&gt;DOM&lt;/strong&gt; 操作的方式都可以用 &lt;strong&gt;jQuery&lt;/strong&gt; 方式了
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 与 DOM简介</title>
+      <link>https://aming.xyz/post/javascript/</link>
+      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/javascript/</guid>
+      <description>&lt;p&gt;
+Javascript技术原来也是用在网页里面的，弄一些花里胡哨的动态效果，但现在它满足了一
+个现实，人有时懒的连报纸都不想翻，就想在报纸上用手指划划就想翻页，Javascript 的
+技术能够实现，所以现在又发达起来了。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>css 简介</title>
+      <link>https://aming.xyz/post/css/</link>
+      <pubDate>Tue, 11 Feb 2020 18:20:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/css/</guid>
+      <description>&lt;p&gt;
+设定网页外观的技术。你看一张报纸，或者图书的封面，花花绿绿的颜色还有排版，把这些
+效果用在网页里的技术叫做样式技术 ( &lt;strong&gt;CSS&lt;/strong&gt; )。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>html 简介</title>
+      <link>https://aming.xyz/post/html/</link>
+      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/html/</guid>
+      <description>&lt;p&gt;
+HTML技术主要用来给网页用的，就像我们看过的书或者报纸页一样，它不仅可以展示文字，还能格式化文字，还能播放多媒体，
+联合 javascript 技术还能制作网游，使得界面感觉都不像一页报纸了。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>照片处理</title>
+      <link>https://aming.xyz/post/gimp/</link>
+      <pubDate>Sat, 25 Jan 2020 06:56:22 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/gimp/</guid>
+      <description>&lt;p&gt;
+我们拍了一张照片，可能不是很称我们的心意。我们把照片改成我们满意的图片，就要学会照片处理。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>时不我代</title>
+      <link>https://aming.xyz/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</link>
+      <pubDate>Thu, 09 Jan 2020 20:47:48 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</guid>
+      <description>&lt;p&gt;由&lt;a href=&#34;https://www.miyaboke.com/&#34;&gt;弥雅博客&lt;/a&gt; 中关于企业发展想到的。&lt;/p&gt;
+&lt;p&gt;最近我失业，去找临时工，发现好多找临时工的人，问后才知道原来是企业生意不好，提前放假了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>单向历</title>
+      <link>https://aming.xyz/post/danxiangli/</link>
+      <pubDate>Sat, 28 Dec 2019 16:32:12 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/danxiangli/</guid>
+      <description>&lt;p&gt;我有一个创意，就是做一个 &lt;strong&gt;app&lt;/strong&gt; 形式的 &lt;strong&gt;单向历&lt;/strong&gt; ，用来替换纸质版的 &lt;strong&gt;单向历&lt;/strong&gt; 的功能，然后加一个 代办时间统计的功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>版本控制简介</title>
+      <link>https://aming.xyz/post/vc/</link>
+      <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/vc/</guid>
+      <description>&lt;p&gt;
+备份工具，比如你做了一个椅子，然后用这工具备份一下，误删以后可以用这工具恢复（不能误删椅子的备份）。然后呢，你的椅子可能不是很完美，还要修修改改，这是你可以同时备份椅子的新的版本，如此而已。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>latex简介</title>
+      <link>https://aming.xyz/post/latex/</link>
+      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/latex/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;书写数学书籍等印刷作品的标记&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>数学简介</title>
+      <link>https://aming.xyz/post/math/</link>
+      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/math/</guid>
+      <description>&lt;p&gt;数学是一套规则，这套规则是稳定的，不像有些规则需要常常变更，数学这套是稳定的，不大变更的。&lt;br&gt;
+数学就是把东西用数的一套规则处理后，会变成另一种形式的东西。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>营销</title>
+      <link>https://aming.xyz/post/%E8%90%A5%E9%94%80/</link>
+      <pubDate>Thu, 12 Dec 2019 19:40:05 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%90%A5%E9%94%80/</guid>
+      <description>&lt;p&gt;
+就是通过宣传、推广，进而促进产品或服务的销售。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>算法简介</title>
+      <link>https://aming.xyz/post/algorithm/</link>
+      <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/algorithm/</guid>
+      <description>&lt;p&gt;
+简单举个例子，给你一个废铁，我要打造一枚铁戒，不管你用什么方法。这种对解题方法的
+研究，就是算法研究。
+如果要想打造一枚金戒，以现有的技术，很难实现，所以称为不可解决算法。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+在面向现实中，可能会有很多约束条件，解题方法会苛刻的多。
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>编程语言简介</title>
+      <link>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Sat, 07 Dec 2019 19:41:03 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
+      <description>&lt;p&gt;
+前文我们讲过，世界是由 &lt;strong&gt;东西&lt;/strong&gt; 组成的，东西分为两种，一种是会动的东西，另一种是静止的东西。
+会动的东西影响不动的东西，或会动的东西相互影响，构成了我们运动的世界。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>学习简介</title>
+      <link>https://aming.xyz/post/readbook/</link>
+      <pubDate>Sun, 01 Dec 2019 07:26:19 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/readbook/</guid>
+      <description>&lt;p&gt;
+知识，是东西在我们脑中印记。就像起风的湖面一样，东西的倒影是影影绰绰的。我们的目的是尽可能的抹平湖面的涟漪，那样就能更精确的反映东西的本身。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 简介</title>
+      <link>https://aming.xyz/post/python/</link>
+      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/python/</guid>
+      <description>&lt;p&gt;
+一门抽象程度高的语言，语言技术是给那些喜欢折腾计算机的或者计算机软件开发人员用的。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gnu/Linux 简介</title>
+      <link>https://aming.xyz/post/linux/</link>
+      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/linux/</guid>
+      <description>&lt;p&gt;
+计算机现在做的事情越来越多，似乎比人都要全能了。
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;strong&gt;Gnu/Linux&lt;/strong&gt; 以前最为人诟病的估计是它的命令行的操作方式，做某件事都要手工输入命令，而且软件界面都没有的，一点都不直观，这对于刚刚接触那种操作方式的人可能不习惯，觉的难用。
+ 不过现在也很好了，也是图形的操作，对初学者也能上手了，可以去学学，跟 &lt;strong&gt;windows&lt;/strong&gt; 用法一样的了。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>设计简介</title>
+      <link>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Thu, 18 Jul 2019 19:57:04 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</guid>
+      <description>&lt;p&gt;
+所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>emacs 简介</title>
+      <link>https://aming.xyz/post/emacs/</link>
+      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/emacs/</guid>
+      <description>&lt;p&gt;
+写字的，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，全部学
+完很难，但可以学一部分，以后要用到复杂功能再学。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
