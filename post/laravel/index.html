@@ -49,7 +49,7 @@
 <meta itemprop="description" content="laravel 简介">
 <meta itemprop="datePublished" content="2020-02-14T20:58:44&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-14T20:58:44&#43;08:00" />
-<meta itemprop="wordCount" content="889">
+<meta itemprop="wordCount" content="1341">
 
 
 
@@ -182,17 +182,55 @@
 </li>
 </ul>
 </li>
-<li><a href="#headline-15">Input</a>
+<li><a href="#headline-15">获取URL参数     </a>
+<ul>
+<li><a href="#headline-16">Input</a>
 </li>
-<li><a href="#headline-16">门面( Facades )</a>
+<li><a href="#headline-17">Request</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-17">artisan </a>
+<li><a href="#headline-18">门面( Facades )</a>
 </li>
-<li><a href="#headline-18">调试</a>
+<li><a href="#headline-19">对数据库操作</a>
 <ul>
-<li><a href="#headline-19">格式化输出</a>
+<li><a href="#headline-20">配置  </a>
+<ul>
+<li><a href="#headline-21">对SQLite的配置</a>
+</li>
+<li><a href="#headline-22">读写连接</a>
+</li>
+<li><a href="#headline-23">sticky 选项</a>
+</li>
+<li><a href="#headline-24">使用多个连接</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-25">原生操作</a>
+<ul>
+<li><a href="#headline-26">增删改查</a>
+</li>
+<li><a href="#headline-27">数据库事务</a>
+</li>
+<li><a href="#headline-28">处理死锁 (设定重新尝试的次数)</a>
+</li>
+<li><a href="#headline-29">手动使用事务</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-30">laravel 骚操作</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-31">视图</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-32">artisan </a>
+</li>
+<li><a href="#headline-33">调试</a>
+<ul>
+<li><a href="#headline-34">格式化输出</a>
 </li>
 </ul>
 </li>
@@ -566,8 +604,11 @@ app/Http/Controllers  控制器定义目录
 </tbody>
 </table>
 <h4 id="headline-15">
-Input
+获取URL参数     
 </h4>
+<h5 id="headline-16">
+Input
+</h5>
 <p>
 使用 * Illuminate§upport\Facades\Input* 方法获取 <strong>url</strong> 参数
 </p>
@@ -603,13 +644,223 @@ Input::has() 是否存在
 </p>
 </li>
 </ul>
-<h4 id="headline-16">
+<h5 id="headline-17">
+Request
+</h5>
+<p>
+跟Input 用法一样
+</p>
+<h4 id="headline-18">
 门面( Facades )
 </h4>
 <p>
 门面提供了静态方法，定义在 <strong>Illuminate§upport\Facades</strong> 中(在 laravel 内部) 。
 </p>
-<h3 id="headline-17">
+<h4 id="headline-19">
+对数据库操作
+</h4>
+<blockquote>
+<p>
+支持四个数据库 MySQL , PostgreSQL, SQLite, SQL Server
+</p>
+</blockquote>
+<h5 id="headline-20">
+配置  
+</h5>
+<ul>
+<li>
+<p>
+config/database.php  配置文件 
+</p>
+</li>
+<li>
+<p>
+.env   环境变量配置文件
+</p>
+</li>
+<li>
+<p>
+use DB; 使用DB 类  
+</p>
+</li>
+</ul>
+<h6 id="headline-21">
+对SQLite的配置
+</h6>
+<pre class="example">
+DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/path/to/database.sqlite
+</pre>
+<h6 id="headline-22">
+读写连接
+</h6>
+<blockquote>
+<p>
+对数据库的不同功能使用不同的配置
+</p>
+</blockquote>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  &#39;mysql&#39; =&gt; [
+      &#39;read&#39; =&gt; [
+          &#39;host&#39; =&gt; [&#39;192.168.1.1&#39;],
+      ],
+      &#39;write&#39; =&gt; [
+          &#39;host&#39; =&gt; [&#39;196.168.1.2&#39;],
+      ],
+      &#39;sticky&#39;    =&gt; true,
+  ]...</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-23">
+sticky 选项
+</h6>
+<p>
+<strong>sticky</strong> 可用于允许立即读取在当前请求周期中写入数据库的记录，为了安全一般关闭。
+</p>
+<h6 id="headline-24">
+使用多个连接
+</h6>
+<ul>
+<li>
+<p>
+通过连接方法 $users = DB::connection(&#39;foo&#39;)-&gt;select(…);
+</p>
+</li>
+<li>
+<p>
+通过底层 PDO $pdo = DB::connection()-&gt;getPdo();
+</p>
+</li>
+</ul>
+<h5 id="headline-25">
+原生操作
+</h5>
+<h6 id="headline-26">
+增删改查
+</h6>
+<ul>
+<li>
+<p>
+查(参数绑定) DB::select(&#39;select * from users where active = ?&#39;, [1]);
+</p>
+</li>
+<li>
+<p>
+查(命名绑定) $results = DB::select(&#39;select * from users where id = :id&#39;, [&#39;id&#39; =&gt; 1]);
+</p>
+</li>
+<li>
+<p>
+增 DB::insert(&#39;insert into users (id, name) values (?, ?)&#39;, [1, &#39;Dayle&#39;]);
+</p>
+</li>
+<li>
+<p>
+改 $affected = DB::update(&#39;update users set votes = 100 where name = ?&#39;, [&#39;John&#39;]);
+</p>
+</li>
+<li>
+<p>
+删 $deleted = DB::delete(&#39;delete from users&#39;);
+</p>
+</li>
+<li>
+<p>
+执行语句 DB::statement(&#39;drop table users&#39;);
+</p>
+</li>
+</ul>
+<h6 id="headline-27">
+数据库事务
+</h6>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  DB::transaction(function () {
+      DB::table(&#39;users&#39;)-&gt;update([&#39;votes&#39; =&gt; 1]);
+
+      DB::table(&#39;posts&#39;)-&gt;delete();
+  });</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-28">
+处理死锁 (设定重新尝试的次数)
+</h6>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  DB::transaction(function () {
+      DB::table(&#39;users&#39;)-&gt;update([&#39;votes&#39; =&gt; 1]);
+
+      DB::table(&#39;posts&#39;)-&gt;delete();
+  }, 5);</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-29">
+手动使用事务
+</h6>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  DB::beginTransaction();
+
+  // 回滚
+  DB::rollBack();
+  DB::commit();</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-30">
+laravel 骚操作
+</h5>
+<p>
+跟 <strong>thinkphp</strong> 一样的方式  
+</p>
+<pre class="example">
+DB::table(表名)->insert()->update()->delete()->get()->where()->orwhere()->
+first()->value()->orderBy()->limit()->offset();
+</pre>
+<h4 id="headline-31">
+视图
+</h4>
+<h3 id="headline-32">
 artisan 
 </h3>
 <ul>
@@ -631,10 +882,10 @@ artisan
 </ul>
 </li>
 </ul>
-<h3 id="headline-18">
+<h3 id="headline-33">
 调试
 </h3>
-<h4 id="headline-19">
+<h4 id="headline-34">
 格式化输出
 </h4>
 <p>
