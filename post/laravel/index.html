@@ -49,7 +49,7 @@
 <meta itemprop="description" content="laravel 简介">
 <meta itemprop="datePublished" content="2020-02-14T20:58:44&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-14T20:58:44&#43;08:00" />
-<meta itemprop="wordCount" content="502">
+<meta itemprop="wordCount" content="889">
 
 
 
@@ -164,29 +164,37 @@
 </li>
 <li><a href="#headline-7">路由参数</a>
 </li>
-<li><a href="#headline-8">路由别名</a>
+<li><a href="#headline-8">命名路由</a>
+</li>
+<li><a href="#headline-9">路由群组</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-9">中间件</a>
+<li><a href="#headline-10">控制器</a>
+<ul>
+<li><a href="#headline-11">控制器结构</a>
+</li>
+<li><a href="#headline-12">单一行为控制器</a>
+</li>
+<li><a href="#headline-13">中间件</a>
+</li>
+<li><a href="#headline-14">资源控制器 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-10">前端开发</a>
+<li><a href="#headline-15">Input</a>
 </li>
-<li><a href="#headline-11">安全相关</a>
+<li><a href="#headline-16">门面( Facades )</a>
 </li>
-<li><a href="#headline-12">综合话题</a>
+</ul>
 </li>
-<li><a href="#headline-13">数据库</a>
+<li><a href="#headline-17">artisan </a>
 </li>
-<li><a href="#headline-14">Eloquent ORM</a>
+<li><a href="#headline-18">调试</a>
+<ul>
+<li><a href="#headline-19">格式化输出</a>
 </li>
-<li><a href="#headline-15">测试相关</a>
-</li>
-<li><a href="#headline-16">官方扩展包</a>
-</li>
-<li><a href="#headline-17">秘钥</a>
+</ul>
 </li>
 </ul>
 </nav>
@@ -239,8 +247,35 @@
 </li>
 <li>
 <p>
-APP_KEY 设置随机秘钥 php artisan key: generate 
+APP_KEY 设置随机秘钥 php artisan key: generate
 </p>
+</li>
+<li>
+<p>
+app.php 配置   
+</p>
+<ul>
+<li>
+<p>
+app.php aliases段可定义别名
+</p>
+</li>
+<li>
+<p>
+&#39;debug&#39; =&gt; env(&#39;APP_DEBUG&#39;, true) 调试模式
+</p>
+</li>
+<li>
+<p>
+&#39;log&#39; =&gt; env(&#39;APP_LOG&#39;, &#39;daily&#39;) 日志记录 ingle, daily, syslog, errorlog
+</p>
+</li>
+<li>
+<p>
+&#39;log_level&#39; =&gt; env(&#39;APP_LOG_LEVEL&#39;, &#39;error&#39;) 错误等级 debug, info, notice, warning, error, critical, alert, emergency
+</p>
+</li>
+</ul>
 </li>
 </ul>
 <h4 id="headline-4">
@@ -310,112 +345,311 @@ APP_KEY 设置随机秘钥 php artisan key: generate
 </li>
 </ul>
 <h5 id="headline-8">
-路由别名
+命名路由
 </h5>
-<h4 id="headline-9">
-中间件
+<ul>
+<li>
+<p>
+name(NAME) 给路由定义起个名字，在以后的程序中可以用 route(NAME) 的形式调用
+</p>
+</li>
+</ul>
+<h5 id="headline-9">
+路由群组
+</h5>
+<ul>
+<li>
+<p>
+Route::group 把路由条目归归类，好区分
+</p>
+</li>
+</ul>
+<h4 id="headline-10">
+控制器
 </h4>
 <p>
-CSRF 保护
-    控制器
-    请求
-    响应
-    视图
-    URL
-    Session
-    表单验证
-    错误与日志
+路由做好了路由的事情了，你不会把给用户的逻辑响应的事情也交给它做吧，它估计要累死， 在 <strong>laravel</strong> 中交给 <strong>控制器</strong> 来做这件事。 
 </p>
-<h3 id="headline-10">
-前端开发
-</h3>
+<blockquote>
 <p>
-Blade 模板
-   本地化
-   前端指南
-   编辑资源 Mix
+控制器把要做的事分门别类放到单独的文件中，所以一个web 站点有那么多的功能，而且容易整理。
 </p>
-<h3 id="headline-11">
-安全相关
-</h3>
+</blockquote>
+<ul>
+<li>
 <p>
-用户认证
-   Passport OAuth 认证
-   用户授权
-   加密解密
-   哈希
-   重置密码
+app/Http/Controllers  控制器定义目录
 </p>
-<h3 id="headline-12">
-综合话题
-</h3>
+</li>
+</ul>
+<h5 id="headline-11">
+控制器结构
+</h5>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  <span class="cp">&lt;?php</span>
+
+  <span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
+
+  <span class="k">use</span> <span class="nx">Illuminate\Http\Request</span><span class="p">;</span>
+
+  <span class="k">class</span> <span class="nc">UserController</span> <span class="k">extends</span> <span class="nx">Controller</span>
+  <span class="p">{</span>
+      <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span> <span class="p">{}</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<ul>
+<li>
 <p>
-Artisan 命令行
-   广播系统
-   缓存系统
-   集合
-   事件系统
-   文件存储
-   辅助函数
-   邮件发送
-   消息通知
-   扩展包开发
-   队列
-   任务调度
+控制器文件名为驼峰结构 如：UserController
 </p>
-<h3 id="headline-13">
-数据库
-</h3>
+</li>
+<li>
 <p>
-快速入门
-   查询构造器
-   分页
-   数据库迁移
-   数据填充
-   Redis
+控制器路由方法 Route::get(&#39;路由表达式&#39;, &#39;控制器类名@方法&#39;);
 </p>
-<h3 id="headline-14">
-Eloquent ORM
-</h3>
+</li>
+</ul>
+<h5 id="headline-12">
+单一行为控制器
+</h5>
 <p>
-快速入门
-   模型关联
-   Eloquent 集合
-   修改器
-   API 资源
-   序列化
+如果类中只有一个方法，就可以用 <strong>__invoke</strong> 定义一个单一行为。 
 </p>
-<h3 id="headline-15">
-测试相关
-</h3>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  // 路由中不用指定类名
+  Route::get(&#39;user/{id}&#39;, &#39;ShowProfile&#39;);</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-13">
+中间件
+</h5>
 <p>
-快速入门
-   HTTP 测试
-   浏览器测试 Dusk
-   数据库测试
-   测试模拟器
+连续的操作可以用中间件表示，一般定义在 <strong>__construct</strong> 里面。
 </p>
-<h3 id="headline-16">
-官方扩展包
-</h3>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  public function __construct()
+  {
+      $this-&gt;middleware(&#39;auth&#39;);
+      $this-&gt;middleware(&#39;log&#39;)-&gt;only(&#39;index&#39;);
+      $this-&gt;middleware(&#39;subscribed&#39;)-&gt;except(&#39;store&#39;);
+  }</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-14">
+资源控制器 
+</h5>
 <p>
-Cashier 交易工具包
-   Envoy 部署工具
-   Horizon
-   Scout 全文搜索
-   Socialite 社会化登录
+就是对图片那些东西，我们不想单独路由，就可以创建一个通用的路由
+</p>
+<div class="src src-shell">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">  php artisan make:controller PhotoController --resource</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+路由方式 
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  // 注册单个
+  Route::resource(&#39;photos&#39;, &#39;PhotoController&#39;);
+
+  // 注册多个
+  Route::resources([
+      &#39;photos&#39; =&gt; &#39;PhotoController&#39;,
+      &#39;posts&#39; =&gt; &#39;PostController&#39;
+  ]);</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<table>
+<tbody>
+<tr>
+<td>Verb</td>
+<td>URI</td>
+<td>Action</td>
+<td>Route          Name</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photos</td>
+<td>index</td>
+<td>photos.index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photos/create</td>
+<td>create</td>
+<td>photos.create</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/photos</td>
+<td>store</td>
+<td>photos.store</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photos/{photo}</td>
+<td>show</td>
+<td>photos.show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photos/{photo}/edit</td>
+<td>edit</td>
+<td>photos.edit</td>
+</tr>
+<tr>
+<td>PUT/PATCH</td>
+<td>/photos/{photo}</td>
+<td>update</td>
+<td>photos.update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/photos/{photo}</td>
+<td>destroy</td>
+<td>photos.destroy</td>
+</tr>
+</tbody>
+</table>
+<h4 id="headline-15">
+Input
+</h4>
+<p>
+使用 * Illuminate§upport\Facades\Input* 方法获取 <strong>url</strong> 参数
+</p>
+<ul>
+<li>
+<p>
+URL结构  test1?id=232
+</p>
+</li>
+<li>
+<p>
+Input::get()
+</p>
+</li>
+<li>
+<p>
+Input::all()
+</p>
+</li>
+<li>
+<p>
+Input::only([])
+</p>
+</li>
+<li>
+<p>
+Input::except([])  除了
+</p>
+</li>
+<li>
+<p>
+Input::has() 是否存在
+</p>
+</li>
+</ul>
+<h4 id="headline-16">
+门面( Facades )
+</h4>
+<p>
+门面提供了静态方法，定义在 <strong>Illuminate§upport\Facades</strong> 中(在 laravel 内部) 。
 </p>
 <h3 id="headline-17">
-秘钥
+artisan 
 </h3>
+<ul>
+<li>
 <p>
-1、.env.example 改名使用命令 copy 修改为 .env
+显示路由列表  php artisan route:list
 </p>
+</li>
+<li>
 <p>
- 2、使用命令 php artisan key:generate  获取密码，自动保存到 .env
- 3、将密码复制到 config/app.php 中的 key 里面
- 4、重新运行，OK。
+创建控制器 php artisan make:controller [ [ 目录名/ ]控制器名 + Controller ]
 </p>
+<ul>
+<li>
+<p>
+–resource 资源
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="headline-18">
+调试
+</h3>
+<h4 id="headline-19">
+格式化输出
+</h4>
+<p>
+dump+die 的作用 
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  dd();</code></pre></td></tr></table>
+</div>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
