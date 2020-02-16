@@ -49,7 +49,7 @@
 <meta itemprop="description" content="laravel 简介">
 <meta itemprop="datePublished" content="2020-02-14T20:58:44&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-14T20:58:44&#43;08:00" />
-<meta itemprop="wordCount" content="1341">
+<meta itemprop="wordCount" content="1840">
 
 
 
@@ -223,14 +223,42 @@
 </ul>
 </li>
 <li><a href="#headline-31">视图</a>
+<ul>
+<li><a href="#headline-32">视图结构 </a>
+<ul>
+<li><a href="#headline-33">循环分支</a>
+</li>
+<li><a href="#headline-34">继承 (公共页)</a>
+</li>
+<li><a href="#headline-35">引入外部静态文件</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-32">artisan </a>
+<li><a href="#headline-36">连接视图</a>
 </li>
-<li><a href="#headline-33">调试</a>
+<li><a href="#headline-37">视图是否存在</a>
+</li>
+<li><a href="#headline-38">第一个可用视图</a>
+</li>
+<li><a href="#headline-39">与所有视图共享数据</a>
+</li>
+<li><a href="#headline-40">视图作曲家</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-41">artisan </a>
+</li>
+<li><a href="#headline-42">调试</a>
 <ul>
-<li><a href="#headline-34">格式化输出</a>
+<li><a href="#headline-43">格式化输出</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-44">安全    </a>
+<ul>
+<li><a href="#headline-45">CSRF (跨站请求伪造攻击)</a>
 </li>
 </ul>
 </li>
@@ -262,7 +290,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">php artisan serve</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">  php artisan serve</code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -860,7 +888,232 @@ first()->value()->orderBy()->limit()->offset();
 <h4 id="headline-31">
 视图
 </h4>
-<h3 id="headline-32">
+<p>
+视图就是你在浏览器看到的外观， <strong>laravel</strong>  基于 <strong>MVC</strong> 的设计方法，把它们概念化成视图 。关于外观所使用到的技术就不讲了，这里讲下 <strong>laravel</strong> 如何将外观技术与视图技术合起来的。
+</p>
+<ul>
+<li>
+<p>
+resources/views  视图存储目录
+</p>
+</li>
+</ul>
+<h5 id="headline-32">
+视图结构 
+</h5>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!--</span><span class="c"> 文件名为 blade.php 后缀 </span><span class="c">--&gt;</span>
+  <span class="c">&lt;!--</span><span class="c"> View stored in resources/views/greeting.blade.php </span><span class="c">--&gt;</span>
+  <span class="p">&lt;</span><span class="nt">html</span><span class="p"></span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>Hello, {{ $name }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<blockquote>
+<p>
+blade 结构可以识别 <strong>{{}}</strong> 语法
+</p>
+</blockquote>
+<h6 id="headline-33">
+循环分支
+</h6>
+<pre class="example">
+@foreach ($expression as $key=>$value) 
+循环体
+ @endforeach
+</pre>
+<pre class="example">
+@if()
+@elseif()
+@endif
+</pre>
+<h6 id="headline-34">
+继承 (公共页)
+</h6>
+<pre class="example">
+@include()
+@extends('')
+@section(区块名称)
+@endsection
+</pre>
+<p>
+调用
+</p>
+<pre class="example">
+@yield('')
+</pre>
+<h6 id="headline-35">
+引入外部静态文件
+</h6>
+<p>
+原生(简单) 
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+      asset() 处理网站目录
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{asset(&#39;css)}/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-36">
+连接视图
+</h5>
+<p>
+<strong>view</strong> 会去找 <strong>blade.php</strong> 后缀视图文件，找不到再找 &#39;php&#39; 后缀的
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  Route::get(&#39;/&#39;, function () {
+      return view(&#39;greeting&#39;, [&#39;name&#39; =&gt; &#39;James&#39;]);
+  });
+  // 视图在  admin目录下，用 ‘/’ 分割木兰也可以
+  return view(&#39;admin.profile&#39;, $data);</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-37">
+视图是否存在
+</h5>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  use Illuminate\Support\Facades\View;
+
+  if (View::exists(&#39;emails.customer&#39;)) {
+      //
+  }</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-38">
+第一个可用视图
+</h5>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  return view()-&gt;first([&#39;custom.admin&#39;, &#39;admin&#39;], $data);</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-39">
+与所有视图共享数据
+</h5>
+<p>
+使用 <strong>AppServiceProvider</strong> 服务提供者
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="k">namespace</span> <span class="nx">App\Providers</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Facades\View</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">AppServiceProvider</span> <span class="k">extends</span> <span class="nx">ServiceProvider</span>
+<span class="p">{</span>
+<span class="sd">/**
+</span><span class="sd">* Bootstrap any application services.
+</span><span class="sd">*
+</span><span class="sd">* @return void
+</span><span class="sd">*/</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">boot</span><span class="p">()</span>
+<span class="p">{</span>
+   <span class="nx">View</span><span class="o">::</span><span class="na">share</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="sd">/**
+</span><span class="sd">* Register the service provider.
+</span><span class="sd">*
+</span><span class="sd">* @return void
+</span><span class="sd">*/</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">register</span><span class="p">()</span>
+<span class="p">{</span>
+   <span class="c1">//
+</span><span class="c1"></span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-40">
+视图作曲家
+</h5>
+<h3 id="headline-41">
 artisan 
 </h3>
 <ul>
@@ -882,10 +1135,10 @@ artisan
 </ul>
 </li>
 </ul>
-<h3 id="headline-33">
+<h3 id="headline-42">
 调试
 </h3>
-<h4 id="headline-34">
+<h4 id="headline-43">
 格式化输出
 </h4>
 <p>
@@ -898,6 +1151,87 @@ dump+die 的作用
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-php" data-lang="php">  dd();</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-44">
+安全    
+</h3>
+<h4 id="headline-45">
+CSRF (跨站请求伪造攻击)
+</h4>
+<p>
+表单数据提交 的验证 (session)
+</p>
+<p>
+    获取csrf_token
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  csrf_token();</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<blockquote>
+<p>
+表单中推介使用，因为默认开启了
+</p>
+</blockquote>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;hidden&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;_token&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;{{csrf_token()}}&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!--</span><span class="c"> 简化 </span><span class="c">--&gt;</span>
+  {{csrf_field()}}</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+排除路由
+app/Http/Middleware/VerifyCsrfToken.php  白名单
+</p>
+<p>
+单个
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">  protected $except = [
+     &#39;/home/test/test7&#39;,
+  ];</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+  全部 
+</p>
+<div class="src src-php">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">protected $except = [
+   &#39;*&#39;,
+];</code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -923,7 +1257,11 @@ dump+die 的作用
           <a href="/tags/laravel/">laravel</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/nodejs/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">nodejs 简介</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/post/php/">
             <span class="next-text nav-default">php 简介</span>
             <span class="next-text nav-mobile">下一篇</span>

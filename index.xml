@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2020 20:58:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 18:13:56 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -47,6 +47,20 @@
       
       <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 文章的排序决定按照修改时间排序了，因为不想写更多新文章，而是想完善旧文</description>
+    </item>
+    
+    <item>
+      <title>nodejs 简介</title>
+      <link>https://aming.xyz/post/nodejs/</link>
+      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/nodejs/</guid>
+      <description>&lt;p&gt;
+JavaScript 命令行语言解析器
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;nodejs&lt;/strong&gt; 使用了谷歌的 &lt;strong&gt;V8&lt;/strong&gt; JavaScript 解析器，而且没有浏览器对安全的限制，所以扩展了很多的库 (文件操作，网络操作，进程操作等)
+&lt;/p&gt;</description>
     </item>
     
     <item>

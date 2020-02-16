@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2020 20:58:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 18:13:56 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://aming.xyz/tags/nodejs/</link>
+      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/nodejs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>laravel</title>

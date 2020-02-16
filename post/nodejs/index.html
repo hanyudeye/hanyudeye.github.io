@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>nodejs 简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="nodejs 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.64.1 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/nodejs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="nodejs 简介" />
+<meta property="og:description" content="nodejs 简介" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/nodejs/" />
+<meta property="article:published_time" content="2020-02-16T18:13:56+08:00" />
+<meta property="article:modified_time" content="2020-02-16T18:13:56+08:00" />
+<meta itemprop="name" content="nodejs 简介">
+<meta itemprop="description" content="nodejs 简介">
+<meta itemprop="datePublished" content="2020-02-16T18:13:56&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-16T18:13:56&#43;08:00" />
+<meta itemprop="wordCount" content="1940">
+
+
+
+<meta itemprop="keywords" content="nodejs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nodejs 简介"/>
+<meta name="twitter:description" content="nodejs 简介"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/update/">
+        <li class="mobile-menu-item">最近修改</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/update/">最近修改</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">nodejs 简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-16 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">安装</a>
+<ul>
+<li><a href="#headline-2">nvm   </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-3">模块</a>
+<ul>
+<li><a href="#headline-4">原生语法 (import/export)</a>
+</li>
+<li><a href="#headline-5">库所支持的语法</a>
+<ul>
+<li><a href="#headline-6">node </a>
+<ul>
+<li><a href="#headline-7">导出 </a>
+</li>
+<li><a href="#headline-8">引入</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-9">全局变量</a>
+</li>
+<li><a href="#headline-10">常用内置模块</a>
+<ul>
+<li><a href="#headline-11">path模块</a>
+</li>
+<li><a href="#headline-12">fs模块</a>
+</li>
+<li><a href="#headline-13">http 模块</a>
+</li>
+<li><a href="#headline-14">events 模块</a>
+</li>
+<li><a href="#headline-15">url模块</a>
+</li>
+<li><a href="#headline-16">Buffer 类</a>
+</li>
+<li><a href="#headline-17">util模块</a>
+</li>
+<li><a href="#headline-18">OS 模块</a>
+</li>
+<li><a href="#headline-19">Net 模块</a>
+</li>
+<li><a href="#headline-20">DNS 模块</a>
+</li>
+<li><a href="#headline-21">Domain 模块</a>
+</li>
+<li><a href="#headline-22">Web 模块</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-23">npm </a>
+</li>
+<li><a href="#headline-24">调试刷新</a>
+<ul>
+<li><a href="#headline-25">刷新 supervisor</a>
+</li>
+<li><a href="#headline-26">调试 node debug </a>
+</li>
+<li><a href="#headline-27">远程调试</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-28">Express 框架</a>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+JavaScript 命令行语言解析器
+</p>
+<p>
+<strong>nodejs</strong> 使用了谷歌的 <strong>V8</strong> JavaScript 解析器，而且没有浏览器对安全的限制，所以扩展了很多的库 (文件操作，网络操作，进程操作等)
+</p>
+<blockquote>
+<p>
+特点是异步操作，因为 <strong>web</strong> 程序耗时于 <strong>IO</strong> 操作，不便同步，nodejs 放大了这个特点，所以性能很好
+</p>
+</blockquote>
+<h3 id="headline-1">
+安装
+</h3>
+<p>
+安装 <strong>node</strong> 即可
+</p>
+<h4 id="headline-2">
+nvm   
+</h4>
+<p>
+对于多个版本，可以安装 <strong>nvm</strong> 版本管理工具，用来管理node的版本 
+</p>
+<ul>
+<li>
+<p>
+安装最新node  nvm install node
+</p>
+</li>
+<li>
+<p>
+安装某个版本  nvm install 6.14.4
+</p>
+</li>
+<li>
+<p>
+使用某个版本 nvm use v10.1.1
+</p>
+</li>
+<li>
+<p>
+列出版本  nvm ls
+</p>
+</li>
+<li>
+<p>
+列出远程node版本   nvm ls-remote
+</p>
+</li>
+<li>
+<p>
+安装最近版本的npm  nvm install-latest-npm
+</p>
+</li>
+</ul>
+<h3 id="headline-3">
+模块
+</h3>
+<p>
+本来 <strong>javascript</strong>  刚开发的时候是做为脚本使用的，代码量少，所以没有提供模块。现在脚本复杂了，就引入了模块的概念 
+</p>
+<h4 id="headline-4">
+原生语法 (import/export)
+</h4>
+<p>
+定义模块并导出模块的功能
+</p>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kr">export</span> <span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;square&#39;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+    导入功能到你的脚本
+</p>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kr">import</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">draw</span><span class="p">,</span> <span class="nx">reportArea</span><span class="p">,</span> <span class="nx">reportPerimeter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;/js-examples/modules/basic-modules/modules/square.mjs&#39;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+    应用模块到你的HTML
+</p>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;main.mjs&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-5">
+库所支持的语法
+</h4>
+<h5 id="headline-6">
+node 
+</h5>
+<h6 id="headline-7">
+导出 
+</h6>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">name</span><span class="o">=</span><span class="p">{</span>
+      <span class="nx">sayHello</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;hello&#34;</span><span class="p">)</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="o">=</span><span class="nx">name</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h6 id="headline-8">
+引入
+</h6>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">module</span><span class="o">=</span><span class="nx">require</span><span class="p">(</span><span class="nx">MODULEPATH</span><span class="err">&#39;</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-9">
+全局变量
+</h3>
+<ul>
+<li>
+<p>
+__dirname：当前文件的目录
+</p>
+</li>
+<li>
+<p>
+__filename：当前文件的绝对路径
+</p>
+</li>
+<li>
+<p>
+console：控制台对象，可以输出信息
+</p>
+</li>
+<li>
+<p>
+process：进程对象，可以获取进程的相关信息，环境变量等
+</p>
+</li>
+<li>
+<p>
+setTimeout/clearTimeout：延时执行
+</p>
+</li>
+<li>
+<p>
+setInterval/clearInterval：定时器
+</p>
+</li>
+</ul>
+<h3 id="headline-10">
+常用内置模块
+</h3>
+<h4 id="headline-11">
+path模块
+</h4>
+<blockquote>
+<p>
+path模块供了一些工具函数，用于处理文件与目录的路径
+</p>
+</blockquote>
+<ul>
+<li>
+<p>
+path.basename：返回一个路径的最后一部分
+</p>
+</li>
+<li>
+<p>
+path.dirname：返回一个路径的目录名
+</p>
+</li>
+<li>
+<p>
+path.extname：返回一个路径的扩展名
+</p>
+</li>
+<li>
+<p>
+path.join：用于拼接给定的路径片段
+</p>
+</li>
+<li>
+<p>
+path.normalize：将一个路径正常化
+</p>
+</li>
+</ul>
+<h4 id="headline-12">
+fs模块
+</h4>
+<p>
+文件操作相关的模块
+</p>
+<ul>
+<li>
+<p>
+fs.stat/fs.statSync：访问文件的元数据，比如文件大小，文件的修改时间
+</p>
+</li>
+<li>
+<p>
+fs.readFile/fs.readFileSync 异步/同步读取文件
+</p>
+</li>
+<li>
+<p>
+fs.writeFile/fs.writeFileSync 异步/同步写入文件
+</p>
+</li>
+<li>
+<p>
+fs.readdir/fs.readdirSync：读取文件夹内容
+</p>
+</li>
+<li>
+<p>
+fs.unlink/fs.unlinkSync：删除文件
+</p>
+</li>
+<li>
+<p>
+fs.rmdir/fs.rmdirSync：只能删除空文件夹，思考：如何删除非空文件夹？
+</p>
+</li>
+<li>
+<p>
+fs.watchFile：监视文件的变化
+</p>
+</li>
+</ul>
+<p>
+stream操作大文件
+</p>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="c1">// 读取大文件
+</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">readStream</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">createReadStream</span><span class="p">(</span><span class="s2">&#34;ideaIU-2018.1.5.win.zip&#34;</span><span class="p">)</span><span class="p">;</span>
+  <span class="c1">// 写入大文件
+</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">writeStream</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">createWriteStream</span><span class="p">(</span><span class="s2">&#34;a.zip&#34;</span><span class="p">)</span><span class="p">;</span>
+  <span class="c1">// let len = 0;
+</span><span class="c1"></span>  <span class="c1">// readStream.on(&#34;data&#34;, (chunk) =&gt; {
+</span><span class="c1"></span>  <span class="c1">//     len += chunk.length
+</span><span class="c1"></span>  <span class="c1">//     // console.log(chunk.length)
+</span><span class="c1"></span>  <span class="c1">//     writeStream.write(chunk)
+</span><span class="c1"></span>  <span class="c1">// })
+</span><span class="c1"></span>  <span class="c1">//
+</span><span class="c1"></span>  <span class="c1">// readStream.on(&#34;end&#34;, () =&gt; {
+</span><span class="c1"></span>  <span class="c1">//     console.log(&#34;文件读取完成,&#34; + len)
+</span><span class="c1"></span>  <span class="c1">// })
+</span><span class="c1"></span>
+  <span class="nx">readStream</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">writeStream</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-13">
+http 模块
+</h4>
+<p>
+封装了http server 和 client的功能，就是说可以充当server处理请求，也可以发出请求。
+</p>
+<h4 id="headline-14">
+events 模块
+</h4>
+<p>
+监听并触发事件
+</p>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">EventEmitter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;events&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">EventEmitter</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">event</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EventEmitter</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;some_event&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;some_event 事件触发&#39;</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">event</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;some_event&#39;</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-15">
+url模块
+</h4>
+<h4 id="headline-16">
+Buffer 类
+</h4>
+<h4 id="headline-17">
+util模块
+</h4>
+<p>
+util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于精简的不足。
+</p>
+<h4 id="headline-18">
+OS 模块
+</h4>
+<p>
+提供了一些基本的系统操作函数。
+</p>
+<h4 id="headline-19">
+Net 模块
+</h4>
+<p>
+Node.js Net 模块提供了一些用于底层的网络通信的小工具，包含了创建服务器/客户端的方法
+</p>
+<h4 id="headline-20">
+DNS 模块
+</h4>
+<p>
+Node.js DNS 模块用于解析域名。
+</p>
+<h4 id="headline-21">
+Domain 模块
+</h4>
+<p>
+Node.js Domain(域) 简化异步代码的异常处理，可以捕捉处理try catch无法捕捉的异常。
+</p>
+<h4 id="headline-22">
+Web 模块
+</h4>
+<h2 id="headline-23">
+npm 
+</h2>
+<p>
+npm 是 一家 管理 <strong>Javascript</strong> 项目为主的公司，同名的 npm 软件可以用来管理 <strong>js项目</strong> 。
+</p>
+<blockquote>
+<p>
+目录中包含以 * package.json*  作为文件名的项目一般视为npm项目，npm 中称呼为包。
+  包中对其他项目的引用放在 <strong>node_modules</strong> 中，叫做依赖
+</p>
+<div class="export-block">
+</div>
+<p>
+这里包和项目是一个意思，有些地方说包，有些地方说模块，我喜欢用项目
+</p>
+</blockquote>
+<p>
+  npm 功能
+</p>
+<ul>
+<li>
+<p>
+npm -v 显示版本号
+</p>
+</li>
+<li>
+<p>
+npm init 新建项目
+</p>
+</li>
+<li>
+<p>
+npm install 安装所有项目依赖
+</p>
+</li>
+<li>
+<p>
+npm help 查看帮助信息
+</p>
+</li>
+<li>
+<p>
+npm search 搜索项目信息
+</p>
+</li>
+<li>
+<p>
+npm install 包名 (局部安装，安装在当前项目的 node_modules目录下)
+</p>
+</li>
+<li>
+<p>
+-g 全局安装
+</p>
+</li>
+<li>
+<p>
+-D 安装并将依赖信息写在package.json中的devDependencies中
+</p>
+</li>
+<li>
+<p>
+npm uninstall 卸载包
+</p>
+</li>
+<li>
+<p>
+npm list 列出已安装依赖
+</p>
+</li>
+<li>
+<p>
+npm outdated 检查过期依赖
+</p>
+</li>
+<li>
+<p>
+npm update 更新依赖
+</p>
+</li>
+<li>
+<p>
+npm root 查看依赖安装路径（也就是node_modules的路径）
+</p>
+</li>
+<li>
+<p>
+npm view 查看模块的注册信息
+</p>
+<ul>
+<li>
+<p>
+xxx versions 列出xxx的所有版本
+</p>
+</li>
+<li>
+<p>
+xxx dependencies 列出xxx的所有依赖， 如：npm view gulp dependencies
+</p>
+<div class="src src-shell">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">  npm install npm@latest -g
+  npm config <span class="nb">set</span> registry https://registry.npm.taobao.org</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<blockquote>
+<p>
+如果因为网络问题无法安装，可以使用 <strong>cnpm</strong> 安装
+</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="headline-24">
+调试刷新
+</h2>
+<h3 id="headline-25">
+刷新 supervisor
+</h3>
+<table>
+<tbody>
+<tr>
+<td>安装</td>
+<td>npm install -g supervisor</td>
+</tr>
+<tr>
+<td>使用</td>
+<td>supervisor app.js</td>
+</tr>
+</tbody>
+</table>
+<h3 id="headline-26">
+调试 node debug 
+</h3>
+<table>
+<tbody>
+<tr>
+<td>run</td>
+<td>执行脚本,在第一行暂停</td>
+</tr>
+<tr>
+<td>restart</td>
+<td>重新执行脚本</td>
+</tr>
+<tr>
+<td>cont, c</td>
+<td>继续执行,直到遇到下一个断点</td>
+</tr>
+<tr>
+<td>next, n</td>
+<td>单步执行</td>
+</tr>
+<tr>
+<td>step, s</td>
+<td>单步执行并进入函数</td>
+</tr>
+<tr>
+<td>out, o</td>
+<td>从函数中步出</td>
+</tr>
+<tr>
+<td>setBreakpoint(), sb()</td>
+<td>在当前行设置断点</td>
+</tr>
+<tr>
+<td>setBreakpoint(‘f()’), sb(…)</td>
+<td>在函数 f 的第一行设置断点</td>
+</tr>
+<tr>
+<td>setBreakpoint(‘script.js’, 20), sb(…)</td>
+<td>在 script.js 的第 20 行设置断点</td>
+</tr>
+<tr>
+<td>clearBreakpoint, cb(…)</td>
+<td>清除所有断点</td>
+</tr>
+<tr>
+<td>backtrace, bt</td>
+<td>显示当前的调用栈</td>
+</tr>
+<tr>
+<td>list(5)</td>
+<td>显示当前执行到的前后 5 行代码</td>
+</tr>
+<tr>
+<td>watch(expr)</td>
+<td>把表达式 expr 加入监视列表</td>
+</tr>
+<tr>
+<td>unwatch(expr)</td>
+<td>把表达式 expr 从监视列表移除</td>
+</tr>
+<tr>
+<td>watchers</td>
+<td>显示监视列表中所有的表达式和值</td>
+</tr>
+<tr>
+<td>repl</td>
+<td>在当前上下文打开即时求值环境</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>终止当前执行的脚本</td>
+</tr>
+<tr>
+<td>scripts</td>
+<td>显示当前已加载的所有脚本</td>
+</tr>
+<tr>
+<td>version</td>
+<td>显示 V8 的版本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="headline-27">
+远程调试
+</h3>
+<pre class="example">
+node --debug[=port] script.js
+node --debug-brk[=port] script.js
+</pre>
+<h2 id="headline-28">
+Express 框架
+</h2>
+<p>
+使用 Express 可以快速地搭建一个完整功能的网站
+</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-16
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/nodejs/">nodejs</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/laravel/">
+            <span class="next-text nav-default">laravel 简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

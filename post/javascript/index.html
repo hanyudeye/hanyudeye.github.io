@@ -49,7 +49,7 @@
 <meta itemprop="description" content="JavaScript 简介">
 <meta itemprop="datePublished" content="2020-02-11T18:47:24&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T18:47:24&#43;08:00" />
-<meta itemprop="wordCount" content="720">
+<meta itemprop="wordCount" content="836">
 
 
 
@@ -154,49 +154,53 @@
 <ul>
 <li><a href="#headline-2">安装</a>
 </li>
-<li><a href="#headline-3">函数定义</a>
+<li><a href="#headline-3">函数</a>
 <ul>
 <li><a href="#headline-4">function命令</a>
 </li>
 <li><a href="#headline-5">表达式</a>
 </li>
-</ul>
+<li><a href="#headline-6">函数参数的解构赋值</a>
 </li>
-<li><a href="#headline-6">避免使用全局变量和函数</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-7">DOM (文档对象模型)</a>
-<ul>
-<li><a href="#headline-8">document  接口</a>
-<ul>
-<li><a href="#headline-9">属性</a>
-</li>
-<li><a href="#headline-10">方法</a>
+<li><a href="#headline-7">箭头函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-11">节点接口</a>
-<ul>
-<li><a href="#headline-12">节点属性</a>
-</li>
-<li><a href="#headline-13">修改</a>
+<li><a href="#headline-8">避免使用全局变量和函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-14">事件接口</a>
+<li><a href="#headline-9">DOM (文档对象模型)</a>
 <ul>
-<li><a href="#headline-15">window </a>
+<li><a href="#headline-10">document  接口</a>
+<ul>
+<li><a href="#headline-11">属性</a>
 </li>
-<li><a href="#headline-16">页面或图像</a>
+<li><a href="#headline-12">方法</a>
 </li>
-<li><a href="#headline-17">表单</a>
+</ul>
 </li>
-<li><a href="#headline-18">键盘</a>
+<li><a href="#headline-13">节点接口</a>
+<ul>
+<li><a href="#headline-14">节点属性</a>
 </li>
-<li><a href="#headline-19">鼠标</a>
+<li><a href="#headline-15">修改</a>
 </li>
-<li><a href="#headline-20">Media </a>
+</ul>
+</li>
+<li><a href="#headline-16">事件接口</a>
+<ul>
+<li><a href="#headline-17">window </a>
+</li>
+<li><a href="#headline-18">页面或图像</a>
+</li>
+<li><a href="#headline-19">表单</a>
+</li>
+<li><a href="#headline-20">键盘</a>
+</li>
+<li><a href="#headline-21">鼠标</a>
+</li>
+<li><a href="#headline-22">Media </a>
 </li>
 </ul>
 </li>
@@ -225,11 +229,8 @@ JavaScript
 安装好浏览器和代码编辑器，打开浏览器控制台进行执行和测试。
 </p>
 <h3 id="headline-3">
-函数定义
+函数
 </h3>
-<p>
-两种方式
-</p>
 <h4 id="headline-4">
 function命令
 </h4>
@@ -266,7 +267,49 @@ function命令
 </div>
 </div>
 </div>
-<h3 id="headline-6">
+<h4 id="headline-6">
+函数参数的解构赋值
+</h4>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kr">const</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;小明&#39;</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">11</span><span class="p">}</span>
+  <span class="kd">function</span> <span class="nx">printPerson</span><span class="p">(</span><span class="p">{</span><span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">}</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// 函数参数可以解构一个对象
+</span><span class="c1"></span>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="sb">姓名：</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> 年龄：</span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-7">
+箭头函数
+</h4>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">getSum2</span><span class="o">=</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span><span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">// 简写，只能用于一行代码
+</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">getSum2</span><span class="o">=</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span><span class="p">=&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-8">
 避免使用全局变量和函数
 </h3>
 <div class="src src-js">
@@ -294,17 +337,17 @@ function命令
 </div>
 </div>
 </div>
-<h2 id="headline-7">
+<h2 id="headline-9">
 DOM (文档对象模型)
 </h2>
 <p>
 这个技术的产生是因为我们看报纸，不光是看，还想直接跟报纸互动。怎么跟报纸互动呢，
   就是浏览器把报纸上的内容提供接口，然后用JavaScript 语言具体编码
 </p>
-<h3 id="headline-8">
+<h3 id="headline-10">
 document  接口
 </h3>
-<h4 id="headline-9">
+<h4 id="headline-11">
 属性
 </h4>
 <ul>
@@ -339,7 +382,7 @@ URL           返回当前文档的 URL
 </p>
 </li>
 </ul>
-<h4 id="headline-10">
+<h4 id="headline-12">
 方法
 </h4>
 <ul>
@@ -369,13 +412,13 @@ write()                   向文档写 HTML 表达式 或 JavaScript 代码
 </p>
 </li>
 </ul>
-<h3 id="headline-11">
+<h3 id="headline-13">
 节点接口
 </h3>
 <p>
 因为HTML是按照 树的模型构造的，所以里面都是枝枝叉叉，操作的也是枝枝叉叉(节点)。
 </p>
-<h4 id="headline-12">
+<h4 id="headline-14">
 节点属性
 </h4>
 <ul>
@@ -395,7 +438,7 @@ nodeValue  规定节点的值
 </p>
 </li>
 </ul>
-<h4 id="headline-13">
+<h4 id="headline-15">
 修改
 </h4>
 <div class="src src-js">
@@ -430,13 +473,13 @@ replaceChild 替换节点
 </p>
 </li>
 </ul>
-<h3 id="headline-14">
+<h3 id="headline-16">
 事件接口
 </h3>
 <p>
 报纸的行为不仅可以内部控制，外部还能触发。
 </p>
-<h4 id="headline-15">
+<h4 id="headline-17">
 window 
 </h4>
 <ul>
@@ -451,7 +494,7 @@ onresize  当浏览器窗口被调整大小时触发
 </p>
 </li>
 </ul>
-<h4 id="headline-16">
+<h4 id="headline-18">
 页面或图像
 </h4>
 <ul>
@@ -466,7 +509,7 @@ onUnload
 </p>
 </li>
 </ul>
-<h4 id="headline-17">
+<h4 id="headline-19">
 表单
 </h4>
 <ul>
@@ -496,7 +539,7 @@ onsubmit     在提交表单时触发
 </p>
 </li>
 </ul>
-<h4 id="headline-18">
+<h4 id="headline-20">
 键盘
 </h4>
 <ul>
@@ -516,7 +559,7 @@ onkeyup     当用户释放按键时触发
 </p>
 </li>
 </ul>
-<h4 id="headline-19">
+<h4 id="headline-21">
 鼠标
 </h4>
 <ul>
@@ -556,7 +599,7 @@ onMouseOut
 </p>
 </li>
 </ul>
-<h4 id="headline-20">
+<h4 id="headline-22">
 Media 
 </h4>
 <ul>
