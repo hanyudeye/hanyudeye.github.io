@@ -49,7 +49,7 @@
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T07:26:07&#43;08:00" />
-<meta itemprop="wordCount" content="2243">
+<meta itemprop="wordCount" content="2355">
 
 
 
@@ -403,7 +403,7 @@ Gnu/Linux
 </p>
 
 <p>
-为什么进程有这种区分呢？因为计算机的速度很快，它的同时只是人不停切换的一种假象，因为时间太短所以看起来像同时了(但现在 <strong>CPU多核</strong> 出现，有些事情是同时处理的)。
+为什么进程有这种区分呢？因为计算机的速度很快，它的同时只是人不停切换的一种假象，因为时间太短所以看起来像同时了(但现在 <strong>CPU 多核</strong> 出现，有些事情是同时处理的)。
 </p>
 </blockquote>
 <ul>
@@ -691,9 +691,9 @@ lsmod 显示已载入系统的模块
 <ul>
 <li>
 <p>
-rounte -n 查看本机路由表
+netstat 显示网络连接，路由表，接口状态，伪装连接，网络链路信息和组播成员组。
 </p>
-</li>
+<ul>
 <li>
 <p>
 netstat -lntp 查看所有监听端口
@@ -704,15 +704,103 @@ netstat -lntp 查看所有监听端口
 netstat -antp 查看所有已建立的连接
 </p>
 </li>
+</ul>
+</li>
 <li>
 <p>
-ifconfig 查看网络接口的属性 
+route - 显示 / 操作 IP 选路表
+</p>
+<ul>
+<li>
+<p>
+rounte -n 查看本机路由表
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+ifconfig - 配置网络接口
 </p>
 </li>
 <li>
 <p>
-iptables -L 查看 iptables 防火墙 
+iptables - IP 包过滤器管理
 </p>
+</li>
+<li>
+<p>
+ip - show / manipulate routing, network devices, interfaces and tunnels(以后就用这)
+</p>
+<ul>
+<li>
+<p>
+address
+</p>
+</li>
+<li>
+<p>
+addrlabel
+</p>
+</li>
+<li>
+<p>
+link   - network device.
+</p>
+</li>
+<li>
+<p>
+route  - routing table entry.
+</p>
+</li>
+<li>
+<p>
+rule   - rule in routing policy database.
+</p>
+</li>
+<li>
+<p>
+tcp_metrics/tcpmetrics
+</p>
+</li>
+<li>
+<p>
+token  - manage tokenized interface identifiers.
+</p>
+</li>
+<li>
+<p>
+tunnel - tunnel over IP.
+</p>
+</li>
+<li>
+<p>
+tuntap - manage TUN/TAP devices.
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+查公网 IP
+</p>
+<ul>
+<li>
+<p>
+curl cip.cc
+</p>
+</li>
+<li>
+<p>
+curl icanhazip.com
+</p>
+</li>
+<li>
+<p>
+curl ident.me
+</p>
+</li>
+</ul>
 </li>
 </ul>
 <h3 id="headline-16">

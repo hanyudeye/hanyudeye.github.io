@@ -49,7 +49,7 @@
 <meta itemprop="description" content="计算机网络简介">
 <meta itemprop="datePublished" content="2020-02-13T13:08:49&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-13T13:08:49&#43;08:00" />
-<meta itemprop="wordCount" content="1005">
+<meta itemprop="wordCount" content="967">
 
 
 
@@ -155,20 +155,26 @@
 <li><a href="#headline-2">网络编号</a>
 </li>
 <li><a href="#headline-3">大小网络</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-4">网络协议  </a>
 <ul>
-<li><a href="#headline-5">国际标准 ( OSI 协议 )</a>
+<li><a href="#headline-4">内网 IP (保留地址) </a>
 </li>
-<li><a href="#headline-6">实际标准( TCP/IP )</a>
+<li><a href="#headline-5">公网 IP </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-7">网络性能</a>
+</ul>
 </li>
-<li><a href="#headline-8">路由</a>
+<li><a href="#headline-6">网络协议  </a>
+<ul>
+<li><a href="#headline-7">国际标准 ( OSI 协议 )</a>
+</li>
+<li><a href="#headline-8">实际标准( TCP/IP )</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-9">网络性能</a>
+</li>
+<li><a href="#headline-10">路由</a>
 </li>
 </ul>
 </nav>
@@ -203,7 +209,7 @@
 <p>
 在网络中的计算机怎么扮演自己的角色，就像在人群中，你怎么扮演自己的角色。计算机在
     这里不如人，没有脚，不能到处跑。但它们可以用它们专有的交流方式（电线或无线电）来
-    沟通，我们用话通过空气传播来沟通。为了指明给谁沟通，自己需要一个代号(IP编号)，就
+    沟通，我们用话通过空气传播来沟通。为了指明给谁沟通，自己需要一个代号(IP 编号)，就
     像人需要一个名字一样（不能重名）。
 </p>
 <blockquote>
@@ -215,17 +221,41 @@
 大小网络
 </h4>
 <p>
-根据交流范围，网络分为小网络（局域网）和大网络（广域网），你想在小网络交流，
-    那起个简单的名字就好了，比如小张小王（网卡编号），如果要在大网络交流，就需要
-    复杂点的名字，比如某国某省某市的张三丰（IP网络编号）。
+根据交流范围，网络分为小网络（局域网，内网）和大网络（广域网，公网，Internet）
 </p>
-<h3 id="headline-4">
+<h5 id="headline-4">
+内网 IP (保留地址) 
+</h5>
+<ul>
+<li>
+<p>
+10.x.x.x
+</p>
+</li>
+<li>
+<p>
+172.16.x.x 至 172.31.x.x
+</p>
+</li>
+<li>
+<p>
+192.168.x.x
+</p>
+</li>
+</ul>
+<h5 id="headline-5">
+公网 IP 
+</h5>
+<p>
+除内网 IP 及本地地址
+</p>
+<h3 id="headline-6">
 网络协议  
 </h3>
 <p>
 网络结构有了，但你不能随便把电(信号电)传给人家吧，人家又不知到你传的电是什么意思，所以要有一个电的标准，这样就制造了一个标准（协议） 
 </p>
-<h4 id="headline-5">
+<h4 id="headline-7">
 国际标准 ( OSI 协议 )
 </h4>
 <p>
@@ -259,7 +289,7 @@
 </li>
 <li>
 <p>
-数据链路层（Data Link Layer） 不知道 (MAC名字)
+数据链路层（Data Link Layer） 不知道 (MAC 名字)
 </p>
 </li>
 <li>
@@ -268,7 +298,7 @@
 </p>
 </li>
 </ul>
-<h4 id="headline-6">
+<h4 id="headline-8">
 实际标准( TCP/IP )
 </h4>
 <ul>
@@ -298,13 +328,13 @@
 </p>
 </li>
 </ul>
-<h3 id="headline-7">
+<h3 id="headline-9">
 网络性能
 </h3>
 <p>
 速率，带宽，时延啊什么的
 </p>
-<h3 id="headline-8">
+<h3 id="headline-10">
 路由
 </h3>
 <p>
