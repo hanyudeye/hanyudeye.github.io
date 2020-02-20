@@ -21,17 +21,6 @@
     </item>
     
     <item>
-      <title>最近修改</title>
-      <link>https://aming.xyz/update/</link>
-      <pubDate>Tue, 11 Feb 2020 15:20:52 +0800</pubDate>
-      
-      <guid>https://aming.xyz/update/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://aming.xyz/post/math/&#34;&gt;数学简介&lt;/a&gt; 修改了排版，增加了点内容&lt;br&gt;
-&lt;a href=&#34;https://aming.xyz/post/linux/&#34;&gt;Gnu/Linux 简介&lt;/a&gt; 作了修改&lt;br&gt;
-&lt;a href=&#34;https://aming.xyz/post/python/&#34;&gt;Python 简介&lt;/a&gt; 作了修改&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>日记</title>
       <link>https://aming.xyz/notes/</link>
       <pubDate>Sat, 23 Nov 2019 04:03:41 +0800</pubDate>
@@ -339,7 +328,7 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
       <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
       
       <guid>https://aming.xyz/post/math/</guid>
-      <description>&lt;p&gt;数学是处理东西的形，量(数)，位置的一门技术&lt;/p&gt;</description>
+      <description>&lt;p&gt;数学是处理东西的形，量(数)，变化轨迹的一门技术&lt;/p&gt;</description>
     </item>
     
     <item>
