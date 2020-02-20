@@ -24,21 +24,49 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/health/</loc>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -59,13 +87,6 @@
   
   <url>
     <loc>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2020-02-17T20:47:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -214,13 +235,6 @@
   <url>
     <loc>https://aming.xyz/post/html/</loc>
     <lastmod>2020-02-11T14:27:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-02-09T10:41:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -6,10 +6,21 @@
     <description>Recent content in 生活 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Feb 2020 10:41:57 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2020 08:36:43 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>健康简介</title>
+      <link>https://aming.xyz/post/health/</link>
+      <pubDate>Thu, 20 Feb 2020 08:36:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/health/</guid>
+      <description>&lt;p&gt;
+宅家一个多月了，肚子又大了点，运动也少，就整理下健康的资料，锻炼锻炼。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>言论自由</title>

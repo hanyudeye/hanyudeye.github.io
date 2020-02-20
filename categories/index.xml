@@ -6,10 +6,19 @@
     <description>Recent content in Categories on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Feb 2020 20:47:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2020 08:36:43 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>生活</title>
+      <link>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Thu, 20 Feb 2020 08:36:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>科普</title>
@@ -26,15 +35,6 @@
       <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
       
       <guid>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sun, 09 Feb 2020 10:41:57 +0800</pubDate>
-      
-      <guid>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
