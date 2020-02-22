@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2020 08:36:43 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>物理简介</title>
+      <link>https://aming.xyz/post/physics/</link>
+      <pubDate>Fri, 21 Feb 2020 06:20:02 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/physics/</guid>
+      <description>&lt;p&gt;
+物理是研究东西属性，或者东西之间属性的知识。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>健康简介</title>
@@ -291,7 +302,10 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
       
       <guid>https://aming.xyz/post/vc/</guid>
       <description>&lt;p&gt;
-备份工具，比如你做了一个椅子，然后用这工具备份一下，误删以后可以用这工具恢复（不能误删椅子的备份）。然后呢，你的椅子可能不是很完美，还要修修改改，这是你可以同时备份椅子的新的版本，如此而已。
+对 &lt;strong&gt;文件的更改&lt;/strong&gt; 进行 &lt;strong&gt;信息跟踪&lt;/strong&gt; 的软件，一般给开发软件的人用的，用于团队协作。
+&lt;/p&gt;
+&lt;p&gt;
+基本功能就是给改动的文件进行 &lt;strong&gt;编号&lt;/strong&gt; ，然后我们就可以按照 &lt;strong&gt;编号&lt;/strong&gt; 查看文件的历史记录。
 &lt;/p&gt;</description>
     </item>
     

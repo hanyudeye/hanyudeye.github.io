@@ -49,7 +49,7 @@
 <meta itemprop="description" content="版本控制">
 <meta itemprop="datePublished" content="2019-12-25T06:23:31&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-25T06:23:31&#43;08:00" />
-<meta itemprop="wordCount" content="1692">
+<meta itemprop="wordCount" content="1597">
 
 
 
@@ -148,123 +148,125 @@
 <ul>
 <li><a href="#headline-1">git </a>
 <ul>
-<li><a href="#headline-2">初始配置</a>
+<li><a href="#headline-2">安装配置</a>
 <ul>
-<li><a href="#headline-3">配置 SSH 远程传输</a>
+<li><a href="#headline-3">配置远程登录 </a>
 </li>
 </ul>
 </li>
 <li><a href="#headline-4">用法</a>
 <ul>
-<li><a href="#headline-5">初始化版本系统 </a>
+<li><a href="#headline-5">初始化版本控制目录</a>
 </li>
 <li><a href="#headline-6">暂存区管理</a>
 <ul>
 <li><a href="#headline-7">把文件加入暂存区 </a>
 </li>
-<li><a href="#headline-8">删除暂存区里的文件,如需纳入版本库，需要重新添加   </a>
+<li><a href="#headline-8">把文件从暂存区删除 (不追踪) </a>
 </li>
-<li><a href="#headline-9">重置暂存,就是恢复成未暂存的状态</a>
+<li><a href="#headline-9">用暂存文件恢复文件</a>
 </li>
-<li><a href="#headline-10">改名文件</a>
+<li><a href="#headline-10">重置暂存,就是恢复成未暂存的状态</a>
+</li>
+<li><a href="#headline-11">改名文件</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-11">本地库管理</a>
+<li><a href="#headline-12">本地库管理</a>
 <ul>
-<li><a href="#headline-12">保存到本地库   </a>
+<li><a href="#headline-13">把暂存文件保存到本地库   </a>
 </li>
-<li><a href="#headline-13">撤销 [ 恢复到修改前] </a>
+<li><a href="#headline-14">撤销 [ 恢复到修改前] </a>
 </li>
-<li><a href="#headline-14">反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)</a>
+<li><a href="#headline-15">反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)</a>
 </li>
-<li><a href="#headline-15">分支管理</a>
+<li><a href="#headline-16">分支管理</a>
 <ul>
-<li><a href="#headline-16">创建分支 </a>
+<li><a href="#headline-17">创建分支 </a>
 </li>
-<li><a href="#headline-17">切换分支 </a>
+<li><a href="#headline-18">切换分支 </a>
 </li>
-<li><a href="#headline-18">合并分支</a>
+<li><a href="#headline-19">合并分支</a>
 <ul>
-<li><a href="#headline-19">直接合并 把两条分支上的历史轨迹合并 </a>
+<li><a href="#headline-20">直接合并 把两条分支上的历史轨迹合并 </a>
 </li>
-<li><a href="#headline-20">压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。</a>
+<li><a href="#headline-21">压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。</a>
 </li>
-<li><a href="#headline-21">拣选合并 只需合并某个提交，而不是全部改动.</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-22">修改分支名称</a>
-</li>
-<li><a href="#headline-23">删除分支 </a>
-</li>
-<li><a href="#headline-24">stash(储藏) </a>
+<li><a href="#headline-22">拣选合并 只需合并某个提交，而不是全部改动.</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-25">分支的变基 rebase</a>
+<li><a href="#headline-23">修改分支名称</a>
+</li>
+<li><a href="#headline-24">删除分支 </a>
+</li>
+<li><a href="#headline-25">stash(储藏) </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-26">远程仓库管理</a>
+<li><a href="#headline-26">分支的变基 rebase</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-27">远程仓库管理</a>
 <ul>
-<li><a href="#headline-27">克隆远程到本地仓库</a>
+<li><a href="#headline-28">克隆远程到本地仓库</a>
 </li>
-<li><a href="#headline-28">添加远程源 </a>
+<li><a href="#headline-29">添加远程源 </a>
 </li>
-<li><a href="#headline-29">远程同步</a>
+<li><a href="#headline-30">远程同步</a>
 </li>
-<li><a href="#headline-30">更新本地</a>
+<li><a href="#headline-31">更新本地</a>
 </li>
-<li><a href="#headline-31">查看远程分支情况</a>
+<li><a href="#headline-32">查看远程分支情况</a>
 </li>
-<li><a href="#headline-32">修改远程仓库 </a>
+<li><a href="#headline-33">修改远程仓库 </a>
 <ul>
-<li><a href="#headline-33">修改</a>
+<li><a href="#headline-34">修改</a>
 </li>
-<li><a href="#headline-34">先删后加</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-35">强制覆盖本地</a>
+<li><a href="#headline-35">先删后加</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-36">日志查看</a>
+<li><a href="#headline-36">强制覆盖本地</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-37">日志查看</a>
 <ul>
-<li><a href="#headline-37">仓库状态 </a>
+<li><a href="#headline-38">仓库状态 </a>
 </li>
-<li><a href="#headline-38">查看提交历史</a>
+<li><a href="#headline-39">查看提交历史</a>
 </li>
-<li><a href="#headline-39">查看某次提交的内容   </a>
+<li><a href="#headline-40">查看某次提交的内容   </a>
 </li>
-<li><a href="#headline-40">更详细的信息 </a>
+<li><a href="#headline-41">更详细的信息 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-41">比较区别</a>
+<li><a href="#headline-42">比较区别</a>
 </li>
-<li><a href="#headline-42">TAG  </a>
+<li><a href="#headline-43">TAG  </a>
 <ul>
-<li><a href="#headline-43">某个分支创建标签</a>
+<li><a href="#headline-44">某个分支创建标签</a>
 </li>
-<li><a href="#headline-44">查看可发布版本 </a>
+<li><a href="#headline-45">查看可发布版本 </a>
 </li>
-<li><a href="#headline-45">签出标签</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-46">使用 Git 子模块跟踪外部版本库</a>
+<li><a href="#headline-46">签出标签</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-47">gitignore 忽略文件</a>
+<li><a href="#headline-47">使用 Git 子模块跟踪外部版本库</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-48">github</a>
+<li><a href="#headline-48">gitignore 忽略文件</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-49">github (远程仓库)</a>
 <ul>
-<li><a href="#headline-49">主要功能</a>
+<li><a href="#headline-50">主要功能</a>
 </li>
 </ul>
 </li>
@@ -274,33 +276,16 @@
 </div>
     <div class="post-content">
       <p>
-备份工具，比如你做了一个椅子，然后用这工具备份一下，误删以后可以用这工具恢复（不能误删椅子的备份）。然后呢，你的椅子可能不是很完美，还要修修改改，这是你可以同时备份椅子的新的版本，如此而已。
+对 <strong>文件的更改</strong> 进行 <strong>信息跟踪</strong> 的软件，一般给开发软件的人用的，用于团队协作。
 </p>
 <p>
-基本概念
+基本功能就是给改动的文件进行 <strong>编号</strong> ，然后我们就可以按照 <strong>编号</strong> 查看文件的历史记录。
 </p>
-<ul>
-<li>
+<blockquote>
 <p>
-仓库 (存放&#34;椅子&#34;的地方)
+实际中，版本控制软件是按照目录对文件进行批量管理的，而不是一个一个管理。
 </p>
-</li>
-<li>
-<p>
-基线 (基本的椅子)
-</p>
-</li>
-<li>
-<p>
-分支 (基本椅子分出来的具体功能的椅子，如人体工学椅，躺椅。。)
-</p>
-</li>
-<li>
-<p>
-冲突 (多人合作修改同一把椅子，给出的提示)
-</p>
-</li>
-</ul>
+</blockquote>
 <p>
 下面以比较流行的 <code>git</code> 为例说明吧
 </p>
@@ -308,33 +293,32 @@
 git 
 </h2>
 <h3 id="headline-2">
-初始配置
+安装配置
 </h3>
-<p>
-设置一下仓库作者的个人信息什么的 
-</p>
-<div class="src src-text">
+<div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">git config [--system,--global, --list]
-
-用户名 user.name = &#34;用户名&#34;
-邮箱 user.email = &#34;邮箱&#34;</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">  git config <span class="o">[</span>--system,--global, --list<span class="o">]</span>
+  git config user.name <span class="o">=</span> <span class="s2">&#34;用户名&#34;</span>
+  git config user.email <span class="o">=</span> <span class="s2">&#34;邮箱&#34;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
 <h4 id="headline-3">
-配置 SSH 远程传输
+配置远程登录 
 </h4>
+<ol>
+<li>
 <p>
-创建 SSH Key：
+创建 SSH Key
 </p>
+</li>
+</ol>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -345,17 +329,23 @@ git
 </div>
 </div>
 </div>
+<ol>
+<li>
 <p>
-然后把公钥 id_rsa.pub 的内容复制到 Github &#34;Account settings&#34; 的 SSH Keys 中。
+把公钥 id_rsa.pub 的内容复制到 Github &#34;Account settings&#34; 的 SSH Keys 中
 </p>
-<pre class="example">
-可以使用 ssh -v git@github.com 命令来测试链接是否畅通
-</pre>
+</li>
+<li>
+<p>
+测试  ssh -v git@github.com 
+</p>
+</li>
+</ol>
 <h3 id="headline-4">
 用法
 </h3>
 <h4 id="headline-5">
-初始化版本系统 
+初始化版本控制目录
 </h4>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
@@ -367,12 +357,17 @@ git
 </div>
 </div>
 </div>
+<blockquote>
+<p>
+你要进行版本控制的目录用这命令初始化一下
+</p>
+</blockquote>
 <h4 id="headline-6">
 暂存区管理
 </h4>
 <blockquote>
 <p>
-暂存区保存你历史记录的一个缓存区，为的就是让你&#34;多此一举&#34;，进行下一步确认是否保存快照
+你的文件修改后，就可以进行追踪了。进行追踪的文件先要存放在暂存区，然后存放到本地仓库。这是 <strong>git</strong> 软件的一个特点。
 </p>
 </blockquote>
 <h5 id="headline-7">
@@ -391,7 +386,7 @@ git
 </div>
 </div>
 <h5 id="headline-8">
-删除暂存区里的文件,如需纳入版本库，需要重新添加   
+把文件从暂存区删除 (不追踪) 
 </h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
@@ -404,6 +399,19 @@ git
 </div>
 </div>
 <h5 id="headline-9">
+用暂存文件恢复文件
+</h5>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git checkout &lt;file&gt;</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-10">
 重置暂存,就是恢复成未暂存的状态
 </h5>
 <div class="src src-sh">
@@ -416,7 +424,7 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-10">
+<h5 id="headline-11">
 改名文件
 </h5>
 <div class="src src-sh">
@@ -425,15 +433,15 @@ git
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">git mv <span class="o">[</span>file-original<span class="o">]</span> <span class="o">[</span>file-renamed<span class="o">]</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git mv <span class="o">[</span>file-original<span class="o">]</span> <span class="o">[</span>file-renamed<span class="o">]</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-11">
+<h4 id="headline-12">
 本地库管理
 </h4>
-<h5 id="headline-12">
-保存到本地库   
+<h5 id="headline-13">
+把暂存文件保存到本地库   
 </h5>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
@@ -445,7 +453,7 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-13">
+<h5 id="headline-14">
 撤销 [ 恢复到修改前] 
 </h5>
 <div class="src src-sh">
@@ -462,7 +470,7 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-14">
+<h5 id="headline-15">
 反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)
 </h5>
 <div class="src src-sh">
@@ -481,10 +489,10 @@ git
 </div>
 </div>
 </div>
-<h5 id="headline-15">
+<h5 id="headline-16">
 分支管理
 </h5>
-<h6 id="headline-16">
+<h6 id="headline-17">
 创建分支 
 </h6>
 <div class="src src-sh">
@@ -501,7 +509,7 @@ git
 </div>
 </div>
 </div>
-<h6 id="headline-17">
+<h6 id="headline-18">
 切换分支 
 </h6>
 <div class="src src-sh">
@@ -514,10 +522,10 @@ git
 </div>
 </div>
 </div>
-<h6 id="headline-18">
+<h6 id="headline-19">
 合并分支
 </h6>
-<h7 id="headline-19">
+<h7 id="headline-20">
 直接合并 把两条分支上的历史轨迹合并 
 </h7>
 <div class="src src-sh">
@@ -526,11 +534,11 @@ git
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">git merge</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git merge</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h7 id="headline-20">
+<h7 id="headline-21">
 压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。
 </h7>
 <div class="src src-sh">
@@ -539,11 +547,11 @@ git
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">git merge --squash &lt;BRANCH&gt;</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git merge --squash &lt;BRANCH&gt;</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h7 id="headline-21">
+<h7 id="headline-22">
 拣选合并 只需合并某个提交，而不是全部改动.
 </h7>
 <div class="src src-sh">
@@ -552,11 +560,11 @@ git
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">git cherry-pick &lt;ID&gt;</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git cherry-pick &lt;ID&gt;</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h6 id="headline-22">
+<h6 id="headline-23">
 修改分支名称
 </h6>
 <div class="src src-sh">
@@ -565,11 +573,11 @@ git
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">git branch -m &lt;BRANCHNAME&gt; &lt;NEWBRANCHNAME&gt;</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-sh" data-lang="sh">  git branch -m &lt;BRANCHNAME&gt; &lt;NEWBRANCHNAME&gt;</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h6 id="headline-23">
+<h6 id="headline-24">
 删除分支 
 </h6>
 <div class="src src-sh">
@@ -582,13 +590,13 @@ git
 </div>
 </div>
 </div>
-<h6 id="headline-24">
+<h6 id="headline-25">
 stash(储藏) 
 </h6>
 <p>
 可以先用 git stash save xxx 来保存工作区的内容，然后新建 一个分支并调用 git stash pop
 </p>
-<h5 id="headline-25">
+<h5 id="headline-26">
 分支的变基 rebase
 </h5>
 <div class="src src-shell">
@@ -603,10 +611,10 @@ stash(储藏)
 </div>
 </div>
 </div>
-<h4 id="headline-26">
+<h4 id="headline-27">
 远程仓库管理
 </h4>
-<h5 id="headline-27">
+<h5 id="headline-28">
 克隆远程到本地仓库
 </h5>
 <div class="src src-sh">
@@ -621,7 +629,7 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h5 id="headline-28">
+<h5 id="headline-29">
 添加远程源 
 </h5>
 <div class="src src-sh">
@@ -634,7 +642,7 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h5 id="headline-29">
+<h5 id="headline-30">
 远程同步
 </h5>
 <div class="src src-sh">
@@ -651,7 +659,7 @@ git clone --depth<span class="o">=</span><span class="m">1</span> RESP 只克隆
 </div>
 </div>
 </div>
-<h5 id="headline-30">
+<h5 id="headline-31">
 更新本地
 </h5>
 <div class="src src-sh">
@@ -666,7 +674,7 @@ git pull git://github.com/tom/test.git</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h5 id="headline-31">
+<h5 id="headline-32">
 查看远程分支情况
 </h5>
 <div class="src src-sh">
@@ -681,10 +689,10 @@ git checkout -b bug_fix_local bug_fix_remote <span class="c1">#把本地端切�
 </div>
 </div>
 </div>
-<h5 id="headline-32">
+<h5 id="headline-33">
 修改远程仓库 
 </h5>
-<h6 id="headline-33">
+<h6 id="headline-34">
 修改
 </h6>
 <div class="src src-sh">
@@ -697,7 +705,7 @@ git checkout -b bug_fix_local bug_fix_remote <span class="c1">#把本地端切�
 </div>
 </div>
 </div>
-<h6 id="headline-34">
+<h6 id="headline-35">
 先删后加
 </h6>
 <div class="src src-sh">
@@ -712,7 +720,7 @@ git remote add origin <span class="o">[</span>url<span class="o">]</span></code>
 </div>
 </div>
 </div>
-<h5 id="headline-35">
+<h5 id="headline-36">
 强制覆盖本地
 </h5>
 <div class="src src-sh">
@@ -729,10 +737,10 @@ git pull</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-36">
+<h4 id="headline-37">
 日志查看
 </h4>
-<h5 id="headline-37">
+<h5 id="headline-38">
 仓库状态 
 </h5>
 <div class="src src-sh">
@@ -749,7 +757,7 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h5 id="headline-38">
+<h5 id="headline-39">
 查看提交历史
 </h5>
 <div class="src src-sh">
@@ -768,7 +776,7 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 –author 指定用户日志
      如果你要指定日期，可以执行几个选项：–since 和 –before，但是你也可以用 –until 和 –after。
 </p>
-<h5 id="headline-39">
+<h5 id="headline-40">
 查看某次提交的内容   
 </h5>
 <div class="src src-sh">
@@ -781,7 +789,7 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h5 id="headline-40">
+<h5 id="headline-41">
 更详细的信息 
 </h5>
 <div class="src src-sh">
@@ -798,7 +806,7 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-41">
+<h4 id="headline-42">
 比较区别
 </h4>
 <div class="src src-sh">
@@ -823,7 +831,7 @@ git remote -v 列出服务器地址</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-42">
+<h4 id="headline-43">
 TAG  
 </h4>
 <blockquote>
@@ -831,7 +839,7 @@ TAG
 这是版本信息
 </p>
 </blockquote>
-<h5 id="headline-43">
+<h5 id="headline-44">
 某个分支创建标签
 </h5>
 <div class="src src-sh">
@@ -846,7 +854,7 @@ TAG
 </div>
 </div>
 </div>
-<h5 id="headline-44">
+<h5 id="headline-45">
 查看可发布版本 
 </h5>
 <div class="src src-sh">
@@ -859,7 +867,7 @@ TAG
 </div>
 </div>
 </div>
-<h5 id="headline-45">
+<h5 id="headline-46">
 签出标签
 </h5>
 <div class="src src-sh">
@@ -872,7 +880,7 @@ TAG
 </div>
 </div>
 </div>
-<h4 id="headline-46">
+<h4 id="headline-47">
 使用 Git 子模块跟踪外部版本库
 </h4>
 <div class="src src-text">
@@ -895,7 +903,7 @@ TAG
 </div>
 </div>
 </div>
-<h3 id="headline-47">
+<h3 id="headline-48">
 gitignore 忽略文件
 </h3>
 <div class="src src-text">
@@ -920,13 +928,10 @@ gitignore 忽略文件
 </div>
 </div>
 </div>
-<h2 id="headline-48">
-github
+<h2 id="headline-49">
+github (远程仓库)
 </h2>
-<p>
-免费给你放照片的地方，如果想要隐私，就要付费了啊
-</p>
-<h3 id="headline-49">
+<h3 id="headline-50">
 主要功能
 </h3>
 <div class="src src-text">

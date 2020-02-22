@@ -24,21 +24,49 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E7%89%A9%E7%90%86/</loc>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/physics/</loc>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%A7%91%E6%99%AE/</loc>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -60,20 +88,6 @@
   <url>
     <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-02-20T08:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
-    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%A7%91%E6%99%AE/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

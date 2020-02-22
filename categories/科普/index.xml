@@ -6,10 +6,21 @@
     <description>Recent content in 科普 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Feb 2020 20:47:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>物理简介</title>
+      <link>https://aming.xyz/post/physics/</link>
+      <pubDate>Fri, 21 Feb 2020 06:20:02 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/physics/</guid>
+      <description>&lt;p&gt;
+物理是研究东西属性，或者东西之间属性的知识。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>经济学简介</title>
