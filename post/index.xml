@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>spacemacs 简介</title>
+      <link>https://aming.xyz/post/spacemacs/</link>
+      <pubDate>Mon, 24 Feb 2020 12:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/spacemacs/</guid>
+      <description>&lt;p&gt;
+对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置框架，需要什么功能修改下配置文件就可以，省去了很多折腾。此文是对官方文档的简单翻译。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>物理简介</title>
@@ -18,8 +29,13 @@
       
       <guid>https://aming.xyz/post/physics/</guid>
       <description>&lt;p&gt;
-物理是研究东西属性，或者东西之间属性的知识。
-&lt;/p&gt;</description>
+物理是研究东西属性，或者东西之间属性的知识。因为物理要研究很多量的关系，所以要用到很多数学知识。
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+太难了 :(
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>

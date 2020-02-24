@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>spacemacs 简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="spacemacs 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.65.3 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/spacemacs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="spacemacs 简介" />
+<meta property="og:description" content="spacemacs 简介" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/spacemacs/" />
+<meta property="article:published_time" content="2020-02-24T12:46:44+08:00" />
+<meta property="article:modified_time" content="2020-02-24T12:46:44+08:00" />
+<meta itemprop="name" content="spacemacs 简介">
+<meta itemprop="description" content="spacemacs 简介">
+<meta itemprop="datePublished" content="2020-02-24T12:46:44&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-24T12:46:44&#43;08:00" />
+<meta itemprop="wordCount" content="725">
+
+
+
+<meta itemprop="keywords" content="spacemacs," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="spacemacs 简介"/>
+<meta name="twitter:description" content="spacemacs 简介"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">spacemacs 简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-24 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">安装和使用</a>
+</li>
+<li><a href="#headline-2">配置 layers</a>
+</li>
+<li><a href="#headline-3">配置 Dotfile (最重要的配置文件)</a>
+<ul>
+<li><a href="#headline-4">Dotfile 的 同步 </a>
+</li>
+<li><a href="#headline-5">层中排除 package (not) </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-6">环境变量</a>
+</li>
+<li><a href="#headline-7">设置文件默认的主模式</a>
+</li>
+<li><a href="#headline-8">键绑定 </a>
+</li>
+<li><a href="#headline-9">界面 </a>
+<ul>
+<li><a href="#headline-10">主题 </a>
+</li>
+<li><a href="#headline-11">字体设置</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-12">布局和工作空间</a>
+<ul>
+<li><a href="#headline-13">布局 </a>
+</li>
+<li><a href="#headline-14">工作空间</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-15">导航</a>
+<ul>
+<li><a href="#headline-16">光标   </a>
+</li>
+<li><a href="#headline-17">快速跳转 avy    </a>
+</li>
+<li><a href="#headline-18">快速跳转到链接 ace-link</a>
+</li>
+<li><a href="#headline-19">窗口跳转</a>
+</li>
+<li><a href="#headline-20">Buffers 管理</a>
+</li>
+<li><a href="#headline-21">书签</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-22">搜索    </a>
+<ul>
+<li><a href="#headline-23">关闭高亮 </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-24">编辑 </a>
+<ul>
+<li><a href="#headline-25">文本操作 </a>
+</li>
+<li><a href="#headline-26">文本输入</a>
+</li>
+<li><a href="#headline-27">缩放显示区域 </a>
+</li>
+<li><a href="#headline-28">替换 </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-29">比较</a>
+</li>
+<li><a href="#headline-30">Compiling</a>
+</li>
+<li><a href="#headline-31">服务</a>
+<ul>
+<li><a href="#headline-32">保证服务不关闭</a>
+</li>
+<li><a href="#headline-33">退出 emacs</a>
+</li>
+<li><a href="#headline-34">禁止服务</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-35">调试</a>
+<ul>
+<li><a href="#headline-36">加载有错误</a>
+</li>
+<li><a href="#headline-37">更新包后有错，要重新编译安装包</a>
+</li>
+<li><a href="#headline-38">打开调试开关 </a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+对 <strong>emacs</strong> 编辑器的一套配置框架，需要什么功能修改下配置文件就可以，省去了很多折腾。此文是对官方文档的简单翻译。
+</p>
+<h3 id="headline-1">
+安装和使用
+</h3>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  <span class="c1"># 安装</span>
+  $ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+  $ emacs
+  <span class="c1"># 更新</span>
+  $ git pull origin master</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-2">
+配置 layers
+</h3>
+<p>
+spacemacs 的功能包含在 layers 里面，你要哪一个功能，就选定哪一层就好了。默认帮你配好了很多层了，足够用了。
+</p>
+<h3 id="headline-3">
+配置 Dotfile (最重要的配置文件)
+</h3>
+<p>
+<strong>~/.spacemacs</strong>   文件是 <strong>spacemacs</strong> 总的配置文件，你可以在里面配置需要安装的层和其他选项。
+</p>
+<h4 id="headline-4">
+Dotfile 的 同步 
+</h4>
+<p>
+当修改完 <code>.spacemacs</code> 文件后，可以执行  <strong>sync-configuration-layers</strong> 命令同步配置，就不用重启 <strong>spacemacs</strong> 了。
+</p>
+<h4 id="headline-5">
+层中排除 package (not) 
+</h4>
+<div class="src src-emacs-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/layers</span> <span class="p">()</span>
+    <span class="c1">;; List of configuration layers to load.</span>
+    <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">dotspacemacs-configuration-layers</span>
+                  <span class="o">&#39;</span><span class="p">(</span><span class="nv">auto-completion</span>
+                    <span class="p">(</span><span class="nv">spacemacs-ui-visual</span> <span class="nb">:packages</span> <span class="p">(</span><span class="nv">not</span> <span class="nv">treemacs</span> <span class="nv">fancy-battery</span><span class="p">))))</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-6">
+环境变量
+</h3>
+<p>
+<strong>spacemacs</strong> 有自己的环境变量， 通过 <code class="verbatim">spacemacs/edit-env</code> 编辑
+</p>
+<h3 id="headline-7">
+设置文件默认的主模式
+</h3>
+<div class="src src-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;\\.js\\&#39;&#34;</span> <span class="o">.</span> <span class="nv">react-mode</span><span class="p">))</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-8">
+键绑定 
+</h3>
+<p>
+按键方式一般会设置成 <strong>前导键</strong> 式的绑定样式
+</p>
+<div class="src src-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="p">(</span><span class="nv">spacemacs/declare-prefix</span> <span class="s">&#34;o&#34;</span> <span class="s">&#34;custom&#34;</span><span class="p">)</span>
+  <span class="p">(</span><span class="nv">spacemacs/set-leader-keys</span> <span class="s">&#34;oc&#34;</span> <span class="ss">&#39;my-custom-command</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-9">
+界面 
+</h3>
+<h4 id="headline-10">
+主题 
+</h4>
+<p>
+设置默认主题组
+</p>
+<div class="src src-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-lisp" data-lang="lisp">  <span class="p">(</span><span class="nv">setq-default</span> <span class="nv">dotspacemacs-themes</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">spacemacs-light</span> <span class="nv">leuven</span> <span class="nv">zenburn</span><span class="p">))</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-11">
+字体设置
+</h4>
+<div class="src src-emacs-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp">  <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">dotspacemacs-default-font</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&#34;Source Code Pro&#34;</span>
+                                            <span class="nb">:size</span> <span class="mf">10.0</span>
+                                            <span class="nb">:weight</span> <span class="nv">normal</span>
+                                            <span class="nb">:width</span> <span class="nv">normal</span><span class="p">))</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-12">
+布局和工作空间
+</h3>
+<h4 id="headline-13">
+布局 
+</h4>
+<p>
+相当于一种历史状态，可以保存，以备下次使用。
+</p>
+<table>
+<tbody>
+<tr>
+<td><code>L</code></td>
+<td>load layouts from file</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>open a custom layout</td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td>remove current buffer from layout</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>rename current layout</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>save layouts</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>display a buffer without adding it to the current layout</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>workspaces transient state (needs eyebrowse layer enabled)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="headline-14">
+工作空间
+</h4>
+<p>
+布局还能划分工作空间
+</p>
+<h3 id="headline-15">
+导航
+</h3>
+<h4 id="headline-16">
+光标   
+</h4>
+<p>
+光标移动用 <strong>vim</strong> 样式的快捷键就好了，如果选择 <strong>Vim</strong> 编辑样式的话。
+</p>
+<h4 id="headline-17">
+快速跳转 avy    
+</h4>
+<table>
+<tbody>
+<tr>
+<td><code>SPC j b</code></td>
+<td>go back to the previous location (before the jump)</td>
+</tr>
+<tr>
+<td><code>SPC j j</code></td>
+<td>initiate avy jump char</td>
+</tr>
+<tr>
+<td><code>SPC j w</code></td>
+<td>initiate avy jump word</td>
+</tr>
+<tr>
+<td><code>SPC j l</code></td>
+<td>initiate avy jump line</td>
+</tr>
+</tbody>
+</table>
+<h4 id="headline-18">
+快速跳转到链接 ace-link
+</h4>
+<p>
+默认只有 <code class="verbatim">help-mode</code> and <code class="verbatim">info-mode</code> 开着的。
+</p>
+<h4 id="headline-19">
+窗口跳转
+</h4>
+<blockquote>
+<p>
+通过窗口编号跳转，移动窗口
+</p>
+</blockquote>
+<table>
+<tbody>
+<tr>
+<td><code>SPC 1</code></td>
+<td>go to window number 1</td>
+</tr>
+<tr>
+<td><code>SPC 2</code></td>
+<td>go to window number 2</td>
+</tr>
+</tbody>
+</table>
+<h4 id="headline-20">
+Buffers 管理
+</h4>
+<h4 id="headline-21">
+书签
+</h4>
+<p>
+打开书签  <code>SPC f b</code>
+</p>
+<table>
+<tbody>
+<tr>
+<td><code>C-d</code></td>
+<td>delete the selected bookmark</td>
+</tr>
+<tr>
+<td><code>C-e</code></td>
+<td>edit the selected bookmark</td>
+</tr>
+<tr>
+<td><code>C-f</code></td>
+<td>toggle filename location</td>
+</tr>
+<tr>
+<td><code>C-o</code></td>
+<td>open the selected bookmark in another window</td>
+</tr>
+</tbody>
+</table>
+<h3 id="headline-22">
+搜索    
+</h3>
+<h4 id="headline-23">
+关闭高亮 
+</h4>
+<p>
+<code>SPC s c</code>
+</p>
+<h3 id="headline-24">
+编辑 
+</h3>
+<h4 id="headline-25">
+文本操作 
+</h4>
+<p>
+以 <code>SPC x</code> 开头，排序，比较什么的。
+</p>
+<h4 id="headline-26">
+文本输入
+</h4>
+<p>
+插入特殊的文本，以 <code>SPC i</code> 开头
+</p>
+<h4 id="headline-27">
+缩放显示区域 
+</h4>
+<p>
+narrow
+</p>
+<h4 id="headline-28">
+替换 
+</h4>
+<p>
+<code>SPC s e</code>
+</p>
+<h3 id="headline-29">
+比较
+</h3>
+<p>
+比较 <strong>buffer</strong> 的不同 ，以 <code>SPC D</code> 开头
+</p>
+<h3 id="headline-30">
+Compiling
+</h3>
+<h3 id="headline-31">
+服务
+</h3>
+<h4 id="headline-32">
+保证服务不关闭
+</h4>
+<div class="src src-emacs-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp">  <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">dotspacemacs-persistent-server</span> <span class="no">t</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-33">
+退出 emacs
+</h4>
+<p>
+退出服务 <code>SPC q q</code> 
+</p>
+<h4 id="headline-34">
+禁止服务
+</h4>
+<div class="src src-emacs-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp">  <span class="p">(</span><span class="nb">setq-default</span> <span class="nv">dotspacemacs-enable-server</span> <span class="no">nil</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-35">
+调试
+</h3>
+<h4 id="headline-36">
+加载有错误
+</h4>
+<p>
+emacs –debug-init
+</p>
+<h4 id="headline-37">
+更新包后有错，要重新编译安装包
+</h4>
+<p>
+spacemacs/recompile-elpa
+</p>
+<h4 id="headline-38">
+打开调试开关 
+</h4>
+<p>
+toggle-debug-on-error
+</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-02-24
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/spacemacs/">spacemacs</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/physics/">
+            <span class="next-text nav-default">物理简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

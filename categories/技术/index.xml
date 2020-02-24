@@ -6,10 +6,21 @@
     <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2020 18:13:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>spacemacs 简介</title>
+      <link>https://aming.xyz/post/spacemacs/</link>
+      <pubDate>Mon, 24 Feb 2020 12:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/spacemacs/</guid>
+      <description>&lt;p&gt;
+对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置框架，需要什么功能修改下配置文件就可以，省去了很多折腾。此文是对官方文档的简单翻译。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>nodejs 简介</title>

@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.1 with theme even" />
+<meta name="generator" content="Hugo 0.65.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/jquery/" />
@@ -223,7 +223,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/jquery/3.4.1/jquery.js&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/jquery/3.4.1/jquery.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -243,14 +243,14 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">)</span><span class="p">.</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 
-  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">});</span>
 
   <span class="c1">//简写
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 
-  <span class="p">}</span><span class="p">)</span>
+  <span class="p">})</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -321,11 +321,11 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择包含p元素的div元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">not</span><span class="p">(</span><span class="s1">&#39;.myClass&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择class不等于myClass的div元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;.myClass&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择class等于myClass的div元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">first</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择第1个div元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择第6个div元素
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">has</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span> <span class="c1">//选择包含p元素的div元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s1">&#39;.myClass&#39;</span><span class="p">);</span> <span class="c1">//选择class不等于myClass的div元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;.myClass&#39;</span><span class="p">);</span> <span class="c1">//选择class等于myClass的div元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">first</span><span class="p">();</span> <span class="c1">//选择第1个div元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">eq</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span> <span class="c1">//选择第6个div元素
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -343,11 +343,11 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择div元素后面的第一个p元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">parent</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择div元素的父元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择离div最近的那个form父元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">children</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择div的所有子元素  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">siblings</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//选择div的同级元素
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">next</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span> <span class="c1">//选择div元素后面的第一个p元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">parent</span><span class="p">();</span> <span class="c1">//选择div元素的父元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;form&#39;</span><span class="p">);</span> <span class="c1">//选择离div最近的那个form父元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">children</span><span class="p">();</span> <span class="c1">//选择div的所有子元素  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">siblings</span><span class="p">();</span> <span class="c1">//选择div的同级元素
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -370,7 +370,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">).</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -390,7 +390,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="c1">//找到div元素  
 </span><span class="c1"></span>      <span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span><span class="c1">//选择其中的h3元素  
 </span><span class="c1"></span>      <span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="c1">//选择第3个h3元素  
-</span><span class="c1"></span>      <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//将它的内容改为Hello
+</span><span class="c1"></span>      <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span> <span class="c1">//将它的内容改为Hello
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -418,9 +418,9 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
       <span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">)</span>  
       <span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  
       <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>  
-      <span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="p">)</span><span class="c1">//退回到选中所有的h3元素的那一步  
+      <span class="p">.</span><span class="nx">end</span><span class="p">()</span><span class="c1">//退回到选中所有的h3元素的那一步  
 </span><span class="c1"></span>      <span class="p">.</span><span class="nx">eq</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="c1">//选中第一个h3元素  
-</span><span class="c1"></span>      <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//将它的内容改为World
+</span><span class="c1"></span>      <span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">);</span> <span class="c1">//将它的内容改为World
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -441,8 +441,8 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//html()没有参数，表示取出h1的值 
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//html()有参数Hello，表示对h1进行赋值
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">();</span> <span class="c1">//html()没有参数，表示取出h1的值 
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span> <span class="c1">//html()有参数Hello，表示对h1进行赋值
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -506,7 +506,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">insertAfter</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">insertAfter</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -520,7 +520,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -584,9 +584,9 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;Hello&lt;/p&gt;&#39;</span><span class="p">)</span><span class="p">;</span>  
-  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;li class=&#34;new&#34;&gt;new list item&lt;/li&gt;&#39;</span><span class="p">)</span><span class="p">;</span>  
-  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;list item&lt;/li&gt;&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;Hello&lt;/p&gt;&#39;</span><span class="p">);</span>  
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;li class=&#34;new&#34;&gt;new list item&lt;/li&gt;&#39;</span><span class="p">);</span>  
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;li&gt;list item&lt;/li&gt;&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -603,9 +603,9 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <td class="lntd">
 <pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;select#car-brands&#39;</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;option&gt;&#39;</span><span class="p">)</span>
-              <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="p">{</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;VAG&#39;</span> <span class="p">}</span><span class="p">)</span>
+              <span class="p">.</span><span class="nx">attr</span><span class="p">({</span> <span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;VAG&#39;</span> <span class="p">})</span>
               <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;Volkswagen&#39;</span><span class="p">)</span>
-             <span class="p">)</span><span class="p">;</span>
+             <span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -623,12 +623,12 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;input /&gt;&#39;</span><span class="p">,</span><span class="p">{</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;&lt;input /&gt;&#39;</span><span class="p">,{</span>
       <span class="nx">type</span><span class="o">:</span><span class="s2">&#34;checkbox&#34;</span><span class="p">,</span>
       <span class="nx">name</span><span class="o">:</span><span class="s2">&#34;cbox&#34;</span><span class="p">,</span>
       <span class="nx">val</span><span class="o">:</span><span class="s2">&#34;1&#34;</span><span class="p">,</span>
       <span class="nx">checked</span><span class="o">:</span><span class="s2">&#34;checked&#34;</span>
-  <span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">(</span><span class="s2">&#34;body&#34;</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">}).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s2">&#34;body&#34;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -642,7 +642,7 @@ jQuery是一个JavaScript库，主要对 <strong>DOM</strong> 进行了封装，
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">href</span><span class="o">:</span> <span class="s2">&#34;#&#34;</span><span class="p">,</span> <span class="kr">class</span><span class="o">:</span> <span class="s2">&#34;a-class another-class&#34;</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&#34;...&#34;</span> <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">href</span><span class="o">:</span> <span class="s2">&#34;#&#34;</span><span class="p">,</span> <span class="kr">class</span><span class="o">:</span> <span class="s2">&#34;a-class another-class&#34;</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&#34;...&#34;</span> <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -735,9 +735,9 @@ jQuery可以对网页元素绑定事件。根据不同的事件，运行相应�
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>  
-      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span>  
-  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>  
+      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>  
+  <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -889,12 +889,12 @@ jQuery可以对网页元素绑定事件。根据不同的事件，运行相应�
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span>  
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span>  
       <span class="s1">&#39;click change&#39;</span><span class="err">，</span> <span class="c1">//同时绑定click和change事件  
-</span><span class="c1"></span>      <span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>  
-          <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span><span class="p">;</span>  
+</span><span class="c1"></span>      <span class="kd">function</span><span class="p">(){</span>  
+          <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>  
       <span class="p">}</span>  
-  <span class="p">)</span><span class="p">;</span>
+  <span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -912,9 +912,9 @@ jQuery可以对网页元素绑定事件。根据不同的事件，运行相应�
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">one</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="err">，</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>  
-      <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//只运行一次，以后的点击不会运行  
-</span><span class="c1"></span>  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">one</span><span class="p">(</span><span class="s2">&#34;click&#34;</span><span class="err">，</span> <span class="kd">function</span><span class="p">(){</span>  
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">);</span> <span class="c1">//只运行一次，以后的点击不会运行  
+</span><span class="c1"></span>  <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -928,7 +928,7 @@ jQuery可以对网页元素绑定事件。根据不同的事件，运行相应�
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">unbind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">unbind</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -944,9 +944,9 @@ jQuery可以对网页元素绑定事件。根据不同的事件，运行相应�
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="p">{</span>  
-      <span class="nx">alert</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="p">;</span> <span class="c1">//&#34;click&#34;  
-</span><span class="c1"></span>  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>  
+      <span class="nx">alert</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span> <span class="c1">//&#34;click&#34;  
+</span><span class="c1"></span>  <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1008,12 +1008,12 @@ event.stopPropagation() 停止事件向上层元素冒泡
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span>  
-      <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;evil&#39;</span><span class="p">)</span><span class="p">)</span><span class="p">{</span><span class="c1">//如果确认为有害链接  
-</span><span class="c1"></span>          <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//阻止打开  
-</span><span class="c1"></span>          <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;evil&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//加上表示有害的class  
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>  
+      <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">).</span><span class="nx">match</span><span class="p">(</span><span class="s1">&#39;evil&#39;</span><span class="p">)){</span><span class="c1">//如果确认为有害链接  
+</span><span class="c1"></span>          <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span> <span class="c1">//阻止打开  
+</span><span class="c1"></span>          <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;evil&#39;</span><span class="p">);</span> <span class="c1">//加上表示有害的class  
 </span><span class="c1"></span>      <span class="p">}</span>  
-  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+  <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1028,8 +1028,8 @@ event.stopPropagation() 停止事件向上层元素冒泡
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">).</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1048,7 +1048,7 @@ jQuery允许对象呈现某些特殊效果。
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">show</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="c1">//展现一个h1标题
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span> <span class="c1">//展现一个h1标题
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -1113,8 +1113,8 @@ jQuery允许对象呈现某些特殊效果。
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 300毫秒内淡入  
-</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">fadeOut</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">)</span><span class="p">;</span> <span class="c1">//缓慢地淡出
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="c1">// 300毫秒内淡入  
+</span><span class="c1"></span>  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="s1">&#39;slow&#39;</span><span class="p">);</span> <span class="c1">//缓慢地淡出
 </span></code></pre></td></tr></table>
 </div>
 </div>
@@ -1128,7 +1128,7 @@ jQuery允许对象呈现某些特殊效果。
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">)</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="p">)</span><span class="p">;</span> <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span> <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1149,14 +1149,14 @@ jQuery允许对象呈现某些特殊效果。
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">)</span><span class="p">.</span><span class="nx">animate</span><span class="p">(</span>  
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">animate</span><span class="p">(</span>  
       <span class="p">{</span>  
           <span class="nx">left</span> <span class="o">:</span> <span class="s2">&#34;+=50&#34;</span><span class="err">，</span><span class="c1">//不断右移  
 </span><span class="c1"></span>          <span class="nx">opacity</span> <span class="o">:</span> <span class="mf">0.25</span> <span class="c1">//指定透明度  
-</span><span class="c1"></span>      <span class="p">}</span><span class="p">,</span>
+</span><span class="c1"></span>      <span class="p">},</span>
       <span class="mi">300</span><span class="p">,</span><span class="c1">// 持续时间  
-</span><span class="c1"></span>      <span class="kd">function</span><span class="p">(</span><span class="p">)</span><span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;done!&#39;</span><span class="p">)</span><span class="p">;</span> <span class="p">}</span><span class="c1">//回调函数  
-</span><span class="c1"></span>  <span class="p">)</span><span class="p">;</span>
+</span><span class="c1"></span>      <span class="kd">function</span><span class="p">(){</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;done!&#39;</span><span class="p">);</span> <span class="p">}</span><span class="c1">//回调函数  
+</span><span class="c1"></span>  <span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1200,22 +1200,22 @@ ajax 是后台处理数据的技术，比前台处理数据（网页刷新） �
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">(</span><span class="p">{</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
       <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
       <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/process/submit.php&#39;</span><span class="p">,</span>
       <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
           <span class="nx">name</span> <span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span>
           <span class="nx">location</span> <span class="o">:</span> <span class="s1">&#39;Boston&#39;</span><span class="p">,</span>
-      <span class="p">}</span><span class="p">,</span>
-  <span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Data Saved: &#39;</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">)</span><span class="p">;</span>
-  <span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">xmlHttpRequest</span><span class="p">,</span> <span class="nx">statusText</span><span class="p">,</span> <span class="nx">errorThrown</span><span class="p">)</span> <span class="p">{</span>
+      <span class="p">},</span>
+  <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Data Saved: &#39;</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">);</span>
+  <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">xmlHttpRequest</span><span class="p">,</span> <span class="nx">statusText</span><span class="p">,</span> <span class="nx">errorThrown</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">alert</span><span class="p">(</span>
           <span class="s1">&#39;Your form submission failed.\n\n&#39;</span>
               <span class="o">+</span> <span class="s1">&#39;XML Http Request: &#39;</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">xmlHttpRequest</span><span class="p">)</span>
               <span class="o">+</span> <span class="s1">&#39;,\nStatus Text: &#39;</span> <span class="o">+</span> <span class="nx">statusText</span>
-              <span class="o">+</span> <span class="s1">&#39;,\nError Thrown: &#39;</span> <span class="o">+</span> <span class="nx">errorThrown</span><span class="p">)</span><span class="p">;</span>
-  <span class="p">}</span><span class="p">)</span><span class="p">;</span>
+              <span class="o">+</span> <span class="s1">&#39;,\nError Thrown: &#39;</span> <span class="o">+</span> <span class="nx">errorThrown</span><span class="p">);</span>
+  <span class="p">});</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1231,9 +1231,9 @@ Dom 对象 与 jQuery 对象转换
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">$v</span> <span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#v&#34;</span><span class="p">)</span><span class="p">;</span>    <span class="c1">//jQuery 对象
-</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">v</span><span class="o">=</span><span class="nx">$v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="p">;</span>       <span class="c1">//DOM 对象 
-</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">v</span><span class="o">=</span><span class="nx">$v</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="p">;</span>   <span class="c1">//DOM 对象
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">$v</span> <span class="o">=</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#v&#34;</span><span class="p">);</span>    <span class="c1">//jQuery 对象
+</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">v</span><span class="o">=</span><span class="nx">$v</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>       <span class="c1">//DOM 对象 
+</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">v</span><span class="o">=</span><span class="nx">$v</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>   <span class="c1">//DOM 对象
 </span></code></pre></td></tr></table>
 </div>
 </div>

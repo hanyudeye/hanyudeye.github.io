@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.1 with theme even" />
+<meta name="generator" content="Hugo 0.65.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/laravel/" />
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="laravel 简介">
 <meta itemprop="datePublished" content="2020-02-14T20:58:44&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-14T20:58:44&#43;08:00" />
-<meta itemprop="wordCount" content="1840">
+<meta itemprop="wordCount" content="1829">
 
 
 
@@ -909,13 +909,13 @@ resources/views  视图存储目录
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!--</span><span class="c"> 文件名为 blade.php 后缀 </span><span class="c">--&gt;</span>
-  <span class="c">&lt;!--</span><span class="c"> View stored in resources/views/greeting.blade.php </span><span class="c">--&gt;</span>
-  <span class="p">&lt;</span><span class="nt">html</span><span class="p"></span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p"></span><span class="p">&gt;</span>Hello, {{ $name }}<span class="p">&lt;</span><span class="p">/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- 文件名为 blade.php 后缀 --&gt;</span>
+  <span class="c">&lt;!-- View stored in resources/views/greeting.blade.php --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, {{ $name }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -964,7 +964,7 @@ blade 结构可以识别 <strong>{{}}</strong> 语法
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -977,7 +977,7 @@ blade 结构可以识别 <strong>{{}}</strong> 语法
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{asset(&#39;css)}/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{asset(&#39;css)}/app.css}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">media</span><span class="o">=</span><span class="s">&#34;screen&#34;</span> <span class="p">/&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -1186,9 +1186,9 @@ CSRF (跨站请求伪造攻击)
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;hidden&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;_token&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;{{csrf_token()}}&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;hidden&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;_token&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;{{csrf_token()}}&#34;</span> <span class="p">/&gt;</span>
 
-  <span class="c">&lt;!--</span><span class="c"> 简化 </span><span class="c">--&gt;</span>
+  <span class="c">&lt;!-- 简化 --&gt;</span>
   {{csrf_field()}}</code></pre></td></tr></table>
 </div>
 </div>

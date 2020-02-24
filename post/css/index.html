@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.1 with theme even" />
+<meta name="generator" content="Hugo 0.65.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/css/" />
@@ -249,7 +249,7 @@ HTML 文件
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span><span class="p"></span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;style.css&#34;</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -272,7 +272,7 @@ HTML 文件
       <span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
       <span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span>
   <span class="p">}</span>
-  <span class="p">.</span><span class="nc">center</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+  <span class="p">.</span><span class="nc">center</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;}</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -299,7 +299,7 @@ HTML 文件
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span> <span class="nt">p</span>  <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span> <span class="nt">p</span>  <span class="p">{</span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;}</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -315,7 +315,7 @@ HTML 文件
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">#</span><span class="nn">red</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">#</span><span class="nn">red</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;}</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -345,7 +345,7 @@ HTML 文件
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="o">/</span><span class="o">/</span><span class="nt">也可以不要</span> <span class="nt">value</span> <span class="nt">修饰</span>
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="o">//</span><span class="nt">也可以不要</span> <span class="nt">value</span> <span class="nt">修饰</span>
   <span class="nt">input</span> <span class="o">[</span><span class="nt">title</span><span class="o">=</span><span class="s2">&#34;value&#34;</span><span class="o">]</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
@@ -681,8 +681,8 @@ font-size:默认大小是 16 像素 (16px=1em(当前尺寸,当前是 16px))
 <pre class="chroma"><code class="language-css" data-lang="css">  <span class="p">@</span><span class="k">font-face</span>
   <span class="p">{</span>
       <span class="nt">font-family</span><span class="o">:</span> <span class="nt">myFirstFont</span><span class="o">;</span>
-      <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.ttf&#39;</span><span class="o">)</span><span class="o">,</span>
-           <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.eot&#39;</span><span class="o">)</span><span class="o">;</span> <span class="c">/* IE9+ */</span>
+      <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.ttf&#39;</span><span class="o">),</span>
+           <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;Sansation_Light.eot&#39;</span><span class="o">);</span> <span class="c">/* IE9+ */</span>
   <span class="p">}</span>
 
   <span class="nt">div</span>
@@ -814,8 +814,8 @@ transform-origin 	允许你改变被转换元素的位置
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span><span class="p">{</span><span class="k">transition</span><span class="p">:</span><span class="k">width</span> <span class="mi">2</span><span class="kt">s</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">div</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-css" data-lang="css">  <span class="nt">div</span><span class="p">{</span><span class="k">transition</span><span class="p">:</span><span class="k">width</span> <span class="mi">2</span><span class="kt">s</span><span class="p">;}</span>
+  <span class="nt">div</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;}</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
@@ -925,12 +925,12 @@ transition-delay 	规定过渡效果何时开始
   <span class="p">}</span>
 
   <span class="c">/* 短引用的内容可取值：&#39;&#39;或&#34;&#34; */</span>
-  <span class="nt">q</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="nt">q</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span><span class="k">content</span><span class="p">:</span><span class="err">”</span><span class="p">;</span><span class="p">}</span>  
+  <span class="nt">q</span><span class="p">:</span><span class="nd">before</span><span class="o">,</span><span class="nt">q</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span><span class="k">content</span><span class="p">:</span><span class="err">”</span><span class="p">;}</span>  
 
   <span class="c">/* 缩写，图片等无边框 */</span>
-  <span class="nt">fieldset</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">none</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">font-variant</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">legend</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#000</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">fieldset</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">border</span><span class="p">:</span> <span class="mi">0</span> <span class="kc">none</span><span class="p">;}</span>
+  <span class="nt">abbr</span><span class="o">,</span><span class="nt">acronym</span> <span class="p">{</span><span class="k">font-variant</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;}</span>
+  <span class="nt">legend</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#000</span><span class="p">;}</span>
 
   <span class="c">/* 清除特殊标记的字体和字号 */</span>
   <span class="nt">address</span><span class="o">,</span><span class="nt">caption</span><span class="o">,</span><span class="nt">cite</span><span class="o">,</span><span class="nt">code</span><span class="o">,</span><span class="nt">dfn</span><span class="o">,</span><span class="nt">em</span><span class="o">,</span><span class="nt">strong</span><span class="o">,</span><span class="nt">th</span><span class="o">,</span><span class="nt">var</span> <span class="p">{</span>   
@@ -939,8 +939,8 @@ transition-delay 	规定过渡效果何时开始
   <span class="p">}</span>
 
   <span class="c">/* 上下标 */</span>
-  <span class="nt">sup</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">top</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">sub</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">bottom</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">sup</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">top</span><span class="p">;}</span>
+  <span class="nt">sub</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span> <span class="kc">text</span><span class="o">-</span><span class="kc">bottom</span><span class="p">;}</span>
 
   <span class="c">/* 设置表格的边框被合并为一个单一的边框, 指定分隔边框模型中单元格边界之间的距离为 0*/</span>
   <span class="nt">table</span> <span class="p">{</span>   
@@ -949,11 +949,11 @@ transition-delay 	规定过渡效果何时开始
   <span class="p">}</span>   
 
   <span class="c">/* 表格标题及内容居左显示 */</span>
-  <span class="nt">caption</span><span class="o">,</span><span class="nt">th</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">input</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">select</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span><span class="kc">middle</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">caption</span><span class="o">,</span><span class="nt">th</span> <span class="p">{</span><span class="k">text-align</span><span class="p">:</span> <span class="kc">left</span><span class="p">;}</span>
+  <span class="nt">input</span><span class="o">,</span><span class="nt">img</span><span class="o">,</span><span class="nt">select</span> <span class="p">{</span><span class="k">vertical-align</span><span class="p">:</span><span class="kc">middle</span><span class="p">;}</span>
 
   <span class="c">/* 清除列表样式 */</span>
-  <span class="nt">ol</span><span class="o">,</span><span class="nt">ul</span> <span class="p">{</span><span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span><span class="p">}</span>  
+  <span class="nt">ol</span><span class="o">,</span><span class="nt">ul</span> <span class="p">{</span><span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;}</span>  
 
   <span class="c">/* 输入控件字体 */</span>
   <span class="nt">input</span><span class="o">,</span><span class="nt">button</span><span class="o">,</span><span class="nt">textarea</span><span class="o">,</span><span class="nt">select</span><span class="o">,</span><span class="nt">optgroup</span><span class="o">,</span><span class="nt">option</span> <span class="p">{</span>
@@ -970,17 +970,17 @@ transition-delay 	规定过渡效果何时开始
   <span class="p">}</span>   
 
   <span class="c">/* 链接样式，颜色可酌情修改 */</span>
-  <span class="nt">del</span><span class="o">,</span><span class="nt">ins</span><span class="o">,</span><span class="nt">a</span> <span class="p">{</span><span class="k">text-decoration</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">a</span><span class="p">:</span><span class="nd">link</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#009</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#800080</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">active</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#c00</span><span class="p">;</span> <span class="k">text-decoration</span><span class="p">:</span><span class="kc">underline</span><span class="p">;</span><span class="p">}</span> 
+  <span class="nt">del</span><span class="o">,</span><span class="nt">ins</span><span class="o">,</span><span class="nt">a</span> <span class="p">{</span><span class="k">text-decoration</span><span class="p">:</span><span class="kc">none</span><span class="p">;}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">link</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#009</span><span class="p">;}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">visited</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#800080</span><span class="p">;}</span>
+  <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">active</span><span class="o">,</span><span class="nt">a</span><span class="p">:</span><span class="nd">focus</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span><span class="mh">#c00</span><span class="p">;</span> <span class="k">text-decoration</span><span class="p">:</span><span class="kc">underline</span><span class="p">;}</span> 
 
   <span class="c">/* 鼠标样式 */</span>
-  <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&#34;submit&#34;</span><span class="o">]</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">button</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span><span class="p">}</span>
-  <span class="nt">input</span><span class="p">::</span><span class="nd">-moz-focus-inner</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span><span class="p">}</span>
+  <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&#34;submit&#34;</span><span class="o">]</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;}</span>
+  <span class="nt">button</span> <span class="p">{</span><span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;}</span>
+  <span class="nt">input</span><span class="p">::</span><span class="nd">-moz-focus-inner</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;}</span>
 
-  <span class="p">.</span><span class="nc">clear</span> <span class="p">{</span><span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;</span><span class="p">}</span></code></pre></td></tr></table>
+  <span class="p">.</span><span class="nc">clear</span> <span class="p">{</span><span class="k">clear</span><span class="p">:</span><span class="kc">both</span><span class="p">;}</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>

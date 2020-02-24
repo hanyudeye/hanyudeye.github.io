@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>spacemacs</title>
+      <link>https://aming.xyz/tags/spacemacs/</link>
+      <pubDate>Mon, 24 Feb 2020 12:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/spacemacs/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>物理</title>
