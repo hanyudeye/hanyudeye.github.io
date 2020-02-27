@@ -49,7 +49,7 @@
 <meta itemprop="description" content="nodejs 简介">
 <meta itemprop="datePublished" content="2020-02-16T18:13:56&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-16T18:13:56&#43;08:00" />
-<meta itemprop="wordCount" content="1940">
+<meta itemprop="wordCount" content="1825">
 
 
 
@@ -174,19 +174,19 @@
 </li>
 <li><a href="#headline-10">常用内置模块</a>
 <ul>
-<li><a href="#headline-11">path模块</a>
+<li><a href="#headline-11">path 模块</a>
 </li>
-<li><a href="#headline-12">fs模块</a>
+<li><a href="#headline-12">fs 模块</a>
 </li>
 <li><a href="#headline-13">http 模块</a>
 </li>
 <li><a href="#headline-14">events 模块</a>
 </li>
-<li><a href="#headline-15">url模块</a>
+<li><a href="#headline-15">url 模块</a>
 </li>
 <li><a href="#headline-16">Buffer 类</a>
 </li>
-<li><a href="#headline-17">util模块</a>
+<li><a href="#headline-17">util 模块</a>
 </li>
 <li><a href="#headline-18">OS 模块</a>
 </li>
@@ -240,12 +240,12 @@ JavaScript 命令行语言解析器
 nvm   
 </h4>
 <p>
-对于多个版本，可以安装 <strong>nvm</strong> 版本管理工具，用来管理node的版本 
+对于多个版本，可以安装 <strong>nvm</strong> 版本管理工具，用来管理 node 的版本 
 </p>
 <ul>
 <li>
 <p>
-安装最新node  nvm install node
+安装最新 node  nvm install node
 </p>
 </li>
 <li>
@@ -265,12 +265,17 @@ nvm
 </li>
 <li>
 <p>
-列出远程node版本   nvm ls-remote
+列出远程 node 版本   nvm ls-remote
 </p>
 </li>
 <li>
 <p>
-安装最近版本的npm  nvm install-latest-npm
+卸载 nvm uninstall
+</p>
+</li>
+<li>
+<p>
+安装最近版本的 npm  nvm install-latest-npm
 </p>
 </li>
 </ul>
@@ -278,7 +283,8 @@ nvm
 模块
 </h3>
 <p>
-本来 <strong>javascript</strong>  刚开发的时候是做为脚本使用的，代码量少，所以没有提供模块。现在脚本复杂了，就引入了模块的概念 
+本来 <strong>javascript</strong> 刚开发的时候是做为脚本使用的，代码量少，所以没有提供模块。
+   现在脚本复杂了，就引入了模块的概念
 </p>
 <h4 id="headline-4">
 原生语法 (import/export)
@@ -312,7 +318,7 @@ nvm
 </div>
 </div>
 <p>
-    应用模块到你的HTML
+    应用模块到你的 HTML
 </p>
 <div class="src src-html">
 <div class="highlight"><div class="chroma">
@@ -365,7 +371,7 @@ node
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">module</span><span class="o">=</span><span class="nx">require</span><span class="p">(</span><span class="nx">MODULEPATH</span><span class="err">&#39;</span><span class="p">);</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">let</span> <span class="nx">module</span><span class="o">=</span><span class="nx">require</span><span class="p">(</span><span class="s2">&#34;MODULEPATH&#34;</span><span class="p">);</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -409,11 +415,11 @@ setInterval/clearInterval：定时器
 常用内置模块
 </h3>
 <h4 id="headline-11">
-path模块
+path 模块
 </h4>
 <blockquote>
 <p>
-path模块供了一些工具函数，用于处理文件与目录的路径
+path 模块供了一些工具函数，用于处理文件与目录的路径
 </p>
 </blockquote>
 <ul>
@@ -444,7 +450,7 @@ path.normalize：将一个路径正常化
 </li>
 </ul>
 <h4 id="headline-12">
-fs模块
+fs 模块
 </h4>
 <p>
 文件操作相关的模块
@@ -487,7 +493,7 @@ fs.watchFile：监视文件的变化
 </li>
 </ul>
 <p>
-stream操作大文件
+stream 操作大文件
 </p>
 <div class="src src-js">
 <div class="highlight"><div class="chroma">
@@ -534,7 +540,7 @@ stream操作大文件
 http 模块
 </h4>
 <p>
-封装了http server 和 client的功能，就是说可以充当server处理请求，也可以发出请求。
+封装了 http server 和 client 的功能，就是说可以充当 server 处理请求，也可以发出请求。
 </p>
 <h4 id="headline-14">
 events 模块
@@ -568,16 +574,16 @@ events 模块
 </div>
 </div>
 <h4 id="headline-15">
-url模块
+url 模块
 </h4>
 <h4 id="headline-16">
 Buffer 类
 </h4>
 <h4 id="headline-17">
-util模块
+util 模块
 </h4>
 <p>
-util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于精简的不足。
+util 是一个 Node.js 核心模块，提供常用函数的集合，用于弥补核心 JavaScript 的功能 过于精简的不足。
 </p>
 <h4 id="headline-18">
 OS 模块
@@ -601,7 +607,7 @@ Node.js DNS 模块用于解析域名。
 Domain 模块
 </h4>
 <p>
-Node.js Domain(域) 简化异步代码的异常处理，可以捕捉处理try catch无法捕捉的异常。
+Node.js Domain(域) 简化异步代码的异常处理，可以捕捉处理 try catch 无法捕捉的异常。
 </p>
 <h4 id="headline-22">
 Web 模块
@@ -610,11 +616,11 @@ Web 模块
 npm 
 </h2>
 <p>
-npm 是 一家 管理 <strong>Javascript</strong> 项目为主的公司，同名的 npm 软件可以用来管理 <strong>js项目</strong> 。
+npm 是 一家 管理 <strong>Javascript</strong> 项目为主的公司，同名的 npm 软件可以用来管理 <strong>js 项目</strong> 。
 </p>
 <blockquote>
 <p>
-目录中包含以 * package.json*  作为文件名的项目一般视为npm项目，npm 中称呼为包。
+目录中包含以 * package.json*  作为文件名的项目一般视为 npm 项目，npm 中称呼为包。
   包中对其他项目的引用放在 <strong>node_modules</strong> 中，叫做依赖
 </p>
 <div class="export-block">
@@ -654,7 +660,7 @@ npm search 搜索项目信息
 </li>
 <li>
 <p>
-npm install 包名 (局部安装，安装在当前项目的 node_modules目录下)
+npm install 包名 (局部安装，安装在当前项目的 node_modules 目录下)
 </p>
 </li>
 <li>
@@ -664,7 +670,7 @@ npm install 包名 (局部安装，安装在当前项目的 node_modules目录�
 </li>
 <li>
 <p>
--D 安装并将依赖信息写在package.json中的devDependencies中
+-D 安装并将依赖信息写在 package.json 中的 devDependencies 中
 </p>
 </li>
 <li>
@@ -689,7 +695,7 @@ npm update 更新依赖
 </li>
 <li>
 <p>
-npm root 查看依赖安装路径（也就是node_modules的路径）
+npm root 查看依赖安装路径（也就是 node_modules 的路径）
 </p>
 </li>
 <li>
@@ -699,12 +705,12 @@ npm view 查看模块的注册信息
 <ul>
 <li>
 <p>
-xxx versions 列出xxx的所有版本
+xxx versions 列出 xxx 的所有版本
 </p>
 </li>
 <li>
 <p>
-xxx dependencies 列出xxx的所有依赖， 如：npm view gulp dependencies
+xxx dependencies 列出 xxx 的所有依赖， 如：npm view gulp dependencies
 </p>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
