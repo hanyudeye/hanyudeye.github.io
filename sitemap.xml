@@ -24,21 +24,42 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-02-27T18:05:08+08:00</lastmod>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-02-27T18:05:08+08:00</lastmod>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-02-27T18:05:08+08:00</lastmod>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/</loc>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/methods/</loc>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%A7%91%E6%99%AE/</loc>
+    <lastmod>2020-03-02T19:01:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -101,13 +122,6 @@
   
   <url>
     <loc>https://aming.xyz/post/physics/</loc>
-    <lastmod>2020-02-21T06:20:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2020-02-21T06:20:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
