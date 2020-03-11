@@ -49,7 +49,7 @@
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T07:26:07&#43;08:00" />
-<meta itemprop="wordCount" content="2379">
+<meta itemprop="wordCount" content="2413">
 
 
 
@@ -208,21 +208,27 @@
 </li>
 </ul>
 </li>
-</ul>
+<li><a href="#headline-27">休眠</a>
+</li>
+<li><a href="#headline-28">录制视频短片 peek</a>
+</li>
+<li><a href="#headline-29">像素识别</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-27">发行版</a>
+</ul>
+</li>
+<li><a href="#headline-30">发行版</a>
 <ul>
-<li><a href="#headline-28">字体</a>
+<li><a href="#headline-31">字体</a>
 <ul>
-<li><a href="#headline-29">安装字体</a>
+<li><a href="#headline-32">安装字体</a>
 </li>
-<li><a href="#headline-30">显示已安装的字体</a>
+<li><a href="#headline-33">显示已安装的字体</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-31">用户目录配置</a>
+<li><a href="#headline-34">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -922,13 +928,56 @@ pdf
 <h5 id="headline-26">
 压缩转换 convert
 </h5>
-<h2 id="headline-27">
+<h4 id="headline-27">
+休眠
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">sudo hibernate</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-28">
+录制视频短片 peek
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  sudo add-apt-repository ppa:peek-developers/stable
+  sudo apt update
+  sudo apt install peek</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-29">
+像素识别
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  sudo snap install pick-colour-picker</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h2 id="headline-30">
 发行版
 </h2>
-<h3 id="headline-28">
+<h3 id="headline-31">
 字体
 </h3>
-<h4 id="headline-29">
+<h4 id="headline-32">
 安装字体
 </h4>
 <div class="src src-sh">
@@ -951,7 +1000,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-30">
+<h4 id="headline-33">
 显示已安装的字体
 </h4>
 <div class="src src-sh">
@@ -964,7 +1013,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-31">
+<h3 id="headline-34">
 用户目录配置
 </h3>
 <div class="src src-sh">
