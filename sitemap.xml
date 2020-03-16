@@ -24,21 +24,42 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-03-12T06:24:01+08:00</lastmod>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-03-12T06:24:01+08:00</lastmod>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-03-12T06:24:01+08:00</lastmod>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</loc>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E6%A1%A5%E4%B8%8B%E6%9D%91/</loc>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/bridge/</loc>
+    <lastmod>2020-03-14T19:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
