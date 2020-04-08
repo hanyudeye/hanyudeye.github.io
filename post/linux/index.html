@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.65.3 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -44,12 +44,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/linux/" />
 <meta property="article:published_time" content="2019-11-29T21:49:26+08:00" />
-<meta property="article:modified_time" content="2020-02-11T07:26:07+08:00" />
+<meta property="article:modified_time" content="2020-03-24T06:15:52+08:00" />
 <meta itemprop="name" content="Gnu/Linux 简介">
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-11T07:26:07&#43;08:00" />
-<meta itemprop="wordCount" content="2413">
+<meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
+<meta itemprop="wordCount" content="2676">
 
 
 
@@ -154,7 +154,7 @@
 </li>
 <li><a href="#headline-4">用户</a>
 </li>
-<li><a href="#headline-5">基本信息</a>
+<li><a href="#headline-5">系统信息</a>
 </li>
 <li><a href="#headline-6">进程管理和调度</a>
 <ul>
@@ -216,19 +216,29 @@
 </li>
 </ul>
 </li>
+<li><a href="#headline-30">服务器与客户机  </a>
+<ul>
+<li><a href="#headline-31">http 服务 (网页浏览服务) 对应的客户端是浏览器 </a>
+</li>
+<li><a href="#headline-32">ftp 服务 (文件传送服务)</a>
+</li>
+<li><a href="#headline-33">邮件服务</a>
+</li>
 </ul>
 </li>
-<li><a href="#headline-30">发行版</a>
-<ul>
-<li><a href="#headline-31">字体</a>
-<ul>
-<li><a href="#headline-32">安装字体</a>
+</ul>
 </li>
-<li><a href="#headline-33">显示已安装的字体</a>
+<li><a href="#headline-34">发行版</a>
+<ul>
+<li><a href="#headline-35">字体</a>
+<ul>
+<li><a href="#headline-36">安装字体</a>
+</li>
+<li><a href="#headline-37">显示已安装的字体</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-34">用户目录配置</a>
+<li><a href="#headline-38">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -238,14 +248,20 @@
 </div>
     <div class="post-content">
       <p>
-计算机现在做的事情越来越多，似乎比人都要全能了。
+世界是由&#39;机器&#39;组成的，一开始是原子，然后出现了一些简单生物，然后到复杂的哺乳动物，这些东西都可以说成是一种&#39;机器&#39;。人类出来后，不在依靠大自然生产机器，自己也能生产一些。
+人类造的可以 <strong>计算数字</strong> 的机器一开始是 <strong>算盘</strong> ，后来复杂了点，什么巴贝奇用齿轮造了个复杂的 <strong>计算机*。再后来用半导体造了，
+造了现在复杂的 *电子型计算机</strong> 。计算机一开始当数字计算器用的，现在不再单纯用来计算了，还用来沟通交流传播信息 （网络）。
+</p>
+<p>
+人们把许多工作搬到了计算机上，比如写作，画画这些创作工作，还有娱乐，听歌，看电影。这些工作的执行是以软件形式存在的，那么协调
+这些软件的执行，需要有一个管理软件的软件，叫操作系统。
 </p>
 <p>
  <strong>Gnu/Linux</strong> 以前最为人诟病的估计是它的命令行的操作方式，做某件事都要手工输入命令，而且软件界面都没有的，一点都不直观，这对于刚刚接触那种操作方式的人可能不习惯，觉的难用。
  不过现在也很好了，也是图形的操作，对初学者也能上手了，可以去学学，跟 <strong>windows</strong> 用法一样的了。
 </p>
 <p>
-Gnu/linux 提供的是一个功能丰富的系统以及便利的操作，提供这些功能不容易，全世界的爱好者都在完善它。
+ <strong>Gnu/linux</strong> 提供的是一个功能丰富的系统以及便利的操作，提供这些功能不容易，全世界的爱好者都在完善它。
 </p>
 <blockquote>
 <p>
@@ -289,23 +305,28 @@ Gnu/Linux
 计算机的处理方式是参照人处理事情的方式设计出来的，有一个大脑（磁盘）存储处理方法（程序），遇到事情就用对应的方法（程序）去处理它。
    日常我们处理完就结束了，但计算机的显示器还需给出结果呈现(或其他输出设备)
 </p>
+<blockquote>
+<p>
+大家见过工业用的旋钮开关吗，控制马达啊，测试器啊，那其实也是一种计算机，只是现代的计算机用统一化的键盘代替了那些旋钮开关。
+</p>
+</blockquote>
 <h3 id="headline-3">
 基本概念
 </h3>
 <ul>
 <li>
 <p>
-<strong>文件</strong>: 我们大脑保存资料是用脑细胞，计算机不用脑细胞，它们用磁盘，光盘的形式，以树型的结构保存资料
+<strong>文件</strong>: 软件用到的资料，当然你可以用键盘输入资料，但保存成文件更好，打开便利。
 </p>
 </li>
 <li>
 <p>
-<strong>进程</strong>:  人一次只能做一件事，叫单进程的，但计算机一次能做好几件事，所以计算机不是单线程的 (在做的事情)
+<strong>进程</strong>:  执行的软件
 </p>
 </li>
 <li>
 <p>
-<strong>设备</strong> : 人是骨头和肉组成的，计算机是铁和塑料组成的，但更形象的是叫设备组成的。
+<strong>设备</strong> : 个人电脑组成的必要结构，你也可以用扩展口增加更多设备进行更多的功能。
 </p>
 </li>
 <li>
@@ -319,7 +340,7 @@ Gnu/Linux
 </h3>
 <blockquote>
 <p>
-<strong>Gnu/Linux</strong>  给计算机的资源一个拥有者的概念，每个拥有者拥有自己私有的财产，所以要登录计算机，当然你的计算机要共享的话就不要创建用户了。
+现代计算机一般可以给不同的人用，每个人都有自己独立的资料和软件，这里每个人叫需要有自己的名字和密码来登录计算机。
 </p>
 </blockquote>
 <ul>
@@ -357,19 +378,14 @@ Gnu/Linux
 <p>
 改变文件读写属性 chmod
 </p>
-<blockquote>
-<p>
-你要使用我的功能，必须给我钱，不然就从我的尸体跨过，哈哈。。
-</p>
-</blockquote>
 </li>
 </ul>
 <h3 id="headline-5">
-基本信息
+系统信息
 </h3>
 <blockquote>
 <p>
-你想看看  <strong>Gnu/Linux</strong> 系统里有些什么信息，就用这些命令。
+<strong>Gnu/Linux</strong> 系统的一些信息。
 </p>
 </blockquote>
 <div class="src src-shell">
@@ -386,8 +402,6 @@ Gnu/Linux
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell">  cat /etc/lsb-release <span class="c1"># 查看软件( 系统 )信息</span>
@@ -399,8 +413,6 @@ Gnu/Linux
   lsusb -tv               <span class="c1"># 列出所有 USB 设备</span>
   lsmod                   <span class="c1"># 列出加载的内核模块</span>
   free -m                <span class="c1"># 查看内存使用量和交换区使用量</span>
-  df -h                  <span class="c1"># 查看各分区使用情况</span>
-  du -sh         <span class="c1"># 查看指定目录的大小</span>
   uptime                 <span class="c1"># 查看系统运行时间、用户数、负载</span>
   cat /proc/loadavg      <span class="c1"># 查看系统负载</span></code></pre></td></tr></table>
 </div>
@@ -416,6 +428,10 @@ Gnu/Linux
 
 <p>
 为什么进程有这种区分呢？因为计算机的速度很快，它的同时只是人不停切换的一种假象，因为时间太短所以看起来像同时了(但现在 <strong>CPU 多核</strong> 出现，有些事情是同时处理的)。
+</p>
+
+<p>
+机器在干活方面确实比较牛逼，速度快，还没牢骚。
 </p>
 </blockquote>
 <ul>
@@ -567,20 +583,13 @@ shared memory
 内存管理
 </h3>
 <p>
-我们专注于做某件事的时候，脑子里的东西是与处理事情相关的东西，不会想到其它东
-   西。计算机内存虽然很大了，但现在的软件也是很大，所以提供了按需载入软件一部分
-   和内存分段分页的技术。
+我们打开软件的时候，就是在使用内存，关闭软件，操作系统会帮我们回收内存及软件打开的文件，所以这些不用我们操心。   
 </p>
-<blockquote>
-<p>
-这里 <strong>Linux</strong> 内核给我们摆平了，不用自己动手了。
-</p>
-</blockquote>
 <h3 id="headline-11">
 磁盘和分区
 </h3>
 <p>
-这里有自主性的，但要注意 <strong>/home</strong> 分区要给大点，最好买大点的磁盘自己折腾，不想折腾就多看看教程怎么分配。
+给目录分配磁盘大小，这里有自主性的，但要注意 <strong>/home</strong> 分区要给大点，最好买大点的磁盘自己折腾，不想折腾就多看看教程怎么分配。
 </p>
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
@@ -971,13 +980,28 @@ pdf
 </div>
 </div>
 </div>
-<h2 id="headline-30">
+<h3 id="headline-30">
+服务器与客户机  
+</h3>
+<p>
+就是一直开着不关的软件，要用客户端软件去与它交流。 
+</p>
+<h4 id="headline-31">
+http 服务 (网页浏览服务) 对应的客户端是浏览器 
+</h4>
+<h4 id="headline-32">
+ftp 服务 (文件传送服务)
+</h4>
+<h4 id="headline-33">
+邮件服务
+</h4>
+<h2 id="headline-34">
 发行版
 </h2>
-<h3 id="headline-31">
+<h3 id="headline-35">
 字体
 </h3>
-<h4 id="headline-32">
+<h4 id="headline-36">
 安装字体
 </h4>
 <div class="src src-sh">
@@ -1000,7 +1024,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h4 id="headline-33">
+<h4 id="headline-37">
 显示已安装的字体
 </h4>
 <div class="src src-sh">
@@ -1013,7 +1037,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-34">
+<h3 id="headline-38">
 用户目录配置
 </h3>
 <div class="src src-sh">
@@ -1036,7 +1060,7 @@ sudo fc-cache -fv</code></pre></td></tr></table>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-02-11
+        2020-03-24
         
     </span>
   </p>
