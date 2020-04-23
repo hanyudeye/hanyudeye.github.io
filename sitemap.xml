@@ -24,21 +24,42 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-04-09T04:49:42+08:00</lastmod>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/lifeisshort/</loc>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-04-09T04:49:42+08:00</lastmod>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-04-09T04:49:42+08:00</lastmod>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-04-24T04:52:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -52,13 +73,6 @@
   
   <url>
     <loc>https://aming.xyz/tags/%E6%89%AF%E6%B7%A1/</loc>
-    <lastmod>2020-04-09T04:49:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-04-09T04:49:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
