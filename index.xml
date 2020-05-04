@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Dec 2019 06:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 20:42:42 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>https://aming.xyz/music/</guid>
       <description>你哪是一只麻雀，你是一只雄鹰啊。你应比其他人作出更大的责任 ! 当你不知干什么时，不如跳舞</description>
+    </item>
+    
+    <item>
+      <title>资源</title>
+      <link>https://aming.xyz/source/</link>
+      <pubDate>Mon, 04 May 2020 20:42:42 +0800</pubDate>
+      
+      <guid>https://aming.xyz/source/</guid>
+      <description>搜索： https://google.com 美剧： https://91mjw.com/ 电影： https://www.bttwo.com/ 视频： https://www.youtube.com/ Kindle 电子书： https://www.jiumodiary.com/ https://epubw.com/ https://sobooks.cc/ 问答： https://www.zhihu.com/</description>
     </item>
     
     <item>
@@ -36,6 +45,25 @@
       
       <guid>https://aming.xyz/about/</guid>
       <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 人，要吃饭，底层打工仔，学者（自封的） 当我老了 当我老了，我会把这些文章</description>
+    </item>
+    
+    <item>
+      <title>好朋友</title>
+      <link>https://aming.xyz/post/tuwen1/</link>
+      <pubDate>Mon, 04 May 2020 21:13:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/tuwen1/</guid>
+      <description>&lt;p&gt;晚上不知道干什么，就收集一些图片充充数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>do things that don&#39;t scale 做一些不需扩展的事情</title>
+      <link>https://aming.xyz/post/ds/</link>
+      <pubDate>Fri, 24 Apr 2020 05:27:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ds/</guid>
+      <description>&lt;p&gt;翻译创业的文章，瞎翻译一通。&lt;br&gt;
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>do things that don&#39;t scale 做一些不需扩展的事情 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="翻译创业的文章，瞎翻译一通。
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。
+" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.69.2 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/ds/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="do things that don&#39;t scale 做一些不需扩展的事情" />
+<meta property="og:description" content="翻译创业的文章，瞎翻译一通。
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/ds/" />
+<meta property="article:published_time" content="2020-04-24T05:27:43+08:00" />
+<meta property="article:modified_time" content="2020-04-24T05:27:43+08:00" />
+<meta itemprop="name" content="do things that don&#39;t scale 做一些不需扩展的事情">
+<meta itemprop="description" content="翻译创业的文章，瞎翻译一通。
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。">
+<meta itemprop="datePublished" content="2020-04-24T05:27:43&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-24T05:27:43&#43;08:00" />
+<meta itemprop="wordCount" content="5597">
+
+
+
+<meta itemprop="keywords" content="收集," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="do things that don&#39;t scale 做一些不需扩展的事情"/>
+<meta name="twitter:description" content="翻译创业的文章，瞎翻译一通。
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/music/">
+        <li class="mobile-menu-item">音乐</li>
+      </a><a href="/source/">
+        <li class="mobile-menu-item">资源</li>
+      </a><a href="/notes/">
+        <li class="mobile-menu-item">日记</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/music/">音乐</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/source/">资源</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notes/">日记</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">do things that don&#39;t scale 做一些不需扩展的事情</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-04-24 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>翻译创业的文章，瞎翻译一通。<br>
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。</p>
+<p>One of the most common types of advice we give at Y Combinator is to do things that don&rsquo;t scale. A lot of would-be founders believe that startups either take off or don&rsquo;t. You build something, make it available, and if you&rsquo;ve made a better mousetrap, people beat a path to your door as promised. Or they don&rsquo;t, in which case the market must not exist. [1]</p>
+<p>我们在 Y Combinator 给出的最常见的建议之一就是做一些无法扩展的事情。 许多想成为创业者的人认为，创业要么成功，要么失败。 你创造一些有用的东西，比如你造了一个更好的捕鼠器，人们就会像你设想的那样去买你家的。 如果他们没有这样做，此时，你会觉得这东西没有用。 [1]</p>
+<p>Actually startups take off because the founders make them take off. There may be a handful that just grew by themselves, but usually it takes some sort of push to get them going. A good metaphor would be the cranks that car engines had before they got electric starters. Once the engine was going, it would keep going, but there was a separate and laborious process to get it going.</p>
+<p>实际上，创业公司之所以能够起飞，是因为创业者让它们起飞。 也许有一小部分公司是自己成长起来的，但通常需要某种推动力才能让他们继续前进。 一个很好的比喻就是汽车制动装置。 一旦发动机运转起来，它会不停转动，但是要让它往前跑，还需要踩离合和换挡过程。</p>
+<p>Recruit
+寻找客户</p>
+<p>The most common unscalable thing founders have to do at the start is to recruit users manually. Nearly all startups have to. You can&rsquo;t wait for users to come to you. You have to go out and get them.</p>
+<p>最常见的不可扩展的事情是创始人必须在创业开始时亲自招募一些客户。 几乎所有的创业公司都必须这样做。你不能等着客户来找你。你必须自己去找。</p>
+<p>Stripe is one of the most successful startups we&rsquo;ve funded, and the problem they solved was an urgent one. If anyone could have sat back and waited for users, it was Stripe. But in fact they&rsquo;re famous within YC for aggressive early user acquisition.</p>
+<p><strong>Stripe</strong> 是我们投资过的最成功的创业公司之一，他们解决一些急迫的问题。 如果有人可以坐下来等待客户，那他就是 Stripe。 但事实上，他们在 YC 内部以积极的获取早期客户而出名。</p>
+<blockquote>
+<p>Stripe 是一家网络支付公司，由科里森兄弟创立</p>
+</blockquote>
+<p>Startups building things for other startups have a big pool of potential users in the other companies we&rsquo;ve funded, and none took better advantage of it than Stripe. At YC we use the term &ldquo;Collison installation&rdquo; for the technique they invented. More diffident founders ask &ldquo;Will you try our beta?&rdquo; and if the answer is yes, they say &ldquo;Great, we&rsquo;ll send you a link.&rdquo; But the Collison brothers weren&rsquo;t going to wait. When anyone agreed to try Stripe they&rsquo;d say &ldquo;Right then, give me your laptop&rdquo; and set them up on the spot.</p>
+<p>在我们投资的其他公司中，为其他创业公司打造产品的创业公司拥有大量的潜在用户，没有哪家公司能比 Stripe 更好地利用这一优势。 在 YC，我们用“科里森装置”(Collison installation)一词来形容他们发明的技术。 缺乏自信的创始人会问: “你愿意试试我们的演示版吗? ” 如果答案是肯定的，他们会说”太好了，我们会给你发个链接” 但是克里森兄弟不打算等。 当任何人同意尝试Stripe 时，他们会说: “很好，然后，给我你的笔记本电脑” ，并在现场给他们设置。</p>
+<p>There are two reasons founders resist going out and recruiting users individually. One is a combination of shyness and laziness. They&rsquo;d rather sit at home writing code than go out and talk to a bunch of strangers and probably be rejected by most of them. But for a startup to succeed, at least one founder (usually the CEO) will have to spend a lot of time on sales and marketing. [2]</p>
+<p>创始人不愿走出去单独招募用户有两个原因。 一种是害羞和懒惰的结合。 他们宁愿坐在家里写代码，也不愿出去和一群陌生人交谈，虽然大多数情况下会被他们所拒绝。 但是一个创业公司要想成功，至少有一个创始人(通常是 CEO)必须花费大量的时间在销售和市场营销上。 [2]</p>
+<p>The other reason founders ignore this path is that the absolute numbers seem so small at first. This can&rsquo;t be how the big, famous startups got started, they think. The mistake they make is to underestimate the power of compound growth. We encourage every startup to measure their progress by weekly growth rate. If you have 100 users, you need to get 10 more next week to grow 10% a week. And while 110 may not seem much better than 100, if you keep growing at 10% a week you&rsquo;ll be surprised how big the numbers get. After a year you&rsquo;ll have 14,000 users, and after 2 years you&rsquo;ll have 2 million.</p>
+<p>创始人们忽视这方法的另一个原因是，在企业初创期用户的绝对值很小。 他们认为，这不可能是那些大的，著名的创业公司起步的方式。 他们所犯的错误是低估了复合增长的力量。 我们鼓励每个创业公司用每周增长率来衡量他们的进步。 如果你有100个用户，你需要在下周增加10个用户才能每周增长10% 。 虽然110看起来并不比100好多少，但如果你保持每周10% 的增长率，你会惊奇地发现这个数字变得有多大。 一年后你会有14000个用户，两年后你会有200万。</p>
+<p>You&rsquo;ll be doing different things when you&rsquo;re acquiring users a thousand at a time, and growth has to slow down eventually. But if the market exists you can usually start by recruiting users manually and then gradually switch to less manual methods. [3]</p>
+<p>当你一次能够获得一千个用户的时候，你将会做不同的事情，而且必须放缓增长速度。 但是，如果有市场的存在，你通常可以先手动招募用户，然后逐渐转换到较少手动的方法。 [3]</p>
+<p>Airbnb is a classic example of this technique. Marketplaces are so hard to get rolling that you should expect to take heroic measures at first. In Airbnb&rsquo;s case, these consisted of going door to door in New York, recruiting new users and helping existing ones improve their listings. When I remember the Airbnbs during YC, I picture them with rolly bags, because when they showed up for tuesday dinners they&rsquo;d always just flown back from somewhere.</p>
+<p>Airbnb 就是这种技巧的一个典型例子。 市场是如此的难以启动，以至于你应该期待一开始就采取大胆的措施。 在 Airbnb 的案例中，这些措施包括在纽约挨家挨户地招募新用户，帮助现有用户改善他们的信息列表。 当我想起在 YC 的 airbnb 时，我就会想象得到他们会带着带有轮子的旅行包，因为当他们出现在周二的晚餐时，他们总是从某个地方飞过来。</p>
+<p>Fragile
+脆弱的</p>
+<p>Airbnb now seems like an unstoppable juggernaut, but early on it was so fragile that about 30 days of going out and engaging in person with users made the difference between success and failure.</p>
+<p>Airbnb 现在看来像是一个不可阻挡的巨人，但是早期它是如此的脆弱，30 天的出差并和用户亲密接触，才决定了事情成功和失败。</p>
+<p>That initial fragility was not a unique feature of Airbnb. Almost all startups are fragile initially. And that&rsquo;s one of the biggest things inexperienced founders and investors (and reporters and know-it-alls on forums) get wrong about them. They unconsciously judge larval startups by the standards of established ones. They&rsquo;re like someone looking at a newborn baby and concluding &ldquo;there&rsquo;s no way this tiny creature could ever accomplish anything.&rdquo;</p>
+<p>早期脆弱并不是 Airbnb 的特色。 几乎所有的创业公司在一开始都很脆弱。 这是经验不足的创始人和投资者(以及论坛上的记者和万事通)对他们最大的误解之一。他们无知地以已有的标准来判断创业公司。 他们就像某人看着一个刚出生的婴儿，然后得出结论: “这个小生物不可能完成任何事情。”</p>
+<p>It&rsquo;s harmless if reporters and know-it-alls dismiss your startup. They always get things wrong. It&rsquo;s even ok if investors dismiss your startup; they&rsquo;ll change their minds when they see growth. The big danger is that you&rsquo;ll dismiss your startup yourself. I&rsquo;ve seen it happen. I often have to encourage founders who don&rsquo;t see the full potential of what they&rsquo;re building. Even Bill Gates made that mistake. He returned to Harvard for the fall semester after starting Microsoft. He didn&rsquo;t stay long, but he wouldn&rsquo;t have returned at all if he&rsquo;d realized Microsoft was going to be even a fraction of the size it turned out to be. [4]</p>
+<p>如果记者和无所不知的人对你的创业公司不屑一顾，这是无害的。 他们总是把事情搞错。 即使投资者对你的创业不感兴趣也没关系; 当他们看到成长时，他们会改变主意的。 最大的危险是你会自己放弃创业。 我亲眼见过。 我经常不得不鼓励那些没有看到他们正在建设的东西的全部潜力的创始人。 甚至比尔 · 盖茨也犯过这样的错误。 在创办了微软公司之后，他回到了哈佛，准备开始秋季学期的学习。 他没有待太久，但是如果他意识到微软可能会是如此的规模时，他根本就不会回来。 [4]</p>
+<p>The question to ask about an early stage startup is not &ldquo;is this company taking over the world?&rdquo; but &ldquo;how big could this company get if the founders did the right things?&rdquo; And the right things often seem both laborious and inconsequential at the time. Microsoft can&rsquo;t have seemed very impressive when it was just a couple guys in Albuquerque writing Basic interpreters for a market of a few thousand hobbyists (as they were then called), but in retrospect that was the optimal path to dominating microcomputer software. And I know Brian Chesky and Joe Gebbia didn&rsquo;t feel like they were en route to the big time as they were taking &ldquo;professional&rdquo; photos of their first hosts&rsquo; apartments. They were just trying to survive. But in retrospect that too was the optimal path to dominating a big market.</p>
+<p>How do you find users to recruit manually? If you build something to solve your own problems, then you only have to find your peers, which is usually straightforward. Otherwise you&rsquo;ll have to make a more deliberate effort to locate the most promising vein of users. The usual way to do that is to get some initial set of users by doing a comparatively untargeted launch, and then to observe which kind seem most enthusiastic, and seek out more like them. For example, Ben Silbermann noticed that a lot of the earliest Pinterest users were interested in design, so he went to a conference of design bloggers to recruit users, and that worked well. [5]</p>
+<p>怎么找到客户呢？通常可以做一个发布会获取随机客户，然后观察那些最热情的用户，他们就是忠实粉丝。</p>
+<p>Delight
+愉悦</p>
+<p>You should take extraordinary measures not just to acquire users, but also to make them happy. For as long as they could (which turned out to be surprisingly long), Wufoo sent each new user a hand-written thank you note. Your first users should feel that signing up with you was one of the best choices they ever made. And you in turn should be racking your brains to think of new ways to delight them.</p>
+<p>采取一些措施使用户愉悦，比如手写感谢信。</p>
+<p>Why do we have to teach startups this? Why is it counterintuitive for founders? Three reasons, I think.
+为何如此，有三个原因</p>
+<p>One is that a lot of startup founders are trained as engineers, and customer service is not part of the training of engineers. You&rsquo;re supposed to build things that are robust and elegant, not be slavishly attentive to individual users like some kind of salesperson. Ironically, part of the reason engineering is traditionally averse to handholding is that its traditions date from a time when engineers were less powerful — when they were only in charge of their narrow domain of building things, rather than running the whole show. You can be ornery when you&rsquo;re Scotty, but not when you&rsquo;re Kirk.</p>
+<p>1，许多创始人没受到过客户w服务培训。</p>
+<p>Another reason founders don&rsquo;t focus enough on individual customers is that they worry it won&rsquo;t scale. But when founders of larval startups worry about this, I point out that in their current state they have nothing to lose. Maybe if they go out of their way to make existing users super happy, they&rsquo;ll one day have too many to do so much for. That would be a great problem to have. See if you can make it happen. And incidentally, when it does, you&rsquo;ll find that delighting customers scales better than you expected. Partly because you can usually find ways to make anything scale more than you would have predicted, and partly because delighting customers will by then have permeated your culture.</p>
+<p>2，创始人担心没用处。</p>
+<p>I have never once seen a startup lured down a blind alley by trying too hard to make their initial users happy.</p>
+<p>But perhaps the biggest thing preventing founders from realizing how attentive they could be to their users is that they&rsquo;ve never experienced such attention themselves. Their standards for customer service have been set by the companies they&rsquo;ve been customers of, which are mostly big ones. Tim Cook doesn&rsquo;t send you a hand-written note after you buy a laptop. He can&rsquo;t. But you can. That&rsquo;s one advantage of being small: you can provide a level of service no big company can. [6]</p>
+<p>Once you realize that existing conventions are not the upper bound on user experience, it&rsquo;s interesting in a very pleasant way to think about how far you could go to delight your users.</p>
+<p>Experience
+体验</p>
+<p>I was trying to think of a phrase to convey how extreme your attention to users should be, and I realized Steve Jobs had already done it: insanely great. Steve wasn&rsquo;t just using &ldquo;insanely&rdquo; as a synonym for &ldquo;very.&rdquo; He meant it more literally — that one should focus on quality of execution to a degree that in everyday life would be considered pathological.</p>
+<p>史蒂夫 · 乔布斯做出的产品充满良好的体验。</p>
+<p>All the most successful startups we&rsquo;ve funded have, and that probably doesn&rsquo;t surprise would-be founders. What novice founders don&rsquo;t get is what insanely great translates to in a larval startup. When Steve Jobs started using that phrase, Apple was already an established company. He meant the Mac (and its documentation and even packaging — such is the nature of obsession) should be insanely well designed and manufactured. That&rsquo;s not hard for engineers to grasp. It&rsquo;s just a more extreme version of designing a robust and elegant product.</p>
+<p>What founders have a hard time grasping (and Steve himself might have had a hard time grasping) is what insanely great morphs into as you roll the time slider back to the first couple months of a startup&rsquo;s life. It&rsquo;s not the product that should be insanely great, but the experience of being your user. The product is just one component of that. For a big company it&rsquo;s necessarily the dominant one. But you can and should give users an insanely great experience with an early, incomplete, buggy product, if you make up the difference with attentiveness.</p>
+<p>做伟大的产品</p>
+<p>Can, perhaps, but should? Yes. Over-engaging with early users is not just a permissible technique for getting growth rolling. For most successful startups it&rsquo;s a necessary part of the feedback loop that makes the product good. Making a better mousetrap is not an atomic operation. Even if you start the way most successful startups have, by building something you yourself need, the first thing you build is never quite right. And except in domains with big penalties for making mistakes, it&rsquo;s often better not to aim for perfection initially. In software, especially, it usually works best to get something in front of users as soon as it has a quantum of utility, and then see what they do with it. Perfectionism is often an excuse for procrastination, and in any case your initial model of users is always inaccurate, even if you&rsquo;re one of them. [7]</p>
+<p>The feedback you get from engaging directly with your earliest users will be the best you ever get. When you&rsquo;re so big you have to resort to focus groups, you&rsquo;ll wish you could go over to your users&rsquo; homes and offices and watch them use your stuff like you did when there were only a handful of them.</p>
+<p>Fire
+热情</p>
+<p>Sometimes the right unscalable trick is to focus on a deliberately narrow market. It&rsquo;s like keeping a fire contained at first to get it really hot before adding more logs.</p>
+<p>That&rsquo;s what Facebook did. At first it was just for Harvard students. In that form it only had a potential market of a few thousand people, but because they felt it was really for them, a critical mass of them signed up. After Facebook stopped being for Harvard students, it remained for students at specific colleges for quite a while. When I interviewed Mark Zuckerberg at Startup School, he said that while it was a lot of work creating course lists for each school, doing that made students feel the site was their natural home.</p>
+<p>Any startup that could be described as a marketplace usually has to start in a subset of the market, but this can work for other startups as well. It&rsquo;s always worth asking if there&rsquo;s a subset of the market in which you can get a critical mass of users quickly. [8]</p>
+<p>Most startups that use the contained fire strategy do it unconsciously. They build something for themselves and their friends, who happen to be the early adopters, and only realize later that they could offer it to a broader market. The strategy works just as well if you do it unconsciously. The biggest danger of not being consciously aware of this pattern is for those who naively discard part of it. E.g. if you don&rsquo;t build something for yourself and your friends, or even if you do, but you come from the corporate world and your friends are not early adopters, you&rsquo;ll no longer have a perfect initial market handed to you on a platter.</p>
+<p>Among companies, the best early adopters are usually other startups. They&rsquo;re more open to new things both by nature and because, having just been started, they haven&rsquo;t made all their choices yet. Plus when they succeed they grow fast, and you with them. It was one of many unforeseen advantages of the YC model (and specifically of making YC big) that B2B startups now have an instant market of hundreds of other startups ready at hand.</p>
+<p>客户友好</p>
+<p>Meraki</p>
+<p>For hardware startups there&rsquo;s a variant of doing things that don&rsquo;t scale that we call &ldquo;pulling a Meraki.&rdquo; Although we didn&rsquo;t fund Meraki, the founders were Robert Morris&rsquo;s grad students, so we know their history. They got started by doing something that really doesn&rsquo;t scale: assembling their routers themselves.</p>
+<p>Hardware startups face an obstacle that software startups don&rsquo;t. The minimum order for a factory production run is usually several hundred thousand dollars. Which can put you in a catch-22: without a product you can&rsquo;t generate the growth you need to raise the money to manufacture your product. Back when hardware startups had to rely on investors for money, you had to be pretty convincing to overcome this. The arrival of crowdfunding (or more precisely, preorders) has helped a lot. But even so I&rsquo;d advise startups to pull a Meraki initially if they can. That&rsquo;s what Pebble did. The Pebbles assembled the first several hundred watches themselves. If they hadn&rsquo;t gone through that phase, they probably wouldn&rsquo;t have sold $10 million worth of watches when they did go on Kickstarter.</p>
+<p>Like paying excessive attention to early customers, fabricating things yourself turns out to be valuable for hardware startups. You can tweak the design faster when you&rsquo;re the factory, and you learn things you&rsquo;d never have known otherwise. Eric Migicovsky of Pebble said one of things he learned was &ldquo;how valuable it was to source good screws.&rdquo; Who knew?</p>
+<p>Consult
+咨询</p>
+<p>Sometimes we advise founders of B2B startups to take over-engagement to an extreme, and to pick a single user and act as if they were consultants building something just for that one user. The initial user serves as the form for your mold; keep tweaking till you fit their needs perfectly, and you&rsquo;ll usually find you&rsquo;ve made something other users want too. Even if there aren&rsquo;t many of them, there are probably adjacent territories that have more. As long as you can find just one user who really needs something and can act on that need, you&rsquo;ve got a toehold in making something people want, and that&rsquo;s as much as any startup needs initially. [9]</p>
+<p>Consulting is the canonical example of work that doesn&rsquo;t scale. But (like other ways of bestowing one&rsquo;s favors liberally) it&rsquo;s safe to do it so long as you&rsquo;re not being paid to. That&rsquo;s where companies cross the line. So long as you&rsquo;re a product company that&rsquo;s merely being extra attentive to a customer, they&rsquo;re very grateful even if you don&rsquo;t solve all their problems. But when they start paying you specifically for that attentiveness — when they start paying you by the hour — they expect you to do everything.</p>
+<p>只是对顾客特别关心，即使你不能解决他们所有的问题，他们也会非常感激。</p>
+<p>Another consulting-like technique for recruiting initially lukewarm users is to use your software yourselves on their behalf. We did that at Viaweb. When we approached merchants asking if they wanted to use our software to make online stores, some said no, but they&rsquo;d let us make one for them. Since we would do anything to get users, we did. We felt pretty lame at the time. Instead of organizing big strategic e-commerce partnerships, we were trying to sell luggage and pens and men&rsquo;s shirts. But in retrospect it was exactly the right thing to do, because it taught us how it would feel to merchants to use our software. Sometimes the feedback loop was near instantaneous: in the middle of building some merchant&rsquo;s site I&rsquo;d find I needed a feature we didn&rsquo;t have, so I&rsquo;d spend a couple hours implementing it and then resume building the site.</p>
+<p>Manual
+人工处理</p>
+<p>There&rsquo;s a more extreme variant where you don&rsquo;t just use your software, but are your software. When you only have a small number of users, you can sometimes get away with doing by hand things that you plan to automate later. This lets you launch faster, and when you do finally automate yourself out of the loop, you&rsquo;ll know exactly what to build because you&rsquo;ll have muscle memory from doing it yourself.</p>
+<p>When manual components look to the user like software, this technique starts to have aspects of a practical joke. For example, the way Stripe delivered &ldquo;instant&rdquo; merchant accounts to its first users was that the founders manually signed them up for traditional merchant accounts behind the scenes.</p>
+<p>Some startups could be entirely manual at first. If you can find someone with a problem that needs solving and you can solve it manually, go ahead and do that for as long as you can, and then gradually automate the bottlenecks. It would be a little frightening to be solving users&rsquo; problems in a way that wasn&rsquo;t yet automatic, but less frightening than the far more common case of having something automatic that doesn&rsquo;t yet solve anyone&rsquo;s problems.</p>
+<p>先人工处理，再自动化</p>
+<p>Big
+大规模</p>
+<p>I should mention one sort of initial tactic that usually doesn&rsquo;t work: the Big Launch. I occasionally meet founders who seem to believe startups are projectiles rather than powered aircraft, and that they&rsquo;ll make it big if and only if they&rsquo;re launched with sufficient initial velocity. They want to launch simultaneously in 8 different publications, with embargoes. And on a tuesday, of course, since they read somewhere that&rsquo;s the optimum day to launch something.</p>
+<p>It&rsquo;s easy to see how little launches matter. Think of some successful startups. How many of their launches do you remember? All you need from a launch is some initial core of users. How well you&rsquo;re doing a few months later will depend more on how happy you made those users than how many there were of them. [10]</p>
+<p>So why do founders think launches matter? A combination of solipsism and laziness. They think what they&rsquo;re building is so great that everyone who hears about it will immediately sign up. Plus it would be so much less work if you could get users merely by broadcasting your existence, rather than recruiting them one at a time. But even if what you&rsquo;re building really is great, getting users will always be a gradual process — partly because great things are usually also novel, but mainly because users have other things to think about.</p>
+<p>Partnerships too usually don&rsquo;t work. They don&rsquo;t work for startups in general, but they especially don&rsquo;t work as a way to get growth started. It&rsquo;s a common mistake among inexperienced founders to believe that a partnership with a big company will be their big break. Six months later they&rsquo;re all saying the same thing: that was way more work than we expected, and we ended up getting practically nothing out of it. [11]</p>
+<p>It&rsquo;s not enough just to do something extraordinary initially. You have to make an extraordinary effort initially. Any strategy that omits the effort — whether it&rsquo;s expecting a big launch to get you users, or a big partner — is ipso facto suspect.</p>
+<p>Vector</p>
+<p>The need to do something unscalably laborious to get started is so nearly universal that it might be a good idea to stop thinking of startup ideas as scalars. Instead we should try thinking of them as pairs of what you&rsquo;re going to build, plus the unscalable thing(s) you&rsquo;re going to do initially to get the company going.</p>
+<p>It could be interesting to start viewing startup ideas this way, because now that there are two components you can try to be imaginative about the second as well as the first. But in most cases the second component will be what it usually is — recruit users manually and give them an overwhelmingly good experience — and the main benefit of treating startups as vectors will be to remind founders they need to work hard in two dimensions. [12]</p>
+<p>In the best case, both components of the vector contribute to your company&rsquo;s DNA: the unscalable things you have to do to get started are not merely a necessary evil, but change the company permanently for the better. If you have to be aggressive about user acquisition when you&rsquo;re small, you&rsquo;ll probably still be aggressive when you&rsquo;re big. If you have to manufacture your own hardware, or use your software on users&rsquo;s behalf, you&rsquo;ll learn things you couldn&rsquo;t have learned otherwise. And most importantly, if you have to work hard to delight users when you only have a handful of them, you&rsquo;ll keep doing it when you have a lot.</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">阿明</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-04-24
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E6%94%B6%E9%9B%86/">收集</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/tuwen1/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">好朋友</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/lifeisshort/">
+            <span class="next-text nav-default">Life is short 生命短暂</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
