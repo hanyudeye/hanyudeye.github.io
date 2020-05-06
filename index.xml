@@ -12,13 +12,37 @@
     
     
     <item>
-      <title>【置顶】人与哲学</title>
+      <title>【置顶】人生</title>
       <link>https://aming.xyz/post/zhexue/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       
       <guid>https://aming.xyz/post/zhexue/</guid>
       <description>&lt;p&gt;
-哲学，有智慧的学问，理解起来有道理观念。
+关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【二楼】数学简介</title>
+      <link>https://aming.xyz/post/math/</link>
+      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/math/</guid>
+      <description>&lt;p&gt;数学是处理东西的形，量(数)，变化轨迹的一门技术&lt;/p&gt;
+&lt;p&gt;我们说东西是由沙子构成的，数学就是要算出构成一件东西要的沙子的数量的技术。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;随着深入，定义可以增加复杂度，先这样假设 (主要知识有限)&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>【三楼】计算机简介</title>
+      <link>https://aming.xyz/post/linux/</link>
+      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/linux/</guid>
+      <description>&lt;p&gt;
+计算机是可以计算的东西，大家平常用的台式机或笔记本是微型计算机，因为面向的是我们普通用户，所以机器设计的很好看。现代的计算机不光用来计算，还用来听歌和玩游戏，所以戏称 &lt;strong&gt;电脑&lt;/strong&gt; 。
 &lt;/p&gt;</description>
     </item>
     
@@ -475,15 +499,6 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
     </item>
     
     <item>
-      <title>数学简介</title>
-      <link>https://aming.xyz/post/math/</link>
-      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/math/</guid>
-      <description>&lt;p&gt;数学是处理东西的形，量(数)，变化轨迹的一门技术&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>文字工作者的办公选择</title>
       <link>https://aming.xyz/post/official/</link>
       <pubDate>Mon, 16 Dec 2019 07:11:28 +0800</pubDate>
@@ -603,21 +618,6 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
       <guid>https://aming.xyz/post/python/</guid>
       <description>&lt;p&gt;
 一门抽象程度高的语言，语言技术是给那些喜欢折腾计算机的或者计算机软件开发人员用的，用来编写特定功能的机器。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gnu/Linux 简介</title>
-      <link>https://aming.xyz/post/linux/</link>
-      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/linux/</guid>
-      <description>&lt;p&gt;
-&amp;#39;Gnu/Linux&amp;#39; 是一套计算机的软件系统，就像手机系统一样，都提供了操作机器的一种方式。
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Gnu/Linux&lt;/strong&gt; 以前最为人诟病的估计是它的命令行的操作方式，而且软件界面都没有的，一点都不直观，这对于用惯了 &lt;strong&gt;windows&lt;/strong&gt; 系统的人来说，可能不习惯。
- 不过现在也很好了，也能图形的操作，跟 &lt;strong&gt;windows&lt;/strong&gt; 用法一样的了。
 &lt;/p&gt;</description>
     </item>
     

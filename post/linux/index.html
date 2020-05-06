@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Gnu/Linux 简介 - 阿明 - 收集生活的感悟</title>
+  <title>【三楼】计算机简介 - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -39,22 +39,22 @@
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="Gnu/Linux 简介" />
+<meta property="og:title" content="【三楼】计算机简介" />
 <meta property="og:description" content="linux 系统简介" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/linux/" />
 <meta property="article:published_time" content="2019-11-29T21:49:26+08:00" />
 <meta property="article:modified_time" content="2020-03-24T06:15:52+08:00" />
-<meta itemprop="name" content="Gnu/Linux 简介">
+<meta itemprop="name" content="【三楼】计算机简介">
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
-<meta itemprop="wordCount" content="2250">
+<meta itemprop="wordCount" content="2109">
 
 
 
 <meta itemprop="keywords" content="linux,os," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Gnu/Linux 简介"/>
+<meta name="twitter:title" content="【三楼】计算机简介"/>
 <meta name="twitter:description" content="linux 系统简介"/>
 
 <!--[if lte IE 9]>
@@ -134,7 +134,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Gnu/Linux 简介</h1>
+      <h1 class="post-title">【三楼】计算机简介</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2019-11-29 </span>
@@ -150,10 +150,10 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">Gnu/Linux</a>
-<ul>
-<li><a href="#headline-2">机器组成 (计算机组成原理)  </a>
+<li><a href="#headline-1">机器结构</a>
 </li>
+<li><a href="#headline-2">Gnu/Linux</a>
+<ul>
 <li><a href="#headline-3">基本概念</a>
 </li>
 <li><a href="#headline-4">用户</a>
@@ -252,76 +252,37 @@
 </div>
     <div class="post-content">
       <p>
-&#39;Gnu/Linux&#39; 是一套计算机的软件系统，就像手机系统一样，都提供了操作机器的一种方式。
-</p>
-<p>
-<strong>Gnu/Linux</strong> 以前最为人诟病的估计是它的命令行的操作方式，而且软件界面都没有的，一点都不直观，这对于用惯了 <strong>windows</strong> 系统的人来说，可能不习惯。
- 不过现在也很好了，也能图形的操作，跟 <strong>windows</strong> 用法一样的了。
+计算机是可以计算的东西，大家平常用的台式机或笔记本是微型计算机，因为面向的是我们普通用户，所以机器设计的很好看。现代的计算机不光用来计算，还用来听歌和玩游戏，所以戏称 <strong>电脑</strong> 。
 </p>
 <h2 id="headline-1">
-Gnu/Linux
+机器结构
 </h2>
-<h3 id="headline-2">
-机器组成 (计算机组成原理)  
-</h3>
-<ul>
-<li>
 <p>
-执行指令的 <strong>CPU</strong>
-</p>
-</li>
-<li>
-<p>
-存放指令的 <strong>内存</strong>
-</p>
-</li>
-<li>
-<p>
-对外展示的 <strong>显示器</strong>  
-</p>
-</li>
-<li>
-<p>
-对内接收的 *键鼠*  
-</p>
-</li>
-<li>
-<p>
-保存文件的 <strong>硬盘</strong> 
-</p>
-</li>
-</ul>
-<p>
-计算机的处理方式是参照人处理事情的方式设计出来的，有一个大脑（磁盘）存储处理方法（程序），遇到事情就用对应的方法（程序）去处理它。
-   日常我们处理完就结束了，但计算机的显示器还需给出结果呈现(或其他输出设备)
+人类造的计算机器是指令形式的，这样如果想改变机器的功能只要替换下指令就好了，就不用重新造新的机器了。所以机器的结构一般是由解释指令的部件(CPU 处理器)，存放指令的部件（存储器），显示结果的部件（显示器）组成，对于打字机，还要有输入部件（键盘）。
 </p>
 <blockquote>
 <p>
-大家见过工业用的旋钮开关吗，控制马达啊，测试器啊，那其实也是一种计算机，只是现代的计算机用统一化的键盘代替了那些旋钮开关。
+模型：储存程序，程序控制
 </p>
 </blockquote>
+<h2 id="headline-2">
+Gnu/Linux
+</h2>
+<p>
+<strong>gnu/linux</strong> 是提供交互的机器指令，选择功能可以直接用键盘交互。现在图形化做的也不错。
+</p>
 <h3 id="headline-3">
 基本概念
 </h3>
 <ul>
 <li>
 <p>
-<strong>文件</strong>: 软件用到的资料，当然你可以用键盘输入资料，但保存成文件更好，打开便利。
+<strong>文件</strong>: 存储器里面的东西，指令，数据，设备都可以用文件表示。
 </p>
 </li>
 <li>
 <p>
-<strong>进程</strong>:  执行的软件
-</p>
-</li>
-<li>
-<p>
-<strong>设备</strong> : 个人电脑组成的必要结构，你也可以用扩展口增加更多设备进行更多的功能。
-</p>
-</li>
-<li>
-<p>
-<strong>基本输入输出</strong> : 基本输入就是 <strong>键盘</strong> 设备, 基本输出是 <strong>显示屏</strong> 设备 。
+<strong>进程</strong>:  多任务机器可以有进程的概念
 </p>
 </li>
 </ul>
@@ -1049,13 +1010,13 @@ sudo fc-cache -fv</code></pre></td></tr></table>
           <a href="/tags/os/">os</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/python/">
+        <a class="prev" href="/post/math/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Python 简介</span>
+            <span class="prev-text nav-default">【二楼】数学简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/psychologicalobstacle/">
-            <span class="next-text nav-default">心理障碍</span>
+        <a class="next" href="/post/oneword/">
+            <span class="next-text nav-default">陌生人，你好！能送我你心中觉得最好的一句话吗？</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
