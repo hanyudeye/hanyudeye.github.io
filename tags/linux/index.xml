@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>【三楼】计算机简介</title>
+      <title>【三楼】Linux 命令简介</title>
       <link>https://aming.xyz/post/linux/</link>
       <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
       
       <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
-计算机是可以计算的东西，大家平常用的台式机或笔记本是微型计算机，因为面向的是我们普通用户，所以机器设计的很好看。现代的计算机不光用来计算，还用来听歌和玩游戏，所以戏称 &lt;strong&gt;电脑&lt;/strong&gt; 。
+记录一下用命令操控计算机的用法
 &lt;/p&gt;</description>
     </item>
     

@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.69.2 with theme even" />
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/emacs/" />
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="emacs 编辑器">
 <meta itemprop="datePublished" content="2019-06-04T22:41:32&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-05T18:24:57&#43;08:00" />
-<meta itemprop="wordCount" content="1103">
+<meta itemprop="wordCount" content="930">
 
 
 
@@ -214,8 +214,7 @@
 </div>
     <div class="post-content">
       <p>
-写字的，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，全部学
-完很难，但可以学一部分，以后要用到复杂功能再学。
+文本编辑器，扩展多。
 </p>
 <h3 id="headline-1">
 抽象概念 
@@ -223,32 +222,17 @@
 <ul>
 <li>
 <p>
-<strong>buffer</strong> :  emacs 可以打开多个文件，每个文件存在一个buffer里面，buffer 有一个buffername 属性，一般就是文件名
+<strong>buffer</strong> :  emacs 可以打开多个文件，每个文件存在一个 buffer 里面
 </p>
 </li>
 <li>
 <p>
-<strong>window</strong>: 你看到的文件，就是在显示器里显示的emacs界面。
+<strong>window</strong>: 你可以打开多个窗口显示文件的不同部分
 </p>
 </li>
 <li>
 <p>
-<strong>Point</strong>  : 小光标，一般你要把光标移到要修改文本的位置，再修改文本。
-</p>
-</li>
-<li>
-<p>
-<strong>echo area</strong> : <strong>Messages</strong> buffer 的一小段窗口，命令输入区，也用来显示简短消息。  
-</p>
-</li>
-<li>
-<p>
-<strong>mode line</strong> : 显示写字板的 <strong>状态</strong>
-</p>
-</li>
-<li>
-<p>
-<strong>menu bar</strong>: 菜单栏，一般把它关掉。
+<strong>Point</strong>  : 文件定位点
 </p>
 </li>
 <li>

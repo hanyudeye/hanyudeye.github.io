@@ -6,13 +6,22 @@
     <description>Recent content in 生活 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 May 2020 05:28:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 20:56:15 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>【置顶】人生</title>
+      <title>【置顶】道</title>
+      <link>https://aming.xyz/post/dao/</link>
+      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/dao/</guid>
+      <description>&lt;p&gt;为什么。。。？ 不知道！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【置顶】人生意义</title>
       <link>https://aming.xyz/post/zhexue/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       

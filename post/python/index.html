@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.69.2 with theme even" />
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/python/" />
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Python 语言学习笔记">
 <meta itemprop="datePublished" content="2019-11-29T21:57:09&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-29T21:57:09&#43;08:00" />
-<meta itemprop="wordCount" content="2071">
+<meta itemprop="wordCount" content="1551">
 
 
 
@@ -150,69 +150,61 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">安装</a>
-</li>
-<li><a href="#headline-2">编码问题</a>
-</li>
-<li><a href="#headline-3">计算机可以处理的东西 ( 数据类型 )</a>
+<li><a href="#headline-1">东西结构 </a>
 <ul>
-<li><a href="#headline-4">列表类型 (list)</a>
+<li><a href="#headline-2">类型转换</a>
 </li>
-<li><a href="#headline-5">元组 (tuple)  </a>
-</li>
-<li><a href="#headline-6">字典 (dictionary) </a>
-</li>
-<li><a href="#headline-7">集合 </a>
-</li>
-<li><a href="#headline-8">空值 None</a>
-</li>
-<li><a href="#headline-9">类型转换</a>
-</li>
-<li><a href="#headline-10">自定义类型  </a>
+<li><a href="#headline-3">自定义类型  </a>
 <ul>
-<li><a href="#headline-11">定义类 </a>
+<li><a href="#headline-4">定义类 </a>
 </li>
-<li><a href="#headline-12">专有方法</a>
+<li><a href="#headline-5">专有方法</a>
 </li>
-<li><a href="#headline-13">类的继承</a>
+<li><a href="#headline-6">类的继承</a>
 </li>
-<li><a href="#headline-14">类的私有属性与私有方法</a>
+<li><a href="#headline-7">类的私有属性与私有方法</a>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#headline-15">定义处理事情的方式 (函数)</a>
+<li><a href="#headline-8">东西功能</a>
 <ul>
-<li><a href="#headline-16">定义函数</a>
+<li><a href="#headline-9">定义函数</a>
 </li>
-<li><a href="#headline-17">不定长参数函数</a>
+<li><a href="#headline-10">不定长参数函数</a>
 </li>
-<li><a href="#headline-18">关键字参数 ( 给参数命名)</a>
+<li><a href="#headline-11">关键字参数 ( 给参数命名)</a>
 </li>
-<li><a href="#headline-19">匿名函数 lambda (不要重复使用的函数，就不给名字了)</a>
+<li><a href="#headline-12">匿名函数 lambda (不要重复使用的函数，就不给名字了)</a>
 </li>
-<li><a href="#headline-20">入口函数</a>
+<li><a href="#headline-13">入口函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-21">控制处理流程</a>
+<li><a href="#headline-14">控制流程</a>
 </li>
-<li><a href="#headline-22">模块</a>
+<li><a href="#headline-15">模块</a>
 <ul>
-<li><a href="#headline-23">使用模块 </a>
+<li><a href="#headline-16">使用模块 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-24">包</a>
+<li><a href="#headline-17">包</a>
 </li>
-<li><a href="#headline-25">测试</a>
+<li><a href="#headline-18">测试</a>
 </li>
-<li><a href="#headline-26">帮助</a>
+<li><a href="#headline-19">帮助</a>
 </li>
-<li><a href="#headline-27">环境管理</a>
+<li><a href="#headline-20">环境管理</a>
 <ul>
-<li><a href="#headline-28">pipenv </a>
+<li><a href="#headline-21">pipenv </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-22">faq    </a>
+<ul>
+<li><a href="#headline-23">中文编码</a>
 </li>
 </ul>
 </li>
@@ -222,200 +214,39 @@
 </div>
     <div class="post-content">
       <p>
-一门抽象程度高的语言，语言技术是给那些喜欢折腾计算机的或者计算机软件开发人员用的，用来编写特定功能的机器。
+指令 <strong>沙子</strong>
 </p>
 <h3 id="headline-1">
-安装
+东西结构 
 </h3>
-<p>
-折腾环境的安装就不说了。
-</p>
-<h3 id="headline-2">
-编码问题
-</h3>
-<p>
-<strong>python2</strong> 默认是认不得中文等世界语的，只认得英文， <strong>python3</strong> 改掉了，这点注意看下版本。
-</p>
-<div class="src src-py">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-py" data-lang="py">  <span class="c1"># 在python2 中识别中文需要加上下面一句说明。</span>
-  <span class="c1">#-*-coding:utf-8-*-</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-3">
-计算机可以处理的东西 ( 数据类型 )
-</h3>
-<p>
-每个东西有一种类型的属性.
-</p>
-<h4 id="headline-4">
-列表类型 (list)
-</h4>
-<p>
-    列表表示一串东西，一般一个包含子项目的东西，用列表表示比较好。
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="p">[</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.2</span> <span class="p">]</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 列表里的东西可以修改，增减。 </span>
-  <span class="c1"># 增加</span>
-    <span class="n">myFriends</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&#34;老九&#34;</span><span class="p">]</span>
-    <span class="c1"># 是否含有 </span>
-    <span class="s2">&#34;老九&#34;</span> <span class="ow">in</span> <span class="n">myFriends</span>
-    <span class="c1"># 删除</span>
-    <span class="k">del</span> <span class="n">myFriends</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-    一些方法 
-</p>
-<table>
-<tbody>
-<tr>
-<td>len(list)</td>
-<td>列表元素个数</td>
-</tr>
-<tr>
-<td>max(list)</td>
-<td>返回列表元素最大值</td>
-</tr>
-<tr>
-<td>min(list)</td>
-<td>返回列表元素最小值</td>
-</tr>
-<tr>
-<td>list(seq)</td>
-<td>将元组转换为列表</td>
-</tr>
-<tr>
-<td>list.append(obj)</td>
-<td>在列表末尾添加新的对象</td>
-</tr>
-<tr>
-<td>list.count(obj)</td>
-<td>统计某个元素在列表中出现的次数</td>
-</tr>
-<tr>
-<td>list.extend(seq)</td>
-<td>在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）</td>
-</tr>
-<tr>
-<td>list.index(obj)</td>
-<td>从列表中找出某个值第一个匹配项的索引位置</td>
-</tr>
-<tr>
-<td>list.insert(index, obj)</td>
-<td>将对象插入列表</td>
-</tr>
-<tr>
-<td>list.pop(obj=list[-1])</td>
-<td>移除列表中的一个元素（默认最后一个元素），并且返回该元素的值</td>
-</tr>
-<tr>
-<td>list.reverse()</td>
-<td>反向列表中元素</td>
-</tr>
-<tr>
-<td>list.sort([func])</td>
-<td>对原列表进行排序</td>
-</tr>
-</tbody>
-</table>
-<h4 id="headline-5">
-元组 (tuple)  
-</h4>
-<p>
-    子项目不能修改的列表
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="p">(</span> <span class="s1">&#39;runoob&#39;</span><span class="p">,</span> <span class="mi">786</span> <span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span> <span class="mf">70.2</span> <span class="p">)</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
 <ul>
 <li>
 <p>
-创建元组 x=[ (person.name,person.age) for person in people ]
+列表(list)
 </p>
 </li>
 <li>
 <p>
-有条件地创建元组    x=[ (person.name,person.age) for person in people if person.age&lt;34]
+元组 (tuple)  
 </p>
 </li>
 <li>
 <p>
-表达式化数组 xx=[(person.age**2 if person.age&lt;34 else person.age) for person in people]
+字典 (dictionary)
+</p>
+</li>
+<li>
+<p>
+集合
+</p>
+</li>
+<li>
+<p>
+空值 None
 </p>
 </li>
 </ul>
-<h4 id="headline-6">
-字典 (dictionary) 
-</h4>
-<p>
-    子项目可以另外命名的列表
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;john&#39;</span><span class="p">,</span><span class="s1">&#39;code&#39;</span><span class="p">:</span><span class="mi">6734</span><span class="p">,</span> <span class="s1">&#39;dept&#39;</span><span class="p">:</span> <span class="s1">&#39;sales&#39;</span><span class="p">}</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h4 id="headline-7">
-集合 
-</h4>
-<p>
-无序不重复的列表
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h4 id="headline-8">
-空值 None
-</h4>
-<h4 id="headline-9">
+<h4 id="headline-2">
 类型转换
 </h4>
 <table>
@@ -474,13 +305,10 @@
 </tr>
 </tbody>
 </table>
-<h4 id="headline-10">
+<h4 id="headline-3">
 自定义类型  
 </h4>
-<p>
-系统提供的东西不满足你要处理的东西的复杂性，就可以自定义
-</p>
-<h5 id="headline-11">
+<h5 id="headline-4">
 定义类 
 </h5>
 <div class="src src-python">
@@ -542,7 +370,7 @@
 </div>
 </div>
 </div>
-<h5 id="headline-12">
+<h5 id="headline-5">
 专有方法
 </h5>
 <table>
@@ -625,7 +453,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="headline-13">
+<h5 id="headline-6">
 类的继承
 </h5>
 <p>
@@ -647,7 +475,7 @@
 </div>
 </div>
 </div>
-<h5 id="headline-14">
+<h5 id="headline-7">
 类的私有属性与私有方法
 </h5>
 <ul>
@@ -662,13 +490,10 @@
 </p>
 </li>
 </ul>
-<h3 id="headline-15">
-定义处理事情的方式 (函数)
+<h3 id="headline-8">
+东西功能
 </h3>
-<p>
-怎么处理事情，除了计算机自带的，还能自己手动编写
-</p>
-<h4 id="headline-16">
+<h4 id="headline-9">
 定义函数
 </h4>
 <div class="src src-python">
@@ -687,7 +512,7 @@
 </div>
 </div>
 </div>
-<h4 id="headline-17">
+<h4 id="headline-10">
 不定长参数函数
 </h4>
 <p>
@@ -715,7 +540,7 @@
 </div>
 </div>
 </div>
-<h4 id="headline-18">
+<h4 id="headline-11">
 关键字参数 ( 给参数命名)
 </h4>
 <div class="src src-python">
@@ -740,7 +565,7 @@
 </div>
 </div>
 </div>
-<h4 id="headline-19">
+<h4 id="headline-12">
 匿名函数 lambda (不要重复使用的函数，就不给名字了)
 </h4>
 <div class="src src-python">
@@ -769,7 +594,7 @@
 </div>
 </div>
 </div>
-<h4 id="headline-20">
+<h4 id="headline-13">
 入口函数
 </h4>
 <div class="src src-python">
@@ -782,8 +607,8 @@
 </div>
 </div>
 </div>
-<h3 id="headline-21">
-控制处理流程
+<h3 id="headline-14">
+控制流程
 </h3>
 <p>
 分支 ( if 或 if not )
@@ -815,7 +640,7 @@
 </div>
 </div>
 </div>
-<h3 id="headline-22">
+<h3 id="headline-15">
 模块
 </h3>
 <blockquote>
@@ -826,7 +651,7 @@
 <p>
 一个文件就是一个模块了，文件名表示模块名
 </p>
-<h4 id="headline-23">
+<h4 id="headline-16">
 使用模块 
 </h4>
 <div class="src src-python">
@@ -841,7 +666,7 @@
 </div>
 </div>
 </div>
-<h3 id="headline-24">
+<h3 id="headline-17">
 包
 </h3>
 <blockquote>
@@ -859,7 +684,7 @@
 </div>
 </div>
 </div>
-<h3 id="headline-25">
+<h3 id="headline-18">
 测试
 </h3>
 <p>
@@ -881,7 +706,7 @@
 </div>
 </div>
 </div>
-<h3 id="headline-26">
+<h3 id="headline-19">
 帮助
 </h3>
 <ul>
@@ -896,13 +721,13 @@ dir() 函数或类的简单说明
 </p>
 </li>
 </ul>
-<h3 id="headline-27">
+<h3 id="headline-20">
 环境管理
 </h3>
 <p>
 因为 <strong>Python</strong> 最大的问题是各版本不兼容，所以还要要管理版本问题。  
 </p>
-<h4 id="headline-28">
+<h4 id="headline-21">
 pipenv 
 </h4>
 <div class="src src-sh">
@@ -952,6 +777,27 @@ pipenv
 
   <span class="c1"># 定位 Python 解释器路径</span>
   $ pipenv --py</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-22">
+faq    
+</h3>
+<h4 id="headline-23">
+中文编码
+</h4>
+<p>
+<strong>python2</strong> 默认是认不得中文等世界语的，只认得英文， <strong>python3</strong> 改掉了，这点注意看下版本。
+</p>
+<div class="src src-py">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py">  <span class="c1"># 在python2 中识别中文需要加上下面一句说明。</span>
+  <span class="c1">#-*-coding:utf-8-*-</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>

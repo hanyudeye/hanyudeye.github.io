@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>【三楼】计算机简介 - 阿明 - 收集生活的感悟</title>
+  <title>【三楼】Linux 命令简介 - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.69.2 with theme even" />
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -39,22 +39,22 @@
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="【三楼】计算机简介" />
+<meta property="og:title" content="【三楼】Linux 命令简介" />
 <meta property="og:description" content="linux 系统简介" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/linux/" />
 <meta property="article:published_time" content="2019-11-29T21:49:26+08:00" />
 <meta property="article:modified_time" content="2020-03-24T06:15:52+08:00" />
-<meta itemprop="name" content="【三楼】计算机简介">
+<meta itemprop="name" content="【三楼】Linux 命令简介">
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
-<meta itemprop="wordCount" content="2109">
+<meta itemprop="wordCount" content="2084">
 
 
 
 <meta itemprop="keywords" content="linux,os," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="【三楼】计算机简介"/>
+<meta name="twitter:title" content="【三楼】Linux 命令简介"/>
 <meta name="twitter:description" content="linux 系统简介"/>
 
 <!--[if lte IE 9]>
@@ -134,7 +134,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">【三楼】计算机简介</h1>
+      <h1 class="post-title">【三楼】Linux 命令简介</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2019-11-29 </span>
@@ -156,7 +156,7 @@
 <ul>
 <li><a href="#headline-3">基本概念</a>
 </li>
-<li><a href="#headline-4">用户</a>
+<li><a href="#headline-4">用户管理</a>
 </li>
 <li><a href="#headline-5">系统信息</a>
 </li>
@@ -252,24 +252,32 @@
 </div>
     <div class="post-content">
       <p>
-计算机是可以计算的东西，大家平常用的台式机或笔记本是微型计算机，因为面向的是我们普通用户，所以机器设计的很好看。现代的计算机不光用来计算，还用来听歌和玩游戏，所以戏称 <strong>电脑</strong> 。
+记录一下用命令操控计算机的用法
 </p>
 <h2 id="headline-1">
 机器结构
 </h2>
 <p>
-人类造的计算机器是指令形式的，这样如果想改变机器的功能只要替换下指令就好了，就不用重新造新的机器了。所以机器的结构一般是由解释指令的部件(CPU 处理器)，存放指令的部件（存储器），显示结果的部件（显示器）组成，对于打字机，还要有输入部件（键盘）。
+人类造的计算机器是指令形式的，这样如果想改变机器的功能只要替换下指令就好了，就
+  不用重新造新的机器了。所以机器的结构一般是由解释指令的部件(CPU 处理器)，存放指
+  令的部件（存储器），显示结果的部件（显示器）组成，如要打字功能，还要有输入部件
+  （键盘）。
 </p>
 <blockquote>
 <p>
 模型：储存程序，程序控制
 </p>
 </blockquote>
+<blockquote>
+<p>
+严格的说，现代使用的计算机已不再局限于计算任务，而包含了其他很多功能，叫它多功能程序机或许更贴切。
+</p>
+</blockquote>
 <h2 id="headline-2">
 Gnu/Linux
 </h2>
 <p>
-<strong>gnu/linux</strong> 是提供交互的机器指令，选择功能可以直接用键盘交互。现在图形化做的也不错。
+<strong>gnu/linux</strong> 是一套拥有完善功能的程序集合，当然你也可以使用 <strong>Windows</strong> 形式的功能。
 </p>
 <h3 id="headline-3">
 基本概念
@@ -287,7 +295,7 @@ Gnu/Linux
 </li>
 </ul>
 <h3 id="headline-4">
-用户
+用户管理
 </h3>
 <blockquote>
 <p>

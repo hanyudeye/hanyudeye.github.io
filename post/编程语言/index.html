@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.69.2 with theme even" />
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" />
@@ -49,7 +49,7 @@
 <meta itemprop="description" content="编程语言简介">
 <meta itemprop="datePublished" content="2019-12-07T19:41:03&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-07T19:41:03&#43;08:00" />
-<meta itemprop="wordCount" content="820">
+<meta itemprop="wordCount" content="565">
 
 
 
@@ -152,25 +152,7 @@
 <ul>
 <li><a href="#headline-1">例子</a>
 </li>
-<li><a href="#headline-2">静物</a>
-<ul>
-<li><a href="#headline-3">预定义</a>
-</li>
-<li><a href="#headline-4">自定义</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-5">动物</a>
-<ul>
-<li><a href="#headline-6">自定义</a>
-</li>
-<li><a href="#headline-7">轮子</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-8">条件判断</a>
-</li>
-<li><a href="#headline-9">循环结构</a>
+<li><a href="#headline-2">会说话的饼干</a>
 </li>
 </ul>
 </nav>
@@ -178,31 +160,19 @@
 </div>
     <div class="post-content">
       <p>
-前文我们讲过，世界是由 <strong>东西</strong> 组成的，东西分为两种，一种是会动的东西，另一种是静止的东西。
-会动的东西影响不动的东西，或会动的东西相互影响，构成了我们运动的世界。
+语言，是人类为了彼此沟通的需要，创造出的一种符号，用来指代外部的东西。
+</p>
+<p>
+编程语言同样也是一种符号，我们用符号进行沟通，要注意符号的使用规则，避免语法错误。
 </p>
 <blockquote>
 <p>
-这里你可以转下头，看下窗外或身边的东西，想想是不是有的东西能动的，有的东西不在动。追溯到物理学，什么东西都在动，这里不深究这个。
+所以，和语言一样，编程语言是用一套自己的 <strong>语法规则</strong> 来 <strong>描述</strong> 世界上东西状态的一种符号。
 </p>
 </blockquote>
 <p>
-我们人类呢，是群居动物，彼此之间需要沟通，然后就创造了一种符号，来指代外部的东西，这种符号叫做语言文字。
+特点是高度精简与结构化
 </p>
-<p>
-语言文字的外形结构分好几种，有跟东西的外形差不多的象形文字，还有是基本字母组合而成的楔形文字(楔形文字是由象形文字改造而来)。
-</p>
-<blockquote>
-<p>
-动物也有语言，就是我们不懂，可能词汇量比我们人类少吧
-</p>
-<p>
-  编程语言呢，就是一种结构好看(清晰)的的语言文字，用来给人或者编译器沟通的符号(告诉机器做什么)。
-</p>
-<p>
-  人人人，重要的是给人看，自己先要看懂，人看不懂，机器更笨了吧，会报错的。
-</p>
-</blockquote>
 <h3 id="headline-1">
 例子
 </h3>
@@ -215,15 +185,15 @@
 </thead>
 <tbody>
 <tr>
-<td>今有一只 10 斤的小猪</td>
+<td>今有一只 10 斤的小猪  (today has a 10 kilo&#39;s small pig)</td>
 <td>smallpig = 10</td>
 </tr>
 <tr>
-<td>好久没开荤了，我想吃一斤的猪肉</td>
+<td>好久没开荤了，我想吃一斤的猪肉 (I&#39;d like 1 kilo of pork)</td>
 <td>smallpig = smallpig -1</td>
 </tr>
 <tr>
-<td>小猪哭晕在厕所</td>
+<td>小猪哭晕在厕所 (pig crying dizzy in the toilet)</td>
 <td>什么都不做 ( do nothing )</td>
 </tr>
 </tbody>
@@ -236,63 +206,80 @@
 </li>
 <li>
 <p>
-低级语言比较 <strong>啰嗦</strong> ,要面对不同的 <strong>零部件</strong> ，语法结构也较 <strong>简陋</strong> ,不好理解，而且不同类型机器的语言不一样，不能沟通。
+低级语言面向的机器，因为机器无法理解高级语言中定义的符号，必须要转化成机器理解的内存地址。
 </p>
 </li>
 <li>
 <p>
-高级语言的语法结构就像 <strong>人类语言</strong> 的 <strong>主谓宾</strong> 结构一样，较好理解，抹平了一些 <strong>零部件</strong> 的差异。
+高级语言可以用符号表示内存地址和其它语义。
 </p>
 </li>
 </ul>
 <h3 id="headline-2">
-静物
-</h3>
-<h4 id="headline-3">
-预定义
-</h4>
-<p>
-一般编程语言都会提供给你一些简单的东西给你使用，比如数字，字符串。
-    数字可以用来做简单数学运算。
-    字符串一般用来给屏幕作显示文字用的。
-</p>
-<h4 id="headline-4">
-自定义
-</h4>
-<p>
-预定义的东西提供的对象较为简单，但我们可以用这些简单的对象拼接成较为复杂的对
-    象，在编程语言中一般叫定义类，或定义结构。
-</p>
-<h3 id="headline-5">
-动物
+会说话的饼干
 </h3>
 <p>
-编程语言除了提供一些数学函数，和显示函数，还提供很多的库函数。
+假如我们想描述一个饼干，并且饼干会说一句话。那我们会分步完成上面的问题，首先把饼干的外形描述出来。 
 </p>
-<h4 id="headline-6">
-自定义
-</h4>
 <p>
-定义动物，编程语言有自己的语法格式。
+  我们这里使用的是矩形的饼干，用编程语法来描述就是
 </p>
-<h4 id="headline-7">
-轮子
-</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">binggan</span><span class="p">():</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;-------------------------&#39;</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;|                        |&#39;</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;|                        |&#39;</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;|                        |&#39;</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;-------------------------&#39;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
 <p>
-东西越多，就越不需要造轮子，但你要安装人家造好的轮子来。
+  运行起来就是这样的，还算像个饼干的样子 
 </p>
-<h3 id="headline-8">
-条件判断
-</h3>
+<pre class="example">
+-------------------------
+|                       |
+|                       |
+|                       |
+-------------------------
+</pre>
 <p>
-动物都不傻，不会反复做不能实现的事情，所以作为符号表达，也要表示这种状态哦。😏 
+  下面是完成第二步，饼干说话，说什么话，在哪里显示出来，都是你自己可以描述的，因为快上班了，我就直接说在下面了，这里只是说一下编程的基本思想，创造好的东西还是要辛苦认真设计的。    
 </p>
-<h3 id="headline-9">
-循环结构
-</h3>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">saysomething</span><span class="p">():</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&#34;我是一个饼干，很高兴认识大家，但别吃我&#34;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
 <p>
-反复做多次的东西，用一个语法表达不香吗，哈哈。
+最终的东西
 </p>
+<pre class="example">
+-------------------------
+|                       |
+|                       |
+|                       |
+-------------------------
+我是一个饼干，很高兴认识大家，但别吃我
+</pre>
     </div>
 
     
