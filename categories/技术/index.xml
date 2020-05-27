@@ -6,7 +6,7 @@
     <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 13:08:49 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,58 +19,6 @@
       <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
 记录一下用命令操控计算机的用法
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>spacemacs 简介</title>
-      <link>https://aming.xyz/post/spacemacs/</link>
-      <pubDate>Mon, 24 Feb 2020 12:46:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/spacemacs/</guid>
-      <description>&lt;p&gt;
-对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置框架，需要什么功能修改下配置文件就可以，省去了很多折腾。此文是对官方文档的简单翻译。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>nodejs 简介</title>
-      <link>https://aming.xyz/post/nodejs/</link>
-      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/nodejs/</guid>
-      <description>&lt;p&gt;
-JavaScript 命令行语言解析器
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;nodejs&lt;/strong&gt; 使用了谷歌的 &lt;strong&gt;V8&lt;/strong&gt; JavaScript 解析器，而且没有浏览器对安全的限制，所以扩展了很多的库 (文件操作，网络操作，进程操作等)
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>laravel 简介</title>
-      <link>https://aming.xyz/post/laravel/</link>
-      <pubDate>Fri, 14 Feb 2020 20:58:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/laravel/</guid>
-      <description>&lt;p&gt;
-&lt;strong&gt;php&lt;/strong&gt; 用来处理动态性的网页的， &lt;strong&gt;laravel&lt;/strong&gt; 是 &lt;strong&gt;php&lt;/strong&gt; 的工具集，扩展了功能。
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-特点： 所有的 &lt;strong&gt;URL&lt;/strong&gt; 访问必须先定义路由规则。
-&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>php 简介</title>
-      <link>https://aming.xyz/post/php/</link>
-      <pubDate>Thu, 13 Feb 2020 19:01:28 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/php/</guid>
-      <description>&lt;p&gt;
-一种简单的语言，一般用在 &lt;strong&gt;web&lt;/strong&gt; 开发里，给网页生成动态内容用的。当然，如果你喜欢的话，用来编写其它程序也可以的。
 &lt;/p&gt;</description>
     </item>
     
@@ -89,117 +37,6 @@ JavaScript 命令行语言解析器
     </item>
     
     <item>
-      <title>chrome 插件</title>
-      <link>https://aming.xyz/post/chrome/</link>
-      <pubDate>Wed, 12 Feb 2020 20:54:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/chrome/</guid>
-      <description>&lt;p&gt;最近又淘到两个 &lt;strong&gt;chrome&lt;/strong&gt; 插件，把以前的插件拼一拼，凑个一篇文字。用的少的就不写
-了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Vue.js 简介</title>
-      <link>https://aming.xyz/post/vuejs/</link>
-      <pubDate>Wed, 12 Feb 2020 05:44:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/vuejs/</guid>
-      <description>&lt;p&gt;
-我们看一张 &lt;strong&gt;报纸&lt;/strong&gt; ，然后版面栏目不是很多嘛，比如这块是实事新闻，那块是娱乐新闻，东西很多放在一起管理就麻烦，分块各人管一小块就清晰点。   
-vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-就是把报纸的 &lt;strong&gt;版面结构&lt;/strong&gt; 和 &lt;strong&gt;版面内容&lt;/strong&gt; 分离开来，使 &lt;strong&gt;版面结构&lt;/strong&gt;  不动的情况下  &lt;strong&gt;版面内容&lt;/strong&gt;  可以随意变化。
-&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>jQuery简介</title>
-      <link>https://aming.xyz/post/jquery/</link>
-      <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/jquery/</guid>
-      <description>&lt;p&gt;
-jQuery是一个JavaScript库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，事件
-处理，动画和Ajax等，使得操作起来极为简化，当然自己也扩展了一些功能。
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-相当与原来用 &lt;strong&gt;DOM&lt;/strong&gt; 操作的方式都可以用 &lt;strong&gt;jQuery&lt;/strong&gt; 方式了
-&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>JavaScript 与 DOM简介</title>
-      <link>https://aming.xyz/post/javascript/</link>
-      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/javascript/</guid>
-      <description>&lt;p&gt;
-Javascript技术原来也是用在网页里面的，弄一些花里胡哨的动态效果，但现在它满足了一
-个现实，人有时懒的连报纸都不想翻，就想在报纸上用手指划划就想翻页，Javascript 的
-技术能够实现，所以现在又发达起来了。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>css 简介</title>
-      <link>https://aming.xyz/post/css/</link>
-      <pubDate>Tue, 11 Feb 2020 18:20:43 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/css/</guid>
-      <description>&lt;p&gt;
-设定网页外观的技术。你看一张报纸，或者图书的封面，花花绿绿的颜色还有排版，把这些
-效果用在网页里的技术叫做样式技术 ( &lt;strong&gt;CSS&lt;/strong&gt; )。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>html 简介</title>
-      <link>https://aming.xyz/post/html/</link>
-      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/html/</guid>
-      <description>&lt;p&gt;
-HTML技术主要用来给网页用的，就像我们看过的书或者报纸页一样，它不仅可以展示文字，还能格式化文字，还能播放多媒体，
-联合 javascript 技术还能制作网游，使得界面感觉都不像一页报纸了。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>照片处理</title>
-      <link>https://aming.xyz/post/gimp/</link>
-      <pubDate>Sat, 25 Jan 2020 06:56:22 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/gimp/</guid>
-      <description>&lt;p&gt;
-我们拍了一张照片，可能不是很称我们的心意。我们把照片改成我们满意的图片，就要学会照片处理。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>时不我代</title>
-      <link>https://aming.xyz/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</link>
-      <pubDate>Thu, 09 Jan 2020 20:47:48 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</guid>
-      <description>&lt;p&gt;由&lt;a href=&#34;https://www.miyaboke.com/&#34;&gt;弥雅博客&lt;/a&gt; 中关于企业发展想到的。&lt;/p&gt;
-&lt;p&gt;最近我失业，去找临时工，发现好多找临时工的人，问后才知道原来是企业生意不好，提前放假了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>单向历</title>
-      <link>https://aming.xyz/post/danxiangli/</link>
-      <pubDate>Sat, 28 Dec 2019 16:32:12 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/danxiangli/</guid>
-      <description>&lt;p&gt;我有一个创意，就是做一个 &lt;strong&gt;app&lt;/strong&gt; 形式的 &lt;strong&gt;单向历&lt;/strong&gt; ，用来替换纸质版的 &lt;strong&gt;单向历&lt;/strong&gt; 的功能，然后加一个 代办时间统计的功能。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>版本控制简介</title>
       <link>https://aming.xyz/post/vc/</link>
       <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
@@ -210,28 +47,6 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
 &lt;/p&gt;
 &lt;p&gt;
 基本功能就是给改动的文件进行 &lt;strong&gt;编号&lt;/strong&gt; ，然后我们就可以按照 &lt;strong&gt;编号&lt;/strong&gt; 查看文件的历史记录。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>latex简介</title>
-      <link>https://aming.xyz/post/latex/</link>
-      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/latex/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;书写数学书籍等印刷作品的标记&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>营销</title>
-      <link>https://aming.xyz/post/%E8%90%A5%E9%94%80/</link>
-      <pubDate>Thu, 12 Dec 2019 19:40:05 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%90%A5%E9%94%80/</guid>
-      <description>&lt;p&gt;
-就是通过宣传、推广，进而促进产品或服务的销售。
 &lt;/p&gt;</description>
     </item>
     
@@ -270,28 +85,6 @@ HTML技术主要用来给网页用的，就像我们看过的书或者报纸页�
 所以，和语言一样，编程语言是用一套自己的 &lt;strong&gt;语法规则&lt;/strong&gt; 来 &lt;strong&gt;描述&lt;/strong&gt; 世界上东西状态的一种符号。
 &lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Python 简介</title>
-      <link>https://aming.xyz/post/python/</link>
-      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/python/</guid>
-      <description>&lt;p&gt;
-指令 &lt;strong&gt;沙子&lt;/strong&gt;
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>设计简介</title>
-      <link>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</link>
-      <pubDate>Thu, 18 Jul 2019 19:57:04 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%AE%BE%E8%AE%A1/</guid>
-      <description>&lt;p&gt;
-所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
-&lt;/p&gt;</description>
     </item>
     
     <item>
