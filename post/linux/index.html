@@ -49,7 +49,7 @@
 <meta itemprop="description" content="linux 系统简介">
 <meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
-<meta itemprop="wordCount" content="2114">
+<meta itemprop="wordCount" content="1825">
 
 
 
@@ -152,97 +152,67 @@
 <ul>
 <li><a href="#headline-1">历史</a>
 </li>
-<li><a href="#headline-2">Gnu/Linux</a>
-<ul>
-<li><a href="#headline-3">基本概念</a>
+<li><a href="#headline-2">Linux 系统</a>
 </li>
+<li><a href="#headline-3">GNU 命令</a>
+<ul>
 <li><a href="#headline-4">用户管理</a>
 </li>
-<li><a href="#headline-5">系统信息</a>
+<li><a href="#headline-5">东西管理</a>
 </li>
-<li><a href="#headline-6">进程管理和调度</a>
+<li><a href="#headline-6">系统信息</a>
+</li>
+<li><a href="#headline-7">进程管理</a>
 <ul>
-<li><a href="#headline-7">进程属性</a>
-</li>
 <li><a href="#headline-8">进程状态</a>
 </li>
-<li><a href="#headline-9">进程间通信和同步</a>
-</li>
 </ul>
 </li>
-<li><a href="#headline-10">内存管理</a>
-</li>
-<li><a href="#headline-11">磁盘和分区</a>
-</li>
-<li><a href="#headline-12">文件系统</a>
-</li>
-<li><a href="#headline-13">交换分区文件系统</a>
-</li>
-<li><a href="#headline-14">模块</a>
-</li>
-<li><a href="#headline-15">网络管理</a>
-</li>
-<li><a href="#headline-16">任务 </a>
-</li>
-<li><a href="#headline-17">帮助文档    </a>
-</li>
-<li><a href="#headline-18">工具软件    </a>
+<li><a href="#headline-9">磁盘管理</a>
 <ul>
-<li><a href="#headline-19">压缩解压</a>
+<li><a href="#headline-10">交换分区</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-11">模块管理</a>
+</li>
+<li><a href="#headline-12">网络管理</a>
+</li>
+<li><a href="#headline-13">计划任务</a>
+</li>
+<li><a href="#headline-14">帮助文档    </a>
+</li>
+<li><a href="#headline-15">工具软件    </a>
 <ul>
-<li><a href="#headline-20">unar</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-21">pdf</a>
+<li><a href="#headline-16">压缩解压</a>
 <ul>
-<li><a href="#headline-22">合并 pdf  </a>
+<li><a href="#headline-17">unar</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-23">查找</a>
+<li><a href="#headline-18">pdf</a>
 <ul>
-<li><a href="#headline-24">查找文件 </a>
+<li><a href="#headline-19">合并 pdf  </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-25">图片处理</a>
+<li><a href="#headline-20">查找</a>
 <ul>
-<li><a href="#headline-26">压缩转换 convert</a>
+<li><a href="#headline-21">查找文件 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-27">休眠</a>
-</li>
-<li><a href="#headline-28">录制视频短片 peek</a>
-</li>
-<li><a href="#headline-29">像素识别</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-30">服务器与客户机  </a>
+<li><a href="#headline-22">图片处理</a>
 <ul>
-<li><a href="#headline-31">http 服务 (网页浏览服务) 对应的客户端是浏览器 </a>
-</li>
-<li><a href="#headline-32">ftp 服务 (文件传送服务)</a>
-</li>
-<li><a href="#headline-33">邮件服务</a>
+<li><a href="#headline-23">压缩转换 convert</a>
 </li>
 </ul>
 </li>
-</ul>
+<li><a href="#headline-24">录制视频短片 peek</a>
 </li>
-<li><a href="#headline-34">发行版</a>
-<ul>
-<li><a href="#headline-35">字体</a>
-<ul>
-<li><a href="#headline-36">安装字体</a>
-</li>
-<li><a href="#headline-37">显示已安装的字体</a>
+<li><a href="#headline-25">像素识别</a>
 </li>
 </ul>
-</li>
-<li><a href="#headline-38">用户目录配置</a>
 </li>
 </ul>
 </li>
@@ -265,38 +235,40 @@
 好吧，我们就学习这些简陋的东西吧，这些东西难的是写法的怪异和个别参数很多，但搞清楚功能后记忆还是不太难的。
 </p>
 <h2 id="headline-2">
-Gnu/Linux
+Linux 系统
 </h2>
 <p>
-<strong>gnu/linux</strong> 是一套拥有完善功能的程序集合，当然你也可以使用 <strong>Windows</strong> 形式的功能。
+我们日常用的手机，一般买回家之后就有一个 <strong>系统</strong> 了，然后如果我们想使用手机的其它功能，可以安装 <strong>应用软件</strong> 。 
 </p>
-<h3 id="headline-3">
-基本概念
-</h3>
-<ul>
-<li>
 <p>
-<strong>文件</strong>: 存储器里面的东西，指令，数据，设备都可以用文件表示。
+ 所以，我们一般把计算机软件分为 操作系统和应用软件两部分，应用软件需要操作系统提供的功能。
 </p>
-</li>
-<li>
 <p>
-<strong>进程</strong>:  多任务机器可以有进程的概念
+ 简单来说，系统这个东西就是做一些管理方面的事情，统筹规划，提供服务什么的，方便 <strong>人类</strong> 友好的用好电脑这个机器。
 </p>
-</li>
-</ul>
+<h2 id="headline-3">
+GNU 命令
+</h2>
+<p>
+人们用机器来干什么，就要知道机器里有什么东西，能用这个东西来做什么。
+</p>
+<p>
+  文件的概念，简单说，机器里的东西，也叫做文件 ，是按照目录树的结构放置起来的。有些东西像书本一样作为资料，有些东西像电饭锅一样作为工具。
+  文件这东西占用一定的空间，我们叫它文件大小，文件还有创建时间，文件名字等几个属性。
+</p>
+<p>
+  当作为工具的东西运行起来后，就变成了进程，有时我们想让工具停止运行，就要关掉东西，我们一般用发送消息的方式来关掉东西。
+</p>
+<p>
+  用户登录的概念是为了多个用户使用同一个机器，或者远程操作机器而创造出来的。
+</p>
 <h3 id="headline-4">
 用户管理
 </h3>
-<blockquote>
-<p>
-现代计算机一般可以给不同的人用，每个人都有自己独立的资料和软件，这里每个人叫需要有自己的名字和密码来登录计算机。
-</p>
-</blockquote>
 <ul>
 <li>
 <p>
-登录 login 
+登录 login (我们用某个机器，一般用自己的账号来使用机器，这样就避免干涉到别人的隐私)
 </p>
 </li>
 <li>
@@ -306,7 +278,7 @@ Gnu/Linux
 </li>
 <li>
 <p>
-新建用户 useradd
+新建用户 useradd (新建一个能够使用机器的人)
 </p>
 </li>
 <li>
@@ -319,25 +291,40 @@ Gnu/Linux
 设置用户属性  usermod
 </p>
 </li>
+</ul>
+<h3 id="headline-5">
+东西管理
+</h3>
+<ul>
 <li>
 <p>
-改变文件所有者 chown
+列出文件  ls (list)
 </p>
 </li>
 <li>
 <p>
-改变文件读写属性 chmod
+删除文件 rm(remove)
+</p>
+</li>
+<li>
+<p>
+编辑文件 一般用 vim 或者 emacs
+</p>
+</li>
+<li>
+<p>
+改变文件所有者 chown (设置东西的归属人)
+</p>
+</li>
+<li>
+<p>
+改变文件读写属性 chmod (设置东西的权限)
 </p>
 </li>
 </ul>
-<h3 id="headline-5">
+<h3 id="headline-6">
 系统信息
 </h3>
-<blockquote>
-<p>
-<strong>Gnu/Linux</strong> 系统的一些信息。
-</p>
-</blockquote>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -351,13 +338,11 @@ Gnu/Linux
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
-</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell">  cat /etc/lsb-release <span class="c1"># 查看软件( 系统 )信息</span>
   uname -a                <span class="c1"># 查看内核/操作系统/CPU 信息</span>
   cat /proc/cpuinfo       <span class="c1"># 查看 CPU 信息</span>
-  nproc <span class="c1">#打印可用处理器的数量</span>
   hostname                <span class="c1"># 查看计算机名</span>
   lspci -tv               <span class="c1"># 列出所有 PCI 设备</span>
   lsusb -tv               <span class="c1"># 列出所有 USB 设备</span>
@@ -368,26 +353,13 @@ Gnu/Linux
 </div>
 </div>
 </div>
-<h3 id="headline-6">
-进程管理和调度
+<h3 id="headline-7">
+进程管理
 </h3>
-<blockquote>
-<p>
-计算机比人强的一件事就是它一次能做好几件事，不像人，做另一件事的同时要停下手边的事。计算机要做或正在做的事情用进程表示。  
-</p>
-
-<p>
-为什么进程有这种区分呢？因为计算机的速度很快，它的同时只是人不停切换的一种假象，因为时间太短所以看起来像同时了(但现在 <strong>CPU 多核</strong> 出现，有些事情是同时处理的)。
-</p>
-
-<p>
-机器在干活方面确实比较牛逼，速度快，还没牢骚。
-</p>
-</blockquote>
 <ul>
 <li>
 <p>
-ps   显示进程信息
+ps(process)   显示进程信息
 </p>
 </li>
 <li>
@@ -406,69 +378,6 @@ pkill   通过 <strong>进程名</strong> 给进程发信号
 </p>
 </li>
 </ul>
-<h4 id="headline-7">
-进程属性
-</h4>
-<table>
-<tbody>
-<tr>
-<td>UID</td>
-<td>用户 ID</td>
-</tr>
-<tr>
-<td>PID</td>
-<td>进程 ID</td>
-</tr>
-<tr>
-<td>PPID</td>
-<td>父进程 ID</td>
-</tr>
-<tr>
-<td>C</td>
-<td>CPU 占用率</td>
-</tr>
-<tr>
-<td>STIME</td>
-<td>开始时间</td>
-</tr>
-<tr>
-<td>TTY</td>
-<td>开始此进程的 TTY—-终端设备</td>
-</tr>
-<tr>
-<td>TIME</td>
-<td>此进程运行的总时间</td>
-</tr>
-<tr>
-<td>CMD</td>
-<td>命令名</td>
-</tr>
-<tr>
-<td>%CPU</td>
-<td>进程占用 CPU 百分比</td>
-</tr>
-<tr>
-<td>%MEM</td>
-<td>进程占用内存百分比</td>
-</tr>
-<tr>
-<td>VSZ</td>
-<td>虚拟内存占用大小 单位：kb（killobytes）</td>
-</tr>
-<tr>
-<td>RSS</td>
-<td>实际内存占用大小 单位：kb（killobytes）</td>
-</tr>
-<tr>
-<td>STAT</td>
-<td>进程状态</td>
-</tr>
-<tr>
-<td>START</td>
-<td>进程启动时刻</td>
-</tr>
-</tbody>
-</table>
 <h4 id="headline-8">
 进程状态
 </h4>
@@ -489,121 +398,70 @@ D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态
 </p>
 </li>
 </ul>
-<h4 id="headline-9">
-进程间通信和同步
-</h4>
+<h3 id="headline-9">
+磁盘管理
+</h3>
+<p>
+磁盘这个东西，分区以后，可以一个东西当两个或三个东西用（按照分区数量）。这样能更好的使用磁盘。分区后的磁盘要挂载下才能使用磁盘的存储功能。 
+</p>
 <ul>
 <li>
 <p>
-信号 [signals,SIGxxxx]
+显示分区信息   df 
 </p>
 </li>
 <li>
 <p>
-pipes 
+查看挂接的分区状态  mount | column -t       
 </p>
 </li>
 <li>
 <p>
-sockets
+查看所有分区  fdisk -l               
 </p>
 </li>
 <li>
 <p>
-file locking
+查看所有交换分区  swapon -s 
 </p>
 </li>
 <li>
 <p>
-message queues
+创建文件系统      mkfs -V -t msdos -c /dev/hda5                                                                         
 </p>
 </li>
 <li>
 <p>
-semaphores
+更新分区表信息    partprobe                                                                                             
 </p>
 </li>
 <li>
 <p>
-shared memory
+加载分区          mount                                                                                                 
+</p>
+</li>
+<li>
+<p>
+加载 smb          sudo mount -t smbfs -o username=user,password=&#39;&#39; //10.0.1.1/windowsshare /mnt 浏览 windows 共享文件夹 
+</p>
+</li>
+<li>
+<p>
+自动加载配置文件  fstab                                                                                                 
+</p>
+</li>
+<li>
+<p>
+卸载分区          umount                                                                                                
 </p>
 </li>
 </ul>
-<h3 id="headline-10">
-内存管理
-</h3>
+<h4 id="headline-10">
+交换分区
+</h4>
 <p>
-我们打开软件的时候，就是在使用内存，关闭软件，操作系统会帮我们回收内存及软件打开的文件，所以这些不用我们操心。   
+内存缓存用的，早期内存小的产物，现在不需要了吧 
 </p>
-<h3 id="headline-11">
-磁盘和分区
-</h3>
-<p>
-给目录分配磁盘大小，这里有自主性的，但要注意 <strong>/home</strong> 分区要给大点，最好买大点的磁盘自己折腾，不想折腾就多看看教程怎么分配。
-</p>
-<div class="src src-sh">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">  df <span class="c1">#显示分区信息</span> 
-  mount <span class="p">|</span> column -t      <span class="c1"># 查看挂接的分区状态</span>
-  fdisk -l               <span class="c1"># 查看所有分区</span>
-  swapon -s              <span class="c1"># 查看所有交换分区</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-12">
-文件系统
-</h3>
-<blockquote>
-<p>
-折腾永无止境，不如说是技术多样性. 文件系统有好几种，一般尽量用新的。
-</p>
-</blockquote>
-<table>
-<tbody>
-<tr>
-<td>创建文件系统</td>
-<td>mkfs -V -t msdos -c /dev/hda5</td>
-</tr>
-<tr>
-<td>更新分区表信息</td>
-<td>partprobe</td>
-</tr>
-<tr>
-<td>加载分区</td>
-<td>mount</td>
-</tr>
-<tr>
-<td>加载 smb</td>
-<td>sudo mount -t smbfs -o username=user,password=&#39;&#39; //10.0.1.1/windowsshare /mnt 浏览 windows 共享文件夹</td>
-</tr>
-<tr>
-<td>自动加载配置文件</td>
-<td>fstab</td>
-</tr>
-<tr>
-<td>卸载分区</td>
-<td>umount</td>
-</tr>
-<tr>
-<td>列出文件</td>
-<td>ls</td>
-</tr>
-<tr>
-<td>编辑文件</td>
-<td>vim</td>
-</tr>
-</tbody>
-</table>
-<h3 id="headline-13">
-交换分区文件系统
-</h3>
 <ul>
 <li>
 <p>
@@ -631,14 +489,9 @@ shared memory
 </p>
 </li>
 </ul>
-<h3 id="headline-14">
-模块
+<h3 id="headline-11">
+模块管理
 </h3>
-<blockquote>
-<p>
-不用的东西就不用放到内核了，就不用加载到内存造成浪费了。这里是 <strong>Linux</strong> 内核提供的技术。
-</p>
-</blockquote>
 <ul>
 <li>
 <p>
@@ -656,9 +509,13 @@ lsmod 显示已载入系统的模块
 </p>
 </li>
 </ul>
-<h3 id="headline-15">
+<h3 id="headline-12">
 网络管理
 </h3>
+<p>
+网，就像我们的家门一样，有些东西，家里没有，就可以找到别的机器，问别人家借。所以入网的机器，有一个网名（IP 地址）
+   入网的机器，还能看到我们跟谁家在联系。
+</p>
 <ul>
 <li>
 <p>
@@ -701,12 +558,12 @@ iptables - IP 包过滤器管理
 </li>
 <li>
 <p>
-ip - show / manipulate routing, network devices, interfaces and tunnels(以后就用这)
+ip 
 </p>
 <ul>
 <li>
 <p>
-address
+address (机器在网中的网名)
 </p>
 </li>
 <li>
@@ -716,37 +573,12 @@ addrlabel
 </li>
 <li>
 <p>
-link   - network device.
+link   (入网的设备)
 </p>
 </li>
 <li>
 <p>
-route  - routing table entry.
-</p>
-</li>
-<li>
-<p>
-rule   - rule in routing policy database.
-</p>
-</li>
-<li>
-<p>
-tcp_metrics/tcpmetrics
-</p>
-</li>
-<li>
-<p>
-token  - manage tokenized interface identifiers.
-</p>
-</li>
-<li>
-<p>
-tunnel - tunnel over IP.
-</p>
-</li>
-<li>
-<p>
-tuntap - manage TUN/TAP devices.
+route (路由表，不同的机器，分配不同的出口) 
 </p>
 </li>
 </ul>
@@ -774,16 +606,12 @@ curl ident.me
 </ul>
 </li>
 </ul>
-<h3 id="headline-16">
-任务 
+<h3 id="headline-13">
+计划任务
 </h3>
-<blockquote>
 <p>
-这是 <strong>shell</strong> 里的概念，因为黑白文字界面的终端一次只能操作一个程序，等程序结束
-   后才能在文字输入处重新输入指令，这时可以把当前未完成的程序先挂起来，优先执行
-   马上要做的事情，如果是图形界面下，就不用管了，想执行哪一个用鼠标随便点。
+给东西的行为设置一个计时器，或一个后台状态
 </p>
-</blockquote>
 <ul>
 <li>
 <p>
@@ -804,17 +632,17 @@ curl ident.me
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-text" data-lang="text">* * * * *                  # 每隔一分钟执行一次任务  
-0 * * * *                  # 每小时的 0 点执行一次任务，比如 6:00，10:00  
-6,10 * 2 * *               # 每个月 2 号，每小时的 6 分和 10 分执行一次任务  
-0 * * * *                  # 每小时的 0 点执行一次任务，比如 6:00，10:00  
-6,10 * 2 * *               # 每个月 2 号，每小时的 6 分和 10 分执行一次任务</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-text" data-lang="text">  * * * * *                  # 每隔一分钟执行一次任务  
+  0 * * * *                  # 每小时的 0 点执行一次任务，比如 6:00，10:00  
+  6,10 * 2 * *               # 每个月 2 号，每小时的 6 分和 10 分执行一次任务  
+  0 * * * *                  # 每小时的 0 点执行一次任务，比如 6:00，10:00  
+  6,10 * 2 * *               # 每个月 2 号，每小时的 6 分和 10 分执行一次任务</code></pre></td></tr></table>
 </div>
 </div>
 </div>
 </li>
 </ul>
-<h3 id="headline-17">
+<h3 id="headline-14">
 帮助文档    
 </h3>
 <ul>
@@ -834,25 +662,22 @@ info 详细文档
 </p>
 </li>
 </ul>
-<h3 id="headline-18">
+<h3 id="headline-15">
 工具软件    
 </h3>
-<p>
-下面是处理特定事情的软件
-</p>
-<h4 id="headline-19">
+<h4 id="headline-16">
 压缩解压
 </h4>
-<h5 id="headline-20">
+<h5 id="headline-17">
 unar
 </h5>
 <p>
 解压缩，中文不会乱码
 </p>
-<h4 id="headline-21">
+<h4 id="headline-18">
 pdf
 </h4>
-<h5 id="headline-22">
+<h5 id="headline-19">
 合并 pdf  
 </h5>
 <div class="src src-sh">
@@ -865,10 +690,10 @@ pdf
 </div>
 </div>
 </div>
-<h4 id="headline-23">
+<h4 id="headline-20">
 查找
 </h4>
-<h5 id="headline-24">
+<h5 id="headline-21">
 查找文件 
 </h5>
 <div class="src src-sh">
@@ -881,26 +706,13 @@ pdf
 </div>
 </div>
 </div>
-<h4 id="headline-25">
+<h4 id="headline-22">
 图片处理
 </h4>
-<h5 id="headline-26">
+<h5 id="headline-23">
 压缩转换 convert
 </h5>
-<h4 id="headline-27">
-休眠
-</h4>
-<div class="src src-sh">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">sudo hibernate</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h4 id="headline-28">
+<h4 id="headline-24">
 录制视频短片 peek
 </h4>
 <div class="src src-sh">
@@ -917,7 +729,7 @@ pdf
 </div>
 </div>
 </div>
-<h4 id="headline-29">
+<h4 id="headline-25">
 像素识别
 </h4>
 <div class="src src-sh">
@@ -927,76 +739,6 @@ pdf
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-sh" data-lang="sh">  sudo snap install pick-colour-picker</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-30">
-服务器与客户机  
-</h3>
-<p>
-就是一直开着不关的软件，要用客户端软件去与它交流。 
-</p>
-<h4 id="headline-31">
-http 服务 (网页浏览服务) 对应的客户端是浏览器 
-</h4>
-<h4 id="headline-32">
-ftp 服务 (文件传送服务)
-</h4>
-<h4 id="headline-33">
-邮件服务
-</h4>
-<h2 id="headline-34">
-发行版
-</h2>
-<h3 id="headline-35">
-字体
-</h3>
-<h4 id="headline-36">
-安装字体
-</h4>
-<div class="src src-sh">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">sudo mv Monaco.ttf /usr/share/fonts/custom
-sudo chmod <span class="m">744</span> /usr/share/fonts/custom/Monaco.ttf
-
-sudo mkfontscale  <span class="c1">#生成核心字体信息</span>
-sudo mkfontdir
-sudo fc-cache -fv</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h4 id="headline-37">
-显示已安装的字体
-</h4>
-<div class="src src-sh">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">  fc-list</code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-38">
-用户目录配置
-</h3>
-<div class="src src-sh">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">  ~/.config/user-dirs.dirs</code></pre></td></tr></table>
 </div>
 </div>
 </div>
