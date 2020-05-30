@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 May 2020 20:56:15 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 06:26:21 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -38,10 +38,10 @@
       
       <guid>https://aming.xyz/post/math/</guid>
       <description>&lt;p&gt;数学是处理东西的形，量(数)，变化轨迹的一门技术&lt;/p&gt;
-&lt;p&gt;我们说东西是由沙子构成的，数学就是要算出构成一件东西要的沙子的数量的技术。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;随着深入，定义可以增加复杂度，先这样假设 (主要知识有限)&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;造物主在造东西的时候，会有的东西造的快点，有的造的慢点吗？？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;数学是人在处理东西的量时发明的一种技术，这种技术用一种简单的符号公式表示东西的量的改变情况，去掉了推理过程，只求结果，所以人光记忆公式的话难理解。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,6 +53,15 @@
       <description>&lt;p&gt;
 记录一下用命令操控计算机的用法
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>白日梦</title>
+      <link>https://aming.xyz/post/daydream/</link>
+      <pubDate>Sun, 31 May 2020 06:26:21 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/daydream/</guid>
+      <description>&lt;p&gt;记录一下我做的白日梦&lt;/p&gt;</description>
     </item>
     
     <item>

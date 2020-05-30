@@ -59,28 +59,42 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-05-25T20:56:15+08:00</lastmod>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-05-25T20:56:15+08:00</lastmod>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-05-25T20:56:15+08:00</lastmod>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E5%81%9A%E6%A2%A6/</loc>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-05-25T20:56:15+08:00</lastmod>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/daydream/</loc>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
