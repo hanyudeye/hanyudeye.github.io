@@ -107,6 +107,13 @@
   </url>
   
   <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2020-05-27T21:39:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/</loc>
-    <lastmod>2020-05-04T20:42:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/post/clothes/</loc>
     <lastmod>2020-04-09T04:49:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -144,13 +144,6 @@
   <url>
     <loc>https://aming.xyz/tags/%E6%89%AF%E6%B7%A1/</loc>
     <lastmod>2020-04-09T04:49:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/tags/%E5%81%A5%E5%BA%B7/</loc>
-    <lastmod>2020-02-27T18:05:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -186,6 +179,13 @@
   <url>
     <loc>https://aming.xyz/categories/%E7%A7%91%E6%99%AE/</loc>
     <lastmod>2020-02-21T06:20:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2020-02-20T08:36:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
