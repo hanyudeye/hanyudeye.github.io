@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.72.0 with theme even" />
+<meta name="generator" content="Hugo 0.74.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -35,7 +35,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.5a25facc56411f2d36ef727e420992af24bcaebf56f9b0d098faeb5062a02248.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -47,13 +48,14 @@
 <meta property="article:modified_time" content="2020-03-24T06:15:52+08:00" />
 <meta itemprop="name" content="【三楼】UNIX命令简介">
 <meta itemprop="description" content="linux 系统简介">
-<meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
+<meta itemprop="datePublished" content="2019-11-29T21:49:26+08:00" />
+<meta itemprop="dateModified" content="2020-03-24T06:15:52+08:00" />
 <meta itemprop="wordCount" content="1912">
 
 
 
-<meta itemprop="keywords" content="linux,unix," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="linux,unix," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【三楼】UNIX命令简介"/>
 <meta name="twitter:description" content="linux 系统简介"/>
 
@@ -222,129 +224,107 @@
 </div>
     <div class="post-content">
       <p>
-记录一下用命令操控计算机的用法
-</p>
+记录一下用命令操控计算机的用法</p>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 历史
 </h2>
-<p>
-在 UNIX (或 Linux)  系统下，程序基本是没啥外观的，东西要做某件事情，需要输入东西的名称和输入的数据，然后东西会把功能操作的结果以某种形式展示出来。 
-</p>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>在 UNIX (或 Linux)  系统下，程序基本是没啥外观的，东西要做某件事情，需要输入东西的名称和输入的数据，然后东西会把功能操作的结果以某种形式展示出来。 </p>
 <p>
 为什么东西如此的不直观，不想我们人类一样，要求做某件事客客气气的，回馈也很热情，或者像图形界面那样，有友好的菜单与直观的输入输出环境。我觉得是跟以前图形显示器的文字显示形式和程序员的稀少有关。
-好吧，我们就学习这些简陋的东西吧，这些东西难的是写法的怪异和个别参数很多，但搞清楚功能后记忆还是不太难的。
-</p>
+好吧，我们就学习这些简陋的东西吧，这些东西难的是写法的怪异和个别参数很多，但搞清楚功能后记忆还是不太难的。</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
 <h2 id="headline-2">
 Linux 系统
 </h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>我们日常用的手机，一般买回家之后就有一个 <strong>系统</strong> 了，然后如果我们想使用手机的其它功能，可以安装 <strong>应用软件</strong> 。 </p>
 <p>
-我们日常用的手机，一般买回家之后就有一个 <strong>系统</strong> 了，然后如果我们想使用手机的其它功能，可以安装 <strong>应用软件</strong> 。 
-</p>
+ 所以，我们一般把计算机软件分为 操作系统和应用软件两部分，应用软件需要操作系统提供的功能。</p>
 <p>
- 所以，我们一般把计算机软件分为 操作系统和应用软件两部分，应用软件需要操作系统提供的功能。
-</p>
-<p>
- 简单来说，系统这个东西就是做一些管理方面的事情，统筹规划，提供服务什么的，方便 <strong>人类</strong> 友好的用好电脑这个机器。
-</p>
+ 简单来说，系统这个东西就是做一些管理方面的事情，统筹规划，提供服务什么的，方便 <strong>人类</strong> 友好的用好电脑这个机器。</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
 <h2 id="headline-3">
 命令
 </h2>
-<p>
-人们用机器来干什么，就要知道机器里有什么东西，能用这个东西来做什么。
-</p>
+<div id="outline-text-headline-3" class="outline-text-2">
+<p>人们用机器来干什么，就要知道机器里有什么东西，能用这个东西来做什么。</p>
 <ul>
 <li>
-<p>
-文件的概念，简单说，机器里的东西，也叫做文件 ，是按照目录树的结构放置起来的。有些东西像书本一样作为资料，有些东西像电饭锅一样作为工具。
-</p>
+<p>文件的概念，简单说，机器里的东西，也叫做文件 ，是按照目录树的结构放置起来的。有些东西像书本一样作为资料，有些东西像电饭锅一样作为工具。</p>
 </li>
 <li>
-<p>
-文件这东西占用一定的空间，我们叫它文件大小，文件还有创建时间，文件名字等几个属性。
-</p>
+<p>文件这东西占用一定的空间，我们叫它文件大小，文件还有创建时间，文件名字等几个属性。</p>
 </li>
 <li>
-<p>
-当作为工具的东西运行起来后，就变成了进程，有时我们想让工具停止运行，就要关掉东西，我们一般用发送消息的方式来关掉东西。
-</p>
+<p>当作为工具的东西运行起来后，就变成了进程，有时我们想让工具停止运行，就要关掉东西，我们一般用发送消息的方式来关掉东西。</p>
 </li>
 <li>
-<p>
-用户登录的概念是为了多个用户使用同一个机器，或者远程操作机器而创造出来的。
-</p>
+<p>用户登录的概念是为了多个用户使用同一个机器，或者远程操作机器而创造出来的。</p>
 </li>
 <li>
-<p>
-计算机里的东西很多都是已有东西的一个电子化抽象（比如文本编辑器对应现实中的练习本，图像编辑器对应现实中的画画本），所以没有趁手的工具时，可以上网搜
-</p>
+<p>计算机里的东西很多都是已有东西的一个电子化抽象（比如文本编辑器对应现实中的练习本，图像编辑器对应现实中的画画本），所以没有趁手的工具时，可以上网搜</p>
 </li>
 <li>
-<p>
-很多基础的命令都是 <strong>GNU</strong> 组织提供。
-</p>
+<p>很多基础的命令都是 <strong>GNU</strong> 组织提供。</p>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 用户管理
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <ul>
 <li>
-<p>
-登录 login (我们用某个机器，一般用自己的账号来使用机器，这样就避免干涉到别人的隐私)
-</p>
+<p>登录 login (我们用某个机器，一般用自己的账号来使用机器，这样就避免干涉到别人的隐私)</p>
 </li>
 <li>
-<p>
-登出 logout
-</p>
+<p>登出 logout</p>
 </li>
 <li>
-<p>
-新建用户 useradd (新建一个能够使用机器的人)
-</p>
+<p>新建用户 useradd (新建一个能够使用机器的人)</p>
 </li>
 <li>
-<p>
-设置密码 passwd
-</p>
+<p>设置密码 passwd</p>
 </li>
 <li>
-<p>
-设置用户属性  usermod
-</p>
+<p>设置用户属性  usermod</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
 <h3 id="headline-5">
 东西管理
 </h3>
+<div id="outline-text-headline-5" class="outline-text-3">
 <ul>
 <li>
-<p>
-列出文件  ls (list)
-</p>
+<p>列出文件  ls (list)</p>
 </li>
 <li>
-<p>
-删除文件 rm(remove)
-</p>
+<p>删除文件 rm(remove)</p>
 </li>
 <li>
-<p>
-编辑文件 一般用 vim 或者 emacs
-</p>
+<p>编辑文件 一般用 vim 或者 emacs</p>
 </li>
 <li>
-<p>
-改变文件所有者 chown (设置东西的归属人)
-</p>
+<p>改变文件所有者 chown (设置东西的归属人)</p>
 </li>
 <li>
-<p>
-改变文件读写属性 chmod (设置东西的权限)
-</p>
+<p>改变文件读写属性 chmod (设置东西的权限)</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 系统信息
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -373,275 +353,209 @@ Linux 系统
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 进程管理
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <ul>
 <li>
-<p>
-ps(process)   显示进程信息
-</p>
+<p>ps(process)   显示进程信息</p>
 </li>
 <li>
-<p>
-kill   给进程发信号 
-</p>
+<p>kill   给进程发信号 </p>
 </li>
 <li>
-<p>
-pgrep  通过 <strong>进程名</strong> 查找进程 
-</p>
+<p>pgrep  通过 <strong>进程名</strong> 查找进程 </p>
 </li>
 <li>
-<p>
-pkill   通过 <strong>进程名</strong> 给进程发信号
-</p>
+<p>pkill   通过 <strong>进程名</strong> 给进程发信号</p>
 </li>
 </ul>
+<div id="outline-container-headline-8" class="outline-4">
 <h4 id="headline-8">
 进程状态
 </h4>
+<div id="outline-text-headline-8" class="outline-text-4">
 <ul>
 <li>
-<p>
-R (TASK_RUNNING)，可执行状态。
-</p>
+<p>R (TASK_RUNNING)，可执行状态。</p>
 </li>
 <li>
-<p>
-S (TASK_INTERRUPTIBLE)，可中断的睡眠状态
-</p>
+<p>S (TASK_INTERRUPTIBLE)，可中断的睡眠状态</p>
 </li>
 <li>
-<p>
-D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态
-</p>
+<p>D (TASK_UNINTERRUPTIBLE)，不可中断的睡眠状态</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
 <h3 id="headline-9">
 磁盘管理
 </h3>
-<p>
-磁盘这个东西，分区以后，可以一个东西当两个或三个东西用（按照分区数量）。这样能更好的使用磁盘。分区后的磁盘要挂载下才能使用磁盘的存储功能。 
-</p>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>磁盘这个东西，分区以后，可以一个东西当两个或三个东西用（按照分区数量）。这样能更好的使用磁盘。分区后的磁盘要挂载下才能使用磁盘的存储功能。 </p>
 <ul>
 <li>
-<p>
-显示分区信息   df 
-</p>
+<p>显示分区信息   df </p>
 </li>
 <li>
-<p>
-查看挂接的分区状态  mount | column -t       
-</p>
+<p>查看挂接的分区状态  mount | column -t       </p>
 </li>
 <li>
-<p>
-查看所有分区  fdisk -l               
-</p>
+<p>查看所有分区  fdisk -l               </p>
 </li>
 <li>
-<p>
-查看所有交换分区  swapon -s 
-</p>
+<p>查看所有交换分区  swapon -s </p>
 </li>
 <li>
-<p>
-创建文件系统      mkfs -V -t msdos -c /dev/hda5                                                                         
-</p>
+<p>创建文件系统      mkfs -V -t msdos -c /dev/hda5                                                                         </p>
 </li>
 <li>
-<p>
-更新分区表信息    partprobe                                                                                             
-</p>
+<p>更新分区表信息    partprobe                                                                                             </p>
 </li>
 <li>
-<p>
-加载分区          mount                                                                                                 
-</p>
+<p>加载分区          mount                                                                                                 </p>
 </li>
 <li>
-<p>
-加载 smb          sudo mount -t smbfs -o username=user,password=&#39;&#39; //10.0.1.1/windowsshare /mnt 浏览 windows 共享文件夹 
-</p>
+<p>加载 smb          sudo mount -t smbfs -o username=user,password=&#39;&#39; //10.0.1.1/windowsshare /mnt 浏览 windows 共享文件夹 </p>
 </li>
 <li>
-<p>
-自动加载配置文件  fstab                                                                                                 
-</p>
+<p>自动加载配置文件  fstab                                                                                                 </p>
 </li>
 <li>
-<p>
-卸载分区          umount                                                                                                
-</p>
+<p>卸载分区          umount                                                                                                </p>
 </li>
 </ul>
+<div id="outline-container-headline-10" class="outline-4">
 <h4 id="headline-10">
 交换分区
 </h4>
-<p>
-内存缓存用的，早期内存小的产物，现在不需要了吧 
-</p>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p>内存缓存用的，早期内存小的产物，现在不需要了吧 </p>
 <ul>
 <li>
-<p>
-创建 Linux 交换分区 mkswap
-</p>
+<p>创建 Linux 交换分区 mkswap</p>
 </li>
 <li>
-<p>
-启用交换分区  swapon -s
-</p>
+<p>启用交换分区  swapon -s</p>
 </li>
 <li>
-<p>
-禁用交换分区  swapoff /dev/sda7
-</p>
+<p>禁用交换分区  swapoff /dev/sda7</p>
 </li>
 <li>
-<p>
-用新 UUID 重新创建交换分区：  mkswap -U random /dev/sda7
-</p>
+<p>用新 UUID 重新创建交换分区：  mkswap -U random /dev/sda7</p>
 </li>
 <li>
-<p>
-激活交换分区  swapon /dev/sda7
-</p>
+<p>激活交换分区  swapon /dev/sda7</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
 <h3 id="headline-11">
 模块管理
 </h3>
+<div id="outline-text-headline-11" class="outline-text-3">
 <ul>
 <li>
-<p>
-rmmod 从运行的内核中移除指定的内核模块
-</p>
+<p>rmmod 从运行的内核中移除指定的内核模块</p>
 </li>
 <li>
-<p>
-insmod 将给定的模块加载到内核中
-</p>
+<p>insmod 将给定的模块加载到内核中</p>
 </li>
 <li>
-<p>
-lsmod 显示已载入系统的模块
-</p>
+<p>lsmod 显示已载入系统的模块</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
 <h3 id="headline-12">
 网络管理
 </h3>
-<p>
-网，就像我们的家门一样，有些东西，家里没有，就可以找到别的机器，问别人家借。所以入网的机器，有一个网名（IP 地址）
- 入网的机器，还能看到我们跟谁家在联系。
-</p>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>网，就像我们的家门一样，有些东西，家里没有，就可以找到别的机器，问别人家借。所以入网的机器，有一个网名（IP 地址）
+ 入网的机器，还能看到我们跟谁家在联系。</p>
 <ul>
 <li>
-<p>
-netstat 显示网络连接，路由表，接口状态，伪装连接，网络链路信息和组播成员组。
-</p>
+<p>netstat 显示网络连接，路由表，接口状态，伪装连接，网络链路信息和组播成员组。</p>
 <ul>
 <li>
-<p>
-netstat -lntp 查看所有监听端口
-</p>
+<p>netstat -lntp 查看所有监听端口</p>
 </li>
 <li>
-<p>
-netstat -antp 查看所有已建立的连接
-</p>
+<p>netstat -antp 查看所有已建立的连接</p>
 </li>
 </ul>
 </li>
 <li>
-<p>
-route - 显示 / 操作 IP 选路表
-</p>
+<p>route - 显示 / 操作 IP 选路表</p>
 <ul>
 <li>
-<p>
-rounte -n 查看本机路由表
-</p>
+<p>rounte -n 查看本机路由表</p>
 </li>
 </ul>
 </li>
 <li>
-<p>
-ifconfig - 配置网络接口
-</p>
+<p>ifconfig - 配置网络接口</p>
 </li>
 <li>
-<p>
-iptables - IP 包过滤器管理
-</p>
+<p>iptables - IP 包过滤器管理</p>
 </li>
 <li>
-<p>
-ip 
-</p>
+<p>ip </p>
 <ul>
 <li>
-<p>
-address (机器在网中的网名)
-</p>
+<p>address (机器在网中的网名)</p>
 </li>
 <li>
-<p>
-addrlabel
-</p>
+<p>addrlabel</p>
 </li>
 <li>
-<p>
-link   (入网的设备)
-</p>
+<p>link   (入网的设备)</p>
 </li>
 <li>
-<p>
-route (路由表，不同的机器，分配不同的出口) 
-</p>
+<p>route (路由表，不同的机器，分配不同的出口) </p>
 </li>
 </ul>
 </li>
 <li>
-<p>
-查公网 IP
-</p>
+<p>查公网 IP</p>
 <ul>
 <li>
-<p>
-curl cip.cc
-</p>
+<p>curl cip.cc</p>
 </li>
 <li>
-<p>
-curl icanhazip.com
-</p>
+<p>curl icanhazip.com</p>
 </li>
 <li>
-<p>
-curl ident.me
-</p>
+<p>curl ident.me</p>
 </li>
 </ul>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
 <h3 id="headline-13">
 计划任务
 </h3>
-<p>
-给东西的行为设置一个计时器，或一个后台状态
-</p>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>给东西的行为设置一个计时器，或一个后台状态</p>
 <ul>
 <li>
-<p>
-任务放在前、后台 fg bg jobs 
-</p>
+<p>任务放在前、后台 fg bg jobs </p>
 </li>
 <li>
-<p>
-周期任务 crontab
-</p>
+<p>周期任务 crontab</p>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -662,44 +576,56 @@ curl ident.me
 </div>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
 <h3 id="headline-14">
 帮助文档    
 </h3>
+<div id="outline-text-headline-14" class="outline-text-3">
 <ul>
 <li>
-<p>
-man [manual] 命令手册
-</p>
+<p>man [manual] 命令手册</p>
 </li>
 <li>
-<p>
-manpages-zh  中文命令手册
-</p>
+<p>manpages-zh  中文命令手册</p>
 </li>
 <li>
-<p>
-info 详细文档
-</p>
+<p>info 详细文档</p>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-3">
 <h3 id="headline-15">
 工具软件    
 </h3>
+<div id="outline-text-headline-15" class="outline-text-3">
+<div id="outline-container-headline-16" class="outline-4">
 <h4 id="headline-16">
 压缩解压
 </h4>
+<div id="outline-text-headline-16" class="outline-text-4">
+<div id="outline-container-headline-17" class="outline-5">
 <h5 id="headline-17">
 unar
 </h5>
-<p>
-解压缩，中文不会乱码
-</p>
+<div id="outline-text-headline-17" class="outline-text-5">
+<p>解压缩，中文不会乱码</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-4">
 <h4 id="headline-18">
 pdf
 </h4>
+<div id="outline-text-headline-18" class="outline-text-4">
+<div id="outline-container-headline-19" class="outline-5">
 <h5 id="headline-19">
 合并 pdf  
 </h5>
+<div id="outline-text-headline-19" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -710,12 +636,20 @@ pdf
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-4">
 <h4 id="headline-20">
 查找
 </h4>
+<div id="outline-text-headline-20" class="outline-text-4">
+<div id="outline-container-headline-21" class="outline-5">
 <h5 id="headline-21">
 查找文件 
 </h5>
+<div id="outline-text-headline-21" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -726,15 +660,27 @@ pdf
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-4">
 <h4 id="headline-22">
 图片处理
 </h4>
+<div id="outline-text-headline-22" class="outline-text-4">
+<div id="outline-container-headline-23" class="outline-5">
 <h5 id="headline-23">
 压缩转换 convert
 </h5>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-4">
 <h4 id="headline-24">
 录制视频短片 peek
 </h4>
+<div id="outline-text-headline-24" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -749,9 +695,13 @@ pdf
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-4">
 <h4 id="headline-25">
 像素识别
 </h4>
+<div id="outline-text-headline-25" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -762,8 +712,14 @@ pdf
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
 </li>
 </ul>
+</div>
+</div>
     </div>
 
     
@@ -854,7 +810,10 @@ pdf
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
