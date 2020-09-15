@@ -50,7 +50,7 @@
 <meta itemprop="description" content="emacs 编辑器">
 <meta itemprop="datePublished" content="2019-06-04T22:41:32+08:00" />
 <meta itemprop="dateModified" content="2020-02-05T18:24:57+08:00" />
-<meta itemprop="wordCount" content="930">
+<meta itemprop="wordCount" content="978">
 
 
 
@@ -90,12 +90,8 @@
         <li class="mobile-menu-item">标签</li>
       </a><a href="/categories/">
         <li class="mobile-menu-item">分类</li>
-      </a><a href="/music/">
-        <li class="mobile-menu-item">音乐</li>
       </a><a href="/source/">
         <li class="mobile-menu-item">资源</li>
-      </a><a href="/notes/">
-        <li class="mobile-menu-item">日记</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
@@ -118,11 +114,7 @@
       </li><li class="menu-item">
         <a class="menu-item-link" href="/categories/">分类</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/music/">音乐</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/notes/">日记</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
@@ -210,13 +202,21 @@
 </li>
 <li><a href="#headline-27">选项</a>
 </li>
+<li><a href="#headline-28">自定义配置</a>
+<ul>
+<li><a href="#headline-29">创建配置文件 .emacs-light</a>
+</li>
+<li><a href="#headline-30">加载配置文件</a>
+</li>
+</ul>
+</li>
 </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <p>
-文本编辑器，扩展多。</p>
+文本编辑器，因为其功能是通过 lisp 脚本渲染的，所以功能全部可配置。</p>
 <div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 抽象概念 
@@ -840,27 +840,64 @@ rectangle (矩形标记)
 <div id="outline-text-headline-27" class="outline-text-3">
 <ul>
 <li>
-<p>q      不 装载 初始化 文件</p>
+<p>q   不装载初始化文件</p>
 </li>
 <li>
 <p>l file 装载 文件 file 里面 的 lisp 代码</p>
 </li>
 <li>
 <p>f function 执行 lisp 函数 function</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-28" class="outline-3">
+<h3 id="headline-28">
+自定义配置
+</h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<div id="outline-container-headline-29" class="outline-4">
+<h4 id="headline-29">
+创建配置文件 .emacs-light
+</h4>
+<div id="outline-text-headline-29" class="outline-text-4">
+<div class="src src-lisp">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/main&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/functions&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/modes&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/theme&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
 <p>
-从头测试，你可以用下面的方法测试你的配置</p>
-<div class="src src-shell">
+    emacs 会加载 main.elc 或 main.el 文件</p>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-4">
+<h4 id="headline-30">
+加载配置文件
+</h4>
+<div id="outline-text-headline-30" class="outline-text-4">
+<div class="src src-lisp">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">emacs -l file  -q</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nv">emacs</span> <span class="nv">-q</span> <span class="nv">-l</span> <span class="nv">~/.emacs-light</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-</li>
-</ul>
+</div>
+</div>
 </div>
 </div>
     </div>
@@ -871,9 +908,9 @@ rectangle (矩形标记)
           <a href="/tags/emacs/">emacs</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/readbook/">
+        <a class="prev" href="/post/linux/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">学习简介</span>
+            <span class="prev-text nav-default">Linux命令简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2020 06:26:21 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 08:41:15 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -43,13 +43,19 @@
     </item>
     
     <item>
-      <title>【三楼】UNIX命令简介</title>
-      <link>https://aming.xyz/post/linux/</link>
-      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
+      <title>计算机简介</title>
+      <link>https://aming.xyz/post/computer/</link>
+      <pubDate>Tue, 15 Sep 2020 08:41:15 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/linux/</guid>
-      <description>&lt;p&gt;
-记录一下用命令操控计算机的用法&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/computer/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-1&#34;&gt;
+什么是计算
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;猫的本质是猫的，狗的本质是狗的，那么计算的本质是计算的。&lt;/p&gt;
+&lt;p&gt;
+那么我们怎么进行计算呢？这里先提出一个问题，怎么喂饱一只猫呢？我们的解决方案是扔给他一个小鱼干，那么猫就做它的猫的本质的事情了，余下都不再是我们的问题。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -211,13 +217,23 @@
     </item>
     
     <item>
+      <title>Linux命令简介</title>
+      <link>https://aming.xyz/post/linux/</link>
+      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/linux/</guid>
+      <description>&lt;p&gt;
+记录 Linux 操作系统常用命令的备忘&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>emacs 简介</title>
       <link>https://aming.xyz/post/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
       <guid>https://aming.xyz/post/emacs/</guid>
       <description>&lt;p&gt;
-文本编辑器，扩展多。&lt;/p&gt;</description>
+文本编辑器，因为其功能是通过 lisp 脚本渲染的，所以功能全部可配置。&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -23,29 +23,8 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/linux/</loc>
-    <lastmod>2020-03-24T06:15:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/music/</loc>
-    <lastmod>2019-12-13T06:59:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/source/</loc>
     <lastmod>2020-05-04T20:42:42+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/notes/</loc>
-    <lastmod>2019-11-23T04:03:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -59,21 +38,49 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BAcomputer/</loc>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/computer/</loc>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -94,13 +101,6 @@
   
   <url>
     <loc>https://aming.xyz/post/daydream/</loc>
-    <lastmod>2020-05-31T06:26:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2020-05-31T06:26:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -193,13 +193,6 @@
   <url>
     <loc>https://aming.xyz/tags/network/</loc>
     <lastmod>2020-02-13T13:08:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-03-24T06:15:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -317,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/tags/unix/</loc>
+    <loc>https://aming.xyz/post/linux/</loc>
     <lastmod>2020-03-24T06:15:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
