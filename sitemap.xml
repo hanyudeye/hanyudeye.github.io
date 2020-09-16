@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/math/</loc>
-    <lastmod>2020-02-10T04:24:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/source/</loc>
     <lastmod>2020-05-04T20:42:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,28 +31,49 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/tags/</loc>
-    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/tags/%E4%B8%87%E7%BB%B4%E7%BD%91/</loc>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/web/</loc>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2020-09-15T13:24:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -73,13 +87,6 @@
   
   <url>
     <loc>https://aming.xyz/post/computer/</loc>
-    <lastmod>2020-09-15T08:41:15+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2020-09-15T08:41:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -255,6 +262,13 @@
   
   <url>
     <loc>https://aming.xyz/tags/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2020-02-10T04:24:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/math/</loc>
     <lastmod>2020-02-10T04:24:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
