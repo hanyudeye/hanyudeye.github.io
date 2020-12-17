@@ -6,7 +6,11 @@
     <description>Recent content in 科普 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/categories/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>物理</title>
       <link>https://aming.xyz/post/physics/</link>
@@ -14,7 +18,8 @@
       
       <guid>https://aming.xyz/post/physics/</guid>
       <description>&lt;p&gt;
-物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。&lt;/p&gt;</description>
+物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,7 +51,8 @@
       
       <guid>https://aming.xyz/post/readbook/</guid>
       <description>&lt;p&gt;
-知识，是我们对东西的观念，以脑细胞的形式存放在我们脑中。学习是通过感官或思考获得知识的行为。&lt;/p&gt;</description>
+知识，是我们对东西的观念，以脑细胞的形式存放在我们脑中。学习是通过感官或思考获得知识的行为。
+&lt;/p&gt;</description>
     </item>
     
   </channel>

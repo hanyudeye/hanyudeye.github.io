@@ -6,7 +6,11 @@
     <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>万维网简介</title>
       <link>https://aming.xyz/post/web/</link>
@@ -14,16 +18,23 @@
       
       <guid>https://aming.xyz/post/web/</guid>
       <description>&lt;p&gt;
-计算机网络形成以后，我们可以方便的从别人的计算机获取资料了。 要满足这个条件，我们必须满足几个条件：&lt;/p&gt;
+计算机网络形成以后，我们可以方便的从别人的计算机获取资料了。 要满足这个条件，我们必须满足几个条件：
+&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;有一个客户端 (本地计算机)&lt;/p&gt;
+&lt;p&gt;
+有一个客户端 (本地计算机)
+&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;有一个服务端 (远程计算机)&lt;/p&gt;
+&lt;p&gt;
+有一个服务端 (远程计算机)
+&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;一条连接协议&lt;/p&gt;
+&lt;p&gt;
+一条连接协议
+&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;</description>
     </item>
@@ -34,14 +45,15 @@
       <pubDate>Tue, 15 Sep 2020 08:41:15 +0800</pubDate>
       
       <guid>https://aming.xyz/post/computer/</guid>
-      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
-&lt;h3 id=&#34;headline-1&#34;&gt;
+      <description>&lt;h3 id=&#34;headline-1&#34;&gt;
 什么是计算
 &lt;/h3&gt;
-&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
-&lt;p&gt;猫的本质是猫的，狗的本质是狗的，那么计算的本质是计算的。&lt;/p&gt;
 &lt;p&gt;
-那么我们怎么进行计算呢？这里先提出一个问题，怎么喂饱一只猫呢？我们的解决方案是扔给他一个小鱼干，那么猫就做它的猫的本质的事情了，余下都不再是我们的问题。&lt;/p&gt;</description>
+猫的本质是猫的，狗的本质是狗的，那么计算的本质是计算的。
+&lt;/p&gt;
+&lt;p&gt;
+那么我们怎么进行计算呢？这里先提出一个问题，怎么喂饱一只猫呢？我们的解决方案是扔给他一个小鱼干，那么猫就做它的猫的本质的事情了，余下都不再是我们的问题。
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,50 +63,68 @@
       
       <guid>https://aming.xyz/post/network/</guid>
       <description>&lt;p&gt;
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。&lt;/p&gt;
+一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
+&lt;/p&gt;
 &lt;p&gt;
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。&lt;/p&gt;</description>
+计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>版本控制简介</title>
+      <title>版本管理</title>
       <link>https://aming.xyz/post/vc/</link>
       <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/vc/</guid>
-      <description>&lt;p&gt;
-对 &lt;strong&gt;文件的更改&lt;/strong&gt; 进行 &lt;strong&gt;信息跟踪&lt;/strong&gt; 的软件，一般给开发软件的人用的，用于团队协作。&lt;/p&gt;
-&lt;p&gt;
-基本功能就是给改动的文件进行 &lt;strong&gt;编号&lt;/strong&gt; ，然后我们就可以按照 &lt;strong&gt;编号&lt;/strong&gt; 查看文件的历史记录。&lt;/p&gt;</description>
+      <description></description>
     </item>
     
     <item>
-      <title>算法简介</title>
+      <title>算法小难题</title>
       <link>https://aming.xyz/post/algorithm/</link>
       <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
       
       <guid>https://aming.xyz/post/algorithm/</guid>
       <description>&lt;p&gt;
-简单举个例子，给你一个废铁，我要打造一枚铁戒，不管你用什么方法。这种对解题方法的
-研究，就是算法研究。
-如果要想打造一枚金戒，以现有的技术，很难实现，所以称为不可解决算法。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在面向现实中，可能会有很多约束条件，解题方法会苛刻的多。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+算法是完成一件事情的明细。
+&lt;/p&gt;
+&lt;p&gt;
+有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>编程语言简介</title>
+      <title>编程语言小问题</title>
       <link>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sat, 07 Dec 2019 19:41:03 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;
-语言，是人类为了彼此沟通的需要，创造出的一种符号，用来指代外部的东西。&lt;/p&gt;
+什么是自然语言？
+&lt;/p&gt;
 &lt;p&gt;
-编程语言同样也是一种符号，我们用符号进行沟通，要注意符号的使用规则，避免语法错误。&lt;/p&gt;
+就是沟通的双方都能理解的一种符号或语音或视频，用来表达想法或现象的。
+&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;所以，和语言一样，编程语言是用一套自己的 &lt;strong&gt;语法规则&lt;/strong&gt; 来 &lt;strong&gt;描述&lt;/strong&gt; 世界上东西状态的一种符号。&lt;/p&gt;
+&lt;p&gt;
+就是给沟通对象传达自己意图的某种行为，比如，盲人的比比划划，对外国人的指指画画等动作
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+什么是编程语言？
+&lt;/p&gt;
+&lt;p&gt;
+就是给计算机看的，用在计算机上的一种符号，指导计算机行为的东西
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+计算机还没有人那么智能，以后发展的话，计算机也能通过其它介质来传递想法(如语音描述什么的)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+因为计算机现在还不太智能，解析语言的解析器只能理解文本，所以，编程语言必须是某种 &lt;strong&gt;规则化&lt;/strong&gt; 的文本
+&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -105,7 +135,8 @@
       
       <guid>https://aming.xyz/post/linux/</guid>
       <description>&lt;p&gt;
-记录 Linux 操作系统常用命令的备忘&lt;/p&gt;</description>
+记录 Linux 操作系统常用命令的备忘
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,7 +146,8 @@
       
       <guid>https://aming.xyz/post/emacs/</guid>
       <description>&lt;p&gt;
-文本编辑器，因为其功能是通过 lisp 脚本渲染的，所以功能全部可配置。&lt;/p&gt;</description>
+一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
+&lt;/p&gt;</description>
     </item>
     
   </channel>

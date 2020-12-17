@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.75.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/linux/" />
@@ -36,7 +36,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.5a25facc56411f2d36ef727e420992af24bcaebf56f9b0d098faeb5062a02248.css" rel="stylesheet">
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -48,14 +48,13 @@
 <meta property="article:modified_time" content="2020-03-24T06:15:52+08:00" />
 <meta itemprop="name" content="Linux命令简介">
 <meta itemprop="description" content="linux命令简介">
-<meta itemprop="datePublished" content="2019-11-29T21:49:26+08:00" />
-<meta itemprop="dateModified" content="2020-03-24T06:15:52+08:00" />
-<meta itemprop="wordCount" content="1879">
+<meta itemprop="datePublished" content="2019-11-29T21:49:26&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-24T06:15:52&#43;08:00" />
+<meta itemprop="wordCount" content="2890">
 
 
 
-<meta itemprop="keywords" content="linux," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux命令简介"/>
 <meta name="twitter:description" content="linux命令简介"/>
 
@@ -97,6 +96,25 @@
       </a>
   </ul>
 </nav>
+
+<div class="duilian">
+    <img src="/pic/duilian.png"  />
+</div>
+
+<style>
+ .duilian{
+     position: fixed;
+     top: 0;
+     left: 20;
+     bottom: 0;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 0;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -510,75 +528,103 @@
 </li>
 <li><a href="#headline-149">查看网络服务和端口 netstat / ss</a>
 </li>
-<li><a href="#headline-150">网络监听抓包  tcpdump</a>
-</li>
-<li><a href="#headline-151">安全文件拷贝  scp</a>
-</li>
-<li><a href="#headline-152">文件同步工具  rsync</a>
-</li>
-<li><a href="#headline-153">安全文件传输  sftp</a>
-</li>
-<li><a href="#headline-154">查看公网 IP</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-155">计划任务</a>
+<li><a href="#headline-150">网络监听抓包  tcpdump (需要管理员权限)</a>
 <ul>
-<li><a href="#headline-156">在指定的时间执行命令</a>
+<li><a href="#headline-151">监视指定网络接口的数据包</a>
+</li>
+<li><a href="#headline-152">监视指定主机和端口的数据包</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-153">安全文件拷贝  scp</a>
+</li>
+<li><a href="#headline-154">文件同步工具  rsync</a>
+</li>
+<li><a href="#headline-155">安全文件传输  sftp</a>
+</li>
+<li><a href="#headline-156">查看公网 IP</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-157">计划任务</a>
 <ul>
-<li><a href="#headline-157">将任务排队，在指定的时间执行 at </a>
-</li>
-<li><a href="#headline-158">查看待执行的任务队列 atq</a>
-</li>
-<li><a href="#headline-159">从队列中删除待执行的任务 atrm</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-160">计划任务表 crontab</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-161">系统诊断</a>
+<li><a href="#headline-158">在指定的时间执行命令</a>
 <ul>
-<li><a href="#headline-162">系统启动异常诊断 dmesg</a>
+<li><a href="#headline-159">将任务排队，在指定的时间执行 at </a>
 </li>
-<li><a href="#headline-163">查看系统活动信息 sar </a>
+<li><a href="#headline-160">查看待执行的任务队列 atq</a>
 </li>
-<li><a href="#headline-164">查看内存使用情况  free</a>
-</li>
-<li><a href="#headline-165">虚拟内存统计 vmstat</a>
-</li>
-<li><a href="#headline-166">CPU 信息统计  mpstat</a>
-</li>
-<li><a href="#headline-167">查看进程使用内存状况 pmap</a>
-</li>
-<li><a href="#headline-168">报告设备 CPU 和 I/O 统计信息 iostat</a>
-</li>
-<li><a href="#headline-169">显示所有 PCI 设备 lspci</a>
-</li>
-<li><a href="#headline-170">显示进程间通信设施的状态  ipcs</a>
+<li><a href="#headline-161">从队列中删除待执行的任务 atrm</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-171">工具软件    </a>
+<li><a href="#headline-162">计划任务表 crontab</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-163">系统诊断</a>
 <ul>
-<li><a href="#headline-172">pdf</a>
+<li><a href="#headline-164">系统启动异常诊断 dmesg</a>
+</li>
+<li><a href="#headline-165">查看系统活动信息 sar </a>
+</li>
+<li><a href="#headline-166">查看内存使用情况  free</a>
+</li>
+<li><a href="#headline-167">虚拟内存统计 vmstat</a>
+</li>
+<li><a href="#headline-168">CPU 信息统计  mpstat</a>
+</li>
+<li><a href="#headline-169">查看进程使用内存状况 pmap</a>
+</li>
+<li><a href="#headline-170">报告设备 CPU 和 I/O 统计信息 iostat</a>
+</li>
+<li><a href="#headline-171">显示所有 PCI 设备 lspci</a>
+</li>
+<li><a href="#headline-172">显示进程间通信设施的状态  ipcs</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-173">工具软件    </a>
 <ul>
-<li><a href="#headline-173">合并 pdf  </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-174">图片处理</a>
+<li><a href="#headline-174">pdf</a>
 <ul>
-<li><a href="#headline-175">压缩转换 convert</a>
+<li><a href="#headline-175">合并 pdf  </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-176">录制视频短片 peek</a>
-</li>
-<li><a href="#headline-177">像素识别</a>
+<li><a href="#headline-176">图片处理</a>
+<ul>
+<li><a href="#headline-177">压缩转换 convert</a>
 </li>
 </ul>
+</li>
+<li><a href="#headline-178">录制视频短片 peek</a>
+</li>
+<li><a href="#headline-179">像素识别</a>
+</li>
+<li><a href="#headline-180">wireshark</a>
+<ul>
+<li><a href="#headline-181">数据链路层：</a>
+</li>
+<li><a href="#headline-182">网络层：</a>
+</li>
+<li><a href="#headline-183">传输层：</a>
+</li>
+<li><a href="#headline-184">应用层：</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-185">feh </a>
+</li>
+<li><a href="#headline-186">Pandoc</a>
+</li>
+<li><a href="#headline-187">apt 软件包管理</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-188">进程占用端口</a>
+</li>
+<li><a href="#headline-189">输入法</a>
 </li>
 </ul>
 </nav>
@@ -586,383 +632,253 @@
 </div>
     <div class="post-content">
       <p>
-记录 Linux 操作系统常用命令的备忘</p>
+记录 Linux 操作系统常用命令的备忘
+</p>
 <p>
-通用命令格式：</p>
+通用命令格式：
+</p>
 <blockquote>
-<p>命令名称 [命名参数] [命令对象]</p>
+<p>
+命令名称 [命名参数] [命令对象]
+</p>
 </blockquote>
-<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 基础命令
 </h3>
-<div id="outline-text-headline-1" class="outline-text-3">
-<div id="outline-container-headline-2" class="outline-4">
 <h4 id="headline-2">
 获取登录信息 
 </h4>
-<div id="outline-text-headline-2" class="outline-text-4">
-<div id="outline-container-headline-3" class="outline-5">
 <h5 id="headline-3">
 w
 </h5>
-<div id="outline-text-headline-3" class="outline-text-5">
-<p>显示已登录用户以及他们正在干什么</p>
-</div>
-</div>
-<div id="outline-container-headline-4" class="outline-5">
+<p>
+显示已登录用户以及他们正在干什么
+</p>
 <h5 id="headline-4">
 who
 </h5>
-<div id="outline-text-headline-4" class="outline-text-5">
-<p>显示已登录用户，信息没有 <code>w</code> 来得全面</p>
-</div>
-</div>
-<div id="outline-container-headline-5" class="outline-5">
+<p>
+显示已登录用户，信息没有 <code>w</code> 来得全面
+</p>
 <h5 id="headline-5">
 last
 </h5>
-<div id="outline-text-headline-5" class="outline-text-5">
-<p>显示最近登录的用户列表</p>
-</div>
-</div>
-<div id="outline-container-headline-6" class="outline-5">
+<p>
+显示最近登录的用户列表
+</p>
 <h5 id="headline-6">
 lastb
 </h5>
-<div id="outline-text-headline-6" class="outline-text-5">
-<p>显示用户错误的登录列表，此指令可以发现系统的登录异常</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-7" class="outline-4">
+<p>
+显示用户错误的登录列表，此指令可以发现系统的登录异常
+</p>
 <h4 id="headline-7">
 查看命令的说明和位置 
 </h4>
-<div id="outline-text-headline-7" class="outline-text-4">
-<div id="outline-container-headline-8" class="outline-5">
 <h5 id="headline-8">
 whatis
 </h5>
-<div id="outline-text-headline-8" class="outline-text-5">
-<p>显示命令的简短说明</p>
-</div>
-</div>
-<div id="outline-container-headline-9" class="outline-5">
+<p>
+显示命令的简短说明
+</p>
 <h5 id="headline-9">
 which
 </h5>
-<div id="outline-text-headline-9" class="outline-text-5">
-<p>查找并显示给定命令的绝对路径，环境变量 PATH 中保存了查找命令时需要遍历的目录</p>
-</div>
-</div>
-<div id="outline-container-headline-10" class="outline-5">
+<p>
+查找并显示给定命令的绝对路径，环境变量 PATH 中保存了查找命令时需要遍历的目录
+</p>
 <h5 id="headline-10">
 whereis
 </h5>
-<div id="outline-text-headline-10" class="outline-text-5">
-<p>显示指令的二进制程序、源代码文件和 man 手册页等相关文件的路径</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-11" class="outline-4">
+<p>
+显示指令的二进制程序、源代码文件和 man 手册页等相关文件的路径
+</p>
 <h4 id="headline-11">
 清除屏幕上显示的内容 
 </h4>
-<div id="outline-text-headline-11" class="outline-text-4">
-<div id="outline-container-headline-12" class="outline-5">
 <h5 id="headline-12">
 clear
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-13" class="outline-4">
 <h4 id="headline-13">
 查看帮助文档    
 </h4>
-<div id="outline-text-headline-13" class="outline-text-4">
-<div id="outline-container-headline-14" class="outline-5">
 <h5 id="headline-14">
 man [manual]
 </h5>
-<div id="outline-text-headline-14" class="outline-text-5">
-<p>命令手册页</p>
-</div>
-</div>
-<div id="outline-container-headline-15" class="outline-5">
+<p>
+命令手册页
+</p>
 <h5 id="headline-15">
 manpages-zh  
 </h5>
-<div id="outline-text-headline-15" class="outline-text-5">
-<p>中文命令手册</p>
-</div>
-</div>
-<div id="outline-container-headline-16" class="outline-5">
+<p>
+中文命令手册
+</p>
 <h5 id="headline-16">
 info 
 </h5>
-<div id="outline-text-headline-16" class="outline-text-5">
-<p>更加详细的命令文档</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-17" class="outline-4">
+<p>
+更加详细的命令文档
+</p>
 <h4 id="headline-17">
 查看系统和主机名 
 </h4>
-<div id="outline-text-headline-17" class="outline-text-4">
-<div id="outline-container-headline-18" class="outline-5">
 <h5 id="headline-18">
 uname 
 </h5>
-<div id="outline-text-headline-18" class="outline-text-5">
-<p>显示系统信息</p>
-</div>
-</div>
-<div id="outline-container-headline-19" class="outline-5">
+<p>
+显示系统信息
+</p>
 <h5 id="headline-19">
 hostname
 </h5>
-<div id="outline-text-headline-19" class="outline-text-5">
-<p>显示或设置系统的主机名</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-20" class="outline-4">
+<p>
+显示或设置系统的主机名
+</p>
 <h4 id="headline-20">
 时间和日期 
 </h4>
-<div id="outline-text-headline-20" class="outline-text-4">
-<div id="outline-container-headline-21" class="outline-5">
 <h5 id="headline-21">
 date 
 </h5>
-</div>
-<div id="outline-container-headline-22" class="outline-5">
 <h5 id="headline-22">
 cal
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-23" class="outline-4">
 <h4 id="headline-23">
 重启和关机 
 </h4>
-<div id="outline-text-headline-23" class="outline-text-4">
-<div id="outline-container-headline-24" class="outline-5">
 <h5 id="headline-24">
 reboot
 </h5>
-</div>
-<div id="outline-container-headline-25" class="outline-5">
 <h5 id="headline-25">
 shutdown
 </h5>
-<div id="outline-text-headline-25" class="outline-text-5">
-<p>shutdown [OPTIONS…] [TIME][WALL…]</p>
+<p>
+shutdown [OPTIONS…] [TIME][WALL…]
+</p>
 <p>
 可选参数[TIME] 表示时间的字符串(通常是 now，+m )
-[WALL…]用于发送给所有登录用户的警告信息</p>
+[WALL…]用于发送给所有登录用户的警告信息
+</p>
 <p>
 如果使用了[TIME]参数， 那么在关机流程开始前 5 分钟将会创建
-/run/nologin 文件， 以禁止用户登录。</p>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-26" class="outline-4">
+/run/nologin 文件， 以禁止用户登录。
+</p>
 <h4 id="headline-26">
 退出登录 
 </h4>
-<div id="outline-text-headline-26" class="outline-text-4">
-<div id="outline-container-headline-27" class="outline-5">
 <h5 id="headline-27">
 exit
 </h5>
-</div>
-<div id="outline-container-headline-28" class="outline-5">
 <h5 id="headline-28">
 logout
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-29" class="outline-4">
 <h4 id="headline-29">
 查看历史命令 history
 </h4>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-30" class="outline-3">
 <h3 id="headline-30">
 实用程序
 </h3>
-<div id="outline-text-headline-30" class="outline-text-3">
-<div id="outline-container-headline-31" class="outline-4">
 <h4 id="headline-31">
 文件和文件夹操作
 </h4>
-<div id="outline-text-headline-31" class="outline-text-4">
-<div id="outline-container-headline-32" class="outline-5">
 <h5 id="headline-32">
 创建/删除目录
 </h5>
-<div id="outline-text-headline-32" class="outline-text-5">
-<div id="outline-container-headline-33" class="outline-6">
 <h6 id="headline-33">
 mkdir
 </h6>
-</div>
-<div id="outline-container-headline-34" class="outline-6">
 <h6 id="headline-34">
 rmdir
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-35" class="outline-5">
 <h5 id="headline-35">
 创建/删除文件
 </h5>
-<div id="outline-text-headline-35" class="outline-text-5">
-<div id="outline-container-headline-36" class="outline-6">
 <h6 id="headline-36">
 touch
 </h6>
-</div>
-<div id="outline-container-headline-37" class="outline-6">
 <h6 id="headline-37">
 rm
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-38" class="outline-5">
 <h5 id="headline-38">
 切换和查看当前工作目录 
 </h5>
-<div id="outline-text-headline-38" class="outline-text-5">
-<div id="outline-container-headline-39" class="outline-6">
 <h6 id="headline-39">
 ls
 </h6>
-<div id="outline-text-headline-39" class="outline-text-6">
 <ul>
 <li>
-<p>R 递归展开</p>
+<p>
+R 递归展开
+</p>
 </li>
 <li>
-<p>a 显示隐藏文件</p>
+<p>
+a 显示隐藏文件
+</p>
 </li>
 <li>
-<p>d 仅显示目录</p>
+<p>
+d 仅显示目录
+</p>
 </li>
 <li>
-<p>t/r 排序 (正向，反向)</p>
+<p>
+t/r 排序 (正向，反向)
+</p>
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-headline-40" class="outline-6">
 <h6 id="headline-40">
 cd
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-41" class="outline-5">
 <h5 id="headline-41">
 查看文件内容
 </h5>
-<div id="outline-text-headline-41" class="outline-text-5">
-<div id="outline-container-headline-42" class="outline-6">
 <h6 id="headline-42">
 cat (正看)
 </h6>
-</div>
-<div id="outline-container-headline-43" class="outline-6">
 <h6 id="headline-43">
 tac (倒看)
 </h6>
-</div>
-<div id="outline-container-headline-44" class="outline-6">
 <h6 id="headline-44">
 head
 </h6>
-</div>
-<div id="outline-container-headline-45" class="outline-6">
 <h6 id="headline-45">
 tail
 </h6>
-</div>
-<div id="outline-container-headline-46" class="outline-6">
 <h6 id="headline-46">
 more
 </h6>
-</div>
-<div id="outline-container-headline-47" class="outline-6">
 <h6 id="headline-47">
 less
 </h6>
-</div>
-<div id="outline-container-headline-48" class="outline-6">
 <h6 id="headline-48">
 rev (反向)
 </h6>
-</div>
-<div id="outline-container-headline-49" class="outline-6">
 <h6 id="headline-49">
 od
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-50" class="outline-5">
 <h5 id="headline-50">
 拷贝/移动文件
 </h5>
-<div id="outline-text-headline-50" class="outline-text-5">
-<div id="outline-container-headline-51" class="outline-6">
 <h6 id="headline-51">
 cp
 </h6>
-</div>
-<div id="outline-container-headline-52" class="outline-6">
 <h6 id="headline-52">
 mv
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-53" class="outline-5">
 <h5 id="headline-53">
 文件重命名 
 </h5>
-<div id="outline-text-headline-53" class="outline-text-5">
-<div id="outline-container-headline-54" class="outline-6">
 <h6 id="headline-54">
 rename
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-55" class="outline-5">
 <h5 id="headline-55">
 查找文件和查找内容 
 </h5>
-<div id="outline-text-headline-55" class="outline-text-5">
-<div id="outline-container-headline-56" class="outline-6">
 <h6 id="headline-56">
 find
 </h6>
-<div id="outline-text-headline-56" class="outline-text-6">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -973,217 +889,141 @@ find
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="outline-container-headline-57" class="outline-6">
 <h6 id="headline-57">
 grep
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-58" class="outline-5">
 <h5 id="headline-58">
 创建链接和查看链接 
 </h5>
-<div id="outline-text-headline-58" class="outline-text-5">
-<div id="outline-container-headline-59" class="outline-6">
 <h6 id="headline-59">
 ln
 </h6>
-</div>
-<div id="outline-container-headline-60" class="outline-6">
 <h6 id="headline-60">
 readlink
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-61" class="outline-5">
 <h5 id="headline-61">
 压缩/解压缩和归档/解归档
 </h5>
-<div id="outline-text-headline-61" class="outline-text-5">
-<div id="outline-container-headline-62" class="outline-6">
 <h6 id="headline-62">
 gzip
 </h6>
-</div>
-<div id="outline-container-headline-63" class="outline-6">
 <h6 id="headline-63">
 gunzip
 </h6>
-</div>
-<div id="outline-container-headline-64" class="outline-6">
 <h6 id="headline-64">
 unar
 </h6>
-<div id="outline-text-headline-64" class="outline-text-6">
-<p>中文不会乱码</p>
-</div>
-</div>
-<div id="outline-container-headline-65" class="outline-6">
+<p>
+中文不会乱码
+</p>
 <h6 id="headline-65">
 xz
 </h6>
-</div>
-<div id="outline-container-headline-66" class="outline-6">
 <h6 id="headline-66">
 tar
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-67" class="outline-5">
 <h5 id="headline-67">
 将标准输入转成命令行参数 
 </h5>
-<div id="outline-text-headline-67" class="outline-text-5">
-<div id="outline-container-headline-68" class="outline-6">
 <h6 id="headline-68">
 xargs
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-69" class="outline-5">
 <h5 id="headline-69">
 其他相关工具
 </h5>
-<div id="outline-text-headline-69" class="outline-text-5">
-<div id="outline-container-headline-70" class="outline-6">
 <h6 id="headline-70">
 对内容排序 sort
 </h6>
-</div>
-<div id="outline-container-headline-71" class="outline-6">
 <h6 id="headline-71">
 拆分文件 split
 </h6>
-</div>
-<div id="outline-container-headline-72" class="outline-6">
 <h6 id="headline-72">
 判断文件类型 file
 </h6>
-</div>
-<div id="outline-container-headline-73" class="outline-6">
 <h6 id="headline-73">
 统计文件行数、单词数、字节数 wc
 </h6>
-</div>
-<div id="outline-container-headline-74" class="outline-6">
 <h6 id="headline-74">
 去掉相邻重复内容 uniq
 </h6>
-</div>
-<div id="outline-container-headline-75" class="outline-6">
 <h6 id="headline-75">
 替换指定内容为新内容 tr
 </h6>
-</div>
-<div id="outline-container-headline-76" class="outline-6">
 <h6 id="headline-76">
 剪切/黏贴内容 cut paste
 </h6>
-</div>
-<div id="outline-container-headline-77" class="outline-6">
 <h6 id="headline-77">
 编码转换 iconv
 </h6>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-78" class="outline-4">
 <h4 id="headline-78">
 管道和重定向
 </h4>
-<div id="outline-text-headline-78" class="outline-text-4">
-<div id="outline-container-headline-79" class="outline-5">
 <h5 id="headline-79">
 管道 |
 </h5>
-</div>
-<div id="outline-container-headline-80" class="outline-5">
 <h5 id="headline-80">
 输出重定向和错误重定向 
 </h5>
-<div id="outline-text-headline-80" class="outline-text-5">
-<div id="outline-container-headline-81" class="outline-6">
 <h6 id="headline-81">
 输出&gt;
 </h6>
-</div>
-<div id="outline-container-headline-82" class="outline-6">
 <h6 id="headline-82">
 追加&gt;&gt;
 </h6>
-</div>
-<div id="outline-container-headline-83" class="outline-6">
 <h6 id="headline-83">
 错误输出 2&gt;
 </h6>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-84" class="outline-5">
 <h5 id="headline-84">
 输入重定向 &lt;
 </h5>
-</div>
-<div id="outline-container-headline-85" class="outline-5">
 <h5 id="headline-85">
 多重定向 tee
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-86" class="outline-4">
 <h4 id="headline-86">
 别名
 </h4>
-<div id="outline-text-headline-86" class="outline-text-4">
-<div id="outline-container-headline-87" class="outline-5">
 <h5 id="headline-87">
 alias
 </h5>
-</div>
-<div id="outline-container-headline-88" class="outline-5">
 <h5 id="headline-88">
 unalias
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-89" class="outline-4">
 <h4 id="headline-89">
 文本处理
 </h4>
-<div id="outline-text-headline-89" class="outline-text-4">
-<div id="outline-container-headline-90" class="outline-5">
 <h5 id="headline-90">
 字符流编辑器  sed
 </h5>
-<div id="outline-text-headline-90" class="outline-text-5">
-<p>用法：
-sed 脚本 文件</p>
 <p>
-sed &#39;s,A,B,&#39; FILE   把 FILE 中的 A 用 B 替换</p>
+用法：
+sed 脚本 文件
+</p>
+<p>
+sed &#39;s,A,B,&#39; FILE   把 FILE 中的 A 用 B 替换
+</p>
 <ul>
 <li>
-<p>a 追加</p>
-</li>
-<li>
-<p>i 插入</p>
-</li>
-<li>
-<p>d 删除</p>
-</li>
-<li>
-<p>s 替换</p>
 <p>
-例子</p>
+a 追加
+</p>
+</li>
+<li>
+<p>
+i 插入
+</p>
+</li>
+<li>
+<p>
+d 删除
+</p>
+</li>
+<li>
+<p>
+s 替换
+</p>
+<p>
+例子
+</p>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1196,16 +1036,15 @@ sed &#39;s,A,B,&#39; FILE   把 FILE 中的 A 用 B 替换</p>
 </div>
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-headline-91" class="outline-5">
 <h5 id="headline-91">
 模式匹配和处理语言 awk
 </h5>
-<div id="outline-text-headline-91" class="outline-text-5">
-<p>处理表格</p>
 <p>
-例子</p>
+处理表格
+</p>
+<p>
+例子
+</p>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1213,97 +1052,59 @@ sed &#39;s,A,B,&#39; FILE   把 FILE 中的 A 用 B 替换</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="o">[</span>root ~<span class="o">]</span><span class="c1"># awk &#39;{print $2}&#39; fruit2.txt </span>
+<pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="o">[</span>root ~<span class="o">]</span><span class="c1"># awk &#39;{print $2}&#39; fruit2.txt</span> 
   <span class="o">[</span>root ~<span class="o">]</span><span class="c1"># awk &#39;{if($3 &gt;= 300) {print $0}}&#39; fruit2.txt</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-92" class="outline-3">
 <h3 id="headline-92">
 用户管理
 </h3>
-<div id="outline-text-headline-92" class="outline-text-3">
-<div id="outline-container-headline-93" class="outline-4">
 <h4 id="headline-93">
 创建和删除用户 
 </h4>
-<div id="outline-text-headline-93" class="outline-text-4">
-<div id="outline-container-headline-94" class="outline-5">
 <h5 id="headline-94">
 useradd
 </h5>
-</div>
-<div id="outline-container-headline-95" class="outline-5">
 <h5 id="headline-95">
 userdel
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-96" class="outline-4">
 <h4 id="headline-96">
 创建和删除用户组 
 </h4>
-<div id="outline-text-headline-96" class="outline-text-4">
-<div id="outline-container-headline-97" class="outline-5">
 <h5 id="headline-97">
 groupadd 
 </h5>
-</div>
-<div id="outline-container-headline-98" class="outline-5">
 <h5 id="headline-98">
 groupdel
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-99" class="outline-4">
 <h4 id="headline-99">
 修改密码 passwd
 </h4>
-</div>
-<div id="outline-container-headline-100" class="outline-4">
 <h4 id="headline-100">
 批量修改用户密码 chpasswd
 </h4>
-</div>
-<div id="outline-container-headline-101" class="outline-4">
 <h4 id="headline-101">
 查看和修改密码有效期 chage
 </h4>
-</div>
-<div id="outline-container-headline-102" class="outline-4">
 <h4 id="headline-102">
 切换用户 su
 </h4>
-</div>
-<div id="outline-container-headline-103" class="outline-4">
 <h4 id="headline-103">
 以管理员身份执行命令 sudo 
 </h4>
-</div>
-<div id="outline-container-headline-104" class="outline-4">
 <h4 id="headline-104">
 显示用户与用户组的信息 id
 </h4>
-</div>
-<div id="outline-container-headline-105" class="outline-4">
 <h4 id="headline-105">
 显示当前终端 tty
 </h4>
-</div>
-<div id="outline-container-headline-106" class="outline-4">
 <h4 id="headline-106">
 write
 </h4>
-<div id="outline-text-headline-106" class="outline-text-4">
-<p>向指定登录用户终端上发送信息</p>
+<p>
+向指定登录用户终端上发送信息
+</p>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1314,150 +1115,100 @@ write
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-107" class="outline-3">
 <h3 id="headline-107">
 进程管理
 </h3>
-<div id="outline-text-headline-107" class="outline-text-3">
-<div id="outline-container-headline-108" class="outline-4">
 <h4 id="headline-108">
 查看进程 ps
 </h4>
-</div>
-<div id="outline-container-headline-109" class="outline-4">
 <h4 id="headline-109">
 显示进程状态树 pstree
 </h4>
-</div>
-<div id="outline-container-headline-110" class="outline-4">
 <h4 id="headline-110">
 查找与指定条件匹配的进程  pgrep
 </h4>
-</div>
-<div id="outline-container-headline-111" class="outline-4">
 <h4 id="headline-111">
 通过进程号终止进程 kill
 </h4>
-</div>
-<div id="outline-container-headline-112" class="outline-4">
 <h4 id="headline-112">
 通过进程名终止进程  killall / pkill
 </h4>
-</div>
-<div id="outline-container-headline-113" class="outline-4">
 <h4 id="headline-113">
 将进程置于后台运行 &amp;
 </h4>
-</div>
-<div id="outline-container-headline-114" class="outline-4">
 <h4 id="headline-114">
 查询后台进程 jobs
 </h4>
-</div>
-<div id="outline-container-headline-115" class="outline-4">
 <h4 id="headline-115">
 让进程在后台继续运行  bg
 </h4>
-</div>
-<div id="outline-container-headline-116" class="outline-4">
 <h4 id="headline-116">
 将后台进程置于前台  fg
 </h4>
-</div>
-<div id="outline-container-headline-117" class="outline-4">
 <h4 id="headline-117">
 用户登出后进程继续工作 nohup
 </h4>
-</div>
-<div id="outline-container-headline-118" class="outline-4">
 <h4 id="headline-118">
 跟踪进程系统调用情况 strace
 </h4>
-</div>
-<div id="outline-container-headline-119" class="outline-4">
 <h4 id="headline-119">
 查看当前运行级别  runlevel
 </h4>
-</div>
-<div id="outline-container-headline-120" class="outline-4">
 <h4 id="headline-120">
 实时监控进程占用资源状况  top
 </h4>
-<div id="outline-text-headline-120" class="outline-text-4">
 <ul>
 <li>
-<p>`-c` - 显示进程的整个路径。</p>
+<p>
+`-c` - 显示进程的整个路径。
+</p>
 </li>
 <li>
-<p>`-d` - 指定两次刷屏之间的间隔时间（秒为单位）。</p>
+<p>
+`-d` - 指定两次刷屏之间的间隔时间（秒为单位）。
+</p>
 </li>
 <li>
-<p>`-i` - 不显示闲置进程或僵尸进程。</p>
+<p>
+`-i` - 不显示闲置进程或僵尸进程。
+</p>
 </li>
 <li>
-<p>`-p` - 显示指定进程的信息。</p>
+<p>
+`-p` - 显示指定进程的信息。
+</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-121" class="outline-3">
 <h3 id="headline-121">
 磁盘管理
 </h3>
-<div id="outline-text-headline-121" class="outline-text-3">
-<div id="outline-container-headline-122" class="outline-4">
 <h4 id="headline-122">
 访问权限
 </h4>
-<div id="outline-text-headline-122" class="outline-text-4">
-<div id="outline-container-headline-123" class="outline-5">
 <h5 id="headline-123">
 改变文件模式 chmod
 </h5>
-</div>
-<div id="outline-container-headline-124" class="outline-5">
 <h5 id="headline-124">
 改变文件所有者 chown 
 </h5>
-</div>
-<div id="outline-container-headline-125" class="outline-5">
 <h5 id="headline-125">
 改变用户组 chgrp  
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-126" class="outline-4">
 <h4 id="headline-126">
 磁盘管理
 </h4>
-<div id="outline-text-headline-126" class="outline-text-4">
-<div id="outline-container-headline-127" class="outline-5">
 <h5 id="headline-127">
 列出文件系统的磁盘使用状况 df
 </h5>
-</div>
-<div id="outline-container-headline-128" class="outline-5">
 <h5 id="headline-128">
 磁盘分区表操作  fdisk
 </h5>
-</div>
-<div id="outline-container-headline-129" class="outline-5">
 <h5 id="headline-129">
 磁盘分区工具  parted
 </h5>
-</div>
-<div id="outline-container-headline-130" class="outline-5">
 <h5 id="headline-130">
 格式化文件系统  mkfs
 </h5>
-<div id="outline-text-headline-130" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1468,201 +1219,156 @@ write
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="outline-container-headline-131" class="outline-5">
 <h5 id="headline-131">
 文件系统检查 fsck
 </h5>
-</div>
-<div id="outline-container-headline-132" class="outline-5">
 <h5 id="headline-132">
 转换或拷贝文件 dd
 </h5>
-</div>
-<div id="outline-container-headline-133" class="outline-5">
 <h5 id="headline-133">
 挂载/卸载 mount / umonut
 </h5>
-</div>
-<div id="outline-container-headline-134" class="outline-5">
 <h5 id="headline-134">
 创建/激活/关闭交换分区 mkswap / swapon / swapoff
 </h5>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-135" class="outline-3">
 <h3 id="headline-135">
 模块管理
 </h3>
-</div>
-<div id="outline-container-headline-136" class="outline-3">
 <h3 id="headline-136">
 配置服务
 </h3>
-<div id="outline-text-headline-136" class="outline-text-3">
-<div id="outline-container-headline-137" class="outline-4">
 <h4 id="headline-137">
 启动服务 systemctl start [SERVER]
 </h4>
-</div>
-<div id="outline-container-headline-138" class="outline-4">
 <h4 id="headline-138">
 终止/重启服务 stop/restart
 </h4>
-</div>
-<div id="outline-container-headline-139" class="outline-4">
 <h4 id="headline-139">
 查看状态 status
 </h4>
-</div>
-<div id="outline-container-headline-140" class="outline-4">
 <h4 id="headline-140">
 设置/禁用服务开机自启 enable / disable
 </h4>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-141" class="outline-3">
 <h3 id="headline-141">
 网络访问和管理
 </h3>
-<div id="outline-text-headline-141" class="outline-text-3">
-<div id="outline-container-headline-142" class="outline-4">
 <h4 id="headline-142">
 安全远程连接 ssh  
 </h4>
-</div>
-<div id="outline-container-headline-143" class="outline-4">
 <h4 id="headline-143">
 通过网络获取资源 wget
 </h4>
-</div>
-<div id="outline-container-headline-144" class="outline-4">
 <h4 id="headline-144">
 发送和接收邮件 mail
 </h4>
-</div>
-<div id="outline-container-headline-145" class="outline-4">
 <h4 id="headline-145">
 网络配置工具（旧） ifconfig
 </h4>
-</div>
-<div id="outline-container-headline-146" class="outline-4">
 <h4 id="headline-146">
 网络配置工具（新） ip
 </h4>
-</div>
-<div id="outline-container-headline-147" class="outline-4">
 <h4 id="headline-147">
 网络可达性检查 ping
 </h4>
-</div>
-<div id="outline-container-headline-148" class="outline-4">
 <h4 id="headline-148">
 显示或管理路由表 route
 </h4>
-</div>
-<div id="outline-container-headline-149" class="outline-4">
 <h4 id="headline-149">
 查看网络服务和端口 netstat / ss
 </h4>
-<div id="outline-text-headline-149" class="outline-text-4">
 <ul>
 <li>
-<p>netstat -lntp 查看所有监听端口</p>
+<p>
+netstat -lntp 查看所有监听端口
+</p>
 </li>
 <li>
-<p>netstat -antp 查看所有已建立的连接</p>
+<p>
+netstat -antp 查看所有已建立的连接
+</p>
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-headline-150" class="outline-4">
 <h4 id="headline-150">
-网络监听抓包  tcpdump
+网络监听抓包  tcpdump (需要管理员权限)
 </h4>
-</div>
-<div id="outline-container-headline-151" class="outline-4">
-<h4 id="headline-151">
+<h5 id="headline-151">
+监视指定网络接口的数据包
+</h5>
+<p>
+tcpdump -i eth1
+</p>
+<h5 id="headline-152">
+监视指定主机和端口的数据包
+</h5>
+<p>
+如果想要获取主机 210.27.48.1 接收或发出的 telnet 包，使用如下命令
+     tcpdump tcp port 23 host 210.27.48.1
+</p>
+<p>
+     对本机的 udp 123 端口进行监视 123 为 ntp 的服务端口
+     tcpdump udp port 123
+</p>
+<h4 id="headline-153">
 安全文件拷贝  scp
 </h4>
-</div>
-<div id="outline-container-headline-152" class="outline-4">
-<h4 id="headline-152">
+<h4 id="headline-154">
 文件同步工具  rsync
 </h4>
-</div>
-<div id="outline-container-headline-153" class="outline-4">
-<h4 id="headline-153">
+<h4 id="headline-155">
 安全文件传输  sftp
 </h4>
-</div>
-<div id="outline-container-headline-154" class="outline-4">
-<h4 id="headline-154">
+<h4 id="headline-156">
 查看公网 IP
 </h4>
-<div id="outline-text-headline-154" class="outline-text-4">
 <ul>
 <li>
-<p>curl cip.cc</p>
+<p>
+curl cip.cc
+</p>
 </li>
 <li>
-<p>curl icanhazip.com</p>
+<p>
+curl icanhazip.com
+</p>
 </li>
 <li>
-<p>curl ident.me</p>
+<p>
+curl ident.me
+</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-155" class="outline-3">
-<h3 id="headline-155">
+<h3 id="headline-157">
 计划任务
 </h3>
-<div id="outline-text-headline-155" class="outline-text-3">
-<div id="outline-container-headline-156" class="outline-4">
-<h4 id="headline-156">
+<h4 id="headline-158">
 在指定的时间执行命令
 </h4>
-<div id="outline-text-headline-156" class="outline-text-4">
-<div id="outline-container-headline-157" class="outline-5">
-<h5 id="headline-157">
+<h5 id="headline-159">
 将任务排队，在指定的时间执行 at 
 </h5>
-<div id="outline-text-headline-157" class="outline-text-5">
-<p>指定 3 天以后下午 5 点要执行的任务。</p>
+<p>
+指定 3 天以后下午 5 点要执行的任务。
+</p>
 <blockquote>
-<p>[root ~]# at 5pm+3days
+<p>
+[root ~]# at 5pm+3days
    at&gt; rm -f /root/*.html
    at&gt; &lt;EOT&gt;
-   job 9 at Wed Jun  5 17:00:00 2019</p>
+   job 9 at Wed Jun  5 17:00:00 2019
+</p>
 </blockquote>
-</div>
-</div>
-<div id="outline-container-headline-158" class="outline-5">
-<h5 id="headline-158">
+<h5 id="headline-160">
 查看待执行的任务队列 atq
 </h5>
-</div>
-<div id="outline-container-headline-159" class="outline-5">
-<h5 id="headline-159">
+<h5 id="headline-161">
 从队列中删除待执行的任务 atrm
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-160" class="outline-4">
-<h4 id="headline-160">
+<h4 id="headline-162">
 计划任务表 crontab
 </h4>
-<div id="outline-text-headline-160" class="outline-text-4">
-<p>输入`crontab -e`命令会打开 /etc/crontab</p>
+<p>
+输入`crontab -e`命令会打开 /etc/crontab
+</p>
 <div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1681,96 +1387,72 @@ write
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-161" class="outline-3">
-<h3 id="headline-161">
+<h3 id="headline-163">
 系统诊断
 </h3>
-<div id="outline-text-headline-161" class="outline-text-3">
-<div id="outline-container-headline-162" class="outline-4">
-<h4 id="headline-162">
+<h4 id="headline-164">
 系统启动异常诊断 dmesg
 </h4>
-</div>
-<div id="outline-container-headline-163" class="outline-4">
-<h4 id="headline-163">
+<h4 id="headline-165">
 查看系统活动信息 sar 
 </h4>
-<div id="outline-text-headline-163" class="outline-text-4">
 <ul>
 <li>
-<p>`-A` - 显示所有设备（CPU、内存、磁盘）的运行状况。</p>
+<p>
+`-A` - 显示所有设备（CPU、内存、磁盘）的运行状况。
+</p>
 </li>
 <li>
-<p>`-u` - 显示所有 CPU 的负载情况。</p>
+<p>
+`-u` - 显示所有 CPU 的负载情况。
+</p>
 </li>
 <li>
-<p>`-d` - 显示所有磁盘的使用情况。</p>
+<p>
+`-d` - 显示所有磁盘的使用情况。
+</p>
 </li>
 <li>
-<p>`-r` - 显示内存的使用情况。</p>
+<p>
+`-r` - 显示内存的使用情况。
+</p>
 </li>
 <li>
-<p>`-n` - 显示网络运行状态。</p>
+<p>
+`-n` - 显示网络运行状态。
+</p>
 </li>
 </ul>
-</div>
-</div>
-<div id="outline-container-headline-164" class="outline-4">
-<h4 id="headline-164">
+<h4 id="headline-166">
 查看内存使用情况  free
 </h4>
-</div>
-<div id="outline-container-headline-165" class="outline-4">
-<h4 id="headline-165">
+<h4 id="headline-167">
 虚拟内存统计 vmstat
 </h4>
-</div>
-<div id="outline-container-headline-166" class="outline-4">
-<h4 id="headline-166">
+<h4 id="headline-168">
 CPU 信息统计  mpstat
 </h4>
-</div>
-<div id="outline-container-headline-167" class="outline-4">
-<h4 id="headline-167">
+<h4 id="headline-169">
 查看进程使用内存状况 pmap
 </h4>
-</div>
-<div id="outline-container-headline-168" class="outline-4">
-<h4 id="headline-168">
+<h4 id="headline-170">
 报告设备 CPU 和 I/O 统计信息 iostat
 </h4>
-</div>
-<div id="outline-container-headline-169" class="outline-4">
-<h4 id="headline-169">
+<h4 id="headline-171">
 显示所有 PCI 设备 lspci
 </h4>
-</div>
-<div id="outline-container-headline-170" class="outline-4">
-<h4 id="headline-170">
+<h4 id="headline-172">
 显示进程间通信设施的状态  ipcs
 </h4>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-171" class="outline-3">
-<h3 id="headline-171">
+<h3 id="headline-173">
 工具软件    
 </h3>
-<div id="outline-text-headline-171" class="outline-text-3">
-<div id="outline-container-headline-172" class="outline-4">
-<h4 id="headline-172">
+<h4 id="headline-174">
 pdf
 </h4>
-<div id="outline-text-headline-172" class="outline-text-4">
-<div id="outline-container-headline-173" class="outline-5">
-<h5 id="headline-173">
+<h5 id="headline-175">
 合并 pdf  
 </h5>
-<div id="outline-text-headline-173" class="outline-text-5">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1781,27 +1463,15 @@ pdf
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-174" class="outline-4">
-<h4 id="headline-174">
+<h4 id="headline-176">
 图片处理
 </h4>
-<div id="outline-text-headline-174" class="outline-text-4">
-<div id="outline-container-headline-175" class="outline-5">
-<h5 id="headline-175">
+<h5 id="headline-177">
 压缩转换 convert
 </h5>
-</div>
-</div>
-</div>
-<div id="outline-container-headline-176" class="outline-4">
-<h4 id="headline-176">
+<h4 id="headline-178">
 录制视频短片 peek
 </h4>
-<div id="outline-text-headline-176" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1816,13 +1486,9 @@ pdf
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="outline-container-headline-177" class="outline-4">
-<h4 id="headline-177">
+<h4 id="headline-179">
 像素识别
 </h4>
-<div id="outline-text-headline-177" class="outline-text-4">
 <div class="src src-sh">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1833,10 +1499,179 @@ pdf
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
+<h4 id="headline-180">
+wireshark
+</h4>
+<h5 id="headline-181">
+数据链路层：
+</h5>
+<p>
+筛选 mac 地址为 04:f9:38:ad:13:26 的数据包—-eth.src <code class="verbatim">= 04:f9:38:ad:13:26
+   筛选源mac地址为04:f9:38:ad:13:26的数据包----eth.src =</code> 04:f9:38:ad:13:26
+</p>
+<h5 id="headline-182">
+网络层：
+</h5>
+<p>
+筛选 ip 地址为 192.168.1.1 的数据包—-ip.addr == 192.168.1.1
+     筛选 192.168.1.0 网段的数据—- ip contains &#34;192.168.1&#34;
+     筛选 192.168.1.1 和 192.168.1.2 之间的数据包—-ip.addr <code class="verbatim">= 192.168.1.1 &amp;&amp; ip.addr =</code> 192.168.1.2
+     筛选从 192.168.1.1 到 192.168.1.2 的数据包—-ip.src <code class="verbatim">= 192.168.1.1 &amp;&amp; ip.dst =</code> 192.168.1.2
+</p>
+<h5 id="headline-183">
+传输层：
+</h5>
+<p>
+筛选 tcp 协议的数据包—-tcp
+     筛选除 tcp 协议以外的数据包—-!tcp
+     筛选端口为 80 的数据包—-tcp.port <code class="verbatim">= 80
+     筛选12345端口和80端口之间的数据包----tcp.port =</code> 12345 &amp;&amp; tcp.port <code class="verbatim">= 80
+     筛选从12345端口到80端口的数据包----tcp.srcport =</code> 12345 &amp;&amp; tcp.dstport == 80
+</p>
+<h5 id="headline-184">
+应用层：
+</h5>
+<p>
+特别说明—-http 中 http.request 表示请求头中的第一行（如 GET index.jsp HTTP/1.1），http.response 表示响应头中的第一行（如 HTTP/1.1 200 OK），其他头部都用 http.header_name 形式。
+     筛选 url 中包含.php 的 http 数据包—-http.request.uri contains &#34;.php&#34;
+     筛选内容包含 username 的 http 数据包—-http contains &#34;username&#34;
+</p>
+<h4 id="headline-185">
+feh 
+</h4>
+<pre class="example">
+图片显示，设置背景，截图
+</pre>
+<p>
+   设置背景 feh –bg-scale
+</p>
+<h4 id="headline-186">
+Pandoc
+</h4>
+<pre class="example">
+文档转换
+</pre>
+<pre class="example">
+pandoc x.html -o x.md
+pandoc -f html -t markdown http://www.fsf.org
+-f 参数用于指定源文件格式
+-t 参数用于指定输出文件格式
+-o 参数用于指定输出文件
+</pre>
+<h4 id="headline-187">
+apt 软件包管理
+</h4>
+<ul>
+<li>
+<p>
+update - 重新获取软件包列表
+</p>
+</li>
+<li>
+<p>
+upgrade - 进行更新 
+</p>
+</li>
+<li>
+<p>
+install - 安装新的软件包 
+</p>
+</li>
+<li>
+<p>
+remove - 移除软件包 
+</p>
+</li>
+<li>
+<p>
+autoremove - 自动移除全部不使用的软件包 
+</p>
+</li>
+<li>
+<p>
+purge - 移除软件包和配置文件 
+</p>
+</li>
+<li>
+<p>
+source - 下载源码档案 
+</p>
+</li>
+<li>
+<p>
+build-dep - 为源码包配置编译依赖 
+</p>
+</li>
+<li>
+<p>
+dist-upgrade - 发行版升级
+</p>
+</li>
+<li>
+<p>
+dselect-upgrade - 依照 dselect 的选择更新 
+</p>
+</li>
+<li>
+<p>
+clean - 清除下载的归档文件 
+</p>
+</li>
+<li>
+<p>
+autoclean - 清除旧的的已下载的归档文件 
+</p>
+</li>
+<li>
+<p>
+check - 检验是否有损坏的依赖 
+</p>
+</li>
+<li>
+<p>
+sudo add-apt-repository –remove ppa:whatever/ppa (移除源)
+</p>
+</li>
+</ul>
+<h3 id="headline-188">
+进程占用端口
+</h3>
+<p>
+（1）查看程序对应的进程号： ps -ef | grep 进程名字
+（2）查看进程号所占用的端口号： netstat -nltp | grep  进程号
+        ubuntu :查看进程占用端口号：netstat -anp | grep pid
+</p>
+<p>
+linux 下查看端口号所使用的进程号：
+（1）使用 lsof 命令：lsof -i:端口号
+</p>
+<h3 id="headline-189">
+输入法
+</h3>
+<p>
+in file <code>/.bashrc</code>
+   export  GTK_IM_MODULE=ibus 
+   export  XMODIFIERS=@im=ibus 
+   export  QT_IM_MODULE=ibus 
+</p>
+<p>
+   fcitx+rime
+   稍微配置下，增加点词库，我认为比搜狗好用。
+   目前搜狗还有点问题，某些单词，要是输入过快，会直接字母上屏，还没有去找原因，rime 就没有这个问题。
+</p>
+<p>
+根据自己的需要可以卸载 ibus
+</p>
+<p>
+卸载 ibus。
+sudo apt-get remove ibus
+清除 ibus 配置。
+sudo apt-get purge ibus
+卸载顶部面板任务栏上的键盘指示。（根据个人需要）
+</p>
+<p>
+sudo apt-get remove indicator-keyboard
+</p>
     </div>
 
     
@@ -1929,7 +1764,7 @@ pdf
 
 
 
-<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
