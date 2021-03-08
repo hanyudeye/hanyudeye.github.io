@@ -6,29 +6,18 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 08 Mar 2021 20:19:14 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>【置顶】道</title>
-      <link>https://aming.xyz/post/dao/</link>
-      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
+      <title>素描初学</title>
+      <link>https://aming.xyz/post/sumiao/</link>
+      <pubDate>Mon, 08 Mar 2021 20:19:14 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/dao/</guid>
-      <description>&lt;p&gt;何为道？就是东西变化的内在逻辑。以下讲的逻辑，在于对存在东西的一个总结，而并非推理的结果。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>【置顶】人生意义</title>
-      <link>https://aming.xyz/post/zhexue/</link>
-      <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/zhexue/</guid>
-      <description>&lt;p&gt;
-关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
-&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/sumiao/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,6 +72,15 @@
       
       <guid>https://aming.xyz/post/daydream/</guid>
       <description>&lt;p&gt;记录一下我做的白日梦&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>( 不知道 )</title>
+      <link>https://aming.xyz/post/dao/</link>
+      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/dao/</guid>
+      <description>&lt;p&gt;何为道？就是东西变化的内在逻辑。以下讲的逻辑，在于对存在东西的一个总结，而并非推理的结果。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -280,6 +278,17 @@
     </item>
     
     <item>
+      <title>人生意义</title>
+      <link>https://aming.xyz/post/zhexue/</link>
+      <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/zhexue/</guid>
+      <description>&lt;p&gt;
+关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>emacs 简介</title>
       <link>https://aming.xyz/post/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
@@ -288,6 +297,15 @@
       <description>&lt;p&gt;
 一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/pic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/pic/</guid>
+      <description></description>
     </item>
     
   </channel>
