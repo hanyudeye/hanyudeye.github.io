@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>照片处理 - 阿明 - 收集生活的感悟</title>
+  <title>gimp 小难题 - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/gimp/" />
@@ -35,26 +35,27 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="照片处理" />
+<meta property="og:title" content="gimp 小难题" />
 <meta property="og:description" content="照片处理" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/gimp/" />
 <meta property="article:published_time" content="2020-01-25T06:56:22+08:00" />
 <meta property="article:modified_time" content="2020-01-25T06:56:22+08:00" />
-<meta itemprop="name" content="照片处理">
+<meta itemprop="name" content="gimp 小难题">
 <meta itemprop="description" content="照片处理">
 <meta itemprop="datePublished" content="2020-01-25T06:56:22&#43;08:00" />
 <meta itemprop="dateModified" content="2020-01-25T06:56:22&#43;08:00" />
-<meta itemprop="wordCount" content="932">
+<meta itemprop="wordCount" content="1755">
 
 
 
 <meta itemprop="keywords" content="gimp," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="照片处理"/>
+<meta name="twitter:title" content="gimp 小难题"/>
 <meta name="twitter:description" content="照片处理"/>
 
 <!--[if lte IE 9]>
@@ -99,6 +100,21 @@
       </a>
   </ul>
 </nav>
+
+
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -134,7 +150,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">照片处理</h1>
+      <h1 class="post-title">gimp 小难题</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-01-25 </span>
@@ -150,39 +166,141 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">基础知识</a>
+<li><a href="#headline-1">基础</a>
 <ul>
-<li><a href="#headline-2">色</a>
+<li><a href="#headline-2">概念 </a>
+<ul>
+<li><a href="#headline-3">色</a>
 </li>
-<li><a href="#headline-3">像素图与矢量图</a>
+<li><a href="#headline-4">像素与矢量</a>
 </li>
-<li><a href="#headline-4">分辨率</a>
+<li><a href="#headline-5">分辨率</a>
 </li>
-<li><a href="#headline-5">色的合成</a>
+<li><a href="#headline-6">色的合成</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-6">图像基础</a>
+<li><a href="#headline-7">工具箱</a>
 <ul>
-<li><a href="#headline-7">图层</a>
+<li><a href="#headline-8">工具 </a>
+<ul>
+<li><a href="#headline-9">选择工具 (创建可编辑的选区)</a>
 </li>
-<li><a href="#headline-8">灰度</a>
+<li><a href="#headline-10">路径工具 (创建或编辑路径)</a>
 </li>
-<li><a href="#headline-9">通道</a>
+<li><a href="#headline-11">缩放工具(调整视图)</a>
+</li>
+<li><a href="#headline-12">采色器</a>
+</li>
+<li><a href="#headline-13">测量工具 (测量角度和距离)</a>
+</li>
+<li><a href="#headline-14">移动工具 (可移动图层，选区，文本，蒙板)</a>
+</li>
+<li><a href="#headline-15">校准工具 (对齐图层)</a>
+</li>
+<li><a href="#headline-16">裁剪工具 (裁剪图层)</a>
+</li>
+<li><a href="#headline-17">转换工具 (可旋转图层，选区，路径)</a>
+</li>
+<li><a href="#headline-18">缩放、剪切工具 (进行图像缩放，平行四边形变换)</a>
+</li>
+<li><a href="#headline-19">透视、翻转工具 (进行边缘拉伸，或水平，垂直翻转)</a>
+</li>
+<li><a href="#headline-20">文字工具 </a>
+</li>
+<li><a href="#headline-21">填充工具 (填充纯色或图案)</a>
+</li>
+<li><a href="#headline-22">渐变工具 (平滑渐变)</a>
+</li>
+<li><a href="#headline-23">绘图工具 (画线条) [ 铅笔，画笔，喷枪]</a>
+</li>
+<li><a href="#headline-24">橡皮擦 (擦除像素，背景图层用背景色擦)</a>
+</li>
+<li><a href="#headline-25">墨水工具</a>
+</li>
+<li><a href="#headline-26">克隆工具 (克隆像素，按 CTRL 并单击鼠标(必须在同一图层))</a>
+</li>
+<li><a href="#headline-27">模糊/锐化,减淡/加深</a>
+</li>
+<li><a href="#headline-28">污迹 (想象你用手指在画布上划过未干的油漆)</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-10">整体调整 </a>
-<ul>
-<li><a href="#headline-11">亮度调节</a>
-</li>
-<li><a href="#headline-12">滤镜</a>
+<li><a href="#headline-29">工具选项</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-13">局部调整</a>
+<li><a href="#headline-30">图像窗口</a>
+</li>
+<li><a href="#headline-31">首选项</a>
+</li>
+<li><a href="#headline-32">图层和模式</a>
 <ul>
-<li><a href="#headline-14">图层蒙板</a>
+<li><a href="#headline-33">绘图模式 </a>
+</li>
+<li><a href="#headline-34">图层模式</a>
+</li>
+<li><a href="#headline-35">使用图层模式为图像着色</a>
+</li>
+<li><a href="#headline-36">使用图层蒙版为图像着色</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-37">色彩模式</a>
+</li>
+<li><a href="#headline-38">路径 (选区到路径)  -&gt; 矢量绘图 (路径描边)</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-39">摄影师 (光栅处理)</a>
+<ul>
+<li><a href="#headline-40">柔光(使照片模糊) </a>
+</li>
+<li><a href="#headline-41">照片素描 (草图)</a>
+<ul>
+<li><a href="#headline-42">简单草图层 (以此为原图，复制两个新层) </a>
+</li>
+<li><a href="#headline-43">添加深度</a>
+</li>
+<li><a href="#headline-44">最后的润色</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-45">网络平面设计</a>
+<ul>
+<li><a href="#headline-46">凝胶按钮 (现在用的不多了，都是 CSS 了)</a>
+<ul>
+<li><a href="#headline-47">基础层 </a>
+</li>
+<li><a href="#headline-48">颜色层</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-49">广告设计和特效</a>
+</li>
+<li><a href="#headline-50">特效</a>
+</li>
+<li><a href="#headline-51">有用的软件包</a>
+<ul>
+<li><a href="#headline-52">GIMP Paint Shop</a>
+</li>
+<li><a href="#headline-53">更多扩展</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-54">默认的画布大小为 640 × 400 像素</a>
+</li>
+<li><a href="#headline-55">图像基础</a>
+<ul>
+<li><a href="#headline-56">图层</a>
+</li>
+<li><a href="#headline-57">灰度</a>
+</li>
+<li><a href="#headline-58">通道</a>
 </li>
 </ul>
 </li>
@@ -192,14 +310,17 @@
 </div>
     <div class="post-content">
       <p>
-我们拍了一张照片，可能不是很称我们的心意。我们把照片改成我们满意的图片，就要学会照片处理。
+gimp 用于解决平面设计中的问题。
 </p>
 <h3 id="headline-1">
-基础知识
+基础
 </h3>
 <h4 id="headline-2">
-色
+概念 
 </h4>
+<h5 id="headline-3">
+色
+</h5>
 <p>
 我们肉眼看到的发光物或反光物的一种视觉现象，瞎子看不到色。
 </p>
@@ -208,24 +329,24 @@
 人们对色的喜爱不一样，有人喜欢白色，有人喜欢红色。
 </p>
 </blockquote>
-<h4 id="headline-3">
-像素图与矢量图
-</h4>
+<h5 id="headline-4">
+像素与矢量
+</h5>
 <p>
-像素图由 <strong>色点</strong> 组成的，所以对图像的放大缩小会造成图像失真。我们用相机拍出的就是像素图。
+矢量是包含了它们从一个端点到另一个端点的路径信息的线。他们没有关于在 GIMP 的图像窗口中创建像素的信息。
 </p>
 <p>
-    矢量图由矢量软件构造，放大缩小会重新渲染图像，所以不会失真，但现在相机拍不出这种图。
+像素是一个点，有红色、绿色、蓝色和透明度等级。大多数 GIMP 工具是基于光栅的，这意味着它们操作像素。
 </p>
-<h4 id="headline-4">
+<h5 id="headline-5">
 分辨率
-</h4>
+</h5>
 <p>
 分辨率是单位面积的色点，单位为 PPI（Pixels Per Inch），5PPI 表示每平方英寸有 5*5 个像素，分辨率越高像素图越清晰度。
 </p>
-<h4 id="headline-5">
+<h5 id="headline-6">
 色的合成
-</h4>
+</h5>
 <p>
 自然界中的颜色亿亿万，但在计算机上，由于科技的限制，只能表示色的一部分，有如下几种合成方式。 
 </p>
@@ -256,71 +377,281 @@ RGBA [ 图像软件使用的，alpha 通道用来作为选区的 ]
 </blockquote>
 </li>
 </ul>
-<h3 id="headline-6">
+<h4 id="headline-7">
+工具箱
+</h4>
+<h5 id="headline-8">
+工具 
+</h5>
+<p>
+说明：大多数工具是基于光栅的
+</p>
+<h6 id="headline-9">
+选择工具 (创建可编辑的选区)
+</h6>
+<h6 id="headline-10">
+路径工具 (创建或编辑路径)
+</h6>
+<h6 id="headline-11">
+缩放工具(调整视图)
+</h6>
+<h6 id="headline-12">
+采色器
+</h6>
+<h6 id="headline-13">
+测量工具 (测量角度和距离)
+</h6>
+<h6 id="headline-14">
+移动工具 (可移动图层，选区，文本，蒙板)
+</h6>
+<h6 id="headline-15">
+校准工具 (对齐图层)
+</h6>
+<h6 id="headline-16">
+裁剪工具 (裁剪图层)
+</h6>
+<h6 id="headline-17">
+转换工具 (可旋转图层，选区，路径)
+</h6>
+<h6 id="headline-18">
+缩放、剪切工具 (进行图像缩放，平行四边形变换)
+</h6>
+<h6 id="headline-19">
+透视、翻转工具 (进行边缘拉伸，或水平，垂直翻转)
+</h6>
+<h6 id="headline-20">
+文字工具 
+</h6>
+<h6 id="headline-21">
+填充工具 (填充纯色或图案)
+</h6>
+<h6 id="headline-22">
+渐变工具 (平滑渐变)
+</h6>
+<h6 id="headline-23">
+绘图工具 (画线条) [ 铅笔，画笔，喷枪]
+</h6>
+<h6 id="headline-24">
+橡皮擦 (擦除像素，背景图层用背景色擦)
+</h6>
+<h6 id="headline-25">
+墨水工具
+</h6>
+<p>
+是专门为像 Wacom 这样的绘图板设计的。它可以对压力和平板电脑的倾斜特性做出反应。
+</p>
+<h6 id="headline-26">
+克隆工具 (克隆像素，按 CTRL 并单击鼠标(必须在同一图层))
+</h6>
+<h6 id="headline-27">
+模糊/锐化,减淡/加深
+</h6>
+<h6 id="headline-28">
+污迹 (想象你用手指在画布上划过未干的油漆)
+</h6>
+<h5 id="headline-29">
+工具选项
+</h5>
+<p>
+每个工具有自己的附加属性可供设置
+</p>
+<h4 id="headline-30">
+图像窗口
+</h4>
+<p>
+每个图像都有一个窗口，用于编辑图像，单窗口模式下用标签显示
+</p>
+<h4 id="headline-31">
+首选项
+</h4>
+<h4 id="headline-32">
+图层和模式
+</h4>
+<p>
+层就像是一层层叠加的透明纸张,我们把颜色放在纸张上面。
+</p>
+<p>
+    图层可以使用蒙版来隐藏图层的某些部分
+</p>
+<h5 id="headline-33">
+绘图模式 
+</h5>
+<p>
+三组通道的合成方式，相当于用某种画笔作画 
+</p>
+<ul>
+<li>
+<p>
+正常 绘制工具添加的新像素的颜色替换层中现有像素的颜色
+</p>
+</li>
+<li>
+<p>
+Dissolve(溶解) 笔画中加入了随机的空白区域。这类似于用画笔的笔尖在画布上轻涂颜料
+</p>
+</li>
+<li>
+<p>
+Behind 在具有透明度的图层中，这种模式只绘制透明区域
+</p>
+</li>
+<li>
+<p>
+颜色擦除 类似于橡皮擦工具
+</p>
+</li>
+<li>
+<p>
+addition 减淡、加深
+</p>
+</li>
+<li>
+<p>
+Overlay 叠加(黑色加深，亮色变浅)
+</p>
+</li>
+<li>
+<p>
+soft light 柔和 (另一种叠加)
+</p>
+</li>
+<li>
+<p>
+hard light (强光)
+</p>
+</li>
+<li>
+<p>
+hue 色调
+</p>
+</li>
+<li>
+<p>
+color 色彩模式
+</p>
+</li>
+</ul>
+<h5 id="headline-34">
+图层模式
+</h5>
+<p>
+图层模式与绘图模式差不多，就是图层之间混合
+</p>
+<h5 id="headline-35">
+使用图层模式为图像着色
+</h5>
+<h5 id="headline-36">
+使用图层蒙版为图像着色
+</h5>
+<h4 id="headline-37">
+色彩模式
+</h4>
+<p>
+当处理图像时，GIMP 使用三种颜色模式之一: RGB、灰度或索引
+</p>
+<h4 id="headline-38">
+路径 (选区到路径)  -&gt; 矢量绘图 (路径描边)
+</h4>
+<h3 id="headline-39">
+摄影师 (光栅处理)
+</h3>
+<h4 id="headline-40">
+柔光(使照片模糊) 
+</h4>
+<p>
+一般会复制两个图层，进行高斯模糊等，然后翻转颜色，然后进行色相饱和调节，最后进行图层的柔光。
+</p>
+<p>
+但对于眼睛，嘴巴等需要清晰的地方，需要添加蒙板，然后用喷枪，软边的毛刷，给眼睛嘴巴刷刷
+</p>
+<h4 id="headline-41">
+照片素描 (草图)
+</h4>
+<p>
+三个图层
+</p>
+<h5 id="headline-42">
+简单草图层 (以此为原图，复制两个新层) 
+</h5>
+<p>
+去掉饱和(变灰)，然后滤镜(边缘检测-&gt;索贝尔)，差不多就素描了。然后加强白色(颜色-&gt;色阶，白色拉到左边点) ，然后翻转颜色，变成白底黑线，
+</p>
+<p>
+    还可以试下别的边缘检测
+</p>
+<h5 id="headline-43">
+添加深度
+</h5>
+<p>
+在此层中，添加高斯模糊，设置图层模式为 加深，使背景黑色加深，
+在上面一层，再添加高斯模糊，半径大点，图层模式为强光。 
+</p>
+<h5 id="headline-44">
+最后的润色
+</h5>
+<h3 id="headline-45">
+网络平面设计
+</h3>
+<h4 id="headline-46">
+凝胶按钮 (现在用的不多了，都是 CSS 了)
+</h4>
+<h5 id="headline-47">
+基础层 
+</h5>
+<p>
+拉四条矩形辅助线，然后画个矩形，设置圆角，移除辅助线
+</p>
+<h5 id="headline-48">
+颜色层
+</h5>
+<p>
+选一个颜色，拖到选区里面，收缩边缘，保存到通道
+    返回图层，清除选区 （C-S-a)
+</p>
+<h3 id="headline-49">
+广告设计和特效
+</h3>
+<h3 id="headline-50">
+特效
+</h3>
+<h3 id="headline-51">
+有用的软件包
+</h3>
+<h4 id="headline-52">
+GIMP Paint Shop
+</h4>
+<p>
+<a href="http://code.google.com/p/gps-gimp-paint-studio/">http://code.google.com/p/gps-gimp-paint-studio/</a>
+</p>
+<h4 id="headline-53">
+更多扩展
+</h4>
+<p>
+<a href="http://registry.gimp.org/">http://registry.gimp.org/</a>
+</p>
+<h3 id="headline-54">
+默认的画布大小为 640 × 400 像素
+</h3>
+<h3 id="headline-55">
 图像基础
 </h3>
-<p>
-有了基础知识，就可以处理照片了，但一般不推荐直接在照片上改，使用一些软件技术，可以更好的修改图片。
-</p>
-<h4 id="headline-7">
+<h4 id="headline-56">
 图层
 </h4>
 <p>
 图层就是透明的纸，修改照片时，可以把图层覆盖在照片上，在图层上操作，就不会破坏原图了。 
 </p>
-<h4 id="headline-8">
+<h4 id="headline-57">
 灰度
 </h4>
 <p>
 灰度就相当于带了一副墨镜看照片一样，颜色变得灰蒙蒙。
 </p>
-<h4 id="headline-9">
+<h4 id="headline-58">
 通道
 </h4>
 <p>
 图像合成中，不同色的量， 在 <strong>RGB</strong>   合成模式中，有 3 个通道，而 <strong>CMYK</strong> 图像则默认有四个通道
-</p>
-<h3 id="headline-10">
-整体调整 
-</h3>
-<p>
-我们拍的图，可能光线不太好，或者相机不太好，或者技术不到家，都会造成图片的质量不好看。这时，我们可以用图片处理软件的整体调节功能进行处理。  
-</p>
-<h4 id="headline-11">
-亮度调节
-</h4>
-<p>
-同一个场景在不同的光线下，比如白天或晚上，照片亮度是不一样的，所以一般要进行
-    亮度( 光线 )调节。
-</p>
-<figure>
-<p>
-<img src="色阶006.png" alt="色阶006.png" title="色阶006.png" /> 
-</p>
-<figcaption>
-色阶
-</figcaption>
-</figure>
-<p>
-   一般用颜色里的色阶或曲线调节下就可以了
-</p>
-<h4 id="headline-12">
-滤镜
-</h4>
-<p>
-滤镜相当于有各种风格的哈哈镜，每个滤镜会产生不同的效果。
-</p>
-<h3 id="headline-13">
-局部调整
-</h3>
-<p>
-当我们修改照片的某个局部时，最好把要修改的地方 <strong>画个圈</strong> (选区)，那么在区域外的东西就不会被修改到了。
-</p>
-<h4 id="headline-14">
-图层蒙板
-</h4>
-<p>
-蒙板就是选区的外部区域，跟选区是互补关系。
 </p>
     </div>
 
@@ -335,8 +666,8 @@ RGBA [ 图像软件使用的，alpha 通道用来作为选区的 ]
             <span class="prev-text nav-default">病毒</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/uncle/">
-            <span class="next-text nav-default">大伯传</span>
+        <a class="next" href="/post/%E6%8B%8D%E7%85%A7/">
+            <span class="next-text nav-default">拍照</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -394,7 +725,7 @@ RGBA [ 图像软件使用的，alpha 通道用来作为选区的 ]
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
+    2021
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -411,7 +742,10 @@ RGBA [ 图像软件使用的，alpha 通道用来作为选区的 ]
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

@@ -18,9 +18,8 @@
       
       <guid>https://aming.xyz/post/javascript/</guid>
       <description>&lt;p&gt;
-Javascript技术原来也是用在网页里面的，弄一些花里胡哨的动态效果，但现在它满足了一
-个现实，人有时懒的连报纸都不想翻，就想在报纸上用手指划划就想翻页，Javascript 的
-技术能够实现，所以现在又发达起来了。
+&lt;strong&gt;Javascript&lt;/strong&gt; 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
+因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。
 &lt;/p&gt;</description>
     </item>
     

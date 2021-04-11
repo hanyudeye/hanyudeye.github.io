@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>nodejs 简介 - 阿明 - 收集生活的感悟</title>
+  <title>Node.js 简介 - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,14 +17,14 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
-<meta name="author" content="阿明" /><meta name="description" content="nodejs 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+<meta name="author" content="阿明" /><meta name="description" content="Node.js 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/nodejs/" />
@@ -35,27 +35,28 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="nodejs 简介" />
-<meta property="og:description" content="nodejs 简介" />
+<meta property="og:title" content="Node.js 简介" />
+<meta property="og:description" content="Node.js 简介" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/nodejs/" />
 <meta property="article:published_time" content="2020-02-16T18:13:56+08:00" />
 <meta property="article:modified_time" content="2020-02-16T18:13:56+08:00" />
-<meta itemprop="name" content="nodejs 简介">
-<meta itemprop="description" content="nodejs 简介">
+<meta itemprop="name" content="Node.js 简介">
+<meta itemprop="description" content="Node.js 简介">
 <meta itemprop="datePublished" content="2020-02-16T18:13:56&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-16T18:13:56&#43;08:00" />
-<meta itemprop="wordCount" content="1825">
+<meta itemprop="wordCount" content="1763">
 
 
 
-<meta itemprop="keywords" content="nodejs," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="nodejs 简介"/>
-<meta name="twitter:description" content="nodejs 简介"/>
+<meta itemprop="keywords" content="Node.js," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Node.js 简介"/>
+<meta name="twitter:description" content="Node.js 简介"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -99,6 +100,21 @@
       </a>
   </ul>
 </nav>
+
+
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -134,7 +150,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">nodejs 简介</h1>
+      <h1 class="post-title">Node.js 简介</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2020-02-16 </span>
@@ -150,23 +166,19 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">安装</a>
+<li><a href="#headline-1">简介</a>
 <ul>
-<li><a href="#headline-2">nvm   </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-3">模块</a>
+<li><a href="#headline-2">模块</a>
 <ul>
-<li><a href="#headline-4">原生语法 (import/export)</a>
+<li><a href="#headline-3">原生语法 (import/export)</a>
 </li>
-<li><a href="#headline-5">库所支持的语法</a>
+<li><a href="#headline-4">库所支持的语法</a>
 <ul>
-<li><a href="#headline-6">node </a>
+<li><a href="#headline-5">node </a>
 <ul>
-<li><a href="#headline-7">导出 </a>
+<li><a href="#headline-6">导出 </a>
 </li>
-<li><a href="#headline-8">引入</a>
+<li><a href="#headline-7">引入</a>
 </li>
 </ul>
 </li>
@@ -174,49 +186,59 @@
 </li>
 </ul>
 </li>
-<li><a href="#headline-9">全局变量</a>
+<li><a href="#headline-8">全局变量</a>
 </li>
-<li><a href="#headline-10">常用内置模块</a>
+<li><a href="#headline-9">常用内置模块</a>
 <ul>
-<li><a href="#headline-11">path 模块</a>
+<li><a href="#headline-10">path 模块</a>
 </li>
-<li><a href="#headline-12">fs 模块</a>
+<li><a href="#headline-11">fs 模块</a>
 </li>
-<li><a href="#headline-13">http 模块</a>
+<li><a href="#headline-12">http 模块</a>
 </li>
-<li><a href="#headline-14">events 模块</a>
+<li><a href="#headline-13">events 模块</a>
 </li>
-<li><a href="#headline-15">url 模块</a>
+<li><a href="#headline-14">url 模块</a>
 </li>
-<li><a href="#headline-16">Buffer 类</a>
+<li><a href="#headline-15">Buffer 类</a>
 </li>
-<li><a href="#headline-17">util 模块</a>
+<li><a href="#headline-16">util 模块</a>
 </li>
-<li><a href="#headline-18">OS 模块</a>
+<li><a href="#headline-17">OS 模块</a>
 </li>
-<li><a href="#headline-19">Net 模块</a>
+<li><a href="#headline-18">Net 模块</a>
 </li>
-<li><a href="#headline-20">DNS 模块</a>
+<li><a href="#headline-19">DNS 模块</a>
 </li>
-<li><a href="#headline-21">Domain 模块</a>
+<li><a href="#headline-20">Domain 模块</a>
 </li>
-<li><a href="#headline-22">Web 模块</a>
+<li><a href="#headline-21">Web 模块</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-23">npm </a>
+</ul>
 </li>
-<li><a href="#headline-24">调试刷新</a>
+<li><a href="#headline-22">npm 包管理</a>
 <ul>
-<li><a href="#headline-25">刷新 supervisor</a>
+<li><a href="#headline-23">使用</a>
 </li>
-<li><a href="#headline-26">调试 node debug </a>
-</li>
-<li><a href="#headline-27">远程调试</a>
+<li><a href="#headline-24">配置国内仓库 </a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-28">Express 框架</a>
+<li><a href="#headline-25">nvm 版本管理   </a>
+</li>
+<li><a href="#headline-26">调试刷新</a>
+<ul>
+<li><a href="#headline-27">刷新 supervisor</a>
+</li>
+<li><a href="#headline-28">调试 node debug </a>
+</li>
+<li><a href="#headline-29">远程调试</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-30">Express 框架</a>
 </li>
 </ul>
 </nav>
@@ -224,73 +246,27 @@
 </div>
     <div class="post-content">
       <p>
-JavaScript 命令行语言解析器
-</p>
-<p>
-<strong>nodejs</strong> 使用了谷歌的 <strong>V8</strong> JavaScript 解析器，而且没有浏览器对安全的限制，所以扩展了很多的库 (文件操作，网络操作，进程操作等)
+Node.js 既是一个 JavaScript 运行时环境，又是一个库
 </p>
 <blockquote>
 <p>
-特点是异步操作，因为 <strong>web</strong> 程序耗时于 <strong>IO</strong> 操作，不便同步，nodejs 放大了这个特点，所以性能很好
+Nodejs 是基于 Chrome 的 V8 引擎开发的一个 C++ 程序，目的是提供一个 JS 的运行环境。
+最早 Node.js 主要是安装在服务器上，辅助大家用 JS 开发高性能服务器代码，但是后来
+Node.js 在前端也大放异彩，带来了 Web 前端开发的革命。
 </p>
 </blockquote>
-<h3 id="headline-1">
-安装
-</h3>
+<blockquote>
 <p>
-安装 <strong>node</strong> 即可
+Node.js 的特点是异步操作，因为其他许多 <strong>web</strong> 解析器耗时于 <strong>IO</strong> 操作，不大同步，而 Node.js 着重解决了这个问题，所以性能很好
 </p>
-<h4 id="headline-2">
-nvm   
-</h4>
-<p>
-对于多个版本，可以安装 <strong>nvm</strong> 版本管理工具，用来管理 node 的版本 
-</p>
-<ul>
-<li>
-<p>
-安装最新 node  nvm install node
-</p>
-</li>
-<li>
-<p>
-安装某个版本  nvm install 6.14.4
-</p>
-</li>
-<li>
-<p>
-使用某个版本 nvm use v10.1.1
-</p>
-</li>
-<li>
-<p>
-列出版本  nvm ls
-</p>
-</li>
-<li>
-<p>
-列出远程 node 版本   nvm ls-remote
-</p>
-</li>
-<li>
-<p>
-卸载 nvm uninstall
-</p>
-</li>
-<li>
-<p>
-安装最近版本的 npm  nvm install-latest-npm
-</p>
-</li>
-</ul>
-<h3 id="headline-3">
+</blockquote>
+<h2 id="headline-1">
+简介
+</h2>
+<h3 id="headline-2">
 模块
 </h3>
-<p>
-本来 <strong>javascript</strong> 刚开发的时候是做为脚本使用的，代码量少，所以没有提供模块。
-   现在脚本复杂了，就引入了模块的概念
-</p>
-<h4 id="headline-4">
+<h4 id="headline-3">
 原生语法 (import/export)
 </h4>
 <p>
@@ -334,13 +310,13 @@ nvm
 </div>
 </div>
 </div>
-<h4 id="headline-5">
+<h4 id="headline-4">
 库所支持的语法
 </h4>
-<h5 id="headline-6">
+<h5 id="headline-5">
 node 
 </h5>
-<h6 id="headline-7">
+<h6 id="headline-6">
 导出 
 </h6>
 <div class="src src-js">
@@ -366,7 +342,7 @@ node
 </div>
 </div>
 </div>
-<h6 id="headline-8">
+<h6 id="headline-7">
 引入
 </h6>
 <div class="src src-js">
@@ -380,7 +356,7 @@ node
 </div>
 </div>
 </div>
-<h3 id="headline-9">
+<h3 id="headline-8">
 全局变量
 </h3>
 <ul>
@@ -415,10 +391,10 @@ setInterval/clearInterval：定时器
 </p>
 </li>
 </ul>
-<h3 id="headline-10">
+<h3 id="headline-9">
 常用内置模块
 </h3>
-<h4 id="headline-11">
+<h4 id="headline-10">
 path 模块
 </h4>
 <blockquote>
@@ -453,7 +429,7 @@ path.normalize：将一个路径正常化
 </p>
 </li>
 </ul>
-<h4 id="headline-12">
+<h4 id="headline-11">
 fs 模块
 </h4>
 <p>
@@ -540,13 +516,13 @@ stream 操作大文件
 </div>
 </div>
 </div>
-<h4 id="headline-13">
+<h4 id="headline-12">
 http 模块
 </h4>
 <p>
 封装了 http server 和 client 的功能，就是说可以充当 server 处理请求，也可以发出请求。
 </p>
-<h4 id="headline-14">
+<h4 id="headline-13">
 events 模块
 </h4>
 <p>
@@ -577,63 +553,58 @@ events 模块
 </div>
 </div>
 </div>
-<h4 id="headline-15">
+<h4 id="headline-14">
 url 模块
 </h4>
-<h4 id="headline-16">
+<h4 id="headline-15">
 Buffer 类
 </h4>
-<h4 id="headline-17">
+<h4 id="headline-16">
 util 模块
 </h4>
 <p>
 util 是一个 Node.js 核心模块，提供常用函数的集合，用于弥补核心 JavaScript 的功能 过于精简的不足。
 </p>
-<h4 id="headline-18">
+<h4 id="headline-17">
 OS 模块
 </h4>
 <p>
 提供了一些基本的系统操作函数。
 </p>
-<h4 id="headline-19">
+<h4 id="headline-18">
 Net 模块
 </h4>
 <p>
 Node.js Net 模块提供了一些用于底层的网络通信的小工具，包含了创建服务器/客户端的方法
 </p>
-<h4 id="headline-20">
+<h4 id="headline-19">
 DNS 模块
 </h4>
 <p>
 Node.js DNS 模块用于解析域名。
 </p>
-<h4 id="headline-21">
+<h4 id="headline-20">
 Domain 模块
 </h4>
 <p>
 Node.js Domain(域) 简化异步代码的异常处理，可以捕捉处理 try catch 无法捕捉的异常。
 </p>
-<h4 id="headline-22">
+<h4 id="headline-21">
 Web 模块
 </h4>
-<h2 id="headline-23">
-npm 
+<h2 id="headline-22">
+npm 包管理
 </h2>
 <p>
-npm 是 一家 管理 <strong>Javascript</strong> 项目为主的公司，同名的 npm 软件可以用来管理 <strong>js 项目</strong> 。
-</p>
-<blockquote>
-<p>
-目录中包含以 * package.json*  作为文件名的项目一般视为 npm 项目，npm 中称呼为包。
-  包中对其他项目的引用放在 <strong>node_modules</strong> 中，叫做依赖
+npm 包是目录中含有 <strong>package.json</strong>   文件的目录，目录名也是 npm 包的名称.
+  如果你的包有对其它包的引用，那么其它包放在子目录 <strong>node_modules</strong> 中
 </p>
 <p>
-这里包和项目是一个意思，有些地方说包，有些地方说模块，我喜欢用项目
+说明：下面的说法中，包和项目是同一个意思
 </p>
-</blockquote>
-<p>
-  npm 功能
-</p>
+<h3 id="headline-23">
+使用
+</h3>
 <ul>
 <li>
 <p>
@@ -642,7 +613,7 @@ npm -v 显示版本号
 </li>
 <li>
 <p>
-npm init 新建项目
+npm init 项目初始化
 </p>
 </li>
 <li>
@@ -662,12 +633,7 @@ npm search 搜索项目信息
 </li>
 <li>
 <p>
-npm install 包名 (局部安装，安装在当前项目的 node_modules 目录下)
-</p>
-</li>
-<li>
-<p>
--g 全局安装
+-g 全局
 </p>
 </li>
 <li>
@@ -714,31 +680,73 @@ xxx versions 列出 xxx 的所有版本
 <p>
 xxx dependencies 列出 xxx 的所有依赖， 如：npm view gulp dependencies
 </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="headline-24">
+配置国内仓库 
+</h3>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">  npm install npm@latest -g
-  npm config <span class="nb">set</span> registry https://registry.npm.taobao.org</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">  npm config <span class="nb">set</span> registry https://registry.npm.taobao.org</code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<blockquote>
 <p>
-如果因为网络问题无法安装，可以使用 <strong>cnpm</strong> 安装
+      注意：如果本地网络使用了代理，一定要配置代理一项
 </p>
-</blockquote>
+<h2 id="headline-25">
+nvm 版本管理   
+</h2>
+<p>
+对于多个版本，可以安装 <strong>nvm</strong> 版本管理工具，用来管理 node 的版本 
+</p>
+<ul>
+<li>
+<p>
+安装最新 node  nvm install node
+</p>
+</li>
+<li>
+<p>
+安装某个版本  nvm install 6.14.4
+</p>
+</li>
+<li>
+<p>
+使用某个版本 nvm use v10.1.1
+</p>
+</li>
+<li>
+<p>
+列出版本  nvm ls
+</p>
+</li>
+<li>
+<p>
+列出远程 node 版本   nvm ls-remote
+</p>
+</li>
+<li>
+<p>
+卸载 nvm uninstall
+</p>
+</li>
+<li>
+<p>
+安装最近版本的 npm  nvm install-latest-npm
+</p>
 </li>
 </ul>
-</li>
-</ul>
-<h2 id="headline-24">
+<h2 id="headline-26">
 调试刷新
 </h2>
-<h3 id="headline-25">
+<h3 id="headline-27">
 刷新 supervisor
 </h3>
 <table>
@@ -753,7 +761,7 @@ xxx dependencies 列出 xxx 的所有依赖， 如：npm view gulp dependencies
 </tr>
 </tbody>
 </table>
-<h3 id="headline-26">
+<h3 id="headline-28">
 调试 node debug 
 </h3>
 <table>
@@ -836,14 +844,14 @@ xxx dependencies 列出 xxx 的所有依赖， 如：npm view gulp dependencies
 </tr>
 </tbody>
 </table>
-<h3 id="headline-27">
+<h3 id="headline-29">
 远程调试
 </h3>
 <pre class="example">
 node --debug[=port] script.js
 node --debug-brk[=port] script.js
 </pre>
-<h2 id="headline-28">
+<h2 id="headline-30">
 Express 框架
 </h2>
 <p>
@@ -854,7 +862,7 @@ Express 框架
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/nodejs/">nodejs</a>
+          <a href="/tags/node.js/">Node.js</a>
           </div>
       <nav class="post-nav">
         <a class="prev" href="/post/%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
@@ -921,7 +929,7 @@ Express 框架
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
+    2021
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -938,7 +946,10 @@ Express 框架
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

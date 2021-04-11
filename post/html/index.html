@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/html/" />
@@ -35,7 +35,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -49,7 +50,7 @@
 <meta itemprop="description" content="html 简介">
 <meta itemprop="datePublished" content="2020-02-11T14:27:45&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-11T14:27:45&#43;08:00" />
-<meta itemprop="wordCount" content="1867">
+<meta itemprop="wordCount" content="1015">
 
 
 
@@ -99,6 +100,21 @@
       </a>
   </ul>
 </nav>
+
+
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -150,37 +166,29 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">html</a>
+<li><a href="#headline-1">基本结构</a>
+</li>
+<li><a href="#headline-2">块级元素和内联元素 </a>
+</li>
+<li><a href="#headline-3">布局块</a>
+</li>
+<li><a href="#headline-4">列表</a>
+</li>
+<li><a href="#headline-5">图像</a>
+</li>
+<li><a href="#headline-6">文本</a>
+</li>
+<li><a href="#headline-7">表格</a>
+</li>
+<li><a href="#headline-8">表单</a>
+</li>
+<li><a href="#headline-9">音视频（audio / video）</a>
+</li>
+<li><a href="#headline-10">窗口（frame）</a>
+</li>
+<li><a href="#headline-11">辅助工具</a>
 <ul>
-<li><a href="#headline-2">安装与编辑</a>
-</li>
-<li><a href="#headline-3">基本格式</a>
-</li>
-<li><a href="#headline-4">浏览器排版后的显示</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-5">详细说明   </a>
-<ul>
-<li><a href="#headline-6">根标签</a>
-</li>
-<li><a href="#headline-7">头部标签</a>
-</li>
-<li><a href="#headline-8">文档的体</a>
-</li>
-<li><a href="#headline-9">内容节点</a>
-</li>
-<li><a href="#headline-10">嵌入内容节点</a>
-</li>
-<li><a href="#headline-11">文字形式节点</a>
-</li>
-<li><a href="#headline-12">表格节点</a>
-</li>
-<li><a href="#headline-13">表单节点</a>
-</li>
-<li><a href="#headline-14">交互元素节点</a>
-</li>
-<li><a href="#headline-15">编辑节点</a>
+<li><a href="#headline-12">设计软件 figma</a>
 </li>
 </ul>
 </li>
@@ -190,159 +198,72 @@
 </div>
     <div class="post-content">
       <p>
-HTML技术主要用来给网页用的，就像我们看过的书或者报纸页一样，它不仅可以展示文字，还能格式化文字，还能播放多媒体，
-联合 javascript 技术还能制作网游，使得界面感觉都不像一页报纸了。
+超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。
 </p>
-<p>
-它的基本语法是使用特定的标签表示特定的东西，而且那个标签还是成对的，这是它的特点。
-</p>
-<h2 id="headline-1">
-html
-</h2>
-<h3 id="headline-2">
-安装与编辑
+<h3 id="headline-1">
+基本结构
 </h3>
-<p>
-有浏览器就可以展示 <strong>HTML</strong>  文件了，如果想要编写 <strong>HTML</strong> 文件，可以下个 <strong>HTML</strong> 编辑器。
-</p>
-<h3 id="headline-3">
-基本格式
-</h3>
-<div class="src src-html">
+<div class="src src-htm">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="cp">&lt;!DOCTYPE html&gt;</span>
-  <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-      <span class="c">&lt;!-- 手机看报兼容 --&gt;</span>
-      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width,
-</span><span class="s">                                     initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
-</span><span class="s">                                     user-scalable=no&#34;</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>报纸的标题<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;favicon.ico&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/x-icon&#34;</span><span class="p">&gt;</span>
-      <span class="c">&lt;!-- 模样代码文件 --&gt;</span>
-      <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;css/app.css&#34;</span><span class="p">&gt;</span>
-      <span class="c">&lt;!-- 脚本代码文件  --&gt;</span>
-      <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js/app.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span> 
-        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>版面1内容的标题<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>今天下雨了<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span> 
-        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>版面2内容的标题<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>春天来了<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-htm" data-lang="htm"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>This is a title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello world!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-4">
-浏览器排版后的显示
+<p>
+一个 HTML 文件分两块，一块是 head 部，一块是 body 部，head 部用来描述网页，body 部 用来渲染。
+</p>
+<h3 id="headline-2">
+块级元素和内联元素 
 </h3>
 <p>
-<img src="2020-02-11_15-16-00_screenshot.png" alt="2020-02-11_15-16-00_screenshot.png" title="2020-02-11_15-16-00_screenshot.png" />
+我们日常看网页内容的时候，会按照从左往右，从上往下的方向看网页，那么怎么编排这些内容呢？
 </p>
-<h2 id="headline-5">
-详细说明   
-</h2>
-<h3 id="headline-6">
-根标签
+<p>
+   <strong>html</strong> 中把从左往右的标签叫内联元素 ，把从上往下排列的标签叫块级元素。所以，我们平时设计网页的时候，先要思考我们的网站是上下划分块呢，还是左右划分块，这样比较清晰。
+</p>
+<p>
+   块级元素有 : 标题(h1-h6)，段落(p)， div ，标题是因为我们不大希望标题右边还有东西，段落也一样，段落是一段一段的，这些是从上往下排列的
+</p>
+<p>
+   内联元素：其他小东西基本都是 ，什么链接，图片，格式化的文字，这些可以行内排列
+</p>
+<h3 id="headline-3">
+布局块
 </h3>
 <ul>
 <li>
 <p>
-html  此标签表明是 <strong>HTML</strong> 文件，技术规定
-</p>
-</li>
-</ul>
-<h3 id="headline-7">
-头部标签
-</h3>
-<ul>
-<li>
-<p>
-head 头部标记
+section 章节 
 </p>
 </li>
 <li>
 <p>
-title 相当于报纸总标题
+nav 导航
 </p>
 </li>
 <li>
 <p>
-meta 元数据标签，用来补充说明页面属性
-</p>
-</li>
-<li>
-<p>
-style 报纸的样式定义区域
-</p>
-</li>
-<li>
-<p>
-script 报纸包含的执行代码(脚本)
-</p>
-</li>
-</ul>
-<h3 id="headline-8">
-文档的体
-</h3>
-<ul>
-<li>
-<p>
-body  体的标记 
-</p>
-</li>
-<li>
-<p>
-section 文章章节 
-</p>
-</li>
-<li>
-<p>
-nav 导航章节    
-</p>
-</li>
-<li>
-<p>
-header 章节的头部,包含 logo、页面标题和导航性的目录                  
+header 章节的头部
 </p>
 </li>
 <li>
@@ -352,17 +273,17 @@ h1 标题
 </li>
 <li>
 <p>
-article 内容块                                                
+article 内容
 </p>
 </li>
 <li>
 <p>
-aside  扩展内容块                                            
+aside  无关内容
 </p>
 </li>
 <li>
 <p>
-footer 章节的尾部,包含版权信息、法律信息链接和反馈建议用的地址 
+footer 章节的尾部
 </p>
 </li>
 <li>
@@ -372,62 +293,42 @@ address  联系信息
 </li>
 <li>
 <p>
-main  文档中主要或重要的内容                                 
+main  重要的内容                                 
+</p>
+</li>
+<li>
+<p>
+div 通用容器
 </p>
 </li>
 </ul>
-<h3 id="headline-9">
-内容节点
+<h3 id="headline-4">
+列表
 </h3>
 <ul>
 <li>
 <p>
-p 定义一个段落                                      
+有序列表（ordered list）- ol / li
 </p>
 </li>
 <li>
 <p>
-hr 分隔符      
+无序列表（unordered list）- ul / li
 </p>
 </li>
 <li>
 <p>
-pre 代表其内容已经预先排版过，格式应当保留            
+定义列表（definition list）- dl / dt / dd
 </p>
 </li>
+</ul>
+<h3 id="headline-5">
+图像
+</h3>
+<ul>
 <li>
 <p>
-blockquote 代表引用自其他来源的内容                          
-</p>
-</li>
-<li>
-<p>
-ol   定义一个有序列表                                  
-</p>
-</li>
-<li>
-<p>
-ul   定义一个无序列表                                  
-</p>
-</li>
-<li>
-<p>
-li   定义列表中的一个列表项                            
-</p>
-</li>
-<li>
-<p>
-dl   定义一个定义列表（一系列术语和其定义）            
-</p>
-</li>
-<li>
-<p>
-dt   代表一个由下一个 dd  定义的术语                  
-</p>
-</li>
-<li>
-<p>
-dd   代表出现在它之前术语的定义                        
+img     图片                                                                                 
 </p>
 </li>
 <li>
@@ -440,402 +341,218 @@ figure 	图例
 figcaption	图例说明
 </p>
 </li>
+</ul>
+<h3 id="headline-6">
+文本
+</h3>
+<ul>
 <li>
 <p>
-div 通用容器
+标题（heading）和段落（paragraph）
+</p>
+<ul>
+<li>
+<p>
+h1 ~ h6
+</p>
+</li>
+<li>
+<p>
+p
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+上标（superscript）和下标（subscript）
+</p>
+<ul>
+<li>
+<p>
+sup
+</p>
+</li>
+<li>
+<p>
+sub
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+空白（白色空间折叠）
+</p>
+</li>
+<li>
+<p>
+折行（break）和水平标尺（horizontal ruler）
+</p>
+<ul>
+<li>
+<p>
+br
+</p>
+</li>
+<li>
+<p>
+hr
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+语义化标签
+</p>
+<ul>
+<li>
+<p>
+加粗和强调 - strong
+</p>
+</li>
+<li>
+<p>
+引用 - blockquote
+</p>
+</li>
+<li>
+<p>
+缩写词和首字母缩写词 - abbr / acronym
+</p>
+</li>
+<li>
+<p>
+引文 - cite
+</p>
+</li>
+<li>
+<p>
+所有者联系信息 - address
+</p>
+</li>
+<li>
+<p>
+内容的修改 - ins / del
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="headline-7">
+表格
+</h3>
+<ul>
+<li>
+<p>
+基本的表格结构 - table / tr / td / th
+</p>
+</li>
+<li>
+<p>
+表格的标题 - caption
+</p>
+</li>
+<li>
+<p>
+跨行和跨列 - rowspan 属性 / colspan 属性
+</p>
+</li>
+<li>
+<p>
+长表格 - thead / tbody / tfoot
+</p>
+</li>
+</ul>
+<h3 id="headline-8">
+表单
+</h3>
+<ul>
+<li>
+<p>
+重要属性 - action / method / enctype
+</p>
+</li>
+<li>
+<p>
+表单控件（input）- type 属性
+</p>
+<ul>
+<li>
+<p>
+文本框 - text / 密码框 - password / 数字框 - number
+</p>
+</li>
+<li>
+<p>
+邮箱 - email / 电话 - tel / 日期 - date / 滑条 - range / URL - url / 搜索 - search
+</p>
+</li>
+<li>
+<p>
+单选按钮 - radio / 复选按钮 - checkbox
+</p>
+</li>
+<li>
+<p>
+文件上传 - file / 隐藏域 - hidden
+</p>
+</li>
+<li>
+<p>
+提交按钮 - submit / 图像按钮 - image  / 重置按钮 - reset
+</p>
+</li>
+</ul>
+</li>
+<li>
+<p>
+下拉列表 - select / option
+</p>
+</li>
+<li>
+<p>
+文本域（多行文本）- textarea
+</p>
+</li>
+<li>
+<p>
+组合表单元素 - fieldset / legend
+</p>
+</li>
+</ul>
+<h3 id="headline-9">
+音视频（audio / video）
+</h3>
+<ul>
+<li>
+<p>
+video 标签和属性 - autoplay / controls / loop / muted / preload / src
+</p>
+</li>
+<li>
+<p>
+audio 标签和属性 - autoplay / controls / loop / muted / preload / src / width / height / poster
 </p>
 </li>
 </ul>
 <h3 id="headline-10">
-嵌入内容节点
+窗口（frame）
 </h3>
 <ul>
 <li>
 <p>
-img     代表一张图片                                                                                 
-</p>
-</li>
-<li>
-<p>
-iframe   代表一个内联的框架                                                                           
-</p>
-</li>
-<li>
-<p>
-object   代表一个外部资源 ，如图片、HTML 子文档、插件等                                               
-</p>
-</li>
-<li>
-<p>
-param    代表 object  元素所指定的插件的参数                                                         
-</p>
-</li>
-<li>
-<p>
-video   	代表一段视频 及其视频文件和字幕，并提供了播放视频的用户界面         
-</p>
-</li>
-<li>
-<p>
-audio   	代表一段声音 ，或音频流                                             
-</p>
-</li>
-<li>
-<p>
-source  	为 video  或 audio  这类媒体元素指定媒体源                        
-</p>
-</li>
-<li>
-<p>
-track   	为 video  或 audio  这类媒体元素指定文本轨道（字幕）              
-</p>
-</li>
-<li>
-<p>
-canvas  	代表位图区域 ，可以通过脚本在它上面实时呈现图形，如图表、游戏绘图等 
-</p>
-</li>
-<li>
-<p>
-map      与 area  元素共同定义图像映射 区域                                                          
-</p>
-</li>
-<li>
-<p>
-area     与 map  元素共同定义图像映射 区域                                                           
-</p>
-</li>
-<li>
-<p>
-svg      	定义一个嵌入式矢量图                                                
-</p>
-</li>
-<li>
-<p>
-math     	定义一段数学公式                                                    
+内嵌窗口 - iframe
 </p>
 </li>
 </ul>
 <h3 id="headline-11">
-文字形式节点
+辅助工具
 </h3>
-<ul>
-<li>
-<p>
-a 	代表一个链接到其他资源的超链接 
-</p>
-</li>
-<li>
-<p>
-em 	代表强调 文字
-</p>
-</li>
-<li>
-<p>
-strong 	代表特别重要 文字
-</p>
-</li>
-<li>
-<p>
-small 	代表注释 ，如免责声明、版权声明等，对理解文档不重要
-</p>
-</li>
-<li>
-<p>
-s 	代表不准确或不相关 的内容
-</p>
-</li>
-<li>
-<p>
-cite 	代表作品标题 
-</p>
-</li>
-<li>
-<p>
-q 	代表内联的引用 
-</p>
-</li>
-<li>
-<p>
-dfn 	代表一个术语包含在其最近祖先内容中的定义 
-</p>
-</li>
-<li>
-<p>
-abbr 	代表省略 或缩写 ，其完整内容在 title 属性中
-</p>
-</li>
-<li>
-<p>
-data  	关联一个内容的机器可读的等价形式 
-</p>
-</li>
-<li>
-<p>
-time  	代表日期和时间值；机器可读的等价形式通过 datetime 属性指定
-</p>
-</li>
-<li>
-<p>
-code 	代表计算机代码 
-</p>
-</li>
-<li>
-<p>
-var 	代表代码中的变量 
-</p>
-</li>
-<li>
-<p>
-samp 	代表程序或电脑的输出 
-</p>
-</li>
-<li>
-<p>
-kbd 	代表用户输入 ，一般从键盘输出，但也可以代表其他输入，如语音输入
-</p>
-</li>
-<li>
-<p>
-sub ,sup 	分别代表下标 和上标 
-</p>
-</li>
-<li>
-<p>
-i 	代表一段不同性质 的文字，如技术术语、外文短语等
-</p>
-</li>
-<li>
-<p>
-b 	代表一段需要被关注 的文字
-</p>
-</li>
-<li>
-<p>
-u 	代表一段需要下划线呈现的文本注释，如标记出拼写错误的文字等
-</p>
-</li>
-<li>
-<p>
-mark  	代表一段需要被高亮的引用 文字
-</p>
-</li>
-<li>
-<p>
-ruby  	代表被 ruby 注释 标记的文本，如中文汉字和它的拼音
-</p>
-</li>
-<li>
-<p>
-rt  代表 ruby 注释 ，如中文拼音
-</p>
-</li>
-<li>
-<p>
-rp  代表 ruby 注释两边的额外插入文本 ，用于在不支持 ruby 注释显示的浏览器中提供友好的注释显示
-</p>
-</li>
-<li>
-<p>
-bdi  代表需要脱离 父元素文本方向的一段文本它允许嵌入一段不同或未知文本方向格式的文本
-</p>
-</li>
-<li>
-<p>
-bdo 	指定子元素的文本方向 ，显式地覆盖默认的文本方向
-</p>
-</li>
-<li>
-<p>
-span 	代表一段没有特殊含义的文本，当其他语义元素都不适合文本时候可以使用该元素
-</p>
-</li>
-<li>
-<p>
-br 	代表换行 
-</p>
-</li>
-<li>
-<p>
-wbr  代表建议换行 (Word Break Opportunity) ，当文本太长需要换行时将会在此处添加换行符
-</p>
-</li>
-</ul>
-<h3 id="headline-12">
-表格节点
-</h3>
-<ul>
-<li>
-<p>
-table      定义多维数据                        
-</p>
-</li>
-<li>
-<p>
-caption    代表表格的标题                      
-</p>
-</li>
-<li>
-<p>
-colgroup   代表表格中一组单列或多列            
-</p>
-</li>
-<li>
-<p>
-col        代表表格中的列                      
-</p>
-</li>
-<li>
-<p>
-tbody      代表表格中一块具体数据 （表格主体） 
-</p>
-</li>
-<li>
-<p>
-thead      代表表格中一块列标签 （表头）       
-</p>
-</li>
-<li>
-<p>
-tfoot      代表表格中一块列摘要 （表尾）       
-</p>
-</li>
-<li>
-<p>
-tr         代表表格中的行                      
-</p>
-</li>
-<li>
-<p>
-td         代表表格中的单元格                  
-</p>
-</li>
-<li>
-<p>
-th         代表表格中的头部单元格              
-</p>
-</li>
-</ul>
-<h3 id="headline-13">
-表单节点
-</h3>
-<ul>
-<li>
-<p>
-form       代表一个表单 ，由控件组成                                   
-</p>
-</li>
-<li>
-<p>
-fieldset   代表控件组                                                  
-</p>
-</li>
-<li>
-<p>
-legend     代表 fieldset  控件组的标题                                
-</p>
-</li>
-<li>
-<p>
-label      代表表单控件的标题                                          
-</p>
-</li>
-<li>
-<p>
-input      代表允许用户编辑数据的数据区 （文本框、单选框、复选框等）   
-</p>
-</li>
-<li>
-<p>
-button     代表按钮                                                    
-</p>
-</li>
-<li>
-<p>
-select     代表下拉框                                                  
-</p>
-</li>
-<li>
-<p>
-datalist  	代表提供给其他控件的一组预定义选项 
-</p>
-</li>
-<li>
-<p>
-optgroup   代表一个选项分组                                            
-</p>
-</li>
-<li>
-<p>
-option     代表一个 select  元素或 datalist  元素中的一个选项        
-</p>
-</li>
-<li>
-<p>
-textarea   代表多行文本框                                              
-</p>
-</li>
-<li>
-<p>
-keygen     	代表一个密钥对生成器 控件          
-</p>
-</li>
-<li>
-<p>
-output     	代表计算值                         
-</p>
-</li>
-<li>
-<p>
-progress   	代表进度条                         
-</p>
-</li>
-<li>
-<p>
-meter      	代表滑动条                         
-</p>
-</li>
-</ul>
-<h3 id="headline-14">
-交互元素节点
-</h3>
-<ul>
-<li>
-<p>
-details    	代表一个用户可以(点击)获取额外信息或控件的小部件 
-</p>
-</li>
-<li>
-<p>
-summary    	代表 details  元素的综述 或标题                 
-</p>
-</li>
-<li>
-<p>
-menuitem   	代表一个用户可以点击的菜单项                     
-</p>
-</li>
-<li>
-<p>
-menu       	代表菜单                                         
-</p>
-</li>
-</ul>
-<h3 id="headline-15">
-编辑节点
-</h3>
-<ul>
-<li>
-<p>
-ins   定义增加到文档的内容 
-</p>
-</li>
-<li>
-<p>
-del   定义从文档移除 的内容 
-</p>
-</li>
-</ul>
+<h4 id="headline-12">
+设计软件 figma
+</h4>
     </div>
 
     
@@ -908,7 +625,7 @@ del   定义从文档移除 的内容
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
+    2021
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -925,7 +642,10 @@ del   定义从文档移除 的内容
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

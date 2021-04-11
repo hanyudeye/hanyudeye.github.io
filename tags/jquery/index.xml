@@ -18,14 +18,9 @@
       
       <guid>https://aming.xyz/post/jquery/</guid>
       <description>&lt;p&gt;
-jQuery是一个JavaScript库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，事件
-处理，动画和Ajax等，使得操作起来极为简化，当然自己也扩展了一些功能。
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-相当与原来用 &lt;strong&gt;DOM&lt;/strong&gt; 操作的方式都可以用 &lt;strong&gt;jQuery&lt;/strong&gt; 方式了
-&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，
+事件处理，动画和 Ajax 等，使得操作极为简化。
+&lt;/p&gt;</description>
     </item>
     
   </channel>

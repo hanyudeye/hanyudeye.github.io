@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/vuejs/" />
@@ -35,7 +35,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -49,7 +50,7 @@
 <meta itemprop="description" content="Vue 简介">
 <meta itemprop="datePublished" content="2020-02-12T05:44:50&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-12T05:44:50&#43;08:00" />
-<meta itemprop="wordCount" content="2298">
+<meta itemprop="wordCount" content="2113">
 
 
 
@@ -99,6 +100,21 @@
       </a>
   </ul>
 </nav>
+
+
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -150,81 +166,99 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">前端历史</a>
-</li>
+<li><a href="#headline-1">介绍 </a>
+<ul>
 <li><a href="#headline-2">安装</a>
 </li>
-<li><a href="#headline-3">基本结构 </a>
+<li><a href="#headline-3">声明式渲染</a>
 </li>
-<li><a href="#headline-4">特性    </a>
-<ul>
-<li><a href="#headline-5">版面结构(模板)</a>
-<ul>
-<li><a href="#headline-6">数据绑定</a>
-<ul>
-<li><a href="#headline-7">文本 </a>
+<li><a href="#headline-4">条件与循环</a>
 </li>
-<li><a href="#headline-8">HTML</a>
+<li><a href="#headline-5">处理用户输入</a>
+</li>
+<li><a href="#headline-6">组件化应用构建</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-9">属性绑定</a>
-</li>
-<li><a href="#headline-10">使用 JavaScript 表达式</a>
-</li>
-<li><a href="#headline-11">条件与循环</a>
-</li>
-<li><a href="#headline-12">事件绑定</a>
+<li><a href="#headline-7">详细说明</a>
 <ul>
-<li><a href="#headline-13">事件修饰符</a>
-</li>
-<li><a href="#headline-14">按键修饰符</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-15">表单绑定 </a>
+<li><a href="#headline-8">前端模板 view</a>
 <ul>
-<li><a href="#headline-16">值绑定 </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-17">冻结绑定</a>
-</li>
-<li><a href="#headline-18">缩写</a>
-</li>
-<li><a href="#headline-19">计算属性</a>
-</li>
-<li><a href="#headline-20">侦听器</a>
-</li>
-<li><a href="#headline-21">Class 与 Style 绑定</a>
+<li><a href="#headline-9">数据定义与绑定 </a>
 <ul>
-<li><a href="#headline-22">class </a>
+<li><a href="#headline-10">非成对 DOM 的数据绑定 v-model</a>
 </li>
-<li><a href="#headline-23">style</a>
-</li>
-</ul>
+<li><a href="#headline-11">HTML</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-24">组件</a>
+<li><a href="#headline-12">使用表达式</a>
+</li>
+<li><a href="#headline-13">方法的定义及事件绑定</a>
+</li>
+<li><a href="#headline-14">属性绑定</a>
+</li>
+<li><a href="#headline-15">条件与循环</a>
+</li>
+<li><a href="#headline-16">事件绑定</a>
 <ul>
-<li><a href="#headline-25">定义组件 </a>
+<li><a href="#headline-17">点击事件 @click </a>
 </li>
-<li><a href="#headline-26">使用组件</a>
+<li><a href="#headline-18">鼠标事件  @mouseover @mouseleave</a>
 </li>
-<li><a href="#headline-27">定义局部组件</a>
+<li><a href="#headline-19">表单事件 @focus @blurs</a>
 </li>
-<li><a href="#headline-28">模板解析注意事项</a>
+<li><a href="#headline-20">键盘事件 @keyup @keydown</a>
 </li>
-<li><a href="#headline-29">data 必须是函数</a>
+<li><a href="#headline-21">事件修饰符</a>
+</li>
+<li><a href="#headline-22">按键修饰符</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-30">过渡效果</a>
+<li><a href="#headline-23">缩写</a>
 </li>
-<li><a href="#headline-31">单文件组件</a>
+<li><a href="#headline-24">计算属性</a>
 </li>
-<li><a href="#headline-32">生命周期</a>
+<li><a href="#headline-25">侦听器</a>
+</li>
+<li><a href="#headline-26">Class 与 Style 绑定</a>
+<ul>
+<li><a href="#headline-27">class </a>
+</li>
+<li><a href="#headline-28">style</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-29">组件</a>
+<ul>
+<li><a href="#headline-30">定义组件 </a>
+</li>
+<li><a href="#headline-31">使用组件</a>
+</li>
+<li><a href="#headline-32">定义局部组件</a>
+</li>
+<li><a href="#headline-33">模板解析注意事项</a>
+</li>
+<li><a href="#headline-34">data 必须是函数</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-35">过渡效果</a>
+</li>
+<li><a href="#headline-36">单文件组件</a>
+</li>
+<li><a href="#headline-37">生命周期</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-38">vue-cli 使用</a>
+<ul>
+<li><a href="#headline-39">初始化项目</a>
+</li>
+<li><a href="#headline-40">运行项目 npm run dev</a>
 </li>
 </ul>
 </li>
@@ -234,130 +268,36 @@
 </div>
     <div class="post-content">
       <p>
-我们看一张 <strong>报纸</strong> ，然后版面栏目不是很多嘛，比如这块是实事新闻，那块是娱乐新闻，东西很多放在一起管理就麻烦，分块各人管一小块就清晰点。   
-vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩展的独立对象)，使得报纸的内容更容易修改(动态化)。
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。
 </p>
-<blockquote>
-<p>
-就是把报纸的 <strong>版面结构</strong> 和 <strong>版面内容</strong> 分离开来，使 <strong>版面结构</strong>  不动的情况下  <strong>版面内容</strong>  可以随意变化。
-</p>
-</blockquote>
 <h3 id="headline-1">
-前端历史
+介绍 
 </h3>
-<ul>
-<li>
-<p>
-<strong>html</strong> ， <strong>javascript</strong> , <strong>css</strong> 技术相继出来以后，一张 <strong>报纸</strong> 基本满足用户的需求了，且还有少量互动，但程序员处理浏览器兼容性还是非常麻烦。
-</p>
-</li>
-<li>
-<p>
-<strong>ajax</strong> 技术的出现，使 <strong>报纸</strong> 可以局部更新,体验更好，也节省了带宽。
-</p>
-</li>
-<li>
-<p>
-<strong>jQuery</strong> 大大简化语法，提高了生产力。
-</p>
-</li>
-<li>
-<p>
-<strong>angularjs</strong> <strong>vuejs</strong>  等前端框架出现，改变着传统网页单页无法重用的设计模式，改变了编码范式
-</p>
-</li>
-<li>
-<p>
-<strong>nodejs</strong> 的出现，使得前端工程师都要把后端工程师消灭了。
-</p>
-</li>
-</ul>
-<h3 id="headline-2">
+<h4 id="headline-2">
 安装
-</h3>
+</h4>
 <div class="src src-html">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/vue/2.6.10/vue.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-3">
-基本结构 
-</h3>
-<p>
-版面结构
-</p>
-<div class="src src-html">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello,world {{message}}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-   版面内容
-</p>
-<div class="src src-js">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="k">new</span> <span class="nx">Vue</span><span class="p">(</span>
-      <span class="p">{</span>
-          <span class="nx">el</span><span class="o">:</span><span class="s1">&#39;h1&#39;</span><span class="p">,</span> 
-          <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-              <span class="nx">message</span><span class="o">:</span><span class="s1">&#39;Hello Vue&#39;</span><span class="p">,</span> 
-          <span class="p">}</span>
-      <span class="p">})</span>
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="c">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<blockquote>
-<p>
-看下结构，模板式的关联方式，这样版面结构和版面内容就相互对应了，以后只要修改版面内容就可以了。
-</p>
-</blockquote>
-<h3 id="headline-4">
-特性    
-</h3>
-<h4 id="headline-5">
-版面结构(模板)
+<h4 id="headline-3">
+声明式渲染
 </h4>
 <p>
-动态数据和事件的绑定方式跟原来不一样了，用了vue定义的模板样式。编程范式也跟
-    原来很不相同，以前是一步一步命令式的方式(命令范式)，现在是配置式的（声明范
-    式），简化了好多代码。
+Vue.js 的核心是一个允许采用简洁的模板语法来声明式地将数据渲染进 DOM 的系统：
 </p>
-<p>
-    因为版面结构与数据发生了绑定，所以 <strong>vue</strong> 会追踪数据是否发生变化来决定是否重新
-    渲染页面结构。这种方式叫响应式系统， 实例被创建时 <strong>data</strong> 中的数据是 <strong>响应式</strong>
-    的。
-</p>
-<h5 id="headline-6">
-数据绑定
-</h5>
-<h6 id="headline-7">
-文本 
-</h6>
 <div class="src src-html">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -372,7 +312,7 @@ vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩�
 </div>
 </div>
 </div>
-<div class="src src-javascript">
+<div class="src src-js">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -383,40 +323,160 @@ vuejs 就是干这事的，它提供了版面接口(版面成了一个容易扩�
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="err">（</span><span class="p">{</span> 
-      <span class="nx">el</span><span class="o">:</span><span class="s1">&#39;＃app&#39;</span><span class="err">，</span>
-      <span class="nx">data</span><span class="o">:</span><span class="p">{</span> 
-          <span class="nx">message</span><span class="o">:</span><span class="s1">&#39;Hello Vue！&#39;</span>
-      <span class="p">}</span> 
-  <span class="p">}</span><span class="err">）</span>
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Hello Vue!&#39;</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
 </code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<blockquote>
 <p>
-这里 <strong>message</strong> 是响应式的，它一变，页面就要重新渲染。
+    说明：给前端定义一个 Vue 对象，然后前端可以有选择的渲染，因为是响应式的，所以数据的修改会直接反应到前端。
 </p>
-</blockquote>
-<p>
-      不会改变的文本
-</p>
+<h4 id="headline-4">
+条件与循环
+</h4>
 <div class="src src-html">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">v-once</span><span class="p">&gt;</span>这个将不会改变: {{ msg }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app-3&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&#34;seen&#34;</span><span class="p">&gt;</span>现在你看到我了<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h6 id="headline-8">
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">app3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app-3&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">seen</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+    说明：添加了条件语法
+</p>
+<h4 id="headline-5">
+处理用户输入
+</h4>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app-5&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ message }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">v-on:click</span><span class="o">=</span><span class="s">&#34;reverseMessage&#34;</span><span class="p">&gt;</span>反转消息<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="src src-js">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js">   <span class="kd">var</span> <span class="nx">app5</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app-5&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">message</span><span class="o">:</span> <span class="s1">&#39;Hello Vue.js!&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">reverseMessage</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">message</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">message</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">})</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+    说明：修改了事件绑定语法
+</p>
+<h4 id="headline-6">
+组件化应用构建
+</h4>
+<h3 id="headline-7">
+详细说明
+</h3>
+<h4 id="headline-8">
+前端模板 view
+</h4>
+<h5 id="headline-9">
+数据定义与绑定 
+</h5>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>{{val}}<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+        <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+        <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">val</span><span class="o">:</span> <span class="s1">&#39;Hello World !&#39;</span>
+        <span class="p">}</span>
+        <span class="p">})</span>
+      <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+     数据定义在 data 中，将  el 与 data 进行绑定。前端可以用模板选择要显示的数据，模板还能进行简单的计算。
+</p>
+<h6 id="headline-10">
+非成对 DOM 的数据绑定 v-model
+</h6>
+<h6 id="headline-11">
 HTML
 </h6>
-<p>
-对文本进行 <strong>HTML</strong> 解析
-</p>
 <div class="src src-html">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -427,7 +487,84 @@ HTML
 </div>
 </div>
 </div>
-<h5 id="headline-9">
+<h5 id="headline-12">
+使用表达式
+</h5>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  {{ number + 1 }}
+  {{ ok ? &#39;YES&#39; : &#39;NO&#39; }}
+  {{ message.split(&#39;&#39;).reverse().join(&#39;&#39;) }}
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-bind:id</span><span class="o">=</span><span class="s">&#34;&#39;list-&#39; + id&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-13">
+方法的定义及事件绑定
+</h5>
+<div class="src src-html">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;点击我&#34;</span> <span class="na">v-on:click</span><span class="o">=</span><span class="s">&#34;fun()&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+    <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+    <span class="nx">val</span><span class="o">:</span> <span class="s1">&#39;hello&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">fun</span><span class="p">(){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">val</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">})</span>
+  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+     绑定方法：
+</p>
+<ol>
+<li>
+<p>
+v-on:click=&#34;fun()&#34;
+</p>
+</li>
+<li>
+<p>
+@:click=&#34;fun()&#34;
+</p>
+</li>
+</ol>
+<h5 id="headline-14">
 属性绑定
 </h5>
 <ul>
@@ -452,29 +589,7 @@ v-bind:title=&#34;message&#34;
 特殊例子， 如果 `isButtonDisabled` 的值是 `null`、`undefined` 或 `false`，则 `disabled` 特性甚至不会被包含在渲染出来的 `&lt;button&gt;` 元素中。
 </p>
 </blockquote>
-<h5 id="headline-10">
-使用 JavaScript 表达式
-</h5>
-<p>
-直接使用，注意与语句区分
-</p>
-<div class="src src-html">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  {{ number + 1 }}
-  {{ ok ? &#39;YES&#39; : &#39;NO&#39; }}
-  {{ message.split(&#39;&#39;).reverse().join(&#39;&#39;) }}
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">v-bind:id</span><span class="o">=</span><span class="s">&#34;&#39;list-&#39; + id&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h5 id="headline-11">
+<h5 id="headline-15">
 条件与循环
 </h5>
 <ul>
@@ -490,7 +605,7 @@ v-else 分支
 </li>
 <li>
 <p>
-v-for 循环
+v-for 循环 (val,key) in arr
 </p>
 </li>
 <li>
@@ -500,7 +615,7 @@ v-else-if
 </li>
 <li>
 <p>
-v-show 仅仅隐藏
+v-show 显示隐藏
 </p>
 <div class="src src-html">
 <div class="highlight"><div class="chroma">
@@ -536,17 +651,22 @@ v-show 仅仅隐藏
 </div>
 </li>
 </ul>
-<h5 id="headline-12">
+<h5 id="headline-16">
 事件绑定
 </h5>
-<ul>
-<li>
-<p>
-v-on
-</p>
-</li>
-</ul>
-<h6 id="headline-13">
+<h6 id="headline-17">
+点击事件 @click 
+</h6>
+<h6 id="headline-18">
+鼠标事件  @mouseover @mouseleave
+</h6>
+<h6 id="headline-19">
+表单事件 @focus @blurs
+</h6>
+<h6 id="headline-20">
+键盘事件 @keyup @keydown
+</h6>
+<h6 id="headline-21">
 事件修饰符
 </h6>
 <div class="src src-html">
@@ -613,7 +733,7 @@ v-on
 </div>
 </div>
 </div>
-<h6 id="headline-14">
+<h6 id="headline-22">
 按键修饰符
 </h6>
 <div class="src src-html">
@@ -745,112 +865,7 @@ v-on
 </div>
 </div>
 </div>
-<h5 id="headline-15">
-表单绑定 
-</h5>
-<ul>
-<li>
-<p>
-v-model
-</p>
-<div class="src src-html">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;edit me&#34;</span><span class="p">&gt;</span>
-
-  <span class="c">&lt;!-- 多行文本 --&gt;</span>
-  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;add multiple lines&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
-
-  <span class="c">&lt;!-- 复选框 --&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;jack&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Jack&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;john&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;John&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;checkedNames&#34;</span><span class="p">&gt;</span>
-
-  <span class="c">&lt;!-- 单选按钮 --&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;one&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;One&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;two&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Two&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;picked&#34;</span><span class="p">&gt;</span>
-
-  <span class="c">&lt;!-- 选择框 --&gt;</span>
-  <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;selected&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">disabled</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>请选择<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
-
-  <span class="c">&lt;!-- 渲染的动态选项 --&gt;</span>
-  <span class="p">&lt;</span><span class="nt">select</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;selected&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&#34;option in options&#34;</span> <span class="na">v-bind:value</span><span class="o">=</span><span class="s">&#34;option.value&#34;</span><span class="p">&gt;</span>
-      {{ option.text }}
-    <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-</li>
-</ul>
-<h6 id="headline-16">
-值绑定 
-</h6>
-<div class="src src-html">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">input</span>
-    <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span>
-    <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;toggle&#34;</span>
-    <span class="na">true-value</span><span class="o">=</span><span class="s">&#34;yes&#34;</span>
-    <span class="na">false-value</span><span class="o">=</span><span class="s">&#34;no&#34;</span>
-    <span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h5 id="headline-17">
-冻结绑定
-</h5>
-<ul>
-<li>
-<p>
-Object.freeze(obj)
-</p>
-</li>
-</ul>
-<h5 id="headline-18">
+<h5 id="headline-23">
 缩写
 </h5>
 <ul>
@@ -865,7 +880,7 @@ v-on 缩写 @
 </p>
 </li>
 </ul>
-<h5 id="headline-19">
+<h5 id="headline-24">
 计算属性
 </h5>
 <p>
@@ -894,7 +909,7 @@ v-on 缩写 @
 </div>
 </div>
 </div>
-<h5 id="headline-20">
+<h5 id="headline-25">
 侦听器
 </h5>
 <p>
@@ -919,10 +934,10 @@ v-on 缩写 @
 </div>
 </div>
 </div>
-<h5 id="headline-21">
+<h5 id="headline-26">
 Class 与 Style 绑定
 </h5>
-<h6 id="headline-22">
+<h6 id="headline-27">
 class 
 </h6>
 <div class="src src-html">
@@ -1003,7 +1018,7 @@ class
 </div>
 </div>
 </div>
-<h6 id="headline-23">
+<h6 id="headline-28">
 style
 </h6>
 <div class="src src-html">
@@ -1037,13 +1052,13 @@ style
 </div>
 </div>
 </div>
-<h4 id="headline-24">
+<h4 id="headline-29">
 组件
 </h4>
 <p>
-相当于自定义的标签，自己辛苦定义一个，当然要重复使用了啊
+每个页面有些东西是重复的(比如头部，底部，侧边栏)，那么，我们可以把这些重复的地方第一为组件，就可以重复使用了。
 </p>
-<h5 id="headline-25">
+<h5 id="headline-30">
 定义组件 
 </h5>
 <ul>
@@ -1070,7 +1085,7 @@ Vue.component(tagName, options)
 </div>
 </li>
 </ul>
-<h5 id="headline-26">
+<h5 id="headline-31">
 使用组件
 </h5>
 <p>
@@ -1092,7 +1107,7 @@ Vue.component(tagName, options)
 </div>
 </div>
 </div>
-<h5 id="headline-27">
+<h5 id="headline-32">
 定义局部组件
 </h5>
 <div class="src src-js">
@@ -1126,7 +1141,7 @@ Vue.component(tagName, options)
 </div>
 </div>
 </div>
-<h5 id="headline-28">
+<h5 id="headline-33">
 模板解析注意事项
 </h5>
 <p>
@@ -1184,7 +1199,7 @@ JavaScript 内联模板字符串
 </p>
 </li>
 </ul>
-<h5 id="headline-29">
+<h5 id="headline-34">
 data 必须是函数
 </h5>
 <div class="src src-js">
@@ -1234,7 +1249,7 @@ data 必须是函数
 </div>
 </div>
 </div>
-<h4 id="headline-30">
+<h4 id="headline-35">
 过渡效果
 </h4>
 <p>
@@ -1248,7 +1263,7 @@ Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用�
     可以配合使用第三方 JavaScript 动画库，如 Velocity.js.
 </p>
 </div>
-<h4 id="headline-31">
+<h4 id="headline-36">
 单文件组件
 </h4>
 <p>
@@ -1256,7 +1271,7 @@ Vue 在插入、更新或者移除 DOM 时，提供多种不同方式的应用�
     用以替代使用 Vue.component 注册组件的方式。开发者可以使用 Webpack 或
     Browserify 等构建工具来打包单文件组件。
 </p>
-<h4 id="headline-32">
+<h4 id="headline-37">
 生命周期
 </h4>
 <p>
@@ -1286,6 +1301,18 @@ destroyed
 </p>
 </li>
 </ul>
+<h3 id="headline-38">
+vue-cli 使用
+</h3>
+<h4 id="headline-39">
+初始化项目
+</h4>
+<p>
+vue init webpack vue_mall(项目名称) 
+</p>
+<h4 id="headline-40">
+运行项目 npm run dev
+</h4>
     </div>
 
     
@@ -1358,7 +1385,7 @@ destroyed
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
+    2021
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -1375,7 +1402,10 @@ destroyed
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

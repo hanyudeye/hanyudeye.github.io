@@ -18,7 +18,7 @@
       
       <guid>https://aming.xyz/post/spacemacs/</guid>
       <description>&lt;p&gt;
-对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置框架，需要什么功能修改下配置文件就可以，省去了很多折腾。此文是对官方文档的简单翻译。
+&lt;strong&gt;spacemacs&lt;/strong&gt; 是对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置，特点是快捷键方便记忆，一般用 空格键 （SPACE KEY）作为命令前导，所以取名 spacemacs。
 &lt;/p&gt;</description>
     </item>
     

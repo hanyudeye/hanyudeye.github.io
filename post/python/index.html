@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/python/" />
@@ -35,7 +35,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -49,7 +50,7 @@
 <meta itemprop="description" content="Python 语言学习笔记">
 <meta itemprop="datePublished" content="2019-11-29T21:57:09&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-29T21:57:09&#43;08:00" />
-<meta itemprop="wordCount" content="1551">
+<meta itemprop="wordCount" content="1038">
 
 
 
@@ -99,6 +100,21 @@
       </a>
   </ul>
 </nav>
+
+
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
@@ -150,61 +166,59 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#headline-1">东西结构 </a>
+<li><a href="#headline-1">数据的类型</a>
 <ul>
-<li><a href="#headline-2">类型转换</a>
+<li><a href="#headline-2">数据转换</a>
 </li>
 <li><a href="#headline-3">自定义类型  </a>
 <ul>
-<li><a href="#headline-4">定义类 </a>
+<li><a href="#headline-4">定义类型   </a>
 </li>
-<li><a href="#headline-5">专有方法</a>
+<li><a href="#headline-5">默认方法</a>
 </li>
 <li><a href="#headline-6">类的继承</a>
 </li>
-<li><a href="#headline-7">类的私有属性与私有方法</a>
-</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#headline-8">东西功能</a>
+<li><a href="#headline-7">函数</a>
 <ul>
-<li><a href="#headline-9">定义函数</a>
+<li><a href="#headline-8">定义函数</a>
 </li>
-<li><a href="#headline-10">不定长参数函数</a>
+<li><a href="#headline-9">不定长参数函数</a>
 </li>
-<li><a href="#headline-11">关键字参数 ( 给参数命名)</a>
+<li><a href="#headline-10">关键字参数 </a>
 </li>
-<li><a href="#headline-12">匿名函数 lambda (不要重复使用的函数，就不给名字了)</a>
+<li><a href="#headline-11">匿名函数 lambda </a>
 </li>
-<li><a href="#headline-13">入口函数</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-14">控制流程</a>
-</li>
-<li><a href="#headline-15">模块</a>
-<ul>
-<li><a href="#headline-16">使用模块 </a>
+<li><a href="#headline-12">入口函数</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-17">包</a>
+<li><a href="#headline-13">模块 (文件)</a>
 </li>
-<li><a href="#headline-18">测试</a>
+<li><a href="#headline-14">包(文件夹)</a>
 </li>
-<li><a href="#headline-19">帮助</a>
-</li>
-<li><a href="#headline-20">环境管理</a>
+<li><a href="#headline-15">测试</a>
 <ul>
-<li><a href="#headline-21">pipenv </a>
+<li><a href="#headline-16">预防性编程</a>
+</li>
+<li><a href="#headline-17">自定义报错</a>
 </li>
 </ul>
 </li>
-<li><a href="#headline-22">faq    </a>
+<li><a href="#headline-18">帮助</a>
+</li>
+<li><a href="#headline-19">环境管理</a>
 <ul>
-<li><a href="#headline-23">中文编码</a>
+<li><a href="#headline-20">pipenv </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-21">faq    </a>
+<ul>
+<li><a href="#headline-22">中文编码</a>
 </li>
 </ul>
 </li>
@@ -214,30 +228,30 @@
 </div>
     <div class="post-content">
       <p>
-指令 <strong>沙子</strong>
+比较高级的编程语言
 </p>
 <h3 id="headline-1">
-东西结构 
+数据的类型
 </h3>
 <ul>
 <li>
 <p>
-列表(list)
+列表(list)  [ 1,2 ,&#34;鸡蛋&#34;,&#34;大豆&#34;]
 </p>
 </li>
 <li>
 <p>
-元组 (tuple)  
+元组 (tuple)  ( 1,2 ,&#34;鸡蛋&#34;,&#34;大豆&#34; )
 </p>
 </li>
 <li>
 <p>
-字典 (dictionary)
+字典 (dictionary) {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: &#39;鸡蛋&#39;, &#39;d&#39;: &#39;大豆&#39;} 
 </p>
 </li>
 <li>
 <p>
-集合
+集合 {3,4,6,&#39;a&#39;,&#39;3&#39;,3} 跟列表一样，但会自动消除重复的东西
 </p>
 </li>
 <li>
@@ -247,69 +261,80 @@
 </li>
 </ul>
 <h4 id="headline-2">
-类型转换
+数据转换
 </h4>
-<table>
-<tbody>
-<tr>
-<td>将 字符串 x 转换为一个整数</td>
-<td>int(x [,base])</td>
-</tr>
-<tr>
-<td>将 字符串 x 转换到一个浮点数</td>
-<td>float(x)</td>
-</tr>
-<tr>
-<td>创建一个复数</td>
-<td>complex(real [,imag])</td>
-</tr>
-<tr>
-<td>将对象 x 转换为字符串</td>
-<td>str(x)</td>
-</tr>
-<tr>
-<td>将对象 x 转换为表达式字符串</td>
-<td>repr(x)</td>
-</tr>
-<tr>
-<td>用来计算在字符串中的有效 Python 表达式,并返回一个对象</td>
-<td>eval(str)</td>
-</tr>
-<tr>
-<td>将序列 s 转换为一个元组</td>
-<td>tuple(s)</td>
-</tr>
-<tr>
-<td>将序列 s 转换为一个列表</td>
-<td>list(s)</td>
-</tr>
-<tr>
-<td>将一个整数转换为一个字符</td>
-<td>chr(x)</td>
-</tr>
-<tr>
-<td>将一个整数转换为 Unicode 字符</td>
-<td>unichr(x)</td>
-</tr>
-<tr>
-<td>将一个字符转换为它的整数值</td>
-<td>ord(x)</td>
-</tr>
-<tr>
-<td>将一个整数转换为一个十六进制字符串</td>
-<td>hex(x)</td>
-</tr>
-<tr>
-<td>将一个整数转换为一个八进制字符串</td>
-<td>oct(x)</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>
+<p>
+int(x [,base])        
+</p>
+</li>
+<li>
+<p>
+float(x)              
+</p>
+</li>
+<li>
+<p>
+complex(real [,imag]) 
+</p>
+</li>
+<li>
+<p>
+str(x)                
+</p>
+</li>
+<li>
+<p>
+repr(x)               
+</p>
+</li>
+<li>
+<p>
+eval(str)             
+</p>
+</li>
+<li>
+<p>
+tuple(s)              
+</p>
+</li>
+<li>
+<p>
+list(s)               
+</p>
+</li>
+<li>
+<p>
+chr(x)                
+</p>
+</li>
+<li>
+<p>
+unichr(x)             
+</p>
+</li>
+<li>
+<p>
+ord(x)                
+</p>
+</li>
+<li>
+<p>
+hex(x)                
+</p>
+</li>
+<li>
+<p>
+oct(x)                
+</p>
+</li>
+</ul>
 <h4 id="headline-3">
 自定义类型  
 </h4>
 <h5 id="headline-4">
-定义类 
+定义类型   
 </h5>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -333,47 +358,16 @@
 </div>
 </div>
 </div>
-<p>
-     实例 
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">class</span> <span class="nc">wa</span><span class="p">:</span>
-   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="o">=</span><span class="p">{}):</span>
-    <span class="s1">&#39;&#39;&#39;items&#39;&#39;&#39;</span>
-       <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="o">!=</span><span class="nb">type</span><span class="p">({}):</span>
-           <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&#34;类型错误&#34;</span><span class="p">)</span>
-          <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">=</span><span class="n">items</span>
-       <span class="k">return</span>
-      <span class="k">def</span>	<span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>	<span class="n">amount</span><span class="p">):</span>
-       <span class="bp">self</span><span class="o">.</span><span class="n">balance</span>	<span class="o">=</span>	<span class="bp">self</span><span class="o">.</span><span class="n">balance</span>	<span class="o">+</span>	<span class="n">amount</span>
-       <span class="k">return</span>	<span class="bp">self</span><span class="o">.</span><span class="n">balance</span>
-      <span class="k">def</span>	<span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>	<span class="n">amount</span><span class="p">):</span>
-       <span class="k">if</span>	<span class="n">amount</span>	<span class="o">&gt;</span>	<span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="p">:</span>
-        <span class="k">return</span>	<span class="s1">&#39;Insufficient	funds&#39;</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
 <h5 id="headline-5">
-专有方法
+默认方法
 </h5>
 <table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>说明</th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td><span style="text-decoration: underline;"><span style="text-decoration: underline;">init</span></span></td>
@@ -429,36 +423,33 @@
 </tr>
 <tr>
 <td>type(obj)</td>
-<td>来获取对象的相应类型；</td>
+<td>获取对象的相应类型</td>
 </tr>
 <tr>
 <td>isinstance(obj, type)</td>
-<td>判断对象是否为指定的 type 类型的实例；</td>
+<td>判断对象是否为指定的 type 类型的实例</td>
 </tr>
 <tr>
 <td>hasattr(obj, attr)</td>
-<td>判断对象是否具有指定属性/方法；</td>
+<td>判断对象是否具有指定属性/方法</td>
 </tr>
 <tr>
 <td>getattr(obj, attr[, default])</td>
-<td>获取属性/方法的值, 要是没有对应的属性则返回 default 值（前提是设置了 default），否则会抛出 AttributeError 异常；</td>
+<td>获取属性/方法的值</td>
 </tr>
 <tr>
 <td>setattr(obj, attr, value)</td>
-<td>设定该属性/方法的值，类似于 obj.attr=value；</td>
+<td>设定该属性/方法的值，类似于 obj.attr=value</td>
 </tr>
 <tr>
 <td>dir(obj)</td>
-<td>可以获取相应对象的所有属性和方法名的列表：不带参数，显示环境下的变量，引入的模块数组</td>
+<td>获取相应对象的所有属性和方法名的列表</td>
 </tr>
 </tbody>
 </table>
 <h5 id="headline-6">
 类的继承
 </h5>
-<p>
-类是面向对象中的技术，为了东西和方法方便扩展
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -475,25 +466,10 @@
 </div>
 </div>
 </div>
-<h5 id="headline-7">
-类的私有属性与私有方法
-</h5>
-<ul>
-<li>
-<p>
-私有属性 __private_attrs：两个下划线开头，声明该属性为私有，不能在类地外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs 类的方法
-</p>
-</li>
-<li>
-<p>
-私有方法 __private_method：两个下划线开头，声明该方法为私有方法，不能在类地外部调用。在类的内部调用 self.__private_methods 
-</p>
-</li>
-</ul>
-<h3 id="headline-8">
-东西功能
+<h3 id="headline-7">
+函数
 </h3>
-<h4 id="headline-9">
+<h4 id="headline-8">
 定义函数
 </h4>
 <div class="src src-python">
@@ -512,12 +488,9 @@
 </div>
 </div>
 </div>
-<h4 id="headline-10">
+<h4 id="headline-9">
 不定长参数函数
 </h4>
-<p>
-就是函数的参数长度不定
-</p>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -540,8 +513,8 @@
 </div>
 </div>
 </div>
-<h4 id="headline-11">
-关键字参数 ( 给参数命名)
+<h4 id="headline-10">
+关键字参数 
 </h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -565,8 +538,8 @@
 </div>
 </div>
 </div>
-<h4 id="headline-12">
-匿名函数 lambda (不要重复使用的函数，就不给名字了)
+<h4 id="headline-11">
+匿名函数 lambda 
 </h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
@@ -594,7 +567,7 @@
 </div>
 </div>
 </div>
-<h4 id="headline-13">
+<h4 id="headline-12">
 入口函数
 </h4>
 <div class="src src-python">
@@ -607,53 +580,9 @@
 </div>
 </div>
 </div>
-<h3 id="headline-14">
-控制流程
+<h3 id="headline-13">
+模块 (文件)
 </h3>
-<p>
-分支 ( if 或 if not )
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">if</span> <span class="n">cond</span><span class="p">:</span>
-     <span class="err">语句</span><span class="o">...</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<p>
-   重复多做几次
-</p>
-<div class="src src-python">
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
-          <span class="err">语句</span><span class="o">...</span></code></pre></td></tr></table>
-</div>
-</div>
-</div>
-<h3 id="headline-15">
-模块
-</h3>
-<blockquote>
-<p>
-模块是为了合理组织东西，便于重用
-</p>
-</blockquote>
-<p>
-一个文件就是一个模块了，文件名表示模块名
-</p>
-<h4 id="headline-16">
-使用模块 
-</h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -666,30 +595,25 @@
 </div>
 </div>
 </div>
-<h3 id="headline-17">
-包
+<h3 id="headline-14">
+包(文件夹)
 </h3>
-<blockquote>
-<p>
-包和模块是一样的目的，就是包是由模块组成的，模块是包的一部分。
-</p>
-</blockquote>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">  <span class="kn">import</span> <span class="err">目录名</span><span class="o">.</span><span class="err">模块名</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="err">目录名</span><span class="o">.</span><span class="err">模块名</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-18">
+<h3 id="headline-15">
 测试
 </h3>
-<p>
-预防性编程的一种方式
-</p>
+<h4 id="headline-16">
+预防性编程
+</h4>
 <div class="src src-python">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -700,34 +624,47 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">try</span><span class="p">:</span>
-   <span class="s2">&#34;nihao&#34;</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;bao&#39;</span><span class="p">)</span>
+   <span class="s2">&#34;nao&#34;</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;bao&#39;</span><span class="p">)</span>
   <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
    <span class="k">print</span> <span class="s2">&#34;some error&#34;</span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
-<h3 id="headline-19">
+<h4 id="headline-17">
+自定义报错
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&#34;类型错了啊&#34;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-18">
 帮助
 </h3>
 <ul>
 <li>
 <p>
-help()  函数或类的详细说明
+help() 
 </p>
 </li>
 <li>
 <p>
-dir() 函数或类的简单说明
+dir() 输出函数或类的简单说明
 </p>
 </li>
 </ul>
-<h3 id="headline-20">
+<h3 id="headline-19">
 环境管理
 </h3>
 <p>
 因为 <strong>Python</strong> 最大的问题是各版本不兼容，所以还要要管理版本问题。  
 </p>
-<h4 id="headline-21">
+<h4 id="headline-20">
 pipenv 
 </h4>
 <div class="src src-sh">
@@ -780,15 +717,12 @@ pipenv
 </div>
 </div>
 </div>
-<h3 id="headline-22">
+<h3 id="headline-21">
 faq    
 </h3>
-<h4 id="headline-23">
+<h4 id="headline-22">
 中文编码
 </h4>
-<p>
-<strong>python2</strong> 默认是认不得中文等世界语的，只认得英文， <strong>python3</strong> 改掉了，这点注意看下版本。
-</p>
 <div class="src src-py">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -814,8 +748,8 @@ faq
             <span class="prev-text nav-default">学习简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/psychologicalobstacle/">
-            <span class="next-text nav-default">心理障碍</span>
+        <a class="next" href="/post/linux/">
+            <span class="next-text nav-default">Linux命令简介</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -873,7 +807,7 @@ faq
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
+    2021
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -890,7 +824,10 @@ faq
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
