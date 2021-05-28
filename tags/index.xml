@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 May 2021 05:05:18 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TODO</title>
+      <link>https://aming.xyz/tags/todo/</link>
+      <pubDate>Sat, 29 May 2021 05:05:18 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/todo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>农活</title>
+      <link>https://aming.xyz/tags/%E5%86%9C%E6%B4%BB/</link>
+      <pubDate>Sun, 18 Apr 2021 15:06:23 +0800</pubDate>
+      
+      <guid>https://aming.xyz/tags/%E5%86%9C%E6%B4%BB/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>万维网</title>
