@@ -36,9 +36,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.ba818b2a794c0d2448b9a790ae8aa830d81f6ce7d79eb2d9c3b0b780cc9e8ef4.css" rel="stylesheet">
+
+<link href="/sass/main.min.7019954c6fb27e127fccf38ae43e639c976172597bf5eae14d5dec1dd343f31f.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -46,7 +46,7 @@
 <meta property="og:description" content="收集生活的感悟." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://aming.xyz/tags/" />
-<meta property="og:updated_time" content="2021-05-29T05:05:18+08:00" />
+<meta property="og:updated_time" content="2020-09-15T13:24:19+08:00" />
 <meta itemprop="name" content="Tags">
 <meta itemprop="description" content="收集生活的感悟."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tags"/>
@@ -76,20 +76,23 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
+        <li class="mobile-menu-item">思想半斤</li>
+      </a><a href="/technology/">
+        <li class="mobile-menu-item">技术八两</li>
       </a>
   </ul>
-
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
   
 
 
@@ -108,17 +111,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/">思想半斤</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
+        <a class="menu-item-link" href="/technology/">技术八两</a>
       </li>
   </ul>
 </nav>
@@ -130,7 +125,7 @@
         <div id="content" class="content">
           <div class="terms">
       <div class="terms-title">
-        共计 21 个标签
+        共计 16 个标签
       </div>
       <div class="terms-tags">
           <a class="terms-link" href="/tags/emacs/">
@@ -153,8 +148,8 @@
             <span class="terms-count">1</span>
           </a>
         
-          <a class="terms-link" href="/tags/todo/">
-            todo
+          <a class="terms-link" href="/tags/python/">
+            python
             <span class="terms-count">1</span>
           </a>
         
@@ -173,11 +168,6 @@
             <span class="terms-count">1</span>
           </a>
         
-          <a class="terms-link" href="/tags/%E5%81%9A%E6%A2%A6/">
-            做梦
-            <span class="terms-count">1</span>
-          </a>
-        
           <a class="terms-link" href="/tags/%E5%81%A5%E5%BA%B7/">
             健康
             <span class="terms-count">1</span>
@@ -188,18 +178,8 @@
             <span class="terms-count">1</span>
           </a>
         
-          <a class="terms-link" href="/tags/%E5%86%9C%E6%B4%BB/">
-            农活
-            <span class="terms-count">1</span>
-          </a>
-        
           <a class="terms-link" href="/tags/%E5%AD%A6%E4%B9%A0/">
             学习
-            <span class="terms-count">1</span>
-          </a>
-        
-          <a class="terms-link" href="/tags/%E6%89%AF%E6%B7%A1/">
-            扯淡
             <span class="terms-count">1</span>
           </a>
         
@@ -223,18 +203,8 @@
             <span class="terms-count">1</span>
           </a>
         
-          <a class="terms-link" href="/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
-            编程语言
-            <span class="terms-count">1</span>
-          </a>
-        
           <a class="terms-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BAcomputer/">
             计算机computer
-            <span class="terms-count">1</span>
-          </a>
-        
-          <a class="terms-link" href="/tags/%E9%81%93/">
-            道
             <span class="terms-count">1</span>
           </a>
         </div>
@@ -262,19 +232,18 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
   </span>
 </div>
-
     </footer>
 
     <div class="back-to-top" id="back-to-top">

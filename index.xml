@@ -6,63 +6,17 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 May 2020 20:42:42 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>资源</title>
-      <link>https://aming.xyz/source/</link>
-      <pubDate>Mon, 04 May 2020 20:42:42 +0800</pubDate>
-      
-      <guid>https://aming.xyz/source/</guid>
-      <description>不加思索的接收信息是有害的，浪费时间，就是浪费生命 搜索： https://google.com 美剧： https://91mjw.com/ 电影： https://www.bttwo.com/ 视频： https://www.youtube.com/ 图片： https://huaban.com/ GIF： https://gif.sina.com.cn/ Kindle 电子书： https://www.jiumodiary.com/ ~~https://epubw.com/~~ 怎么都失效了 ~~https://sobooks.cc/~~ 怎么都失效了</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>https://aming.xyz/about/</link>
-      <pubDate>Fri, 22 Nov 2019 04:03:41 +0800</pubDate>
-      
-      <guid>https://aming.xyz/about/</guid>
-      <description>关于 哈，重新换博客框架了 2019-11-22 正在寻找人生的方向,虽然迷失了很久很久。。。 人，要吃饭，底层打工仔，学者（自封的） 当我老了 当我老了，我会把这些文章</description>
-    </item>
-    
-    <item>
-      <title>Todo</title>
-      <link>https://aming.xyz/post/todo/</link>
-      <pubDate>Sat, 29 May 2021 05:05:18 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/todo/</guid>
-      <description>&lt;p&gt;看着我博客好久不打理，长草了都。平时生活又是风平浪静的，自己没有发现的眼睛，吐不出 &lt;strong&gt;象牙&lt;/strong&gt; 来。&lt;/p&gt;
-&lt;p&gt;看着博客使用的样式又是很简洁，简洁的朴素了，记得以前哪位博友的蓝色的，像facebook 的主题挺好看，但好像换主题，遗忘了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>农田 - Farmland</title>
-      <link>https://aming.xyz/post/farmland/</link>
-      <pubDate>Sun, 18 Apr 2021 15:06:23 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/farmland/</guid>
-      <description>&lt;p&gt;今天早上去农田里面锄了点地（糊弄了以下），拍了几张乡野的照片。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>素描初学</title>
-      <link>https://aming.xyz/post/sumiao/</link>
-      <pubDate>Mon, 08 Mar 2021 20:19:14 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/sumiao/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>万维网简介</title>
-      <link>https://aming.xyz/post/web/</link>
+      <link>https://aming.xyz/technology/web/</link>
       <pubDate>Tue, 15 Sep 2020 13:24:19 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/web/</guid>
+      <guid>https://aming.xyz/technology/web/</guid>
       <description>&lt;p&gt;
 计算机网络形成以后，我们可以方便的从别人的计算机获取资料了。 要满足这个条件，我们必须满足几个条件：
 &lt;/p&gt;
@@ -87,10 +41,10 @@
     
     <item>
       <title>计算机简介</title>
-      <link>https://aming.xyz/post/computer/</link>
+      <link>https://aming.xyz/technology/computer/</link>
       <pubDate>Tue, 15 Sep 2020 08:41:15 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/computer/</guid>
+      <guid>https://aming.xyz/technology/computer/</guid>
       <description>&lt;h3 id=&#34;headline-1&#34;&gt;
 什么是计算
 &lt;/h3&gt;
@@ -103,16 +57,7 @@
     </item>
     
     <item>
-      <title>白日梦</title>
-      <link>https://aming.xyz/post/daydream/</link>
-      <pubDate>Sun, 31 May 2020 06:26:21 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/daydream/</guid>
-      <description>&lt;p&gt;记录一下我做的白日梦&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>( 不知道 )</title>
+      <title>不知道</title>
       <link>https://aming.xyz/post/dao/</link>
       <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
       
@@ -121,12 +66,12 @@
     </item>
     
     <item>
-      <title>包衣服</title>
-      <link>https://aming.xyz/post/clothes/</link>
-      <pubDate>Thu, 09 Apr 2020 04:49:42 +0800</pubDate>
+      <title>Life is short | 生命是短暂的</title>
+      <link>https://aming.xyz/post/lifeisshort/</link>
+      <pubDate>Fri, 24 Apr 2020 04:52:17 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/clothes/</guid>
-      <description>&lt;p&gt;扯淡一篇，小弟一天能包600多件，合约一分钟一件。多的人800多件&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/lifeisshort/</guid>
+      <description>&lt;p&gt;众所周知，生命是短暂的。当我还是孩子的时候，我常常对此感到疑惑。是生命真的短暂，还是我们在抱怨它的有限？如果寿命延长10倍，我们是否还会觉得生命短暂呢？&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -164,20 +109,20 @@
     
     <item>
       <title>经济学简介</title>
-      <link>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
+      <link>https://aming.xyz/technology/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
       <pubDate>Mon, 17 Feb 2020 20:47:48 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
+      <guid>https://aming.xyz/technology/%E7%BB%8F%E6%B5%8E%E5%AD%A6/</guid>
       <description>&lt;p&gt;什么是经济学？ 世界是由东西组成的，没了东西就没了世界。经济呢，是存在东西上的一种属性，就是有用性( 价值性 )。&lt;br&gt;
 有用的东西叫经济东西，没用的东西叫没有经济价值(有用没用看谁用)。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>计算机网络简介</title>
-      <link>https://aming.xyz/post/network/</link>
+      <link>https://aming.xyz/technology/network/</link>
       <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/network/</guid>
+      <guid>https://aming.xyz/technology/network/</guid>
       <description>&lt;p&gt;
 一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
 &lt;/p&gt;
@@ -193,15 +138,6 @@
       
       <guid>https://aming.xyz/post/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
       <description>&lt;p&gt;我们人，从出生就长着一张嘴，然后用嘴可以说话，用来沟通。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>大伯传</title>
-      <link>https://aming.xyz/post/uncle/</link>
-      <pubDate>Sun, 19 Jan 2020 17:40:20 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/uncle/</guid>
-      <description>&lt;p&gt;1月16日晚，大伯走了。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -224,19 +160,19 @@
     
     <item>
       <title>版本管理</title>
-      <link>https://aming.xyz/post/vc/</link>
+      <link>https://aming.xyz/technology/vc/</link>
       <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/vc/</guid>
+      <guid>https://aming.xyz/technology/vc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>数学简介</title>
-      <link>https://aming.xyz/post/math/</link>
+      <link>https://aming.xyz/technology/math/</link>
       <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/math/</guid>
+      <guid>https://aming.xyz/technology/math/</guid>
       <description>&lt;p&gt;数学是人在处理东西的量时发明的一种技术，这种技术用一种简单的符号公式表示东西的量的改变情况，去掉了推理过程，只求结果，所以人光记忆公式的话难理解。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;造物主在造东西的时候，会有的东西造的快点，有的造的慢点吗？？&lt;/p&gt;
@@ -245,51 +181,16 @@
     
     <item>
       <title>算法小难题</title>
-      <link>https://aming.xyz/post/algorithm/</link>
+      <link>https://aming.xyz/technology/algorithm/</link>
       <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/algorithm/</guid>
+      <guid>https://aming.xyz/technology/algorithm/</guid>
       <description>&lt;p&gt;
 算法是完成一件事情的明细。
 &lt;/p&gt;
 &lt;p&gt;
 有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>编程语言小问题</title>
-      <link>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
-      <pubDate>Sat, 07 Dec 2019 19:41:03 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
-      <description>&lt;p&gt;
-什么是自然语言？
-&lt;/p&gt;
-&lt;p&gt;
-就是沟通的双方都能理解的一种符号或语音或视频，用来表达想法或现象的。
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-就是给沟通对象传达自己意图的某种行为，比如，盲人的比比划划，对外国人的指指画画等动作
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-什么是编程语言？
-&lt;/p&gt;
-&lt;p&gt;
-就是给计算机看的，用在计算机上的一种符号，指导计算机行为的东西
-&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-计算机还没有人那么智能，以后发展的话，计算机也能通过其它介质来传递想法(如语音描述什么的)
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-因为计算机现在还不太智能，解析语言的解析器只能理解文本，所以，编程语言必须是某种 &lt;strong&gt;规则化&lt;/strong&gt; 的文本
-&lt;/p&gt;
-&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -304,11 +205,22 @@
     </item>
     
     <item>
+      <title>Python 简介</title>
+      <link>https://aming.xyz/technology/python/</link>
+      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/python/</guid>
+      <description>&lt;p&gt;
+比较高级的编程语言
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Linux命令简介</title>
-      <link>https://aming.xyz/post/linux/</link>
+      <link>https://aming.xyz/technology/linux/</link>
       <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/linux/</guid>
+      <guid>https://aming.xyz/technology/linux/</guid>
       <description>&lt;p&gt;
 记录 Linux 操作系统常用命令的备忘
 &lt;/p&gt;</description>
@@ -327,10 +239,10 @@
     
     <item>
       <title>emacs 简介</title>
-      <link>https://aming.xyz/post/emacs/</link>
+      <link>https://aming.xyz/technology/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/emacs/</guid>
+      <guid>https://aming.xyz/technology/emacs/</guid>
       <description>&lt;p&gt;
 一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
 &lt;/p&gt;</description>

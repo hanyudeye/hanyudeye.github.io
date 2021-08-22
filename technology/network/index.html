@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>计算机网络简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="计算机网络简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/technology/network/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.7019954c6fb27e127fccf38ae43e639c976172597bf5eae14d5dec1dd343f31f.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="计算机网络简介" />
+<meta property="og:description" content="计算机网络简介" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/technology/network/" />
+<meta property="article:published_time" content="2020-02-13T13:08:49+08:00" />
+<meta property="article:modified_time" content="2020-02-13T13:08:49+08:00" />
+<meta itemprop="name" content="计算机网络简介">
+<meta itemprop="description" content="计算机网络简介">
+<meta itemprop="datePublished" content="2020-02-13T13:08:49&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-13T13:08:49&#43;08:00" />
+<meta itemprop="wordCount" content="967">
+
+
+
+<meta itemprop="keywords" content="network," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="计算机网络简介"/>
+<meta name="twitter:description" content="计算机网络简介"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">思想半斤</li>
+      </a><a href="/technology/">
+        <li class="mobile-menu-item">技术八两</li>
+      </a>
+  </ul>
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">思想半斤</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/technology/">技术八两</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">计算机网络简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-02-13 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+            </div>
+          <span class="more-meta"> 约 967 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">网络结构</a>
+<ul>
+<li><a href="#headline-2">网络编号</a>
+</li>
+<li><a href="#headline-3">大小网络</a>
+<ul>
+<li><a href="#headline-4">内网 IP (保留地址) </a>
+</li>
+<li><a href="#headline-5">公网 IP </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-6">网络协议  </a>
+<ul>
+<li><a href="#headline-7">国际标准 ( OSI 协议 )</a>
+</li>
+<li><a href="#headline-8">实际标准( TCP/IP )</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-9">网络性能</a>
+</li>
+<li><a href="#headline-10">路由</a>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
+</p>
+<p>
+计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
+</p>
+<h3 id="headline-1">
+网络结构
+</h3>
+<p>
+计算机连接一般是用电线(现在是光纤)  ，连接到一个中间节点，中间节点连到另一个中间节点，然后连接到另外一台计算机，这种结构叫做星型结构。
+</p>
+<blockquote>
+<p>
+不是在你的电脑上插上所有要联系的人的线，而是连上一个中心点。
+</p>
+<div class="export-block">
+</div>
+<p>
+这样的结构，造成了你的信息要经过人家传递，所以加密挺重要的，但不能完全避免
+</p>
+</blockquote>
+<h4 id="headline-2">
+网络编号
+</h4>
+<p>
+在网络中的计算机怎么扮演自己的角色，就像在人群中，你怎么扮演自己的角色。计算机在
+    这里不如人，没有脚，不能到处跑。但它们可以用它们专有的交流方式（电线或无线电）来
+    沟通，我们用话通过空气传播来沟通。为了指明给谁沟通，自己需要一个代号(IP 编号)，就
+    像人需要一个名字一样（不能重名）。
+</p>
+<blockquote>
+<p>
+现在是 <strong>IPV6</strong> 了，但还没普及，普及的化连海里的沙子都有名字了。
+</p>
+</blockquote>
+<h4 id="headline-3">
+大小网络
+</h4>
+<p>
+根据交流范围，网络分为小网络（局域网，内网）和大网络（广域网，公网，Internet）
+</p>
+<h5 id="headline-4">
+内网 IP (保留地址) 
+</h5>
+<ul>
+<li>
+<p>
+10.x.x.x
+</p>
+</li>
+<li>
+<p>
+172.16.x.x 至 172.31.x.x
+</p>
+</li>
+<li>
+<p>
+192.168.x.x
+</p>
+</li>
+</ul>
+<h5 id="headline-5">
+公网 IP 
+</h5>
+<p>
+除内网 IP 及本地地址
+</p>
+<h3 id="headline-6">
+网络协议  
+</h3>
+<p>
+网络结构有了，但你不能随便把电(信号电)传给人家吧，人家又不知到你传的电是什么意思，所以要有一个电的标准，这样就制造了一个标准（协议） 
+</p>
+<h4 id="headline-7">
+国际标准 ( OSI 协议 )
+</h4>
+<p>
+这个标准是一个模型，没有用在网络上，用在了理论上。
+</p>
+<ul>
+<li>
+<p>
+应用层（Application Layer）应用软件直接能看得懂的信息
+</p>
+</li>
+<li>
+<p>
+表达层（Presentation Layer）适合传输的信息
+</p>
+</li>
+<li>
+<p>
+会话层（Session Layer） 把信息加了是否在会话的内容
+</p>
+</li>
+<li>
+<p>
+传输层（Transport Layer）把信息加了传输协议
+</p>
+</li>
+<li>
+<p>
+网络层（Network Layer）信息传给谁，加了双方 IP 内容 (网络名字)
+</p>
+</li>
+<li>
+<p>
+数据链路层（Data Link Layer） 不知道 (MAC 名字)
+</p>
+</li>
+<li>
+<p>
+物理层  决定信息的传递方式，是坐飞机还是汽车
+</p>
+</li>
+</ul>
+<h4 id="headline-8">
+实际标准( TCP/IP )
+</h4>
+<ul>
+<li>
+<p>
+应用层 
+</p>
+</li>
+<li>
+<p>
+传输层
+</p>
+</li>
+<li>
+<p>
+网络层 
+</p>
+</li>
+<li>
+<p>
+数据链路层
+</p>
+</li>
+<li>
+<p>
+物理层 
+</p>
+</li>
+</ul>
+<h3 id="headline-9">
+网络性能
+</h3>
+<p>
+速率，带宽，时延啊什么的
+</p>
+<h3 id="headline-10">
+路由
+</h3>
+<p>
+那些中间节点有好几条线可以传出信息，决定从那条线传输，就这是它们的路由功能，就叫它们路由节点。
+</p>
+<p>
+   路由节点（路由器）按照设定的通讯地址（路由表）决定走哪条路。
+</p>
+<blockquote>
+<p>
+路由器带的系统会进行一系列 <strong>网络性能</strong> 测试来生成可靠的路由表(网络是动态的，路由也是动态的)。
+</p>
+</blockquote>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/network/">network</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/technology/%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">经济学简介</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/technology/vc/">
+            <span class="next-text nav-default">版本管理</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -34,9 +34,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.ba818b2a794c0d2448b9a790ae8aa830d81f6ce7d79eb2d9c3b0b780cc9e8ef4.css" rel="stylesheet">
+
+<link href="/sass/main.min.7019954c6fb27e127fccf38ae43e639c976172597bf5eae14d5dec1dd343f31f.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -82,20 +82,23 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
+        <li class="mobile-menu-item">思想半斤</li>
+      </a><a href="/technology/">
+        <li class="mobile-menu-item">技术八两</li>
       </a>
   </ul>
-
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
   
 
 
@@ -114,17 +117,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/">思想半斤</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
+        <a class="menu-item-link" href="/technology/">技术八两</a>
       </li>
   </ul>
 </nav>
@@ -144,7 +139,9 @@
         <div class="post-category">
             <a href="/categories/%E7%A7%91%E6%99%AE/"> 科普 </a>
             </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 474 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        
       </div>
     </header>
 
@@ -175,7 +172,7 @@
 </nav>
   </div>
 </div>
-    <div class="post-content1">
+    <div class="post-content">
       <p>
 知识，是我们对东西的观念，以脑细胞的形式存放在我们脑中。学习是通过感官或思考获得知识的行为。
 </p>
@@ -301,13 +298,13 @@
           <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+        <a class="prev" href="/post/%E4%BF%9D%E6%8A%A4%E7%8E%AF%E5%A2%83/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">编程语言小问题</span>
+            <span class="prev-text nav-default">保护环境</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/linux/">
-            <span class="next-text nav-default">Linux命令简介</span>
+        <a class="next" href="/post/zhexue/">
+            <span class="next-text nav-default">人生意义</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -356,19 +353,18 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
   </span>
 </div>
-
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -385,12 +381,12 @@
 <script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
   <script type="text/javascript">
     window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

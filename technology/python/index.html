@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python 简介 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<meta name="author" content="阿明" /><meta name="description" content="Python 语言学习笔记" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/technology/python/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.7019954c6fb27e127fccf38ae43e639c976172597bf5eae14d5dec1dd343f31f.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Python 简介" />
+<meta property="og:description" content="Python 语言学习笔记" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/technology/python/" />
+<meta property="article:published_time" content="2019-11-29T21:57:09+08:00" />
+<meta property="article:modified_time" content="2019-11-29T21:57:09+08:00" />
+<meta itemprop="name" content="Python 简介">
+<meta itemprop="description" content="Python 语言学习笔记">
+<meta itemprop="datePublished" content="2019-11-29T21:57:09&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-29T21:57:09&#43;08:00" />
+<meta itemprop="wordCount" content="1038">
+
+
+
+<meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 简介"/>
+<meta name="twitter:description" content="Python 语言学习笔记"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">思想半斤</li>
+      </a><a href="/technology/">
+        <li class="mobile-menu-item">技术八两</li>
+      </a>
+  </ul>
+<style>
+ .duilian{
+     position: absolute;
+     top: 30;
+     left: 20;
+     width: 300px;
+     min-height: 100vh;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+     z-index: 20;
+ }
+</style>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">思想半斤</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/technology/">技术八两</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python 简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-11-29 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+            </div>
+          <span class="more-meta"> 约 1038 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">数据的类型</a>
+<ul>
+<li><a href="#headline-2">数据转换</a>
+</li>
+<li><a href="#headline-3">自定义类型  </a>
+<ul>
+<li><a href="#headline-4">定义类型   </a>
+</li>
+<li><a href="#headline-5">默认方法</a>
+</li>
+<li><a href="#headline-6">类的继承</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#headline-7">函数</a>
+<ul>
+<li><a href="#headline-8">定义函数</a>
+</li>
+<li><a href="#headline-9">不定长参数函数</a>
+</li>
+<li><a href="#headline-10">关键字参数 </a>
+</li>
+<li><a href="#headline-11">匿名函数 lambda </a>
+</li>
+<li><a href="#headline-12">入口函数</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-13">模块 (文件)</a>
+</li>
+<li><a href="#headline-14">包(文件夹)</a>
+</li>
+<li><a href="#headline-15">测试</a>
+<ul>
+<li><a href="#headline-16">预防性编程</a>
+</li>
+<li><a href="#headline-17">自定义报错</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-18">帮助</a>
+</li>
+<li><a href="#headline-19">环境管理</a>
+<ul>
+<li><a href="#headline-20">pipenv </a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-21">faq    </a>
+<ul>
+<li><a href="#headline-22">中文编码</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>
+比较高级的编程语言
+</p>
+<h3 id="headline-1">
+数据的类型
+</h3>
+<ul>
+<li>
+<p>
+列表(list)  [ 1,2 ,&#34;鸡蛋&#34;,&#34;大豆&#34;]
+</p>
+</li>
+<li>
+<p>
+元组 (tuple)  ( 1,2 ,&#34;鸡蛋&#34;,&#34;大豆&#34; )
+</p>
+</li>
+<li>
+<p>
+字典 (dictionary) {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: &#39;鸡蛋&#39;, &#39;d&#39;: &#39;大豆&#39;} 
+</p>
+</li>
+<li>
+<p>
+集合 {3,4,6,&#39;a&#39;,&#39;3&#39;,3} 跟列表一样，但会自动消除重复的东西
+</p>
+</li>
+<li>
+<p>
+空值 None
+</p>
+</li>
+</ul>
+<h4 id="headline-2">
+数据转换
+</h4>
+<ul>
+<li>
+<p>
+int(x [,base])        
+</p>
+</li>
+<li>
+<p>
+float(x)              
+</p>
+</li>
+<li>
+<p>
+complex(real [,imag]) 
+</p>
+</li>
+<li>
+<p>
+str(x)                
+</p>
+</li>
+<li>
+<p>
+repr(x)               
+</p>
+</li>
+<li>
+<p>
+eval(str)             
+</p>
+</li>
+<li>
+<p>
+tuple(s)              
+</p>
+</li>
+<li>
+<p>
+list(s)               
+</p>
+</li>
+<li>
+<p>
+chr(x)                
+</p>
+</li>
+<li>
+<p>
+unichr(x)             
+</p>
+</li>
+<li>
+<p>
+ord(x)                
+</p>
+</li>
+<li>
+<p>
+hex(x)                
+</p>
+</li>
+<li>
+<p>
+oct(x)                
+</p>
+</li>
+</ul>
+<h4 id="headline-3">
+自定义类型  
+</h4>
+<h5 id="headline-4">
+定义类型   
+</h5>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+      <span class="c1"># 构造函数</span>
+      <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">...</span><span class="p">):</span>
+          <span class="k">return</span>
+      <span class="c1"># 析构函数</span>
+      <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">...</span><span class="p">):</span>
+          <span class="k">return</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h5 id="headline-5">
+默认方法
+</h5>
+<table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">init</span></span></td>
+<td>构造函数，在生成对象时调用</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">del</span></span></td>
+<td>析构函数，释放对象时使用</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">repr</span></span></td>
+<td>打印，转换</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">setitem</span></span></td>
+<td>按照索引赋值</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">getitem</span></span></td>
+<td>按照索引获取值</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">len</span></span></td>
+<td>获得长度</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">call</span></span></td>
+<td>函数调用</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">add</span></span></td>
+<td>加运算</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">sub</span></span></td>
+<td>减运算</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">mul</span></span></td>
+<td>乘运算</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">div</span></span></td>
+<td>除运算</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">mod</span></span></td>
+<td>求余运算</td>
+</tr>
+<tr>
+<td><span style="text-decoration: underline;"><span style="text-decoration: underline;">pow</span></span></td>
+<td>乘方</td>
+</tr>
+<tr>
+<td>type(obj)</td>
+<td>获取对象的相应类型</td>
+</tr>
+<tr>
+<td>isinstance(obj, type)</td>
+<td>判断对象是否为指定的 type 类型的实例</td>
+</tr>
+<tr>
+<td>hasattr(obj, attr)</td>
+<td>判断对象是否具有指定属性/方法</td>
+</tr>
+<tr>
+<td>getattr(obj, attr[, default])</td>
+<td>获取属性/方法的值</td>
+</tr>
+<tr>
+<td>setattr(obj, attr, value)</td>
+<td>设定该属性/方法的值，类似于 obj.attr=value</td>
+</tr>
+<tr>
+<td>dir(obj)</td>
+<td>获取相应对象的所有属性和方法名的列表</td>
+</tr>
+</tbody>
+</table>
+<h5 id="headline-6">
+类的继承
+</h5>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># 单继承</span>
+  <span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">BaseClassName</span><span class="p">):</span>
+   <span class="c1"># 多继承</span>
+   <span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="n">Base1</span><span class="p">,</span><span class="n">Base2</span><span class="p">,</span><span class="n">Base3</span><span class="p">):</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-7">
+函数
+</h3>
+<h4 id="headline-8">
+定义函数
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">functionname</span><span class="p">(</span> <span class="n">parameters</span> <span class="p">):</span>
+      <span class="s2">&#34;函数_文档字符串&#34;</span>
+      <span class="n">function_suite</span>
+      <span class="k">return</span> <span class="p">[</span><span class="n">expression</span><span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-9">
+不定长参数函数
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">print_user_info</span><span class="p">(</span> <span class="n">name</span> <span class="p">,</span>  <span class="n">age</span>  <span class="p">,</span> <span class="n">sex</span> <span class="o">=</span> <span class="s1">&#39;男&#39;</span> <span class="p">,</span> <span class="o">*</span> <span class="n">hobby</span><span class="p">):</span>
+      <span class="c1"># 打印用户信息</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;爱好：{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hobby</span><span class="p">))</span>
+      <span class="k">return</span><span class="p">;</span>
+
+  <span class="c1"># 调用 print_user_info 函数</span>
+  <span class="n">print_user_info</span><span class="p">(</span> <span class="s1">&#39;两点水&#39;</span> <span class="p">,</span><span class="mi">18</span> <span class="p">,</span> <span class="s1">&#39;女&#39;</span><span class="p">,</span> <span class="s1">&#39;打篮球&#39;</span><span class="p">,</span><span class="s1">&#39;打羽毛球&#39;</span><span class="p">,</span><span class="s1">&#39;跑步&#39;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-10">
+关键字参数 
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">def</span> <span class="nf">print_user_info</span><span class="p">(</span> <span class="n">name</span> <span class="p">,</span>  <span class="n">age</span>  <span class="p">,</span> <span class="n">sex</span> <span class="o">=</span> <span class="s1">&#39;男&#39;</span> <span class="p">):</span>
+      <span class="c1"># 打印用户信息</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;性别：{}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sex</span><span class="p">))</span>
+      <span class="k">return</span><span class="p">;</span>
+
+  <span class="c1"># 调用 print_user_info 函数</span>
+  <span class="n">print_user_info</span><span class="p">(</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;两点水&#39;</span> <span class="p">,</span><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span> <span class="p">,</span> <span class="n">sex</span> <span class="o">=</span> <span class="s1">&#39;女&#39;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-11">
+匿名函数 lambda 
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">lambda</span> <span class="p">[</span><span class="n">arg1</span> <span class="p">[,</span><span class="n">arg2</span><span class="p">,</span><span class="o">.....</span><span class="n">argn</span><span class="p">]]:</span><span class="n">expression</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># -*- coding: UTF-8 -*-</span>
+
+  <span class="nb">sum</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">num1</span> <span class="p">,</span> <span class="n">num2</span> <span class="p">:</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">;</span>
+  <span class="k">print</span><span class="p">(</span> <span class="nb">sum</span><span class="p">(</span> <span class="mi">1</span> <span class="p">,</span> <span class="mi">2</span> <span class="p">)</span> <span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-12">
+入口函数
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-13">
+模块 (文件)
+</h3>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="kn">from</span> <span class="nn">person_start</span> <span class="kn">import</span> <span class="n">Person</span>
+  <span class="kn">from</span> <span class="nn">pymodule</span> <span class="kn">import</span> <span class="n">name</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-14">
+包(文件夹)
+</h3>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="err">目录名</span><span class="o">.</span><span class="err">模块名</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-15">
+测试
+</h3>
+<h4 id="headline-16">
+预防性编程
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">  <span class="k">try</span><span class="p">:</span>
+   <span class="s2">&#34;nao&#34;</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;bao&#39;</span><span class="p">)</span>
+  <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+   <span class="k">print</span> <span class="s2">&#34;some error&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h4 id="headline-17">
+自定义报错
+</h4>
+<div class="src src-python">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&#34;类型错了啊&#34;</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-18">
+帮助
+</h3>
+<ul>
+<li>
+<p>
+help() 
+</p>
+</li>
+<li>
+<p>
+dir() 输出函数或类的简单说明
+</p>
+</li>
+</ul>
+<h3 id="headline-19">
+环境管理
+</h3>
+<p>
+因为 <strong>Python</strong> 最大的问题是各版本不兼容，所以还要要管理版本问题。  
+</p>
+<h4 id="headline-20">
+pipenv 
+</h4>
+<div class="src src-sh">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sh" data-lang="sh">  <span class="c1"># 创建 Python 2/3 版本的项目</span>
+  $ pipenv --two/--three
+
+  <span class="c1"># 安装项目依赖，会在当前目录下生成 .venv 目录，包含 python 解释器</span>
+  $ pipenv install
+  $ pipenv install --dev
+
+  <span class="c1"># 弹出 Virtual Env 对应的脚本环境</span>
+  $ pipenv shell
+
+  <span class="c1"># 执行文件</span>
+  $ pipenv run python
+
+  <span class="c1"># 定位项目路径</span>
+  $ pipenv --where
+
+  <span class="c1"># 定位虚拟环境路径</span>
+  $ pipenv --venv
+
+  <span class="c1"># 定位 Python 解释器路径</span>
+  $ pipenv --py</code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<h3 id="headline-21">
+faq    
+</h3>
+<h4 id="headline-22">
+中文编码
+</h4>
+<div class="src src-py">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-py" data-lang="py">  <span class="c1"># 在python2 中识别中文需要加上下面一句说明。</span>
+  <span class="c1">#-*-coding:utf-8-*-</span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/technology/algorithm/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">算法小难题</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/technology/linux/">
+            <span class="next-text nav-default">Linux命令简介</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
+        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '我想听你说 ^_^',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
