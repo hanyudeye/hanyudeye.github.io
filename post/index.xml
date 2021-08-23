@@ -6,18 +6,48 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 May 2020 20:56:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Aug 2021 20:05:15 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>不知道</title>
-      <link>https://aming.xyz/post/dao/</link>
+      <title>个人</title>
+      <link>https://aming.xyz/post/oneself/</link>
+      <pubDate>Mon, 23 Aug 2021 20:05:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/oneself/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;人是由&amp;quot;思想&amp;rdquo; 驱动的 &amp;ldquo;实物&amp;rdquo;&lt;br&gt;
+人的本质是“虚”的，正因为人有“思想”，我们才不会把人当 &lt;strong&gt;石头&lt;/strong&gt; 对待。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>世界观</title>
+      <link>https://aming.xyz/post/worldmind/</link>
+      <pubDate>Mon, 23 Aug 2021 18:24:23 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/worldmind/</guid>
+      <description>&lt;p&gt;世界观是对世界的观念和思考，一般包含对自己和周围的人的思考，对大自然的思考，对工作的思考，对具体技术的思考等等&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>实物</title>
+      <link>https://aming.xyz/post/object/</link>
       <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/dao/</guid>
-      <description>&lt;p&gt;何为道？就是东西变化的内在逻辑。以下讲的逻辑，在于对存在东西的一个总结，而并非推理的结果。&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/object/</guid>
+      <description>&lt;p&gt;世界是由“实物”和“虚物”组成的，那 &lt;strong&gt;实物&lt;/strong&gt; 是怎么样的呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>虚物</title>
+      <link>https://aming.xyz/post/phantom/</link>
+      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/phantom/</guid>
+      <description>&lt;p&gt;我们把不属于“实物”的东西归为“虚物”&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,15 +88,6 @@
       
       <guid>https://aming.xyz/post/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
       <description>&lt;p&gt;我们人，从出生就长着一张嘴，然后用嘴可以说话，用来沟通。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>两个我</title>
-      <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/</link>
-      <pubDate>Sun, 12 Jan 2020 19:08:24 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/</guid>
-      <description>&lt;p&gt;这里讲的两个我不是肉体的我，也不是平行世界中多重我的概念，而是存在于我们的头脑中的一个理性的我，和一个感性的我。&lt;/p&gt;</description>
     </item>
     
     <item>
