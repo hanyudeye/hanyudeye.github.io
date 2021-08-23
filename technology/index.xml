@@ -6,53 +6,32 @@
     <description>Recent content in Technologies on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Aug 2021 20:53:17 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>万维网简介</title>
+      <title>计算机</title>
+      <link>https://aming.xyz/technology/computer/</link>
+      <pubDate>Mon, 23 Aug 2021 20:53:17 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/computer/</guid>
+      <description>&lt;p&gt;人们需要一台可改变功能（行为）的机器，造出来以后，起名字叫&lt;strong&gt;computer&lt;/strong&gt; (计算机)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算机把 &lt;strong&gt;功能定义&lt;/strong&gt; 和 &lt;strong&gt;实体机器&lt;/strong&gt; 分离，实体机器也叫&lt;strong&gt;裸机&lt;/strong&gt;，作为功能定义的解析器。&lt;br&gt;
+功能定义称作&lt;strong&gt;程序&lt;/strong&gt;，写作程序叫&lt;strong&gt;编程&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>万维网</title>
       <link>https://aming.xyz/technology/web/</link>
       <pubDate>Tue, 15 Sep 2020 13:24:19 +0800</pubDate>
       
       <guid>https://aming.xyz/technology/web/</guid>
       <description>&lt;p&gt;
-计算机网络形成以后，我们可以方便的从别人的计算机获取资料了。 要满足这个条件，我们必须满足几个条件：
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;
-有一个客户端 (本地计算机)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-有一个服务端 (远程计算机)
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-一条连接协议
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>计算机简介</title>
-      <link>https://aming.xyz/technology/computer/</link>
-      <pubDate>Tue, 15 Sep 2020 08:41:15 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/computer/</guid>
-      <description>&lt;h3 id=&#34;headline-1&#34;&gt;
-什么是计算
-&lt;/h3&gt;
-&lt;p&gt;
-猫的本质是猫的，狗的本质是狗的，那么计算的本质是计算的。
-&lt;/p&gt;
-&lt;p&gt;
-那么我们怎么进行计算呢？这里先提出一个问题，怎么喂饱一只猫呢？我们的解决方案是扔给他一个小鱼干，那么猫就做它的猫的本质的事情了，余下都不再是我们的问题。
+万维网是网络的应用之一，原理是客户端发送请求，服务端进行响应，客户端解析响应
 &lt;/p&gt;</description>
     </item>
     
