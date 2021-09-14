@@ -13,10 +13,10 @@
     
     <item>
       <title>JavaScript 与 DOM简介</title>
-      <link>https://aming.xyz/post/javascript/</link>
+      <link>https://aming.xyz/technology/javascript/</link>
       <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/javascript/</guid>
+      <guid>https://aming.xyz/technology/javascript/</guid>
       <description>&lt;p&gt;
 &lt;strong&gt;Javascript&lt;/strong&gt; 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
 因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。

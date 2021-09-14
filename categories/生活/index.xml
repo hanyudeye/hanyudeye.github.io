@@ -6,10 +6,20 @@
     <description>Recent content in 生活 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2020 08:36:43 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 05:27:43 +0800</lastBuildDate>
     
 	<atom:link href="https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>do things that don&#39;t scale 做一些不需扩展的事情</title>
+      <link>https://aming.xyz/post/ds/</link>
+      <pubDate>Fri, 24 Apr 2020 05:27:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ds/</guid>
+      <description>&lt;p&gt;翻译创业的文章，瞎翻译一通。&lt;br&gt;
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>健康简介</title>
@@ -32,11 +42,30 @@
     </item>
     
     <item>
+      <title>如何吃药</title>
+      <link>https://aming.xyz/technology/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/</link>
+      <pubDate>Wed, 08 Jan 2020 07:40:55 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/</guid>
+      <description>&lt;p&gt;摘抄此文是为对死亡的恐惧与对生命脆弱。&lt;br&gt;
+因为我对此行业不懂，所以认识或是错误的，只是把网上看到的简单写一下，给个参考。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>心理障碍</title>
+      <link>https://aming.xyz/technology/psychologicalobstacle/</link>
+      <pubDate>Fri, 29 Nov 2019 20:07:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/psychologicalobstacle/</guid>
+      <description>&lt;p&gt;最近在看 《少有人走的路》 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>人生意义</title>
-      <link>https://aming.xyz/post/zhexue/</link>
+      <link>https://aming.xyz/illusory/zhexue/</link>
       <pubDate>Fri, 22 Nov 2019 06:55:56 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/zhexue/</guid>
+      <guid>https://aming.xyz/illusory/zhexue/</guid>
       <description>&lt;p&gt;
 关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
 &lt;/p&gt;</description>

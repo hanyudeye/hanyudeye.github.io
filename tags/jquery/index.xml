@@ -13,10 +13,10 @@
     
     <item>
       <title>jQuery简介</title>
-      <link>https://aming.xyz/post/jquery/</link>
+      <link>https://aming.xyz/technology/jquery/</link>
       <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/jquery/</guid>
+      <guid>https://aming.xyz/technology/jquery/</guid>
       <description>&lt;p&gt;
 jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，
 事件处理，动画和 Ajax 等，使得操作极为简化。
