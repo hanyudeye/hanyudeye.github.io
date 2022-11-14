@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/technology/html/" />
@@ -43,17 +43,14 @@
 <meta property="og:title" content="html 简介" />
 <meta property="og:description" content="html 简介" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/technology/html/" />
+<meta property="og:url" content="https://aming.xyz/technology/html/" /><meta property="article:section" content="technology" />
 <meta property="article:published_time" content="2020-02-11T14:27:45+08:00" />
 <meta property="article:modified_time" content="2020-02-11T14:27:45+08:00" />
+
 <meta itemprop="name" content="html 简介">
-<meta itemprop="description" content="html 简介">
-<meta itemprop="datePublished" content="2020-02-11T14:27:45&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-11T14:27:45&#43;08:00" />
+<meta itemprop="description" content="html 简介"><meta itemprop="datePublished" content="2020-02-11T14:27:45+08:00" />
+<meta itemprop="dateModified" content="2020-02-11T14:27:45+08:00" />
 <meta itemprop="wordCount" content="1015">
-
-
-
 <meta itemprop="keywords" content="html," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="html 简介"/>
 <meta name="twitter:description" content="html 简介"/>
@@ -83,10 +80,10 @@
   <ul class="mobile-menu-list">
     <a href="/">
         <li class="mobile-menu-item">杂记</li>
-      </a><a href="/technology/">
-        <li class="mobile-menu-item">计算机知识</li>
       </a><a href="/illusory/">
         <li class="mobile-menu-item">抽象</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于此站</li>
       </a>
   </ul>
 <style>
@@ -123,9 +120,9 @@
     <li class="menu-item">
         <a class="menu-item-link" href="/">杂记</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/technology/">计算机知识</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/illusory/">抽象</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于此站</a>
       </li>
   </ul>
 </nav>
@@ -189,15 +186,16 @@
 </div>
     <div class="post-content">
       <p>
-超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。
-</p>
+超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 基本结构
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
 <div class="src src-htm">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -208,342 +206,190 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-htm" data-lang="htm"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>This is a title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello world!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-htm" data-lang="htm"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>This is a title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello world!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
 <p>
-一个 HTML 文件分两块，一块是 head 部，一块是 body 部，head 部用来描述网页，body 部 用来渲染。
-</p>
+一个 HTML 文件分两块，一块是 head 部，一块是 body 部，head 部用来描述网页，body 部 用来渲染。</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 块级元素和内联元素 
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>我们日常看网页内容的时候，会按照从左往右，从上往下的方向看网页，那么怎么编排这些内容呢？</p>
 <p>
-我们日常看网页内容的时候，会按照从左往右，从上往下的方向看网页，那么怎么编排这些内容呢？
-</p>
+   <strong>html</strong> 中把从左往右的标签叫内联元素 ，把从上往下排列的标签叫块级元素。所以，我们平时设计网页的时候，先要思考我们的网站是上下划分块呢，还是左右划分块，这样比较清晰。</p>
 <p>
-   <strong>html</strong> 中把从左往右的标签叫内联元素 ，把从上往下排列的标签叫块级元素。所以，我们平时设计网页的时候，先要思考我们的网站是上下划分块呢，还是左右划分块，这样比较清晰。
-</p>
+   块级元素有 : 标题(h1-h6)，段落(p)， div ，标题是因为我们不大希望标题右边还有东西，段落也一样，段落是一段一段的，这些是从上往下排列的</p>
 <p>
-   块级元素有 : 标题(h1-h6)，段落(p)， div ，标题是因为我们不大希望标题右边还有东西，段落也一样，段落是一段一段的，这些是从上往下排列的
-</p>
-<p>
-   内联元素：其他小东西基本都是 ，什么链接，图片，格式化的文字，这些可以行内排列
-</p>
+   内联元素：其他小东西基本都是 ，什么链接，图片，格式化的文字，这些可以行内排列</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 布局块
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <ul>
-<li>
-<p>
-section 章节 
-</p>
-</li>
-<li>
-<p>
-nav 导航
-</p>
-</li>
-<li>
-<p>
-header 章节的头部
-</p>
-</li>
-<li>
-<p>
-h1 标题                                                        
-</p>
-</li>
-<li>
-<p>
-article 内容
-</p>
-</li>
-<li>
-<p>
-aside  无关内容
-</p>
-</li>
-<li>
-<p>
-footer 章节的尾部
-</p>
-</li>
-<li>
-<p>
-address  联系信息                                             
-</p>
-</li>
-<li>
-<p>
-main  重要的内容                                 
-</p>
-</li>
-<li>
-<p>
-div 通用容器
-</p>
-</li>
+<li>section 章节 </li>
+<li>nav 导航</li>
+<li>header 章节的头部</li>
+<li>h1 标题                                                        </li>
+<li>article 内容</li>
+<li>aside  无关内容</li>
+<li>footer 章节的尾部</li>
+<li>address  联系信息                                             </li>
+<li>main  重要的内容                                 </li>
+<li>div 通用容器</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
 <h3 id="headline-4">
 列表
 </h3>
+<div id="outline-text-headline-4" class="outline-text-3">
 <ul>
-<li>
-<p>
-有序列表（ordered list）- ol / li
-</p>
-</li>
-<li>
-<p>
-无序列表（unordered list）- ul / li
-</p>
-</li>
-<li>
-<p>
-定义列表（definition list）- dl / dt / dd
-</p>
-</li>
+<li>有序列表（ordered list）- ol / li</li>
+<li>无序列表（unordered list）- ul / li</li>
+<li>定义列表（definition list）- dl / dt / dd</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
 <h3 id="headline-5">
 图像
 </h3>
+<div id="outline-text-headline-5" class="outline-text-3">
 <ul>
-<li>
-<p>
-img     图片                                                                                 
-</p>
-</li>
-<li>
-<p>
-figure 	图例
-</p>
-</li>
-<li>
-<p>
-figcaption	图例说明
-</p>
-</li>
+<li>img     图片                                                                                 </li>
+<li>figure 	图例</li>
+<li>figcaption	图例说明</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 文本
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <ul>
 <li>
-<p>
-标题（heading）和段落（paragraph）
-</p>
+<p>标题（heading）和段落（paragraph）</p>
 <ul>
-<li>
-<p>
-h1 ~ h6
-</p>
-</li>
-<li>
-<p>
-p
-</p>
-</li>
+<li>h1 ~ h6</li>
+<li>p</li>
 </ul>
 </li>
 <li>
-<p>
-上标（superscript）和下标（subscript）
-</p>
+<p>上标（superscript）和下标（subscript）</p>
 <ul>
-<li>
-<p>
-sup
-</p>
-</li>
-<li>
-<p>
-sub
-</p>
-</li>
+<li>sup</li>
+<li>sub</li>
 </ul>
 </li>
+<li>空白（白色空间折叠）</li>
 <li>
-<p>
-空白（白色空间折叠）
-</p>
-</li>
-<li>
-<p>
-折行（break）和水平标尺（horizontal ruler）
-</p>
+<p>折行（break）和水平标尺（horizontal ruler）</p>
 <ul>
-<li>
-<p>
-br
-</p>
-</li>
-<li>
-<p>
-hr
-</p>
-</li>
+<li>br</li>
+<li>hr</li>
 </ul>
 </li>
 <li>
-<p>
-语义化标签
-</p>
+<p>语义化标签</p>
 <ul>
-<li>
-<p>
-加粗和强调 - strong
-</p>
-</li>
-<li>
-<p>
-引用 - blockquote
-</p>
-</li>
-<li>
-<p>
-缩写词和首字母缩写词 - abbr / acronym
-</p>
-</li>
-<li>
-<p>
-引文 - cite
-</p>
-</li>
-<li>
-<p>
-所有者联系信息 - address
-</p>
-</li>
-<li>
-<p>
-内容的修改 - ins / del
-</p>
-</li>
+<li>加粗和强调 - strong</li>
+<li>引用 - blockquote</li>
+<li>缩写词和首字母缩写词 - abbr / acronym</li>
+<li>引文 - cite</li>
+<li>所有者联系信息 - address</li>
+<li>内容的修改 - ins / del</li>
 </ul>
 </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 表格
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <ul>
-<li>
-<p>
-基本的表格结构 - table / tr / td / th
-</p>
-</li>
-<li>
-<p>
-表格的标题 - caption
-</p>
-</li>
-<li>
-<p>
-跨行和跨列 - rowspan 属性 / colspan 属性
-</p>
-</li>
-<li>
-<p>
-长表格 - thead / tbody / tfoot
-</p>
-</li>
+<li>基本的表格结构 - table / tr / td / th</li>
+<li>表格的标题 - caption</li>
+<li>跨行和跨列 - rowspan 属性 / colspan 属性</li>
+<li>长表格 - thead / tbody / tfoot</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
 <h3 id="headline-8">
 表单
 </h3>
+<div id="outline-text-headline-8" class="outline-text-3">
 <ul>
+<li>重要属性 - action / method / enctype</li>
 <li>
-<p>
-重要属性 - action / method / enctype
-</p>
-</li>
-<li>
-<p>
-表单控件（input）- type 属性
-</p>
+<p>表单控件（input）- type 属性</p>
 <ul>
-<li>
-<p>
-文本框 - text / 密码框 - password / 数字框 - number
-</p>
-</li>
-<li>
-<p>
-邮箱 - email / 电话 - tel / 日期 - date / 滑条 - range / URL - url / 搜索 - search
-</p>
-</li>
-<li>
-<p>
-单选按钮 - radio / 复选按钮 - checkbox
-</p>
-</li>
-<li>
-<p>
-文件上传 - file / 隐藏域 - hidden
-</p>
-</li>
-<li>
-<p>
-提交按钮 - submit / 图像按钮 - image  / 重置按钮 - reset
-</p>
-</li>
+<li>文本框 - text / 密码框 - password / 数字框 - number</li>
+<li>邮箱 - email / 电话 - tel / 日期 - date / 滑条 - range / URL - url / 搜索 - search</li>
+<li>单选按钮 - radio / 复选按钮 - checkbox</li>
+<li>文件上传 - file / 隐藏域 - hidden</li>
+<li>提交按钮 - submit / 图像按钮 - image  / 重置按钮 - reset</li>
 </ul>
 </li>
-<li>
-<p>
-下拉列表 - select / option
-</p>
-</li>
-<li>
-<p>
-文本域（多行文本）- textarea
-</p>
-</li>
-<li>
-<p>
-组合表单元素 - fieldset / legend
-</p>
-</li>
+<li>下拉列表 - select / option</li>
+<li>文本域（多行文本）- textarea</li>
+<li>组合表单元素 - fieldset / legend</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
 <h3 id="headline-9">
 音视频（audio / video）
 </h3>
+<div id="outline-text-headline-9" class="outline-text-3">
 <ul>
-<li>
-<p>
-video 标签和属性 - autoplay / controls / loop / muted / preload / src
-</p>
-</li>
-<li>
-<p>
-audio 标签和属性 - autoplay / controls / loop / muted / preload / src / width / height / poster
-</p>
-</li>
+<li>video 标签和属性 - autoplay / controls / loop / muted / preload / src</li>
+<li>audio 标签和属性 - autoplay / controls / loop / muted / preload / src / width / height / poster</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
 <h3 id="headline-10">
 窗口（frame）
 </h3>
+<div id="outline-text-headline-10" class="outline-text-3">
 <ul>
-<li>
-<p>
-内嵌窗口 - iframe
-</p>
-</li>
+<li>内嵌窗口 - iframe</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
 <h3 id="headline-11">
 辅助工具
 </h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<div id="outline-container-headline-12" class="outline-4">
 <h4 id="headline-12">
 设计软件 figma
 </h4>
+</div>
+</div>
+</div>
     </div>
 
     
@@ -569,22 +415,6 @@ audio 标签和属性 - autoplay / controls / loop / muted / preload / src / wid
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  <script src="https://cdn.bootcdn.net/ajax/libs/valine/1.4.9/Valine.min.js"></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -613,7 +443,7 @@ audio 标签和属性 - autoplay / controls / loop / muted / preload / src / wid
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2021
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -633,7 +463,7 @@ audio 标签和属性 - autoplay / controls / loop / muted / preload / src / wid
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

@@ -6,10 +6,15 @@
     <description>Recent content in 科普 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2020 06:20:02 +0800</lastBuildDate>
-    
-	<atom:link href="https://aming.xyz/categories/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 02 Mar 2020 19:01:55 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>方法论</title>
+      <link>https://aming.xyz/technology/methods/</link>
+      <pubDate>Mon, 02 Mar 2020 19:01:55 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/methods/</guid>
+      <description>&lt;p&gt;看病有看病的良方，学习有学习的窍门，这里想到一个小事情，但不知以后能否增补，就先拟一个题目。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>物理</title>
@@ -18,8 +23,7 @@
       
       <guid>https://aming.xyz/post/physics/</guid>
       <description>&lt;p&gt;
-物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。
-&lt;/p&gt;</description>
+物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,17 +46,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;造物主在造东西的时候，会有的东西造的快点，有的造的慢点吗？？&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>学习简介</title>
-      <link>https://aming.xyz/illusory/readbook/</link>
-      <pubDate>Sun, 01 Dec 2019 07:26:19 +0800</pubDate>
-      
-      <guid>https://aming.xyz/illusory/readbook/</guid>
-      <description>&lt;p&gt;
-知识，是我们对东西的观念，以脑细胞的形式存放在我们脑中。学习是通过感官或思考获得知识的行为。
-&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/technology/php/" />
@@ -43,17 +43,14 @@
 <meta property="og:title" content="php 简介" />
 <meta property="og:description" content="php 简介" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/technology/php/" />
+<meta property="og:url" content="https://aming.xyz/technology/php/" /><meta property="article:section" content="technology" />
 <meta property="article:published_time" content="2020-02-13T19:01:28+08:00" />
 <meta property="article:modified_time" content="2020-02-13T19:01:28+08:00" />
+
 <meta itemprop="name" content="php 简介">
-<meta itemprop="description" content="php 简介">
-<meta itemprop="datePublished" content="2020-02-13T19:01:28&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-13T19:01:28&#43;08:00" />
-<meta itemprop="wordCount" content="2003">
-
-
-
+<meta itemprop="description" content="php 简介"><meta itemprop="datePublished" content="2020-02-13T19:01:28+08:00" />
+<meta itemprop="dateModified" content="2020-02-13T19:01:28+08:00" />
+<meta itemprop="wordCount" content="2015">
 <meta itemprop="keywords" content="php," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="php 简介"/>
 <meta name="twitter:description" content="php 简介"/>
@@ -83,10 +80,10 @@
   <ul class="mobile-menu-list">
     <a href="/">
         <li class="mobile-menu-item">杂记</li>
-      </a><a href="/technology/">
-        <li class="mobile-menu-item">计算机知识</li>
       </a><a href="/illusory/">
         <li class="mobile-menu-item">抽象</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于此站</li>
       </a>
   </ul>
 <style>
@@ -123,9 +120,9 @@
     <li class="menu-item">
         <a class="menu-item-link" href="/">杂记</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/technology/">计算机知识</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/illusory/">抽象</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于此站</a>
       </li>
   </ul>
 </nav>
@@ -146,8 +143,8 @@
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-          <span class="more-meta"> 约 2003 字 </span>
-          <span class="more-meta"> 预计阅读 4 分钟 </span>
+          <span class="more-meta"> 约 2015 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
         
       </div>
     </header>
@@ -213,45 +210,58 @@
 </div>
     <div class="post-content">
       <p>
-WEB 服务器脚本语言
-</p>
+WEB 服务器脚本语言</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 安装
 </h3>
-<p>
-需要安装服务器，和 php 解析器，当然，光解析器也是可以的。数据库也可以选择装上
-</p>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>需要安装服务器，和 php 解析器，当然，光解析器也是可以的。数据库也可以选择装上</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 表单变量
 </h3>
-<p>
-表单变量的传递方式不同
-</p>
+<div id="outline-text-headline-2" class="outline-text-3">
+<p>表单变量的传递方式不同</p>
+<div id="outline-container-headline-3" class="outline-4">
 <h4 id="headline-3">
 $_GET 
 </h4>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
 <h4 id="headline-4">
 $_POST
 </h4>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
 $_COOKIE
 </h4>
-<p>
-setcookie(&#34;user&#34;, &#34;runoob&#34;, $expire);
-</p>
+<div id="outline-text-headline-5" class="outline-text-4">
+<p>setcookie(&#34;user&#34;, &#34;runoob&#34;, $expire);</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
 <h4 id="headline-6">
 $_SESSION
 </h4>
-<p>
-session_start(); 需要在 html 之前设置
-</p>
+<div id="outline-text-headline-6" class="outline-text-4">
+<p>session_start(); 需要在 html 之前设置</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 Mysql    
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <div class="src src-php">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -267,204 +277,159 @@ Mysql
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="nv">$servername</span> <span class="o">=</span> <span class="s2">&#34;localhost&#34;</span><span class="p">;</span>
-<span class="nv">$username</span> <span class="o">=</span> <span class="s2">&#34;username&#34;</span><span class="p">;</span>
-<span class="nv">$password</span> <span class="o">=</span> <span class="s2">&#34;password&#34;</span><span class="p">;</span>
-
-<span class="c1">// 创建连接
-</span><span class="c1"></span><span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="nv">$servername</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">);</span>
-
-<span class="c1">// 检测连接
-</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">)</span> <span class="p">{</span>
- <span class="k">die</span><span class="p">(</span><span class="s2">&#34;连接失败: &#34;</span> <span class="o">.</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">);</span>
-<span class="p">}</span> 
-<span class="k">echo</span> <span class="s2">&#34;连接成功&#34;</span><span class="p">;</span>
-<span class="cp">?&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$servername</span> <span class="o">=</span> <span class="s2">&#34;localhost&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$username</span> <span class="o">=</span> <span class="s2">&#34;username&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$password</span> <span class="o">=</span> <span class="s2">&#34;password&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 创建连接
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="nv">$servername</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 检测连接
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="k">die</span><span class="p">(</span><span class="s2">&#34;连接失败: &#34;</span> <span class="o">.</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">connect_error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> 
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="s2">&#34;连接成功&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
 <h2 id="headline-8">
 错误处理
 </h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<div id="outline-container-headline-9" class="outline-4">
 <h4 id="headline-9">
 打开错误提示
 </h4>
+<div id="outline-text-headline-9" class="outline-text-4">
 <div class="src src-php">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php">  ini_set(&#34;display_errors&#34;,&#34;On&#34;);
-  error_reporting(E_ALL);</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">  <span class="nx">ini_set</span><span class="p">(</span><span class="s2">&#34;display_errors&#34;</span><span class="p">,</span><span class="s2">&#34;On&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">error_reporting</span><span class="p">(</span><span class="k">E_ALL</span><span class="p">);</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
 <h4 id="headline-10">
 捕捉错误
 </h4>
+<div id="outline-text-headline-10" class="outline-text-4">
 <div class="src src-php">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-php" data-lang="php">  try {}
-  catch (Throwable $t) {}
-  catch(Error $e){}</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">  <span class="k">try</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">catch</span> <span class="p">(</span><span class="nx">Throwable</span> <span class="nv">$t</span><span class="p">)</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">catch</span><span class="p">(</span><span class="nx">Error</span> <span class="nv">$e</span><span class="p">){}</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
 <h3 id="headline-11">
 单元测试 phpunit
 </h3>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
 <h3 id="headline-12">
 功能选项
 </h3>
+<div id="outline-text-headline-12" class="outline-text-3">
 <ul>
-<li>
-<p>
-显示 PHP information and configuration (  -i )
-</p>
-</li>
-<li>
-<p>
-显示配置文件 (–ini)
-</p>
-</li>
-<li>
-<p>
-显示编译好的模块 (-m)
-</p>
-</li>
-<li>
-<p>
-打开自带服务器监听端口 (-S addr:port)
-</p>
-</li>
-<li>
-<p>
-显示一些信息 ( –rf 函数，–rc 类名 ,–re 扩展名)
-</p>
-</li>
+<li>显示 PHP information and configuration (  -i )</li>
+<li>显示配置文件 (–ini)</li>
+<li>显示编译好的模块 (-m)</li>
+<li>打开自带服务器监听端口 (-S addr:port)</li>
+<li>显示一些信息 ( –rf 函数，–rc 类名 ,–re 扩展名)</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
 <h3 id="headline-13">
 Apache2 选项
 </h3>
+<div id="outline-text-headline-13" class="outline-text-3">
 <ul>
-<li>
-<p>
-对配置文件进行语法测试 (-t)
-</p>
-</li>
-<li>
-<p>
-测试后另外输出虚拟主机信息 (-t   -D DUMP_VHOSTS )
-</p>
-</li>
-<li>
-<p>
-测试后另外输出加载的模块 (-t   -D DUMP_MODULES)
-</p>
-</li>
+<li>对配置文件进行语法测试 (-t)</li>
+<li>测试后另外输出虚拟主机信息 (-t   -D DUMP_VHOSTS )</li>
+<li>测试后另外输出加载的模块 (-t   -D DUMP_MODULES)</li>
 </ul>
 <div class="src src-shell">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="c1"># 例子</span>
-  apachectl -t -D DUMP_MODULES</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">  <span class="c1"># 例子</span>
+</span></span><span class="line"><span class="cl">  apachectl -t -D DUMP_MODULES</span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
 <h3 id="headline-14">
 composer 
 </h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<p>php 的包管理器</p>
 <p>
-php 的包管理器
-</p>
-<p>
-   常用命令
-</p>
+   常用命令</p>
 <ol>
-<li>
-<p>
-composer list：获取帮助信息；
-</p>
-</li>
-<li>
-<p>
-composer init：以交互方式填写 composer.json 文件信息；
-</p>
-</li>
-<li>
-<p>
-composer install：从当前目录读取 composer.json 文件，处理依赖关系，并安装到 vendor 目录下；
-</p>
-</li>
-<li>
-<p>
-composer update：获取依赖的最新版本，升级 composer.lock 文件；
-</p>
-</li>
-<li>
-<p>
-composer require：添加新的依赖包到 composer.json 文件中并执行更新；
-</p>
-</li>
-<li>
-<p>
-composer search：在当前项目中搜索依赖包；
-</p>
-</li>
-<li>
-<p>
-composer show：列举所有可用的资源包；
-</p>
-</li>
-<li>
-<p>
-composer validate：检测 composer.json 文件是否有效；
-</p>
-</li>
-<li>
-<p>
-composer self-update：将 composer 工具更新到最新版本；
-</p>
-</li>
-<li>
-<p>
-composer create-project：基于 composer 创建一个新的项目；
-</p>
-</li>
+<li>composer list：获取帮助信息；</li>
+<li>composer init：以交互方式填写 composer.json 文件信息；</li>
+<li>composer install：从当前目录读取 composer.json 文件，处理依赖关系，并安装到 vendor 目录下；</li>
+<li>composer update：获取依赖的最新版本，升级 composer.lock 文件；</li>
+<li>composer require：添加新的依赖包到 composer.json 文件中并执行更新；</li>
+<li>composer search：在当前项目中搜索依赖包；</li>
+<li>composer show：列举所有可用的资源包；</li>
+<li>composer validate：检测 composer.json 文件是否有效；</li>
+<li>composer self-update：将 composer 工具更新到最新版本；</li>
+<li>composer create-project：基于 composer 创建一个新的项目；</li>
 </ol>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-3">
 <h3 id="headline-15">
 函数
 </h3>
+<div id="outline-text-headline-15" class="outline-text-3">
+<div id="outline-container-headline-16" class="outline-4">
 <h4 id="headline-16">
 PHP date() 函数
 </h4>
-<p>
-PHP date() 函数用于格式化时间/日期。
-</p>
+<div id="outline-text-headline-16" class="outline-text-4">
+<p>PHP date() 函数用于格式化时间/日期。</p>
+<div id="outline-container-headline-17" class="outline-5">
 <h5 id="headline-17">
 PHP date() 函数
 </h5>
-<p>
-PHP date() 函数可把时间戳格式化为可读性更好的日期和时间。
-  时间戳是一个字符序列，表示一定的事件发生的日期/时间。
-</p>
+<div id="outline-text-headline-17" class="outline-text-5">
+<p>PHP date() 函数可把时间戳格式化为可读性更好的日期和时间。
+  时间戳是一个字符序列，表示一定的事件发生的日期/时间。</p>
+<div id="outline-container-headline-18" class="outline-6">
 <h6 id="headline-18">
 语法
 </h6>
+<div id="outline-text-headline-18" class="outline-text-6">
 <pre class="example">
     string date ( string $format [, int $timestamp ] )
 </pre>
@@ -486,50 +451,37 @@ PHP date() 函数可把时间戳格式化为可读性更好的日期和时间。
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-19" class="outline-5">
 <h5 id="headline-19">
 PHP Date() - 格式化日期
 </h5>
+<div id="outline-text-headline-19" class="outline-text-5">
+<p>date() 函数的第一个必需参数 <em>format</em> 规定了如何格式化日期/时间。</p>
 <p>
-date() 函数的第一个必需参数 <em>format</em> 规定了如何格式化日期/时间。
-</p>
-<p>
-  这里列出了一些可用的字符：
-</p>
+  这里列出了一些可用的字符：</p>
 <ul>
-<li>
-<p>
-d - 代表月中的天 (01 - 31)
-</p>
-</li>
-<li>
-<p>
-m - 代表月 (01 - 12)
-</p>
-</li>
-<li>
-<p>
-Y - 代表年 (四位数)
-</p>
-</li>
+<li>d - 代表月中的天 (01 - 31)</li>
+<li>m - 代表月 (01 - 12)</li>
+<li>Y - 代表年 (四位数)</li>
 </ul>
-<p>
-如需了解 <em>format</em> 参数中可用的所有字符列表，请查阅我们的 PHP Date
-  参考手册，<a href="func-date-date.html">date() 函数</a>。
-</p>
+<p>如需了解 <em>format</em> 参数中可用的所有字符列表，请查阅我们的 PHP Date
+  参考手册，<a href="func-date-date.html">date() 函数</a>。</p>
 <p>
   可以在字母之间插入其他字符，比如 &#34;/&#34;、&#34;.&#34; 或者
-  &#34;-&#34;，这样就可以增加附加格式了：
-</p>
+  &#34;-&#34;，这样就可以增加附加格式了：</p>
 <pre class="example">
-    <?php
-    echo date("Y/m/d") . "<br>";
-    echo date("Y.m.d") . "<br>";
-    echo date("Y-m-d");
-    ?>
+    &lt;?php
+    echo date(&#34;Y/m/d&#34;) . &#34;&lt;br&gt;&#34;;
+    echo date(&#34;Y.m.d&#34;) . &#34;&lt;br&gt;&#34;;
+    echo date(&#34;Y-m-d&#34;);
+    ?&gt;
 </pre>
 <p>
-  上面代码的输出如下所示：
-</p>
+  上面代码的输出如下所示：</p>
 <pre class="example">
     2016/10/21
     2016.10.21
@@ -771,20 +723,28 @@ Y - 代表年 (四位数)
 <strong>格式字串可以识别以下 <code class="verbatim">format</code> 参数的字符串</strong>
 </figcaption>
 </figure>
+</div>
+</div>
+<div id="outline-container-完整的-php-date-参考手册" class="outline-5">
 <h5 id="完整的-php-date-参考手册">
 完整的 PHP Date 参考手册
 </h5>
+<div id="outline-text-完整的-php-date-参考手册" class="outline-text-5">
 <p>
   如需查看所有日期函数的完整参考手册，请访问我们的
-  <a href="php-ref-date.html">完整的 PHP Date 参考手册</a>。
-</p>
+  <a href="php-ref-date.html">完整的 PHP Date 参考手册</a>。</p>
 <p>
-  该参考手册提供了每个函数的简要描述和应用实例！
-</p>
+  该参考手册提供了每个函数的简要描述和应用实例！</p>
 <div class="html-block">
-<p>
-&lt;/div&gt;
-</p>
+<p>&lt;/div&gt;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
     </div>
 
@@ -811,22 +771,6 @@ Y - 代表年 (四位数)
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  <script src="https://cdn.bootcdn.net/ajax/libs/valine/1.4.9/Valine.min.js"></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -855,7 +799,7 @@ Y - 代表年 (四位数)
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2021
+    2022
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
@@ -875,7 +819,7 @@ Y - 代表年 (四位数)
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

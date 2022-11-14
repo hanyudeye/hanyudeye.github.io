@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/technology/network/" />
@@ -43,17 +43,14 @@
 <meta property="og:title" content="计算机网络简介" />
 <meta property="og:description" content="计算机网络简介" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/technology/network/" />
+<meta property="og:url" content="https://aming.xyz/technology/network/" /><meta property="article:section" content="technology" />
 <meta property="article:published_time" content="2020-02-13T13:08:49+08:00" />
 <meta property="article:modified_time" content="2020-02-13T13:08:49+08:00" />
+
 <meta itemprop="name" content="计算机网络简介">
-<meta itemprop="description" content="计算机网络简介">
-<meta itemprop="datePublished" content="2020-02-13T13:08:49&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-13T13:08:49&#43;08:00" />
+<meta itemprop="description" content="计算机网络简介"><meta itemprop="datePublished" content="2020-02-13T13:08:49+08:00" />
+<meta itemprop="dateModified" content="2020-02-13T13:08:49+08:00" />
 <meta itemprop="wordCount" content="967">
-
-
-
 <meta itemprop="keywords" content="network," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="计算机网络简介"/>
 <meta name="twitter:description" content="计算机网络简介"/>
@@ -83,10 +80,10 @@
   <ul class="mobile-menu-list">
     <a href="/">
         <li class="mobile-menu-item">杂记</li>
-      </a><a href="/technology/">
-        <li class="mobile-menu-item">计算机知识</li>
       </a><a href="/illusory/">
         <li class="mobile-menu-item">抽象</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于此站</li>
       </a>
   </ul>
 <style>
@@ -123,9 +120,9 @@
     <li class="menu-item">
         <a class="menu-item-link" href="/">杂记</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/technology/">计算机知识</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/illusory/">抽象</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于此站</a>
       </li>
   </ul>
 </nav>
@@ -189,172 +186,123 @@
 </div>
     <div class="post-content">
       <p>
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
-</p>
+一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。</p>
 <p>
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
-</p>
+计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 网络结构
 </h3>
-<p>
-计算机连接一般是用电线(现在是光纤)  ，连接到一个中间节点，中间节点连到另一个中间节点，然后连接到另外一台计算机，这种结构叫做星型结构。
-</p>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>计算机连接一般是用电线(现在是光纤)  ，连接到一个中间节点，中间节点连到另一个中间节点，然后连接到另外一台计算机，这种结构叫做星型结构。</p>
 <blockquote>
-<p>
-不是在你的电脑上插上所有要联系的人的线，而是连上一个中心点。
-</p>
-<div class="export-block">
-</div>
-<p>
-这样的结构，造成了你的信息要经过人家传递，所以加密挺重要的，但不能完全避免
-</p>
+<p>不是在你的电脑上插上所有要联系的人的线，而是连上一个中心点。</p>
+<p>这样的结构，造成了你的信息要经过人家传递，所以加密挺重要的，但不能完全避免</p>
 </blockquote>
+<div id="outline-container-headline-2" class="outline-4">
 <h4 id="headline-2">
 网络编号
 </h4>
-<p>
-在网络中的计算机怎么扮演自己的角色，就像在人群中，你怎么扮演自己的角色。计算机在
+<div id="outline-text-headline-2" class="outline-text-4">
+<p>在网络中的计算机怎么扮演自己的角色，就像在人群中，你怎么扮演自己的角色。计算机在
     这里不如人，没有脚，不能到处跑。但它们可以用它们专有的交流方式（电线或无线电）来
     沟通，我们用话通过空气传播来沟通。为了指明给谁沟通，自己需要一个代号(IP 编号)，就
-    像人需要一个名字一样（不能重名）。
-</p>
+    像人需要一个名字一样（不能重名）。</p>
 <blockquote>
-<p>
-现在是 <strong>IPV6</strong> 了，但还没普及，普及的化连海里的沙子都有名字了。
-</p>
+<p>现在是 <strong>IPV6</strong> 了，但还没普及，普及的化连海里的沙子都有名字了。</p>
 </blockquote>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-4">
 <h4 id="headline-3">
 大小网络
 </h4>
-<p>
-根据交流范围，网络分为小网络（局域网，内网）和大网络（广域网，公网，Internet）
-</p>
+<div id="outline-text-headline-3" class="outline-text-4">
+<p>根据交流范围，网络分为小网络（局域网，内网）和大网络（广域网，公网，Internet）</p>
+<div id="outline-container-headline-4" class="outline-5">
 <h5 id="headline-4">
 内网 IP (保留地址) 
 </h5>
+<div id="outline-text-headline-4" class="outline-text-5">
 <ul>
-<li>
-<p>
-10.x.x.x
-</p>
-</li>
-<li>
-<p>
-172.16.x.x 至 172.31.x.x
-</p>
-</li>
-<li>
-<p>
-192.168.x.x
-</p>
-</li>
+<li>10.x.x.x</li>
+<li>172.16.x.x 至 172.31.x.x</li>
+<li>192.168.x.x</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-5">
 <h5 id="headline-5">
 公网 IP 
 </h5>
-<p>
-除内网 IP 及本地地址
-</p>
+<div id="outline-text-headline-5" class="outline-text-5">
+<p>除内网 IP 及本地地址</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 网络协议  
 </h3>
-<p>
-网络结构有了，但你不能随便把电(信号电)传给人家吧，人家又不知到你传的电是什么意思，所以要有一个电的标准，这样就制造了一个标准（协议） 
-</p>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>网络结构有了，但你不能随便把电(信号电)传给人家吧，人家又不知到你传的电是什么意思，所以要有一个电的标准，这样就制造了一个标准（协议） </p>
+<div id="outline-container-headline-7" class="outline-4">
 <h4 id="headline-7">
 国际标准 ( OSI 协议 )
 </h4>
-<p>
-这个标准是一个模型，没有用在网络上，用在了理论上。
-</p>
+<div id="outline-text-headline-7" class="outline-text-4">
+<p>这个标准是一个模型，没有用在网络上，用在了理论上。</p>
 <ul>
-<li>
-<p>
-应用层（Application Layer）应用软件直接能看得懂的信息
-</p>
-</li>
-<li>
-<p>
-表达层（Presentation Layer）适合传输的信息
-</p>
-</li>
-<li>
-<p>
-会话层（Session Layer） 把信息加了是否在会话的内容
-</p>
-</li>
-<li>
-<p>
-传输层（Transport Layer）把信息加了传输协议
-</p>
-</li>
-<li>
-<p>
-网络层（Network Layer）信息传给谁，加了双方 IP 内容 (网络名字)
-</p>
-</li>
-<li>
-<p>
-数据链路层（Data Link Layer） 不知道 (MAC 名字)
-</p>
-</li>
-<li>
-<p>
-物理层  决定信息的传递方式，是坐飞机还是汽车
-</p>
-</li>
+<li>应用层（Application Layer）应用软件直接能看得懂的信息</li>
+<li>表达层（Presentation Layer）适合传输的信息</li>
+<li>会话层（Session Layer） 把信息加了是否在会话的内容</li>
+<li>传输层（Transport Layer）把信息加了传输协议</li>
+<li>网络层（Network Layer）信息传给谁，加了双方 IP 内容 (网络名字)</li>
+<li>数据链路层（Data Link Layer） 不知道 (MAC 名字)</li>
+<li>物理层  决定信息的传递方式，是坐飞机还是汽车</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-4">
 <h4 id="headline-8">
 实际标准( TCP/IP )
 </h4>
+<div id="outline-text-headline-8" class="outline-text-4">
 <ul>
-<li>
-<p>
-应用层 
-</p>
-</li>
-<li>
-<p>
-传输层
-</p>
-</li>
-<li>
-<p>
-网络层 
-</p>
-</li>
-<li>
-<p>
-数据链路层
-</p>
-</li>
-<li>
-<p>
-物理层 
-</p>
-</li>
+<li>应用层 </li>
+<li>传输层</li>
+<li>网络层 </li>
+<li>数据链路层</li>
+<li>物理层 </li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
 <h3 id="headline-9">
 网络性能
 </h3>
-<p>
-速率，带宽，时延啊什么的
-</p>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>速率，带宽，时延啊什么的</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
 <h3 id="headline-10">
 路由
 </h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<p>那些中间节点有好几条线可以传出信息，决定从那条线传输，就这是它们的路由功能，就叫它们路由节点。</p>
 <p>
-那些中间节点有好几条线可以传出信息，决定从那条线传输，就这是它们的路由功能，就叫它们路由节点。
-</p>
-<p>
-   路由节点（路由器）按照设定的通讯地址（路由表）决定走哪条路。
-</p>
+   路由节点（路由器）按照设定的通讯地址（路由表）决定走哪条路。</p>
 <blockquote>
-<p>
-路由器带的系统会进行一系列 <strong>网络性能</strong> 测试来生成可靠的路由表(网络是动态的，路由也是动态的)。
-</p>
+<p>路由器带的系统会进行一系列 <strong>网络性能</strong> 测试来生成可靠的路由表(网络是动态的，路由也是动态的)。</p>
 </blockquote>
+</div>
+</div>
     </div>
 
     
@@ -363,13 +311,13 @@
           <a href="/tags/network/">network</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/technology/%E7%BB%8F%E6%B5%8E%E5%AD%A6/">
+        <a class="prev" href="/technology/php/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">经济学简介</span>
+            <span class="prev-text nav-default">php 简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/technology/vc/">
-            <span class="next-text nav-default">版本管理</span>
+        <a class="next" href="/technology/chrome/">
+            <span class="next-text nav-default">chrome 插件</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -380,22 +328,6 @@
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  <script src="https://cdn.bootcdn.net/ajax/libs/valine/1.4.9/Valine.min.js"></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -444,7 +376,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

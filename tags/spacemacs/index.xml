@@ -6,11 +6,7 @@
     <description>Recent content in spacemacs on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate>
-    
-	<atom:link href="https://aming.xyz/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 24 Feb 2020 12:46:44 +0800</lastBuildDate><atom:link href="https://aming.xyz/tags/spacemacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>spacemacs 简介</title>
       <link>https://aming.xyz/technology/spacemacs/</link>
@@ -18,8 +14,7 @@
       
       <guid>https://aming.xyz/technology/spacemacs/</guid>
       <description>&lt;p&gt;
-&lt;strong&gt;spacemacs&lt;/strong&gt; 是对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置，特点是快捷键方便记忆，一般用 空格键 （SPACE KEY）作为命令前导，所以取名 spacemacs。
-&lt;/p&gt;</description>
+&lt;strong&gt;spacemacs&lt;/strong&gt; 是对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置，特点是快捷键方便记忆，一般用 空格键 （SPACE KEY）作为命令前导，所以取名 spacemacs。&lt;/p&gt;</description>
     </item>
     
   </channel>

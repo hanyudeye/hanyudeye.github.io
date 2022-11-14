@@ -6,10 +6,15 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Sep 2021 20:20:39 +0800</lastBuildDate>
-    
-	<atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 14 Sep 2021 20:20:39 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于此站</title>
+      <link>https://aming.xyz/about/</link>
+      <pubDate>Sat, 21 Aug 2021 20:46:42 +0800</pubDate>
+      
+      <guid>https://aming.xyz/about/</guid>
+      <description>关于 迷茫过，丧气过，执拗过，沉迷过，荒诞过，幼稚过，粗俗过，冷漠过，伤害过。。。 微信: hanyudeye</description>
+    </item>
     
     <item>
       <title>虚幻</title>
@@ -34,18 +39,6 @@
     </item>
     
     <item>
-      <title>个人</title>
-      <link>https://aming.xyz/illusory/oneself/</link>
-      <pubDate>Mon, 23 Aug 2021 20:05:15 +0800</pubDate>
-      
-      <guid>https://aming.xyz/illusory/oneself/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;人是由&amp;quot;思想&amp;rdquo; 驱动的 &amp;ldquo;实物&amp;rdquo;&lt;br&gt;
-人的本质是“虚”的，正因为人有“思想”，我们才不会把人当 &lt;strong&gt;石头&lt;/strong&gt; 对待。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
       <title>世界观</title>
       <link>https://aming.xyz/illusory/worldmind/</link>
       <pubDate>Mon, 23 Aug 2021 18:24:23 +0800</pubDate>
@@ -55,32 +48,22 @@
     </item>
     
     <item>
+      <title>拍照片</title>
+      <link>https://aming.xyz/technology/photo/</link>
+      <pubDate>Wed, 14 Apr 2021 07:54:21 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/photo/</guid>
+      <description>&lt;p&gt;买了个二手相机，在学习拍照片&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>万维网</title>
       <link>https://aming.xyz/technology/web/</link>
       <pubDate>Tue, 15 Sep 2020 13:24:19 +0800</pubDate>
       
       <guid>https://aming.xyz/technology/web/</guid>
       <description>&lt;p&gt;
-万维网是网络的应用之一，原理是客户端发送请求，服务端进行响应，客户端解析响应
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>实物</title>
-      <link>https://aming.xyz/illusory/object/</link>
-      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
-      
-      <guid>https://aming.xyz/illusory/object/</guid>
-      <description>&lt;p&gt;世界是由“实物”和“虚物”组成的，那 &lt;strong&gt;实物&lt;/strong&gt; 是怎么样的呢？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>虚物</title>
-      <link>https://aming.xyz/illusory/phantom/</link>
-      <pubDate>Mon, 25 May 2020 20:56:15 +0800</pubDate>
-      
-      <guid>https://aming.xyz/illusory/phantom/</guid>
-      <description>&lt;p&gt;我们把不属于“实物”的东西归为“虚物”&lt;/p&gt;</description>
+万维网是网络的应用之一，原理是客户端发送请求，服务端进行响应，客户端解析响应&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,14 +76,32 @@
     </item>
     
     <item>
+      <title>方法论</title>
+      <link>https://aming.xyz/technology/methods/</link>
+      <pubDate>Mon, 02 Mar 2020 19:01:55 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/methods/</guid>
+      <description>&lt;p&gt;看病有看病的良方，学习有学习的窍门，这里想到一个小事情，但不知以后能否增补，就先拟一个题目。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>健康小知识</title>
       <link>https://aming.xyz/post/%E5%81%A5%E5%BA%B7%E5%B0%8F%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Thu, 27 Feb 2020 18:05:08 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E5%81%A5%E5%BA%B7%E5%B0%8F%E7%9F%A5%E8%AF%86/</guid>
       <description>&lt;p&gt;
-老是得口腔溃疡，今天复发，吃饭疼的厉害，于是搜索了下， 发现一本书讲营养的，叫《吃的营养学》，现摘抄一下。
-&lt;/p&gt;</description>
+老是得口腔溃疡，今天复发，吃饭疼的厉害，于是搜索了下， 发现一本书讲营养的，叫《吃的营养学》，现摘抄一下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>spacemacs 简介</title>
+      <link>https://aming.xyz/technology/spacemacs/</link>
+      <pubDate>Mon, 24 Feb 2020 12:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/spacemacs/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;spacemacs&lt;/strong&gt; 是对 &lt;strong&gt;emacs&lt;/strong&gt; 编辑器的一套配置，特点是快捷键方便记忆，一般用 空格键 （SPACE KEY）作为命令前导，所以取名 spacemacs。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,8 +111,7 @@
       
       <guid>https://aming.xyz/post/physics/</guid>
       <description>&lt;p&gt;
-物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。
-&lt;/p&gt;</description>
+物理是讲东西变化的原因的一门学问，而东西由于自身组成不同，所以变化也就不同。物理中讲了不同的东西。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -121,8 +121,7 @@
       
       <guid>https://aming.xyz/post/health/</guid>
       <description>&lt;p&gt;
-宅家一个多月了，肚子又大了点，运动也少，就整理下健康的资料，锻炼锻炼。
-&lt;/p&gt;</description>
+宅家一个多月了，肚子又大了点，运动也少，就整理下健康的资料，锻炼锻炼。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -136,17 +135,115 @@
     </item>
     
     <item>
+      <title>Node.js 简介</title>
+      <link>https://aming.xyz/technology/nodejs/</link>
+      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/nodejs/</guid>
+      <description>&lt;p&gt;
+Node.js 既是一个 JavaScript 运行时环境，又是一个库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Nodejs 是基于 Chrome 的 V8 引擎开发的一个 C++ 程序，目的是提供一个 JS 的运行环境。
+最早 Node.js 主要是安装在服务器上，辅助大家用 JS 开发高性能服务器代码，但是后来
+Node.js 在前端也大放异彩，带来了 Web 前端开发的革命。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>laravel 简介</title>
+      <link>https://aming.xyz/technology/laravel/</link>
+      <pubDate>Fri, 14 Feb 2020 20:58:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/laravel/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;php&lt;/strong&gt; 用来处理动态性的网页的， &lt;strong&gt;laravel&lt;/strong&gt; 是 &lt;strong&gt;php&lt;/strong&gt; 的工具集，扩展了功能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;特点： 所有的 &lt;strong&gt;URL&lt;/strong&gt; 访问必须先定义路由规则。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>php 简介</title>
+      <link>https://aming.xyz/technology/php/</link>
+      <pubDate>Thu, 13 Feb 2020 19:01:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/php/</guid>
+      <description>&lt;p&gt;
+WEB 服务器脚本语言&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>计算机网络简介</title>
       <link>https://aming.xyz/technology/network/</link>
       <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
       
       <guid>https://aming.xyz/technology/network/</guid>
       <description>&lt;p&gt;
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
-&lt;/p&gt;
+一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。&lt;/p&gt;
 &lt;p&gt;
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
-&lt;/p&gt;</description>
+计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome 插件</title>
+      <link>https://aming.xyz/technology/chrome/</link>
+      <pubDate>Wed, 12 Feb 2020 20:54:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/chrome/</guid>
+      <description>&lt;p&gt;最近又淘到两个 &lt;strong&gt;chrome&lt;/strong&gt; 插件，把以前的插件拼一拼，凑个一篇文字。用的少的就不写
+了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vue.js 简介</title>
+      <link>https://aming.xyz/technology/vuejs/</link>
+      <pubDate>Wed, 12 Feb 2020 05:44:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/vuejs/</guid>
+      <description>&lt;p&gt;
+Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jQuery简介</title>
+      <link>https://aming.xyz/technology/jquery/</link>
+      <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/jquery/</guid>
+      <description>&lt;p&gt;
+jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，
+事件处理，动画和 Ajax 等，使得操作极为简化。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 与 DOM简介</title>
+      <link>https://aming.xyz/technology/javascript/</link>
+      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/javascript/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;Javascript&lt;/strong&gt; 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
+因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>css 简介</title>
+      <link>https://aming.xyz/technology/css/</link>
+      <pubDate>Tue, 11 Feb 2020 18:20:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/css/</guid>
+      <description>&lt;p&gt;
+浏览器用 CSS 技术渲染 HTML 的外观&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>html 简介</title>
+      <link>https://aming.xyz/technology/html/</link>
+      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/html/</guid>
+      <description>&lt;p&gt;
+超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -156,6 +253,26 @@
       
       <guid>https://aming.xyz/post/%E8%A8%80%E8%AE%BA%E8%87%AA%E7%94%B1/</guid>
       <description>&lt;p&gt;我们人，从出生就长着一张嘴，然后用嘴可以说话，用来沟通。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>时不我代</title>
+      <link>https://aming.xyz/technology/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</link>
+      <pubDate>Thu, 09 Jan 2020 20:47:48 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/</guid>
+      <description>&lt;p&gt;由&lt;a href=&#34;https://www.miyaboke.com/&#34;&gt;弥雅博客&lt;/a&gt; 中关于企业发展想到的。&lt;/p&gt;
+&lt;p&gt;最近我失业，去找临时工，发现好多找临时工的人，问后才知道原来是企业生意不好，提前放假了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何吃药</title>
+      <link>https://aming.xyz/technology/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/</link>
+      <pubDate>Wed, 08 Jan 2020 07:40:55 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/</guid>
+      <description>&lt;p&gt;摘抄此文是为对死亡的恐惧与对生命脆弱。&lt;br&gt;
+因为我对此行业不懂，所以认识或是错误的，只是把网上看到的简单写一下，给个参考。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -177,6 +294,17 @@
     </item>
     
     <item>
+      <title>latex简介</title>
+      <link>https://aming.xyz/technology/latex/</link>
+      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/latex/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;书写数学书籍等印刷作品的标记&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>数学简介</title>
       <link>https://aming.xyz/technology/math/</link>
       <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
@@ -189,28 +317,25 @@
     </item>
     
     <item>
+      <title>营销</title>
+      <link>https://aming.xyz/technology/%E8%90%A5%E9%94%80/</link>
+      <pubDate>Thu, 12 Dec 2019 19:40:05 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/%E8%90%A5%E9%94%80/</guid>
+      <description>&lt;p&gt;
+就是通过宣传、推广，进而促进产品或服务的销售。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>算法小难题</title>
       <link>https://aming.xyz/technology/algorithm/</link>
       <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
       
       <guid>https://aming.xyz/technology/algorithm/</guid>
       <description>&lt;p&gt;
-算法是完成一件事情的明细。
-&lt;/p&gt;
+算法是完成一件事情的明细。&lt;/p&gt;
 &lt;p&gt;
-有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>学习简介</title>
-      <link>https://aming.xyz/illusory/readbook/</link>
-      <pubDate>Sun, 01 Dec 2019 07:26:19 +0800</pubDate>
-      
-      <guid>https://aming.xyz/illusory/readbook/</guid>
-      <description>&lt;p&gt;
-知识，是我们对东西的观念，以脑细胞的形式存放在我们脑中。学习是通过感官或思考获得知识的行为。
-&lt;/p&gt;</description>
+有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -220,8 +345,7 @@
       
       <guid>https://aming.xyz/technology/python/</guid>
       <description>&lt;p&gt;
-比较高级的编程语言
-&lt;/p&gt;</description>
+比较高级的编程语言&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -231,8 +355,16 @@
       
       <guid>https://aming.xyz/technology/linux/</guid>
       <description>&lt;p&gt;
-记录 Linux 操作系统常用命令的备忘
-&lt;/p&gt;</description>
+记录 Linux 操作系统常用命令的备忘&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>心理障碍</title>
+      <link>https://aming.xyz/technology/psychologicalobstacle/</link>
+      <pubDate>Fri, 29 Nov 2019 20:07:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/technology/psychologicalobstacle/</guid>
+      <description>&lt;p&gt;最近在看 《少有人走的路》 一书，没看完，觉得有几点要批评一下自己。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -242,8 +374,7 @@
       
       <guid>https://aming.xyz/illusory/zhexue/</guid>
       <description>&lt;p&gt;
-关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
-&lt;/p&gt;</description>
+关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -253,8 +384,7 @@
       
       <guid>https://aming.xyz/technology/emacs/</guid>
       <description>&lt;p&gt;
-一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
-&lt;/p&gt;</description>
+一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。&lt;/p&gt;</description>
     </item>
     
   </channel>
