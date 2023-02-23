@@ -36,7 +36,7 @@
 
 
 
-<link href="/sass/main.min.270e37bc8975c3ee830abe33bd9d942dbefe9b3574316f5e7413f158e1215194.css" rel="stylesheet">
+<link href="/sass/main.min.a40b110029556d3134bec7a450567a3ca92f1e53863875c3b20fdf3f6f71d5e2.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -78,26 +78,12 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">杂记</li>
-      </a><a href="/illusory/">
-        <li class="mobile-menu-item">抽象</li>
-      </a><a href="/about/">
+    <a href="/about/">
         <li class="mobile-menu-item">关于此站</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a>
   </ul>
-<style>
- .duilian{
-     position: absolute;
-     top: 30;
-     left: 20;
-     width: 300px;
-     min-height: 100vh;
-     overflow-y: hidden;
-     -webkit-overflow-scrolling: touch;
-     z-index: 20;
- }
-</style>
   
 
 
@@ -118,11 +104,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">杂记</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/illusory/">抽象</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于此站</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
       </li>
   </ul>
 </nav>
@@ -143,141 +127,11 @@
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-          <span class="more-meta"> 约 1397 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
         
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">git </a>
-<ul>
-<li><a href="#headline-2">安装配置</a>
-<ul>
-<li><a href="#headline-3">配置远程登录 </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-4">用法</a>
-<ul>
-<li><a href="#headline-5">初始化</a>
-</li>
-<li><a href="#headline-6">暂存区管理</a>
-<ul>
-<li><a href="#headline-7">把文件加入暂存区 </a>
-</li>
-<li><a href="#headline-8">把文件从暂存区删除 (不追踪) </a>
-</li>
-<li><a href="#headline-9">用暂存文件恢复文件</a>
-</li>
-<li><a href="#headline-10">重置暂存,就是恢复成未暂存的状态</a>
-</li>
-<li><a href="#headline-11">改名文件</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-12">本地库管理</a>
-<ul>
-<li><a href="#headline-13">把暂存文件保存到本地库   </a>
-</li>
-<li><a href="#headline-14">撤销 [ 恢复到修改前] </a>
-</li>
-<li><a href="#headline-15">反转(用本地版本库的东西替换掉本地的文件,再执行一次反过来)</a>
-</li>
-<li><a href="#headline-16">分支管理</a>
-<ul>
-<li><a href="#headline-17">创建分支 </a>
-</li>
-<li><a href="#headline-18">切换分支 </a>
-</li>
-<li><a href="#headline-19">合并分支</a>
-<ul>
-<li><a href="#headline-20">直接合并 把两条分支上的历史轨迹合并 </a>
-</li>
-<li><a href="#headline-21">压合合并 如果想把某个分支的提交作为一个整体记录时，可以使用压合合并。</a>
-</li>
-<li><a href="#headline-22">拣选合并 只需合并某个提交，而不是全部改动.</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-23">修改分支名称</a>
-</li>
-<li><a href="#headline-24">删除分支 </a>
-</li>
-<li><a href="#headline-25">stash(储藏) </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-26">变基 rebase</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-27">远程仓库管理</a>
-<ul>
-<li><a href="#headline-28">克隆远程到本地仓库</a>
-</li>
-<li><a href="#headline-29">添加远程源 </a>
-</li>
-<li><a href="#headline-30">远程同步</a>
-</li>
-<li><a href="#headline-31">更新本地</a>
-</li>
-<li><a href="#headline-32">查看远程分支情况</a>
-</li>
-<li><a href="#headline-33">修改远程仓库 </a>
-<ul>
-<li><a href="#headline-34">修改</a>
-</li>
-<li><a href="#headline-35">先删后加</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-36">强制覆盖本地</a>
-</li>
-<li><a href="#headline-37">拒绝合并无关的历史</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-38">日志查看</a>
-<ul>
-<li><a href="#headline-39">仓库状态 </a>
-</li>
-<li><a href="#headline-40">查看提交历史</a>
-</li>
-<li><a href="#headline-41">查看某次提交的内容   </a>
-</li>
-<li><a href="#headline-42">更详细的信息 </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-43">比较区别</a>
-</li>
-<li><a href="#headline-44">TAG  </a>
-<ul>
-<li><a href="#headline-45">某个分支创建标签</a>
-</li>
-<li><a href="#headline-46">查看可发布版本 </a>
-</li>
-<li><a href="#headline-47">签出标签</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-48">使用 Git 子模块跟踪外部版本库</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-49">gitignore 忽略文件</a>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
       <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
@@ -1109,13 +963,13 @@ gitignore 忽略文件
           <a href="/tags/git/">git</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/technology/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/">
+        <a class="prev" href="/technology/network/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">如何吃药</span>
+            <span class="prev-text nav-default">计算机网络简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/technology/latex/">
-            <span class="next-text nav-default">latex简介</span>
+        <a class="next" href="/technology/math/">
+            <span class="next-text nav-default">数学简介</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -1133,34 +987,7 @@ gitignore 忽略文件
     </main>
 
     <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
-  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2022
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
-  </span>
-</div>
+      
     </footer>
 
     <div class="back-to-top" id="back-to-top">

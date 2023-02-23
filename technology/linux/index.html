@@ -36,7 +36,7 @@
 
 
 
-<link href="/sass/main.min.270e37bc8975c3ee830abe33bd9d942dbefe9b3574316f5e7413f158e1215194.css" rel="stylesheet">
+<link href="/sass/main.min.a40b110029556d3134bec7a450567a3ca92f1e53863875c3b20fdf3f6f71d5e2.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -78,26 +78,12 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">杂记</li>
-      </a><a href="/illusory/">
-        <li class="mobile-menu-item">抽象</li>
-      </a><a href="/about/">
+    <a href="/about/">
         <li class="mobile-menu-item">关于此站</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a>
   </ul>
-<style>
- .duilian{
-     position: absolute;
-     top: 30;
-     left: 20;
-     width: 300px;
-     min-height: 100vh;
-     overflow-y: hidden;
-     -webkit-overflow-scrolling: touch;
-     z-index: 20;
- }
-</style>
   
 
 
@@ -118,11 +104,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">杂记</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/illusory/">抽象</a>
-      </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于此站</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
       </li>
   </ul>
 </nav>
@@ -143,485 +127,11 @@
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-          <span class="more-meta"> 约 2890 字 </span>
-          <span class="more-meta"> 预计阅读 6 分钟 </span>
         
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">基础命令</a>
-<ul>
-<li><a href="#headline-2">获取登录信息 </a>
-<ul>
-<li><a href="#headline-3">w</a>
-</li>
-<li><a href="#headline-4">who</a>
-</li>
-<li><a href="#headline-5">last</a>
-</li>
-<li><a href="#headline-6">lastb</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-7">查看命令的说明和位置 </a>
-<ul>
-<li><a href="#headline-8">whatis</a>
-</li>
-<li><a href="#headline-9">which</a>
-</li>
-<li><a href="#headline-10">whereis</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-11">清除屏幕上显示的内容 </a>
-<ul>
-<li><a href="#headline-12">clear</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-13">查看帮助文档    </a>
-<ul>
-<li><a href="#headline-14">man [manual]</a>
-</li>
-<li><a href="#headline-15">manpages-zh  </a>
-</li>
-<li><a href="#headline-16">info </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-17">查看系统和主机名 </a>
-<ul>
-<li><a href="#headline-18">uname </a>
-</li>
-<li><a href="#headline-19">hostname</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-20">时间和日期 </a>
-<ul>
-<li><a href="#headline-21">date </a>
-</li>
-<li><a href="#headline-22">cal</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-23">重启和关机 </a>
-<ul>
-<li><a href="#headline-24">reboot</a>
-</li>
-<li><a href="#headline-25">shutdown</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-26">退出登录 </a>
-<ul>
-<li><a href="#headline-27">exit</a>
-</li>
-<li><a href="#headline-28">logout</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-29">查看历史命令 history</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-30">实用程序</a>
-<ul>
-<li><a href="#headline-31">文件和文件夹操作</a>
-<ul>
-<li><a href="#headline-32">创建/删除目录</a>
-<ul>
-<li><a href="#headline-33">mkdir</a>
-</li>
-<li><a href="#headline-34">rmdir</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-35">创建/删除文件</a>
-<ul>
-<li><a href="#headline-36">touch</a>
-</li>
-<li><a href="#headline-37">rm</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-38">切换和查看当前工作目录 </a>
-<ul>
-<li><a href="#headline-39">ls</a>
-</li>
-<li><a href="#headline-40">cd</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-41">查看文件内容</a>
-<ul>
-<li><a href="#headline-42">cat (正看)</a>
-</li>
-<li><a href="#headline-43">tac (倒看)</a>
-</li>
-<li><a href="#headline-44">head</a>
-</li>
-<li><a href="#headline-45">tail</a>
-</li>
-<li><a href="#headline-46">more</a>
-</li>
-<li><a href="#headline-47">less</a>
-</li>
-<li><a href="#headline-48">rev (反向)</a>
-</li>
-<li><a href="#headline-49">od</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-50">拷贝/移动文件</a>
-<ul>
-<li><a href="#headline-51">cp</a>
-</li>
-<li><a href="#headline-52">mv</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-53">文件重命名 </a>
-<ul>
-<li><a href="#headline-54">rename</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-55">查找文件和查找内容 </a>
-<ul>
-<li><a href="#headline-56">find</a>
-</li>
-<li><a href="#headline-57">grep</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-58">创建链接和查看链接 </a>
-<ul>
-<li><a href="#headline-59">ln</a>
-</li>
-<li><a href="#headline-60">readlink</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-61">压缩/解压缩和归档/解归档</a>
-<ul>
-<li><a href="#headline-62">gzip</a>
-</li>
-<li><a href="#headline-63">gunzip</a>
-</li>
-<li><a href="#headline-64">unar</a>
-</li>
-<li><a href="#headline-65">xz</a>
-</li>
-<li><a href="#headline-66">tar</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-67">将标准输入转成命令行参数 </a>
-<ul>
-<li><a href="#headline-68">xargs</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-69">其他相关工具</a>
-<ul>
-<li><a href="#headline-70">对内容排序 sort</a>
-</li>
-<li><a href="#headline-71">拆分文件 split</a>
-</li>
-<li><a href="#headline-72">判断文件类型 file</a>
-</li>
-<li><a href="#headline-73">统计文件行数、单词数、字节数 wc</a>
-</li>
-<li><a href="#headline-74">去掉相邻重复内容 uniq</a>
-</li>
-<li><a href="#headline-75">替换指定内容为新内容 tr</a>
-</li>
-<li><a href="#headline-76">剪切/黏贴内容 cut paste</a>
-</li>
-<li><a href="#headline-77">编码转换 iconv</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#headline-78">管道和重定向</a>
-<ul>
-<li><a href="#headline-79">管道 |</a>
-</li>
-<li><a href="#headline-80">输出重定向和错误重定向 </a>
-<ul>
-<li><a href="#headline-81">输出&gt;</a>
-</li>
-<li><a href="#headline-82">追加&gt;&gt;</a>
-</li>
-<li><a href="#headline-83">错误输出 2&gt;</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-84">输入重定向 &lt;</a>
-</li>
-<li><a href="#headline-85">多重定向 tee</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-86">别名</a>
-<ul>
-<li><a href="#headline-87">alias</a>
-</li>
-<li><a href="#headline-88">unalias</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-89">文本处理</a>
-<ul>
-<li><a href="#headline-90">字符流编辑器  sed</a>
-</li>
-<li><a href="#headline-91">模式匹配和处理语言 awk</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#headline-92">用户管理</a>
-<ul>
-<li><a href="#headline-93">创建和删除用户 </a>
-<ul>
-<li><a href="#headline-94">useradd</a>
-</li>
-<li><a href="#headline-95">userdel</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-96">创建和删除用户组 </a>
-<ul>
-<li><a href="#headline-97">groupadd </a>
-</li>
-<li><a href="#headline-98">groupdel</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-99">修改密码 passwd</a>
-</li>
-<li><a href="#headline-100">批量修改用户密码 chpasswd</a>
-</li>
-<li><a href="#headline-101">查看和修改密码有效期 chage</a>
-</li>
-<li><a href="#headline-102">切换用户 su</a>
-</li>
-<li><a href="#headline-103">以管理员身份执行命令 sudo </a>
-</li>
-<li><a href="#headline-104">显示用户与用户组的信息 id</a>
-</li>
-<li><a href="#headline-105">显示当前终端 tty</a>
-</li>
-<li><a href="#headline-106">write</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-107">进程管理</a>
-<ul>
-<li><a href="#headline-108">查看进程 ps</a>
-</li>
-<li><a href="#headline-109">显示进程状态树 pstree</a>
-</li>
-<li><a href="#headline-110">查找与指定条件匹配的进程  pgrep</a>
-</li>
-<li><a href="#headline-111">通过进程号终止进程 kill</a>
-</li>
-<li><a href="#headline-112">通过进程名终止进程  killall / pkill</a>
-</li>
-<li><a href="#headline-113">将进程置于后台运行 &amp;</a>
-</li>
-<li><a href="#headline-114">查询后台进程 jobs</a>
-</li>
-<li><a href="#headline-115">让进程在后台继续运行  bg</a>
-</li>
-<li><a href="#headline-116">将后台进程置于前台  fg</a>
-</li>
-<li><a href="#headline-117">用户登出后进程继续工作 nohup</a>
-</li>
-<li><a href="#headline-118">跟踪进程系统调用情况 strace</a>
-</li>
-<li><a href="#headline-119">查看当前运行级别  runlevel</a>
-</li>
-<li><a href="#headline-120">实时监控进程占用资源状况  top</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-121">磁盘管理</a>
-<ul>
-<li><a href="#headline-122">访问权限</a>
-<ul>
-<li><a href="#headline-123">改变文件模式 chmod</a>
-</li>
-<li><a href="#headline-124">改变文件所有者 chown </a>
-</li>
-<li><a href="#headline-125">改变用户组 chgrp  </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-126">磁盘管理</a>
-<ul>
-<li><a href="#headline-127">列出文件系统的磁盘使用状况 df</a>
-</li>
-<li><a href="#headline-128">磁盘分区表操作  fdisk</a>
-</li>
-<li><a href="#headline-129">磁盘分区工具  parted</a>
-</li>
-<li><a href="#headline-130">格式化文件系统  mkfs</a>
-</li>
-<li><a href="#headline-131">文件系统检查 fsck</a>
-</li>
-<li><a href="#headline-132">转换或拷贝文件 dd</a>
-</li>
-<li><a href="#headline-133">挂载/卸载 mount / umonut</a>
-</li>
-<li><a href="#headline-134">创建/激活/关闭交换分区 mkswap / swapon / swapoff</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#headline-135">模块管理</a>
-</li>
-<li><a href="#headline-136">配置服务</a>
-<ul>
-<li><a href="#headline-137">启动服务 systemctl start [SERVER]</a>
-</li>
-<li><a href="#headline-138">终止/重启服务 stop/restart</a>
-</li>
-<li><a href="#headline-139">查看状态 status</a>
-</li>
-<li><a href="#headline-140">设置/禁用服务开机自启 enable / disable</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-141">网络访问和管理</a>
-<ul>
-<li><a href="#headline-142">安全远程连接 ssh  </a>
-</li>
-<li><a href="#headline-143">通过网络获取资源 wget</a>
-</li>
-<li><a href="#headline-144">发送和接收邮件 mail</a>
-</li>
-<li><a href="#headline-145">网络配置工具（旧） ifconfig</a>
-</li>
-<li><a href="#headline-146">网络配置工具（新） ip</a>
-</li>
-<li><a href="#headline-147">网络可达性检查 ping</a>
-</li>
-<li><a href="#headline-148">显示或管理路由表 route</a>
-</li>
-<li><a href="#headline-149">查看网络服务和端口 netstat / ss</a>
-</li>
-<li><a href="#headline-150">网络监听抓包  tcpdump (需要管理员权限)</a>
-<ul>
-<li><a href="#headline-151">监视指定网络接口的数据包</a>
-</li>
-<li><a href="#headline-152">监视指定主机和端口的数据包</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-153">安全文件拷贝  scp</a>
-</li>
-<li><a href="#headline-154">文件同步工具  rsync</a>
-</li>
-<li><a href="#headline-155">安全文件传输  sftp</a>
-</li>
-<li><a href="#headline-156">查看公网 IP</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-157">计划任务</a>
-<ul>
-<li><a href="#headline-158">在指定的时间执行命令</a>
-<ul>
-<li><a href="#headline-159">将任务排队，在指定的时间执行 at </a>
-</li>
-<li><a href="#headline-160">查看待执行的任务队列 atq</a>
-</li>
-<li><a href="#headline-161">从队列中删除待执行的任务 atrm</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-162">计划任务表 crontab</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-163">系统诊断</a>
-<ul>
-<li><a href="#headline-164">系统启动异常诊断 dmesg</a>
-</li>
-<li><a href="#headline-165">查看系统活动信息 sar </a>
-</li>
-<li><a href="#headline-166">查看内存使用情况  free</a>
-</li>
-<li><a href="#headline-167">虚拟内存统计 vmstat</a>
-</li>
-<li><a href="#headline-168">CPU 信息统计  mpstat</a>
-</li>
-<li><a href="#headline-169">查看进程使用内存状况 pmap</a>
-</li>
-<li><a href="#headline-170">报告设备 CPU 和 I/O 统计信息 iostat</a>
-</li>
-<li><a href="#headline-171">显示所有 PCI 设备 lspci</a>
-</li>
-<li><a href="#headline-172">显示进程间通信设施的状态  ipcs</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-173">工具软件    </a>
-<ul>
-<li><a href="#headline-174">pdf</a>
-<ul>
-<li><a href="#headline-175">合并 pdf  </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-176">图片处理</a>
-<ul>
-<li><a href="#headline-177">压缩转换 convert</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-178">录制视频短片 peek</a>
-</li>
-<li><a href="#headline-179">像素识别</a>
-</li>
-<li><a href="#headline-180">wireshark</a>
-<ul>
-<li><a href="#headline-181">数据链路层：</a>
-</li>
-<li><a href="#headline-182">网络层：</a>
-</li>
-<li><a href="#headline-183">传输层：</a>
-</li>
-<li><a href="#headline-184">应用层：</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-185">feh </a>
-</li>
-<li><a href="#headline-186">Pandoc</a>
-</li>
-<li><a href="#headline-187">apt 软件包管理</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-188">进程占用端口</a>
-</li>
-<li><a href="#headline-189">输入法</a>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
       <p>
 记录 Linux 操作系统常用命令的备忘</p>
@@ -2007,8 +1517,8 @@ sudo apt-get remove indicator-keyboard</p>
             <span class="prev-text nav-default">Python 简介</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/technology/psychologicalobstacle/">
-            <span class="next-text nav-default">心理障碍</span>
+        <a class="next" href="/technology/emacs/">
+            <span class="next-text nav-default">emacs 简介</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -2026,34 +1536,7 @@ sudo apt-get remove indicator-keyboard</p>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
-  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2022
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
-  </span>
-</div>
+      
     </footer>
 
     <div class="back-to-top" id="back-to-top">
