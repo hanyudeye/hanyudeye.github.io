@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>JavaScript 与 DOM简介 - 阿明 - 收集生活的感悟</title>
+  <title>javascript - 阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,14 +17,14 @@
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
-<meta name="author" content="阿明" /><meta name="description" content="JavaScript 简介" /><meta name="keywords" content="阿明博客, 记录生活" />
+<meta name="author" content="阿明" /><meta name="description" content=" " /><meta name="keywords" content="阿明博客, 记录生活" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/javascript/" />
@@ -34,29 +34,26 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
+
+<link href="/sass/main.min.a40b110029556d3134bec7a450567a3ca92f1e53863875c3b20fdf3f6f71d5e2.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="JavaScript 与 DOM简介" />
-<meta property="og:description" content="JavaScript 简介" />
+<meta property="og:title" content="javascript" />
+<meta property="og:description" content=" " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/post/javascript/" />
-<meta property="article:published_time" content="2020-02-11T18:47:24+08:00" />
-<meta property="article:modified_time" content="2020-02-11T18:47:24+08:00" />
-<meta itemprop="name" content="JavaScript 与 DOM简介">
-<meta itemprop="description" content="JavaScript 简介">
-<meta itemprop="datePublished" content="2020-02-11T18:47:24&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-11T18:47:24&#43;08:00" />
-<meta itemprop="wordCount" content="648">
+<meta property="og:url" content="https://aming.xyz/post/javascript/" /><meta property="article:section" content="post" />
 
 
 
-<meta itemprop="keywords" content="JavaScript," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JavaScript 与 DOM简介"/>
-<meta name="twitter:description" content="JavaScript 简介"/>
+<meta itemprop="name" content="javascript">
+<meta itemprop="description" content=" ">
+
+<meta itemprop="wordCount" content="0">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="javascript"/>
+<meta name="twitter:description" content=" "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -81,67 +78,44 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/music/">
-        <li class="mobile-menu-item">音乐</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
-      </a><a href="/notes/">
-        <li class="mobile-menu-item">日记</li>
+    <a href="/illusory/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
+        <li class="mobile-menu-item">about</li>
       </a>
   </ul>
+  
+
+
 </nav>
-
-
-<style>
- .duilian{
-     position: absolute;
-     top: 30;
-     left: 20;
-     width: 300px;
-     min-height: 100vh;
-     overflow-y: hidden;
-     -webkit-overflow-scrolling: touch;
-     z-index: 20;
- }
-</style>
 
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">阿明</a>
+  <a href="/" class="logo">
+      <img src="/android-icon-48x48.png" />
+  </a>
 </div>
+
+
+
+
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/illusory/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/music/">音乐</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/notes/">日记</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
+        <a class="menu-item-link" href="/about/">about</a>
       </li>
   </ul>
 </nav>
+
+
     </header>
 
     <main id="main" class="main">
@@ -150,364 +124,36 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">JavaScript 与 DOM简介</h1>
+      <h1 class="post-title">javascript</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-02-11 </span>
-        <div class="post-category">
-            <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-            </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+        <span class="post-time"> 0001-01-01 </span>
+        
+        
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">DOM (文档对象模型)</a>
-<ul>
-<li><a href="#headline-2">document  接口</a>
-<ul>
-<li><a href="#headline-3">属性</a>
-</li>
-<li><a href="#headline-4">方法</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-5">节点接口</a>
-<ul>
-<li><a href="#headline-6">节点属性</a>
-</li>
-<li><a href="#headline-7">修改</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-8">事件接口</a>
-<ul>
-<li><a href="#headline-9">window </a>
-</li>
-<li><a href="#headline-10">页面或图像</a>
-</li>
-<li><a href="#headline-11">表单</a>
-</li>
-<li><a href="#headline-12">键盘</a>
-</li>
-<li><a href="#headline-13">鼠标</a>
-</li>
-<li><a href="#headline-14">Media </a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
-      <p>
-<strong>Javascript</strong> 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
-因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。
-</p>
-<p>
-javascript 要与网页或浏览器互动，那么浏览器就要提供互动的接口给 Javacript 解释器，这个接口是那些大厂商协商的标准,叫 DOM(文档对象模型)，通过这些接口来扩展网页的行为。
-</p>
-<p>
-javascript 添加到 HTML 的方法与 CSS 差不多，一种是用 标签引入外部文件，一种是在标签内直接输入 javascript 的代码。
-</p>
-<p>
-最简单运行 javascript 代码方式是在浏览器控制台直接输入
-</p>
-<h2 id="headline-1">
-DOM (文档对象模型)
-</h2>
-<h3 id="headline-2">
-document  接口
-</h3>
-<h4 id="headline-3">
-属性
-</h4>
-<ul>
-<li>
-<p>
-cookie        设置或返回与当前文档有关的所有 cookie 
-</p>
-</li>
-<li>
-<p>
-domain        返回当前文档的域名                    
-</p>
-</li>
-<li>
-<p>
-lastModified  返回文档被最后修改的日期和时间        
-</p>
-</li>
-<li>
-<p>
-referrer      返回载入当前文档的文档的 URL          
-</p>
-</li>
-<li>
-<p>
-title         返回当前文档的标题                    
-</p>
-</li>
-<li>
-<p>
-URL           返回当前文档的 URL                    
-</p>
-</li>
-</ul>
-<h4 id="headline-4">
-方法
-</h4>
-<ul>
-<li>
-<p>
-getElementById()          返回对拥有指定 id 的第一个对象的引用                                        
-</p>
-</li>
-<li>
-<p>
-getElementsByName()       返回带有指定名称的对象集合 	                                               
-</p>
-</li>
-<li>
-<p>
-getElementsByTagName()    返回带有指定标签名的对象集合                                                
-</p>
-</li>
-<li>
-<p>
-getElementsByClassName()  返回带有指定 class 的对象集合                                               
-</p>
-</li>
-<li>
-<p>
-write()                   向文档写 HTML 表达式 或 JavaScript 代码                                     
-</p>
-</li>
-</ul>
-<h3 id="headline-5">
-节点接口
-</h3>
-<p>
-因为 HTML 是按照 树的模型构造的，所以里面都是枝枝叉叉，操作的也是枝枝叉叉(节点)。
-</p>
-<h4 id="headline-6">
-节点属性
-</h4>
-<ul>
-<li>
-<p>
-innerHTML  获取元素内容   
-</p>
-</li>
-<li>
-<p>
-nodeName   规定节点的名称 
-</p>
-</li>
-<li>
-<p>
-nodeValue  规定节点的值   
-</p>
-</li>
-</ul>
-<h4 id="headline-7">
-修改
-</h4>
-<div class="src src-js">
-<div class="highlight"><div class="chroma">
+      <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
+<pre tabindex="0" class="chroma"><code></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">para</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;p&#34;</span><span class="p">);</span>
-  <span class="kd">var</span> <span class="nx">node</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s2">&#34;This is new.&#34;</span><span class="p">);</span>
-  <span class="nx">para</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">node</span><span class="p">);</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"></code></pre></td></tr></table>
 </div>
 </div>
-</div>
-<ul>
-<li>
-<p>
-insertBefore 插到节点前面
-</p>
-</li>
-<li>
-<p>
-removeChild 删除子节点
-</p>
-</li>
-<li>
-<p>
-replaceChild 替换节点
-</p>
-</li>
-</ul>
-<h3 id="headline-8">
-事件接口
-</h3>
-<h4 id="headline-9">
-window 
-</h4>
-<ul>
-<li>
-<p>
-onload    页面结束加载之后触发(最慢，要所有图片都下载完)    
-</p>
-</li>
-<li>
-<p>
-onresize  当浏览器窗口被调整大小时触发                     
-</p>
-</li>
-</ul>
-<h4 id="headline-10">
-页面或图像
-</h4>
-<ul>
-<li>
-<p>
-onload 
-</p>
-</li>
-<li>
-<p>
-onUnload
-</p>
-</li>
-</ul>
-<h4 id="headline-11">
-表单
-</h4>
-<ul>
-<li>
-<p>
-onFocus
-</p>
-</li>
-<li>
-<p>
-onBlur 
-</p>
-</li>
-<li>
-<p>
-onChange
-</p>
-</li>
-<li>
-<p>
-onselect      在元素中文本被选中后触发            
-</p>
-</li>
-<li>
-<p>
-onsubmit     在提交表单时触发                   
-</p>
-</li>
-</ul>
-<h4 id="headline-12">
-键盘
-</h4>
-<ul>
-<li>
-<p>
-onkeydown   在用户按下按键时触发 
-</p>
-</li>
-<li>
-<p>
-onkeypress  在用户敲击按钮时触发 
-</p>
-</li>
-<li>
-<p>
-onkeyup     当用户释放按键时触发 
-</p>
-</li>
-</ul>
-<h4 id="headline-13">
-鼠标
-</h4>
-<ul>
-<li>
-<p>
-onclick
-</p>
-</li>
-<li>
-<p>
-ondblclick
-</p>
-</li>
-<li>
-<p>
-onmousedown
-</p>
-</li>
-<li>
-<p>
-onmouseup 
-</p>
-</li>
-<li>
-<p>
-onscroll
-</p>
-</li>
-<li>
-<p>
-onMouseOver 
-</p>
-</li>
-<li>
-<p>
-onMouseOut
-</p>
-</li>
-</ul>
-<h4 id="headline-14">
-Media 
-</h4>
-<ul>
-<li>
-<p>
-onabort
-</p>
-</li>
-<li>
-<p>
-onplay
-</p>
-</li>
-</ul>
     </div>
 
     
 <footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/javascript/">JavaScript</a>
-          </div>
+      
       <nav class="post-nav">
-        <a class="prev" href="/post/jquery/">
+        <a class="prev" href="/post/%E7%BB%8F%E6%B5%8E/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">jQuery简介</span>
+            <span class="prev-text nav-default">经济</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/css/">
-            <span class="next-text nav-default">css 简介</span>
-            <span class="next-text nav-mobile">下一篇</span>
-            <i class="iconfont icon-right"></i>
-          </a>
+        
       </nav>
     </footer>
   </article>
@@ -515,21 +161,6 @@ onplay
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -537,38 +168,7 @@ onplay
     </main>
 
     <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
-  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
-
-  <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2021
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
-  </span>
-</div>
+      
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -582,7 +182,7 @@ onplay
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},

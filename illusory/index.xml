@@ -5,15 +5,14 @@
     <link>https://aming.xyz/illusory/</link>
     <description>Recent content in Illusories on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 23 Aug 2021 18:24:23 +0800</lastBuildDate><atom:link href="https://aming.xyz/illusory/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://aming.xyz/illusory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>世界观</title>
-      <link>https://aming.xyz/illusory/worldmind/</link>
-      <pubDate>Mon, 23 Aug 2021 18:24:23 +0800</pubDate>
+      <title>计算机</title>
+      <link>https://aming.xyz/illusory/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aming.xyz/illusory/worldmind/</guid>
-      <description>&lt;p&gt;世界观是对世界的观念和思考，一般包含对自己和周围的人的思考，对大自然的思考，对工作的思考，对具体技术的思考等等&lt;/p&gt;</description>
+      <guid>https://aming.xyz/illusory/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+      <description>hello,computer world!</description>
     </item>
     
   </channel>

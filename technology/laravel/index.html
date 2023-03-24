@@ -36,7 +36,7 @@
 
 
 
-<link href="/sass/main.min.270e37bc8975c3ee830abe33bd9d942dbefe9b3574316f5e7413f158e1215194.css" rel="stylesheet">
+<link href="/sass/main.min.a40b110029556d3134bec7a450567a3ca92f1e53863875c3b20fdf3f6f71d5e2.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -78,26 +78,14 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">杂记</li>
-      </a><a href="/illusory/">
-        <li class="mobile-menu-item">抽象</li>
+    <a href="/illusory/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
-        <li class="mobile-menu-item">关于此站</li>
+        <li class="mobile-menu-item">about</li>
       </a>
   </ul>
-<style>
- .duilian{
-     position: absolute;
-     top: 30;
-     left: 20;
-     width: 300px;
-     min-height: 100vh;
-     overflow-y: hidden;
-     -webkit-overflow-scrolling: touch;
-     z-index: 20;
- }
-</style>
   
 
 
@@ -118,11 +106,11 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">杂记</a>
+        <a class="menu-item-link" href="/illusory/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/illusory/">抽象</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于此站</a>
+        <a class="menu-item-link" href="/about/">about</a>
       </li>
   </ul>
 </nav>
@@ -143,145 +131,11 @@
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-          <span class="more-meta"> 约 2993 字 </span>
-          <span class="more-meta"> 预计阅读 6 分钟 </span>
         
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">基础功能</a>
-<ul>
-<li><a href="#headline-2">配置 </a>
-</li>
-<li><a href="#headline-3">手工路由</a>
-<ul>
-<li><a href="#headline-4">基本结构</a>
-</li>
-<li><a href="#headline-5">多个请求</a>
-</li>
-<li><a href="#headline-6">路由参数</a>
-</li>
-<li><a href="#headline-7">命名路由</a>
-</li>
-<li><a href="#headline-8">路由群组</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-9">控制器</a>
-<ul>
-<li><a href="#headline-10">控制器结构</a>
-</li>
-<li><a href="#headline-11">单一行为控制器</a>
-</li>
-<li><a href="#headline-12">中间件</a>
-</li>
-<li><a href="#headline-13">资源控制器 </a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-14">获取 URL 参数     </a>
-<ul>
-<li><a href="#headline-15">Input</a>
-</li>
-<li><a href="#headline-16">Request</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-17">门面( Facades )</a>
-</li>
-<li><a href="#headline-18">对数据库操作</a>
-<ul>
-<li><a href="#headline-19">配置  </a>
-<ul>
-<li><a href="#headline-20">对 SQLite 的配置</a>
-</li>
-<li><a href="#headline-21">读写连接</a>
-</li>
-<li><a href="#headline-22">sticky 选项</a>
-</li>
-<li><a href="#headline-23">使用多个连接</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-24">原生操作</a>
-<ul>
-<li><a href="#headline-25">增删改查</a>
-</li>
-<li><a href="#headline-26">数据库事务</a>
-</li>
-<li><a href="#headline-27">处理死锁 (设定重新尝试的次数)</a>
-</li>
-<li><a href="#headline-28">手动使用事务</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-29">laravel 骚操作</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-30">视图</a>
-<ul>
-<li><a href="#headline-31">视图结构 </a>
-<ul>
-<li><a href="#headline-32">循环分支</a>
-</li>
-<li><a href="#headline-33">继承 (公共页)</a>
-</li>
-<li><a href="#headline-34">引入外部静态文件</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-35">连接视图</a>
-</li>
-<li><a href="#headline-36">视图是否存在</a>
-</li>
-<li><a href="#headline-37">第一个可用视图</a>
-</li>
-<li><a href="#headline-38">与所有视图共享数据</a>
-</li>
-<li><a href="#headline-39">视图作曲家</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#headline-40">artisan </a>
-</li>
-<li><a href="#headline-41">调试</a>
-<ul>
-<li><a href="#headline-42">格式化输出</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-43">安全    </a>
-<ul>
-<li><a href="#headline-44">CSRF (跨站请求伪造攻击)</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-45">教程</a>
-<ul>
-<li><a href="#headline-46">新建路由和控制器</a>
-</li>
-<li><a href="#headline-47">渲染页面</a>
-</li>
-<li><a href="#headline-48">创建相应的视图文件</a>
-</li>
-<li><a href="#headline-49">定义公共模板文件</a>
-</li>
-<li><a href="#headline-50">公共头部和底部</a>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
+    
     <div class="post-content">
       <p>
 <strong>php</strong> 用来处理动态性的网页的， <strong>laravel</strong> 是 <strong>php</strong> 的工具集，扩展了功能。</p>
@@ -1668,34 +1522,7 @@ LaravelStudy/resources/views/layouts/default.blade.php</p>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
-  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    主题 - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2022
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
-  </span>
-</div>
+      
     </footer>
 
     <div class="back-to-top" id="back-to-top">
