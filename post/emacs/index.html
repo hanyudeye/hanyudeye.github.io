@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/emacs/" />
@@ -34,26 +34,23 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.ba818b2a794c0d2448b9a790ae8aa830d81f6ce7d79eb2d9c3b0b780cc9e8ef4.css" rel="stylesheet">
+
+<link href="/sass/main.min.a40b110029556d3134bec7a450567a3ca92f1e53863875c3b20fdf3f6f71d5e2.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
 <meta property="og:title" content="emacs 简介" />
 <meta property="og:description" content="emacs 编辑器" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://aming.xyz/post/emacs/" />
+<meta property="og:url" content="https://aming.xyz/post/emacs/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-06-04T22:41:32+08:00" />
 <meta property="article:modified_time" content="2020-02-05T18:24:57+08:00" />
+
 <meta itemprop="name" content="emacs 简介">
-<meta itemprop="description" content="emacs 编辑器">
-<meta itemprop="datePublished" content="2019-06-04T22:41:32&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-05T18:24:57&#43;08:00" />
+<meta itemprop="description" content="emacs 编辑器"><meta itemprop="datePublished" content="2019-06-04T22:41:32+08:00" />
+<meta itemprop="dateModified" content="2020-02-05T18:24:57+08:00" />
 <meta itemprop="wordCount" content="1036">
-
-
-
 <meta itemprop="keywords" content="emacs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="emacs 简介"/>
 <meta name="twitter:description" content="emacs 编辑器"/>
@@ -81,21 +78,14 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
+    <a href="/illusory/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
-        <li class="mobile-menu-item">关于</li>
+        <li class="mobile-menu-item">about</li>
       </a>
   </ul>
-
   
 
 
@@ -104,7 +94,9 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">阿明</a>
+  <a href="/" class="logo">
+      <img src="/android-icon-48x48.png" />
+  </a>
 </div>
 
 
@@ -114,20 +106,15 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/illusory/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">关于</a>
+        <a class="menu-item-link" href="/about/">about</a>
       </li>
   </ul>
 </nav>
+
 
     </header>
 
@@ -144,146 +131,54 @@
         <div class="post-category">
             <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
             </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 1036 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
       </div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">快速入门 </a>
-</li>
-<li><a href="#headline-2">基本功能</a>
-<ul>
-<li><a href="#headline-3">文字输入</a>
-</li>
-<li><a href="#headline-4">移动光标 (point)</a>
-</li>
-<li><a href="#headline-5">删除文字</a>
-</li>
-<li><a href="#headline-6">撤消与恢复</a>
-</li>
-<li><a href="#headline-7">文件操作</a>
-</li>
-<li><a href="#headline-8">长行</a>
-</li>
-<li><a href="#headline-9">文本信息</a>
-</li>
-<li><a href="#headline-10">数字参数</a>
-</li>
-<li><a href="#headline-11">输入法</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-12">高级一点的功能</a>
-<ul>
-<li><a href="#headline-13">Mark (标记) </a>
-</li>
-<li><a href="#headline-14">kill</a>
-</li>
-<li><a href="#headline-15">rectangle (矩形标记)</a>
-</li>
-<li><a href="#headline-16">暂存器  ( 临时存储 ) </a>
-</li>
-<li><a href="#headline-17">搜索和替换 </a>
-</li>
-<li><a href="#headline-18">大小转化  ( upcase, lowcase ) </a>
-</li>
-<li><a href="#headline-19">键盘宏  </a>
-</li>
-<li><a href="#headline-20">目录</a>
-</li>
-<li><a href="#headline-21">十六进制</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-22">编码</a>
-</li>
-<li><a href="#headline-23">服务 </a>
-</li>
-<li><a href="#headline-24">扩展</a>
-</li>
-<li><a href="#headline-25">排错</a>
-</li>
-<li><a href="#headline-26">帮助</a>
-</li>
-<li><a href="#headline-27">选项</a>
-</li>
-<li><a href="#headline-28">自定义配置</a>
-<ul>
-<li><a href="#headline-29">创建配置文件 .emacs-light</a>
-</li>
-<li><a href="#headline-30">加载配置文件</a>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content1">
+    
+    <div class="post-content">
       <p>
-一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
-</p>
+一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。</p>
+<div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
 快速入门 
 </h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<p>如果想要快速了解一下 emacs 的功能，最好的方法就是先打开 emacs，然后键入 <code class="verbatim">M-x help-with-tutorial</code> 命令打开官方文档进行学习。</p>
 <p>
-如果想要快速了解一下 emacs 的功能，最好的方法就是先打开 emacs，然后键入 <code class="verbatim">M-x help-with-tutorial</code> 命令打开官方文档进行学习。
-</p>
-<p>
-  通过入门文档的学习，我们能对 <strong>emacs</strong> 的光标导航，文本查找，buffer，frame 有一个基本理解，还能学到3个帮助函数。
-</p>
+  通过入门文档的学习，我们能对 <strong>emacs</strong> 的光标导航，文本查找，buffer，frame 有一个基本理解，还能学到3个帮助函数。</p>
 <ul>
-<li>
-<p>
-<code class="verbatim">M-x describe-variable</code>, 快捷键 <code class="verbatim">C-h v</code>, 查看变量的文档
-</p>
-</li>
-<li>
-<p>
-<code class="verbatim">M-x describe-function</code>, 快捷键 <code class="verbatim">C-h f</code>, 查看命令的文档
-</p>
-</li>
-<li>
-<p>
-<code class="verbatim">M-x describe-key</code>, 快捷键 <code class="verbatim">C-h k</code>, 查看快捷键的文档
-</p>
-</li>
+<li><code class="verbatim">M-x describe-variable</code>, 快捷键 <code class="verbatim">C-h v</code>, 查看变量的文档</li>
+<li><code class="verbatim">M-x describe-function</code>, 快捷键 <code class="verbatim">C-h f</code>, 查看命令的文档</li>
+<li><code class="verbatim">M-x describe-key</code>, 快捷键 <code class="verbatim">C-h k</code>, 查看快捷键的文档</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 基本功能
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<div id="outline-container-headline-3" class="outline-4">
 <h4 id="headline-3">
 文字输入
 </h4>
+<div id="outline-text-headline-3" class="outline-text-4">
 <ul>
-<li>
-<p>
-键盘字母区的文字可以直接输入 <strong>(insert ?a)</strong>  或 <strong>insert-char</strong>
-</p>
-</li>
-<li>
-<p>
-输入不可见字符 <strong>quoted-insert</strong>
-</p>
-</li>
-<li>
-<p>
-输入键盘控制键 : 如  <code>C-q  DEL</code> ,  <code>C-q RET</code>
-</p>
-</li>
-<li>
-<p>
-八进制数字 : <code>C-q  1 0 1</code>  插入 <code>A</code> 
-</p>
-</li>
+<li>键盘字母区的文字可以直接输入 <strong>(insert ?a)</strong>  或 <strong>insert-char</strong></li>
+<li>输入不可见字符 <strong>quoted-insert</strong></li>
+<li>输入键盘控制键 : 如  <code>C-q  DEL</code> ,  <code>C-q RET</code></li>
+<li>八进制数字 : <code>C-q  1 0 1</code>  插入 <code>A</code> </li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-4">
 <h4 id="headline-4">
 移动光标 (point)
 </h4>
+<div id="outline-text-headline-4" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -320,9 +215,13 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
 删除文字
 </h4>
+<div id="outline-text-headline-5" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -343,9 +242,13 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-4">
 <h4 id="headline-6">
 撤消与恢复
 </h4>
+<div id="outline-text-headline-6" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -362,9 +265,13 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-4">
 <h4 id="headline-7">
 文件操作
 </h4>
+<div id="outline-text-headline-7" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -377,9 +284,13 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-4">
 <h4 id="headline-8">
 长行
 </h4>
+<div id="outline-text-headline-8" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -408,9 +319,13 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-4">
 <h4 id="headline-9">
 文本信息
 </h4>
+<div id="outline-text-headline-9" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -447,16 +362,22 @@
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-4">
 <h4 id="headline-10">
 数字参数
 </h4>
-<p>
-有些命令要执行多次，可以加一个数字参数 
-    <code>M</code> 键加一个数字 N 就能执行 N 次命令
-</p>
+<div id="outline-text-headline-10" class="outline-text-4">
+<p>有些命令要执行多次，可以加一个数字参数 
+    <code>M</code> 键加一个数字 N 就能执行 N 次命令</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-4">
 <h4 id="headline-11">
 输入法
 </h4>
+<div id="outline-text-headline-11" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -470,17 +391,23 @@
 </tbody>
 </table>
 <blockquote>
-<p>
-M-x set-input-method RET TeX will allow you to write e.g. β to get β,
-    ∑ or Σ to get Σ etc.
-</p>
+<p>M-x set-input-method RET TeX will allow you to write e.g. β to get β,
+    ∑ or Σ to get Σ etc.</p>
 </blockquote>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
 <h3 id="headline-12">
 高级一点的功能
 </h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<div id="outline-container-headline-13" class="outline-4">
 <h4 id="headline-13">
 Mark (标记) 
 </h4>
+<div id="outline-text-headline-13" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -501,9 +428,13 @@ Mark (标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-4">
 <h4 id="headline-14">
 kill
 </h4>
+<div id="outline-text-headline-14" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -530,15 +461,17 @@ kill
 </table>
 <blockquote>
 <div class="verse-block">
-<p>
-不保存在 <code>kill-ring</code>   的命令叫 <code>delete</code> 命令，通常删除字，词这些删的少的。 
-    如果要执行 <code>yank-pop</code> , 上一次命令 必须是 <code>yank</code> 命令哦
-</p>
+<p>不保存在 <code>kill-ring</code>   的命令叫 <code>delete</code> 命令，通常删除字，词这些删的少的。 
+    如果要执行 <code>yank-pop</code> , 上一次命令 必须是 <code>yank</code> 命令哦</p>
 </div>
 </blockquote>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-4">
 <h4 id="headline-15">
 rectangle (矩形标记)
 </h4>
+<div id="outline-text-headline-15" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -547,9 +480,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-4">
 <h4 id="headline-16">
 暂存器  ( 临时存储 ) 
 </h4>
+<div id="outline-text-headline-16" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -582,9 +519,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-4">
 <h4 id="headline-17">
 搜索和替换 
 </h4>
+<div id="outline-text-headline-17" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -601,12 +542,18 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-4">
 <h4 id="headline-18">
 大小转化  ( upcase, lowcase ) 
 </h4>
+</div>
+<div id="outline-container-headline-19" class="outline-4">
 <h4 id="headline-19">
 键盘宏  
 </h4>
+<div id="outline-text-headline-19" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -619,9 +566,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-4">
 <h4 id="headline-20">
 目录
 </h4>
+<div id="outline-text-headline-20" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -638,9 +589,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-4">
 <h4 id="headline-21">
 十六进制
 </h4>
+<div id="outline-text-headline-21" class="outline-text-4">
 <table>
 <tbody>
 <tr>
@@ -649,9 +604,15 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-22" class="outline-3">
 <h3 id="headline-22">
 编码
 </h3>
+<div id="outline-text-headline-22" class="outline-text-3">
 <table>
 <tbody>
 <tr>
@@ -665,17 +626,17 @@ rectangle (矩形标记)
 </tbody>
 </table>
 <blockquote>
-<p>
-网上查看编码信息， <a href="https://www.qqxiuzi.cn/bianma/zifuji.php">https://www.qqxiuzi.cn/bianma/zifuji.php</a> ,可能会失效，网上搜个。
-</p>
+<p>网上查看编码信息， <a href="https://www.qqxiuzi.cn/bianma/zifuji.php">https://www.qqxiuzi.cn/bianma/zifuji.php</a> ,可能会失效，网上搜个。</p>
 </blockquote>
+</div>
+</div>
+<div id="outline-container-headline-23" class="outline-3">
 <h3 id="headline-23">
 服务 
 </h3>
+<div id="outline-text-headline-23" class="outline-text-3">
 <blockquote>
-<p>
-开启服务后，就能共享 <strong>emacs</strong> 环境了。还可以设置多个不同服务
-</p>
+<p>开启服务后，就能共享 <strong>emacs</strong> 环境了。还可以设置多个不同服务</p>
 </blockquote>
 <table>
 <tbody>
@@ -697,9 +658,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-24" class="outline-3">
 <h3 id="headline-24">
 扩展
 </h3>
+<div id="outline-text-headline-24" class="outline-text-3">
 <table>
 <tbody>
 <tr>
@@ -724,9 +689,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-25" class="outline-3">
 <h3 id="headline-25">
 排错
 </h3>
+<div id="outline-text-headline-25" class="outline-text-3">
 <table>
 <tbody>
 <tr>
@@ -735,9 +704,13 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-26" class="outline-3">
 <h3 id="headline-26">
 帮助
 </h3>
+<div id="outline-text-headline-26" class="outline-text-3">
 <table>
 <tbody>
 <tr>
@@ -762,61 +735,66 @@ rectangle (矩形标记)
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div id="outline-container-headline-27" class="outline-3">
 <h3 id="headline-27">
 选项
 </h3>
+<div id="outline-text-headline-27" class="outline-text-3">
 <ul>
-<li>
-<p>
-q   不装载初始化文件
-</p>
-</li>
-<li>
-<p>
-l file 装载 文件 file 里面 的 lisp 代码
-</p>
-</li>
-<li>
-<p>
-f function 执行 lisp 函数 function
-</p>
-</li>
+<li>q   不装载初始化文件</li>
+<li>l file 装载 文件 file 里面 的 lisp 代码</li>
+<li>f function 执行 lisp 函数 function</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-headline-28" class="outline-3">
 <h3 id="headline-28">
 自定义配置
 </h3>
+<div id="outline-text-headline-28" class="outline-text-3">
+<div id="outline-container-headline-29" class="outline-4">
 <h4 id="headline-29">
 创建配置文件 .emacs-light
 </h4>
+<div id="outline-text-headline-29" class="outline-text-4">
 <div class="src src-lisp">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/main&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/functions&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/modes&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/theme&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/main&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/functions&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/modes&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nf">load</span> <span class="s">&#34;~/.emacs.d/theme&#34;</span> <span class="no">nil</span> <span class="no">t</span><span class="p">)</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 </div>
 <p>
-    emacs 会加载 main.elc 或 main.el 文件
-</p>
+    emacs 会加载 main.elc 或 main.el 文件</p>
+</div>
+</div>
+<div id="outline-container-headline-30" class="outline-4">
 <h4 id="headline-30">
 加载配置文件
 </h4>
+<div id="outline-text-headline-30" class="outline-text-4">
 <div class="src src-lisp">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-lisp" data-lang="lisp"><span class="nv">emacs</span> <span class="nv">-q</span> <span class="nv">-l</span> <span class="nv">~/.emacs-light</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-lisp" data-lang="lisp"><span class="line"><span class="cl"><span class="nv">emacs</span> <span class="nv">-q</span> <span class="nv">-l</span> <span class="nv">~/.emacs-light</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -828,9 +806,9 @@ f function 执行 lisp 函数 function
           <a href="/tags/emacs/">emacs</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/zhexue/">
+        <a class="prev" href="/post/%E7%BB%8F%E6%B5%8E/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">人生意义</span>
+            <span class="prev-text nav-default">经济</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
@@ -841,21 +819,6 @@ f function 执行 lisp 函数 function
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -864,8 +827,9 @@ f function 执行 lisp 函数 function
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+  <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+  <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -875,20 +839,20 @@ f function 执行 lisp 函数 function
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    主题 - 
+    主题 -
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+    &copy;
+    2018 -
+    2023
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">阿明</span>
   </span>
 </div>
 
@@ -905,15 +869,15 @@ f function 执行 lisp 函数 function
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 

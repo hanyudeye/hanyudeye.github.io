@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 04 Jun 2019 22:41:32 +0800</lastBuildDate><atom:link href="https://aming.xyz/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emacs 简介</title>
-      <link>https://aming.xyz/technology/emacs/</link>
+      <link>https://aming.xyz/post/emacs/</link>
       <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/emacs/</guid>
+      <guid>https://aming.xyz/post/emacs/</guid>
       <description>&lt;p&gt;
 一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。&lt;/p&gt;</description>
     </item>

@@ -6,22 +6,40 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Apr 2023 19:35:08 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 06:41:27 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://aming.xyz/post/linux/</link>
+      <pubDate>Thu, 27 Apr 2023 06:41:27 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/linux/</guid>
+      <description>LINUX NETWORKING TCP DUMP: tcpdump -nqt -s0 -A -i any port 5060 |grep &amp;quot;computer networking&amp;quot; -A 10 -B 10 TCP DUMP with portrange: tcpdump -nqt -s0 -A -i any -an portrange 1-25 Ping with MTU size: ping 122.152.145.101 -s 1500 ADVANDCE Find &amp;amp; Replace: find ./hoiio/ -type f -exec sed -i &amp;quot;s/&amp;lt;origin_string&amp;gt;/&amp;lt;new_string&amp;gt;/g&amp;quot; {} + Repeat Command n times: for i in {1..10}; do &amp;lt;command&amp;gt;; done curl with digest auth curl --digest --user minh:secret https://minh.</description>
+    </item>
+    
+    <item>
+      <title>实践的艺术</title>
+      <link>https://aming.xyz/post/howtodo/</link>
+      <pubDate>Thu, 27 Apr 2023 06:38:32 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/howtodo/</guid>
+      <description>什么是实践</description>
+    </item>
+    
+    <item>
+      <title>如何拥有一个强大且乐观的内心?</title>
+      <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E4%B8%94%E4%B9%90%E8%A7%82%E7%9A%84%E5%86%85%E5%BF%83/</link>
+      <pubDate>Tue, 25 Apr 2023 07:23:05 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E4%B8%94%E4%B9%90%E8%A7%82%E7%9A%84%E5%86%85%E5%BF%83/</guid>
+      <description>其实，只要你开始拥有「把人生看做一场游戏」的心态时，你就能变成一个内心强大的人。我们面对困难和挑战的时候，缺少的不是严肃的态度，而是放手一搏</description>
+    </item>
+    
     <item>
       <title>绘图</title>
       <link>https://aming.xyz/post/%E7%BB%98%E5%9B%BE/</link>
       <pubDate>Tue, 11 Apr 2023 19:35:08 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%BB%98%E5%9B%BE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Good</title>
-      <link>https://aming.xyz/post/good/</link>
-      <pubDate>Sat, 25 Mar 2023 06:58:32 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/good/</guid>
       <description></description>
     </item>
     
@@ -71,12 +89,13 @@
     </item>
     
     <item>
-      <title>javascript</title>
-      <link>https://aming.xyz/post/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>emacs 简介</title>
+      <link>https://aming.xyz/post/emacs/</link>
+      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/javascript/</guid>
-      <description> </description>
+      <guid>https://aming.xyz/post/emacs/</guid>
+      <description>&lt;p&gt;
+一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。&lt;/p&gt;</description>
     </item>
     
   </channel>
