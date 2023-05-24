@@ -6,43 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Apr 2023 22:10:20 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>人类文明科技发展的各个事件是什么</title>
-      <link>https://aming.xyz/post/%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E%E7%A7%91%E6%8A%80%E5%8F%91%E5%B1%95%E7%9A%84%E5%90%84%E4%B8%AA%E4%BA%8B%E4%BB%B6%E6%98%AF%E4%BB%80%E4%B9%88/</link>
-      <pubDate>Sat, 29 Apr 2023 22:10:20 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E4%BA%BA%E7%B1%BB%E6%96%87%E6%98%8E%E7%A7%91%E6%8A%80%E5%8F%91%E5%B1%95%E7%9A%84%E5%90%84%E4%B8%AA%E4%BA%8B%E4%BB%B6%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      <description>以下是人类文明科技发展中的一些重要事件: 新石器时代：约公元前 18000 年至前 16000 年的新石器时代，是人类科技发展的重要时期。在这个时期，人们开始使用石器</description>
-    </item>
-    
-    <item>
-      <title>2010-2020一些重要的科技事件</title>
-      <link>https://aming.xyz/post/2010-2020%E4%B8%80%E4%BA%9B%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E4%BB%B6/</link>
-      <pubDate>Sat, 29 Apr 2023 22:03:52 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/2010-2020%E4%B8%80%E4%BA%9B%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E4%BB%B6/</guid>
-      <description>以下是最近 10 年 (2010 年至 2020 年) 一些重要的科技事件: 智能手机和平板电脑的普及：智能手机和平板电脑在过去几年中变得非常流行，这些设备配备了强大的处理</description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://aming.xyz/post/linux/</link>
-      <pubDate>Thu, 27 Apr 2023 06:41:27 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/linux/</guid>
-      <description>LINUX NETWORKING TCP DUMP: tcpdump -nqt -s0 -A -i any port 5060 |grep &amp;quot;computer networking&amp;quot; -A 10 -B 10 TCP DUMP with portrange: tcpdump -nqt -s0 -A -i any -an portrange 1-25 Ping with MTU size: ping 122.152.145.101 -s 1500 ADVANDCE Find &amp;amp; Replace: find ./hoiio/ -type f -exec sed -i &amp;quot;s/&amp;lt;origin_string&amp;gt;/&amp;lt;new_string&amp;gt;/g&amp;quot; {} + Repeat Command n times: for i in {1..10}; do &amp;lt;command&amp;gt;; done curl with digest auth curl --digest --user minh:secret https://minh.</description>
-    </item>
-    
-    <item>
-      <title>实践的艺术</title>
-      <link>https://aming.xyz/post/howtodo/</link>
-      <pubDate>Thu, 27 Apr 2023 06:38:32 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/howtodo/</guid>
-      <description>什么是实践</description>
-    </item>
-    
+    <lastBuildDate>Tue, 25 Apr 2023 07:23:05 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何拥有一个强大且乐观的内心?</title>
       <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E4%B8%94%E4%B9%90%E8%A7%82%E7%9A%84%E5%86%85%E5%BF%83/</link>
@@ -50,15 +14,6 @@
       
       <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%BC%BA%E5%A4%A7%E4%B8%94%E4%B9%90%E8%A7%82%E7%9A%84%E5%86%85%E5%BF%83/</guid>
       <description>其实，只要你开始拥有「把人生看做一场游戏」的心态时，你就能变成一个内心强大的人。我们面对困难和挑战的时候，缺少的不是严肃的态度，而是放手一搏</description>
-    </item>
-    
-    <item>
-      <title>绘图</title>
-      <link>https://aming.xyz/post/%E7%BB%98%E5%9B%BE/</link>
-      <pubDate>Tue, 11 Apr 2023 19:35:08 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%BB%98%E5%9B%BE/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -89,31 +44,31 @@
     </item>
     
     <item>
-      <title>创意</title>
-      <link>https://aming.xyz/post/%E5%88%9B%E6%84%8F%E7%9A%84%E4%B8%96%E7%95%8C/</link>
-      <pubDate>Thu, 09 Feb 2023 07:31:04 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%88%9B%E6%84%8F%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
-      <description>今天的世界发生了哪些创意的事情呢？</description>
-    </item>
-    
-    <item>
       <title>about</title>
       <link>https://aming.xyz/about/</link>
       <pubDate>Sat, 21 Aug 2021 20:46:42 +0800</pubDate>
       
       <guid>https://aming.xyz/about/</guid>
-      <description>关于 迷茫过，丧气过，执拗过，沉迷过，荒诞过，幼稚过，粗俗过，冷漠过，伤害过。。。 微信: hanyudeye</description>
+      <description>关于我 迷茫过，丧气过，执拗过，沉迷过，荒诞过，幼稚过，粗俗过，冷漠过，伤害过。。。 是一个不知不觉的垂头丧气的人，希望能为荣誉而活！ 联系方式 微</description>
     </item>
     
     <item>
-      <title>万维网</title>
-      <link>https://aming.xyz/technology/web/</link>
-      <pubDate>Tue, 15 Sep 2020 13:24:19 +0800</pubDate>
+      <title>do things that don&#39;t scale 做一些不需扩展的事情</title>
+      <link>https://aming.xyz/post/ds/</link>
+      <pubDate>Fri, 24 Apr 2020 05:27:43 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/web/</guid>
-      <description>&lt;p&gt;
-万维网是网络的应用之一，原理是客户端发送请求，服务端进行响应，客户端解析响应&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/ds/</guid>
+      <description>&lt;p&gt;翻译创业的文章，瞎翻译一通。&lt;br&gt;
+主要讲公司主创们应有的一些素质，做一些公司起步时需要做的事情，才能使公司成长(成长起来以后就不用做了)。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>包衣服</title>
+      <link>https://aming.xyz/post/clothes/</link>
+      <pubDate>Thu, 09 Apr 2020 04:49:42 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/clothes/</guid>
+      <description>&lt;p&gt;扯淡一篇，小弟一天能包600多件，合约一分钟一件。多的人800多件&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,146 +81,22 @@
     </item>
     
     <item>
-      <title>Node.js 简介</title>
-      <link>https://aming.xyz/technology/nodejs/</link>
-      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
+      <title>拍照</title>
+      <link>https://aming.xyz/post/%E6%8B%8D%E7%85%A7/</link>
+      <pubDate>Wed, 22 Jan 2020 16:07:13 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/nodejs/</guid>
-      <description>&lt;p&gt;
-Node.js 既是一个 JavaScript 运行时环境，又是一个库&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nodejs 是基于 Chrome 的 V8 引擎开发的一个 C++ 程序，目的是提供一个 JS 的运行环境。
-最早 Node.js 主要是安装在服务器上，辅助大家用 JS 开发高性能服务器代码，但是后来
-Node.js 在前端也大放异彩，带来了 Web 前端开发的革命。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <guid>https://aming.xyz/post/%E6%8B%8D%E7%85%A7/</guid>
+      <description>&lt;p&gt;想来我活一辈子，用脑子留存不了生命的轨迹，就想到用照相机来记录。&lt;br&gt;
+但是这两天网上看中的一款实用的相机居然价格不降反升，甚是气氛，就暂且先用手机来记录，然后会学习一些拍照方面的知识，慢慢学习。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>laravel 简介</title>
-      <link>https://aming.xyz/technology/laravel/</link>
-      <pubDate>Fri, 14 Feb 2020 20:58:44 +0800</pubDate>
+      <title>两个我</title>
+      <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/</link>
+      <pubDate>Sun, 12 Jan 2020 19:08:24 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/laravel/</guid>
-      <description>&lt;p&gt;
-&lt;strong&gt;php&lt;/strong&gt; 用来处理动态性的网页的， &lt;strong&gt;laravel&lt;/strong&gt; 是 &lt;strong&gt;php&lt;/strong&gt; 的工具集，扩展了功能。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;特点： 所有的 &lt;strong&gt;URL&lt;/strong&gt; 访问必须先定义路由规则。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>php 简介</title>
-      <link>https://aming.xyz/technology/php/</link>
-      <pubDate>Thu, 13 Feb 2020 19:01:28 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/php/</guid>
-      <description>&lt;p&gt;
-WEB 服务器脚本语言&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>计算机网络简介</title>
-      <link>https://aming.xyz/technology/network/</link>
-      <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/network/</guid>
-      <description>&lt;p&gt;
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。&lt;/p&gt;
-&lt;p&gt;
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Vue.js 简介</title>
-      <link>https://aming.xyz/technology/vuejs/</link>
-      <pubDate>Wed, 12 Feb 2020 05:44:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/vuejs/</guid>
-      <description>&lt;p&gt;
-Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>jQuery简介</title>
-      <link>https://aming.xyz/technology/jquery/</link>
-      <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/jquery/</guid>
-      <description>&lt;p&gt;
-jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，
-事件处理，动画和 Ajax 等，使得操作极为简化。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JavaScript 与 DOM简介</title>
-      <link>https://aming.xyz/technology/javascript/</link>
-      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/javascript/</guid>
-      <description>&lt;p&gt;
-&lt;strong&gt;Javascript&lt;/strong&gt; 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
-因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>html 简介</title>
-      <link>https://aming.xyz/technology/html/</link>
-      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/html/</guid>
-      <description>&lt;p&gt;
-超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>版本管理</title>
-      <link>https://aming.xyz/technology/vc/</link>
-      <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/vc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>算法小难题</title>
-      <link>https://aming.xyz/technology/algorithm/</link>
-      <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/algorithm/</guid>
-      <description>&lt;p&gt;
-算法是完成一件事情的明细。&lt;/p&gt;
-&lt;p&gt;
-有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Python 简介</title>
-      <link>https://aming.xyz/technology/python/</link>
-      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/python/</guid>
-      <description>&lt;p&gt;
-比较高级的编程语言&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux命令简介</title>
-      <link>https://aming.xyz/technology/linux/</link>
-      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/linux/</guid>
-      <description>&lt;p&gt;
-记录 Linux 操作系统常用命令的备忘&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>emacs 简介</title>
-      <link>https://aming.xyz/post/emacs/</link>
-      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/emacs/</guid>
-      <description>&lt;p&gt;
-一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/</guid>
+      <description>&lt;p&gt;这里讲的两个我不是肉体的我，也不是平行世界中多重我的概念，而是存在于我们的头脑中的一个理性的我，和一个感性的我。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -275,15 +106,6 @@ jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进
       
       <guid>https://aming.xyz/readme/</guid>
       <description>日常博客，记录生活琐事</description>
-    </item>
-    
-    <item>
-      <title>计算机</title>
-      <link>https://aming.xyz/illusory/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/illusory/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
-      <description>hello,computer world!</description>
     </item>
     
   </channel>
