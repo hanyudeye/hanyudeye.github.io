@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>阿明 - 收集生活的感悟</title>
-    <link>https://aming.xyz/</link>
-    <description>Recent content on 阿明 - 收集生活的感悟</description>
+    <title>Posts on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/post/</link>
+    <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Feb 2023 19:09:30 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Feb 2023 19:09:30 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>底层是定义的，高层是设计的</title>
       <link>https://aming.xyz/post/%E5%B1%82%E6%98%AF%E5%AE%9A%E4%B9%89%E7%9A%84/</link>
@@ -17,30 +17,12 @@
     </item>
     
     <item>
-      <title>about</title>
-      <link>https://aming.xyz/about/</link>
-      <pubDate>Sat, 21 Aug 2021 20:46:42 +0800</pubDate>
-      
-      <guid>https://aming.xyz/about/</guid>
-      <description>关于我 迷茫过，丧气过，执拗过，沉迷过，荒诞过，幼稚过，粗俗过，冷漠过，伤害过。。。 是一个不知不觉的垂头丧气的人，希望能为荣誉而活！ 联系方式 微</description>
-    </item>
-    
-    <item>
       <title>经济</title>
       <link>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E/</link>
       <pubDate>Mon, 17 Feb 2020 20:47:48 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E/</guid>
       <description>什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/readme/</guid>
-      <description>日常博客，记录生活琐事</description>
     </item>
     
   </channel>
