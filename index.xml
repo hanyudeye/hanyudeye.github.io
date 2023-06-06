@@ -6,14 +6,41 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jun 2023 11:05:43 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何有效规划事情</title>
       <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/</link>
       <pubDate>Tue, 06 Jun 2023 08:55:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/</guid>
-      <description>规划自己的任务 想象自己的需求，找一个参照物 规划在某个时间段完成参照物的某个程度 迅速行动</description>
+      <description>规划自己的任务 想象自己的需求，找一个参照物 规划在某个时间段完成参照物的某个程度 迅速行动 迅速回顾迭代</description>
+    </item>
+    
+    <item>
+      <title>使用 Python 语法进行编程</title>
+      <link>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;p&gt;语言用来描述&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自由的活力</title>
+      <link>https://aming.xyz/post/%E8%87%AA%E7%94%B1%E7%9A%84%E6%B4%BB%E5%8A%9B/</link>
+      <pubDate>Tue, 06 Jun 2023 14:08:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%87%AA%E7%94%B1%E7%9A%84%E6%B4%BB%E5%8A%9B/</guid>
+      <description>自由的东西往往有活力 在美国创业很容易，解雇员工和企业破产也很容易，这大大方便了资源的快速重组。</description>
+    </item>
+    
+    <item>
+      <title>AI生成漫画</title>
+      <link>https://aming.xyz/post/ai%E6%BC%AB%E7%94%BB/</link>
+      <pubDate>Tue, 06 Jun 2023 12:19:43 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ai%E6%BC%AB%E7%94%BB/</guid>
+      <description>使用AI图像生成器，可以减少手工绘图的时间。 绘图工具 Midjourney</description>
     </item>
     
     <item>
@@ -33,15 +60,6 @@
       <guid>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;2023-06-06-10-44-46.png&#34; alt=&#34;&#34;&gt;
 &amp;ldquo;520&amp;quot;那一天，杭州市西湖区绿地出现了一朵巨型的 3D 打印玫瑰，直径2.4米。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>底层是定义的，高层是设计的</title>
-      <link>https://aming.xyz/post/%E5%B1%82%E6%98%AF%E5%AE%9A%E4%B9%89%E7%9A%84/</link>
-      <pubDate>Fri, 24 Feb 2023 19:09:30 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%B1%82%E6%98%AF%E5%AE%9A%E4%B9%89%E7%9A%84/</guid>
-      <description>底层是定义的，高层是设计的 复杂的东西不要去定义，而是去设计</description>
     </item>
     
     <item>
