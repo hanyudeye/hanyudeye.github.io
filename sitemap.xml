@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-<<<<<<< HEAD
-=======
-    <loc>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/</loc>
-    <lastmod>2023-06-06T08:55:28+08:00</lastmod>
+    <loc>https://aming.xyz/excerpt/</loc>
+    <lastmod>2023-07-25T21:07:48+08:00</lastmod>
   </url>
   
   <url>
->>>>>>> 2722c55003c1b4cee1f441924b33cd386a3ec24a
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2023-07-25T21:07:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/excerpt/story/</loc>
+    <lastmod>2023-07-25T21:07:48+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://aming.xyz/categories/</loc>
     <lastmod>2023-07-13T13:24:06+08:00</lastmod>
   </url>
@@ -20,12 +27,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/</loc>
-    <lastmod>2023-07-13T13:24:06+08:00</lastmod>
-<<<<<<< HEAD
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</loc>
     <lastmod>2023-07-13T13:24:06+08:00</lastmod>
   </url>
@@ -96,81 +97,6 @@
   </url>
   
   <url>
-=======
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</loc>
-    <lastmod>2023-07-13T13:24:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E5%8F%98%E5%BE%97%E4%B8%8A%E8%BF%9B/</loc>
-    <lastmod>2023-07-13T13:24:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/novel/</loc>
-    <lastmod>2023-07-12T15:10:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E9%BE%99%E9%AA%91%E5%A3%AB/</loc>
-    <lastmod>2023-07-12T15:10:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E5%B0%8F%E8%AF%B4/</loc>
-    <lastmod>2023-07-12T15:10:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E5%88%9B%E6%84%8F/</loc>
-    <lastmod>2023-06-09T08:58:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E4%BA%BA%E7%9A%84%E5%A7%BF%E5%8A%BF/</loc>
-    <lastmod>2023-06-09T08:58:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E5%BD%93%E6%84%9F%E6%83%85%E4%B8%8D%E5%A6%82%E6%84%8F%E7%9A%84%E6%97%B6%E5%80%99/</loc>
-    <lastmod>2023-06-08T10:42:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E6%83%85%E6%84%9F/</loc>
-    <lastmod>2023-06-08T10:42:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-06-06T15:42:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2023-06-06T15:42:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2023-06-06T14:08:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E8%87%AA%E7%94%B1%E7%9A%84%E6%B4%BB%E5%8A%9B/</loc>
-    <lastmod>2023-06-06T14:08:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/ai%E6%BC%AB%E7%94%BB/</loc>
-    <lastmod>2023-06-06T12:19:43+08:00</lastmod>
-  </url>
-  
-  <url>
->>>>>>> 2722c55003c1b4cee1f441924b33cd386a3ec24a
     <loc>https://aming.xyz/post/%E5%A3%B0%E6%8E%A7%E6%89%8B%E6%9C%BA/</loc>
     <lastmod>2023-06-06T11:05:43+08:00</lastmod>
   </url>
@@ -181,14 +107,11 @@
   </url>
   
   <url>
-<<<<<<< HEAD
     <loc>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/</loc>
     <lastmod>2023-06-06T08:55:28+08:00</lastmod>
   </url>
   
   <url>
-=======
->>>>>>> 2722c55003c1b4cee1f441924b33cd386a3ec24a
     <loc>https://aming.xyz/about/</loc>
     <lastmod>2021-08-21T20:46:42+08:00</lastmod>
   </url>
@@ -218,15 +141,4 @@
     <priority>0</priority>
   </url>
   
-<<<<<<< HEAD
-  <url>
-    <loc>https://aming.xyz/excerpt/</loc>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/excerpt/story/</loc>
-  </url>
-  
-=======
->>>>>>> 2722c55003c1b4cee1f441924b33cd386a3ec24a
 </urlset>
