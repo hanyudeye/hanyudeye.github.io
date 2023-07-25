@@ -6,158 +6,24 @@
     <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2020 13:24:19 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>万维网</title>
-      <link>https://aming.xyz/technology/web/</link>
-      <pubDate>Tue, 15 Sep 2020 13:24:19 +0800</pubDate>
+      <title>使用 Python 语法进行编程</title>
+      <link>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/web/</guid>
-      <description>&lt;p&gt;
-万维网是网络的应用之一，原理是客户端发送请求，服务端进行响应，客户端解析响应&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
+      <description>&lt;p&gt;语言用来描述&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Node.js 简介</title>
-      <link>https://aming.xyz/technology/nodejs/</link>
-      <pubDate>Sun, 16 Feb 2020 18:13:56 +0800</pubDate>
+      <title>3D打印</title>
+      <link>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</link>
+      <pubDate>Tue, 06 Jun 2023 10:45:09 +0800</pubDate>
       
-      <guid>https://aming.xyz/technology/nodejs/</guid>
-      <description>&lt;p&gt;
-Node.js 既是一个 JavaScript 运行时环境，又是一个库&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Nodejs 是基于 Chrome 的 V8 引擎开发的一个 C++ 程序，目的是提供一个 JS 的运行环境。
-最早 Node.js 主要是安装在服务器上，辅助大家用 JS 开发高性能服务器代码，但是后来
-Node.js 在前端也大放异彩，带来了 Web 前端开发的革命。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>laravel 简介</title>
-      <link>https://aming.xyz/technology/laravel/</link>
-      <pubDate>Fri, 14 Feb 2020 20:58:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/laravel/</guid>
-      <description>&lt;p&gt;
-&lt;strong&gt;php&lt;/strong&gt; 用来处理动态性的网页的， &lt;strong&gt;laravel&lt;/strong&gt; 是 &lt;strong&gt;php&lt;/strong&gt; 的工具集，扩展了功能。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;特点： 所有的 &lt;strong&gt;URL&lt;/strong&gt; 访问必须先定义路由规则。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>php 简介</title>
-      <link>https://aming.xyz/technology/php/</link>
-      <pubDate>Thu, 13 Feb 2020 19:01:28 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/php/</guid>
-      <description>&lt;p&gt;
-WEB 服务器脚本语言&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>计算机网络简介</title>
-      <link>https://aming.xyz/technology/network/</link>
-      <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/network/</guid>
-      <description>&lt;p&gt;
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。&lt;/p&gt;
-&lt;p&gt;
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Vue.js 简介</title>
-      <link>https://aming.xyz/technology/vuejs/</link>
-      <pubDate>Wed, 12 Feb 2020 05:44:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/vuejs/</guid>
-      <description>&lt;p&gt;
-Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>jQuery简介</title>
-      <link>https://aming.xyz/technology/jquery/</link>
-      <pubDate>Tue, 11 Feb 2020 20:46:44 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/jquery/</guid>
-      <description>&lt;p&gt;
-jQuery 是一个 JavaScript 库，主要对 &lt;strong&gt;DOM&lt;/strong&gt; 进行了封装， 例如对节点的遍历和操作，
-事件处理，动画和 Ajax 等，使得操作极为简化。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JavaScript 与 DOM简介</title>
-      <link>https://aming.xyz/technology/javascript/</link>
-      <pubDate>Tue, 11 Feb 2020 18:47:24 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/javascript/</guid>
-      <description>&lt;p&gt;
-&lt;strong&gt;Javascript&lt;/strong&gt; 是一个脚本语言，是一个小伙子用了半个月开发出来的，作为给网页做效果用的，源码会存到本地，然后浏览器来执行，是客户端的脚本。
-因为现在的网页已经作为 App 来用了，要写大量的 javascript 代码，所以 javascript 也在更新，加入了模块等功能，这样能够作为服务器脚本了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>html 简介</title>
-      <link>https://aming.xyz/technology/html/</link>
-      <pubDate>Tue, 11 Feb 2020 14:27:45 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/html/</guid>
-      <description>&lt;p&gt;
-超文本标记语言（英語：HyperText Markup Language，简称：HTML） 是一种用于创建网页的标准标记语言。HTML 是一种基础技术，常与 CSS、JavaScript 一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面。网页浏览器可以读取 HTML 文件，并将其渲染成可视化网页。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>版本管理</title>
-      <link>https://aming.xyz/technology/vc/</link>
-      <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/vc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>算法小难题</title>
-      <link>https://aming.xyz/technology/algorithm/</link>
-      <pubDate>Sun, 08 Dec 2019 05:32:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/algorithm/</guid>
-      <description>&lt;p&gt;
-算法是完成一件事情的明细。&lt;/p&gt;
-&lt;p&gt;
-有些事情暂时完成不了，比如穿越时空，这就暂时没有算法。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Python 简介</title>
-      <link>https://aming.xyz/technology/python/</link>
-      <pubDate>Fri, 29 Nov 2019 21:57:09 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/python/</guid>
-      <description>&lt;p&gt;
-比较高级的编程语言&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux命令简介</title>
-      <link>https://aming.xyz/technology/linux/</link>
-      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
-      
-      <guid>https://aming.xyz/technology/linux/</guid>
-      <description>&lt;p&gt;
-记录 Linux 操作系统常用命令的备忘&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>emacs 简介</title>
-      <link>https://aming.xyz/post/emacs/</link>
-      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/emacs/</guid>
-      <description>&lt;p&gt;
-一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;2023-06-06-10-44-46.png&#34; alt=&#34;&#34;&gt;
+&amp;ldquo;520&amp;quot;那一天，杭州市西湖区绿地出现了一朵巨型的 3D 打印玫瑰，直径2.4米。&lt;/p&gt;</description>
     </item>
     
   </channel>
