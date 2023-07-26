@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aming.xyz/excerpt/</loc>
-    <lastmod>2023-07-25T21:07:48+08:00</lastmod>
+    <loc>https://aming.xyz/seven/1/</loc>
+    <lastmod>2023-07-26T19:48:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/seven/</loc>
+    <lastmod>2023-07-26T19:48:36+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
+    <lastmod>2023-07-26T19:48:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/excerpt/</loc>
     <lastmod>2023-07-25T21:07:48+08:00</lastmod>
   </url>
   
