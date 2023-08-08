@@ -6,7 +6,15 @@
     <description>Recent content in 生活 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< HEAD
     <lastBuildDate>Thu, 09 Apr 2020 04:49:42 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Thu, 09 Apr 2020 04:49:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+>>>>>>> d5d1b30 (rebuilding site 2023年 08月 08日 星期二 07:50:40 CST)
     <item>
       <title>包衣服</title>
       <link>https://aming.xyz/post/clothes/</link>

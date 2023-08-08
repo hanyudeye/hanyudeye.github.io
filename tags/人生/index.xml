@@ -6,7 +6,11 @@
     <description>Recent content in 人生 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Nov 2019 06:55:56 +0800</lastBuildDate><atom:link href="https://aming.xyz/tags/%E4%BA%BA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Nov 2019 06:55:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://aming.xyz/tags/%E4%BA%BA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>人生意义</title>
       <link>https://aming.xyz/illusory/zhexue/</link>
@@ -14,7 +18,8 @@
       
       <guid>https://aming.xyz/illusory/zhexue/</guid>
       <description>&lt;p&gt;
-关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。&lt;/p&gt;</description>
+关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
+&lt;/p&gt;</description>
     </item>
     
   </channel>
