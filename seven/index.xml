@@ -17,8 +17,6 @@
 &lt;p&gt;我们打开计算机后&lt;/p&gt;</description>
     </item>
     
-<<<<<<< HEAD
-=======
     <item>
       <title>vue.js框架</title>
       <link>https://aming.xyz/seven/3/</link>
@@ -37,6 +35,5 @@
       <description>文件描述符 文件描述符是指打开的文件或其他输入/输出资源。 Unix默认打开的文件是输入，输出和错误，对应的描述符是 0 ，1和2. 您可以使用fcn</description>
     </item>
     
->>>>>>> d5d1b30 (rebuilding site 2023年 08月 08日 星期二 07:50:40 CST)
   </channel>
 </rss>

@@ -49,7 +49,7 @@
 <meta itemprop="name" content="JavaScript教程">
 <meta itemprop="description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象"><meta itemprop="datePublished" content="2023-08-07T21:10:31+08:00" />
 <meta itemprop="dateModified" content="2023-08-07T21:10:31+08:00" />
-<meta itemprop="wordCount" content="669">
+<meta itemprop="wordCount" content="1069">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaScript教程"/>
 <meta name="twitter:description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象"/>
@@ -249,6 +249,64 @@
 <li>定义构造函数</li>
 <li>定义事件回调函数</li>
 </ol>
+<h2 id="跨域">跨域</h2>
+<h3 id="同源策略">同源策略</h3>
+<p>「同源策略」是一个重要的安全策略，它用于限制一个 origin 的文档或者它加载的脚本如何能与另一个源的资源进行交互。它能帮助阻隔恶意文档，减少可能被攻击的媒介。</p>
+<p>如果你违背了同源策略并且没有做跨域优化的话，当你调用接口的时候，会看到如下报错提示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">XMLHttpRequest cannot load http://www.???.com/. 
+No &#39;Access-Control-Allow-Origin&#39; header is present on the requested resource. 
+Origin &#39;null&#39; is therefore not allowed access.
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>协议：<code>http://</code></li>
+<li>域名：<code>www.baidu.com</code></li>
+<li>端口：<code>:80</code></li>
+<li>请求路径：<code>/myfile.html</code></li>
+<li>请求参数：<code>?name=jsliang</code></li>
+<li>锚点：<code>#chapter-one</code></li>
+</ul>
+<p>只有当：</p>
+<ul>
+<li>protocol（协议）、domain（域名）、port（端口）三者一致，才是同源。</li>
+</ul>
+<p>注意 <code>http</code> 可以省略端口 80，而 <code>https</code> 可以省略端口 443。</p>
+<h3 id="跨域限制">跨域限制</h3>
+<p>跨域只存在于浏览器端，浏览器为 web 提供访问入口，正是这样的开放形态，所以我们需要对他有所限制</p>
+<blockquote>
+<p>可以在 <code>http</code> 返回头 添加 <code>X-Frame-Options: SAMEORIGIN</code> 防止被别人添加至 <code>iframe</code>。</p>
+</blockquote>
+<h3 id="解决跨域的方法">解决跨域的方法</h3>
+<ol>
+<li>
+<p>CORS</p>
+</li>
+<li>
+<p>Node 正向代理</p>
+</li>
+<li>
+<p>Nginx 反向代理</p>
+</li>
+<li>
+<p>JSONP</p>
+</li>
+<li>
+<p>WebSocket</p>
+</li>
+<li>
+<p>……</p>
+</li>
+<li>
+<p>设置 Node 的 <code>res.setHeader('Access-Control-Allow-Origin', '*');</code></p>
+</li>
+</ol>
 
     </div>
 
@@ -261,8 +319,8 @@
             <span class="prev-text nav-default">Hugo的使用</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/commandline/">
-            <span class="next-text nav-default">命令行指令</span>
+        <a class="next" href="/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
+            <span class="next-text nav-default">vue2使用方法</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -6,9 +6,6 @@
     <description>Recent content in Categories on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-<<<<<<< HEAD
-    <lastBuildDate>Thu, 13 Jul 2023 13:24:06 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
-=======
     <lastBuildDate>Tue, 08 Aug 2023 07:25:14 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>前端</title>
@@ -25,6 +22,15 @@
       <pubDate>Tue, 08 Aug 2023 06:44:23 +0800</pubDate>
       
       <guid>https://aming.xyz/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>https://aming.xyz/categories/vue/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/vue/</guid>
       <description></description>
     </item>
     
@@ -55,7 +61,6 @@
       <description></description>
     </item>
     
->>>>>>> d5d1b30 (rebuilding site 2023年 08月 08日 星期二 07:50:40 CST)
     <item>
       <title>人生</title>
       <link>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</link>
