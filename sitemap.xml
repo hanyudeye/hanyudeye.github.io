@@ -2,15 +2,141 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aming.xyz/post/todo/</loc>
+    <lastmod>2023-08-08T19:16:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2023-08-08T07:25:14+08:00</lastmod>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://aming.xyz/post/</loc>
-    <lastmod>2023-08-08T07:25:14+08:00</lastmod>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E4%B8%8D%E6%8B%98%E4%B8%80%E6%A0%BC/</loc>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%BD%91%E9%A3%9E/</loc>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E6%89%92%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2023-08-11T15:19:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%89%92%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2023-08-11T15:19:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2023-08-10T20:12:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E8%BE%93%E5%85%A5%E6%B3%95/</loc>
+    <lastmod>2023-08-10T20:12:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2023-08-10T06:14:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E7%AD%BE%E8%AF%81/</loc>
+    <lastmod>2023-08-10T06:14:15+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2023-08-08T21:06:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2023-08-08T21:06:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/</loc>
+    <lastmod>2023-08-08T19:50:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2023-08-08T19:50:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E4%BB%BB%E5%8A%A1/</loc>
+    <lastmod>2023-08-08T19:16:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F/</loc>
+    <lastmod>2023-08-08T19:07:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2/</loc>
+    <lastmod>2023-08-08T19:07:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/</loc>
-    <lastmod>2023-08-08T07:25:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/categories/hugo/</loc>
     <lastmod>2023-08-08T06:44:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -46,6 +165,20 @@
   <url>
     <loc>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2023-08-08T06:44:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/ahk/</loc>
+    <lastmod>2023-08-07T21:10:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2023-08-07T21:10:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -72,7 +205,28 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://aming.xyz/post/windows%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2/</loc>
+    <lastmod>2023-08-07T21:10:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E5%81%A5%E5%BA%B7/</loc>
+    <lastmod>2023-08-07T21:10:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2023-08-07T21:10:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E6%B9%BF%E7%96%B9%E8%B5%84%E6%96%99/</loc>
     <lastmod>2023-08-07T21:10:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -102,20 +256,6 @@
   <url>
     <loc>https://aming.xyz/post/%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%E6%AE%B5/</loc>
     <lastmod>2023-08-07T19:45:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/seven/</loc>
-    <lastmod>2023-07-26T19:48:36+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/seven/1/</loc>
-    <lastmod>2023-07-26T19:48:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -289,18 +429,66 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/readme/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/seven/3/</loc>
+    <loc>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://aming.xyz/seven/2/</loc>
+    <loc>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-ps-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4-%E6%90%9C%E7%B4%A2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/readme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/macbook%E8%BD%AF%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/macbook%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E5%9B%BD%E5%86%85%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E5%9B%BD%E5%A4%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

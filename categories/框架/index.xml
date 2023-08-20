@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>框架 on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/categories/%E6%A1%86%E6%9E%B6/</link>
+    <description>Recent content in 框架 on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Aug 2023 21:06:10 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JQuery使用方法</title>
+      <link>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 08 Aug 2023 21:06:10 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器</description>
+    </item>
+    
+  </channel>
+</rss>

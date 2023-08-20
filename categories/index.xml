@@ -6,7 +6,88 @@
     <description>Recent content in Categories on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Aug 2023 07:25:14 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 19:31:31 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网飞</title>
+      <link>https://aming.xyz/categories/%E7%BD%91%E9%A3%9E/</link>
+      <pubDate>Fri, 11 Aug 2023 19:31:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E7%BD%91%E9%A3%9E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读书</title>
+      <link>https://aming.xyz/categories/%E8%AF%BB%E4%B9%A6/</link>
+      <pubDate>Fri, 11 Aug 2023 19:31:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E8%AF%BB%E4%B9%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>扒网站</title>
+      <link>https://aming.xyz/categories/%E6%89%92%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Fri, 11 Aug 2023 15:19:38 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E6%89%92%E7%BD%91%E7%AB%99/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>输入法</title>
+      <link>https://aming.xyz/categories/%E8%BE%93%E5%85%A5%E6%B3%95/</link>
+      <pubDate>Thu, 10 Aug 2023 20:12:07 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>旅行</title>
+      <link>https://aming.xyz/categories/%E6%97%85%E8%A1%8C/</link>
+      <pubDate>Thu, 10 Aug 2023 06:14:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E6%97%85%E8%A1%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>框架</title>
+      <link>https://aming.xyz/categories/%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Tue, 08 Aug 2023 21:06:10 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程</title>
+      <link>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Tue, 08 Aug 2023 19:50:06 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>任务</title>
+      <link>https://aming.xyz/categories/%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E4%BB%BB%E5%8A%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>程序界面</title>
+      <link>https://aming.xyz/categories/%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2/</link>
+      <pubDate>Tue, 08 Aug 2023 19:07:54 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>前端</title>
       <link>https://aming.xyz/categories/%E5%89%8D%E7%AB%AF/</link>
@@ -26,6 +107,15 @@
     </item>
     
     <item>
+      <title>ahk</title>
+      <link>https://aming.xyz/categories/ahk/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/ahk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>vue</title>
       <link>https://aming.xyz/categories/vue/</link>
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
@@ -35,11 +125,20 @@
     </item>
     
     <item>
-      <title>编程</title>
-      <link>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</link>
+      <title>健康</title>
+      <link>https://aming.xyz/categories/%E5%81%A5%E5%BA%B7/</link>
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
-      <guid>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</guid>
+      <guid>https://aming.xyz/categories/%E5%81%A5%E5%BA%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>应用</title>
+      <link>https://aming.xyz/categories/%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/categories/%E5%BA%94%E7%94%A8/</guid>
       <description></description>
     </item>
     

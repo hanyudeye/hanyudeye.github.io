@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <h2>标题: <h1>{{title}}</h1>
+        </h2>
+        你好
+
+    </div>
+    <!-- Vue CDN - 提供 Vue 服务 -->
+    <script src="https://cdn.bootcss.com/vue/2.5.21/vue.js"></script>
+    <!-- Vue Router CDN - 管理路由 -->
+    <script src="https://cdn.bootcss.com/vue-router/3.0.2/vue-router.js"></script>
+    <!-- Axios CDN - 调用接口 -->
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.js"></script>
+    <script>
+
+     new Vue({
+         // 挂载目标，即渲染在哪个挂载点
+         el: '#app',
+         // 模板，即渲染到挂载点的内容
+         // 最外层必须有一层包裹，例如 <div>
+         template: `
+             <div>
+                 <p>Hello World</p>
+             </div>
+         `
+     })
+
+    </script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="阿明" /><meta name="description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象" /><meta name="keywords" content="阿明博客, 记录生活" />
+<meta name="author" content="阿明" /><meta name="description" content="JavaScript基础 类型转换 1 console.log(&amp;#39;A&amp;#39;.charCodeAt()) 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实" /><meta name="keywords" content="阿明博客, 记录生活" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="JavaScript教程" />
-<meta property="og:description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象" />
+<meta property="og:description" content="JavaScript基础 类型转换 1 console.log(&#39;A&#39;.charCodeAt()) 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/javascript%E6%95%99%E7%A8%8B/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-08-07T21:10:31+08:00" />
 <meta property="article:modified_time" content="2023-08-07T21:10:31+08:00" />
 
 <meta itemprop="name" content="JavaScript教程">
-<meta itemprop="description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象"><meta itemprop="datePublished" content="2023-08-07T21:10:31+08:00" />
+<meta itemprop="description" content="JavaScript基础 类型转换 1 console.log(&#39;A&#39;.charCodeAt()) 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实"><meta itemprop="datePublished" content="2023-08-07T21:10:31+08:00" />
 <meta itemprop="dateModified" content="2023-08-07T21:10:31+08:00" />
-<meta itemprop="wordCount" content="1069">
+<meta itemprop="wordCount" content="1075">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaScript教程"/>
-<meta name="twitter:description" content="JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象"/>
+<meta name="twitter:description" content="JavaScript基础 类型转换 1 console.log(&#39;A&#39;.charCodeAt()) 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -143,7 +143,16 @@
     
     <div class="post-content">
       <h2 id="javascript基础">JavaScript基础</h2>
-<h3 id="内置对象">内置对象</h3>
+<h3 id="类型转换">类型转换</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">())</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="内置对象">内置对象</h3>
 <ul>
 <li>Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce)</li>
 <li>Function( apply,bind,call)</li>
@@ -314,9 +323,9 @@ Origin &#39;null&#39; is therefore not allowed access.
 <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/">
+        <a class="prev" href="/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hugo的使用</span>
+            <span class="prev-text nav-default">AHK使用方法</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         <a class="next" href="/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">

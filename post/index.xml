@@ -6,7 +6,79 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Aug 2023 07:25:14 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Aug 2023 19:31:31 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TodoList 长远任务</title>
+      <link>https://aming.xyz/post/todo/</link>
+      <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/todo/</guid>
+      <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个</description>
+    </item>
+    
+    <item>
+      <title>《不拘一格》</title>
+      <link>https://aming.xyz/post/%E4%B8%8D%E6%8B%98%E4%B8%80%E6%A0%BC/</link>
+      <pubDate>Fri, 11 Aug 2023 19:31:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%B8%8D%E6%8B%98%E4%B8%80%E6%A0%BC/</guid>
+      <description>网飞的自由与责任工作法 提高人才密度 提高公司坦诚度 以积极的态度说出真实的想法 我们不喜欢但需要坦诚 无私的坦诚与不羁的天才 4A 反馈原则 减少管控</description>
+    </item>
+    
+    <item>
+      <title>扒网站</title>
+      <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%89%92%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Fri, 11 Aug 2023 15:19:38 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%89%92%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/</guid>
+      <description>如何扒一个网站 ArchiveBox工具 互联网存档解决方案，空间 用于收集、保存和查看要脱机保留的网站。 使用 adding links to archive archivebox add &amp;lsquo;https://example.com&amp;rsquo; # add URLs one at a time archivebox add &amp;lt; ~/Downloads/bookmarks.json</description>
+    </item>
+    
+    <item>
+      <title>emacs-rime的使用</title>
+      <link>https://aming.xyz/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Thu, 10 Aug 2023 20:12:07 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>当在Linux 环境下，无法输入中文输入法的时候，可以使用 emacs-rime ，作为一种选择，也是挺方便的。</description>
+    </item>
+    
+    <item>
+      <title>签证</title>
+      <link>https://aming.xyz/post/%E7%AD%BE%E8%AF%81/</link>
+      <pubDate>Thu, 10 Aug 2023 06:14:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%AD%BE%E8%AF%81/</guid>
+      <description>结交人群</description>
+    </item>
+    
+    <item>
+      <title>JQuery使用方法</title>
+      <link>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 08 Aug 2023 21:06:10 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器</description>
+    </item>
+    
+    <item>
+      <title>使用CSS创建图形组件</title>
+      <link>https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Tue, 08 Aug 2023 19:50:06 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/</guid>
+      <description>给HTML 元素着色 语法： 元素选择器 『着色属性』 选择符 标签选择器 属性选择器 代码 说明 [attribute=&amp;ldquo;value&amp;rdquo;] attribute值是value [attribute~=&amp;ldquo;value&amp;rdquo;] 有一个是value [attribute |= &amp;ldquo;value&amp;rdquo;]</description>
+    </item>
+    
+    <item>
+      <title>图形界面程序</title>
+      <link>https://aming.xyz/post/%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Tue, 08 Aug 2023 19:07:54 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F/</guid>
+      <description>图形界面程序的产生是为了改善计算机用户与计算机之间的交互体验。在早期的计算机系统中，用户需要通过命令行界面（CLI）来输入指令和参数来完成任</description>
+    </item>
+    
     <item>
       <title>前端组件</title>
       <link>https://aming.xyz/post/%E5%89%8D%E7%AB%AF%E7%BB%84%E4%BB%B6/</link>
@@ -26,12 +98,21 @@
     </item>
     
     <item>
+      <title>AHK使用方法</title>
+      <link>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <description>windows 下使用ahk 设置 i3wm 快捷键</description>
+    </item>
+    
+    <item>
       <title>JavaScript教程</title>
       <link>https://aming.xyz/post/javascript%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/javascript%E6%95%99%E7%A8%8B/</guid>
-      <description>JavaScript基础 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实现 实现 $对象</description>
+      <description>JavaScript基础 类型转换 1 console.log(&amp;#39;A&amp;#39;.charCodeAt()) 内置对象 Array (concat,fill,find,join,indexOf,pop,slice ,shift,sort,splice,resuce) Function( apply,bind,call) JSON Map Math (abs,ceil,floor,pow,round) Number Object RegExp Set String (chatAt ,concat,indexOf,lastIndexOf,search,slice,split,substring,toLowerCase,trim) JavaScript客户端 在客户端，全局变量都在 window 对象里面 JQuery 的实</description>
     </item>
     
     <item>
@@ -40,7 +121,25 @@
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路由) 实现页面间的参</description>
+      <description>vue 可以挂载界面元素 nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路</description>
+    </item>
+    
+    <item>
+      <title>Windows虚拟桌面</title>
+      <link>https://aming.xyz/post/windows%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/windows%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2/</guid>
+      <description>win10虚拟桌面 win + ctrl + d可以新建虚拟桌面； win + ctrl + ←或→在这些桌面之间切换； win + ctrl + F4关闭此桌面 win + tab显示所有桌面略缩图</description>
+    </item>
+    
+    <item>
+      <title>湿疹治疗</title>
+      <link>https://aming.xyz/post/%E6%B9%BF%E7%96%B9%E8%B5%84%E6%96%99/</link>
+      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E6%B9%BF%E7%96%B9%E8%B5%84%E6%96%99/</guid>
+      <description>保持皮肤湿润： 使用温和的保湿剂，如润肤霜或乳液，来帮助保持皮肤湿润。在洗完澡后尽快涂抹保湿剂以锁住水分。 保持空气湿度： 使用加湿器来保持室内空</description>
     </item>
     
     <item>
@@ -158,6 +257,96 @@
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E/</guid>
       <description>什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>一、工具箱快捷键 移动工具**【V】** 矩形、椭圆选框工具**【M】** 裁剪工具**【C】** 画笔工具**【B】** 橡皮图章、图案图章**【S</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>在 Adobe Photoshop 中，使用键盘快捷键可提高您的工作效率。 常用的快捷键 结果 Windows macOS 自由变换 Control + T Command + T 使用相同的画笔，在绘画与抹除操作之间切换 按住 ~（波形符）</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-ps-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4-%E6%90%9C%E7%B4%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-ps-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4-%E6%90%9C%E7%B4%A2/</guid>
+      <description>关闭 由红棉小冰提供的虚拟人类已唤醒，可以随时开始聊天啦 从对话框新建一个图层 【Ctrl】+【Shift】+【N】 以默认选项建立一个新的图层 【C</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>mac 版 PS 将 Ctrl 替换为 CMD 即可 一、文件 新建CTRL+N 打开CTRL+O 打开为ALT+CTRL+O 关闭CTRL+W 保存CTRL+S 另存为CTRL+SH</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>我们有时候一个工具想马上调用出来，这时候我们如果用了快捷方式的话，很快就可以调用，节省了我们大量的时间。 今天给大家整理了完整的ps快捷键 1、</description>
+    </item>
+    
+    <item>
+      <title>MacBook 软件</title>
+      <link>https://aming.xyz/post/macbook%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/macbook%E8%BD%AF%E4%BB%B6/</guid>
+      <description>iterm2 设置在任何界面呼出的快捷键 preference -&amp;gt; keys -&amp;gt;HotKey-&amp;gt;Create a Dedicated Hotkey Window</description>
+    </item>
+    
+    <item>
+      <title>MacBook键盘快捷键</title>
+      <link>https://aming.xyz/post/macbook%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/macbook%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>修饰键 修饰键+字符键 确定最终的快捷键 Command（或 Cmd）⌘ Shift ⇧ Option（或 Alt）⌥ Control（或 Ctrl）⌃ Caps Lock ⇪ Fn 剪切、拷</description>
+    </item>
+    
+    <item>
+      <title>国内的远程工作</title>
+      <link>https://aming.xyz/post/%E5%9B%BD%E5%86%85%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%9B%BD%E5%86%85%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>国外的远程工作</title>
+      <link>https://aming.xyz/post/%E5%9B%BD%E5%A4%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%9B%BD%E5%A4%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>程序员要学习的项目</title>
+      <link>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</guid>
+      <description>单机 文件系统 (现实中的物体) 应用程序 计算机 写字板 绘画板 网络 网络计算机 网络站点 网络绘画处理</description>
     </item>
     
   </channel>
