@@ -9,14 +9,28 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
+    <loc>https://aming.xyz/post/</loc>
+    <lastmod>2023-08-21T07:25:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/</loc>
+    <loc>https://aming.xyz/post/%E7%A9%B7%E5%9B%B0/</loc>
+    <lastmod>2023-08-21T07:25:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/</loc>
+    <lastmod>2023-08-21T07:25:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/</loc>
     <lastmod>2023-08-11T19:31:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -38,13 +52,6 @@
   
   <url>
     <loc>https://aming.xyz/categories/%E8%AF%BB%E4%B9%A6/</loc>
-    <lastmod>2023-08-11T19:31:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/</loc>
     <lastmod>2023-08-11T19:31:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
