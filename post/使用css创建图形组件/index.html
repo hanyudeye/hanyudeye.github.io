@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/" />
@@ -33,7 +33,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 <link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
@@ -45,11 +45,10 @@
 <meta property="og:url" content="https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-08-08T19:50:06+08:00" />
 <meta property="article:modified_time" content="2023-08-08T19:50:06+08:00" />
-
 <meta itemprop="name" content="使用CSS创建图形组件">
 <meta itemprop="description" content="给HTML 元素着色 语法： 元素选择器 『着色属性』 选择符 标签选择器 属性选择器 代码 说明 [attribute=&ldquo;value&rdquo;] attribute值是value [attribute~=&ldquo;value&rdquo;] 有一个是value [attribute |= &ldquo;value&rdquo;]"><meta itemprop="datePublished" content="2023-08-08T19:50:06+08:00" />
 <meta itemprop="dateModified" content="2023-08-08T19:50:06+08:00" />
-<meta itemprop="wordCount" content="3961">
+<meta itemprop="wordCount" content="3957">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="使用CSS创建图形组件"/>
 <meta name="twitter:description" content="给HTML 元素着色 语法： 元素选择器 『着色属性』 选择符 标签选择器 属性选择器 代码 说明 [attribute=&ldquo;value&rdquo;] attribute值是value [attribute~=&ldquo;value&rdquo;] 有一个是value [attribute |= &ldquo;value&rdquo;]"/>
@@ -77,14 +76,10 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
+    <a href="/categories/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
@@ -108,13 +103,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/categories/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
@@ -136,7 +127,9 @@
         <div class="post-category">
             <a href="/categories/%E7%BC%96%E7%A8%8B/"> 编程 </a>
             </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 3957 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        
       </div>
     </header>
 
@@ -319,12 +312,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css">  <span class="nt">-webkit-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
-  <span class="nt">-moz-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
-  <span class="nt">-ms-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
-  <span class="nt">-o-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
-  <span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">  <span class="nt">-webkit-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">-moz-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">-ms-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">-o-box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">box-sizing</span><span class="o">:</span> <span class="nt">border-box</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>使 width ,height 包含 padding,border 边框</p>
@@ -353,7 +346,7 @@
 <h3 id="背景">背景</h3>
 <ul>
 <li>background-color</li>
-<li>background-image:url('')</li>
+<li>background-image:url(&rsquo;')</li>
 </ul>
 <h4 id="渐变背景">渐变背景</h4>
 <p>background-image: linear-gradient(direction, color-stop1, color-stop2, &hellip;);</p>
@@ -367,45 +360,41 @@
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 从上到下，蓝色渐变到红色 */</span>
-<span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
-<span class="c">/* 渐变轴为45度，从蓝色渐变到红色 */</span>
-<span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">45deg</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
-<span class="c">/* 从右下到左上、从蓝色渐变到红色 */</span>
-<span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">to</span> <span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
-<span class="c">/* 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 */</span>
-<span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">0deg</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">green</span> <span class="nt">40</span><span class="o">%,</span> <span class="nt">red</span><span class="o">);</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 从上到下，蓝色渐变到红色 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 渐变轴为45度，从蓝色渐变到红色 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">45deg</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 从右下到左上、从蓝色渐变到红色 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">to</span> <span class="nt">left</span> <span class="nt">top</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">red</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">0deg</span><span class="o">,</span> <span class="nt">blue</span><span class="o">,</span> <span class="nt">green</span> <span class="nt">40</span><span class="o">%,</span> <span class="nt">red</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span><span class="p">{</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-  <span class="k">background</span><span class="p">:</span> <span class="mh">#63c0e1</span><span class="p">;</span>
-  <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">-150</span><span class="kt">deg</span><span class="p">,</span> <span class="mh">#4ad8c3</span><span class="p">,</span> <span class="mh">#83a2f1</span><span class="p">);</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
-  <span class="k">align-items</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">body</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#63c0e1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">-150</span><span class="kt">deg</span><span class="p">,</span> <span class="mh">#4ad8c3</span><span class="p">,</span> <span class="mh">#83a2f1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">align-items</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="多背景">多背景</h4>
 <p>background: url() left top no-repeat ,url() right bottom no-repeat;</p>
@@ -521,10 +510,10 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>行内元素也可以使用 Flex 布局。</p>
 <div class="highlight"><div class="chroma">
@@ -534,10 +523,10 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-flex</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Webkit 内核的浏览器，必须加上 =-webkit=前缀。</p>
 <div class="highlight"><div class="chroma">
@@ -546,15 +535,13 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kp">-webkit-</span><span class="kc">flex</span><span class="p">;</span> <span class="c">/* Safari */</span>
-  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
-<span class="p">}</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">box</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kp">-webkit-</span><span class="kc">flex</span><span class="p">;</span> <span class="c">/* Safari */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="容器的属性">容器的属性</h4>
 <p>以下6个属性设置在容器上。</p>
@@ -595,21 +582,21 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 设置 Flex 模式 */</span>
-<span class="nt">display</span><span class="o">:</span> <span class="nt">flex</span><span class="o">;</span>
-<span class="c">/* 决定元素是横排还是竖着排，要不要倒序 */</span>
-<span class="nt">flex-direction</span><span class="o">:</span> <span class="nt">column</span><span class="o">;</span>
-<span class="c">/* 决定元素换行格式，一行排不下的时候如何排 */</span>
-<span class="nt">flex-wrap</span><span class="o">:</span> <span class="nt">wrap</span><span class="o">;</span>
-<span class="c">/* flex-flow = flex-direction + flex-wrap */</span>
-<span class="nt">flex-flow</span><span class="o">:</span> <span class="nt">column</span> <span class="nt">wrap</span><span class="o">;</span>
-<span class="c">/* 同一排下对齐方式，空格如何隔开各个元素 */</span>
-<span class="nt">justify-content</span><span class="o">:</span> <span class="nt">space-between</span><span class="o">;</span>
-<span class="c">/* 同一排下元素如何对齐，顶部对齐、中部对齐还是其他 */</span>
-<span class="nt">align-items</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span>
-<span class="c">/* 多行对齐方式 */</span>
-<span class="nt">align-content</span><span class="o">:</span> <span class="nt">space-between</span><span class="o">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 设置 Flex 模式 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">display</span><span class="o">:</span> <span class="nt">flex</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 决定元素是横排还是竖着排，要不要倒序 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">flex-direction</span><span class="o">:</span> <span class="nt">column</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 决定元素换行格式，一行排不下的时候如何排 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">flex-wrap</span><span class="o">:</span> <span class="nt">wrap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* flex-flow = flex-direction + flex-wrap */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">flex-flow</span><span class="o">:</span> <span class="nt">column</span> <span class="nt">wrap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 同一排下对齐方式，空格如何隔开各个元素 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">justify-content</span><span class="o">:</span> <span class="nt">space-between</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 同一排下元素如何对齐，顶部对齐、中部对齐还是其他 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">align-items</span><span class="o">:</span> <span class="nt">center</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 多行对齐方式 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">align-content</span><span class="o">:</span> <span class="nt">space-between</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="定义要引入的网络字体-注意版权">定义要引入的网络字体 (注意版权)</h3>
 <div class="highlight"><div class="chroma">
@@ -620,11 +607,11 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">font-face</span><span class="p">{</span>
-<span class="nt">font-family</span><span class="p">:</span><span class="nd">Calibri</span><span class="o">;</span>
-<span class="nt">src</span><span class="p">:</span><span class="nd">url</span><span class="o">(</span><span class="nt">http</span><span class="o">://</span><span class="nt">www</span><span class="p">.</span><span class="nc">examples</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">Calibri</span><span class="p">.</span><span class="nc">ttf</span><span class="o">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">@</span><span class="k">font-face</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">font-family</span><span class="p">:</span><span class="nd">Calibri</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">src</span><span class="p">:</span><span class="nd">url</span><span class="o">(</span><span class="nt">http</span><span class="o">://</span><span class="nt">www</span><span class="p">.</span><span class="nc">examples</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">fonts</span><span class="o">/</span><span class="nt">Calibri</span><span class="p">.</span><span class="nc">ttf</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="媒体查询-根据不同设备适配不同样式">媒体查询 (根据不同设备适配不同样式)</h3>
 <div class="highlight"><div class="chroma">
@@ -642,32 +629,30 @@ box-shadow: h-shadow v-shadow blur spread color inset;</li>
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"> <span class="p">.</span><span class="nc">my-class</span> <span class="p">{</span>
-   <span class="k">width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
- <span class="p">}</span>
-
- <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
-   <span class="c">/* 仅在 480px 或更宽的屏幕上生效的样式规则 */</span>
-   <span class="p">.</span><span class="nc">my-class</span> <span class="p">{</span>
-     <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
-   <span class="p">}</span>
- <span class="p">}</span>
- 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="p">.</span><span class="nc">my-class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="k">width</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="c">/* 仅在 480px 或更宽的屏幕上生效的样式规则 */</span>
+</span></span><span class="line"><span class="cl">   <span class="p">.</span><span class="nc">my-class</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">     <span class="k">width</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css">    <span class="p">@</span><span class="k">media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">800px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
-      <span class="o">...;</span>
-    <span class="p">}</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">    <span class="p">@</span><span class="k">media</span> <span class="nt">all</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">800px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="o">...;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="定义变换-transform">定义变换 transform</h3>
 <ul>
@@ -702,9 +687,9 @@ div:hover{width:300px;}</p>
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span> <span class="p">/&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&#34;</span> <span class="p">/&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&#34;</span> <span class="p">/&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>
@@ -738,14 +723,14 @@ div:hover{width:300px;}</p>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/*1.强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行*/</span>
-<span class="nt">white-space</span><span class="o">:</span> <span class="nt">nowrap</span><span class="o">;</span>
-<span class="c">/* 2. 超出的部分 隐藏*/</span>
-<span class="nt">overflow</span><span class="o">:</span> <span class="nt">hidden</span><span class="o">;</span> 
-<span class="c">/* 3. 溢出的部分用省略号替代*/</span>
-<span class="nt">text-overflow</span><span class="o">:</span> <span class="nt">ellipsis</span><span class="o">;</span> 
-<span class="c">/* 以上3个步骤一个都不能少*/</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/*1.强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行*/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">white-space</span><span class="o">:</span> <span class="nt">nowrap</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 2. 超出的部分 隐藏*/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">overflow</span><span class="o">:</span> <span class="nt">hidden</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl"><span class="c">/* 3. 溢出的部分用省略号替代*/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">text-overflow</span><span class="o">:</span> <span class="nt">ellipsis</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl"><span class="c">/* 以上3个步骤一个都不能少*/</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="css中添加-文本内容-content">CSS中添加 文本内容 content</h3>
 <div class="highlight"><div class="chroma">
@@ -761,16 +746,16 @@ div:hover{width:300px;}</p>
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">q</span> <span class="p">{</span>
-    <span class="k">color</span><span class="p">:</span> <span class="mh">#00008B</span><span class="p">;</span>
-    <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">q</span><span class="p">::</span><span class="nd">before</span>   <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="kc">open-quote</span> <span class="p">}</span>
-<span class="nt">q</span><span class="p">::</span><span class="nd">after</span>    <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="kc">close-quote</span> <span class="p">}</span>
-
-<span class="nt">h1</span><span class="p">::</span><span class="nd">before</span>  <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;Chapter &#34;</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">q</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="mh">#00008B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-style</span><span class="p">:</span> <span class="kc">italic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">q</span><span class="p">::</span><span class="nd">before</span>   <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="kc">open-quote</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">q</span><span class="p">::</span><span class="nd">after</span>    <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="kc">close-quote</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">h1</span><span class="p">::</span><span class="nd">before</span>  <span class="p">{</span> <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;Chapter &#34;</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="灰度">灰度</h3>
 <p>filter: blur(px);模糊度
@@ -790,15 +775,15 @@ filter: drop-shadow(px px px green);阴影</p>
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- select外面必须包裹一个div,用来覆盖select原有的样式 --&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34; &#34;</span><span class="p">&gt;</span>筛选实验类型<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;实验1&#34;</span><span class="p">&gt;</span>实验1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;实验2&#34;</span><span class="p">&gt;</span>实验2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- select外面必须包裹一个div,用来覆盖select原有的样式 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34; &#34;</span><span class="p">&gt;</span>筛选实验类型<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;实验1&#34;</span><span class="p">&gt;</span>实验1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;实验2&#34;</span><span class="p">&gt;</span>实验2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -846,49 +831,49 @@ filter: drop-shadow(px px px green);阴影</p>
 </span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">option</span><span class="p">{</span>
-<span class="c">/*用div的样式代替select的样式*/</span>
-    <span class="k">margin</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
-   <span class="k">width</span><span class="p">:</span> <span class="mi">140</span><span class="kt">px</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-    <span class="c">/*border-radius: 5px;*/</span>
-  <span class="c">/*盒子阴影修饰作用,自己随意*/</span>
- <span class="c">/* box-shadow: 0 0 5px #ccc;*/</span>
-    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#cccccc</span><span class="p">;</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">option</span> <span class="nt">select</span><span class="p">{</span>
-  <span class="c">/*清除select的边框样式*/</span>
-  <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-  <span class="c">/*清除select聚焦时候的边框颜色*/</span>
-  <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-  <span class="c">/*将select的宽高等于div的宽高*/</span>
-  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-    <span class="k">height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-    <span class="k">line-height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-  <span class="c">/*隐藏select的下拉图标*/</span>
-  <span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="kp">-webkit-</span><span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="kp">-moz-</span><span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-  <span class="c">/*通过padding-left的值让文字居中*/</span>
-  <span class="k">padding-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-  <span class="p">}</span>
-
-<span class="c">/*使用伪类给select添加自己想用的图标*/</span>
-  <span class="p">.</span><span class="nc">option</span><span class="p">:</span><span class="nd">after</span><span class="p">{</span>
-      <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
-      <span class="k">width</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">height</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../assets/arrow-down.png</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">center</span><span class="p">;</span>
-    <span class="c">/*通过定位将图标放在合适的位置*/</span>
-    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-      <span class="k">right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-      <span class="k">top</span><span class="p">:</span> <span class="mi">41</span><span class="kt">%</span><span class="p">;</span>
-    <span class="c">/*给自定义的图标实现点击下来功能*/</span>
-    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">option</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="c">/*用div的样式代替select的样式*/</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   <span class="k">width</span><span class="p">:</span> <span class="mi">140</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/*border-radius: 5px;*/</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*盒子阴影修饰作用,自己随意*/</span>
+</span></span><span class="line"><span class="cl"> <span class="c">/* box-shadow: 0 0 5px #ccc;*/</span>
+</span></span><span class="line"><span class="cl">    <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#cccccc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">option</span> <span class="nt">select</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*清除select的边框样式*/</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*清除select聚焦时候的边框颜色*/</span>
+</span></span><span class="line"><span class="cl">  <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*将select的宽高等于div的宽高*/</span>
+</span></span><span class="line"><span class="cl">  <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">line-height</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*隐藏select的下拉图标*/</span>
+</span></span><span class="line"><span class="cl">  <span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-webkit-</span><span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kp">-moz-</span><span class="k">appearance</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/*通过padding-left的值让文字居中*/</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding-left</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/*使用伪类给select添加自己想用的图标*/</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nc">option</span><span class="p">:</span><span class="nd">after</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">height</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">../assets/arrow-down.png</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/*通过定位将图标放在合适的位置*/</span>
+</span></span><span class="line"><span class="cl">    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">right</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">top</span><span class="p">:</span> <span class="mi">41</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/*给自定义的图标实现点击下来功能*/</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pointer-events</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="颜色">颜色</h2>
 <table class="dataintable">
@@ -1500,21 +1485,6 @@ filter: drop-shadow(px px px green);阴影</p>
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -1525,6 +1495,7 @@ filter: drop-shadow(px px px green);阴影</p>
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -1538,11 +1509,7 @@ filter: drop-shadow(px px px green);阴影</p>
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -1564,7 +1531,7 @@ filter: drop-shadow(px px px green);阴影</p>
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {

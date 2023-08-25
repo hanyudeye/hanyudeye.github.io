@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" />
@@ -33,7 +33,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 <link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
@@ -45,11 +45,10 @@
 <meta property="og:url" content="https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-08-08T21:06:10+08:00" />
 <meta property="article:modified_time" content="2023-08-08T21:06:10+08:00" />
-
 <meta itemprop="name" content="JQuery使用方法">
 <meta itemprop="description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器"><meta itemprop="datePublished" content="2023-08-08T21:06:10+08:00" />
 <meta itemprop="dateModified" content="2023-08-08T21:06:10+08:00" />
-<meta itemprop="wordCount" content="3329">
+<meta itemprop="wordCount" content="3328">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JQuery使用方法"/>
 <meta name="twitter:description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器"/>
@@ -77,14 +76,10 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
+    <a href="/categories/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
@@ -108,13 +103,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/categories/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
@@ -136,7 +127,9 @@
         <div class="post-category">
             <a href="/categories/%E6%A1%86%E6%9E%B6/"> 框架 </a>
             </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 3328 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
+        
       </div>
     </header>
 
@@ -209,19 +202,19 @@
 <td>属于其父元素的最后一个 <p> 元素的所有 <p> 元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;p:nth-child(2)&quot;)</td>
+<td>$(&ldquo;p:nth-child(2)&rdquo;)</td>
 <td>属于其父元素的第二个子元素的所有 <p> 元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;p:nth-last-child(2)&quot;)</td>
+<td>$(&ldquo;p:nth-last-child(2)&rdquo;)</td>
 <td>属于其父元素的第二个子元素的所有 <p> 元素，从最后一个子元素开始计数</td>
 </tr>
 <tr>
-<td>$(&ldquo;p:nth-of-type(2)&quot;)</td>
+<td>$(&ldquo;p:nth-of-type(2)&rdquo;)</td>
 <td>属于其父元素的第二个 <p> 元素的所有 <p> 元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;p:nth-last-of-type(2)&quot;)</td>
+<td>$(&ldquo;p:nth-last-of-type(2)&rdquo;)</td>
 <td>属于其父元素的第二个 <p> 元素的所有 <p> 元素，从最后一个子元素开始计数</td>
 </tr>
 <tr>
@@ -257,19 +250,19 @@
 <td></td>
 </tr>
 <tr>
-<td>$(&ldquo;ul li:eq(3)&quot;)</td>
+<td>$(&ldquo;ul li:eq(3)&rdquo;)</td>
 <td>列表中的第四个元素（index 值从 0 开始）</td>
 </tr>
 <tr>
-<td>$(&ldquo;ul li:gt(3)&quot;)</td>
+<td>$(&ldquo;ul li:gt(3)&rdquo;)</td>
 <td>列举 index 大于 3 的元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;ul li:lt(3)&quot;)</td>
+<td>$(&ldquo;ul li:lt(3)&rdquo;)</td>
 <td>列举 index 小于 3 的元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;input:not(:empty)&quot;)</td>
+<td>$(&ldquo;input:not(:empty)&rdquo;)</td>
 <td>所有不为空的输入元素</td>
 </tr>
 <tr>
@@ -277,15 +270,15 @@
 <td></td>
 </tr>
 <tr>
-<td>$(&quot;:header&rdquo;)</td>
+<td>$(&quot;:header&quot;)</td>
 <td>所有标题元素 <h1>, <h2> &hellip;</td>
 </tr>
 <tr>
-<td>$(&quot;:animated&rdquo;)</td>
+<td>$(&quot;:animated&quot;)</td>
 <td>所有动画元素</td>
 </tr>
 <tr>
-<td>$(&quot;:focus&rdquo;)</td>
+<td>$(&quot;:focus&quot;)</td>
 <td>当前具有焦点的元素</td>
 </tr>
 <tr>
@@ -293,15 +286,15 @@
 <td>所有包含文本 &ldquo;Hello&rdquo; 的元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;div:has(p)&quot;)</td>
+<td>$(&ldquo;div:has(p)&rdquo;)</td>
 <td>所有包含有 <p> 元素在其内的 <div> 元素</td>
 </tr>
 <tr>
-<td>$(&quot;:empty&rdquo;)</td>
+<td>$(&quot;:empty&quot;)</td>
 <td>所有空元素</td>
 </tr>
 <tr>
-<td>$(&quot;:parent&rdquo;)</td>
+<td>$(&quot;:parent&quot;)</td>
 <td>匹配所有含有子元素或者文本的父元素。</td>
 </tr>
 <tr>
@@ -313,11 +306,11 @@
 <td>所有可见的表格</td>
 </tr>
 <tr>
-<td>$(&quot;:root&rdquo;)</td>
+<td>$(&quot;:root&quot;)</td>
 <td>文档的根元素</td>
 </tr>
 <tr>
-<td>$(&ldquo;p:lang(de)&quot;)</td>
+<td>$(&ldquo;p:lang(de)&rdquo;)</td>
 <td>所有 lang 属性值为 &ldquo;de&rdquo; 的 <p> 元素</td>
 </tr>
 <tr>
@@ -337,7 +330,7 @@
 <td>所有带有 href 属性且值不等于 &ldquo;default.htm&rdquo; 的元素</td>
 </tr>
 <tr>
-<td>$(&quot;[href$='.jpg']&quot;)</td>
+<td>$(&quot;[href$=&rsquo;.jpg&rsquo;]&quot;)</td>
 <td>所有带有 href 属性且值以 &ldquo;.jpg&rdquo; 结尾的元素</td>
 </tr>
 <tr>
@@ -357,19 +350,19 @@
 <td></td>
 </tr>
 <tr>
-<td>$(&quot;:input&rdquo;)</td>
+<td>$(&quot;:input&quot;)</td>
 <td>所有 input 元素</td>
 </tr>
 <tr>
-<td>$(&quot;:text&rdquo;)</td>
+<td>$(&quot;:text&quot;)</td>
 <td>所有带有 type=&ldquo;text&rdquo; 的 input 元素</td>
 </tr>
 <tr>
-<td>$(&quot;:password&rdquo;)</td>
+<td>$(&quot;:password&quot;)</td>
 <td>所有带有 type=&ldquo;password&rdquo; 的 input 元素</td>
 </tr>
 <tr>
-<td>$(&quot;:radio&rdquo;)</td>
+<td>$(&quot;:radio&quot;)</td>
 <td>所有带有 type=&ldquo;radio&rdquo; 的 input 元素</td>
 </tr>
 <tr>
@@ -623,21 +616,21 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-  <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/addressInfo&#39;</span><span class="p">,</span>
-  <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
-  <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
-  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
-  <span class="nx">addressName</span><span class="o">:</span> <span class="nx">$serA</span>
-<span class="p">}</span>
-<span class="p">}).</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
-<span class="p">}).</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;error&#34;</span><span class="p">);</span>
-<span class="p">}).</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;complete&#34;</span><span class="p">);</span>
-<span class="p">});</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/addressInfo&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">addressName</span><span class="o">:</span> <span class="nx">$serA</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;error&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;complete&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>或</p>
 <div class="highlight"><div class="chroma">
@@ -658,27 +651,25 @@
 </span><span class="lnt">14
 </span><span class="lnt">15
 </span><span class="lnt">16
-</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-    <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/olduser/up&#39;</span><span class="p">,</span>
-    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
-    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
-    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
-    <span class="nx">userName</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
-    <span class="nx">adsl</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span>
-  <span class="p">},</span>
-  <span class="nx">success</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&#34;&amp;adsl=&#34;</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">alert</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">msg</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">})</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/olduser/up&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">userName</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">adsl</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">success</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&#34;&amp;adsl=&#34;</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">alert</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">msg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="jsonp">JSONP</h3>
 <p>跨域读取数据，请用 JSONP。</p>
@@ -700,18 +691,18 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js">
- <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&#34;http://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="s1">&#39;&lt;ul&gt;&#39;</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-          <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;li&gt;&#39;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/ul&gt;&#39;</span><span class="p">;</span>
-
-        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#divCustomers&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
-      <span class="p">});</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&#34;http://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="s1">&#39;&lt;ul&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;li&gt;&#39;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/ul&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#divCustomers&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="插件扩展">插件扩展</h2>
 <h3 id="jquery-validate">jQuery Validate</h3>
@@ -748,21 +739,6 @@
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -773,6 +749,7 @@
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -786,11 +763,7 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -812,7 +785,7 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {

@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="阿明" /><meta name="description" content="vue 可以挂载界面元素 nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路" /><meta name="keywords" content="阿明博客, 记录生活" />
+<meta name="author" content="阿明" /><meta name="description" content="Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的" /><meta name="keywords" content="阿明博客, 记录生活" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" />
@@ -33,26 +33,25 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 <link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
 <meta property="og:title" content="vue2使用方法" />
-<meta property="og:description" content="vue 可以挂载界面元素 nvm NVM, 全名为&quot;Node Version Manager&quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路" />
+<meta property="og:description" content="Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-08-07T21:10:31+08:00" />
 <meta property="article:modified_time" content="2023-08-07T21:10:31+08:00" />
-
 <meta itemprop="name" content="vue2使用方法">
-<meta itemprop="description" content="vue 可以挂载界面元素 nvm NVM, 全名为&quot;Node Version Manager&quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路"><meta itemprop="datePublished" content="2023-08-07T21:10:31+08:00" />
+<meta itemprop="description" content="Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的"><meta itemprop="datePublished" content="2023-08-07T21:10:31+08:00" />
 <meta itemprop="dateModified" content="2023-08-07T21:10:31+08:00" />
-<meta itemprop="wordCount" content="4879">
+<meta itemprop="wordCount" content="5569">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vue2使用方法"/>
-<meta name="twitter:description" content="vue 可以挂载界面元素 nvm NVM, 全名为&quot;Node Version Manager&quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路"/>
+<meta name="twitter:description" content="Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -77,14 +76,10 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
+    <a href="/categories/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
@@ -108,13 +103,9 @@
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/categories/">归纳</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
+        <a class="menu-item-link" href=""></a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
@@ -136,13 +127,41 @@
         <div class="post-category">
             <a href="/categories/vue/"> vue </a>
             </div>
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+          <span class="more-meta"> 约 5569 字 </span>
+          <span class="more-meta"> 预计阅读 12 分钟 </span>
+        
       </div>
     </header>
 
     
     <div class="post-content">
-      <p>vue 可以挂载界面元素</p>
+      <p>Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的组件、响应式数据绑定和简化的开发流程来帮助开发者构建高效、灵活的 Web 应用程序。</p>
+<p>以下是 Vue.js 的一些核心特点和概念：</p>
+<ol>
+<li>
+<p><strong>组件化：</strong> Vue.js 强调组件化开发，将页面分解成多个可复用的组件。每个组件包含自己的模板、逻辑和样式，可以嵌套在其他组件中，从而构建复杂的界面。</p>
+</li>
+<li>
+<p><strong>响应式数据绑定：</strong> Vue.js 提供了响应式数据绑定机制，即数据的变化会自动反映在视图上，无需手动更新 DOM。这使得开发者可以更轻松地管理和更新界面上的数据。</p>
+</li>
+<li>
+<p><strong>指令：</strong> Vue.js 的指令是特殊的 HTML 属性，用于实现 DOM 操作和界面交互。常见的指令有 <code>v-bind</code>（用于绑定属性）、<code>v-model</code>（用于双向数据绑定）、<code>v-for</code>（用于循环渲染）、<code>v-if</code>（条件渲染）等。</p>
+</li>
+<li>
+<p><strong>模板语法：</strong> Vue.js 使用了一种类似于 HTML 的模板语法，用于声明组件的视图结构。模板中可以嵌入 JavaScript 表达式，从而实现动态内容渲染。</p>
+</li>
+<li>
+<p><strong>事件处理：</strong> Vue.js 允许开发者在模板中绑定事件处理函数，实现用户与界面的交互。通过 <code>v-on</code> 指令，可以监听 DOM 事件并触发相应的方法。</p>
+</li>
+<li>
+<p><strong>过渡和动画：</strong> Vue.js 提供了过渡和动画的支持，可以在元素进入或离开 DOM 时应用动画效果，提升用户体验。</p>
+</li>
+<li>
+<p><strong>插件扩展：</strong> Vue.js 可以通过插件扩展功能，从而集成第三方库、工具和附加功能。</p>
+</li>
+</ol>
+<p>Vue.js 的设计理念注重灵活性和逐步采用，开发者可以在现有项目中逐步引入 Vue.js，也可以使用 Vue CLI（命令行界面工具）来快速搭建和管理项目。</p>
+<p>总之，Vue.js 是一个轻量级、易学易用且功能强大的前端框架，适用于构建现代化的交互式 Web 应用程序。它的文档详细且友好，社区活跃，因此受到了广泛的开发者欢迎。</p>
 <h2 id="nvm">nvm</h2>
 <p>NVM, 全名为&quot;Node Version Manager&quot;, 是非常好用的Node版本管理器。</p>
 <ol>
@@ -163,11 +182,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">在Vuejs中创建页面需要两步：
-
-1. 新建路由
-2. 新建vue页面
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">在Vuejs中创建页面需要两步：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. 新建路由
+</span></span><span class="line"><span class="cl">2. 新建vue页面
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="使用">使用</h2>
 <h3 id="载入">载入</h3>
@@ -176,8 +195,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/vue/2.5.21/vue.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.bootcss.com/vue/2.5.21/vue.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="webpack">webpack</h3>
 <div class="highlight"><div class="chroma">
@@ -185,8 +204,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm i @vue/cli -g
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm i @vue/cli -g
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="指令">指令</h2>
 <blockquote>
@@ -391,10 +410,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- TodoList.vue
-|- TodoItem.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- TodoList.vue
+</span></span><span class="line"><span class="cl">|- TodoItem.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 3</strong>. <strong>单文件组件的文件名应该要么始终是单词大写开头 <code>PascalCase</code>，要么始终是横线连接 <code>kebab-case</code></strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -408,14 +427,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- MyComponent.vue
-
-或者
-
-components/
-|- my-component.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- MyComponent.vue
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- my-component.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 4</strong>. <strong>基础文件名，即应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 <code>Base</code>、<code>App</code> 或 <code>V</code></strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -433,18 +452,18 @@ components/
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- BaseButton.vue
-|- BaseTable.vue
-|- BaseIcon.vue
-
-或者
-
-components/
-|- VButton.vue
-|- VTable.vue
-|- VIcon.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- BaseButton.vue
+</span></span><span class="line"><span class="cl">|- BaseTable.vue
+</span></span><span class="line"><span class="cl">|- BaseIcon.vue
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">或者
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- VButton.vue
+</span></span><span class="line"><span class="cl">|- VTable.vue
+</span></span><span class="line"><span class="cl">|- VIcon.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 5</strong>. <strong>如果某个组件，像菜单栏、左侧菜单一样，全局中只拥有一个，那就以 <code>The</code> 前缀命名</strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -454,10 +473,10 @@ components/
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- TheHeading.vue
-|- TheSidebar.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- TheHeading.vue
+</span></span><span class="line"><span class="cl">|- TheSidebar.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 6</strong>. <strong>和父组件紧密耦合的子组件应该以父组件名作为前缀命名</strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -468,11 +487,11 @@ components/
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- TodoList.vue
-|- TodoListItem.vue
-|- TodoListItemButton.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- TodoList.vue
+</span></span><span class="line"><span class="cl">|- TodoListItem.vue
+</span></span><span class="line"><span class="cl">|- TodoListItemButton.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 7</strong>. <strong>组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾；并且组件名应该倾向于完整单词而不是缩写</strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -496,24 +515,24 @@ components/
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">components/
-|- SearchButtonClear.vue
-|- SearchButtonRun.vue
-|- SearchInputQuery.vue
-|- SearchInputExcludeGlob.vue
-|- SettingsCheckboxTerms.vue
-|- SettingsCheckboxLaunchOnStartup.vue
-
-而不是
-
-components/
-|- ClearSearchButton.vue
-|- ExcFromSearchInput.vue
-|- LaunchOnStartupCheckbox.vue
-|- RunSearchButton.vue
-|- SearchInput.vue
-|- TermsCheckbox.vue
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- SearchButtonClear.vue
+</span></span><span class="line"><span class="cl">|- SearchButtonRun.vue
+</span></span><span class="line"><span class="cl">|- SearchInputQuery.vue
+</span></span><span class="line"><span class="cl">|- SearchInputExcludeGlob.vue
+</span></span><span class="line"><span class="cl">|- SettingsCheckboxTerms.vue
+</span></span><span class="line"><span class="cl">|- SettingsCheckboxLaunchOnStartup.vue
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而不是
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">components/
+</span></span><span class="line"><span class="cl">|- ClearSearchButton.vue
+</span></span><span class="line"><span class="cl">|- ExcFromSearchInput.vue
+</span></span><span class="line"><span class="cl">|- LaunchOnStartupCheckbox.vue
+</span></span><span class="line"><span class="cl">|- RunSearchButton.vue
+</span></span><span class="line"><span class="cl">|- SearchInput.vue
+</span></span><span class="line"><span class="cl">|- TermsCheckbox.vue
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="全局规范">全局规范</h2>
 <p><strong>知识点 1</strong>. <strong>尽量别在组件模板中使用 JS 来 bb 套太多话语，毕竟 HTML 就尽量让它做 HTML 该有的事；更好的分类能使代码更加简洁易懂；并且将组件模板中多特性的元素分多行来写，看起来会更舒服点</strong>。例如：</p>
@@ -547,35 +566,35 @@ components/
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">|- HTML
-&lt;img
-  src=&#34;https://vuejs.org/images/logo.png&#34;
-  alt=&#34;Vue Logo&#34;
-&gt;
-{{ normalizedFullName }}
-
-
-|- JS
-// 复杂表达式已经移入一个计算属性
-computed: {
-  normalizedFullName: function () {
-    return this.fullName.split(&#39; &#39;).map(function (word) {
-      return word[0].toUpperCase() + word.slice(1)
-    }).join(&#39; &#39;)
-  }
-}
-
-而不是
-
-|- HTML
-{{
-  fullName.split(&#39; &#39;).map(function (word) {
-    return word[0].toUpperCase() + word.slice(1)
-  }).join(&#39; &#39;)
-}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">|- HTML
+</span></span><span class="line"><span class="cl">&lt;img
+</span></span><span class="line"><span class="cl">  src=&#34;https://vuejs.org/images/logo.png&#34;
+</span></span><span class="line"><span class="cl">  alt=&#34;Vue Logo&#34;
+</span></span><span class="line"><span class="cl">&gt;
+</span></span><span class="line"><span class="cl">{{ normalizedFullName }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">|- JS
+</span></span><span class="line"><span class="cl">// 复杂表达式已经移入一个计算属性
+</span></span><span class="line"><span class="cl">computed: {
+</span></span><span class="line"><span class="cl">  normalizedFullName: function () {
+</span></span><span class="line"><span class="cl">    return this.fullName.split(&#39; &#39;).map(function (word) {
+</span></span><span class="line"><span class="cl">      return word[0].toUpperCase() + word.slice(1)
+</span></span><span class="line"><span class="cl">    }).join(&#39; &#39;)
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而不是
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">|- HTML
+</span></span><span class="line"><span class="cl">{{
+</span></span><span class="line"><span class="cl">  fullName.split(&#39; &#39;).map(function (word) {
+</span></span><span class="line"><span class="cl">    return word[0].toUpperCase() + word.slice(1)
+</span></span><span class="line"><span class="cl">  }).join(&#39; &#39;)
+</span></span><span class="line"><span class="cl">}}
+</span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>知识点 2</strong>.  <strong>尽可能在 HTML、CSS 中使用双引号（&quot;），在 JS 中使用单引号（'）</strong>。例如：</p>
+</div><p><strong>知识点 2</strong>.  <strong>尽可能在 HTML、CSS 中使用双引号（&quot;），在 JS 中使用单引号（&rsquo;）</strong>。例如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -589,16 +608,16 @@ computed: {
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;input type=&#34;text&#34;&gt;
-
-&lt;AppSidebar :style=&#34;{ width: sidebarWidth + &#39;px&#39; }&#34;&gt;
-
-而不是
-
-&lt;input type=text&gt;
-
-&lt;AppSidebar :style={width:sidebarWidth+&#39;px&#39;}&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;input type=&#34;text&#34;&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;AppSidebar :style=&#34;{ width: sidebarWidth + &#39;px&#39; }&#34;&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">而不是
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;input type=text&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;AppSidebar :style={width:sidebarWidth+&#39;px&#39;}&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="js-规划">JS 规划</h2>
 <p><strong>知识点 1</strong>. <strong>组件的 <code>data</code> 必须是一个函数</strong>。当在组件中使用 <code>data</code> 属性的时候 (除了 new Vue 外的任何地方)，它的值必须是返回一个对象的函数。例如：</p>
@@ -611,12 +630,12 @@ computed: {
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">data() {
-  return {
-    name: &#39;jsliang&#39;
-  }
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">data() {
+</span></span><span class="line"><span class="cl">  return {
+</span></span><span class="line"><span class="cl">    name: &#39;jsliang&#39;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 2</strong>. <strong><code>Prop</code> 的定义应该尽量详细，至少指定其类型。并且在声明的时候采用 <code>camelCase</code>，在使用的时候采用 <code>kekab-case</code></strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -640,24 +659,24 @@ computed: {
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;WelcomeMessage greeting-text=&#34;hi&#34;/&gt;
-
-props: {
-  status: {
-    type: String,
-    required: true,
-    validator: function (value) {
-      return [
-        &#39;syncing&#39;,
-        &#39;synced&#39;,
-        &#39;version-conflict&#39;,
-        &#39;error&#39;
-      ].indexOf(value) !== -1
-    }
-  },
-  greetingText: String
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;WelcomeMessage greeting-text=&#34;hi&#34;/&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">props: {
+</span></span><span class="line"><span class="cl">  status: {
+</span></span><span class="line"><span class="cl">    type: String,
+</span></span><span class="line"><span class="cl">    required: true,
+</span></span><span class="line"><span class="cl">    validator: function (value) {
+</span></span><span class="line"><span class="cl">      return [
+</span></span><span class="line"><span class="cl">        &#39;syncing&#39;,
+</span></span><span class="line"><span class="cl">        &#39;synced&#39;,
+</span></span><span class="line"><span class="cl">        &#39;version-conflict&#39;,
+</span></span><span class="line"><span class="cl">        &#39;error&#39;
+</span></span><span class="line"><span class="cl">      ].indexOf(value) !== -1
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  greetingText: String
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 3</strong>. <strong>总是用 <code>key</code> 配合 <code>v-for</code></strong>。<code>key</code> 的作用：a.<code>key</code> 的特殊属性主要用在 Vue 的虚拟 DOM 算法，在新旧 nodes 对比时辨识 VNodes。b. 在 <code>v-for</code> 中使用 <code>key</code>，方便 Vue 跟踪每个节点，从而重用和重新排序现有元素。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -671,14 +690,14 @@ props: {
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;ul&gt;
-  &lt;li v-for=&#34;item in items&#34; :key=&#34;item.id&#34;&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;transition&gt;
-  &lt;span :key=&#34;text&#34;&gt;{{ text }}&lt;/span&gt;
-&lt;/transition&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;ul&gt;
+</span></span><span class="line"><span class="cl">  &lt;li v-for=&#34;item in items&#34; :key=&#34;item.id&#34;&gt;...&lt;/li&gt;
+</span></span><span class="line"><span class="cl">&lt;/ul&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&lt;transition&gt;
+</span></span><span class="line"><span class="cl">  &lt;span :key=&#34;text&#34;&gt;{{ text }}&lt;/span&gt;
+</span></span><span class="line"><span class="cl">&lt;/transition&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>知识点 4</strong>. <strong>永远不要把 <code>v-if</code> 和 <code>v-for</code> 同时用在同一个元素上</strong>。例如：</p>
 <div class="highlight"><div class="chroma">
@@ -693,15 +712,15 @@ props: {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;ul v-if=&#34;shouldShowUsers&#34;&gt;
-  &lt;li
-    v-for=&#34;user in users&#34;
-    :key=&#34;user.id&#34;
-  &gt;
-    {{ user.name }}
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;ul v-if=&#34;shouldShowUsers&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;li
+</span></span><span class="line"><span class="cl">    v-for=&#34;user in users&#34;
+</span></span><span class="line"><span class="cl">    :key=&#34;user.id&#34;
+</span></span><span class="line"><span class="cl">  &gt;
+</span></span><span class="line"><span class="cl">    {{ user.name }}
+</span></span><span class="line"><span class="cl">  &lt;/li&gt;
+</span></span><span class="line"><span class="cl">&lt;/ul&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="css-规范">CSS 规范</h2>
 <p><strong>知识点 1</strong>. <strong>为组件样式设置作用域</strong>。给每个组件的 CSS 使用 <code>scoped</code>，避免组件之间的样式互相影响。</p>
@@ -715,13 +734,13 @@ props: {
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;style module&gt;
-.button {
-  border: none;
-  border-radius: 2px;
-}
-&lt;/style&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;style module&gt;
+</span></span><span class="line"><span class="cl">.button {
+</span></span><span class="line"><span class="cl">  border: none;
+</span></span><span class="line"><span class="cl">  border-radius: 2px;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">&lt;/style&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -747,21 +766,6 @@ props: {
         
 
   
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'TdGIcEOeCFzkY9wFrWradER3-MdYXbMMI',
-        appKey: 'd8n8A5mxAtUvfsM6IEo4HjCB',
-        notify:  false ,
-        verify:  false ,
-        avatar:'mm',
-        placeholder: '我想听你说 ^_^',
-        visitor:  false 
-    });
-  </script>
 
   
 
@@ -772,6 +776,7 @@ props: {
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -785,11 +790,7 @@ props: {
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
@@ -811,7 +812,7 @@ props: {
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
       tex: {

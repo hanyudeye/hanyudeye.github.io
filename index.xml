@@ -6,14 +6,23 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Aug 2023 07:25:14 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Aug 2023 10:01:36 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 长远任务</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
-      <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个</description>
+      <description>DOING TODO 写满500篇文章 [20/500] 做满200个视频 [0/200] 交10个网友 [0/10] 做个博客程序 [0/1] 做个工具程序 [0/1] DONE VScode 同步问题 (直接备份个配置文件，下次恢复) 把主机和显示器</description>
+    </item>
+    
+    <item>
+      <title>how to earn (make money)</title>
+      <link>https://aming.xyz/post/makemoney/</link>
+      <pubDate>Fri, 25 Aug 2023 10:01:36 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/makemoney/</guid>
+      <description>笔耕（写字可以有收入）</description>
     </item>
     
     <item>
@@ -23,6 +32,60 @@
       
       <guid>https://aming.xyz/post/%E7%A9%B7%E5%9B%B0/</guid>
       <description>穷困，别把自己困住了，别给自己围城，现在是网络时代，很容易与外面交流。</description>
+    </item>
+    
+    <item>
+      <title>GitHub的使用</title>
+      <link>https://aming.xyz/post/github%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 14 Aug 2023 09:22:07 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/github%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>GitHub Action 如果你需要某个 action，不必自己写复杂的脚本，直接引用他人写好的 action 即可，整个持续集成过程，就变成了一个 actions 的组合。这就是GitHub Actions</description>
+    </item>
+    
+    <item>
+      <title>TP6使用</title>
+      <link>https://aming.xyz/post/%E4%BD%BF%E7%94%A8php%E7%BC%96%E7%A8%8B/tp6%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 12 Aug 2023 15:55:47 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%BD%BF%E7%94%A8php%E7%BC%96%E7%A8%8B/tp6%E4%BD%BF%E7%94%A8/</guid>
+      <description>ThinkPHP 是 开源 的Web应用框架，用于快速构建Web应用程序。 Web 应用程序（Web Application）是一种通过网络（通常是互联网）访问和使用的软</description>
+    </item>
+    
+    <item>
+      <title>互联网资源</title>
+      <link>https://aming.xyz/post/%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Sat, 12 Aug 2023 10:40:54 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%BA%92%E8%81%94%E7%BD%91%E8%B5%84%E6%BA%90/</guid>
+      <description>&lt;p&gt;互联网资源有失效的可能&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>电脑硬件选购</title>
+      <link>https://aming.xyz/post/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%80%89%E8%B4%AD/</link>
+      <pubDate>Sat, 12 Aug 2023 09:18:42 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%80%89%E8%B4%AD/</guid>
+      <description>硬盘 机械硬盘：不耐磕碰，最好固定放置，不使用数据不丢失。 固态硬盘：记得半年上一次电，长期不使用数据会丢失。 不移动机械硬盘 希捷 移动固态硬盘 自己</description>
+    </item>
+    
+    <item>
+      <title>如何挣钱</title>
+      <link>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8C%A3%E9%92%B1/</link>
+      <pubDate>Sat, 12 Aug 2023 09:01:26 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E6%8C%A3%E9%92%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>浏览器的使用</title>
+      <link>https://aming.xyz/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 12 Aug 2023 08:35:08 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>打开浏览器兼容性 Edge浏览器: 右边点选项 -&amp;gt; 在IE兼容模式打开 Chrome浏览器： 没有IE兼容模式，直接用IE打开</description>
     </item>
     
     <item>
@@ -130,7 +193,7 @@
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>vue 可以挂载界面元素 nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路</description>
+      <description>Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的</description>
     </item>
     
     <item>
@@ -166,7 +229,7 @@
       <pubDate>Mon, 07 Aug 2023 19:45:00 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%E6%AE%B5/</guid>
-      <description>命令 M-x yas-new-snippet M-x yas-visit-snippet-file 打开片段文件 M-x snippet-mode 语法 1 2 3 4 5 6 # key: snippet abbrev 代码片段缩写 # name: snippet name 代码段名称,它将显示在菜单中 # condition: snippet condition 则仅当条件代码的计算结果为某个非</description>
+      <description>命令 M-x yas-new-snippet M-x yas-visit-snippet-file 打开片段文件 M-x snippet-mode 语法 1 2 3 4 5 # key: snippet abbrev 代码片段缩写 # name: snippet name 代码段名称,它将显示在菜单中 # condition: snippet condition 则仅当条件代码的计算结果为某个非 nil</description>
     </item>
     
     <item>
@@ -359,6 +422,15 @@
     </item>
     
     <item>
+      <title>程序员要学习的项目</title>
+      <link>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</guid>
+      <description>单机 文件系统 (现实中的物体) 应用程序 计算机 写字板 绘画板 网络 网络计算机 网络站点 网络绘画处理</description>
+    </item>
+    
+    <item>
       <title>国内的远程工作</title>
       <link>https://aming.xyz/post/%E5%9B%BD%E5%86%85%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -374,15 +446,6 @@
       
       <guid>https://aming.xyz/post/%E5%9B%BD%E5%A4%96%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>程序员要学习的项目</title>
-      <link>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</guid>
-      <description>单机 文件系统 (现实中的物体) 应用程序 计算机 写字板 绘画板 网络 网络计算机 网络站点 网络绘画处理</description>
     </item>
     
   </channel>
