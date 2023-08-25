@@ -6,14 +6,23 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Aug 2023 10:01:36 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Aug 2023 10:14:17 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 长远任务</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
-      <description>DOING TODO 写满500篇文章 [20/500] 做满200个视频 [0/200] 交10个网友 [0/10] 做个博客程序 [0/1] 做个工具程序 [0/1] DONE VScode 同步问题 (直接备份个配置文件，下次恢复) 把主机和显示器</description>
+      <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个</description>
+    </item>
+    
+    <item>
+      <title>2020版PS快捷键大全 - 知乎</title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Fri, 25 Aug 2023 10:14:17 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>一、工具箱快捷键 移动工具**【V】** 矩形、椭圆选框工具**【M】** 裁剪工具**【C】** 画笔工具**【B】** 橡皮图章、图案图章**【S</description>
     </item>
     
     <item>
@@ -193,7 +202,7 @@
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>Vue.js（通常简称为Vue）是一个流行的用于构建用户界面的开源 JavaScript 框架。它专注于构建单页面应用（SPA）以及前端交互界面，通过提供可组合的</description>
+      <description>vue 可以挂载界面元素 nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路</description>
     </item>
     
     <item>
@@ -329,15 +338,6 @@
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E/</guid>
       <description>什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>一、工具箱快捷键 移动工具**【V】** 矩形、椭圆选框工具**【M】** 裁剪工具**【C】** 画笔工具**【B】** 橡皮图章、图案图章**【S</description>
     </item>
     
     <item>
