@@ -8,16 +8,31 @@
   
   <url>
     <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2023-08-25T17:16:50+08:00</lastmod>
+    <lastmod>2023-08-27T14:01:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/</loc>
-    <lastmod>2023-08-25T17:16:50+08:00</lastmod>
+    <loc>https://aming.xyz/language/</loc>
+    <lastmod>2023-08-27T14:01:35+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
+    <lastmod>2023-08-27T14:01:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%BB%8F%E6%B5%8E/</loc>
+    <lastmod>2023-08-27T14:01:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/language/%E7%BB%8F%E6%B5%8E/</loc>
+    <lastmod>2023-08-27T14:01:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/</loc>
     <lastmod>2023-08-25T17:16:50+08:00</lastmod>
   </url>
   
@@ -413,7 +428,6 @@
   
   <url>
     <loc>https://aming.xyz/readme/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
