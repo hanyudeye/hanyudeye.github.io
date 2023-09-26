@@ -6,23 +6,28 @@
     <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Aug 2023 11:05:11 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机原理</title>
+      <link>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Fri, 25 Aug 2023 11:05:11 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;什么是计算机&#34;&gt;什么是计算机&lt;/h2&gt;
+&lt;p&gt;计算机原来是一种 进行数字处理的机器，后来随着 可编程的加入，产生了软件的概念，可以进行其它数据的处理。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>使用 Python 语法进行编程</title>
       <link>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
       <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
-      <description>&lt;p&gt;语言用来描述&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>3D打印</title>
-      <link>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</link>
-      <pubDate>Tue, 06 Jun 2023 10:45:09 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</guid>
-      <description>&lt;p&gt;&amp;ldquo;520&amp;quot;那一天，杭州市西湖区绿地出现了一朵巨型的 3D 打印玫瑰，直径2.4米。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
+&lt;p&gt;编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个功能用一个程序文件或整个程序文件夹实现&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>

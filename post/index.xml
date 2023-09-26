@@ -6,23 +6,69 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Aug 2023 10:14:17 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Sep 2023 11:16:57 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 长远任务</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
-      <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个</description>
+      <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 有滞后了 2023.09.26 这个计划不好，只是一</description>
     </item>
     
     <item>
-      <title>2020版PS快捷键大全 - 知乎</title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Fri, 25 Aug 2023 10:14:17 +0800</pubDate>
+      <title>index</title>
+      <link>https://aming.xyz/post/todo%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/</link>
+      <pubDate>Tue, 26 Sep 2023 11:16:57 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2020%E7%89%88ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>一、工具箱快捷键 移动工具**【V】** 矩形、椭圆选框工具**【M】** 裁剪工具**【C】** 画笔工具**【B】** 橡皮图章、图案图章**【S</description>
+      <guid>https://aming.xyz/post/todo%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/</guid>
+      <description>科技资讯 09.26 信息孤岛 现在的互联网，资讯入口不再是搜索引擎，而是在一个个大的互联网公司</description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://aming.xyz/post/%E6%B5%8F%E8%A7%88%E5%99%A8edge/</link>
+      <pubDate>Tue, 26 Sep 2023 09:25:54 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E6%B5%8F%E8%A7%88%E5%99%A8edge/</guid>
+      <description>edge浏览器</description>
+    </item>
+    
+    <item>
+      <title>安卓开发教程</title>
+      <link>https://aming.xyz/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 31 Aug 2023 07:38:53 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>不要用生产力评价程序员</title>
+      <link>https://aming.xyz/post/%E4%B8%8D%E8%A6%81%E7%94%A8%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AF%84%E4%BB%B7%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+      <pubDate>Fri, 25 Aug 2023 17:16:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%B8%8D%E8%A6%81%E7%94%A8%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AF%84%E4%BB%B7%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
+      <description>&lt;p&gt;不要用&amp;quot;生产力&amp;quot;这个词评价程序员，因为它是评价机器的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>计算机原理</title>
+      <link>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Fri, 25 Aug 2023 11:05:11 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</guid>
+      <description>&lt;h2 id=&#34;什么是计算机&#34;&gt;什么是计算机&lt;/h2&gt;
+&lt;p&gt;计算机原来是一种 进行数字处理的机器，后来随着 可编程的加入，产生了软件的概念，可以进行其它数据的处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PS 教程</title>
+      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 25 Aug 2023 10:17:39 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+      <description>PS 教程</description>
     </item>
     
     <item>
@@ -116,15 +162,6 @@
     </item>
     
     <item>
-      <title>emacs-rime的使用</title>
-      <link>https://aming.xyz/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Thu, 10 Aug 2023 20:12:07 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>当在Linux 环境下，无法输入中文输入法的时候，可以使用 emacs-rime ，作为一种选择，也是挺方便的。</description>
-    </item>
-    
-    <item>
       <title>签证</title>
       <link>https://aming.xyz/post/%E7%AD%BE%E8%AF%81/</link>
       <pubDate>Thu, 10 Aug 2023 06:14:15 +0800</pubDate>
@@ -175,7 +212,7 @@
       <pubDate>Tue, 08 Aug 2023 06:44:23 +0800</pubDate>
       
       <guid>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;hugo - hugo builds your site，且提供了自己的网络服务器来构建和服务网站，他会监视文件改动，并自动重新构建。&lt;/p&gt;</description>
+      <description>&lt;p&gt;hugo: 根据 markdown 文章 + 主题+配置文件，生成静态站点。以后只要书写markdown 文章即可生成站点页面。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -184,7 +221,7 @@
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>windows 下使用ahk 设置 i3wm 快捷键</description>
+      <description>windows 下使用ahk 设置 i3wm 快捷键 使用 Win+m , Win+n 切换 Edge 和 code 窗口</description>
     </item>
     
     <item>
@@ -251,15 +288,6 @@
     </item>
     
     <item>
-      <title>龙骑士</title>
-      <link>https://aming.xyz/post/%E9%BE%99%E9%AA%91%E5%A3%AB/</link>
-      <pubDate>Wed, 12 Jul 2023 15:10:29 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E9%BE%99%E9%AA%91%E5%A3%AB/</guid>
-      <description>遇到龙蛋 明白了大家的情绪，也明白了只能自己来承担这件事情，劳伦斯越发愤怒了。当然，不愿意牺牲生命的人不会轻易接受突然成为龙骑士这个事实，他也</description>
-    </item>
-    
-    <item>
       <title>人的姿势有哪些</title>
       <link>https://aming.xyz/post/%E4%BA%BA%E7%9A%84%E5%A7%BF%E5%8A%BF/</link>
       <pubDate>Fri, 09 Jun 2023 08:58:45 +0800</pubDate>
@@ -283,7 +311,11 @@
       <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
       <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
-      <description>&lt;p&gt;语言用来描述&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
+&lt;p&gt;编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个功能用一个程序文件或整个程序文件夹实现&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -296,30 +328,12 @@
     </item>
     
     <item>
-      <title>AI生成漫画</title>
-      <link>https://aming.xyz/post/ai%E6%BC%AB%E7%94%BB/</link>
-      <pubDate>Tue, 06 Jun 2023 12:19:43 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/ai%E6%BC%AB%E7%94%BB/</guid>
-      <description>使用AI图像生成器，可以减少手工绘图的时间。 绘图工具 Midjourney</description>
-    </item>
-    
-    <item>
       <title>声控手机</title>
       <link>https://aming.xyz/post/%E5%A3%B0%E6%8E%A7%E6%89%8B%E6%9C%BA/</link>
       <pubDate>Tue, 06 Jun 2023 11:05:43 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E5%A3%B0%E6%8E%A7%E6%89%8B%E6%9C%BA/</guid>
       <description>一家创业公司，发布了一个可穿戴的声控装置 它使用的是投影，因为是声控，指令也简单。可以解决手机上瘾的烦恼</description>
-    </item>
-    
-    <item>
-      <title>3D打印</title>
-      <link>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</link>
-      <pubDate>Tue, 06 Jun 2023 10:45:09 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/3d%E6%89%93%E5%8D%B0/</guid>
-      <description>&lt;p&gt;&amp;ldquo;520&amp;quot;那一天，杭州市西湖区绿地出现了一朵巨型的 3D 打印玫瑰，直径2.4米。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -338,42 +352,6 @@
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E/</guid>
       <description>什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
-      <description>在 Adobe Photoshop 中，使用键盘快捷键可提高您的工作效率。 常用的快捷键 结果 Windows macOS 自由变换 Control + T Command + T 使用相同的画笔，在绘画与抹除操作之间切换 按住 ~（波形符）</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-ps-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4-%E6%90%9C%E7%B4%A2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/adobe-ps-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4-%E6%90%9C%E7%B4%A2/</guid>
-      <description>关闭 由红棉小冰提供的虚拟人类已唤醒，可以随时开始聊天啦 从对话框新建一个图层 【Ctrl】+【Shift】+【N】 以默认选项建立一个新的图层 【C</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>mac 版 PS 将 Ctrl 替换为 CMD 即可 一、文件 新建CTRL+N 打开CTRL+O 打开为ALT+CTRL+O 关闭CTRL+W 保存CTRL+S 另存为CTRL+SH</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>我们有时候一个工具想马上调用出来，这时候我们如果用了快捷方式的话，很快就可以调用，节省了我们大量的时间。 今天给大家整理了完整的ps快捷键 1、</description>
     </item>
     
     <item>

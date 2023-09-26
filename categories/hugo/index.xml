@@ -13,7 +13,7 @@
       <pubDate>Tue, 08 Aug 2023 06:44:23 +0800</pubDate>
       
       <guid>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>&lt;p&gt;hugo - hugo builds your site，且提供了自己的网络服务器来构建和服务网站，他会监视文件改动，并自动重新构建。&lt;/p&gt;</description>
+      <description>&lt;p&gt;hugo: 根据 markdown 文章 + 主题+配置文件，生成静态站点。以后只要书写markdown 文章即可生成站点页面。&lt;/p&gt;</description>
     </item>
     
   </channel>
