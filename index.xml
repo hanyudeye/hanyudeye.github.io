@@ -6,7 +6,7 @@
     <description>Recent content on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Aug 2023 14:01:35 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Sep 2023 07:17:56 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 长远任务</title>
       <link>https://aming.xyz/post/todo/</link>
@@ -14,6 +14,24 @@
       
       <guid>https://aming.xyz/post/todo/</guid>
       <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个</description>
+    </item>
+    
+    <item>
+      <title>wsl创建默认用户</title>
+      <link>https://aming.xyz/post/wsl%E5%88%9B%E5%BB%BA%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7/</link>
+      <pubDate>Thu, 28 Sep 2023 07:17:56 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/wsl%E5%88%9B%E5%BB%BA%E9%BB%98%E8%AE%A4%E7%94%A8%E6%88%B7/</guid>
+      <description>在wsl中设置子系统的默认用户 1 ubuntu.exe config --default-user {username}</description>
+    </item>
+    
+    <item>
+      <title>安卓开发教程</title>
+      <link>https://aming.xyz/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 31 Aug 2023 07:38:53 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -40,7 +58,8 @@
       <pubDate>Fri, 25 Aug 2023 11:05:11 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</guid>
-      <description>什么是计算机 计算机是一种处理数据的机器：它接受用户的数据输入，然后通过事先编写的程序对数据进行处理，最后将处理结果输出给用户。 当数字计算器的</description>
+      <description>&lt;h2 id=&#34;什么是计算机&#34;&gt;什么是计算机&lt;/h2&gt;
+&lt;p&gt;计算机原来是一种 进行数字处理的机器，后来随着 可编程的加入，产生了软件的概念，可以进行其它数据的处理。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -198,10 +217,10 @@
     
     <item>
       <title>Hugo的使用</title>
-      <link>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <link>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 08 Aug 2023 06:44:23 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;p&gt;hugo - hugo builds your site，且提供了自己的网络服务器来构建和服务网站，他会监视文件改动，并自动重新构建。&lt;/p&gt;</description>
     </item>
     
