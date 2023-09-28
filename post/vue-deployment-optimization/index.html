@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
+  <title> - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="阿明" /><meta name="description" content="Vue 部署优化 Create by jsliang on 2018-12-7 14:53:566 Recently revised in 2019-05-31 14:25:00 在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议： 一 进行路由懒加载 路由懒加载 - VueRouter 官网 大" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/vue-deployment-optimization/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b1f3f9a3cf4b6d26419a3a5798ed1af3401e87af57e239f50c3c740a1dc48500.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Vue 部署优化 Create by jsliang on 2018-12-7 14:53:566 Recently revised in 2019-05-31 14:25:00 在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议： 一 进行路由懒加载 路由懒加载 - VueRouter 官网 大" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/vue-deployment-optimization/" /><meta property="article:section" content="post" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Vue 部署优化 Create by jsliang on 2018-12-7 14:53:566 Recently revised in 2019-05-31 14:25:00 在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议： 一 进行路由懒加载 路由懒加载 - VueRouter 官网 大">
+
+<meta itemprop="wordCount" content="1078">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Vue 部署优化 Create by jsliang on 2018-12-7 14:53:566 Recently revised in 2019-05-31 14:25:00 在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议： 一 进行路由懒加载 路由懒加载 - VueRouter 官网 大"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/language/">
+        <li class="mobile-menu-item">语言的艺术</li>
+      </a><a href="/excerpt/">
+        <li class="mobile-menu-item">片段</li>
+      </a><a href="/seven/">
+        <li class="mobile-menu-item">一周</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/language/">语言的艺术</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/excerpt/">片段</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/seven/">一周</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+          <span class="more-meta"> 约 1078 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <h1 id="vue-部署优化">Vue 部署优化</h1>
+<blockquote>
+<p>Create by <strong>jsliang</strong> on <strong>2018-12-7 14:53:566</strong><br>
+Recently revised in <strong>2019-05-31 14:25:00</strong></p>
+</blockquote>
+<p>在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议：</p>
+<h2 id="一-进行路由懒加载">一 进行路由懒加载</h2>
+<ul>
+<li><a href="https://router.vuejs.org/zh/guide/advanced/lazy-loading.html">路由懒加载 - VueRouter 官网</a></li>
+</ul>
+<p>大致意思就是，将 <code>import PartOne from '@/components/PartOne'</code></p>
+<p>换成 <code>const PartOne = () =&gt; import('@/components/PartOne');</code></p>
+<p>这样，就可以访问快点了。</p>
+<blockquote>
+<p>index.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Router</span> <span class="nx">from</span> <span class="s1">&#39;vue-router&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">Router</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 路由懒加载
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">PartOne</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;@/components/PartOne&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="k">new</span> <span class="nx">Router</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">routes</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">PartOne</span><span class="o">:</span> <span class="nx">PartOne</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/PartOne&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;PartOne&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">component</span><span class="o">:</span> <span class="nx">PartOne</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="二-开启-gzip">二 开启 Gzip</h2>
+<ul>
+<li><a href="https://blog.csdn.net/liupeifeng3514/article/details/79018334">Nginx 配置 Gzip</a></li>
+</ul>
+<blockquote>
+<p>PS：Nginx 需要在 conf/nginx.conf 文件中的 <code>http</code> 中设置。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#user  nobody;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 跟CPU有关，不用修改
+</span></span><span class="line"><span class="cl">worker_processes  1;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">events {
+</span></span><span class="line"><span class="cl">  # nginx最大负载量
+</span></span><span class="line"><span class="cl">  worker_connections  1024;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">http {
+</span></span><span class="line"><span class="cl">  # mime type映射
+</span></span><span class="line"><span class="cl">  include       mime.types;
+</span></span><span class="line"><span class="cl">  default_type  application/octet-stream;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  # 启动高效传输文件的模式
+</span></span><span class="line"><span class="cl">  sendfile        on;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  # 长连接timeout
+</span></span><span class="line"><span class="cl">  keepalive_timeout  65;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  # 开启 gzip
+</span></span><span class="line"><span class="cl">  gzip  on;
+</span></span><span class="line"><span class="cl">  gzip_types text/plain application/x-javascript application/javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  # http结构下可以有多个server。请求进来后，确定哪一个server由server_name决定
+</span></span><span class="line"><span class="cl">  server {
+</span></span><span class="line"><span class="cl">    # 监听端口
+</span></span><span class="line"><span class="cl">    listen      80 default_server;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # 识别的域名
+</span></span><span class="line"><span class="cl">    server_name localhost default_server;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # 一个关键配置，与URL参数乱码问题有关
+</span></span><span class="line"><span class="cl">    #charset utf-8;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    root html;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    location / {
+</span></span><span class="line"><span class="cl">      index  index.html index.htm;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    #error_page  404              /404.html;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    # redirect server error pages to the static page /50x.html
+</span></span><span class="line"><span class="cl">    # 
+</span></span><span class="line"><span class="cl">    error_page   500 502 503 504  /50x.html;
+</span></span><span class="line"><span class="cl">    location = /50x.html {
+</span></span><span class="line"><span class="cl">      root   html;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  include ../vhost/*.conf;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><a href="https://www.jianshu.com/p/44ce0f66e800">Vue 开启 Gzip</a></li>
+</ul>
+<p><strong>首先</strong>，安装 <code>compression-webpack-plugin</code>：</p>
+<ul>
+<li><code>npm i compression-webpack-plugin -D</code></li>
+</ul>
+<p><strong>然后</strong>，修改配置代码：</p>
+<blockquote>
+<p>config/index.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// ... 代码省略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">productionGzip</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nx">productionGzipExtensions</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="s1">&#39;css&#39;</span><span class="p">],</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>最后</strong>，打包的文件中会有 <code>.gz</code> 后缀的文件，表示开启成功了。</p>
+<h2 id="三-屏蔽-sourcemap">三 屏蔽 sourceMap</h2>
+<p>修改配置代码：</p>
+<blockquote>
+<p>config/index.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// ... 代码省略
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">productionSourceMap</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个 <code>productionSourceMap</code> 有什么作用呢？其实就是项目打包后，我们的代码都是经过压缩加密的，如果运行时报错，输出的错误信息无法准确知道是哪里的代码出错了，而开启了 <code>productionSourceMap</code>，就会自动生成一些 <code>map</code> 文件，准确地告诉我们哪一行那一列出错。</p>
+<p>关闭了 <code>productionSourceMap</code> 后，一方面可以减少上线代码包的大小，另一方面提高系统的安全性。</p>
+<h2 id="四-开启-uglifyjs-webpack-plugin-的-cache">四 开启 uglifyjs-webpack-plugin 的 cache</h2>
+<blockquote>
+<p>build/webpack.prod.conf.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">new</span> <span class="nx">UglifyJsPlugin</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">cache</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">uglifyOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">compress</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">warnings</span><span class="o">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sourceMap</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">build</span><span class="p">.</span><span class="nx">productionSourceMap</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">parallel</span><span class="o">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}),</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>开启后打包第二次的时间是第一次的一半。</p>
+<h2 id="五-优化图片">五 优化图片</h2>
+<p>平时我们切图、下载图的 png、jpg 图片，都异常的大，所以我们需要对图片进行压缩：</p>
+<ul>
+<li><a href="https://tinypng.com/">TinyPNG | 图片压缩</a></li>
+</ul>
+<p>上面的网站就能很不错地压缩图片，从而减少图片的体积。</p>
+<h2 id="六-参考文献">六 参考文献：</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/41075f1f5297">vuejs项目性能优化总结 | 简书 - Evtion</a></li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>jsliang</strong> 广告推送：<br>
+也许小伙伴想了解下云服务器<br>
+或者小伙伴想买一台云服务器<br>
+或者小伙伴需要续费云服务器<br>
+欢迎点击 <strong><a href="https://github.com/LiangJunrong/document-library/blob/master/other-library/Monologue/%E7%A8%B3%E9%A3%9F%E8%89%B0%E9%9A%BE.md">云服务器推广</a></strong> 查看！</p>
+</blockquote>
+<p><a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=w7hismrh"><img src="../../public-repertory/img/z-small-seek-ali-3.jpg" alt="图"></a>
+<a href="https://cloud.tencent.com/redirect.php?redirect=1014&amp;cps_key=49f647c99fce1a9f0b4e1eeb1be484c9&amp;from=console"><img src="../../public-repertory/img/z-small-seek-tencent-2.jpg" alt="图"></a></p>
+<blockquote>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">jsliang 的文档库</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/LiangJunrong/document-library" property="cc:attributionName" rel="cc:attributionURL">梁峻荣</a> 采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/LiangJunrong/document-library" rel="dct:source"><a href="https://github.com/LiangJunrong/document-library">https://github.com/LiangJunrong/document-library</a></a>上的作品创作。<br />本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="cc:morePermissions"><a href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/">https://creativecommons.org/licenses/by-nc-sa/2.5/cn/</a></a> 处获得。</p>
+</blockquote>
+
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/vue-prepare/">
+            <span class="next-text nav-default"></span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    
+
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    <script src="https://craigmod.com/js/fuse.js"></script>
+    
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.4034fe307e753eb3cf4c8351c6aaf29db0a44666755f070f8f0f2cbc731075d8.js"></script><footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

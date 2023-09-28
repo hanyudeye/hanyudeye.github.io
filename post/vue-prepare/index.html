@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
+  <title> - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="阿明" /><meta name="description" content="Vue 开发准备 Create by jsliang on 2018-12-24 11:54:30 Recently revised in 2019-05-31 13:48:20 在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。 一 目录 不折腾的前端" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/vue-prepare/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b1f3f9a3cf4b6d26419a3a5798ed1af3401e87af57e239f50c3c740a1dc48500.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Vue 开发准备 Create by jsliang on 2018-12-24 11:54:30 Recently revised in 2019-05-31 13:48:20 在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。 一 目录 不折腾的前端" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/vue-prepare/" /><meta property="article:section" content="post" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Vue 开发准备 Create by jsliang on 2018-12-24 11:54:30 Recently revised in 2019-05-31 13:48:20 在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。 一 目录 不折腾的前端">
+
+<meta itemprop="wordCount" content="4703">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Vue 开发准备 Create by jsliang on 2018-12-24 11:54:30 Recently revised in 2019-05-31 13:48:20 在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。 一 目录 不折腾的前端"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/language/">
+        <li class="mobile-menu-item">语言的艺术</li>
+      </a><a href="/excerpt/">
+        <li class="mobile-menu-item">片段</li>
+      </a><a href="/seven/">
+        <li class="mobile-menu-item">一周</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/language/">语言的艺术</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/excerpt/">片段</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/seven/">一周</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+          <span class="more-meta"> 约 4703 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <h1 id="vue-开发准备">Vue 开发准备</h1>
+<blockquote>
+<p>Create by <strong>jsliang</strong> on <strong>2018-12-24 11:54:30</strong><br>
+Recently revised in <strong>2019-05-31 13:48:20</strong></p>
+</blockquote>
+<p>在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。</p>
+<h2 id="a-namechapter-one-idchapter-one一-目录a"><a name="chapter-one" id="chapter-one">一 目录</a></h2>
+<p><strong>不折腾的前端，和咸鱼有什么区别</strong></p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#chapter-one">一 目录</a></td>
+</tr>
+<tr>
+<td><a href="#chapter-two">二 大体步骤</a></td>
+</tr>
+<tr>
+<td><a href="#chapter-three">三 详细步骤</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-one">3.1 安装 VueCli</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-two">3.2 项目目录结构</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-three">3.3 配置使用 less</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-four">3.4 重置 CSS 样式</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-five">3.5 引用左上角图标</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-six">3.6 按需引用 ElementUI</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-seven">3.7 Axios 封装使用</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-eight">3.8 动态引用组件</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-night">3.9 图片的引用及打包</a></td>
+</tr>
+<tr>
+<td> <a href="#chapter-three-ten">3.10 rem 适配</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-namechapter-two-idchapter-two二-大体步骤a"><a name="chapter-two" id="chapter-two">二 大体步骤</a></h2>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<ol>
+<li>启动 VueCli 开发模式</li>
+<li>引用重置 CSS 样式表</li>
+<li>引用右上角 icon 图标</li>
+<li>按需引用 ElementUI</li>
+<li>引用并封装 Axios</li>
+</ol>
+<h2 id="a-namechapter-three-idchapter-three三-详细步骤a"><a name="chapter-three" id="chapter-three">三 详细步骤</a></h2>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<h3 id="a-namechapter-three-one-idchapter-three-one31-安装-vueclia"><a name="chapter-three-one" id="chapter-three-one">3.1 安装 VueCli</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<ol>
+<li>安装 <code>vue-cli</code>：<code>npm i vue-cli -g</code></li>
+<li>初始化 Vue 项目：<code>vue init webpack</code></li>
+<li>开启开发模式：<code>npm run dev</code></li>
+<li>打开浏览器，查看网页： <code>http://localhost:8080</code></li>
+</ol>
+<h3 id="a-namechapter-three-two-idchapter-three-two32-项目目录结构a"><a name="chapter-three-two" id="chapter-three-two">3.2 项目目录结构</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">- build —————————————————————— 构建脚本目录
+</span></span><span class="line"><span class="cl">  - build.js                —— 运行本地构建服务器，可以访问构建后的页面
+</span></span><span class="line"><span class="cl">  - check-versions.js       —— 检查版本
+</span></span><span class="line"><span class="cl">  - utils.js                —— 构建相关工具方法
+</span></span><span class="line"><span class="cl">  - vue-loader.conf.js      —— 判断是否为生产环境
+</span></span><span class="line"><span class="cl">  - webpack.base.conf.js    —— webpack 开发环境配置
+</span></span><span class="line"><span class="cl">  - webpack.prod.conf.js    —— webpack 生产环境配置
+</span></span><span class="line"><span class="cl">- config ————————————————————— 配置
+</span></span><span class="line"><span class="cl">  - dev.env.js              —— 开发配置
+</span></span><span class="line"><span class="cl">  - index.js                —— 配置总文件
+</span></span><span class="line"><span class="cl">  - prod.env.js             —— 打包配置
+</span></span><span class="line"><span class="cl">- node_modules ——————————————— Node 依赖包，请忽略
+</span></span><span class="line"><span class="cl">- src ———————————————————————— 主要工作区
+</span></span><span class="line"><span class="cl">  - api                     —— 接口统一管理文件夹
+</span></span><span class="line"><span class="cl">    - api.js                —— 接口文件
+</span></span><span class="line"><span class="cl">  - assets                  —— 需要压缩文件
+</span></span><span class="line"><span class="cl">    - img                   —— 图片
+</span></span><span class="line"><span class="cl">  - components              —— 共用组件
+</span></span><span class="line"><span class="cl">  - pages                   —— 页面
+</span></span><span class="line"><span class="cl">  - router                  —— 路由文件夹
+</span></span><span class="line"><span class="cl">    - index.js              —— 路由文件
+</span></span><span class="line"><span class="cl">  - style                   —— 样式文件
+</span></span><span class="line"><span class="cl">    - reset.less            —— 重置样式
+</span></span><span class="line"><span class="cl">    - common.less           —— 公共样式
+</span></span><span class="line"><span class="cl">  - utils                   —— 工具文件夹
+</span></span><span class="line"><span class="cl">    - md5.js                —— md5 加密
+</span></span><span class="line"><span class="cl"> App.vue ————————————————————— 根组件
+</span></span><span class="line"><span class="cl"> main.js ————————————————————— 根组件配置
+</span></span><span class="line"><span class="cl">- static ————————————————————— 静态资源文件，不会被打包
+</span></span><span class="line"><span class="cl">  - css                     —— CSS 文件夹
+</span></span><span class="line"><span class="cl">    - reset.css             —— 重置样式
+</span></span><span class="line"><span class="cl">  - img                     —— 图片文件夹
+</span></span><span class="line"><span class="cl">- .babelrc ——————————————————— babel 配置，转换 ES6/7 为 ES5
+</span></span><span class="line"><span class="cl">- .editorconfig —————————————— 编辑器风格配置
+</span></span><span class="line"><span class="cl">- .gitignore ————————————————— 忽略 git 上传文件
+</span></span><span class="line"><span class="cl">- .postcssrc.js —————————————— 转换 CSS 的插件
+</span></span><span class="line"><span class="cl">- index.html ————————————————— 首页
+</span></span><span class="line"><span class="cl">- package.json ——————————————— 定义这个项目所需要的各种模块
+</span></span><span class="line"><span class="cl">- README.md —————————————————— 开搞必读文档
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="a-namechapter-three-three-idchapter-three-three33-配置使用-lessa"><a name="chapter-three-three" id="chapter-three-three">3.3 配置使用 less</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p><strong>步骤 1</strong>. 安装 less 和 less-loader：<code>cnpm i less less-loader -D</code></p>
+<p><strong>步骤 2</strong>. 添加 webpack 打包规则：</p>
+<blockquote>
+<p>build/webpack.base.conf.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.less$/</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">loader</span><span class="o">:</span> <span class="s2">&#34;style-loader!css-loader!less-loader&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 3</strong>. 在 style 中使用 less：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">style</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;less&#34;</span> <span class="na">scoped</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">left</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="err">.left-one</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-size</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 4</strong>. 引用下边的 reset.less 和 common.less</p>
+<blockquote>
+<p>App.vue</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nx">style</span> <span class="nx">lang</span><span class="o">=</span><span class="s2">&#34;less&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@</span><span class="kr">import</span> <span class="s1">&#39;./style/reset&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="err">@</span><span class="kr">import</span> <span class="s1">&#39;./style/common&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">/style&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="a-namechapter-three-four-idchapter-three-four34-重置-css-样式a"><a name="chapter-three-four" id="chapter-three-four">3.4 重置 CSS 样式</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p><strong>步骤 1</strong>. 引入重置样式表</p>
+<blockquote>
+<p>static/css/reset.css</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 
+</span></span></span><span class="line"><span class="cl"><span class="c">  * reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+</span></span></span><span class="line"><span class="cl"><span class="c">  * The purpose of reset is not to allow default styles to be consistent across all browsers, but to reduce the potential problems of default styles.
+</span></span></span><span class="line"><span class="cl"><span class="c">  * create by jsliang
+</span></span></span><span class="line"><span class="cl"><span class="c">*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 清除内外边距 - clearance of inner and outer margins **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">body</span><span class="o">,</span> <span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">hr</span><span class="o">,</span> <span class="nt">p</span><span class="o">,</span> <span class="nt">blockquote</span><span class="o">,</span> <span class="c">/* 结构元素 - structural elements */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">dl</span><span class="o">,</span> <span class="nt">dt</span><span class="o">,</span> <span class="nt">dd</span><span class="o">,</span> <span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span><span class="o">,</span> <span class="nt">li</span><span class="o">,</span> <span class="c">/* 列表元素 - list elements */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">pre</span><span class="o">,</span> <span class="c">/* 文本格式元素 - text formatting elements */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">form</span><span class="o">,</span> <span class="nt">fieldset</span><span class="o">,</span> <span class="nt">legend</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">textarea</span><span class="o">,</span> <span class="c">/* 表单元素 - from elements */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="c">/* 表格元素 - table elements */</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 设置默认字体 - setting the default font **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">body</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">textarea</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">font</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="o">/</span><span class="mf">1.5</span> <span class="s1">&#39;黑体&#39;</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span><span class="o">,</span> <span class="nt">button</span><span class="o">,</span> <span class="nt">input</span><span class="o">,</span> <span class="nt">select</span><span class="o">,</span> <span class="nt">textarea</span> <span class="p">{</span> <span class="k">font-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 重置列表元素 - reset the list element **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span> <span class="k">list-style</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 重置文本格式元素 - reset the text format element **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">a</span><span class="o">,</span> <span class="nt">a</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span> <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 重置表单元素 - reset the form element **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">button</span> <span class="p">{</span> <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span> <span class="p">{</span> <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span> <span class="k">outline</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 重置表格元素 - reset the table element **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">table</span> <span class="p">{</span> <span class="k">border-collapse</span><span class="p">:</span> <span class="kc">collapse</span><span class="p">;</span> <span class="k">border-spacing</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 图片自适应 - image responsize **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">img</span> <span class="p">{</span> <span class="k">border</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span> <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span> <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span> <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span> <span class="k">vertical-align</span><span class="p">:</span> <span class="kc">middle</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/* 
+</span></span></span><span class="line"><span class="cl"><span class="c">    * 默认box-sizing是content-box，该属性导致padding会撑大div，使用border-box可以解决该问题
+</span></span></span><span class="line"><span class="cl"><span class="c">    * set border-box for box-sizing when you use div, it solve the problem when you add padding and don&#39;t want to make the div width bigger
+</span></span></span><span class="line"><span class="cl"><span class="c">*/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="o">,</span> <span class="nt">input</span> <span class="p">{</span> <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 清除浮动 - clear float **/</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jsliang-clear</span><span class="p">:</span><span class="nd">after</span><span class="o">,</span> <span class="p">.</span><span class="nc">clear</span><span class="p">:</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s1">&#39;\20&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">clear</span><span class="p">:</span> <span class="kc">both</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">jsliang-clear</span><span class="o">,</span> <span class="p">.</span><span class="nc">clear</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">/** 设置input的placeholder - set input placeholder **/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span><span class="p">::</span><span class="nd">-webkit-input-placeholder</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#919191</span><span class="p">;</span> <span class="k">font-size</span><span class="p">:</span> <span class="mf">.26</span><span class="kt">rem</span> <span class="p">}</span> <span class="c">/* Webkit browsers */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span><span class="p">::</span><span class="nd">-moz-placeholder</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#919191</span><span class="p">;</span> <span class="k">font-size</span><span class="p">:</span> <span class="mf">.26</span><span class="kt">rem</span> <span class="p">}</span> <span class="c">/* Mozilla Firefox */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">input</span><span class="p">::</span><span class="nd">-ms-input-placeholder</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#919191</span><span class="p">;</span> <span class="k">font-size</span><span class="p">:</span> <span class="mf">.26</span><span class="kt">rem</span> <span class="p">}</span> <span class="c">/* Internet Explorer */</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 2</strong>. 引用重置样式表</p>
+<blockquote>
+<p>src/main.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 引入样式重置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="s1">&#39;../static/css/reset.css&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="a-namechapter-three-five-idchapter-three-five35-引用左上角图标a"><a name="chapter-three-five" id="chapter-three-five">3.5 引用左上角图标</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p><strong>步骤 1</strong>. 在下面目录存放 ico 图片：<a href="http://www.bitbug.net/">在线制作 ico 图标</a></p>
+<blockquote>
+<p>static/img/icon.ico</p>
+</blockquote>
+<p><strong>步骤 2</strong>. 引用左上角图标</p>
+<blockquote>
+<p>index.html</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;shortcut icon&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/ico&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;./static/img/icon.ico&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="a-namechapter-three-six-idchapter-three-six36-按需引用-elementuia"><a name="chapter-three-six" id="chapter-three-six">3.6 按需引用 ElementUI</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<ul>
+<li>安装 ElementUI：<code>npm i element-ui -S</code></li>
+</ul>
+<hr>
+<ul>
+<li>如果需要完整使用 ElementUI：</li>
+</ul>
+<blockquote>
+<p>src/main.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">App</span> <span class="nx">from</span> <span class="s1">&#39;./App&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">router</span> <span class="nx">from</span> <span class="s1">&#39;./router&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 引用 ElementUI
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="nx">ElementUI</span> <span class="nx">from</span> <span class="s1">&#39;element-ui&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="s1">&#39;element-ui/lib/theme-chalk/index.css&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">ElementUI</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 引用 ElementUI 结束
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">Vue</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">productionTip</span> <span class="o">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">router</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">components</span><span class="o">:</span> <span class="p">{</span> <span class="nx">App</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;App/&gt;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>App.vue</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">el-row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>左一<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;9&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;11&#34;</span><span class="p">&gt;</span>左二<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;9&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;11&#34;</span><span class="p">&gt;</span>右二<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>右一<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">el-row</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<ul>
+<li>如果需要按需引用 ElementUI：</li>
+</ul>
+<p><strong>步骤 1</strong>. 安装 babel 插件：<code>cnpm i babel-plugin-component -D</code></p>
+<p><strong>步骤 2</strong>. 修改 <code>.babelrc</code>：</p>
+<blockquote>
+<p>.babelrc</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;presets&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="s2">&#34;env&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;modules&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;targets&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;browsers&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;&gt; 1%&#34;</span><span class="p">,</span> <span class="s2">&#34;last 2 versions&#34;</span><span class="p">,</span> <span class="s2">&#34;not ie &lt;= 8&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}],</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;stage-2&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;plugins&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;transform-vue-jsx&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;transform-runtime&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;component&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;libraryName&#34;</span><span class="p">:</span> <span class="s2">&#34;element-ui&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;styleLibraryName&#34;</span><span class="p">:</span> <span class="s2">&#34;theme-chalk&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 3</strong>. 按需引入 <code>Row</code> 与 <code>Col</code>：</p>
+<blockquote>
+<p>main.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 引入及使用 ElementUI
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span><span class="nx">Row</span><span class="p">,</span> <span class="nx">Col</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;element-ui&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">Row</span><span class="p">).</span><span class="nx">use</span><span class="p">(</span><span class="nx">Col</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>App.vue</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">el-row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>左一<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;9&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;11&#34;</span><span class="p">&gt;</span>左二<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;9&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;11&#34;</span><span class="p">&gt;</span>右二<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">el-col</span> <span class="na">:xs</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="na">:sm</span><span class="o">=</span><span class="s">&#34;6&#34;</span> <span class="na">:md</span><span class="o">=</span><span class="s">&#34;4&#34;</span> <span class="na">:lg</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="na">:xl</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>右一<span class="p">&lt;/</span><span class="nt">el-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">el-row</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<ul>
+<li>响应式布局下基于断点的隐藏类：</li>
+</ul>
+<blockquote>
+<p>main.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 引入基于断点的隐藏类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="s1">&#39;element-ui/lib/theme-chalk/display.css&#39;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后你就可以使用下面的 CSS 类：</p>
+<ul>
+<li><code>hidden-xs-only</code> - 当视口在 <code>xs</code> 尺寸时隐藏</li>
+<li><code>hidden-sm-only</code> - 当视口在 <code>sm</code> 尺寸时隐藏</li>
+<li><code>hidden-sm-and-down</code> - 当视口在 <code>sm</code> 及以下尺寸时隐藏</li>
+<li><code>hidden-sm-and-up</code> - 当视口在 <code>sm</code> 及以上尺寸时隐藏</li>
+<li><code>hidden-md-only</code> - 当视口在 <code>md</code> 尺寸时隐藏</li>
+<li><code>hidden-md-and-down</code> - 当视口在 <code>md</code> 及以下尺寸时隐藏</li>
+<li><code>hidden-md-and-up</code> - 当视口在 <code>md</code> 及以上尺寸时隐藏</li>
+<li><code>hidden-lg-only</code> - 当视口在 <code>lg</code> 尺寸时隐藏</li>
+<li><code>hidden-lg-and-down</code> - 当视口在 <code>lg</code> 及以下尺寸时隐藏</li>
+<li><code>hidden-lg-and-up</code> - 当视口在 <code>lg</code> 及以上尺寸时隐藏</li>
+<li><code>hidden-xl-only</code> - 当视口在 <code>xl</code> 尺寸时隐藏</li>
+</ul>
+<p>注：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xs</td>
+<td><code>&lt;768px</code></td>
+</tr>
+<tr>
+<td>sm</td>
+<td><code>&gt;=768px</code></td>
+</tr>
+<tr>
+<td>md</td>
+<td><code>&gt;=992px</code></td>
+</tr>
+<tr>
+<td>lg</td>
+<td><code>&gt;=1200px</code></td>
+</tr>
+<tr>
+<td>xl</td>
+<td><code>&gt;=1920px</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>更多：<a href="http://element-cn.eleme.io/#/zh-CN/component/installation">ElementUI 组件</a></p>
+</blockquote>
+<h3 id="a-namechapter-three-seven-idchapter-three-seven37-axios-封装使用a"><a name="chapter-three-seven" id="chapter-three-seven">3.7 Axios 封装使用</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p><strong>步骤 1</strong>. 安装 Axios：<code>cnpm i axios -D</code></p>
+<p><strong>步骤 2</strong>. 封装 <code>api</code> 到 <code>src/api/api.js</code> 中</p>
+<blockquote>
+<p>api.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 封装逻辑
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 1. 引入 axios。
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 2. 设置请求配置 request。如：请求超时，响应头等
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 3. 设置请求中的遮罩（未实现）
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 4. 设置请求成功后的数据过滤（未实现）
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 5. 设置并暴露接口，传 data、method、url 到请求配置 request 上。
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 设置 axios
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="nx">axios</span> <span class="nx">from</span> <span class="s1">&#39;axios&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 请求配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">axios</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 本地开发 dev 的时候，不需要开启这个
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// baseURL: &#39;http://172.26.167.5:8080&#39;,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">timeout</span><span class="o">:</span> <span class="mi">5000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">timestamp</span><span class="o">:</span> <span class="s2">&#34;20181026094424&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">deviceid</span><span class="o">:</span> <span class="s2">&#34;10102&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">signature</span><span class="o">:</span> <span class="s2">&#34;F9CB03DD3ED50EDA5DB214C42D4DC0D6&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 获取用户名
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * userId
+</span></span></span><span class="line"><span class="cl"><span class="cm"> */</span>
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">getUserName</span> <span class="o">=</span> <span class="nx">data</span> <span class="p">=&gt;</span> <span class="nx">request</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;/api/getUserName&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">params</span><span class="o">:</span> <span class="nx">data</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 3</strong>. 在 <code>Pages</code> 中调用：</p>
+<blockquote>
+<p>UserInfo.vue</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 引用接口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">getUserName</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;@/api/api&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">methods</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">_getUserName</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="c1">// 获取用户名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="nx">getUserName</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">userId</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}).</span><span class="nx">then</span><span class="p">(</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;\n【API - 获取用户名】：&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 4</strong>. 设置 webpack 跨域 <code>index.js</code>：</p>
+<blockquote>
+<p>config/index.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">dev</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">proxyTable</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="s1">&#39;/stat&#39;</span><span class="o">:</span> <span class="p">{</span> <span class="c1">// restful 接口规律
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;http://172.**.**.**:8080/&#39;</span><span class="p">,</span> <span class="c1">// 接口的域名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>     <span class="nx">changeOrigin</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 如果接口跨域，需要进行这个参数配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"> <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤 5</strong>. 更多参考：<a href="https://www.kancloud.cn/yunye/axios/234845">Axios 中文说明</a></p>
+<h3 id="a-namechapter-three-eight-idchapter-three-eight38-动态引用组件a"><a name="chapter-three-eight" id="chapter-three-eight">3.8 动态引用组件</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p>修改路由文件：</p>
+<blockquote>
+<p>项目/src/router/index.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">Router</span> <span class="nx">from</span> <span class="s1">&#39;vue-router&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Login</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;@/pages/Home/Login&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">Index</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;@/pages/Home/Index&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">ListOnePageOne</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;@/pages/ListOne/PageOne&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">Router</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="k">new</span> <span class="nx">Router</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">routes</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Login&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">component</span><span class="o">:</span> <span class="nx">Login</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/Index&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">component</span><span class="o">:</span> <span class="nx">Index</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">children</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">path</span><span class="o">:</span><span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">component</span><span class="o">:</span> <span class="nx">ListOnePageOne</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">meta</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;第一组第一页&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="a-namechapter-three-night-idchapter-three-night39-图片的引用及打包a"><a name="chapter-three-night" id="chapter-three-night">3.9 图片的引用及打包</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p>在 VueCli 中，图片可以存放在两个位置：</p>
+<ul>
+<li>静态目录，不会被打包：<code>项目/static/img</code></li>
+<li>动态目录，将会被打包：<code>项目/src/assets/img</code></li>
+</ul>
+<p>详细来说：</p>
+<ul>
+<li>static 的目录中的图片，不会被 Webpack 相关机制理会，你引入的时候，是怎样的，它就是怎样的。</li>
+<li>assets 中的图片，它会被 Webpack 处理，在配置了图片相关打包 loader 的情况下，它会在 <code>项目/build/webpack.base.conf.js</code> 中依据相关的 loader 限制，在一定大小下转换为 Base64。</li>
+</ul>
+<blockquote>
+<p>项目/build/webpack.base.conf.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.(png|jpe?g|gif|svg)(\?.*)?$/</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;url-loader&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">limit</span><span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span><span class="o">:</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">assetsPath</span><span class="p">(</span><span class="s1">&#39;img/[name].[hash:7].[ext]&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>从代码中可以看出可以看出，它对于小于 10K(10000/1024) 的图片，会打包成 base64，从而减少了我们在浏览器加载时的性能损耗。</p>
+<p>那么，在 VueCli 中应该如何引用图片呢？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">van-row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 不推荐通过下面的方式直接引用 assets 图片，因为 webpack 打包可能没法成功打包 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">van-col</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;8&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;../../assets/img/emoticon_happy.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;表情包&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">van-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">van-col</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;8&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">:src</span><span class="o">=</span><span class="s">&#34;icon1&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;表情包&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">van-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">van-col</span> <span class="na">span</span><span class="o">=</span><span class="s">&#34;8&#34;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">:src</span><span class="o">=</span><span class="s">&#34;icon2&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;表情包&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">van-col</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">van-row</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">icon1</span><span class="o">:</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;../../assets/img/emoticon_cool.png&#39;</span><span class="p">),</span> <span class="c1">// 引用 assets 下的图片
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">icon2</span><span class="o">:</span> <span class="s1">&#39;/static/img/emoticon_cute.png&#39;</span> <span class="c1">// 引用 static 下的图片
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>说完 static 和 assets 的区别，以及对图片的引用，如果小伙伴们想验证下，那么可以看看 Webpack 在打包的时候对图片的处理：</p>
+<blockquote>
+<p>项目/config/index/js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="s1">&#39;use strict&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dev</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsSubDirectory</span><span class="o">:</span> <span class="s1">&#39;static&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsPublicPath</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">proxyTable</span><span class="o">:</span> <span class="p">{},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//... 省略剩下的代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">   <span class="nx">build</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">index</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;../dist/index.html&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsRoot</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;../dist&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsSubDirectory</span><span class="o">:</span> <span class="s1">&#39;static&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsPublicPath</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...省略剩下的代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>从代码中可以看出，对于 <code>static</code> 的资源，VueCli 在开发模式 <code>dev</code> 以及打包模式 <code>build</code> 中都进行了配置，它不会被 <code>webpack</code> 进行打包，属于 “静态资源”。</p>
+<p>但是，问题来了：</p>
+<p><strong>VueCli 打包的时候，生成的是图片的绝对路径，部署的时候无法解析到图片，需要配置成相对路径，需要怎么改呢？</strong></p>
+<ul>
+<li>位置 1：</li>
+</ul>
+<blockquote>
+<p>项目/build/webpack.prod.conf.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">publicPath</span><span class="o">:</span> <span class="s1">&#39;./&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">path</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">build</span><span class="p">.</span><span class="nx">assetsRoot</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">filename</span><span class="o">:</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">assetsPath</span><span class="p">(</span><span class="s1">&#39;js/[name].[chunkhash].js&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">chunkFilename</span><span class="o">:</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">assetsPath</span><span class="p">(</span><span class="s1">&#39;js/[id].[chunkhash].js&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 output 这块，新增代码 <code>publicPath: './'</code>。</p>
+<ul>
+<li>位置 2：</li>
+</ul>
+<blockquote>
+<p>项目/build/utils.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">extract</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">ExtractTextPlugin</span><span class="p">.</span><span class="nx">extract</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">use</span><span class="o">:</span> <span class="nx">loaders</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">publicPath</span><span class="o">:</span> <span class="s1">&#39;../../&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fallback</span><span class="o">:</span> <span class="s1">&#39;vue-style-loader&#39;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;vue-style-loader&#39;</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span><span class="nx">loaders</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 <code>vue-style-loader</code> 这里，新增 <code>publicPath: '../../</code> 这行代码。</p>
+<p>这样，打包出来的图片路径，就是相对路径了。</p>
+<h3 id="a-namechapter-three-ten-idchapter-three-ten310-rem-适配a"><a name="chapter-three-ten" id="chapter-three-ten">3.10 rem 适配</a></h3>
+<blockquote>
+<p><a href="#chapter-one">返回目录</a></p>
+</blockquote>
+<p>如果项目属于手机端，那么需要进行 rem 适配，即将固定宽度的 px 转换为 rem，为了方便计算，下面有一份 100px = 1rem 的 JS 适配代码，只需要将代码放到 <code>项目/src/utils/rem.js</code> 中，并在 <code>项目/src/main.js</code> 中引用即可。</p>
+<blockquote>
+<p>项目/src/main.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 引用 rem 适配
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="s1">&#39;./utils/rem&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>项目/src/utils/rem.js</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 移动端 rem 适配，px:rem = 100:1
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 该适配兼容 UC 竖屏转横屏出现的 BUG
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 自定义设计稿的宽度：designWidth
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 最大宽度：maxWidth
+</span></span></span><span class="line"><span class="cl"><span class="cm"> * 这段 js 的最后面有两个参数记得要设置，一个为设计稿实际宽度，一个为制作稿最大宽度，例如设计稿为 750，最大宽度为 750，则为(750,750)
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
+</span></span><span class="line"><span class="cl"><span class="o">!</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">function</span> <span class="nx">n</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">l</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="p">().</span><span class="nx">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">t</span> <span class="o">=</span> <span class="nx">t</span> <span class="o">||</span> <span class="mi">540</span><span class="p">,</span> <span class="nx">n</span> <span class="o">&gt;</span> <span class="nx">t</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">n</span> <span class="o">=</span> <span class="nx">t</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="nx">n</span> <span class="o">/</span> <span class="nx">e</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">r</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;html{font-size:&#34;</span> <span class="o">+</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">&#34;px;}&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">d</span> <span class="o">=</span> <span class="nb">document</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">o</span> <span class="o">=</span> <span class="nb">window</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">l</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">r</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;style&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">l</span><span class="p">.</span><span class="nx">firstElementChild</span><span class="p">)</span> <span class="nx">l</span><span class="p">.</span><span class="nx">firstElementChild</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">r</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;div&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">a</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">r</span><span class="p">),</span> <span class="nx">d</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">),</span> <span class="nx">a</span> <span class="o">=</span> <span class="kc">null</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">n</span><span class="p">(),</span> <span class="nx">o</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;resize&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="o">!</span><span class="mi">1</span><span class="p">),</span> <span class="nx">o</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;pageshow&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">persisted</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span> <span class="o">!</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&#34;complete&#34;</span> <span class="o">===</span> <span class="nx">d</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">?</span> <span class="nx">d</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span> <span class="o">=</span> <span class="s2">&#34;16px&#34;</span> <span class="o">:</span> <span class="nx">d</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;DOMContentLoaded&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">d</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span> <span class="o">=</span> <span class="s2">&#34;16px&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span> <span class="o">!</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}(</span><span class="mi">750</span><span class="p">,</span> <span class="mi">750</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<blockquote>
+<p><strong>jsliang</strong> 广告推送：<br>
+也许小伙伴想了解下云服务器<br>
+或者小伙伴想买一台云服务器<br>
+或者小伙伴需要续费云服务器<br>
+欢迎点击 <strong><a href="https://github.com/LiangJunrong/document-library/blob/master/other-library/Monologue/%E7%A8%B3%E9%A3%9F%E8%89%B0%E9%9A%BE.md">云服务器推广</a></strong> 查看！</p>
+</blockquote>
+<p><a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=w7hismrh"><img src="../../public-repertory/img/z-small-seek-ali-3.jpg" alt="图"></a>
+<a href="https://cloud.tencent.com/redirect.php?redirect=1014&amp;cps_key=49f647c99fce1a9f0b4e1eeb1be484c9&amp;from=console"><img src="../../public-repertory/img/z-small-seek-tencent-2.jpg" alt="图"></a></p>
+<blockquote>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">jsliang 的文档库</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/LiangJunrong/document-library" property="cc:attributionName" rel="cc:attributionURL">梁峻荣</a> 采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br />基于<a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/LiangJunrong/document-library" rel="dct:source"><a href="https://github.com/LiangJunrong/document-library">https://github.com/LiangJunrong/document-library</a></a>上的作品创作。<br />本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/" rel="cc:morePermissions"><a href="https://creativecommons.org/licenses/by-nc-sa/2.5/cn/">https://creativecommons.org/licenses/by-nc-sa/2.5/cn/</a></a> 处获得。</p>
+</blockquote>
+
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/vue-deployment-optimization/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/vue-upload-file/">
+            <span class="next-text nav-default"></span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    
+
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    <script src="https://craigmod.com/js/fuse.js"></script>
+    
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.4034fe307e753eb3cf4c8351c6aaf29db0a44666755f070f8f0f2cbc731075d8.js"></script><footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

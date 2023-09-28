@@ -3,6 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
   <title>阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -131,14 +170,14 @@
       <div class="post-category">
           <a href="/categories/%E4%BB%BB%E5%8A%A1/"> 任务 </a>
           </div>
-        <span class="more-meta"> 约 94 字 </span>
+        <span class="more-meta"> 约 138 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 写满500篇文章 [20/500] 做满200个
+      DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 这个计划不好，只是一个长远规划
     </div>
     <div class="read-more">
       <a href="/post/todo/" class="read-more-link">阅读更多</a>
@@ -171,24 +210,23 @@
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">安卓开发教程</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/todo%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/">科技资讯</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2023-08-31 </span>
+      <span class="post-time"> 2023-09-26 </span>
       <div class="post-category">
-          <a href="/categories/%E5%AE%89%E5%8D%93/"> 安卓 </a>
-          <a href="/categories/android/"> android </a>
+          <a href="/categories//">  </a>
           </div>
-        <span class="more-meta"> 约 0 字 </span>
-        <span class="more-meta"> 预计阅读 0 分钟 </span>
+        <span class="more-meta"> 约 41 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      
+      科技资讯 09.26 信息孤岛 现在的互联网，资讯入口不再是搜索引擎，而是在一个个大的互联网公司
     </div>
     <div class="read-more">
-      <a href="/post/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/" class="read-more-link">阅读更多</a>
+      <a href="/post/todo%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -218,7 +256,7 @@
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/">计算机原理</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/">计算机原理</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2023-08-25 </span>
       <div class="post-category">
@@ -235,53 +273,30 @@
 <p>计算机原来是一种 进行数字处理的机器，后来随着 可编程的加入，产生了软件的概念，可以进行其它数据的处理。</p>
     </div>
     <div class="read-more">
-      <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">PS 教程</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/">ps必备的快捷键大全（超详细） - 知乎</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2023-08-25 </span>
       <div class="post-category">
-          <a href="/categories/photoshop/"> photoshop </a>
+          <a href="/categories//">  </a>
           </div>
-        <span class="more-meta"> 约 3 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 10880 字 </span>
+        <span class="more-meta"> 预计阅读 22 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      PS 教程
+      mac 版 PS 将 Ctrl 替换为 CMD 即可 一、文件 新建CTRL+N 打开CTRL+O 打开为ALT+CTRL+O 关闭CTRL+W 保存CTRL+S 另存为CTRL+SH
     </div>
     <div class="read-more">
-      <a href="/post/ps%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/makemoney/">how to earn (make money)</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-25 </span>
-      <div class="post-category">
-          <a href="/categories/earn/"> earn </a>
-          </div>
-        <span class="more-meta"> 约 11 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      笔耕（写字可以有收入）
-    </div>
-    <div class="read-more">
-      <a href="/post/makemoney/" class="read-more-link">阅读更多</a>
+      <a href="/post/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -309,30 +324,7 @@
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/github%E7%9A%84%E4%BD%BF%E7%94%A8/">GitHub的使用</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-14 </span>
-      <div class="post-category">
-          <a href="/categories/%E8%BD%AF%E4%BB%B6/"> 软件 </a>
-          </div>
-        <span class="more-meta"> 约 4283 字 </span>
-        <span class="more-meta"> 预计阅读 9 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      GitHub Action 如果你需要某个 action，不必自己写复杂的脚本，直接引用他人写好的 action 即可，整个持续集成过程，就变成了一个 actions 的组合。这就是GitHub Actions
-    </div>
-    <div class="read-more">
-      <a href="/post/github%E7%9A%84%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BD%BF%E7%94%A8php%E7%BC%96%E7%A8%8B/tp6%E4%BD%BF%E7%94%A8/">TP6使用</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/tp6%E4%BD%BF%E7%94%A8/">TP6使用</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2023-08-12 </span>
       <div class="post-category">
@@ -348,7 +340,7 @@
       ThinkPHP 是 开源 的Web应用框架，用于快速构建Web应用程序。 Web 应用程序（Web Application）是一种通过网络（通常是互联网）访问和使用的软
     </div>
     <div class="read-more">
-      <a href="/post/%E4%BD%BF%E7%94%A8php%E7%BC%96%E7%A8%8B/tp6%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读更多</a>
+      <a href="/post/tp6%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -378,76 +370,6 @@
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%80%89%E8%B4%AD/">电脑硬件选购</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-12 </span>
-      <div class="post-category">
-          <a href="/categories/%E8%B4%AD%E7%89%A9/"> 购物 </a>
-          </div>
-        <span class="more-meta"> 约 93 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      硬盘 机械硬盘：不耐磕碰，最好固定放置，不使用数据不丢失。 固态硬盘：记得半年上一次电，长期不使用数据会丢失。 不移动机械硬盘 希捷 移动固态硬盘 自己
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%80%89%E8%B4%AD/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E6%8C%A3%E9%92%B1/">如何挣钱</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-12 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-        <span class="more-meta"> 约 0 字 </span>
-        <span class="more-meta"> 预计阅读 0 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%A6%82%E4%BD%95%E6%8C%A3%E9%92%B1/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/">浏览器的使用</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-12 </span>
-      <div class="post-category">
-          <a href="/categories/browser/"> browser </a>
-          <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"> 浏览器 </a>
-          </div>
-        <span class="more-meta"> 约 57 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      打开浏览器兼容性 Edge浏览器: 右边点选项 -&gt; 在IE兼容模式打开 Chrome浏览器： 没有IE兼容模式，直接用IE打开
-    </div>
-    <div class="read-more">
-      <a href="/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/%E4%B8%8D%E6%8B%98%E4%B8%80%E6%A0%BC/">《不拘一格》</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2023-08-11 </span>
@@ -466,75 +388,6 @@
     </div>
     <div class="read-more">
       <a href="/post/%E4%B8%8D%E6%8B%98%E4%B8%80%E6%A0%BC/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E6%89%92%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/">扒网站</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-11 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%89%92%E7%BD%91%E7%AB%99/"> 扒网站 </a>
-          </div>
-        <span class="more-meta"> 约 125 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      如何扒一个网站 ArchiveBox工具 互联网存档解决方案，空间 用于收集、保存和查看要脱机保留的网站。 使用 adding links to archive archivebox add &lsquo;https://example.com&rsquo; # add URLs one at a time archivebox add &lt; ~/Downloads/bookmarks.json
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%A6%82%E4%BD%95%E6%89%92%E4%B8%80%E4%B8%AA%E7%BD%91%E7%AB%99/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/">emacs-rime的使用</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-10 </span>
-      <div class="post-category">
-          <a href="/categories/%E8%BE%93%E5%85%A5%E6%B3%95/"> 输入法 </a>
-          </div>
-        <span class="more-meta"> 约 44 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      当在Linux 环境下，无法输入中文输入法的时候，可以使用 emacs-rime ，作为一种选择，也是挺方便的。
-    </div>
-    <div class="read-more">
-      <a href="/post/emacs-rime%E7%9A%84%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E7%AD%BE%E8%AF%81/">签证</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-10 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%97%85%E8%A1%8C/"> 旅行 </a>
-          </div>
-        <span class="more-meta"> 约 4 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      结交人群
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%AD%BE%E8%AF%81/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -587,29 +440,6 @@
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F/">图形界面程序</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2023-08-08 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2/"> 程序界面 </a>
-          </div>
-        <span class="more-meta"> 约 719 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      图形界面程序的产生是为了改善计算机用户与计算机之间的交互体验。在早期的计算机系统中，用户需要通过命令行界面（CLI）来输入指令和参数来完成任
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E7%A8%8B%E5%BA%8F/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/%E5%89%8D%E7%AB%AF%E7%BB%84%E4%BB%B6/">前端组件</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2023-08-08 </span>
@@ -639,7 +469,7 @@
       <div class="post-category">
           <a href="/categories/hugo/"> hugo </a>
           </div>
-        <span class="more-meta"> 约 308 字 </span>
+        <span class="more-meta"> 约 337 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
@@ -815,6 +645,211 @@
   </div>
 </article>
 
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E5%8F%98%E5%BE%97%E4%B8%8A%E8%BF%9B/">如何变得上进</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2023-07-13 </span>
+      <div class="post-category">
+          <a href="/categories/%E4%BA%BA%E7%94%9F/"> 人生 </a>
+          </div>
+        <span class="more-meta"> 约 145 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      懦弱的性格，客观环境，经济的压力，会使人变得心力憔悴，浑浑噩噩。 下面是一些改变消极心态的建议： 锻炼身体：锻炼身体能转移注意力，减轻压力，还能
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%A6%82%E4%BD%95%E5%8F%98%E5%BE%97%E4%B8%8A%E8%BF%9B/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%9A%84%E5%A7%BF%E5%8A%BF/">人的姿势有哪些</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2023-06-09 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AA%E5%88%9B%E6%84%8F/"> 每天一个创意 </a>
+          </div>
+        <span class="more-meta"> 约 150 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      人，作为一个3维物体，由生物纤维（鸡肉）固定，会一直受到向下的重力影响。 长时间受到固定的力，人体组织会受不了，所以要变换不同姿势 坐姿，对书写
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%9A%84%E5%A7%BF%E5%8A%BF/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%BD%93%E6%84%9F%E6%83%85%E4%B8%8D%E5%A6%82%E6%84%8F%E7%9A%84%E6%97%B6%E5%80%99/">当感情出现问题的时候</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2023-06-08 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%83%85%E6%84%9F/"> 情感 </a>
+          </div>
+        <span class="more-meta"> 约 89 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      两个人的情感出现了裂缝，很难相处的时候。会寻找下一段感情，而有子女牵绊的时候，如何避免孤独。 佛 主人公A，B，C 工人，司机，老师，医生，农民，
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%BD%93%E6%84%9F%E6%83%85%E4%B8%8D%E5%A6%82%E6%84%8F%E7%9A%84%E6%97%B6%E5%80%99/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/python%E7%BC%96%E7%A8%8B/">使用 Python 语法进行编程</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2023-06-06 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+          </div>
+        <span class="more-meta"> 约 401 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <h2 id="什么是编程语言">什么是编程语言</h2>
+<p>编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。</p>
+<blockquote>
+<p>一个功能用一个程序文件或整个程序文件夹实现</p>
+</blockquote>
+    </div>
+    <div class="read-more">
+      <a href="/post/python%E7%BC%96%E7%A8%8B/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/">如何有效规划事情</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2023-06-06 </span>
+      <div class="post-category">
+          <a href="/categories//">  </a>
+          </div>
+        <span class="more-meta"> 约 51 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      规划自己的任务 想象自己的需求，找一个参照物 规划在某个时间段完成参照物的某个程度 迅速行动 快速发布 反复迭代
+    </div>
+    <div class="read-more">
+      <a href="/post/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E8%A7%84%E5%88%92%E4%BA%8B%E6%83%85/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%BB%8F%E6%B5%8E/">经济</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2020-02-17 </span>
+      <div class="post-category">
+          <a href="/categories/%E7%A7%91%E6%99%AE/"> 科普 </a>
+          </div>
+        <span class="more-meta"> 约 199 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%BB%8F%E6%B5%8E/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/"></a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 23767 字 </span>
+        <span class="more-meta"> 预计阅读 48 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      在 Adobe Photoshop 中，使用键盘快捷键可提高您的工作效率。 常用的快捷键 结果 Windows macOS 自由变换 Control + T Command + T 使用相同的画笔，在绘画与抹除操作之间切换 按住 ~（波形符）
+    </div>
+    <div class="read-more">
+      <a href="/post/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/axios/"></a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 1385 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Axios Create by jsliang on 2018-11-8 13:41:10 Recently revised in 2019-05-31 13:50:06 饮水思源：Axios 中文文档 Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。 从浏览器中创建 XMLHttpRequests 从 node.js 创建 http 请求 支持 Promise API 拦截请
+    </div>
+    <div class="read-more">
+      <a href="/post/axios/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/jquery%E5%AE%9E%E6%88%98/"></a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 3859 字 </span>
+        <span class="more-meta"> 预计阅读 8 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      一 JavaScript 1.1 jQuery 引入 CDN：&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&quot;&gt;&lt;/script&gt; 1.2 双引号与单引号的使用规范 在平时的时候，能使用双引号就用双引号。 在拼接字符串的时候，使用单引号裹住
+    </div>
+    <div class="read-more">
+      <a href="/post/jquery%E5%AE%9E%E6%88%98/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
     </section>
   
   <nav class="pagination">
@@ -830,7 +865,19 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    
+
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    <script src="https://craigmod.com/js/fuse.js"></script>
+    
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.4034fe307e753eb3cf4c8351c6aaf29db0a44666755f070f8f0f2cbc731075d8.js"></script><footer id="footer" class="footer">
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
