@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Sep 2023 07:17:56 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 19:37:15 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 长远任务</title>
       <link>https://aming.xyz/post/todo/</link>
@@ -14,6 +14,33 @@
       
       <guid>https://aming.xyz/post/todo/</guid>
       <description>DOING 把主机和显示器搬回来，主机更强大。大屏幕双界面更利于测试，而且那里桌子不适合编程，碰，只能用移动的小屏幕。 TODO 这个计划不好，只是一个长远规划</description>
+    </item>
+    
+    <item>
+      <title>JQuery实战</title>
+      <link>https://aming.xyz/post/jquery%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Thu, 05 Oct 2023 19:37:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/jquery%E5%AE%9E%E6%88%98/</guid>
+      <description>一 JavaScript 1.1 jQuery 引入 CDN：&amp;lt;script src=&amp;quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 1.2 双引号与单引号的使用规范 在平时的时候，能使用双引号就用双引号。 在拼接字符串的时候，使用单引号裹住</description>
+    </item>
+    
+    <item>
+      <title>学习方法</title>
+      <link>https://aming.xyz/post/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 30 Sep 2023 12:34:11 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+      <description>運用的方法。 學任何東西前，先試着自己做做看。不會再學，不需要重頭開始學。是不好的學習方法。搜索着學，集結成冊 看書學知識沒有用，要運用知識。</description>
+    </item>
+    
+    <item>
+      <title>computer tools</title>
+      <link>https://aming.xyz/post/computer_tools/</link>
+      <pubDate>Fri, 29 Sep 2023 11:33:34 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/computer_tools/</guid>
+      <description>tools 工具列表 系统工具 开关机 按钮 计算机开机后，会展现给用户一个 家庭空间，用户可以在家中找自己要使用的工具。 程序起動器 ulauncher 開機啓動 把程序或程序鏈接放</description>
     </item>
     
     <item>
@@ -35,49 +62,12 @@
     </item>
     
     <item>
-      <title>不要用生产力评价程序员</title>
-      <link>https://aming.xyz/post/%E4%B8%8D%E8%A6%81%E7%94%A8%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AF%84%E4%BB%B7%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
-      <pubDate>Fri, 25 Aug 2023 17:16:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E4%B8%8D%E8%A6%81%E7%94%A8%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%AF%84%E4%BB%B7%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
-      <description>&lt;p&gt;不要用&amp;quot;生产力&amp;quot;这个词评价程序员，因为它是评价机器的。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>计算机原理</title>
-      <link>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</link>
-      <pubDate>Fri, 25 Aug 2023 11:05:11 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8E%9F%E7%90%86/</guid>
-      <description>&lt;h2 id=&#34;什么是计算机&#34;&gt;什么是计算机&lt;/h2&gt;
-&lt;p&gt;计算机原来是一种 进行数字处理的机器，后来随着 可编程的加入，产生了软件的概念，可以进行其它数据的处理。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ps必备的快捷键大全（超详细） - 知乎</title>
-      <link>https://aming.xyz/post/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Fri, 25 Aug 2023 10:17:01 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>mac 版 PS 将 Ctrl 替换为 CMD 即可 一、文件 新建CTRL+N 打开CTRL+O 打开为ALT+CTRL+O 关闭CTRL+W 保存CTRL+S 另存为CTRL+SH</description>
-    </item>
-    
-    <item>
       <title>穷困</title>
       <link>https://aming.xyz/post/%E7%A9%B7%E5%9B%B0/</link>
       <pubDate>Mon, 21 Aug 2023 07:25:14 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%A9%B7%E5%9B%B0/</guid>
       <description>穷困，别把自己困住了，别给自己围城，现在是网络时代，很容易与外面交流。</description>
-    </item>
-    
-    <item>
-      <title>TP6使用</title>
-      <link>https://aming.xyz/post/tp6%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Sat, 12 Aug 2023 15:55:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/tp6%E4%BD%BF%E7%94%A8/</guid>
-      <description>ThinkPHP 是 开源 的Web应用框架，用于快速构建Web应用程序。 Web 应用程序（Web Application）是一种通过网络（通常是互联网）访问和使用的软</description>
     </item>
     
     <item>
@@ -99,15 +89,6 @@
     </item>
     
     <item>
-      <title>JQuery使用方法</title>
-      <link>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Tue, 08 Aug 2023 21:06:10 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器</description>
-    </item>
-    
-    <item>
       <title>使用CSS创建图形组件</title>
       <link>https://aming.xyz/post/%E4%BD%BF%E7%94%A8css%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BD%A2%E7%BB%84%E4%BB%B6/</link>
       <pubDate>Tue, 08 Aug 2023 19:50:06 +0800</pubDate>
@@ -126,24 +107,6 @@
     </item>
     
     <item>
-      <title>Hugo的使用</title>
-      <link>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Tue, 08 Aug 2023 06:44:23 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/hugo%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;p&gt;hugo - hugo builds your site，且提供了自己的网络服务器来构建和服务网站，他会监视文件改动，并自动重新构建。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>AHK使用方法</title>
-      <link>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/ahk%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>windows 下使用ahk 设置 i3wm 快捷键</description>
-    </item>
-    
-    <item>
       <title>JavaScript教程</title>
       <link>https://aming.xyz/post/javascript%E6%95%99%E7%A8%8B/</link>
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
@@ -153,48 +116,12 @@
     </item>
     
     <item>
-      <title>vue2使用方法</title>
-      <link>https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/vue2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
-      <description>vue 可以挂载界面元素 nvm NVM, 全名为&amp;quot;Node Version Manager&amp;quot;, 是非常好用的Node版本管理器。 安装 新建一个页面 做一些简单的变量的渲染 实现页面的跳转 (路</description>
-    </item>
-    
-    <item>
-      <title>Windows虚拟桌面</title>
-      <link>https://aming.xyz/post/windows%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2/</link>
-      <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/windows%E8%99%9A%E6%8B%9F%E6%A1%8C%E9%9D%A2/</guid>
-      <description>win10虚拟桌面 win + ctrl + d可以新建虚拟桌面； win + ctrl + ←或→在这些桌面之间切换； win + ctrl + F4关闭此桌面 win + tab显示所有桌面略缩图</description>
-    </item>
-    
-    <item>
       <title>湿疹治疗</title>
       <link>https://aming.xyz/post/%E6%B9%BF%E7%96%B9%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 07 Aug 2023 21:10:31 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E6%B9%BF%E7%96%B9%E8%B5%84%E6%96%99/</guid>
       <description>保持皮肤湿润： 使用温和的保湿剂，如润肤霜或乳液，来帮助保持皮肤湿润。在洗完澡后尽快涂抹保湿剂以锁住水分。 保持空气湿度： 使用加湿器来保持室内空</description>
-    </item>
-    
-    <item>
-      <title>命令行指令</title>
-      <link>https://aming.xyz/post/commandline/</link>
-      <pubDate>Mon, 07 Aug 2023 19:52:18 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/commandline/</guid>
-      <description>计算机的基本功能 (用命令说明) 开机，启动计算机系统 开机电源键 关机，关闭系统 关机电源键或关机命令 shutdown 执行命令 列出计算机资源 ls (list) 显示资源内容 cat ,vi 删</description>
-    </item>
-    
-    <item>
-      <title>编写代码片段</title>
-      <link>https://aming.xyz/post/%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%E6%AE%B5/</link>
-      <pubDate>Mon, 07 Aug 2023 19:45:00 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%BC%96%E5%86%99%E4%BB%A3%E7%A0%81%E6%AE%B5/</guid>
-      <description>命令 M-x yas-new-snippet M-x yas-visit-snippet-file 打开片段文件 M-x snippet-mode 语法 1 2 3 4 5 # key: snippet abbrev 代码片段缩写 # name: snippet name 代码段名称,它将显示在菜单中 # condition: snippet condition 则仅当条件代码的计算结果为某个非 nil</description>
     </item>
     
     <item>
@@ -216,21 +143,13 @@
     </item>
     
     <item>
-      <title>当感情出现问题的时候</title>
-      <link>https://aming.xyz/post/%E5%BD%93%E6%84%9F%E6%83%85%E4%B8%8D%E5%A6%82%E6%84%8F%E7%9A%84%E6%97%B6%E5%80%99/</link>
-      <pubDate>Thu, 08 Jun 2023 10:42:28 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%BD%93%E6%84%9F%E6%83%85%E4%B8%8D%E5%A6%82%E6%84%8F%E7%9A%84%E6%97%B6%E5%80%99/</guid>
-      <description>两个人的情感出现了裂缝，很难相处的时候。会寻找下一段感情，而有子女牵绊的时候，如何避免孤独。 佛 主人公A，B，C 工人，司机，老师，医生，农民，</description>
-    </item>
-    
-    <item>
       <title>使用 Python 语法进行编程</title>
       <link>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
       <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
-      <description>&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
+      <description>&lt;p&gt;計算機作爲一個虛擬的平臺，能提供工具的另類表現形式&lt;/p&gt;
+&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
 &lt;p&gt;编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个功能用一个程序文件或整个程序文件夹实现&lt;/p&gt;
@@ -253,87 +172,6 @@
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/</guid>
       <description>什么是经济？ 就是值钱的东西，有用的东西 人力也是一种经济 社会分工，机械化也是追求经济效益 货币用来衡量并可交换东西的价值 分享，开放 ，竞争 (竞争能</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/adobe-photoshop-%E4%B8%AD%E7%9A%84%E9%BB%98%E8%AE%A4%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
-      <description>在 Adobe Photoshop 中，使用键盘快捷键可提高您的工作效率。 常用的快捷键 结果 Windows macOS 自由变换 Control + T Command + T 使用相同的画笔，在绘画与抹除操作之间切换 按住 ~（波形符）</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/axios/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/axios/</guid>
-      <description>Axios Create by jsliang on 2018-11-8 13:41:10 Recently revised in 2019-05-31 13:50:06 饮水思源：Axios 中文文档 Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。 从浏览器中创建 XMLHttpRequests 从 node.js 创建 http 请求 支持 Promise API 拦截请</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/jquery%E5%AE%9E%E6%88%98/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/jquery%E5%AE%9E%E6%88%98/</guid>
-      <description>一 JavaScript 1.1 jQuery 引入 CDN：&amp;lt;script src=&amp;quot;https://cdn.bootcss.com/jquery/3.3.1/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 1.2 双引号与单引号的使用规范 在平时的时候，能使用双引号就用双引号。 在拼接字符串的时候，使用单引号裹住</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/ps%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8%E7%BB%8F%E5%85%B8%E5%AE%8C%E6%95%B4%E7%89%88-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>我们有时候一个工具想马上调用出来，这时候我们如果用了快捷方式的话，很快就可以调用，节省了我们大量的时间。 今天给大家整理了完整的ps快捷键 1、</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/vue-deployment-optimization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/vue-deployment-optimization/</guid>
-      <description>Vue 部署优化 Create by jsliang on 2018-12-7 14:53:566 Recently revised in 2019-05-31 14:25:00 在进行 Vue 项目部署时，发现它访问速度贼慢，于是做了下优化，下面是优化建议： 一 进行路由懒加载 路由懒加载 - VueRouter 官网 大</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/vue-prepare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/vue-prepare/</guid>
-      <description>Vue 开发准备 Create by jsliang on 2018-12-24 11:54:30 Recently revised in 2019-05-31 13:48:20 在使用 VueCli 开发之前，有些步骤是重复的，如果一个一个重新写过比较麻烦，故在此记录一些常用步骤。 一 目录 不折腾的前端</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/vue-upload-file/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/vue-upload-file/</guid>
-      <description>Vue 上传文件 一 设置 Node 跨域代理 修改 项目/config/index.js 下的 dev 设置： 原 build/index.js 配置： 1 2 3 4 5 6 dev: { // Paths assetsSubDirectory: &amp;#39;static&amp;#39;, assetsPublicPath: &amp;#39;/&amp;#39;, proxyTable: {}, } 修改后 build/index.js 配置： 1 2</description>
-    </item>
-    
-    <item>
-      <title>MacBook键盘快捷键</title>
-      <link>https://aming.xyz/post/macbook%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/macbook%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
-      <description>修饰键 修饰键+字符键 确定最终的快捷键 Command（或 Cmd）⌘ Shift ⇧ Option（或 Alt）⌥ Control（或 Ctrl）⌃ Caps Lock ⇪ Fn 剪切、拷</description>
-    </item>
-    
-    <item>
-      <title>程序员要学习的项目</title>
-      <link>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84%E9%A1%B9%E7%9B%AE/</guid>
-      <description>单机 文件系统 (现实中的物体) 应用程序 计算机 写字板 绘画板 网络 网络计算机 网络站点 网络绘画处理</description>
     </item>
     
   </channel>
