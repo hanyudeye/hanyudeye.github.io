@@ -9,12 +9,11 @@
     <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 Python 语法进行编程</title>
-      <link>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</link>
+      <link>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
       <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/python%E7%BC%96%E7%A8%8B/</guid>
-      <description>&lt;p&gt;計算機作爲一個虛擬的平臺，能提供工具的另類表現形式&lt;/p&gt;
-&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
+      <guid>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
+      <description>&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
 &lt;p&gt;编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个功能用一个程序文件或整个程序文件夹实现&lt;/p&gt;
