@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>物理 on 阿明 - 收集生活的感悟</title>
+    <link>https://aming.xyz/categories/%E7%89%A9%E7%90%86/</link>
+    <description>Recent content in 物理 on 阿明 - 收集生活的感悟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Oct 2023 09:04:50 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>物理</title>
+      <link>https://aming.xyz/post/%E7%89%A9%E7%90%86/</link>
+      <pubDate>Mon, 16 Oct 2023 09:04:50 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%89%A9%E7%90%86/</guid>
+      <description>原子 原子里是另一个宇宙</description>
+    </item>
+    
+  </channel>
+</rss>
