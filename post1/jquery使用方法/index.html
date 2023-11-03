@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #aaa;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
+  <title>JQuery使用方法 - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="阿明" /><meta name="description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.117.0 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post1/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b1f3f9a3cf4b6d26419a3a5798ed1af3401e87af57e239f50c3c740a1dc48500.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="JQuery使用方法" />
+<meta property="og:description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post1/jquery%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" /><meta property="article:section" content="post1" />
+<meta property="article:published_time" content="2023-08-08T21:06:10+08:00" />
+<meta property="article:modified_time" content="2023-08-08T21:06:10+08:00" />
+<meta itemprop="name" content="JQuery使用方法">
+<meta itemprop="description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器"><meta itemprop="datePublished" content="2023-08-08T21:06:10+08:00" />
+<meta itemprop="dateModified" content="2023-08-08T21:06:10+08:00" />
+<meta itemprop="wordCount" content="3328">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JQuery使用方法"/>
+<meta name="twitter:description" content="jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/language/">
+        <li class="mobile-menu-item">语言的艺术</li>
+      </a><a href="/excerpt/">
+        <li class="mobile-menu-item">片段</li>
+      </a><a href="/seven/">
+        <li class="mobile-menu-item">一周</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/language/">语言的艺术</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/excerpt/">片段</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/seven/">一周</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <p>jQuery是一个快速、简洁且功能强大的JavaScript库。它是为了简化JavaScript编程而创建的，通过提供简洁的API和跨浏览器兼容性，使开发者能够更轻松地处理HTML文档的操纵、事件处理、动画效果、AJAX交互等任务。</p>
+<p>jQuery的设计目标是提供一种简单的方式来处理复杂的JavaScript操作。它封装了许多常见的JavaScript任务，使得开发者能够使用更少的代码来实现相同的功能。通过使用jQuery，开发者可以更快速地开发交互性强的网页和Web应用程序。</p>
+<p>以下是一些jQuery的特点和功能：</p>
+<ol>
+<li>
+<p>DOM操作：jQuery提供了简洁的API来选择和操作HTML文档中的元素。开发者可以使用CSS选择器来选择元素，并使用jQuery提供的方法来修改元素的样式、内容、属性等。</p>
+</li>
+<li>
+<p>事件处理：jQuery简化了事件处理的过程。开发者可以使用jQuery的事件处理方法来绑定事件、触发事件和处理事件。它还提供了方便的方法来处理常见的用户交互事件，如点击、鼠标移动、键盘输入等。</p>
+</li>
+<li>
+<p>动画效果：jQuery提供了丰富的动画效果和过渡效果。开发者可以使用jQuery的动画方法来创建平滑的过渡效果，如淡入淡出、滑动、展开收起等。</p>
+</li>
+<li>
+<p>AJAX交互：jQuery简化了使用AJAX进行服务器交互的过程。它提供了简单的方法来发送AJAX请求、处理响应数据，并支持各种数据格式如JSON、XML等。</p>
+</li>
+<li>
+<p>插件扩展：jQuery拥有一个庞大的插件生态系统，开发者可以使用这些插件来扩展jQuery的功能。这些插件提供了各种各样的功能，如图表绘制、表单验证、轮播图等。</p>
+</li>
+</ol>
+<p>总之，jQuery是一个流行的JavaScript库，它简化了JavaScript编程的复杂性，提供了丰富的功能和简洁的API，使得开发者能够更高效地开发交互性强的网页和Web应用程序。</p>
+<h2 id="选择器">选择器</h2>
+<table>
+<thead>
+<tr>
+<th>实例</th>
+<th>选取</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(&quot;.intro,.demo&quot;)</td>
+<td>class 为 &ldquo;intro&rdquo; 或 &ldquo;demo&rdquo; 的所有元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:first&rdquo;)</td>
+<td>整个页面中的第一个 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:last&rdquo;)</td>
+<td>最后一个 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;tr:even&rdquo;)</td>
+<td>所有偶数 <tr> 元素，索引值从 0 开始，第一个元素是偶数 (0)，第二个元素是奇数 (1)，以此类推。</td>
+</tr>
+<tr>
+<td>$(&ldquo;tr:odd&rdquo;)</td>
+<td>所有奇数 <tr> 元素，索引值从 0 开始，第一个元素是偶数 (0)，第二个元素是奇数 (1)，以此类推。</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:first-child&rdquo;)</td>
+<td>子节点中第一个 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:first-of-type&rdquo;)</td>
+<td>属于其父元素的第一个 <p> 元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:last-child&rdquo;)</td>
+<td>属于其父元素的最后一个子元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:last-of-type&rdquo;)</td>
+<td>属于其父元素的最后一个 <p> 元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:nth-child(2)&rdquo;)</td>
+<td>属于其父元素的第二个子元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:nth-last-child(2)&rdquo;)</td>
+<td>属于其父元素的第二个子元素的所有 <p> 元素，从最后一个子元素开始计数</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:nth-of-type(2)&rdquo;)</td>
+<td>属于其父元素的第二个 <p> 元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:nth-last-of-type(2)&rdquo;)</td>
+<td>属于其父元素的第二个 <p> 元素的所有 <p> 元素，从最后一个子元素开始计数</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:only-child&rdquo;)</td>
+<td>属于其父元素的唯一子元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:only-of-type&rdquo;)</td>
+<td>属于其父元素的特定类型的唯一子元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$(&ldquo;div &gt; p&rdquo;)</td>
+<td><div> 元素的直接子元素的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;div p&rdquo;)</td>
+<td><div> 元素的后代的所有 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;div + p&rdquo;)</td>
+<td>每个 <div> 元素相邻的下一个 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;div ~ p&rdquo;)</td>
+<td><div> 元素同级的所有 <p> 元素</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$(&ldquo;ul li:eq(3)&rdquo;)</td>
+<td>列表中的第四个元素（index 值从 0 开始）</td>
+</tr>
+<tr>
+<td>$(&ldquo;ul li:gt(3)&rdquo;)</td>
+<td>列举 index 大于 3 的元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;ul li:lt(3)&rdquo;)</td>
+<td>列举 index 小于 3 的元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;input:not(:empty)&rdquo;)</td>
+<td>所有不为空的输入元素</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$(&quot;:header&quot;)</td>
+<td>所有标题元素 <h1>, <h2> &hellip;</td>
+</tr>
+<tr>
+<td>$(&quot;:animated&quot;)</td>
+<td>所有动画元素</td>
+</tr>
+<tr>
+<td>$(&quot;:focus&quot;)</td>
+<td>当前具有焦点的元素</td>
+</tr>
+<tr>
+<td>$(&quot;:contains(&lsquo;Hello&rsquo;)&quot;)</td>
+<td>所有包含文本 &ldquo;Hello&rdquo; 的元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;div:has(p)&rdquo;)</td>
+<td>所有包含有 <p> 元素在其内的 <div> 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:empty&quot;)</td>
+<td>所有空元素</td>
+</tr>
+<tr>
+<td>$(&quot;:parent&quot;)</td>
+<td>匹配所有含有子元素或者文本的父元素。</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:hidden&rdquo;)</td>
+<td>所有隐藏的 <p> 元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;table:visible&rdquo;)</td>
+<td>所有可见的表格</td>
+</tr>
+<tr>
+<td>$(&quot;:root&quot;)</td>
+<td>文档的根元素</td>
+</tr>
+<tr>
+<td>$(&ldquo;p:lang(de)&rdquo;)</td>
+<td>所有 lang 属性值为 &ldquo;de&rdquo; 的 <p> 元素</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$(&quot;[href]&quot;)</td>
+<td>所有带有 href 属性的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[href=&lsquo;default.htm&rsquo;]&quot;)</td>
+<td>所有带有 href 属性且值等于 &ldquo;default.htm&rdquo; 的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[href!=&lsquo;default.htm&rsquo;]&quot;)</td>
+<td>所有带有 href 属性且值不等于 &ldquo;default.htm&rdquo; 的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[href$=&rsquo;.jpg&rsquo;]&quot;)</td>
+<td>所有带有 href 属性且值以 &ldquo;.jpg&rdquo; 结尾的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[title^=&lsquo;Tom&rsquo;]&quot;)</td>
+<td>所有带有 title 属性且值以 &ldquo;Tom&rdquo; 开头的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[title~=&lsquo;hello&rsquo;]&quot;)</td>
+<td>所有带有 title 属性且值包含单词 &ldquo;hello&rdquo; 的元素</td>
+</tr>
+<tr>
+<td>$(&quot;[title*=&lsquo;hello&rsquo;]&quot;)</td>
+<td>所有带有 title 属性且值包含字符串 &ldquo;hello&rdquo; 的元素</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$(&quot;:input&quot;)</td>
+<td>所有 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:text&quot;)</td>
+<td>所有带有 type=&ldquo;text&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:password&quot;)</td>
+<td>所有带有 type=&ldquo;password&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:radio&quot;)</td>
+<td>所有带有 type=&ldquo;radio&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:checkbox&quot;)</td>
+<td>所有带有 type=&ldquo;checkbox&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:submit&quot;)</td>
+<td>所有带有 type=&ldquo;submit&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:reset&quot;)</td>
+<td>所有带有 type=&ldquo;reset&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:button&quot;)</td>
+<td>所有带有 type=&ldquo;button&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:image&quot;)</td>
+<td>所有带有 type=&ldquo;image&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:file&quot;)</td>
+<td>所有带有 type=&ldquo;file&rdquo; 的 input 元素</td>
+</tr>
+<tr>
+<td>$(&quot;:enabled&quot;)</td>
+<td>所有启用的元素</td>
+</tr>
+<tr>
+<td>$(&quot;:disabled&quot;)</td>
+<td>所有禁用的元素</td>
+</tr>
+<tr>
+<td>$(&quot;:selected&quot;)</td>
+<td>所有选定的下拉列表元素</td>
+</tr>
+<tr>
+<td>$(&quot;:checked&quot;)</td>
+<td>所有选中的复选框选项</td>
+</tr>
+<tr>
+<td>$( &ldquo;p:target&rdquo; )</td>
+<td>选择器将选中ID和URI中一个格式化的标识符相匹配的<p>元素</td>
+</tr>
+</tbody>
+</table>
+<h2 id="事件">事件</h2>
+<p>jQuery 是为事件处理特别设计的。</p>
+<p>页面对不同访问者的响应叫做事件。</p>
+<p>事件处理程序指的是当 HTML 中发生某些事件时所调用的方法。</p>
+<p>常见 DOM 事件：</p>
+<table>
+<thead>
+<tr>
+<th>鼠标事件</th>
+<th>键盘事件</th>
+<th>表单事件</th>
+<th>文档/窗口事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>click</code> - 点击</td>
+<td><code>keypress</code> - 键被按下</td>
+<td><code>submit</code> - 表单提交</td>
+<td><code>load</code> - 全部加载（1.8已废弃）</td>
+</tr>
+<tr>
+<td><code>dbclick</code> - 双击</td>
+<td><code>keydown</code> - 键按下的过程</td>
+<td><code>change</code> - 文本改变</td>
+<td>resize - 浏览器窗口大小调试</td>
+</tr>
+<tr>
+<td><code>mouseenter</code> - 鼠标进入</td>
+<td><code>keyup</code> - 键被松开</td>
+<td><code>focus</code> - 获得焦点</td>
+<td>scroll - 滚动</td>
+</tr>
+<tr>
+<td><code>mouseleave</code> - 鼠标离开</td>
+<td> </td>
+<td><code>blur</code> - 失去焦点</td>
+<td><code>unload</code> - 离开页面（1.8已废弃）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="效果">效果</h2>
+<h3 id="隐藏显示">隐藏/显示</h3>
+<p>$(selector).hide(speed,callback);</p>
+<p>$(selector).show(speed,callback);
+可选的 speed 参数规定隐藏/显示的速度，可以取以下值：&ldquo;slow&rdquo;、&ldquo;fast&rdquo; 或毫秒。</p>
+<p>可选的 callback 参数是隐藏或显示完成后所执行的函数名称。</p>
+<p>toggle()</p>
+<h3 id="淡入淡出">淡入淡出</h3>
+<ul>
+<li>
+<p>fadeIn()</p>
+</li>
+<li>
+<p>fadeOut()</p>
+</li>
+<li>
+<p>fadeToggle()</p>
+</li>
+<li>
+<p>fadeTo()</p>
+</li>
+<li>
+<p>$(&quot;#div2&quot;).fadeIn(&ldquo;slow&rdquo;);</p>
+</li>
+<li>
+<p>$(&quot;#div3&quot;).fadeIn(3000);</p>
+</li>
+</ul>
+<ul>
+<li>渐变：<code>$(selector).fadeTo(speed,opacity,callback);</code></li>
+<li><code>speed</code>：速度</li>
+<li><code>opacity</code>：透明度</li>
+<li><code>callback</code>：回调函数</li>
+</ul>
+<h3 id="滑动">滑动</h3>
+<p>语法：</p>
+<ul>
+<li><code>$(selector).slideDown(speed,callback);</code></li>
+<li><code>$(selector).slideUp(speed,callback);</code></li>
+<li><code>$(selector).slideToggle(speed,callback);</code></li>
+<li><code>speed</code>：时间</li>
+<li><code>callback</code>：回调函数</li>
+</ul>
+<h3 id="动画">动画</h3>
+<ul>
+<li><code>$(selector).animate({params},speed,callback);</code></li>
+<li><code>params</code>：css 属性（键值对形式，-号替换为驼峰 → <code>border-radius=borderRadius:'15px'</code>）</li>
+<li><code>speed</code>：时间</li>
+<li><code>callback</code>：回调函数</li>
+</ul>
+<p>操作：</p>
+<ol>
+<li>能操作单个属性</li>
+<li>能操作多个属性</li>
+<li>值能使用相对值（+=、-=）</li>
+<li>属性值能为&quot;show&quot;、&ldquo;hide&rdquo; 或 &ldquo;toggle&quot;等</li>
+<li>编写多个animate能使用队列功能</li>
+</ol>
+<h3 id="捕获">捕获</h3>
+<ul>
+<li><code>text()</code>：捕获文本</li>
+<li><code>html()</code>：捕获HTML</li>
+<li><code>val()</code>：捕获表单文本值</li>
+<li><code>attr()</code>：捕获属性值</li>
+</ul>
+<h3 id="添加元素">添加元素</h3>
+<ul>
+<li><code>append()</code> - 在被选的元素的结尾插入内容</li>
+<li><code>prepend()</code> - 在被选的元素的开头插入内容</li>
+<li><code>after()</code> - 在被选元素之后插入内容</li>
+<li><code>before()</code> - 在被选元素之前插入内容</li>
+</ul>
+<h3 id="删除元素">删除元素</h3>
+<ul>
+<li><code>remove()</code> - 删除被选元素（及其子元素）（可附加参数）</li>
+<li><code>empty()</code> - 从被选元素中删除子元素</li>
+</ul>
+<h3 id="类">类</h3>
+<ul>
+<li><code>addClass()</code> - 向被选元素添加一个类或多个类</li>
+<li><code>removeClass()</code> - 从被选元素删除一个或多个类</li>
+<li><code>toggleClass()</code> - 对被选元素进行添加/删除类的切换操作</li>
+<li><code>css()</code> - 设置或返回样式属性</li>
+</ul>
+<h3 id="尺寸">尺寸</h3>
+<ul>
+<li><code>width()</code> - 元素宽度</li>
+<li><code>height()</code> - 元素高度</li>
+<li><code>innerWidth()</code> - padding+元素 宽度</li>
+<li><code>innerHeight()</code> - padding+元素 高度</li>
+<li><code>outerWidth()</code> - border+padding+元素 宽度</li>
+<li><code>outerHeight()</code> - border+padding+元素 高度</li>
+</ul>
+<h3 id="祖先选择器">祖先选择器</h3>
+<ul>
+<li><code>parent()</code> - 上一级父元素</li>
+<li><code>parents()</code> - 上至html标签</li>
+<li><code>parentsUntil()</code> - 介于目前元素与选择元素之间的所有标签。</li>
+</ul>
+<h3 id="后代选择器">后代选择器</h3>
+<ul>
+<li><code>children()</code> - 所选元素的所有直接子元素</li>
+<li><code>find()</code> - 找到符合条件的子元素</li>
+</ul>
+<h3 id="同胞选择器">同胞选择器</h3>
+<ul>
+<li><code>siblings()</code> - 被选元素的所有同胞元素</li>
+<li><code>next()</code> - 被选元素的下一个元素</li>
+<li><code>nextAll()</code> - 被选元素的下面所有元素</li>
+<li><code>nextUntil()</code> - 被选元素到后面指定元素中间的所有元素</li>
+<li><code>prev()</code> - 被选元素的前一个元素</li>
+<li><code>prevAll()</code> - 被选元素的前面所有元素</li>
+<li><code>prevUntil()</code> - 被选元素到前面指定元素中间的所有元素</li>
+</ul>
+<h3 id="过滤选择器">过滤选择器</h3>
+<ul>
+<li><code>first()</code> - 第一个匹配条件的元素</li>
+<li><code>last()</code> - 最后一个匹配条件的元素</li>
+<li><code>eq()</code> - 符合索引号的元素</li>
+<li><code>filter()</code> - 匹配filter里条件的元素</li>
+<li><code>not()</code> - 去掉not里符合条件的元素后的其他元素</li>
+</ul>
+<h2 id="请求">请求</h2>
+<h3 id="load">load</h3>
+<p>语法：<code>$(selector).load(URL,data,callback);</code></p>
+<ul>
+<li><code>URL</code>：请求加载的URL</li>
+<li><code>data</code>：查询字符串键值对集合</li>
+<li><code>callback</code>：<code>load()</code> 方法完成后所执行的函数名称
+<ul>
+<li><code>responseTxt</code> - 包含调用成功时的结果内容</li>
+<li><code>statusTxt</code> - 包含调用的状态</li>
+<li><code>xhr</code> - 包含XMLHttpRequest对象</li>
+</ul>
+</li>
+</ul>
+<h3 id="getpost">get/post</h3>
+<p>get - 从指定的资源请求数据</p>
+<p>post - 向指定的资源提交要处理的数据</p>
+<p>语法：</p>
+<ul>
+<li><code>$.get(URL,callback);</code></li>
+<li><code>URL</code>：请求的 <code>URL</code></li>
+<li><code>callback</code>：请求成功后所执行的函数名</li>
+</ul>
+<h3 id="ajax">Ajax</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/addressInfo&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">addressName</span><span class="o">:</span> <span class="nx">$serA</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;error&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">always</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;complete&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">url</span><span class="o">:</span> <span class="nx">host</span> <span class="o">+</span> <span class="s1">&#39;/olduser/up&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">data</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">userName</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">adsl</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">success</span><span class="o">:</span><span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;#search-name&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&#34;&amp;adsl=&#34;</span> <span class="o">+</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#search-id&#34;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">alert</span><span class="p">(</span><span class="nx">res</span><span class="p">.</span><span class="nx">msg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="jsonp">JSONP</h3>
+<p>跨域读取数据，请用 JSONP。</p>
+<blockquote>
+<p>注意：JSONP 与 Ajax 没任何关系！JSONP 是利用 script 标签来 get 到被包裹的 json 数据。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&#34;http://www.runoob.com/try/ajax/jsonp.php?jsoncallback=?&#34;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="s1">&#39;&lt;ul&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;li&gt;&#39;</span> <span class="o">+</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/li&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">html</span> <span class="o">+=</span> <span class="s1">&#39;&lt;/ul&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#divCustomers&#39;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">});</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="插件扩展">插件扩展</h2>
+<h3 id="jquery-validate">jQuery Validate</h3>
+<p>说明：jQuery Validate是在jQuery基础上扩展的为表单提供验证功能的插件。</p>
+<h3 id="jquery-accordion">JQuery Accordion</h3>
+<p>说明：jQuery Accordion插件用于创建折叠菜单</p>
+<h3 id="jquery-autocomplete">jQuery Autocomplete</h3>
+<p>说明：jQuery Autocomplete插件根据用户输入值进行搜索和过滤</p>
+<h3 id="jquery-growl">jQuery Growl</h3>
+<p>说明：jQuery Growl用户做消息提醒</p>
+<h3 id="jquery-password-validation">jQuery Password Validation</h3>
+<p>说明：jQuery Password Validation 在jQuery Validation 的基础上扩展，专门对密码进行验证</p>
+
+  </div>
+</article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    
+
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    <script src="https://craigmod.com/js/fuse.js"></script>
+    
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.c5ed57d4ffe4b4223cbb17afac5857c8ef58564e51ba85367cdaa031bf2ce08a.js"></script><footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
