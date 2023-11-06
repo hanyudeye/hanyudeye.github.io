@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
+  <title>Elfeed layer - 阿明 - 收集生活的感悟</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="阿明" /><meta name="description" content="#&#43;TAGS: layer|reader
+[[file:img/elfeed.png]]
+Table of Contents :TOC_5_gh:noexport: [[#description][Description]] [[#features][Features:]] [[#install][Install]] [[#layer][Layer]] [[#setup-feeds][Setup feeds]] [[#with-org][With Org]] [[#manually][Manually]] [[#server][Server]] [[#elfeed-goodies][Elfeed goodies]] [[#key-bindings][Key bindings]] [[#troubleshooting][Troubleshooting]] [[#database-empty-at-first-start][Database empty at first start]] [[#queue-timeout-exceeded][Queue timeout exceeded]] Description This layer integrates a web feed reader into spacemacs. ** Setup feeds *** With Org It is recommended to manage your feeds list and tags via org files, this is possible thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] package. To define a list of org files:" /><meta name="keywords" content="阿明博客, 记录生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
+
+
+<link rel="canonical" href="https://aming.xyz/post/emacs/emacs/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b1f3f9a3cf4b6d26419a3a5798ed1af3401e87af57e239f50c3c740a1dc48500.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Elfeed layer" />
+<meta property="og:description" content="#&#43;TAGS: layer|reader
+[[file:img/elfeed.png]]
+Table of Contents :TOC_5_gh:noexport: [[#description][Description]] [[#features][Features:]] [[#install][Install]] [[#layer][Layer]] [[#setup-feeds][Setup feeds]] [[#with-org][With Org]] [[#manually][Manually]] [[#server][Server]] [[#elfeed-goodies][Elfeed goodies]] [[#key-bindings][Key bindings]] [[#troubleshooting][Troubleshooting]] [[#database-empty-at-first-start][Database empty at first start]] [[#queue-timeout-exceeded][Queue timeout exceeded]] Description This layer integrates a web feed reader into spacemacs. ** Setup feeds *** With Org It is recommended to manage your feeds list and tags via org files, this is possible thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] package. To define a list of org files:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aming.xyz/post/emacs/emacs/" /><meta property="article:section" content="post" />
+
+
+<meta itemprop="name" content="Elfeed layer">
+<meta itemprop="description" content="#&#43;TAGS: layer|reader
+[[file:img/elfeed.png]]
+Table of Contents :TOC_5_gh:noexport: [[#description][Description]] [[#features][Features:]] [[#install][Install]] [[#layer][Layer]] [[#setup-feeds][Setup feeds]] [[#with-org][With Org]] [[#manually][Manually]] [[#server][Server]] [[#elfeed-goodies][Elfeed goodies]] [[#key-bindings][Key bindings]] [[#troubleshooting][Troubleshooting]] [[#database-empty-at-first-start][Database empty at first start]] [[#queue-timeout-exceeded][Queue timeout exceeded]] Description This layer integrates a web feed reader into spacemacs. ** Setup feeds *** With Org It is recommended to manage your feeds list and tags via org files, this is possible thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] package. To define a list of org files:">
+
+<meta itemprop="wordCount" content="520">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Elfeed layer"/>
+<meta name="twitter:description" content="#&#43;TAGS: layer|reader
+[[file:img/elfeed.png]]
+Table of Contents :TOC_5_gh:noexport: [[#description][Description]] [[#features][Features:]] [[#install][Install]] [[#layer][Layer]] [[#setup-feeds][Setup feeds]] [[#with-org][With Org]] [[#manually][Manually]] [[#server][Server]] [[#elfeed-goodies][Elfeed goodies]] [[#key-bindings][Key bindings]] [[#troubleshooting][Troubleshooting]] [[#database-empty-at-first-start][Database empty at first start]] [[#queue-timeout-exceeded][Queue timeout exceeded]] Description This layer integrates a web feed reader into spacemacs. ** Setup feeds *** With Org It is recommended to manage your feeds list and tags via org files, this is possible thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] package. To define a list of org files:"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">阿明</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/categories/">
+        <li class="mobile-menu-item">归纳</li>
+      </a><a href="">
+        <li class="mobile-menu-item"></li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">阿明</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/categories/">归纳</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href=""></a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Elfeed layer</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+          <span class="more-meta"> 约 520 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>#+TAGS: layer|reader</p>
+<p>[[file:img/elfeed.png]]</p>
+<ul>
+<li>Table of Contents                     :TOC_5_gh:noexport:</li>
+</ul>
+<ul>
+<li>[[#description][Description]]
+<ul>
+<li>[[#features][Features:]]</li>
+</ul>
+</li>
+<li>[[#install][Install]]
+<ul>
+<li>[[#layer][Layer]]</li>
+<li>[[#setup-feeds][Setup feeds]]
+<ul>
+<li>[[#with-org][With Org]]</li>
+<li>[[#manually][Manually]]</li>
+</ul>
+</li>
+<li>[[#server][Server]]</li>
+<li>[[#elfeed-goodies][Elfeed goodies]]</li>
+</ul>
+</li>
+<li>[[#key-bindings][Key bindings]]</li>
+<li>[[#troubleshooting][Troubleshooting]]
+<ul>
+<li>[[#database-empty-at-first-start][Database empty at first start]]</li>
+<li>[[#queue-timeout-exceeded][Queue timeout exceeded]]</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Description
+This layer integrates a web feed reader into spacemacs.</li>
+</ul>
+<p>** Setup feeds
+*** With Org
+It is recommended to manage your feeds list and tags via org files, this is
+possible thanks to [[https://github.com/remyhonig/elfeed-org][elfeed-org]] package. To define a list of org files:</p>
+<p>#+BEGIN_SRC emacs-lisp
+(elfeed :variables rmh-elfeed-org-files (list &ldquo;~/.emacs.d/private/elfeed1.org&rdquo;
+&ldquo;~/.emacs.d/private/elfeed2.org&rdquo;))
+#+END_SRC</p>
+<p>Checkout [[https://github.com/remyhonig/elfeed-org][elfeed-org]] documentation to see the format of that file.</p>
+<p>Here is an example of such a file (note the usage of org tags to tag your feeds)</p>
+<p>#+BEGIN_SRC org</p>
+<ul>
+<li>Blogs                                                              :elfeed:
+** entry-title: (linux|linus|ubuntu|kde|gnome)                  :linux:
+** <a href="http://git-annex.branchable.com/design/assistant/blog/index.rss">http://git-annex.branchable.com/design/assistant/blog/index.rss</a> :mustread:
+** <a href="http://feeds.feedburner.com/InformationIsBeautiful">http://feeds.feedburner.com/InformationIsBeautiful</a>
+** [[http://orgmode.org][Org Mode Links supported as well]]
+** Software Development                                                 :dev:
+*** Emacs                                                    :emacs:mustread:
+**** <a href="http://nullprogram.com/feed/">http://nullprogram.com/feed/</a>
+**** entry-title: (emacs|org-mode)
+**** <a href="https://planet.emacslife.com/atom.xml">https://planet.emacslife.com/atom.xml</a>
+*** Web Development                                                     :web:
+**** <a href="http://feeds.feedburner.com/symfony/blog">http://feeds.feedburner.com/symfony/blog</a>
+**** <a href="http://feeds.feedburner.com/qooxdoo/blog/content">http://feeds.feedburner.com/qooxdoo/blog/content</a>
+*** Eclipse                                                         :eclipse:
+**** <a href="http://blog.eclipse-tips.com/feeds/posts/default?alt=rss">http://blog.eclipse-tips.com/feeds/posts/default?alt=rss</a>
+**** <a href="http://ed-merks.blogspot.com/feeds/posts/default">http://ed-merks.blogspot.com/feeds/posts/default</a>
+**** <a href="http://feeds.feedburner.com/eclipselive">http://feeds.feedburner.com/eclipselive</a>
+#+END_SRC</li>
+</ul>
+<p>*** Manually
+To explicitly setup the list of feeds, set the value of =elfeed-feeds= variable
+in your =.spacemacs= file.</p>
+<p>#+BEGIN_SRC emacs-lisp
+(elfeed :variables
+elfeed-feeds &lsquo;((&ldquo;<a href="http://nullprogram.com/feed/%22">http://nullprogram.com/feed/&quot;</a> blog emacs)
+&ldquo;<a href="http://www.50ply.com/atom.xml%22">http://www.50ply.com/atom.xml&quot;</a>  ; no autotagging
+(&ldquo;<a href="http://nedroid.com/feed/%22">http://nedroid.com/feed/&quot;</a> webcomic)))
+#+END_SRC</p>
+<p>Check documentation for =elfeed-feeds= for more information about this variable
+(~SPC h d v elfeed-feeds RET~).</p>
+<p>** Server
+Elfeed comes with a simple [[https://github.com/skeeto/elfeed#web-interface][web interface]] to browse its database. You can manually
+start it by calling =elfeed-web-start= or by setting =elfeed-enable-web-interface=
+to =t= which will start the web automatically when Emacs starts.</p>
+<p>By default web interface is available on [[http://localhost:8080/elfeed/][localhost:8080/elfeed]]. You can change
+the default port by changing the value of =httpd-port=.</p>
+<p>#+BEGIN_SRC emacs-lisp
+(elfeed :variables elfeed-enable-web-interface t)
+#+END_SRC</p>
+<p>** Elfeed goodies
+Elfeed layer loads a set of useful helper functions and bindings to improve your elfeed experience.
+Normally these should help you however there are some workflows where these may rather hinder you.
+In this case you can disable these by setting =elfeed-enable-goodies= to =nil=.</p>
+<p>#+BEGIN_SRC emacs-lisp
+(elfeed :variables elfeed-enable-goodies nil)
+#+END_SRC</p>
+<ul>
+<li>Key bindings</li>
+</ul>
+<p>| Key binding | Description  |
+|&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&ndash;|
+| ~SPC a r e~ | start elfeed |</p>
+<p>Use =SPC ?= to discover major-mode key bindings.</p>
+<p>| Key binding | Description                                       |
+|&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;|
+| ~c~         | compact feed db                                   |
+| ~gr~        | update all the feeds                              |
+| ~gR~        | force refresh view of the feed listing            |
+| ~gu~        | unjam elfeed if it is slow due to slow connection |
+| ~o~         | load OPML                                         |
+| ~q~         | quit main window, or item view buffer.            |
+| ~w~         | start web server                                  |
+| ~W~         | stop web server                                   |</p>
+<p>In =elfeed-show= mode, you can use the following bindings:</p>
+<p>| Key binding | Description      |
+|&mdash;&mdash;&mdash;&mdash;-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;|
+| ~q~         | quit show window |
+| ~C-j~       | Next entry       |
+| ~C-k~       | Previous entry   |</p>
+<ul>
+<li>Troubleshooting
+** Database empty at first start
+Be sure that you added some feeds first then load your feeds with ~gr~
+in evilified buffer. Or ~M-x elfeed-update~.</li>
+</ul>
+<p>** Queue timeout exceeded
+If you are getting &ldquo;Queue timeout exceeded&rdquo; errors, try increasing
+the value of =url-queue-timeout=.</p>
+<p>#+BEGIN_SRC emacs-lisp
+(elfeed :variables url-queue-timeout 30)
+#+END_SRC</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/hellogithub/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.81bf06518bf8bd21129a4a5d609f2f110cfa8dc28a93cb6724a700453753f48b.js"></script><footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
+  <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
