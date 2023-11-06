@@ -6,23 +6,14 @@
     <description>Recent content in 计算机 on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Feb 2020 13:08:49 +0800</lastBuildDate>
-    
-	<atom:link href="https://aming.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 16 Oct 2023 10:39:42 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>计算机网络简介</title>
-      <link>https://aming.xyz/post/network/</link>
-      <pubDate>Thu, 13 Feb 2020 13:08:49 +0800</pubDate>
+      <title>计算机</title>
+      <link>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Mon, 16 Oct 2023 10:39:42 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/network/</guid>
-      <description>&lt;p&gt;
-一个人，你再强，你最多也只能掌握两个人的知识，干两个人的活，比方啊。但是你有些事情不会做，或者人手不够怎么办，那就多找几个人不就完了吗。
-&lt;/p&gt;
-&lt;p&gt;
-计算机也是一样，你把计算机连成一个团体，那么所有在团体中的计算机就都能受益了，可以互相帮助。
-&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+      <description>计算机 计算机就是与CPU沟通，与自己沟通 网络 网络就是与他人沟通</description>
     </item>
     
   </channel>

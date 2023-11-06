@@ -8,15 +8,18 @@
     <language>en</language>
     <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>使用 Python 语法进行编程</title>
+      <title>编程开发</title>
       <link>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
       <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
-      <description>&lt;h2 id=&#34;什么是编程语言&#34;&gt;什么是编程语言&lt;/h2&gt;
-&lt;p&gt;编程语言是：告诉计算机你的想法，计算机按照你的想法处理你所要的功能。&lt;/p&gt;
+      <description>&lt;h2 id=&#34;什么是编程开发&#34;&gt;什么是编程开发&lt;/h2&gt;
+&lt;p&gt;现代计算机 执行程序来 运行功能，而程序的产生需要开发编写。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一个功能用一个程序文件或整个程序文件夹实现&lt;/p&gt;
+&lt;p&gt;计算机分析你说的话（输入的文本、视频、图像等资源），理解你的意思，并处理你的需求。&lt;br&gt;
+例子： 我要怎么去火星？ How can I goto Mars？ 计算机会尝试给出方案&lt;br&gt;
+注：上面计算机其实是各类解析器&lt;br&gt;
+既然计算机这么发达，它定会取代人类做更智能的事&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
