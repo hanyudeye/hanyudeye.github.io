@@ -3,6 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
   <title>阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -15,7 +54,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
 <meta name="author" content="阿明" /><meta name="description" content="收集生活的感悟." /><meta name="keywords" content="阿明博客, 记录生活" />
 
@@ -24,7 +62,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/" />
@@ -36,9 +74,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-<link href="/sass/main.min.d673ac3919b15d2fe4baa5970d45a748215d3b9eff8cc8607aa41dfaf30eb116.css" rel="stylesheet">
+
+<link href="/sass/main.min.032dc16a03e59c9d45c66a813271bda036a867e81b10c58f0ca34a9279eeb01b.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -46,7 +84,6 @@
 <meta property="og:description" content="收集生活的感悟." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://aming.xyz/" />
-<meta property="og:updated_time" content="2020-05-04T20:42:42+08:00" />
 <meta itemprop="name" content="阿明 - 收集生活的感悟">
 <meta itemprop="description" content="收集生活的感悟."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="阿明 - 收集生活的感悟"/>
@@ -76,38 +113,20 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/information/">
+        <li class="mobile-menu-item">科技资讯</li>
       </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/music/">
-        <li class="mobile-menu-item">音乐</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
-      </a><a href="/notes/">
-        <li class="mobile-menu-item">日记</li>
+        <li class="mobile-menu-item">归纳</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
-
-
-<style>
- .duilian{
-     position: absolute;
-     top: 30;
-     left: 20;
-     width: 300px;
-     min-height: 100vh;
-     overflow-y: hidden;
-     -webkit-overflow-scrolling: touch;
-     z-index: 20;
- }
-</style>
 
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
@@ -115,117 +134,81 @@
   <a href="/" class="logo">阿明</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/">首页</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
+        <a class="menu-item-link" href="/information/">科技资讯</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/music/">音乐</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/notes/">日记</a>
+        <a class="menu-item-link" href="/categories/">归纳</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/zhexue/">人生意义</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">编程开发</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2019-11-22 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>
-关于人生的意义，一百个人有一百个人的想法。这里仅说自己的狭隘理解。
-</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/zhexue/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E8%AE%BE%E8%AE%A1/">设计简介</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-07-18 </span>
+      <span class="post-time"> 2023-06-06 </span>
       <div class="post-category">
           <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
           </div>
+        <span class="more-meta"> 约 253 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>
-所谓设计，即“设想和计划，设想是目的，计划是过程安排”，通常是指有目标和计划的创作行为及活动。
-</p>
+      <h2 id="什么是编程开发">什么是编程开发</h2>
+<p>现代计算机 执行程序来 运行功能，而程序的产生需要开发编写。</p>
+<blockquote>
+<p>计算机分析你说的话（输入的文本、视频、图像等资源），理解你的意思，并处理你的需求。<br>
+例子： 我要怎么去火星？ How can I goto Mars？ 计算机会尝试给出方案<br>
+注：上面计算机其实是各类解析器<br>
+既然计算机这么发达，它定会取代人类做更智能的事</p>
+</blockquote>
     </div>
     <div class="read-more">
-      <a href="/post/%E8%AE%BE%E8%AE%A1/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/emacs/">emacs 简介</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%BB%8F%E6%B5%8E/">经济</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2019-06-04 </span>
+      <span class="post-time"> 2020-02-17 </span>
       <div class="post-category">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+          <a href="/categories/%E7%A7%91%E6%99%AE/"> 科普 </a>
           </div>
+        <span class="more-meta"> 约 207 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>
-一种文本编辑器，因为它是解释执行的，所以可以通过添加代码进行功能扩展。
-</p>
+      经济 对牛羊而言，一片草地也是经济，牛羊有需求也会付费。 有价值的人造物。 人力，服务也是一种经济 价格波动是价格因生产成本和供求关系(商品数量)而
     </div>
     <div class="read-more">
-      <a href="/post/emacs/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/pic/"></a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 0001-01-01 </span>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/pic/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E7%BB%8F%E6%B5%8E/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -245,10 +228,22 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.81bf06518bf8bd21129a4a5d609f2f110cfa8dc28a93cb6724a700453753f48b.js"></script><footer id="footer" class="footer">
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -262,22 +257,15 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2021
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -291,15 +279,15 @@
 
 
 
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
 
 
 

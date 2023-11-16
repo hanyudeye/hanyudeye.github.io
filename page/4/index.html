@@ -3,6 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+   #fastSearch {
+       visibility: hidden;
+       position: absolute;
+       right: 0px;
+       top: 0px;
+       display: inline-block;
+       width: 300px;
+   }
+
+   #fastSearch input { 
+       padding: 4px 10px;
+       width: 100%;
+       height: 31px;
+       font-size: 1.6em;
+       color: #fff;
+       font-weight: bold;
+       background-color: #000;
+       border-radius: 3px 3px 0px 0px;
+       border: none;
+       outline: none;
+       text-align: left;
+       display: inline-block;
+   }
+
+   #searchResults li { 
+       list-style: none; 
+       margin-left: 0em;
+       background-color: #333; 
+       border-bottom: 1px dotted #000;
+       color: #fff;
+   }
+   #searchResults li .title { font-size: 1.1em; margin-bottom: 10px; display: inline-block;}
+   #searchResults { visibility: inherit; display: inline-block; width: 320px; }
+   #searchResults a { text-decoration: none !important; padding: 10px; display: inline-block; color:#fff; }
+   #searchResults a:hover, a:focus { outline: 0; background-color: #666; color: #fff; }
+
+  </style>
+
   <title>阿明 - 收集生活的感悟</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -15,7 +54,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
 <meta name="author" content="阿明" /><meta name="description" content="收集生活的感悟." /><meta name="keywords" content="阿明博客, 记录生活" />
 
@@ -24,7 +62,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.70.0 with theme even" />
+<meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
 <link rel="canonical" href="https://aming.xyz/" />
@@ -36,8 +74,9 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link href="/dist/even.c5fa8c44.min.css" rel="stylesheet">
+
+
+<link href="/sass/main.min.b1f3f9a3cf4b6d26419a3a5798ed1af3401e87af57e239f50c3c740a1dc48500.css" rel="stylesheet">
 <link href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
 
 
@@ -45,7 +84,6 @@
 <meta property="og:description" content="收集生活的感悟." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://aming.xyz/" />
-<meta property="og:updated_time" content="2020-05-04T20:42:42+08:00" />
 <meta itemprop="name" content="阿明 - 收集生活的感悟">
 <meta itemprop="description" content="收集生活的感悟."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="阿明 - 收集生活的感悟"/>
@@ -75,271 +113,157 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">主页</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">归档</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/information/">
+        <li class="mobile-menu-item">科技资讯</li>
       </a><a href="/categories/">
-        <li class="mobile-menu-item">分类</li>
-      </a><a href="/music/">
-        <li class="mobile-menu-item">音乐</li>
-      </a><a href="/source/">
-        <li class="mobile-menu-item">资源</li>
-      </a><a href="/notes/">
-        <li class="mobile-menu-item">日记</li>
+        <li class="mobile-menu-item">归纳</li>
       </a><a href="/about/">
         <li class="mobile-menu-item">关于</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">阿明</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">主页</a>
+        <a class="menu-item-link" href="/">首页</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">归档</a>
+        <a class="menu-item-link" href="/information/">科技资讯</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/music/">音乐</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/source/">资源</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/notes/">日记</a>
+        <a class="menu-item-link" href="/categories/">归纳</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/about/">关于</a>
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/gimp/">照片处理</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/hellogithub/"></a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-01-25 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-          </div>
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 7 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>
-我们拍了一张照片，可能不是很称我们的心意。我们把照片改成我们满意的图片，就要学会照片处理。
-</p>
+      activate-power-mode 爆炸效果 你好
     </div>
     <div class="read-more">
-      <a href="/post/gimp/" class="read-more-link">阅读更多</a>
+      <a href="/post/hellogithub/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E6%8B%8D%E7%85%A7/">拍照</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/linux/"></a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-01-22 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 57 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>想来我活一辈子，用脑子留存不了生命的轨迹，就想到用照相机来记录。<br>
-但是这两天网上看中的一款实用的相机居然价格不降反升，甚是气氛，就暂且先用手机来记录，然后会学习一些拍照方面的知识，慢慢学习。</p>
+      文件管理 cat（英文全拼：concatenate）命令用于连接文件并打印到标准输出设备上。 文档编辑 设备管理 数据输入
     </div>
     <div class="read-more">
-      <a href="/post/%E6%8B%8D%E7%85%A7/" class="read-more-link">阅读更多</a>
+      <a href="/post/linux/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/uncle/">大伯传</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/neovim/"></a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-01-19 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 27 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>1月16日晚，大伯走了。</p>
+      多模式 切换会 Normal模式，,进入输入模式 光标移动 hjkl
     </div>
     <div class="read-more">
-      <a href="/post/uncle/" class="read-more-link">阅读更多</a>
+      <a href="/post/neovim/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/">两个我</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/python/"></a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-01-12 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 9 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>这里讲的两个我不是肉体的我，也不是平行世界中多重我的概念，而是存在于我们的头脑中的一个理性的我，和一个感性的我。</p>
+      你好,Python
     </div>
     <div class="read-more">
-      <a href="/post/%E5%A6%82%E4%BD%95%E8%87%AA%E5%BE%8B/" class="read-more-link">阅读更多</a>
+      <a href="/post/python/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
-    <article class="post">
+    
+<article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/">时不我代</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/tab/"></a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2020-01-09 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-          </div>
+      <span class="post-time"> 0001-01-01 </span>
+      
+        <span class="more-meta"> 约 1 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>由<a href="https://www.miyaboke.com/">弥雅博客</a> 中关于企业发展想到的。</p>
-<p>最近我失业，去找临时工，发现好多找临时工的人，问后才知道原来是企业生意不好，提前放假了。</p>
+      helo
     </div>
     <div class="read-more">
-      <a href="/post/%E6%97%B6%E4%B8%8D%E6%88%91%E4%BB%A3/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/">如何吃药</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2020-01-08 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>摘抄此文是为对死亡的恐惧与对生命脆弱。<br>
-因为我对此行业不懂，所以认识或是错误的，只是把网上看到的简单写一下，给个参考。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E5%A6%82%E4%BD%95%E5%90%83%E8%8D%AF/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/handfood/">自制零食</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-30 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>看着超市里过度包装的食物，自己又嘴巴子馋。想来，之前我下载过一个<strong>下厨房</strong> app 用来学习做一些家常菜，为什么我就不能学习做零食呢，还有饮料什么的。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/handfood/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/danxiangli/">单向历</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-28 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>我有一个创意，就是做一个 <strong>app</strong> 形式的 <strong>单向历</strong> ，用来替换纸质版的 <strong>单向历</strong> 的功能，然后加一个 代办时间统计的功能。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/danxiangli/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BF%9D%E6%8A%A4%E7%8E%AF%E5%A2%83/">保护环境</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-28 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>我是一条鱼，今天我去西村的朋友家去玩，路很黑，我找半天没找到，渴死我了，我喝了点水，然后肚子火辣拉的疼，最后疼的失去了意识。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BF%9D%E6%8A%A4%E7%8E%AF%E5%A2%83/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/time/">时间去哪儿了</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-28 </span>
-      <div class="post-category">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
-          </div>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>
-每个人都有一个时间的属性，死掉了就没有了。
-在那个时间里，你可以做一些事情。有的事情要多一点时间，有的事情要少一点。
-</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/time/" class="read-more-link">阅读更多</a>
+      <a href="/post/tab/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -351,10 +275,7 @@
         <i class="iconfont icon-left"></i>
         <span class="prev-text">上一页</span>
       </a>
-    <a class="next" href="/page/5/">
-        <span class="next-text">下一页</span>
-        <i class="iconfont icon-right"></i>
-      </a>
+    
   </nav>
         </div>
         
@@ -362,10 +283,22 @@
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    
+    <div id="fastSearch">
+        <input id="searchInput" tabindex="0">
+        <ul id="searchResults">
+        </ul>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+
+    
+    <script type="text/javascript" src="/js/fastsearch.min.81bf06518bf8bd21129a4a5d609f2f110cfa8dc28a93cb6724a700453753f48b.js"></script><footer id="footer" class="footer">
       <div class="social-links">
       <a href="mailto:1191552161@qq.com" class="iconfont icon-email" title="email"></a>
       <a href="https://github.com/hanyudeye" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/442867644" class="iconfont icon-bilibili" title="bilibili"></a>
   <a href="https://aming.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
@@ -379,22 +312,15 @@
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
-  <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
-      <span class="division">|</span>
-    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
-  </div>
+  
 
   <span class="copyright-year">
     &copy; 
     2018 - 
-    2020
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">阿明</span>
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>阿明</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -405,15 +331,18 @@
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/slideout/1.0.1/slideout.min.js"></script>
   <script src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
   <script type="text/javascript">
     window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      showProcessingMessages: false,
-      messageStyle: 'none'
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
 
 
 

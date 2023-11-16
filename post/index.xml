@@ -6,14 +6,14 @@
     <description>Recent content in Posts on 阿明 - 收集生活的感悟</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 16 Oct 2023 10:39:42 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Nov 2023 10:10:30 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>计算机</title>
-      <link>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-      <pubDate>Mon, 16 Oct 2023 10:39:42 +0800</pubDate>
+      <title>AI</title>
+      <link>https://aming.xyz/post/ai/</link>
+      <pubDate>Mon, 06 Nov 2023 10:10:30 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
-      <description>计算机 计算机就是与CPU沟通，与自己沟通 网络 网络就是与他人沟通</description>
+      <guid>https://aming.xyz/post/ai/</guid>
+      <description>AI正在改变我们的社会，为了省钱，很多领域用了AI生成。 创建方法是：机器学习，然后机器创建。 AI （机器学习）的发展非常的迅速，带动了科技的发展</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 16 Oct 2023 09:45:15 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E4%BA%BA/</guid>
-      <description>男人 做男人要有自己的博客 有自己的事业 有自己的家庭 人的情绪 人有喜怒哀乐，受环境影响，不同情绪不同行为 开心好做事，做事也开心 消极情绪会消耗精神，</description>
+      <description>人的生长发育 人： 生老病死 人的细胞里面有计时器吧，多少时间后人就死了。 人与自然 人与社会 社会经济与分工 男人 做男人要有自己的博客 有自己的事业 有自己</description>
     </item>
     
     <item>
@@ -104,15 +104,6 @@
     </item>
     
     <item>
-      <title>科技资讯</title>
-      <link>https://aming.xyz/post/%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/</link>
-      <pubDate>Tue, 26 Sep 2023 11:16:57 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/</guid>
-      <description>科技资讯 09.26 信息孤岛 现在的互联网，资讯入口不再是搜索引擎，而是在一个个大的互联网公司</description>
-    </item>
-    
-    <item>
       <title>竞争</title>
       <link>https://aming.xyz/post/%E7%AB%9E%E4%BA%89%E5%8A%9B/</link>
       <pubDate>Fri, 11 Aug 2023 19:31:31 +0800</pubDate>
@@ -143,25 +134,7 @@
       <pubDate>Mon, 17 Feb 2020 20:47:48 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/</guid>
-      <description>经济 有价值的人造物。 人力，服务也是一种经济 价格波动是价格因生产成本和供求关系(商品数量)而上下涨落的现象 个人生产力的低下导致个人贫穷 经济调节</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/hellogithub/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/hellogithub/</guid>
-      <description>activate-power-mode 爆炸效果 你好</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/linux/</guid>
-      <description>文件管理 cat（英文全拼：concatenate）命令用于连接文件并打印到标准输出设备上。 文档编辑 设备管理 数据输入</description>
+      <description>经济 对牛羊而言，一片草地也是经济，牛羊有需求也会付费。 有价值的人造物。 人力，服务也是一种经济 价格波动是价格因生产成本和供求关系(商品数量)而</description>
     </item>
     
   </channel>
