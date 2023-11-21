@@ -1,74 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>软件使用 on 阿明 - 收集生活的感悟</title>
+    <title>软件使用 on 安静-放松</title>
     <link>https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
-    <description>Recent content in 软件使用 on 阿明 - 收集生活的感悟</description>
+    <description>Recent content in 软件使用 on 安静-放松</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 Jan 2020 06:56:22 +0800</lastBuildDate>
-    
-	<atom:link href="https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 20 Nov 2023 08:49:53 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>照片处理</title>
-      <link>https://aming.xyz/post/gimp/</link>
-      <pubDate>Sat, 25 Jan 2020 06:56:22 +0800</pubDate>
+      <title>photoshop</title>
+      <link>https://aming.xyz/carry/photoshop/</link>
+      <pubDate>Mon, 20 Nov 2023 08:49:53 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/gimp/</guid>
-      <description>&lt;p&gt;
-我们拍了一张照片，可能不是很称我们的心意。我们把照片改成我们满意的图片，就要学会照片处理。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>版本控制简介</title>
-      <link>https://aming.xyz/post/vc/</link>
-      <pubDate>Wed, 25 Dec 2019 06:23:31 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/vc/</guid>
-      <description>&lt;p&gt;
-备份工具，比如你做了一个椅子，然后用这工具备份一下，误删以后可以用这工具恢复（不能误删椅子的备份）。然后呢，你的椅子可能不是很完美，还要修修改改，这是你可以同时备份椅子的新的版本，如此而已。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>latex简介</title>
-      <link>https://aming.xyz/post/latex/</link>
-      <pubDate>Sun, 22 Dec 2019 05:32:47 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/latex/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;书写数学书籍等印刷作品的标记&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Gnu/Linux 简介</title>
-      <link>https://aming.xyz/post/linux/</link>
-      <pubDate>Fri, 29 Nov 2019 21:49:26 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/linux/</guid>
-      <description>&lt;p&gt;
-计算机现在做的事情越来越多，似乎比人都要全能了。
-&lt;/p&gt;
-&lt;p&gt;
- &lt;strong&gt;Gnu/Linux&lt;/strong&gt; 以前最为人诟病的估计是它的命令行的操作方式，做某件事都要手工输入命令，而且软件界面都没有的，一点都不直观，这对于刚刚接触那种操作方式的人可能不习惯，觉的难用。
- 不过现在也很好了，也是图形的操作，对初学者也能上手了，可以去学学，跟 &lt;strong&gt;windows&lt;/strong&gt; 用法一样的了。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>emacs 简介</title>
-      <link>https://aming.xyz/post/emacs/</link>
-      <pubDate>Tue, 04 Jun 2019 22:41:32 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/emacs/</guid>
-      <description>&lt;p&gt;
-写字的，具有 10000多个内置命令，还允许用户编写新的命令，所以它的功能很多，全部学
-完很难，但可以学一部分，以后要用到复杂功能再学。
-&lt;/p&gt;</description>
+      <guid>https://aming.xyz/carry/photoshop/</guid>
+      <description>&lt;p&gt;photoshop 是一款图片处理软件。&lt;/p&gt;</description>
     </item>
     
   </channel>
