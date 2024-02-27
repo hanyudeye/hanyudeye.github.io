@@ -105,7 +105,7 @@ ubuntu.exe config --default-user {username}
 
 "><meta itemprop="datePublished" content="2023-09-28T07:17:56+08:00" />
 <meta itemprop="dateModified" content="2023-09-28T07:17:56+08:00" />
-<meta itemprop="wordCount" content="29">
+<meta itemprop="wordCount" content="121">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="软件配置，好记性不如烂笔头"/>
 <meta name="twitter:description" content="在wsl中设置子系统的默认用户
@@ -197,7 +197,7 @@ ubuntu.exe config --default-user {username}
         <div class="post-category">
             <a href="/categories/soft/"> soft </a>
             </div>
-          <span class="more-meta"> 约 29 字 </span>
+          <span class="more-meta"> 约 121 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         
       </div>
@@ -215,6 +215,19 @@ ubuntu.exe config --default-user {username}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="cloudflare-开放-turnstile-验证码服务httpsblogcloudflarecomturnstile-ga"><a href="https://blog.cloudflare.com/turnstile-ga/">Cloudflare 开放 Turnstile 验证码服务</a></h2>
+<h2 id="配置-window-10-zsh-终端">配置 window 10 zsh 终端</h2>
+<p>F:\msys64\msys2_shell.cmd -defterm -no-start -use-full-path -here -mingw64</p>
+<p>配置默认 shell
+msys2_shell.cmd</p>
+<p>set &ldquo;LOGINSHELL=zsh&rdquo;</p>
+<h2 id="i3wm-高分辨率显示器配置缩放">i3wm 高分辨率显示器配置缩放</h2>
+<p>You can create ~/.Xresources</p>
+<p>Xft.dpi:180</p>
+<p>使用 96 的整数倍通常效果最好，例如 192 表示 200% 缩放</p>
+<p>xdpyinfo|grep -B 2 resolution
+此命令可以提供推荐值</p>
+<h2 id="应用程序在高分辨率屏幕进行缩放">应用程序在高分辨率屏幕进行缩放</h2>
+<p>Exec=netease-cloud-music &ndash;force-device-scale-factor=2 %U</p>
     </div>
 
     

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技术 on 阿明 - 收集生活的感悟</title>
+    <title>技术 on 安静-放松</title>
     <link>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</link>
-    <description>Recent content in 技术 on 阿明 - 收集生活的感悟</description>
+    <description>Recent content in 技术 on 安静-放松</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jun 2023 15:42:49 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Dec 2023 18:17:33 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>编程开发</title>
-      <link>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link>
-      <pubDate>Tue, 06 Jun 2023 15:42:49 +0800</pubDate>
+      <title>计算机</title>
+      <link>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</link>
+      <pubDate>Sat, 02 Dec 2023 18:17:33 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</guid>
-      <description>&lt;h2 id=&#34;什么是编程开发&#34;&gt;什么是编程开发&lt;/h2&gt;
-&lt;p&gt;现代计算机 执行程序来 运行功能，而程序的产生需要开发编写。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;计算机分析你说的话（输入的文本、视频、图像等资源），理解你的意思，并处理你的需求。&lt;br&gt;
-例子： 我要怎么去火星？ How can I goto Mars？ 计算机会尝试给出方案&lt;br&gt;
-注：上面计算机其实是各类解析器&lt;br&gt;
-既然计算机这么发达，它定会取代人类做更智能的事&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <guid>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</guid>
+      <description>把计算机 软件，作为日常的物品，软件是计算机的灵魂。 人们研究社会存在的基础，然后创建规则规范应用，就是科学。 定义：一种形式化的机器，辅助工作的</description>
     </item>
     
   </channel>

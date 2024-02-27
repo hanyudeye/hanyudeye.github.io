@@ -2,52 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aming.xyz/carry/</loc>
-    <lastmod>2023-11-21T12:38:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/</loc>
-    <lastmod>2023-11-21T12:38:54+08:00</lastmod>
+    <loc>https://aming.xyz/post/</loc>
+    <lastmod>2024-02-20T09:19:41+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
-    <lastmod>2023-11-21T12:38:54+08:00</lastmod>
+    <lastmod>2024-02-20T09:19:41+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/%E4%BA%BA/</loc>
-    <lastmod>2023-11-21T12:38:54+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E6%9C%BA%E6%9E%84%E7%AF%87%E4%B8%A8%E8%BF%99%E6%AC%A1%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E6%9C%BA%E6%A2%B0%E6%9C%BA%E6%9E%84%E7%9A%84%E5%88%86%E6%9E%90-%E7%9F%A5%E4%B9%8E/</loc>
+    <lastmod>2024-02-20T09:19:41+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/%E6%80%8E%E6%A0%B7%E5%85%8B%E6%9C%8D%E5%AF%B9%E6%9C%AA%E7%9F%A5%E4%BA%8B%E7%89%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E7%84%A6%E8%99%91%E5%92%8C%E6%81%90%E6%83%A7%E6%84%9F/</loc>
-    <lastmod>2023-11-21T12:38:54+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E4%BB%A4%E4%BA%BA%E6%83%8A%E8%89%B3%E7%9A%841700%E7%A7%8D%E6%9C%BA%E6%A2%B0%E5%8E%9F%E7%90%86%E5%8A%A8%E6%80%81%E5%9B%BE-%E7%9F%A5%E4%B9%8E/</loc>
+    <lastmod>2024-02-20T09:13:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/%E7%BB%9D%E5%A6%99%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
-    <lastmod>2023-11-20T14:40:07+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E7%94%9F%E6%B4%BB%E7%89%A9%E5%93%81/</loc>
+    <lastmod>2024-01-11T08:57:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
-    <lastmod>2023-11-20T14:40:07+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2024-01-11T08:31:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/photoshop/</loc>
-    <lastmod>2023-11-20T08:49:53+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E5%B9%BF%E5%91%8A/</loc>
+    <lastmod>2023-12-16T06:01:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2023-11-20T08:49:53+08:00</lastmod>
+    <loc>https://aming.xyz/post/%E5%AF%8C%E5%85%B0%E5%85%8B%E6%9E%97/</loc>
+    <lastmod>2023-12-15T07:12:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/%E9%AB%98%E6%95%88%E8%83%BD%E5%A3%AB%E7%9A%84%E4%B9%A0%E6%83%AF/</loc>
+    <loc>https://aming.xyz/categories/</loc>
+    <lastmod>2023-12-08T04:31:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E6%9C%AA%E6%9D%A5/</loc>
+    <lastmod>2023-12-08T04:31:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E7%A7%91%E5%AD%A6/</loc>
+    <lastmod>2023-12-08T04:31:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</loc>
+    <lastmod>2023-12-02T18:17:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-12-02T18:17:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2023-11-30T09:57:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E9%AB%98%E6%95%88%E4%B9%A0%E6%83%AF/</loc>
     <lastmod>2023-11-20T07:12:07+08:00</lastmod>
   </url>
   
@@ -57,83 +82,8 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/thinkphp6/</loc>
-    <lastmod>2023-11-19T13:44:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2023-11-19T13:44:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/</loc>
-    <lastmod>2023-11-18T19:37:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E5%88%9B%E5%BB%BA%E7%9B%AE%E6%A0%87/</loc>
-    <lastmod>2023-11-18T19:37:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/web%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-11-18T16:02:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/carry/%E5%8F%AF%E6%8B%96%E5%8A%A8%E5%AF%B9%E8%B1%A1/</loc>
-    <lastmod>2023-11-18T16:02:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E5%A6%82%E4%BD%95%E4%BD%BF%E8%87%AA%E5%B7%B1%E5%B9%B3%E9%9D%99/</loc>
-    <lastmod>2023-11-17T09:45:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/information/</loc>
-    <lastmod>2023-11-10T15:19:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E4%BF%A1%E6%81%AF/</loc>
-    <lastmod>2023-11-10T15:19:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/information/2023-11/%E4%BF%A1%E6%81%AF1/</loc>
-    <lastmod>2023-11-10T15:19:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%96%BE%E7%97%85/</loc>
-    <lastmod>2023-11-07T08:58:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/information/2023-11/%E6%8B%96%E5%BB%B6%E7%97%87/</loc>
-    <lastmod>2023-11-07T08:58:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/information/2023-11/%E7%94%B5/</loc>
-    <lastmod>2023-11-07T07:01:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E7%89%A9%E7%90%86/</loc>
-    <lastmod>2023-11-07T07:01:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/information/2023-11/%E6%8A%A4%E7%9C%BC%E6%98%BE%E7%A4%BA%E5%99%A8/</loc>
-    <lastmod>2023-11-06T19:09:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/%E8%AE%BE%E5%A4%87/</loc>
-    <lastmod>2023-11-06T19:09:59+08:00</lastmod>
+    <loc>https://aming.xyz/categories/%E4%BA%BA/</loc>
+    <lastmod>2023-10-16T09:45:15+08:00</lastmod>
   </url>
   
   <url>
@@ -142,7 +92,12 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/%E7%89%A9%E7%90%86/</loc>
+    <loc>https://aming.xyz/categories/%E7%89%A9%E7%90%86/</loc>
+    <lastmod>2023-10-16T09:04:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/post/%E7%89%A9%E4%BD%93/</loc>
     <lastmod>2023-10-16T09:04:50+08:00</lastmod>
   </url>
   
@@ -162,7 +117,7 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/%E6%95%B0%E5%AD%A6/</loc>
+    <loc>https://aming.xyz/post/%E6%95%B0%E5%AD%97/</loc>
     <lastmod>2023-10-14T14:35:04+08:00</lastmod>
   </url>
   
@@ -172,43 +127,8 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E6%8A%89%E6%8B%A9/</loc>
+    <loc>https://aming.xyz/post/%E4%BA%BA%E4%B8%96%E9%97%B4/</loc>
     <lastmod>2023-10-13T06:46:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/coding/</loc>
-    <lastmod>2023-10-05T19:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-10-05T19:37:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/computer/</loc>
-    <lastmod>2023-09-29T11:33:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/tool/</loc>
-    <lastmod>2023-09-29T11:33:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E6%93%85%E7%94%A8%E4%BD%B3%E8%BD%AF/</loc>
-    <lastmod>2023-09-29T11:33:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/soft/</loc>
-    <lastmod>2023-09-28T07:17:56+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/post/%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2023-09-28T07:17:56+08:00</lastmod>
   </url>
   
   <url>
@@ -227,11 +147,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/carry/%E7%BB%8F%E6%B5%8E/</loc>
-    <lastmod>2020-02-17T20:47:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/</loc>
     <lastmod>2020-02-17T20:47:48+08:00</lastmod>
   </url>
@@ -244,6 +159,14 @@
   <url>
     <loc>https://aming.xyz/readme/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/%E8%B5%84%E8%AE%AF/1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/%E8%B5%84%E8%AE%AF/</loc>
   </url>
   
 </urlset>

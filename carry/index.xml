@@ -6,7 +6,40 @@
     <description>Recent content in Carries on 安静-放松</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Nov 2023 12:38:54 +0800</lastBuildDate><atom:link href="https://aming.xyz/carry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 14:14:27 +0800</lastBuildDate><atom:link href="https://aming.xyz/carry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php命名空间</title>
+      <link>https://aming.xyz/carry/php%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Thu, 23 Nov 2023 14:14:27 +0800</pubDate>
+      
+      <guid>https://aming.xyz/carry/php%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <description>&lt;p&gt;命名空间为了避免 同名的类或函数。&lt;/p&gt;
+&lt;p&gt;第一个文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;geta&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nx&#34;&gt;pass&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
     <item>
       <title>怎样克服对未知事物、不确定性的焦虑和恐惧感</title>
       <link>https://aming.xyz/carry/%E6%80%8E%E6%A0%B7%E5%85%8B%E6%9C%8D%E5%AF%B9%E6%9C%AA%E7%9F%A5%E4%BA%8B%E7%89%A9%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%9A%84%E7%84%A6%E8%99%91%E5%92%8C%E6%81%90%E6%83%A7%E6%84%9F/</link>
@@ -76,6 +109,24 @@
       
       <guid>https://aming.xyz/carry/%E7%BB%8F%E6%B5%8E/</guid>
       <description>经济 对牛羊而言，一片草地也是经济，牛羊有需求也会付费。 有价值的人造物。 人力，服务也是一种经济 价格波动是价格因生产成本和供求关系(商品数量)而</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/carry/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/carry/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>Linux常用命令大全（非常全！！！） Linux常用命令大全（非常全！！！） netstat命令各个参数说明如下： 命令 说明 netstat -t 指明显示TCP端</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/carry/speak-ng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/carry/speak-ng/</guid>
+      <description>speak-ng 多语言语音合成器 multi-lingual speech synthesizer 选项 -a 振幅，0 到 200，默认值为 100。 -g 字间隙。在单词之间暂停，以默认速度为 10 毫秒为单位。 -s 速度（以每分钟字数为单</description>
     </item>
     
   </channel>
