@@ -1,28 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>安静-放松</title>
+    <title>知识</title>
     <link>https://aming.xyz/</link>
-    <description>Recent content on 安静-放松</description>
+    <description>Recent content on 知识</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Feb 2024 09:19:41 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Feb 2024 18:57:35 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web性能日历»使用HTML Web组件扩展响应式视频 --- Web Performance Calendar » Extending Responsive Video with HTML Web Components</title>
+      <link>https://aming.xyz/information/24-2-27web%E6%80%A7%E8%83%BD%E6%97%A5%E5%8E%86%E4%BD%BF%E7%94%A8html-web%E7%BB%84%E4%BB%B6%E6%89%A9%E5%B1%95%E5%93%8D%E5%BA%94%E5%BC%8F%E8%A7%86%E9%A2%91---web-performance-calendar-extending-responsive-video-with-html-web-components/</link>
+      <pubDate>Tue, 27 Feb 2024 18:57:35 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/24-2-27web%E6%80%A7%E8%83%BD%E6%97%A5%E5%8E%86%E4%BD%BF%E7%94%A8html-web%E7%BB%84%E4%BB%B6%E6%89%A9%E5%B1%95%E5%93%8D%E5%BA%94%E5%BC%8F%E8%A7%86%E9%A2%91---web-performance-calendar-extending-responsive-video-with-html-web-components/</guid>
+      <description>Responsive HTML video is a web standard again, and with recent patches to Firefox (oh hey!) and Chrome that match Safari’s preexisting support, it now works across all modern browsers! That means you can use media queries for delivering your videos and potentially save your users some precious bytes. 响应式HTML视频再次成为网</description>
+    </item>
+    
+    <item>
+      <title>1</title>
+      <link>https://aming.xyz/information/1/</link>
+      <pubDate>Tue, 27 Feb 2024 18:57:27 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/1/</guid>
+      <description>一位意大利摄影师，苦苦尝试了6年，终于在本月拍到了一张难以置信的照片：大教堂、山峰、月亮处于一条直线，并且地球反射的太阳光，通过长曝光，可以</description>
+    </item>
+    
+    <item>
+      <title>零基础如何自学吉他？吉他自学看这一篇就够了！（超长干货） - 知乎</title>
+      <link>https://aming.xyz/information/24-2-27%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%A6%82%E4%BD%95%E8%87%AA%E5%AD%A6%E5%90%89%E4%BB%96%E5%90%89%E4%BB%96%E8%87%AA%E5%AD%A6%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86%E8%B6%85%E9%95%BF%E5%B9%B2%E8%B4%A7-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Wed, 21 Feb 2024 06:10:58 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/24-2-27%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%A6%82%E4%BD%95%E8%87%AA%E5%AD%A6%E5%90%89%E4%BB%96%E5%90%89%E4%BB%96%E8%87%AA%E5%AD%A6%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86%E8%B6%85%E9%95%BF%E5%B9%B2%E8%B4%A7-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>基本乐理懂一些，会弹些曲子，指弹曲子像押尾、松井、eddie小哥的曲子会一些，在学校玩过乐队做过吉他手，也接过大大小小的表演，在b站和其他网</description>
+    </item>
+    
     <item>
       <title>机构篇丨这次是三种实例机械机构的分析 - 知乎</title>
-      <link>https://aming.xyz/post/%E6%9C%BA%E6%9E%84%E7%AF%87%E4%B8%A8%E8%BF%99%E6%AC%A1%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E6%9C%BA%E6%A2%B0%E6%9C%BA%E6%9E%84%E7%9A%84%E5%88%86%E6%9E%90-%E7%9F%A5%E4%B9%8E/</link>
+      <link>https://aming.xyz/information/24-2-27-%E6%9C%BA%E6%9E%84%E7%AF%87%E4%B8%A8%E8%BF%99%E6%AC%A1%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E6%9C%BA%E6%A2%B0%E6%9C%BA%E6%9E%84%E7%9A%84%E5%88%86%E6%9E%90-%E7%9F%A5%E4%B9%8E/</link>
       <pubDate>Tue, 20 Feb 2024 09:19:41 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E6%9C%BA%E6%9E%84%E7%AF%87%E4%B8%A8%E8%BF%99%E6%AC%A1%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E6%9C%BA%E6%A2%B0%E6%9C%BA%E6%9E%84%E7%9A%84%E5%88%86%E6%9E%90-%E7%9F%A5%E4%B9%8E/</guid>
+      <guid>https://aming.xyz/information/24-2-27-%E6%9C%BA%E6%9E%84%E7%AF%87%E4%B8%A8%E8%BF%99%E6%AC%A1%E6%98%AF%E4%B8%89%E7%A7%8D%E5%AE%9E%E4%BE%8B%E6%9C%BA%E6%A2%B0%E6%9C%BA%E6%9E%84%E7%9A%84%E5%88%86%E6%9E%90-%E7%9F%A5%E4%B9%8E/</guid>
       <description>上一篇文章分析了几种比较实用巧妙的动图机构，这次我们就来看三种实例的，分析完后，同样还是在文章的最后放上模型下载的方式，那么下面我们就直接进</description>
     </item>
     
     <item>
       <title>令人惊艳的1700种机械原理动态图 - 知乎</title>
-      <link>https://aming.xyz/post/%E4%BB%A4%E4%BA%BA%E6%83%8A%E8%89%B3%E7%9A%841700%E7%A7%8D%E6%9C%BA%E6%A2%B0%E5%8E%9F%E7%90%86%E5%8A%A8%E6%80%81%E5%9B%BE-%E7%9F%A5%E4%B9%8E/</link>
+      <link>https://aming.xyz/information/24-2-27%E4%BB%A4%E4%BA%BA%E6%83%8A%E8%89%B3%E7%9A%841700%E7%A7%8D%E6%9C%BA%E6%A2%B0%E5%8E%9F%E7%90%86%E5%8A%A8%E6%80%81%E5%9B%BE-%E7%9F%A5%E4%B9%8E/</link>
       <pubDate>Tue, 20 Feb 2024 09:13:57 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E4%BB%A4%E4%BA%BA%E6%83%8A%E8%89%B3%E7%9A%841700%E7%A7%8D%E6%9C%BA%E6%A2%B0%E5%8E%9F%E7%90%86%E5%8A%A8%E6%80%81%E5%9B%BE-%E7%9F%A5%E4%B9%8E/</guid>
+      <guid>https://aming.xyz/information/24-2-27%E4%BB%A4%E4%BA%BA%E6%83%8A%E8%89%B3%E7%9A%841700%E7%A7%8D%E6%9C%BA%E6%A2%B0%E5%8E%9F%E7%90%86%E5%8A%A8%E6%80%81%E5%9B%BE-%E7%9F%A5%E4%B9%8E/</guid>
       <description>&lt;p&gt;　　阮德升（Đức thắng Nguyễn）是一位来自越南的工程师。自从2002年退休之后，他便一直在为机械构造制作令人惊艳的3D动画目录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://aming.xyz/post/javascript/</link>
+      <pubDate>Tue, 13 Feb 2024 16:17:15 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://aming.xyz/post/python/</link>
+      <pubDate>Tue, 13 Feb 2024 16:12:02 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/python/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -32,15 +77,6 @@
       
       <guid>https://aming.xyz/post/%E7%94%9F%E6%B4%BB%E7%89%A9%E5%93%81/</guid>
       <description>穿戴保暖美化 衣服，鞋子，裙子 休息 沙发，床 玩耍 儿童乐园，电子游戏</description>
-    </item>
-    
-    <item>
-      <title>软件</title>
-      <link>https://aming.xyz/post/%E8%BD%AF%E4%BB%B6/</link>
-      <pubDate>Thu, 11 Jan 2024 08:31:03 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%BD%AF%E4%BB%B6/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -76,7 +112,7 @@
       <pubDate>Sat, 02 Dec 2023 18:17:33 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</guid>
-      <description>把计算机 软件，作为日常的物品，软件是计算机的灵魂。 人们研究社会存在的基础，然后创建规则规范应用，就是科学。 定义：一种形式化的机器，辅助工作的</description>
+      <description>把计算机 软件，作为日常的物品，软件是计算机的灵魂。 人们研究社会存在的基础，然后创建规则规范应用，就是科学。 计算机的圆 开始计算-结束 产品就是生</description>
     </item>
     
     <item>
@@ -103,7 +139,7 @@
       <pubDate>Mon, 16 Oct 2023 09:45:15 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E4%BA%BA/</guid>
-      <description>人的生长发育 人： 生老病死 人的细胞里面有计时器吧，多少时间后人就死了。 人与自然 人与社会 社会经济与分工 男人 做男人要有自己的博客 有自己的事业 有自己</description>
+      <description>人生的圆 出生 - 死亡 人的生长发育 人： 生老病死 人的细胞里面有计时器吧，多少时间后人就死了。 人与自然 人与社会 外圆内方 社会是一个竞争的环境，产品竞争</description>
     </item>
     
     <item>
@@ -176,25 +212,65 @@
     
     <item>
       <title></title>
-      <link>https://aming.xyz/readme/</link>
+      <link>https://aming.xyz/information/24-2-27ai%E6%97%B6%E4%BB%A3%E7%9A%84gpu%E7%94%9F%E5%AD%98%E5%B7%A5%E5%85%B7%E5%8C%85%E6%AF%8F%E4%B8%AA%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E6%9C%80%E4%BD%8E%E8%A6%81%E6%B1%82---gpu-survival-toolkit-for-the-ai-age-the-bare-minimum-every-developer-must-know/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aming.xyz/readme/</guid>
-      <description>日常博客，记录生活琐事
-反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。
-[之前] 我以前看书，看视频的学习方法是错误的，我没有把自己代入进去，没有与学习之物互动，缺少动手，学习就要多交互。
-说到交互，我做人也是错误的，我对于我个人，是主体，要主动参与执行。
-我面对实践，主要的心理障碍是恐惧，然后就是懒惰，但人就是社会性，任何生物都是社会性的，该主动就主动，一直被动的是无机物，植物都是主动的。
-其实，世上的东西，我主动了，他们会伤害我吗？除了野兽，没人伤害我，如果被动，或不动，才会受到伤害。</description>
+      <guid>https://aming.xyz/information/24-2-27ai%E6%97%B6%E4%BB%A3%E7%9A%84gpu%E7%94%9F%E5%AD%98%E5%B7%A5%E5%85%B7%E5%8C%85%E6%AF%8F%E4%B8%AA%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%84%E6%9C%80%E4%BD%8E%E8%A6%81%E6%B1%82---gpu-survival-toolkit-for-the-ai-age-the-bare-minimum-every-developer-must-know/</guid>
+      <description>Featured 特色 Why CPU Knowledge Is No Longer Enough 为什么CPU知识不再足够 In today&amp;rsquo;s AI age, the majority of developers train in the CPU way. This knowledge has been part of our academics as well, so it&amp;rsquo;s obvious to think and problem-solve in a CPU-oriented way. 在当今的AI时代，大多数开发</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://aming.xyz/%E8%B5%84%E8%AE%AF/1/</link>
+      <link>https://aming.xyz/post/awesome-soft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aming.xyz/%E8%B5%84%E8%AE%AF/1/</guid>
-      <description>一位意大利摄影师，苦苦尝试了6年，终于在本月拍到了一张难以置信的照片：大教堂、山峰、月亮处于一条直线，并且地球反射的太阳光，通过长曝光，可以</description>
+      <guid>https://aming.xyz/post/awesome-soft/</guid>
+      <description>软件</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/awesome-%E4%B9%A6%E7%B1%8D/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/awesome-%E4%B9%A6%E7%B1%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/awesome-%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/awesome-%E4%BA%A7%E5%93%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/awesome-%E5%AE%B6%E5%BA%AD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/awesome-%E5%AE%B6%E5%BA%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/post/awesome-%E9%9F%B3%E4%B9%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/post/awesome-%E9%9F%B3%E4%B9%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/readme/</guid>
+      <description>日常博客，记录生活琐事 反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。 [之前] 我以前看书，看视频的学习方法是错误的</description>
     </item>
     
   </channel>
