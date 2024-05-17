@@ -1,127 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 知识</title>
+    <title>Posts on 思维</title>
     <link>https://aming.xyz/post/</link>
-    <description>Recent content in Posts on 知识</description>
+    <description>Recent content in Posts on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Feb 2024 20:54:52 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 May 2024 21:54:34 +0800</lastBuildDate><atom:link href="https://aming.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TodoList 长远任务</title>
+      <title>TodoList 做自己思考后能抓住的事情</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
-      <description>TODO 收集500篇文章 [20/500] 做满200个视频 [0/200] 交10个网友 [0/10] 做个博客程序 [0/1] 做个工具程序 [0/1]</description>
+      <description>TODO 收集100篇文章 [20/100] 做满10个视频 [0/10] 交10个网友 [0/10] 做个博客程序 [0/1] 设定目标(执行力) 我的学习目标：阅读小说 10本____ 何时完成？______</description>
     </item>
     
     <item>
-      <title>激励</title>
-      <link>https://aming.xyz/post/%E6%BF%80%E5%8A%B1/</link>
-      <pubDate>Thu, 29 Feb 2024 20:54:52 +0800</pubDate>
+      <title>生死</title>
+      <link>https://aming.xyz/post/%E7%94%9F%E6%AD%BB/</link>
+      <pubDate>Tue, 14 May 2024 21:54:34 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E6%BF%80%E5%8A%B1/</guid>
-      <description>加油，努力，跟积极的人学习，积极起来。 解除烦恼。</description>
+      <guid>https://aming.xyz/post/%E7%94%9F%E6%AD%BB/</guid>
+      <description>人生最重要的是经历，宽容看待死亡。</description>
     </item>
     
     <item>
-      <title>焦虑的人不幸福</title>
-      <link>https://aming.xyz/post/%E7%84%A6%E8%99%91%E7%9A%84%E4%BA%BA%E4%B8%8D%E5%B9%B8%E7%A6%8F/</link>
-      <pubDate>Thu, 29 Feb 2024 07:53:45 +0800</pubDate>
+      <title>人生箴言</title>
+      <link>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</link>
+      <pubDate>Mon, 13 May 2024 14:56:11 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E7%84%A6%E8%99%91%E7%9A%84%E4%BA%BA%E4%B8%8D%E5%B9%B8%E7%A6%8F/</guid>
-      <description>焦虑的人不幸福 ，想的多的人不幸福乐观。 普通工人天天干重复的工作都很快乐，因为欲望低。 可以把自己作为剪辑视频的工人，一部电影可以剪 100 组镜头影片</description>
-    </item>
-    
-    <item>
-      <title>先成家，还是先立业</title>
-      <link>https://aming.xyz/post/%E5%85%88%E6%88%90%E5%AE%B6%E8%BF%98%E6%98%AF%E5%85%88%E7%AB%8B%E4%B8%9A/</link>
-      <pubDate>Wed, 28 Feb 2024 07:43:27 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%85%88%E6%88%90%E5%AE%B6%E8%BF%98%E6%98%AF%E5%85%88%E7%AB%8B%E4%B8%9A/</guid>
-      <description>人生的重要阶段分别是：成家和建業。 成家是指在个人生活中找到一个合适的伙伴，共同创造幸福与美好的家庭环境。建设家庭需要理解对方的心思、愿望以及</description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://aming.xyz/post/javascript/</link>
-      <pubDate>Tue, 13 Feb 2024 16:17:15 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://aming.xyz/post/python/</link>
-      <pubDate>Tue, 13 Feb 2024 16:12:02 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活物品</title>
-      <link>https://aming.xyz/post/%E7%94%9F%E6%B4%BB%E7%89%A9%E5%93%81/</link>
-      <pubDate>Thu, 11 Jan 2024 08:57:18 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%94%9F%E6%B4%BB%E7%89%A9%E5%93%81/</guid>
-      <description>穿戴保暖美化 衣服，鞋子，裙子 休息 沙发，床 玩耍 儿童乐园，电子游戏</description>
-    </item>
-    
-    <item>
-      <title>广告</title>
-      <link>https://aming.xyz/post/%E5%B9%BF%E5%91%8A/</link>
-      <pubDate>Sat, 16 Dec 2023 06:01:03 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%B9%BF%E5%91%8A/</guid>
-      <description>快手带货 关注主播 (好物) 选品(小黄车截图) 截图封面 文案提取 剪印，图文成片，添加图片(裁剪小黄车截图),背景模糊 快手小店 ，搜索 商品名字 ，找不到</description>
-    </item>
-    
-    <item>
-      <title>富兰克林</title>
-      <link>https://aming.xyz/post/%E5%AF%8C%E5%85%B0%E5%85%8B%E6%9E%97/</link>
-      <pubDate>Fri, 15 Dec 2023 07:12:23 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%AF%8C%E5%85%B0%E5%85%8B%E6%9E%97/</guid>
-      <description>生平 富兰克林的成功可以归功于：尽早培养优秀的习惯、自律、财富自由。 ① 优秀的习惯为富兰克林打好终身受益的基础，无论在学习、工作还是社交上，富兰</description>
-    </item>
-    
-    <item>
-      <title>科技发展趋向</title>
-      <link>https://aming.xyz/post/%E6%9C%AA%E6%9D%A5/</link>
-      <pubDate>Fri, 08 Dec 2023 04:31:55 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E6%9C%AA%E6%9D%A5/</guid>
-      <description>计算机科学： 计算机越来越智能化，懂得越来越多，用来代替或超越人所提供的能力。 大数据：世界上的 任何状态 都进行信息化，网络化。 生物科学 治病 寿命 基</description>
-    </item>
-    
-    <item>
-      <title>计算机</title>
-      <link>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</link>
-      <pubDate>Sat, 02 Dec 2023 18:17:33 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%AE%A1%E6%9C%BA/</guid>
-      <description>把计算机 软件，作为日常的物品，软件是计算机的灵魂。 人们研究社会存在的基础，然后创建规则规范应用，就是科学。 计算机的圆 开始计算-结束 产品就是生</description>
-    </item>
-    
-    <item>
-      <title>学习</title>
-      <link>https://aming.xyz/post/%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Thu, 30 Nov 2023 09:57:10 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E5%AD%A6%E4%B9%A0/</guid>
-      <description>反思 我以前看书，看视频的学习方法是错误的，我没有把自己代入进去，没有与学习之物互动，缺少动手，学习就要多交互。 说到交互，我做人也是错误的，我</description>
-    </item>
-    
-    <item>
-      <title>高效能士的习惯</title>
-      <link>https://aming.xyz/post/%E9%AB%98%E6%95%88%E4%B9%A0%E6%83%AF/</link>
-      <pubDate>Mon, 20 Nov 2023 07:12:07 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E9%AB%98%E6%95%88%E4%B9%A0%E6%83%AF/</guid>
-      <description>习惯：在行动前先设定目标 把目标写进备忘录 将个人目标融入团队目标 制定工作计划 如: 我的 金钱 目标：________ 何时完成？________ 如果能</description>
+      <guid>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</guid>
+      <description>量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什么工作，编程要先架构 做</description>
     </item>
     
     <item>
@@ -130,111 +40,11 @@
       <pubDate>Mon, 16 Oct 2023 09:45:15 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E4%BA%BA/</guid>
-      <description>人生的圆 出生 - 死亡 人的生长发育 人： 生老病死 人的细胞里面有计时器吧，多少时间后人就死了。 人与自然 人与社会 外圆内方 社会是一个竞争的环境，产品竞争</description>
-    </item>
-    
-    <item>
-      <title>物理</title>
-      <link>https://aming.xyz/post/%E7%89%A9%E4%BD%93/</link>
-      <pubDate>Mon, 16 Oct 2023 09:04:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%89%A9%E4%BD%93/</guid>
-      <description>基础物理 共24章，包括力学、相对论、振动与波动、流体、热力学等内容，其姊《基础物理Ⅱ》 原子 原子里是另一个宇宙 热力学 原子运动 温度计，测量原子运</description>
-    </item>
-    
-    <item>
-      <title>营销</title>
-      <link>https://aming.xyz/post/%E8%90%A5%E9%94%80/</link>
-      <pubDate>Sat, 14 Oct 2023 16:39:10 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E8%90%A5%E9%94%80/</guid>
-      <description>&lt;h2 id=&#34;寻找市场&#34;&gt;寻找市场&lt;/h2&gt;
-&lt;p&gt;给有需求的人推销他要的东西。&lt;/p&gt;
-&lt;h2 id=&#34;影响力&#34;&gt;影响力&lt;/h2&gt;
-&lt;p&gt;影响力的六个原则属于现代应用传播学中的一部分，是关于“说服”技巧的理论，通常会大幅的应用在我们所有的言销、销售、推广活动当中。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>数学</title>
-      <link>https://aming.xyz/post/%E6%95%B0%E5%AD%97/</link>
-      <pubDate>Sat, 14 Oct 2023 14:35:04 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E6%95%B0%E5%AD%97/</guid>
-      <description>&lt;p&gt;虚空的数字，居然有实体标记( 阿拉伯数字 )，还有各种场景的运用&lt;/p&gt;
-&lt;p&gt;数学，数字计算，当要进行精确设计时，需要测量，并使用数字进行计算。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>人生抉择</title>
-      <link>https://aming.xyz/post/%E4%BA%BA%E4%B8%96%E9%97%B4/</link>
-      <pubDate>Fri, 13 Oct 2023 06:46:40 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E4%BA%BA%E4%B8%96%E9%97%B4/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://aming.xyz/images/%E4%BA%BA%E7%94%9F.png&#34; alt=&#34;人生&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;人生选择&#34;&gt;人生选择&lt;/h2&gt;
-&lt;p&gt;富兰克林做了 印刷的职业，我还是 做个程序员的职业吧，也是有前景的，做自己的项目。&lt;/p&gt;
-&lt;p&gt;人生目标，做程序员，做自己的项目&lt;/p&gt;
-&lt;p&gt;便签纸 simple stickly note
-看书要做标记&lt;/p&gt;
-&lt;h2 id=&#34;专注&#34;&gt;专注&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;研究 人生，科技 ，经济，家庭 4个话题&lt;/li&gt;
-&lt;li&gt;把 上面4个话题的资讯都放在 info 文件夹&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>经济</title>
-      <link>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/</link>
-      <pubDate>Mon, 17 Feb 2020 20:47:48 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E7%BB%8F%E6%B5%8E/</guid>
-      <description>人工智能，是我思想的财富 经济 经济就是财务，经济学研究如何创造财富。 但你也会遇到很小气的人，不接受需求，不愿意付费。 对牛羊而言，一片草地也是经</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/awesome-soft/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/awesome-soft/</guid>
-      <description>软件</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/awesome-%E4%B9%A6%E7%B1%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/awesome-%E4%B9%A6%E7%B1%8D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/awesome-%E4%BA%A7%E5%93%81/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/awesome-%E4%BA%A7%E5%93%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/awesome-%E5%AE%B6%E5%BA%AD/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/awesome-%E5%AE%B6%E5%BA%AD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://aming.xyz/post/awesome-%E9%9F%B3%E4%B9%90/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aming.xyz/post/awesome-%E9%9F%B3%E4%B9%90/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;影响力&#34;&gt;影响力&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;互惠性
+解释：人对于别人的思惠，通常会觉得有责任或有义务进行回报。&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

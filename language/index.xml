@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Languages on 阿明 - 收集生活的感悟</title>
+    <title>Languages on 思维</title>
     <link>https://aming.xyz/language/</link>
-    <description>Recent content in Languages on 阿明 - 收集生活的感悟</description>
+    <description>Recent content in Languages on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Aug 2023 14:01:35 +0800</lastBuildDate><atom:link href="https://aming.xyz/language/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Mar 2024 06:33:42 +0800</lastBuildDate><atom:link href="https://aming.xyz/language/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>经济</title>
-      <link>https://aming.xyz/language/%E7%BB%8F%E6%B5%8E/</link>
-      <pubDate>Sun, 27 Aug 2023 14:01:35 +0800</pubDate>
+      <title>黑客与画家</title>
+      <link>https://aming.xyz/language/hackandpainter/</link>
+      <pubDate>Wed, 20 Mar 2024 06:33:42 +0800</pubDate>
       
-      <guid>https://aming.xyz/language/%E7%BB%8F%E6%B5%8E/</guid>
-      <description>一课经济学 在所有学科中,经济学充斥的谬论是最多的。这决非出于偶然。这门学科内在的难度原本就高,再加上在经济活动中追求私利的天性,使得对经济规</description>
+      <guid>https://aming.xyz/language/hackandpainter/</guid>
+      <description>Why nerds are unpopular when we were in junior high school, my friend RICH And I I know a lot of people who were nerds in school,and they all tell the same story : there is a strong correlation between being smart and being a nerd , and an even stronger inverse correlation between being a nerd and being popular. Being smart seems to make you unpopular. why? To someone</description>
     </item>
     
   </channel>
