@@ -1,61 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Information on 安静-放松</title>
+    <title>Information on 思维</title>
     <link>https://aming.xyz/information/</link>
-    <description>Recent content in Information on 安静-放松</description>
+    <description>Recent content in Information on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Nov 2023 08:43:28 +0800</lastBuildDate><atom:link href="https://aming.xyz/information/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 May 2024 09:43:52 +0800</lastBuildDate><atom:link href="https://aming.xyz/information/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>一些未确认的认知</title>
-      <link>https://aming.xyz/information/2023-11/%E4%B8%80%E4%BA%9B%E6%9C%AA%E7%A1%AE%E8%AE%A4%E7%9A%84%E8%AE%A4%E7%9F%A5/</link>
-      <pubDate>Wed, 29 Nov 2023 08:43:28 +0800</pubDate>
+      <title>24-2-29知名BT下载站 rarbg.to 宣布关闭网站 - 知乎</title>
+      <link>https://aming.xyz/information/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Fri, 24 May 2024 09:43:52 +0800</pubDate>
       
-      <guid>https://aming.xyz/information/2023-11/%E4%B8%80%E4%BA%9B%E6%9C%AA%E7%A1%AE%E8%AE%A4%E7%9A%84%E8%AE%A4%E7%9F%A5/</guid>
-      <description>火腿肠利尿，老是上厕所？</description>
+      <guid>https://aming.xyz/information/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>知名BT下载站 rarbg.to 突然宣布永久性关闭网站。 对于众多的影迷，基本上都是从RARBG上搜片，找字幕看片。而众多的BT站及字幕组也是从RARBG上下</description>
     </item>
     
     <item>
-      <title>信息1</title>
-      <link>https://aming.xyz/information/2023-11/%E4%BF%A1%E6%81%AF1/</link>
-      <pubDate>Fri, 10 Nov 2023 15:19:06 +0800</pubDate>
+      <title>Tailwind CSS (顺风)</title>
+      <link>https://aming.xyz/information/tailwind/</link>
+      <pubDate>Mon, 13 May 2024 10:51:27 +0800</pubDate>
       
-      <guid>https://aming.xyz/information/2023-11/%E4%BF%A1%E6%81%AF1/</guid>
-      <description>流浪者的手机充电器 把充电器卡在共享自行车的链条上，用磁铁吸住旁边的金属壳。然后通过车轮转动，带动充电器的齿轮，从而实现自助发电。 减肥药流行 美</description>
+      <guid>https://aming.xyz/information/tailwind/</guid>
+      <description>&lt;h1 id=&#34;tailwind-css&#34;&gt;Tailwind CSS&lt;/h1&gt;
+&lt;p&gt;Tailwind CSS 是一个强大的工具，用于快速构建现代网页界面，包括移动端样式。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>拖延症</title>
-      <link>https://aming.xyz/information/2023-11/%E6%8B%96%E5%BB%B6%E7%97%87/</link>
-      <pubDate>Tue, 07 Nov 2023 08:58:48 +0800</pubDate>
+      <title>scss-best-practices-to-keep-in-mind</title>
+      <link>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</link>
+      <pubDate>Mon, 13 May 2024 10:39:40 +0800</pubDate>
       
-      <guid>https://aming.xyz/information/2023-11/%E6%8B%96%E5%BB%B6%E7%97%87/</guid>
-      <description>&lt;h2 id=&#34;如何克服拖延心理&#34;&gt;如何克服拖延心理&lt;/h2&gt;
-&lt;p&gt;自我激励，行动&lt;/p&gt;
-&lt;p&gt;设定明确的目标
-制定计划
-保持积极的心态&lt;/p&gt;</description>
+      <guid>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</guid>
+      <description>SCSS 样式 1. 移动端优先 做响应式项目的时候，一般会先写 PC 版本的样式，但这会使移动端样式的书写变得特别痛苦。因此，我们应该先进行移动端样式的书写，在</description>
     </item>
     
     <item>
-      <title>电子</title>
-      <link>https://aming.xyz/information/2023-11/%E7%94%B5/</link>
-      <pubDate>Tue, 07 Nov 2023 07:01:00 +0800</pubDate>
+      <title>ps必备的快捷键大全（超详细） - 知乎</title>
+      <link>https://aming.xyz/information/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Fri, 15 Mar 2024 07:21:14 +0800</pubDate>
       
-      <guid>https://aming.xyz/information/2023-11/%E7%94%B5/</guid>
-      <description>&lt;p&gt;电在原子内部，是一种很小的物质。&lt;/p&gt;
-&lt;p&gt;物体是由原子组成，原子由原子核与电子组成。&lt;/p&gt;</description>
+      <guid>https://aming.xyz/information/ps%E5%BF%85%E5%A4%87%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8%E8%B6%85%E8%AF%A6%E7%BB%86-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>mac 版 PS 将 Ctrl 替换为 CMD 即可 一、文件 新建CTRL+N 打开CTRL+O 打开为ALT+CTRL+O 关闭CTRL+W 保存CTRL+S 另存为CTRL+SH</description>
     </item>
     
     <item>
-      <title>护眼显示器</title>
-      <link>https://aming.xyz/information/2023-11/%E6%8A%A4%E7%9C%BC%E6%98%BE%E7%A4%BA%E5%99%A8/</link>
-      <pubDate>Mon, 06 Nov 2023 19:09:59 +0800</pubDate>
+      <title>mezodawesome-indie Resources for independent developers to make money</title>
+      <link>https://aming.xyz/information/24-3-7mezodawesome-indie-resources-for-independent-developers-to-make-money/</link>
+      <pubDate>Thu, 07 Mar 2024 09:36:13 +0800</pubDate>
       
-      <guid>https://aming.xyz/information/2023-11/%E6%8A%A4%E7%9C%BC%E6%98%BE%E7%A4%BA%E5%99%A8/</guid>
-      <description>&lt;p&gt;显示器的显示原理:&lt;/p&gt;
-&lt;p&gt;有颜色的灯: 有颜色的光&lt;/p&gt;</description>
+      <guid>https://aming.xyz/information/24-3-7mezodawesome-indie-resources-for-independent-developers-to-make-money/</guid>
+      <description>Awesome Indie 令人敬畏的独立 Resources to help independent developers make money. 帮助独立开发者赚钱的资源。 Making money from your own code has never been easier, but it&amp;rsquo;s still hard. Here, I try to curate a list of resources to help everyone interested in making money from their digital products get inspired and give it a try.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aming.xyz/information/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aming.xyz/information/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <description>概率派 VS 贝叶斯派</description>
     </item>
     
   </channel>

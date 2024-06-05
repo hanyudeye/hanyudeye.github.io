@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>数学 on 安静-放松</title>
+    <title>数学 on 思维</title>
     <link>https://aming.xyz/categories/%E6%95%B0%E5%AD%A6/</link>
-    <description>Recent content in 数学 on 安静-放松</description>
+    <description>Recent content in 数学 on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 14:35:04 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 May 2024 10:00:12 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数学</title>
-      <link>https://aming.xyz/post/%E6%95%B0%E5%AD%97/</link>
-      <pubDate>Sat, 14 Oct 2023 14:35:04 +0800</pubDate>
+      <link>https://aming.xyz/post/%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Fri, 24 May 2024 10:00:12 +0800</pubDate>
       
-      <guid>https://aming.xyz/post/%E6%95%B0%E5%AD%97/</guid>
-      <description>&lt;p&gt;虚空的数字，居然有实体标记( 阿拉伯数字 )，还有各种场景的运用&lt;/p&gt;
-&lt;p&gt;数学，数字计算，当要进行精确设计时，需要测量，并使用数字进行计算。&lt;/p&gt;</description>
+      <guid>https://aming.xyz/post/%E6%95%B0%E5%AD%A6/</guid>
+      <description>数学的基础理论 数学是一门研究数量、结构、变化和空间等概念的科学，具有广泛的应用和深远的理论基础。以下是一些数学的基础理论： 数论： 基础理论：研</description>
     </item>
     
   </channel>
