@@ -6,6 +6,7 @@
     <description>Recent content in Categories on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< HEAD
     <lastBuildDate>Fri, 24 May 2024 10:00:12 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数学</title>
@@ -48,6 +49,14 @@
       <link>https://aming.xyz/categories/books/</link>
       <pubDate>Mon, 06 May 2024 20:53:48 +0800</pubDate>
       
+=======
+    <lastBuildDate>Mon, 06 May 2024 20:53:48 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>books</title>
+      <link>https://aming.xyz/categories/books/</link>
+      <pubDate>Mon, 06 May 2024 20:53:48 +0800</pubDate>
+      
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
       <guid>https://aming.xyz/categories/books/</guid>
       <description></description>
     </item>

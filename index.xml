@@ -6,13 +6,18 @@
     <description>Recent content on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+<<<<<<< HEAD
     <lastBuildDate>Sun, 02 Jun 2024 11:56:19 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+=======
+    <lastBuildDate>Wed, 15 May 2024 07:29:11 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     <item>
       <title>TodoList 做自己思考后能抓住的事情</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
+<<<<<<< HEAD
       <description>TODO 做满10个视频 [10/10] 做个博客程序 [1/1] 交10个网友 [1/10] 收集100篇文章 [20/100] 设置目标的方法 我的身体目标：把体重降到165磅，把肌肉锻炼得更结实。何时完成</description>
     </item>
     
@@ -112,6 +117,62 @@
       <link>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</link>
       <pubDate>Mon, 13 May 2024 10:39:40 +0800</pubDate>
       
+=======
+      <description>TODO 收集100篇文章 [20/100] 做满10个视频 [0/10] 交10个网友 [0/10] 做个博客程序 [0/1] 设定目标(执行力) 我的学习目标：阅读小说 10本____ 何时完成？______</description>
+    </item>
+    
+    <item>
+      <title>显示器多工作区的好处</title>
+      <link>https://aming.xyz/doing/%E5%A4%9A%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E5%A5%BD%E5%A4%84/</link>
+      <pubDate>Wed, 15 May 2024 07:29:11 +0800</pubDate>
+      
+      <guid>https://aming.xyz/doing/%E5%A4%9A%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E5%A5%BD%E5%A4%84/</guid>
+      <description>定位 ，先 ruanyifeng ,没个确定目标，先练习。 好处 分离不同轻重的任务 保持主任务的重心</description>
+    </item>
+    
+    <item>
+      <title>生死</title>
+      <link>https://aming.xyz/post/%E7%94%9F%E6%AD%BB/</link>
+      <pubDate>Tue, 14 May 2024 21:54:34 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E7%94%9F%E6%AD%BB/</guid>
+      <description>人生最重要的是经历，宽容看待死亡。</description>
+    </item>
+    
+    <item>
+      <title>24-2-29知名BT下载站 rarbg.to 宣布关闭网站 - 知乎</title>
+      <link>https://aming.xyz/doing/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Mon, 13 May 2024 18:56:48 +0800</pubDate>
+      
+      <guid>https://aming.xyz/doing/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>知名BT下载站 rarbg.to 突然宣布永久性关闭网站。 对于众多的影迷，基本上都是从RARBG上搜片，找字幕看片。而众多的BT站及字幕组也是从RARBG上下</description>
+    </item>
+    
+    <item>
+      <title>人生箴言</title>
+      <link>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</link>
+      <pubDate>Mon, 13 May 2024 14:56:11 +0800</pubDate>
+      
+      <guid>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</guid>
+      <description>量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什么工作，编程要先架构 做</description>
+    </item>
+    
+    <item>
+      <title>Tailwind CSS (顺风)</title>
+      <link>https://aming.xyz/information/tailwind/</link>
+      <pubDate>Mon, 13 May 2024 10:51:27 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/tailwind/</guid>
+      <description>&lt;h1 id=&#34;tailwind-css&#34;&gt;Tailwind CSS&lt;/h1&gt;
+&lt;p&gt;Tailwind CSS 是一个强大的工具，用于快速构建现代网页界面，包括移动端样式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scss-best-practices-to-keep-in-mind</title>
+      <link>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</link>
+      <pubDate>Mon, 13 May 2024 10:39:40 +0800</pubDate>
+      
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
       <guid>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</guid>
       <description>SCSS 样式 1. 移动端优先 做响应式项目的时候，一般会先写 PC 版本的样式，但这会使移动端样式的书写变得特别痛苦。因此，我们应该先进行移动端样式的书写，在</description>
     </item>
@@ -140,7 +201,15 @@
       <pubDate>Tue, 02 Apr 2024 14:27:55 +0800</pubDate>
       
       <guid>https://aming.xyz/doing/working/</guid>
+<<<<<<< HEAD
       <description>work list 一天的时间规划后，没多少浪费 ssh 登录，把本地文件上传服务器 代理人 ，代办人 chatgpt 写推文 帮我生成一些Matlab基本绘图指令以及基本用法的推文(提</description>
+=======
+      <description>&lt;h2 id=&#34;work-list&#34;&gt;work list&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;剪英语视频，英语视频，视频浏览也挣钱，有人关注说明喜欢&lt;/li&gt;
+&lt;li&gt;每日对生活进行反思，修正，以便更好前进。&lt;/li&gt;
+&lt;/ul&gt;</description>
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
     <item>
@@ -225,6 +294,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aming.xyz/book/</guid>
+<<<<<<< HEAD
       <description>美国亚马逊图书编辑，历经好几个月的热烈讨论，每个人为自己心中的人生必读书激烈讨论，终于挑选出一生必读的百本图书清单。
 图书编辑总监萨拉·纳尔逊表示，这是一份手作的推荐清单，没有用到点击率分析等技术手段；希望选的书有代表，能引领读者通往更多的书。而仔细读完这份清单会发现，它最大的亮点在可读性；提炼这份一生必读的百本图书清单，是要建立一个文学生活的阅读进程图，而不是像学校开出的指定阅读作业。
 《1984》
@@ -293,6 +363,9 @@
 “科学幻想小说之父”、科幻小说界的“莎士比亚”、英国小说家赫伯特·乔治·威尔斯作品。探讨了拥有隐身技能后，人类面临的抉择和困惑。
 《吉米·科瑞根：世界上最聪明的小子 》
 美国漫画家克里斯·韦尔带有自传性质的漫画小说。</description>
+=======
+      <description>美国亚马逊图书编辑，历经好几个月的热烈讨论，每个人为自己心中的人生必读书激烈讨论，终于挑选出一生必读的百本图书清单。 图书编辑总监萨拉·纳尔逊</description>
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
     <item>
@@ -364,6 +437,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aming.xyz/readme/</guid>
+<<<<<<< HEAD
       <description>日常博客，记录生活琐事
 反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。
 [之前] 我以前看书，看视频的学习方法是错误的，我没有把自己代入进去，没有与学习之物互动，缺少动手，学习就要多交互。
@@ -425,6 +499,9 @@
 36.听说有人每天能看一本书，问题还不在看书速度，而是在知易行难，实践的速度赶不上所知的要求，欠账很多
 37.卓有成效如果有什么秘诀的话，那就是善于集中精力 &amp;mdash;《卓有成效的管理》
 38.研究聪明人如何犯错误，回报率很高。聪明人易犯错误包括：1 嫉妒他人成功；2 自命不凡：3 过于相信自己判断；4 停止 学习；5 认为世界是静止的，生活在过去荣耀中；6 任何事情都有自己一套言之 有据、且深信不疑的说法和理论：忘记了没有调查研究，就没有发言权。你符合吗？</description>
+=======
+      <description>日常博客，记录生活琐事 反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。 [之前] 我以前看书，看视频的学习方法是错误的</description>
+>>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
   </channel>
