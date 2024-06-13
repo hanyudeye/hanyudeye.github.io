@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-<<<<<<< HEAD
     <title>人生 on 思维</title>
     <link>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</link>
     <description>Recent content in 人生 on 思维</description>
-=======
-    <title>人生 on 知识</title>
-    <link>https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/</link>
-    <description>Recent content in 人生 on 知识</description>
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 24 May 2024 09:41:40 +0800</lastBuildDate><atom:link href="https://aming.xyz/categories/%E4%BA%BA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />

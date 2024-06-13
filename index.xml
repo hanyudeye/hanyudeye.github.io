@@ -6,19 +6,32 @@
     <description>Recent content on 思维</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-<<<<<<< HEAD
-    <lastBuildDate>Sun, 02 Jun 2024 11:56:19 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Wed, 15 May 2024 07:29:11 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
+    <lastBuildDate>Wed, 12 Jun 2024 07:48:44 +0800</lastBuildDate><atom:link href="https://aming.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TodoList 做自己思考后能抓住的事情</title>
       <link>https://aming.xyz/post/todo/</link>
       <pubDate>Tue, 08 Aug 2023 19:16:28 +0800</pubDate>
       
       <guid>https://aming.xyz/post/todo/</guid>
-<<<<<<< HEAD
       <description>TODO 做满10个视频 [10/10] 做个博客程序 [1/1] 交10个网友 [1/10] 收集100篇文章 [20/100] 设置目标的方法 我的身体目标：把体重降到165磅，把肌肉锻炼得更结实。何时完成</description>
+    </item>
+    
+    <item>
+      <title>科技周刊第 2 期</title>
+      <link>https://aming.xyz/information/information2/</link>
+      <pubDate>Wed, 12 Jun 2024 07:48:44 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/information2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>每周资讯 第一期</title>
+      <link>https://aming.xyz/information/information1/</link>
+      <pubDate>Tue, 11 Jun 2024 10:51:27 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/information1/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -49,15 +62,6 @@
     </item>
     
     <item>
-      <title>24-2-29知名BT下载站 rarbg.to 宣布关闭网站 - 知乎</title>
-      <link>https://aming.xyz/information/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Fri, 24 May 2024 09:43:52 +0800</pubDate>
-      
-      <guid>https://aming.xyz/information/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>知名BT下载站 rarbg.to 突然宣布永久性关闭网站。 对于众多的影迷，基本上都是从RARBG上搜片，找字幕看片。而众多的BT站及字幕组也是从RARBG上下</description>
-    </item>
-    
-    <item>
       <title>人生意义</title>
       <link>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/</link>
       <pubDate>Fri, 24 May 2024 09:41:40 +0800</pubDate>
@@ -85,43 +89,6 @@
     </item>
     
     <item>
-      <title>人生箴言</title>
-      <link>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</link>
-      <pubDate>Mon, 13 May 2024 14:56:11 +0800</pubDate>
-      
-      <guid>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</guid>
-      <description>你做得好别人会来找你的 量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什</description>
-    </item>
-    
-    <item>
-      <title>人生箴言</title>
-      <link>https://aming.xyz/%E5%8F%8D%E6%80%9D%E5%B9%B6%E4%BF%AE%E6%AD%A3%E4%BA%BA%E7%94%9F/</link>
-      <pubDate>Mon, 13 May 2024 14:56:11 +0800</pubDate>
-      
-      <guid>https://aming.xyz/%E5%8F%8D%E6%80%9D%E5%B9%B6%E4%BF%AE%E6%AD%A3%E4%BA%BA%E7%94%9F/</guid>
-      <description>量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什么工作，编程要先架构 做</description>
-    </item>
-    
-    <item>
-      <title>Tailwind CSS (顺风)</title>
-      <link>https://aming.xyz/information/tailwind/</link>
-      <pubDate>Mon, 13 May 2024 10:51:27 +0800</pubDate>
-      
-      <guid>https://aming.xyz/information/tailwind/</guid>
-      <description>&lt;h1 id=&#34;tailwind-css&#34;&gt;Tailwind CSS&lt;/h1&gt;
-&lt;p&gt;Tailwind CSS 是一个强大的工具，用于快速构建现代网页界面，包括移动端样式。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scss-best-practices-to-keep-in-mind</title>
-      <link>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</link>
-      <pubDate>Mon, 13 May 2024 10:39:40 +0800</pubDate>
-      
-=======
-      <description>TODO 收集100篇文章 [20/100] 做满10个视频 [0/10] 交10个网友 [0/10] 做个博客程序 [0/1] 设定目标(执行力) 我的学习目标：阅读小说 10本____ 何时完成？______</description>
-    </item>
-    
-    <item>
       <title>显示器多工作区的好处</title>
       <link>https://aming.xyz/doing/%E5%A4%9A%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E5%A5%BD%E5%A4%84/</link>
       <pubDate>Wed, 15 May 2024 07:29:11 +0800</pubDate>
@@ -140,21 +107,12 @@
     </item>
     
     <item>
-      <title>24-2-29知名BT下载站 rarbg.to 宣布关闭网站 - 知乎</title>
-      <link>https://aming.xyz/doing/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 13 May 2024 18:56:48 +0800</pubDate>
-      
-      <guid>https://aming.xyz/doing/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>知名BT下载站 rarbg.to 突然宣布永久性关闭网站。 对于众多的影迷，基本上都是从RARBG上搜片，找字幕看片。而众多的BT站及字幕组也是从RARBG上下</description>
-    </item>
-    
-    <item>
       <title>人生箴言</title>
       <link>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</link>
       <pubDate>Mon, 13 May 2024 14:56:11 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</guid>
-      <description>量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什么工作，编程要先架构 做</description>
+      <description>你做得好别人会来找你的 量变决定质变 勤奋努力的人非常多 知道自己要做什么 (做营销挣钱，娱乐放松，努力工作) 知道自己情绪低落，怎么治疗，知道要找什</description>
     </item>
     
     <item>
@@ -172,27 +130,8 @@
       <link>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</link>
       <pubDate>Mon, 13 May 2024 10:39:40 +0800</pubDate>
       
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
       <guid>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</guid>
       <description>SCSS 样式 1. 移动端优先 做响应式项目的时候，一般会先写 PC 版本的样式，但这会使移动端样式的书写变得特别痛苦。因此，我们应该先进行移动端样式的书写，在</description>
-    </item>
-    
-    <item>
-      <title>hello</title>
-      <link>https://aming.xyz/books/epub/</link>
-      <pubDate>Mon, 06 May 2024 20:53:48 +0800</pubDate>
-      
-      <guid>https://aming.xyz/books/epub/</guid>
-      <description>Key bindings | Key binding | Description | |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;| | ~~ | Next link | | ~~ | Previous link | | ~H~ or ~[~ | Previous chapter | | ~L~ or ~]~ | Next chapter | | ~K/u~ | Scroll up | | ~J/d~ | Scroll down | | ~g m~ | Display metadata | | ~g r~ | Re-render document | | ~g t~ | Table of contents | | ~g v~ | View source | | ~g V~ | View content source |</description>
-    </item>
-    
-    <item>
-      <title>1984</title>
-      <link>https://aming.xyz/books/1984/</link>
-      <pubDate>Mon, 06 May 2024 19:47:50 +0800</pubDate>
-      
-      <guid>https://aming.xyz/books/1984/</guid>
-      <description>乔治•奥威尔代表作。刻画了人类在极权主义社会的生存状态，有若一个永不退色的警示标签，警醒世人提防这种预想中的黑暗成为现实。历经几十年，其生命</description>
     </item>
     
     <item>
@@ -201,15 +140,11 @@
       <pubDate>Tue, 02 Apr 2024 14:27:55 +0800</pubDate>
       
       <guid>https://aming.xyz/doing/working/</guid>
-<<<<<<< HEAD
-      <description>work list 一天的时间规划后，没多少浪费 ssh 登录，把本地文件上传服务器 代理人 ，代办人 chatgpt 写推文 帮我生成一些Matlab基本绘图指令以及基本用法的推文(提</description>
-=======
       <description>&lt;h2 id=&#34;work-list&#34;&gt;work list&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;剪英语视频，英语视频，视频浏览也挣钱，有人关注说明喜欢&lt;/li&gt;
 &lt;li&gt;每日对生活进行反思，修正，以便更好前进。&lt;/li&gt;
 &lt;/ul&gt;</description>
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
     <item>
@@ -240,12 +175,12 @@
     </item>
     
     <item>
-      <title>mezodawesome-indie Resources for independent developers to make money</title>
+      <title>独立开发者</title>
       <link>https://aming.xyz/information/24-3-7mezodawesome-indie-resources-for-independent-developers-to-make-money/</link>
       <pubDate>Thu, 07 Mar 2024 09:36:13 +0800</pubDate>
       
       <guid>https://aming.xyz/information/24-3-7mezodawesome-indie-resources-for-independent-developers-to-make-money/</guid>
-      <description>Awesome Indie 令人敬畏的独立 Resources to help independent developers make money. 帮助独立开发者赚钱的资源。 Making money from your own code has never been easier, but it&amp;rsquo;s still hard. Here, I try to curate a list of resources to help everyone interested in making money from their digital products get inspired and give it a try.</description>
+      <description></description>
     </item>
     
     <item>
@@ -272,11 +207,22 @@
       <pubDate>Mon, 16 Oct 2023 09:45:15 +0800</pubDate>
       
       <guid>https://aming.xyz/post/%E4%BA%BA/</guid>
-      <description>&lt;h2 id=&#34;影响力&#34;&gt;影响力&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;人生&#34;&gt;人生&lt;/h2&gt;
+&lt;p&gt;人生是一种体验，过程，而不是一种结果(因为人生阅历无法继承)。&lt;/p&gt;
+&lt;h2 id=&#34;影响力&#34;&gt;影响力&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;互惠性
 解释：人对于别人的思惠，通常会觉得有责任或有义务进行回报。&lt;/li&gt;
 &lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>计算机生产力软件</title>
+      <link>https://aming.xyz/information/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Fri, 29 Sep 2023 11:33:34 +0800</pubDate>
+      
+      <guid>https://aming.xyz/information/%E8%BD%AF%E4%BB%B6/</guid>
+      <description>查找工具 (按文件名) Everything: Windows下强大的文件搜索工具 Listary: Windows 下的文件搜索和应用启动工具 ulauncher: Linux 下具有同Listary 相似功能的工具 资源下载 m3u</description>
     </item>
     
     <item>
@@ -294,7 +240,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aming.xyz/book/</guid>
-<<<<<<< HEAD
       <description>美国亚马逊图书编辑，历经好几个月的热烈讨论，每个人为自己心中的人生必读书激烈讨论，终于挑选出一生必读的百本图书清单。
 图书编辑总监萨拉·纳尔逊表示，这是一份手作的推荐清单，没有用到点击率分析等技术手段；希望选的书有代表，能引领读者通往更多的书。而仔细读完这份清单会发现，它最大的亮点在可读性；提炼这份一生必读的百本图书清单，是要建立一个文学生活的阅读进程图，而不是像学校开出的指定阅读作业。
 《1984》
@@ -363,9 +308,6 @@
 “科学幻想小说之父”、科幻小说界的“莎士比亚”、英国小说家赫伯特·乔治·威尔斯作品。探讨了拥有隐身技能后，人类面临的抉择和困惑。
 《吉米·科瑞根：世界上最聪明的小子 》
 美国漫画家克里斯·韦尔带有自传性质的漫画小说。</description>
-=======
-      <description>美国亚马逊图书编辑，历经好几个月的热烈讨论，每个人为自己心中的人生必读书激烈讨论，终于挑选出一生必读的百本图书清单。 图书编辑总监萨拉·纳尔逊</description>
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
     <item>
@@ -437,7 +379,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aming.xyz/readme/</guid>
-<<<<<<< HEAD
       <description>日常博客，记录生活琐事
 反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。
 [之前] 我以前看书，看视频的学习方法是错误的，我没有把自己代入进去，没有与学习之物互动，缺少动手，学习就要多交互。
@@ -453,12 +394,9 @@
       
       <guid>https://aming.xyz/%E5%BC%A0%E4%B8%80%E9%B8%A3%E8%AF%AD%E5%BD%95/</guid>
       <description>本文是从张一鸣微博中摘录的231句话，绝大多数都是他创业初期的思考，我们可以看下10年前想创业的程序员在想什么，在思考什么，是怎么鞭策自己的。
-这几天抽空把张一鸣的所有微博看了一遍，发现2010年的微博最好，就是他30岁左右的时候，那时候刚创业没多久，在微博上认真分享自己的思考和观点。到了2012年附近，开始做今日头条，每天都是大量转发今日头条上的文章到微博，干货变少了。后面就更新得越来越少。
-我从他的微博中，试图找到他成功的钥匙，得到了一些只言片语，但是仅仅是这些只言片语，我都觉得对我的启发很大。
 他从南开大学毕业，妻子是大学同学，毕业后去过微软，后来从微软离职，然后去过饭否，应该跟过王兴王慧文一阵子，后来还是自己创业。
 刚开始项目是99房，类似于安居客或者贝壳找房这样的模式吧，后来才是字节跳动，今日头条，他很早就认准移动互联网红利，很早就认准信息的聚合和推荐的价值。有这样的认知，做出今日头条也不诧异。做今日头条的时候发现用户更喜欢看短视频，于是专门起一个APP做短视频分发，抖音就是这么来的，也不奇怪。
 围观他的微博，我整理了这些干货。发现他说得最多的关键词：延迟满足感，自控，理性，反省，创新，学习。
-结论就是张一鸣真的太厉害了。我对他做过的事情，他也对马化腾做过，他把马化腾的所有微博都读了一遍，连发两条微博感叹马化腾。
 本文是我从他微博中摘录的231句话，绝大多数都是他创业初期的思考，我们可以看下10年前的想创业的程序员在想什么，在思考什么，是怎么鞭策自己的。
 01
 【关于成长】 1.人常会不自觉地记下对自己有利的部分，这是形成委屈的重要原因。
@@ -499,9 +437,6 @@
 36.听说有人每天能看一本书，问题还不在看书速度，而是在知易行难，实践的速度赶不上所知的要求，欠账很多
 37.卓有成效如果有什么秘诀的话，那就是善于集中精力 &amp;mdash;《卓有成效的管理》
 38.研究聪明人如何犯错误，回报率很高。聪明人易犯错误包括：1 嫉妒他人成功；2 自命不凡：3 过于相信自己判断；4 停止 学习；5 认为世界是静止的，生活在过去荣耀中；6 任何事情都有自己一套言之 有据、且深信不疑的说法和理论：忘记了没有调查研究，就没有发言权。你符合吗？</description>
-=======
-      <description>日常博客，记录生活琐事 反思 [12.22] 做比学重要的多，有时候不用学，做的过程中自然领悟了，最多配个备忘表。 [之前] 我以前看书，看视频的学习方法是错误的</description>
->>>>>>> 7056c33b0b6e18e21f64baccbee03938de2dbe44
     </item>
     
   </channel>
