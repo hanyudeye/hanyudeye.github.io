@@ -8,17 +8,22 @@
   
   <url>
     <loc>https://aming.xyz/information/</loc>
-    <lastmod>2024-06-02T14:43:26+08:00</lastmod>
+    <lastmod>2024-06-12T07:48:44+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aming.xyz/information/%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A%E7%AC%AC-1-%E6%9C%9F/</loc>
-    <lastmod>2024-06-02T14:43:26+08:00</lastmod>
+    <loc>https://aming.xyz/information/information2/</loc>
+    <lastmod>2024-06-12T07:48:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://aming.xyz/</loc>
-    <lastmod>2024-06-02T14:43:26+08:00</lastmod>
+    <lastmod>2024-06-12T07:48:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aming.xyz/information/information1/</loc>
+    <lastmod>2024-06-11T10:51:27+08:00</lastmod>
   </url>
   
   <url>
@@ -97,11 +102,6 @@
   </url>
   
   <url>
-    <loc>https://aming.xyz/information/24-2-29%E7%9F%A5%E5%90%8Dbt%E4%B8%8B%E8%BD%BD%E7%AB%99-rarbg.to-%E5%AE%A3%E5%B8%83%E5%85%B3%E9%97%AD%E7%BD%91%E7%AB%99-%E7%9F%A5%E4%B9%8E/</loc>
-    <lastmod>2024-05-13T18:56:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://aming.xyz/post/%E4%BA%BA%E7%94%9F%E7%AE%B4%E8%A8%80/</loc>
     <lastmod>2024-05-13T14:56:11+08:00</lastmod>
   </url>
@@ -114,26 +114,6 @@
   <url>
     <loc>https://aming.xyz/information/8-scss-best-practices-to-keep-in-mind/</loc>
     <lastmod>2024-05-13T10:39:40+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/categories/books/</loc>
-    <lastmod>2024-05-06T20:53:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/books/</loc>
-    <lastmod>2024-05-06T20:53:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/books/epub/</loc>
-    <lastmod>2024-05-06T20:53:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://aming.xyz/books/1984/</loc>
-    <lastmod>2024-05-06T19:47:50+08:00</lastmod>
   </url>
   
   <url>
@@ -218,6 +198,7 @@
   
   <url>
     <loc>https://aming.xyz/book/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -255,6 +236,7 @@
   
   <url>
     <loc>https://aming.xyz/%E5%BC%A0%E4%B8%80%E9%B8%A3%E8%AF%AD%E5%BD%95/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
